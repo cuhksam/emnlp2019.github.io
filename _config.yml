@@ -5,14 +5,14 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "mint", "aqua", "air", "dark", "dirt", "neon", "default", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "EMNLP 2018"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "SIGDAT"
+description              : "Official website for the 2018 Conference on Empirical Methods in Natural Language Processing"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -118,6 +118,9 @@ author:
 include:
   - .htaccess
   - _pages
+  - _pages/calls
+  - _pages/participants
+  - _pages/sponsors
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -179,8 +182,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -240,14 +243,15 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _pages
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
       related: true
+      sidebar: false

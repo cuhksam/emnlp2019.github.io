@@ -1,12 +1,58 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+  # - title: "Program"
+  #   url: /program
+
+  # - title: "Registration"
+  #   url: /registration
+
+  # - title: "Participants"
+  #   url: "/participants"
+
+  # - title: "Tutorials"
+  #   url: "/tutorials"
+
+  - title: "Organization"
+    url: /organization
+
+  - title: "Workshops"
+    url: "/workshops"
+
+  # - title: "PC Blog"
+  #   url: https://chairs-blog.acl2017.org
+
+  # - title: "Sponsors"
+  #   url: /sponsors/overview/
+
+pages:
+  - title: Organization
+    children:
+      - title: "Organizing Committee"
+      - url: /pages/organization.md
+
+  # - title: Workshops
+  #   children:
+  #     - title: "EMNLP 2018 Workshops"
+  #     - url: /pages/workshops.md
+
+  # - title: Program
+  #   children:
+  #     - title: "EMNLP 2018 Program"
+  #     - url: /pages/program.md
+
+# participants:
+#   - title: "Information for Participants"
+#     children:
+#       - title: "Accommodation"
+#         url: /participants/accommodation/
+#       - title: "Social Event"
+#         url: /participants/social/
+
+sponsors:
+  - title: Sponsorship
+    children:
+      - title: "Overview"
+        url: /sponsors/overview/
+      - title: "Tiers &amp; Pricing"
+        url: /sponsors/benefits/
