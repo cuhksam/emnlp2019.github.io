@@ -35,7 +35,7 @@ pages:
     children:
       - title: "EMNLP 2018 Workshops"
       - url: /pages/workshops.md
-g
+
   # - title: Program
   #   children:
   #     - title: "EMNLP 2018 Program"
