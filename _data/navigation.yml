@@ -31,11 +31,11 @@ pages:
       - title: "Organizing Committee"
       - url: /pages/organization.md
 
-  # - title: Workshops
-  #   children:
-  #     - title: "EMNLP 2018 Workshops"
-  #     - url: /pages/workshops.md
-
+  - title: Workshops
+    children:
+      - title: "EMNLP 2018 Workshops"
+      - url: /pages/workshops.md
+g
   # - title: Program
   #   children:
   #     - title: "EMNLP 2018 Program"
