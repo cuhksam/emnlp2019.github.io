@@ -15,9 +15,13 @@
 // overriding the color of the splash image caption
 .page__hero {
   &--overlay {
-    .page__title, .page__lead {
+    .page__title {
        color: #fff;
-       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+       text-shadow: 1px 1px 4px rgba(#f00, 1.0);
+    }
+    .page__lead {
+       color: #fff;
+       text-shadow: 1px 1px 4px rgba(#f00, 1.0);
     }
   }
 }

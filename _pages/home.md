@@ -4,7 +4,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: "/assets/images/pano-tapis-de-fleurs.jpg"
+  overlay_image: "/assets/images/pano-tapis-de-fleurs-part-blurred.jpg"
   caption: 'Photo by <a href="https://www.flickr.com/photos/jp2remy/28859979631/">Jean Paul Remy</a> / <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>'
 excerpt: "October 31 &ndash; November 4, 2018 <br/> Brussels, Belgium"
 ---
@@ -14,8 +14,6 @@ excerpt: "October 31 &ndash; November 4, 2018 <br/> Brussels, Belgium"
 <h2>Welcome!</h2>
 
 SIGDAT, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, invites you to participate in the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP) in Brussels, Belgium. EMNLP 2018 will be held at the [Square Meeting Center](http://square-brussels.com) in Brussels from October 31st through November 4th, 2018.
-
-As in previous years, the program of the conference includes poster sessions, tutorials, workshops, and demonstrations in addition to the main conference. EMNLP is a premier conference in the field of natural language processing and computational linguistics, covering a broad spectrum of diverse research areas that are concerned with computational approaches to natural language.
 
 <h2>Important Dates</h2>
 
