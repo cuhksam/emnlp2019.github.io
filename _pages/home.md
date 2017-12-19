@@ -4,8 +4,8 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: "/images/royal-palace-brussels.jpg"
-  caption: 'Photo by <a href="http://www.panoramio.com/user/31742?with_photo_id=10054360">Sergey Ashmarin</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>'
+  overlay_image: "/assets/images/grand-palace-hires-cropped.jpeg"
+  caption: 'Photo by <a href="https://www.flickr.com/photos/jp2remy/">Jean Paul Remy</a> / <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>'
 excerpt: "October 31 &ndash; November 4, 2018 <br/> Brussels, Belgium"
 ---
 
