@@ -47,7 +47,7 @@ Anna Rumshisky, University of Massachusetts at Lowell, USA<br/>
 Hugo Van hamme, KU Leuven, Belgium
 
 <h3>Website &amp; Conference App Chair</h3>
-Nitin Madnani, Educational Testing Service
+Nitin Madnani, Educational Testing Service, USA
 
 <h3>Local Sponsorship Chair</h3>
 Katrien Beuls, Vrije Universiteit Brussel, Belgium
