@@ -11,3 +11,13 @@
 .masthead__menu-item a {
     color: red;
 }
+
+// overriding the color of the splash image caption
+.page__hero {
+  &--overlay {
+    .page__title, .page__lead {
+       color: #fff;
+       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  }
+}

@@ -4,7 +4,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: "/assets/images/pano-tapis-de-fleurs.jpg"
+  overlay_image: "/assets/images/pano-tapis-de-fleurs-blurred.jpg"
   caption: 'Photo by <a href="https://www.flickr.com/photos/jp2remy/28859979631/">Jean Paul Remy</a> / <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>'
 excerpt: "October 31 &ndash; November 4, 2018 <br/> Brussels, Belgium"
 ---
