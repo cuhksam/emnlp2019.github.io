@@ -16,10 +16,12 @@
 .page__hero {
   &--overlay {
     .page__title {
+       font-size: 36px;
        color: #fff;
        text-shadow: 1px 1px 4px rgba(#f00, 1.0);
     }
     .page__lead {
+       font-size: 32px;
        color: #fff;
        text-shadow: 1px 1px 4px rgba(#f00, 1.0);
     }
