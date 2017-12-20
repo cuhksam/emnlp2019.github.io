@@ -1,12 +1,12 @@
 ---
-title: "Conference on Empirical Methods in Natural Language Processing"
+title: "2018 Conference on Empirical Methods in Natural Language Processing"
 layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/pano-tapis-de-fleurs-darkened.jpg"
   caption: 'Photo by <a href="https://www.flickr.com/photos/jp2remy/28859979631/">Jean Paul Remy</a> / <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>'
-excerpt: "October 31 &ndash; November 4, 2018 <br/> Brussels, Belgium"
+excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 ---
 
 <!-- <h2>News</h2> -->
