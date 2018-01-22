@@ -42,6 +42,12 @@ Mohit Iyyer, University of Massachusetts at Amherst, USA
 <h3>Conference Handbook Chair</h3>
 Kai-Wei Chang, University of California at Los Angeles, USA
 
+<h3>Conference Handbook Advisor</h3>
+Joachim Bingel, University of Copenhagen, Denmark
+
+<h3>Conference Handbook Proofreader</h3>
+He He, Stanford University, USA
+
 <h3>Student Volunteer Coordinator &amp; Student Scholarship Chair</h3>
 Anna Rumshisky, University of Massachusetts at Lowell, USA<br/>
 Hugo Van hamme, KU Leuven, Belgium
