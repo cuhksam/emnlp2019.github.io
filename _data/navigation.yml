@@ -22,8 +22,8 @@ main:
   # - title: "PC Blog"
   #   url: https://chairs-blog.acl2017.org
 
-  # - title: "Sponsors"
-  #   url: /sponsors/overview/
+  - title: "Sponsors"
+    url: /sponsors/benefits/
 
 pages:
   - title: Organization

@@ -34,6 +34,9 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
 
 <h2>News</h2>
 
+**January 23, 2018**. Information for sponsors is now available [here](/sponsors/benefits/).
+{: .notice--info} 
+
 **January 22, 2018**. Regular as well as student accommodation can now be booked for the conference. More details [here](/participants).
 {: .notice--info} 
 
