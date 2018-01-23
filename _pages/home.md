@@ -9,7 +9,13 @@ header:
 excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 ---
 
-<!-- <h2>News</h2> -->
+<h2>News</h2>
+
+**January 23, 2018**. Information for sponsors is now available [here](/sponsors/benefits/).
+{: .notice--info} 
+
+**January 22, 2018**. Regular as well as student accommodation can now be booked for the conference. More details [here](/participants).
+{: .notice--info} 
 
 <h2>Welcome!</h2>
 
@@ -31,15 +37,6 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
         </tr>
     </tbody>
 </table>
-
-<h2>News</h2>
-
-**January 23, 2018**. Information for sponsors is now available [here](/sponsors/benefits/).
-{: .notice--info} 
-
-**January 22, 2018**. Regular as well as student accommodation can now be booked for the conference. More details [here](/participants).
-{: .notice--info} 
-
 
 <h2>EMNLP 2018 Anti-Harassment Policy</h2>
 EMNLP 2018 adheres to the <a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">ACL Anti-Harassment Policy</a>. Any participant who experiences harassment or hostile behavior may contact any current member of the <a href="https://www.aclweb.org/portal/about">ACL Executive Committee</a> or contact <a href="mailto:acl@aclweb.org">Priscilla Rasmussen</a>, who is usually available at the registration desk of the conference. Please be assured that if you approach us, your concerns will be kept in strict confidence, and we will consult with you on any actions taken.
