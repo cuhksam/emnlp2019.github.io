@@ -17,7 +17,6 @@ Junichi Tsujii, Artificial Intelligence Research Center, Japan
 <h3>Local Organizing Committee</h3>
 Dominique De Brabanter, KU Leuven, Belgium<br/>
 Frieda Steurs, KU Leuven, Belgium<br/>
-Karin Beckers, KU Leuven, Belgium<br/>
 Marie-Francine Moens, KU Leuven, Belgium
 
 <h3>Workshop Chairs</h3>
