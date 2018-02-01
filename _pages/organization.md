@@ -1,4 +1,4 @@
----
+subl ---
 title: Organizing Committee
 layout: single
 excerpt: "EMNLP 2018 organizing committee."
@@ -15,9 +15,10 @@ Julia Hockenmaier, University of Illinois Urbana-Champaign, USA<br/>
 Junichi Tsujii, Artificial Intelligence Research Center, Japan
 
 <h3>Local Organizing Committee</h3>
+Marie-Francine Moens, KU Leuven, Belgium (chair)
 Dominique De Brabanter, KU Leuven, Belgium<br/>
 Frieda Steurs, KU Leuven, Belgium<br/>
-Marie-Francine Moens, KU Leuven, Belgium
+Hugo Van hamme, KU Leuven, Belgium<br/>
 
 <h3>Workshop Chairs</h3>
 Marieke van Erp, KNAW Humanities Cluster, Netherlands<br/>
