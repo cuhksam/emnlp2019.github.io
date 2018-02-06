@@ -49,7 +49,7 @@ The [SCAI workshop](http://scai.info) aims to bring together AI/Deep Learning sp
 [This workshop](https://sigmorphon.github.io) organized by the ACL Special Interest Group on Computational Morphology and Phonology provides a forum for exchanging news of recent research developments and other matters of interest in computational morphology and phonology.
 
 ### WASSA: 9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis
-The aim of the WASSA workshop is to continue the line of the previous editions, bringing together researchers in Computational Linguistics working on Subjectivity and Sentiment Analysis and researchers working on interdisciplinary aspects of affect computation from text.
+The aim of the [WASSA workshop](https://wt-public.emm4u.eu/wassa2018/) is to continue the line of the previous editions, bringing together researchers in Computational Linguistics working on Subjectivity and Sentiment Analysis and researchers working on interdisciplinary aspects of affect computation from text.
 
 ### SMM4H: 3rd Social Media Mining for Health Applications Workshop & Shared Task
 [The SMM4H workshop](https://healthlanguageprocessing.org/smm4h/) seeks to attract researchers interested in automatic methods for the collection, extraction, representation, analysis, and validation of social media data for health informatics. It serves as a unique forum to discuss novel approaches to text and data mining methods that are applicable to social media data and may prove invaluable for health monitoring and surveillance.
