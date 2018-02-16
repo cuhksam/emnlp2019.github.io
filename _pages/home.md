@@ -11,6 +11,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**February 16, 2018**. The first [call for papers](/calls/papers) has been posted.
+{: .notice--info} 
+
 **January 23, 2018**. Information for sponsors is now available [here](/sponsors/benefits/).
 {: .notice--info} 
 

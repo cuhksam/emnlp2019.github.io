@@ -1,8 +1,8 @@
 # main links
 main:
 
-  # - title: "Program"
-  #   url: /program
+  - title: "Calls"
+    url: /calls/papers
 
   # - title: "Registration"
   #   url: /registration
@@ -36,11 +36,12 @@ pages:
       - title: "EMNLP 2018 Workshops"
       - url: /pages/workshops.md
 
-  # - title: Program
-  #   children:
-  #     - title: "EMNLP 2018 Program"
-  #     - url: /pages/program.md
-
+program:
+  - title: Calls
+    children:
+      - title: "Papers"
+        url: /calls/papers/
+  
 # participants:
 #   - title: "Information for Participants"
 #     children:
