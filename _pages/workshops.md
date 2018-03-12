@@ -19,7 +19,7 @@ Dates and locations for each workshop will be added soon. Please refer to each i
 The [WMT18](http://www.statmt.org/wmt18/) conference builds on a series of annual workshops and conferences on statistical machine translation, going back to 2006.
 
 ### LOUHI: The Ninth International Workshop on Health Text Mining and Information Analysis
-LOUHI 2018 provides an interdisciplinary forum for researchers interested in automated processing of health documents.
+[LOUHI 2018](https://louhi2018.fbk.eu) provides an interdisciplinary forum for researchers interested in automated processing of health documents.
 
 ### BioASQ: Large-scale biomedical semantic indexing and question answering
 The aim of [the BioASQ workshop](http://bioasq.org/workshop) is to push the research frontier towards systems that use the diverse and voluminous information available online to respond directly to the information needs of biomedical scientists.
