@@ -124,6 +124,7 @@ The conference will be preceded by two days of workshops and tutorials (October 
 - General Chair:
       Ellen Riloff (University of Utah)  
 - Program Chairs:
+      David Chiang (University of Notre Dame), 
       Julia Hockenmaier (University of Illinois) and
       Junichi Tsujii (Artificial Intelligence Research Center) 
 

@@ -11,6 +11,7 @@ sidebar: false
 Ellen Riloff, University of Utah, USA
 
 <h3>Program Co-Chairs</h3>
+David Chiang, University of Notre Dame, USA<br/>
 Julia Hockenmaier, University of Illinois Urbana-Champaign, USA<br/>
 Junichi Tsujii, Artificial Intelligence Research Center, Japan
 
