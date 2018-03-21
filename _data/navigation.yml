@@ -10,8 +10,8 @@ main:
   - title: "Participants"
     url: "/participants"
 
-  # - title: "Tutorials"
-  #   url: "/tutorials"
+  - title: "Tutorials"
+    url: "/tutorials"
 
   - title: "Organization"
     url: /organization

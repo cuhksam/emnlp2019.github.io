@@ -11,6 +11,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**March 21, 2018**. The list of [accepted tutorials](/tutorials) has been posted.
+{: .notice--info} 
+
 **February 16, 2018**. The first [call for papers](/calls/papers) has been posted.
 {: .notice--info} 
 
@@ -18,7 +21,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 {: .notice--info} 
 
 **January 22, 2018**. Regular as well as student accommodation can now be booked for the conference. More details [here](/participants).
-{: .notice--info} 
+{: .notice} 
 
 <h2>Welcome!</h2>
 
