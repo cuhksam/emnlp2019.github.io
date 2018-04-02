@@ -11,6 +11,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**April 2, 2018**. The [LaTeX styles files](/downloads/emnlp18-latex.zip) and [Word templates](/downloads/emnlp18-word.zip) are now available.
+{: .notice--info} 
+
 **March 21, 2018**. The list of [accepted tutorials](/tutorials) has been posted.
 {: .notice--info} 
 
@@ -18,9 +21,6 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 {: .notice--info} 
 
 **January 23, 2018**. Information for sponsors is now available [here](/sponsors/benefits/).
-{: .notice--info} 
-
-**January 22, 2018**. Regular as well as student accommodation can now be booked for the conference. More details [here](/participants).
 {: .notice} 
 
 <h2>Welcome!</h2>
