@@ -11,6 +11,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**April 11, 2018**. The first [call for demos](/calls/demos) has been posted.
+{: .notice--info} 
+
 **April 2, 2018**. The [LaTeX styles files](/downloads/emnlp18-latex.zip) and [Word templates](/downloads/emnlp18-word.zip) are now available.
 {: .notice--info} 
 
@@ -19,9 +22,6 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 **February 16, 2018**. The first [call for papers](/calls/papers) has been posted.
 {: .notice--info} 
-
-**January 23, 2018**. Information for sponsors is now available [here](/sponsors/benefits/).
-{: .notice} 
 
 <h2>Welcome!</h2>
 
