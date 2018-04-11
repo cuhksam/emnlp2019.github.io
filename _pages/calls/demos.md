@@ -9,7 +9,7 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-<span style="font-weight: bolder;font-size: larger;">Call For Papers</span>
+<span style="font-weight: bolder;font-size: larger;">Call For System Demonstrations</span>
 
 The EMNLP 2018 System Demonstration Program Committee invites proposals for the Demonstrations Program. Submissions may range from early research prototypes to mature production-ready systems. Of particular interest are publicly available open-source or open-access systems. We would like to strongly encourage demonstrations of industrial systems as long as they prove technologically innovative given the current state of the art of theory and applied research in computational linguistics.
 
