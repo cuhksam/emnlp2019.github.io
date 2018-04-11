@@ -37,6 +37,11 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
             <td>May 22, 2018</td>
         </tr>
         <tr>
+            <td style="width: 40%;">Submissions due (<i>demos</i>)</td>
+            <td style="width: 30%;">Friday</td>
+            <td>June 1, 2018</td>
+        </tr>
+        <tr>
             <td>Author response period starts</td>
             <td>Friday</td>
             <td>July 6, 2018</td>
