@@ -11,6 +11,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**April 11, 2018**. We plan to open [registration](/registration) in mid to late-June. 
+{: .notice--info} 
+
 **April 11, 2018**. The first [call for demos](/calls/demos) has been posted.
 {: .notice--info} 
 
@@ -21,7 +24,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 {: .notice--info} 
 
 **February 16, 2018**. The first [call for papers](/calls/papers) has been posted.
-{: .notice--info} 
+{: .notice} 
 
 <h2>Welcome!</h2>
 
