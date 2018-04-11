@@ -37,11 +37,13 @@ pages:
       - url: /pages/workshops.md
 
 program:
-  - title: Calls
+  - title: Call for
     children:
-      - title: "Papers"
+      - title: "Long & Short Papers"
         url: /calls/papers/
-  
+      - title: "System Demonstrations"
+        url: /calls/demos/
+
 # participants:
 #   - title: "Information for Participants"
 #     children:

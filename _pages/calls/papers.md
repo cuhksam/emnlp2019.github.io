@@ -2,7 +2,8 @@
 title: 
 layout: single
 permalink: /calls/papers/
-sidebar: false
+sidebar: 
+    nav: "program"
 ---
 {% include base_path %}
 
