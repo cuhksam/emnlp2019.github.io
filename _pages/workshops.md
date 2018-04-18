@@ -28,7 +28,7 @@ The aim of [the BioASQ workshop](http://bioasq.org/workshop) is to push the rese
 The goal of [this workshop](https://blackboxnlp.github.io) is to bring together people who are attempting to peek inside the neural network black box, taking inspiration from machine learning, psychology, linguistics and neuroscience. 
 
 ### FEVER: First Workshop on Fact Extraction and VERification
-The [FEVER workshop](https://sheffieldnlp.github.io/fever/) brings together researchers working on various tasks related to fact extraction and verification and also hosts the FEVER Challenge, an information verification shared task.
+The [FEVER workshop](http://fever.ai) brings together researchers working on various tasks related to fact extraction and verification and also hosts the FEVER Challenge, an information verification shared task.
 
 ### ARGMINING: 5th International Workshop on Argument Mining
 The goal of the [ArgMining workshop](https://www.research.ibm.com/haifa/Workshops/argmining17/) is to provide a continuing forum to the last four years’ Argumentation Mining workshops at ACL and NAACL, the first research forum devoted to argumentation mining in all domains of discourse.
