@@ -11,19 +11,19 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**April 20, 2018**. The [anonymity period](/calls/papers#important-new-submission-guidelines) for submissions begins on Sunday, April 22, 2018 at 11:59pm PDT.
+{: .notice--info} 
+
 **April 18, 2018**. ACL is soliciting volunteers to serve on the ACL Complaint Committee who will help field harassment complaints, informally mediate where appropriate, and carry out investigations when necessary. Training will be offered at forthcoming ACL events, including EMNLP 2018. Click [here](https://docs.google.com/forms/d/e/1FAIpQLSc-Gze6Tq2jTXOClSsmgopXp4Jd3V0LbM3x2ZEDCmGSHYetcA/viewform) for more details and to sign up.
 {: .notice--info} 
 
 **April 11, 2018**. We plan to open [registration](/registration) in mid to late-June. 
-{: .notice--info} 
-
-**April 11, 2018**. The first [call for demos](/calls/demos) has been posted.
-{: .notice--info} 
-
-**April 2, 2018**. The [LaTeX styles files](/downloads/emnlp18-latex.zip) and [Word templates](/downloads/emnlp18-word.zip) are now available.
 {: .notice} 
 
-**March 21, 2018**. The list of [accepted tutorials](/tutorials) has been posted.
+**April 11, 2018**. The first [call for demos](/calls/demos) has been posted.
+{: .notice} 
+
+**April 2, 2018**. The [LaTeX styles files](/downloads/emnlp18-latex.zip) and [Word templates](/downloads/emnlp18-word.zip) are now available.
 {: .notice} 
 
 <h2>Welcome!</h2>
@@ -34,6 +34,11 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
 
 <table style="width: 60%">
     <tbody>
+        <tr>
+            <td><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
+            <td>Sunday</td>
+            <td>April 22, 2018</td>
+        </tr>
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>

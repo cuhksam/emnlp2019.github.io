@@ -47,6 +47,11 @@ We solicit papers on all areas of interest to the SIGDAT community and aligned f
 <table>
     <tbody>
         <tr>
+            <td><a href="#important-new-submission-guidelines">Anonymity period</a> begins</td>
+            <td>Sunday</td>
+            <td>April 22, 2018</td>
+        </tr>
+        <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
             <td>May 22, 2018</td>
@@ -89,19 +94,23 @@ We solicit papers on all areas of interest to the SIGDAT community and aligned f
 We will be accepting submissions online via Softconf.  The submission deadline for both long and short papers is May 22, 2018.
 
 ### Long papers
-EMNLP 2018 long paper submissions must describe substantial, original, completed and unpublished work. Wherever appropriate, concrete evaluation and analysis should be included. Each submission will be reviewed by at least three program committee members. Each long paper submission consists of a paper of up to eight (8) pages of content, plus unlimited pages for references; final versions of long papers will be given one additional page (up to nine pages with unlimited pages for references) so that reviewersâ€™ comments can be taken into account.
+EMNLP 2018 long paper submissions must describe substantial, original, completed and unpublished work. Wherever appropriate, concrete evaluation and analysis should be included. Each submission will be reviewed by at least three program committee members. Each long paper submission consists of a paper of up to eight (8) pages of content, plus unlimited pages for references; final versions of long papers will be given one additional page (up to nine pages with unlimited pages for references) so that reviewers' comments can be taken into account.
 
 ### Short papers
-EMNLP 2018 also solicits short papers. Short paper submissions must describe original and unpublished work. While a short paper is not a shortened long paper, the characteristics of short papers include: a small, focused contribution; work in progress; a negative result; an opinion piece; an interesting application nugget. Each short paper submission consists of up to four (4) pages of content, plus unlimited pages for references; final versions of short papers will be given one additional page (up to five pages in the proceedings and unlimited pages for references) so that reviewersâ€™ comments can be taken into account. Each short paper submission will be reviewed by at least three program committee members.
+EMNLP 2018 also solicits short papers. Short paper submissions must describe original and unpublished work. While a short paper is not a shortened long paper, the characteristics of short papers include: a small, focused contribution; work in progress; a negative result; an opinion piece; an interesting application nugget. Each short paper submission consists of up to four (4) pages of content, plus unlimited pages for references; final versions of short papers will be given one additional page (up to five pages in the proceedings and unlimited pages for references) so that reviewers' comments can be taken into account. Each short paper submission will be reviewed by at least three program committee members.
 
 ### IMPORTANT: New submission guidelines
-EMNLP 2018 adopts ACL's [new policies for submission, review, and citation](https://www.aclweb.org/portal/content/new-policies-submission-review-and-citation). Submissions that violate any of these policies will be rejected without review. Most importantly, the policies refer to the anonymity period, which starts on April 22nd, 2018 for EMNLP 2018.
+EMNLP 2018 adopts ACL's [new policies for submission, review, and citation](https://www.aclweb.org/portal/content/new-policies-submission-review-and-citation). Submissions that violate any of these policies will be rejected without review. Most importantly, the policies define an anonymity period, which starts on April 22nd, 2018 (11:59pm PDT).
 
-- You may not make a non-anonymized version of your paper available online to the general community (for example, via a preprint server) during the anonymity period.
+- You may not make a non-anonymized version of your paper available to the general community (for example, by posting it on your home page or submitting it to arXiv) during the anonymity period. However, you may take such an action before the anonymity period begins, even if the paper actually becomes public after the anonymity period begins (for example, because arXiv makes papers public one or two days after receiving them).
 
-- You may not update the non-anonymized version during the anonymity period, and we ask you not to advertise it on social media or take other actions that would further compromise double-blind reviewing during the anonymity period.
+-  You may not update a non-anonymized version during the anonymity period, and we ask you not to advertise it on social media or take other actions that would further compromise double-blind reviewing during the anonymity period.
 
-The details are described in the [ACL 2018 Author Guidelines](http://acl2018.org/call-for-papers/#acl-author-guidelines), which we follow. 
+-  You may make an anonymized version of your paper available, even during the anonymity period (for example, on [OpenReview](https://openreview.net/group?id=OpenReview.net/Anonymous_Preprint)).
+
+- During the anonymity period, you may not update a non-anonymized version, advertise an anonymized or non-anonymized version on social media, or take any other action that would compromise double-blind reviewing during the anonymity period.
+
+The details are described in the [ACL 2018 Author Guidelines](http://acl2018.org/call-for-papers/#acl-author-guidelines), which we follow. For the background of the new policies, refer to the [online version](https://www.aclweb.org/portal/content/new-policies-submission-review-and-citation).
 
 ### Optional Supplementary Materials: Appendices, Software and Data
 Each EMNLP 2018 submission can be accompanied by a single PDF appendix, one `.tgz` or `.zip` archive containing software, and one `.tgz` or `.zip` archive containing data. EMNLP 2018 encourages the submission of these supplementary materials to improve the reproducibility of results, and to enable authors to provide additional information that does not fit in the paper. For example, preprocessing decisions, model parameters, feature templates, lengthy proofs or derivations, pseudocode, sample system inputs/outputs, and other details that are necessary for the exact replication of the work described in the paper can be put into the appendix. However, the paper submissions need to remain fully self-contained, as these supplementary materials are completely optional, and reviewers are not even asked to review or download them. If the pseudo-code or derivations or model specifications are an important part of the contribution, or if they are important for the reviewers to assess the technical correctness of the work, they should be a part of the main paper, and not appear in the appendix. Supplementary materials need to be fully anonymized to preserve the double-blind reviewing policy.
