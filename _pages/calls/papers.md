@@ -15,6 +15,10 @@ sidebar:
 
 We invite the submission of long and short papers related to empirical methods in natural language processing. Accepted papers will be presented as oral talks or posters. As in recent years, the conference will also include presentations of selected papers accepted by the [Transactions of the ACL](http://www.transacl.org).
 
+<div class="text-center">
+<a href="https://www.softconf.com/emnlp2018/papers/" target="_blank" class="btn btn--primary">Make a Submission</a>
+</div>
+
 ## Topics
 We solicit papers on all areas of interest to the SIGDAT community and aligned fields, including but not limited to:
 
@@ -91,7 +95,7 @@ We solicit papers on all areas of interest to the SIGDAT community and aligned f
 <h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
 
 ## Submission Information
-We will be accepting submissions online via Softconf.  The submission deadline for both long and short papers is May 22, 2018.
+We will be accepting submissions online via [START](https://www.softconf.com/emnlp2018/papers/).  The submission deadline for both long and short papers is May 22, 2018.
 
 ### Long papers
 EMNLP 2018 long paper submissions must describe substantial, original, completed and unpublished work. Wherever appropriate, concrete evaluation and analysis should be included. Each submission will be reviewed by at least three program committee members. Each long paper submission consists of a paper of up to eight (8) pages of content, plus unlimited pages for references; final versions of long papers will be given one additional page (up to nine pages with unlimited pages for references) so that reviewers' comments can be taken into account.
