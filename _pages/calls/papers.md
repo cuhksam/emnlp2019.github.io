@@ -16,7 +16,7 @@ sidebar:
 We invite the submission of long and short papers related to empirical methods in natural language processing. Accepted papers will be presented as oral talks or posters. As in recent years, the conference will also include presentations of selected papers accepted by the [Transactions of the ACL](http://www.transacl.org).
 
 <div class="text-center">
-<a href="https://www.softconf.com/emnlp2018/papers/" target="_blank" class="btn btn--primary">Make a Submission</a>
+<a href="https://www.softconf.com/emnlp2018/papers/" target="_blank" class="btn btn--primary">Submit a Paper</a>
 </div>
 
 ## Topics

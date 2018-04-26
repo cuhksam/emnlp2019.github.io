@@ -10,7 +10,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 ---
 
 <div class="text-center">
-<a href="https://www.softconf.com/emnlp2018/papers/" target="_blank" class="btn btn--primary">Make a Submission</a>
+<a href="https://www.softconf.com/emnlp2018/papers/" target="_blank" class="btn btn--primary">Submit a Paper</a>
 </div>
 
 <h2>News</h2>
