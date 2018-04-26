@@ -9,6 +9,10 @@ header:
 excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 ---
 
+<div class="text-center">
+<a href="https://www.softconf.com/emnlp2018/papers/" target="_blank" class="btn btn--primary">Make a Submission</a>
+</div>
+
 <h2>News</h2>
 
 **April 20, 2018**. The [anonymity period](/calls/papers#important-new-submission-guidelines) for submissions begins on Sunday, April 22, 2018 at 11:59pm PDT.
