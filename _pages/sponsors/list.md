@@ -1,7 +1,7 @@
 ---
-title: "Sponsorship Overview"
+title: "List of Sponsors"
 layout: single
-permalink: /sponsors/overview/
+permalink: /sponsors/list/
 diamond:
   - url: https://www.techatbloomberg.com/nlp/
     image_path: /assets/images/bloomberg-logo.png
