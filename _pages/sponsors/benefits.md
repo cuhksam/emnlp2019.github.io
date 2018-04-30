@@ -2,7 +2,8 @@
 title: "Sponsorships Tiers &amp; Pricing"
 layout: single
 permalink: /sponsors/benefits/
-sidebar: false
+sidebar: 
+    nav: "sponsors"
 ---
 {% include base_path %}
 

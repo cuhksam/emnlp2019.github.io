@@ -23,7 +23,7 @@ main:
   #   url: https://chairs-blog.acl2017.org
 
   - title: "Sponsors"
-    url: /sponsors/benefits/
+    url: /sponsors/overview/
 
 pages:
   - title: Organization
@@ -55,7 +55,7 @@ program:
 sponsors:
   - title: Sponsorship
     children:
-      - title: "Overview"
+      - title: "List of Sponsors"
         url: /sponsors/overview/
       - title: "Tiers &amp; Pricing"
         url: /sponsors/benefits/
