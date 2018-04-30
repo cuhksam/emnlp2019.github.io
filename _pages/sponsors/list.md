@@ -29,6 +29,11 @@ platinum:
     image_path: /assets/images/grammarly-logo.png
     alt: "Grammarly Logo"
     title: "Grammarly"
+  - url: https://visit.brussels/en
+    image_path: /assets/images/visit_brussels-logo.png
+    alt: "Visit Brussels Logo"
+    title: "Visit Brussels"
+  - image_path: /assets/images/blank-logo.png
 gold:
   - url: http://www.ebay.com
     image_path: /assets/images/ebay-logo.png
