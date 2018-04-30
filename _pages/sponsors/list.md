@@ -65,7 +65,7 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-We gratefully acknowledge support provided by the following for the EMNLP 2018 conference:
+We gratefully acknowledge support provided by the following for the EMNLP 2018 conference.
 
 ## Diamond Tier
 
