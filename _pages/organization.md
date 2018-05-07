@@ -56,7 +56,7 @@ Reut Tsarfaty, Open University of Israel
 Massimo Poesio, Queen Mary University of London, United Kingdom (senior chair)<br/>
 Omri Abend, Hebrew University of Jerusalem, Israel<br/>
 Raffaella Bernardi, University of Trento, Italy<br/>
-Yulia Tsvetkov, Carnegie-Mellon University, USA<br/>
+Yulia Tsvetkov, Carnegie Mellon University, USA<br/>
 Benjamin Van Durme, Johns Hopkins University, USA<br/>
 Nianwen Xue, Brandeis University, USA
 
@@ -85,7 +85,7 @@ Xavier Carreras, Polytechnic University of Catalonia, Spain (senior chair)<br/>
 Shay Cohen, University of Edinburgh, United Kingdom<br/>
 Kevin Gimpel, Toyota Technological Institute - Chicago, USA<br/>
 Stefan Riezler, Heidelberg University, Germany<br/>
-Karl Stratos, Toyota Technological Institute, Chicago, USA<br/>
+Karl Stratos, Toyota Technological Institute - Chicago, USA<br/>
 Jun Suzuki, Tohoku University, Japan
 
 <h3>Local Organizing Committee</h3>
