@@ -15,6 +15,79 @@ David Chiang, University of Notre Dame, USA<br/>
 Julia Hockenmaier, University of Illinois Urbana-Champaign, USA<br/>
 Junichi Tsujii, Artificial Intelligence Research Center, Japan
 
+<h3> Area Chairs: Information Extraction and Question Answering</h3>
+Jordan Boyd-Graber, University of Maryland, USA (senior chair)<br/>
+Isabelle  Augenstein, University of Copenhagen, Denmark<br/>
+Ming-Wei Chang, Google, USA<br/>
+Doug Downey, Northwestern University, USA<br/>
+Ruihong Huang, Texas A&M University, USA<br/>
+Mausam, IIT Delhi, India<br/>
+Makoto Miwa, Toyota Technological Institute, Japan<br/>
+William Wang, University of California at Santa Barbara, USA<br/>
+Scott Yih, Allen Institute for Artificial Intelligence, USA
+
+<h3>Area Chairs: Text Mining and Information Retrieval </h3>
+Alessandro Moschitti, University of Trento, Italy (senior chair)<br/>
+Sophia Ananiadou, University of Manchester, United Kingdom<br/>
+Hsin-Hsi Chen, National Taiwan University<br/>
+Marius Pasca, Google, USA<br/>
+Xiang Ren, University of Southern California, USA<br/>
+Alan Ritter, Ohio State University, USA
+
+<h3>Area Chairs: Social Media, Computational Social Science, and Sentiment/Opinion Analysis </h3>
+Kam-Fai Wong, Chinese University of Hong Kong (senior chair)<br/>
+Eiji Aramaki, Nara Institute of Science and Technology, Japan<br/>
+Mona Diab, George Washington University, USA<br/>
+Yulan He, Aston University, United Kingdom<br/>
+Dirk Hovy, Bocconi University, Italy<br/>
+Rada Mihalcea, University of Michigan, USA<br/>
+Alice Oh, KAIST, Korea<br/>
+Wei Xu, Ohio State University, USA
+
+<h3> Area Chairs: Morphology, Syntax, and Psycholinguistics </h3>
+Slav Petrov, Google, USA (senior chair)<br/>
+Liang Huang, Oregon State University, USA<br/>
+Roger Levy, Massachusetts Institute of Technology, USA<br/>
+Stephan Oepen, University of Oslo, Norway<br/>
+Emily Pitler, Google, USA<br/>
+Reut Tsarfaty, Open University of Israel
+
+<h3> Area Chairs: Semantics </h3>
+Massimo Poesio, Queen Mary University of London, United Kingdom (senior chair)<br/>
+Omri Abend, Hebrew University of Jerusalem, Israel<br/>
+Raffaella Bernardi, University of Trento, Italy<br/>
+Yulia Tsvetkov, Carnegie-Mellon University, USA<br/>
+Benjamin Van Durme, Johns Hopkins University, USA<br/>
+Nianwen Xue, Brandeis University, USA
+
+<h3> Area Chairs: Discourse, Dialogue, Summarization, Generation, and Multimodal NLP </h3>
+Yejin Choi, University of Washington, USA (senior chair)<br/>
+Mohit Bansal, University of North Carolina, USA<br/>
+Grzegorz ChrupaÅ‚a, Tilburg University, Netherlands<br/>
+Michel Galley, Microsoft, USA<br/>
+Haizhou Li, National University of Singapore<br/>
+Fei Liu, University of Central Florida, USA<br/>
+Karen Livescu, Toyota Technological Institute - Chicago, USA<br/>
+Meg Mitchell, Google, USA<br/>
+Rashmi Prasad, Interactions, USA<br/>
+Xiaojun Wan, Peking University, China
+
+<h3> Area Chairs: Machine Translation and Multilinguality </h3>
+Philipp Koehn, Johns Hopkins University, USA (senior chair)<br/>
+Arianna Bisazza, Leiden University, Netherlands<br/>
+Qun Liu, Dublin City University, Ireland<br/>
+Yang Liu, Tsinghua University, China<br/>
+Zhaopeng Tu, Tencent, China<br/>
+Taro Watanabe, Google, Japan
+
+<h3> Area Chairs: Machine Learning </h3>
+Xavier Carreras, Polytechnic University of Catalonia, Spain (senior chair)<br/>
+Shay Cohen, University of Edinburgh, United Kingdom<br/>
+Kevin Gimpel, Toyota Technological Institute - Chicago, USA<br/>
+Stefan Riezler, Heidelberg University, Germany<br/>
+Karl Stratos, Toyota Technological Institute, Chicago, USA<br/>
+Jun Suzuki, Tohoku University, Japan
+
 <h3>Local Organizing Committee</h3>
 Marie-Francine Moens, KU Leuven, Belgium (chair)<br/>
 Dominique De Brabanter, KU Leuven, Belgium<br/>
