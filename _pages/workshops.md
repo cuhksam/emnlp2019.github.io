@@ -37,7 +37,7 @@ The goal of the [ArgMining workshop](https://www.research.ibm.com/haifa/Workshop
 The last few years have seen a surge in abusive online behavior, with governments, social media platforms, and individuals struggling to cope with the consequences and to produce effective methods to combat it. The [ALW2 workshop](https://sites.google.com/view/alw2018) bring researchers of various disciplines together to discuss approaches to abusive language. 
 
 ### W-NUT: 4th Workshop on Noisy User-generated Text
-The WNUT workshop focuses on Natural Language Processing applied to noisy user-generated text, such as that found in social media, online reviews, crowdsourced data, web forums, clinical records and language learner essays. 
+The [WNUT workshop](https://noisy-text.github.io/2018/index.html) focuses on Natural Language Processing applied to noisy user-generated text, such as that found in social media, online reviews, crowdsourced data, web forums, clinical records and language learner essays. 
 
 ### SCAI: Search-Oriented Conversational AI
 The [SCAI workshop](http://scai.info) aims to bring together AI/Deep Learning specialists on one hand and search/IR specialists on the other hand to lay the ground for search-oriented conversational AI and establish future directions and collaborations.
