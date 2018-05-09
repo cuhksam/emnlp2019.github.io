@@ -18,7 +18,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 **April 20, 2018**. The [anonymity period](/calls/papers#important-new-submission-guidelines) for submissions begins on Sunday, April 22, 2018 at 11:59pm PDT.
 {: .notice--info} 
 
-**April 18, 2018**. ACL is soliciting volunteers to serve on the ACL Complaint Committee who will help field harassment complaints, informally mediate where appropriate, and carry out investigations when necessary. Training will be offered at forthcoming ACL events, including EMNLP 2018. Click [here](https://docs.google.com/forms/d/e/1FAIpQLSc-Gze6Tq2jTXOClSsmgopXp4Jd3V0LbM3x2ZEDCmGSHYetcA/viewform) for more details and to sign up.
+**April 18, 2018**. ACL is soliciting volunteers to serve on the ACL Complaint Committee who will help field harassment complaints, informally mediate where appropriate, and carry out investigations when necessary. Training will be offered at forthcoming ACL events, including EMNLP 2018. Click [here](https://docs.google.com/forms/d/e/1FAIpQLSc-Gze6Tq2jTXOClSsmgopXp4Jd3V0LbM3x2ZEDCmGSHYetcA/viewform) for more details and to sign up. **Deadline extended to May 14th.**
 {: .notice--info} 
 
 **April 11, 2018**. We plan to open [registration](/registration) in mid to late-June. 
