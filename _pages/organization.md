@@ -32,7 +32,8 @@ Sophia Ananiadou, University of Manchester, United Kingdom<br/>
 Hsin-Hsi Chen, National Taiwan University<br/>
 Marius Pasca, Google, USA<br/>
 Xiang Ren, University of Southern California, USA<br/>
-Alan Ritter, Ohio State University, USA
+Alan Ritter, Ohio State University, USA<br/>
+David Smith, Northeastern University, USA
 
 <h3>Area Chairs: Social Media, Computational Social Science, and Sentiment/Opinion Analysis </h3>
 Kam-Fai Wong, Chinese University of Hong Kong (senior chair)<br/>
@@ -56,6 +57,7 @@ Reut Tsarfaty, Open University of Israel
 Massimo Poesio, Queen Mary University of London, United Kingdom (senior chair)<br/>
 Omri Abend, Hebrew University of Jerusalem, Israel<br/>
 Raffaella Bernardi, University of Trento, Italy<br/>
+Michael Lewis, Facebook, USA<br/>
 Yulia Tsvetkov, Carnegie Mellon University, USA<br/>
 Benjamin Van Durme, Johns Hopkins University, USA<br/>
 Nianwen Xue, Brandeis University, USA
