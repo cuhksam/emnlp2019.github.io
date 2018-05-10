@@ -83,7 +83,7 @@ Zhaopeng Tu, Tencent, China<br/>
 Taro Watanabe, Google, Japan
 
 <h3> Area Chairs: Machine Learning </h3>
-Xavier Carreras, Polytechnic University of Catalonia, Spain (senior chair)<br/>
+Xavier Carreras, dMetrics, USA (senior chair)<br/>
 Shay Cohen, University of Edinburgh, United Kingdom<br/>
 Kevin Gimpel, Toyota Technological Institute - Chicago, USA<br/>
 Stefan Riezler, Heidelberg University, Germany<br/>
