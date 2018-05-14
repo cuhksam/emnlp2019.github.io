@@ -68,7 +68,7 @@ SQUARE, located in the vibrant Mont de Arts cultural quarter in the heart of Bru
 
 ## Social Event
 
-On Saturday, November 3rd, the EMNLP 2018 social event will take place at the [Royal Museums of Fine Arts of Belgium](https://www.fine-arts-museum.be/en)  from 6&ndash;10pm. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts &mdash; painting, sculpture and drawing &mdash; from the 15th to the 21st century.
+On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the [Royal Museums of Fine Arts of Belgium](https://www.fine-arts-museum.be/en). Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts &mdash; painting, sculpture and drawing &mdash; from the 15th to the 21st century.
 
 {% include gallery id="social" %}
 
