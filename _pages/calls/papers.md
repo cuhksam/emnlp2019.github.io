@@ -51,7 +51,7 @@ We solicit papers on all areas of interest to the SIGDAT community and aligned f
 <table>
     <tbody>
         <tr>
-            <td><a href="#important-new-submission-guidelines">Anonymity period</a> begins</td>
+            <td><a href="#important-anonymity-period">Anonymity period</a> begins</td>
             <td>Sunday</td>
             <td>April 22, 2018</td>
         </tr>
