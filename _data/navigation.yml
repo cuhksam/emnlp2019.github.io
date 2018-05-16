@@ -19,6 +19,10 @@ main:
   - title: "Workshops"
     url: "/workshops"
 
+  - title: "EMNLP 2018 Review Form"
+    url: "/reviewform"
+
+
   # - title: "PC Blog"
   #   url: https://chairs-blog.acl2017.org
 
