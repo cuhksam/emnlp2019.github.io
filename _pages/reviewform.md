@@ -98,7 +98,7 @@ Your answers to these questions will be shared with the committee only, not the 
 
 <div class="notice--success">
 <strong>Recommendation for Oral Presentation</strong><br/>
-We have fewer slots for oral presentations (talks) than for posters, and want to make sure that the most appropriate papers get selected for talks. Note that the published proceedings will make no distinction between papers presented orally and those presented as posters.<br/>
+We have fewer slots for oral presentations (talks) than for posters, and want to make sure that the most appropriate papers get selected for talks. Note that the published proceedings will make no distinction between papers presented orally and those presented as posters.<br/><br/>
 
 Would this paper make for a good talk (rather than a poster)?
 </div>
