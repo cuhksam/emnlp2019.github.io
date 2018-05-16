@@ -21,8 +21,7 @@ The review form is divided into three parts:
 2. Questions and Feedback for the Author(s)
 3. Confidential Information
 
-
-_Part 1 is visible to both the authors and to the program committee. Part 2 is also visible to both the authors and committee, but is primarily intended for authors. Part 3 is visible to the program committee only._
+Part 1 is visible to both the authors and to the program committee. Part 2 is also visible to both the authors and committee, but is primarily intended for authors. Part 3 is visible to the program committee only.
 
 ## In-Depth Review
 Your answers to these questions will be shared with both the authors and the committee. They will help the committee to decide the outcome of the paper, as well as assure the authors that you have read and understood their paper.
