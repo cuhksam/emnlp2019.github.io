@@ -65,7 +65,7 @@ Nianwen Xue, Brandeis University, USA
 <h3> Area Chairs: Discourse, Dialogue, Summarization, Generation, and Multimodal NLP </h3>
 Yejin Choi, University of Washington, USA (senior chair)<br/>
 Mohit Bansal, University of North Carolina, USA<br/>
-Grzegorz ChrupaÅ‚a, Tilburg University, Netherlands<br/>
+Grzegorz Chrupała, Tilburg University, Netherlands<br/>
 Michel Galley, Microsoft, USA<br/>
 Haizhou Li, National University of Singapore<br/>
 Fei Liu, University of Central Florida, USA<br/>
