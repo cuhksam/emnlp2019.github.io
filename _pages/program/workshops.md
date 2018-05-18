@@ -2,11 +2,9 @@
 title: Workshops &amp; Co-located Events
 layout: single
 excerpt: "EMNLP 2018 Workshops."
-permalink: /workshops/
-sidebar: false
-toc: false
-toc_label: "On This Page"
-toc_icon: "gear"
+permalink: /program/workshops/
+sidebar:
+    nav: "program"
 ---
 {% include base_path %}
 

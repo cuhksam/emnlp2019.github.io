@@ -8,19 +8,13 @@ main:
     url: /registration
 
   - title: "Program"
-    url: "/program/keynotes"
+    url: "/program/keynotes/"
 
   - title: "Participants"
     url: "/participants"
 
-  - title: "Tutorials"
-    url: "/tutorials"
-
   - title: "Organization"
     url: /organization
-
-  - title: "Workshops"
-    url: "/workshops"
 
   # - title: "PC Blog"
   #   url: https://chairs-blog.acl2017.org
@@ -33,11 +27,6 @@ pages:
     children:
       - title: "Organizing Committee"
       - url: /pages/organization.md
-
-  - title: Workshops
-    children:
-      - title: "EMNLP 2018 Workshops"
-      - url: /pages/workshops.md
 
 calls:
   - title: Call for
@@ -54,6 +43,8 @@ program:
         url: /program/keynotes/
       - title: "Tutorials"
         url: /program/tutorials/
+      - title: "Workshops"
+        url: /program/workshops/
 
 
 # participants:
