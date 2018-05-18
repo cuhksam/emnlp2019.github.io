@@ -28,7 +28,8 @@ The following speakers have graciously accepted to give keynotes at EMNLP 2018. 
 
 {% include feature_row id="johan" type="left" %}
 
+{% include feature_row id="julia" type="left" %}
+
 {% include feature_row id="gideon" type="left" %}
 
-{% include feature_row id="julia" type="left" %}
 
