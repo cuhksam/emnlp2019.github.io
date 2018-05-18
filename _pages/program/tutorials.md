@@ -2,9 +2,9 @@
 title: Tutorials
 layout: single
 excerpt: "EMNLP 2018 Tutorials."
-permalink: /tutorials/
-sidebar: false
-
+permalink: /program/tutorials/
+sidebar: 
+    nav: "program"
 ---
 {% include base_path %}
 

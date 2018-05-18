@@ -7,6 +7,9 @@ main:
   - title: "Registration"
     url: /registration
 
+  - title: "Program"
+    url: "/program/keynotes"
+
   - title: "Participants"
     url: "/participants"
 
@@ -18,10 +21,6 @@ main:
 
   - title: "Workshops"
     url: "/workshops"
-
-  - title: "Review Form"
-    url: "/reviewform"
-
 
   # - title: "PC Blog"
   #   url: https://chairs-blog.acl2017.org
@@ -40,13 +39,22 @@ pages:
       - title: "EMNLP 2018 Workshops"
       - url: /pages/workshops.md
 
-program:
+calls:
   - title: Call for
     children:
       - title: "Long & Short Papers"
         url: /calls/papers/
       - title: "System Demonstrations"
         url: /calls/demos/
+
+program:
+  - title: Program Details
+    children:
+      - title: "Keynote Speakers"
+        url: /program/keynotes/
+      - title: "Tutorials"
+        url: /program/tutorials/
+
 
 # participants:
 #   - title: "Information for Participants"
