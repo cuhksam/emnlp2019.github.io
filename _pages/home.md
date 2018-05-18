@@ -15,19 +15,16 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
-**April 20, 2018**. The [anonymity period](/calls/papers#important-new-submission-guidelines) for submissions begins on Sunday, April 22, 2018 at 11:59pm PDT.
+**May 18, 2018**. We have an amazing lineup of [Keynote Speakers](/program/keynotes/) for EMNLP 2018.
 {: .notice--info} 
 
-**April 18, 2018**. ACL is soliciting volunteers to serve on the ACL Complaint Committee who will help field harassment complaints, informally mediate where appropriate, and carry out investigations when necessary. Training will be offered at forthcoming ACL events, including EMNLP 2018. Click [here](https://docs.google.com/forms/d/e/1FAIpQLSc-Gze6Tq2jTXOClSsmgopXp4Jd3V0LbM3x2ZEDCmGSHYetcA/viewform) for more details and to sign up. **Deadline extended to May 14th.**
-{: .notice--info} 
+**April 20, 2018**. The [anonymity period](/calls/papers#important-new-submission-guidelines) for submissions begins on Sunday, April 22, 2018 at 11:59pm PDT. 
+{: .notice} 
 
 **April 11, 2018**. We plan to open [registration](/registration) in mid to late-June. 
 {: .notice} 
 
 **April 11, 2018**. The first [call for demos](/calls/demos) has been posted.
-{: .notice} 
-
-**April 2, 2018**. The [LaTeX styles files](/downloads/emnlp18-latex.zip) and [Word templates](/downloads/emnlp18-word.zip) are now available.
 {: .notice} 
 
 <h2>Welcome!</h2>
