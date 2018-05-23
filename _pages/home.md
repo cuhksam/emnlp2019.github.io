@@ -15,7 +15,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
-**May 23, 2018**. We apologize that START, our submission system, suffered an outage from 11:40pm PDT to 2am PDT. We have extended the submission deadline by 12 hours. The submissions system is open and will be **until 11:59pm PDT**.
+**May 23, 2018**. We apologize that START, our submission system, suffered an outage from 11:40pm PDT to 2am PDT. We have extended the submission deadline by 12 hours. The submissions system is open and will be **until 11:59am PDT**.
 {: .notice--info} 
 
 **May 18, 2018**. We have an amazing lineup of [Keynote Speakers](/program/keynotes/) for EMNLP 2018.
