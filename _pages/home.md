@@ -15,6 +15,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**May 23, 2018**. We apologize that START, our submission system, suffered an outage from 11:40pm PDT to 2am PDT. Submissions are now open and will be until 2018/05/23 4:59am PDT.
+{: .notice--info} 
+
 **May 18, 2018**. We have an amazing lineup of [Keynote Speakers](/program/keynotes/) for EMNLP 2018.
 {: .notice--info} 
 
@@ -22,9 +25,6 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 {: .notice} 
 
 **April 11, 2018**. We plan to open [registration](/registration) in mid to late-June. 
-{: .notice} 
-
-**April 11, 2018**. The first [call for demos](/calls/demos) has been posted.
 {: .notice} 
 
 <h2>Welcome!</h2>
