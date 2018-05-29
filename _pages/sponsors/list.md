@@ -61,7 +61,10 @@ silver:
     image_path: /assets/images/logos/nuance-logo.png
     alt: "Nuance Logo"
     title: "Nuance"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: http://www.noahlab.com.hk
+    image_path: /assets/images/logos/huawei-logo.png
+    alt: "Huawei Logo"
+    title: "Huawei Noah's Ark Lab"
   - image_path: /assets/images/logos/blank-logo.png
 sidebar: 
     nav: "sponsors"
