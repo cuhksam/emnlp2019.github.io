@@ -107,9 +107,12 @@ Although there is expected to be greater competition for oral presentations than
 
 <div class="notice">
 <strong>Recommendation for Best Paper Award</strong><br/>
-There will be separate Best Paper Awards for long and for short papers.
-### Recommendation for Best Data Set or Resource Paper Award
-The data set or resource must be publicly available in order to be eligible. It does not need to be submitted with the paper.
+There will be separate Best Paper Awards for long and for short papers. 
+</div>
+
+<div class="notice">
+<strong>Recommendation for Best Data Set or Resource Paper Award</strong><br/>
+The data set or resource must be publicly available in order for the paper to be eligible. It does not need to be submitted with the paper.
 </div>
 
 <div class="notice">
