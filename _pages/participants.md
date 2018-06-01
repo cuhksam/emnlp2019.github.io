@@ -87,7 +87,7 @@ You can book a room in the following ways:
 
 ## Visa Information
 
-Since visa applications can almost 2-4 months to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an email to [emnlp2018@kuleuven.be](mailto:emnlp2018@kuleuven.be) with the following information:
+Since visa applications can take almost 2-4 months to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an email to [emnlp2018@kuleuven.be](mailto:emnlp2018@kuleuven.be) with the following information:
 
 * Your full name as it appears in your passport
 * Your work address
