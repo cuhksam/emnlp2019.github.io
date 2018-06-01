@@ -83,6 +83,16 @@ You can book a room in the following ways:
 2.  By sending an [email request](mailto:c.viaene@brusselsbookingdesk.be) to the Brussels Booking Desk.
 3.  By calling the Brussels Booking Desk at 0032 2 552 00 05 (Monday to Friday, during office hours, CMT) and speaking with Charlotte Viaene.
  
-
 **Note that the official hotel event rates will begin to expire on Tuesday, September 18th, 2018**.
+
+## Visa Information
+
+Since visa applications can almost 2-4 months to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an email to [emnlp2018@kuleuven.be](mailto:emnlp2018@kuleuven.be) with the following information:
+
+* Your full name as it appears in your passport
+* Your work address
+* The name(s) of any accepted papers
+* The email address of the embassy that will handle your request
+
+
 
