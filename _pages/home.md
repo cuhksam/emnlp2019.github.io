@@ -22,10 +22,10 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 {: .notice--info} 
 
 **May 25, 2018**. EMNLP 2018 received a record-breaking 2,137 valid submissions &mdash; a 46% increase over EMNLP 2017. Thanks to everyone for submitting their work!
-{: .notice--info} 
+{: .notice} 
 
 **May 18, 2018**. We have an amazing lineup of [Keynote Speakers](/program/keynotes/) for EMNLP 2018.
-{: .notice--info} 
+{: .notice} 
 
 **April 11, 2018**. We plan to open [registration](/registration) in mid to late-June. 
 {: .notice} 
