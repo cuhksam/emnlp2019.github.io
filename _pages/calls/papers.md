@@ -62,21 +62,21 @@ We solicit papers on all areas of interest to the SIGDAT community and aligned f
         </tr>
         <tr>
             <td>Author response period starts</td>
-            <td>Friday</td>
-            <td>July 6, 2018</td>
+            <td>Monday</td>
+            <td>July <strike>6</strike>&nbsp;9, 2018</td>
         </tr>
         <tr>
-            <td>Author rebuttals due</td>
-            <td>Thursday</td>
-            <td>July 12, 2018</td>
+            <td>Author responses due</td>
+            <td>Friday</td>
+            <td>July <strike>12</strike>&nbsp;13, 2018</td>
         </tr>
         <tr>
             <td>Notification of acceptance</td>
-            <td>Monday</td>
-            <td>August 6, 2018</td>
+            <td>Friday</td>
+            <td>August <strike>6</strike>&nbsp;10, 2018</td>
         </tr>
         <tr>
-          <td>Camera-ready due</td>
+          <td>Final versions of papers due</td>
           <td>Monday</td>
           <td>August 27, 2018</td>
         </tr>

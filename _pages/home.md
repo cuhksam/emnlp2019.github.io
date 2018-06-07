@@ -15,6 +15,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**June 7, 2018**. We have updated the [schedule](#dates) to provide a few more days for authors to submit their responses and the final versions of papers.
+{: .notice--info} 
+
 **June 1, 2018**. Information about visas for attendees is now [available](/participants#visa-information). Since applications can take a while, please apply as soon as possible.
 {: .notice--info} 
 
@@ -31,7 +34,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 SIGDAT, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, invites you to participate in the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP) in Brussels, Belgium. EMNLP 2018 will be held at the [Square Meeting Center](http://square-brussels.com) in Brussels from October 31st through November 4th, 2018.
 
-<h2>Important Dates</h2>
+<h2 id="dates">Important Dates</h2>
 
 <table style="width: 60%">
     <tbody>
@@ -52,21 +55,21 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
         </tr>
         <tr>
             <td>Author response period starts</td>
-            <td>Friday</td>
-            <td>July 6, 2018</td>
+            <td>Monday</td>
+            <td>July <strike>6</strike>&nbsp;9, 2018</td>
         </tr>
         <tr>
-            <td>Author rebuttals due</td>
-            <td>Thursday</td>
-            <td>July 12, 2018</td>
+            <td>Author responses due</td>
+            <td>Friday</td>
+            <td>July <strike>12</strike>&nbsp;13, 2018</td>
         </tr>
         <tr>
             <td>Notification of acceptance</td>
-            <td>Monday</td>
-            <td>August 6, 2018</td>
+            <td>Friday</td>
+            <td>August <strike>6</strike>&nbsp;10, 2018</td>
         </tr>
         <tr>
-          <td>Camera-ready due</td>
+          <td>Final versions of papers due</td>
           <td>Monday</td>
           <td>August 27, 2018</td>
         </tr>
