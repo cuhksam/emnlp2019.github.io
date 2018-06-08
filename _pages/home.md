@@ -15,7 +15,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
-**June 7, 2018**. We have updated the [schedule](#dates) to provide a few more days for authors to submit their responses and the final versions of papers.
+**June 7, 2018**. We have adjusted the deadlines for the author responses and the final versions of papers in the [schedule](#dates).
 {: .notice--info} 
 
 **June 1, 2018**. Information about visas for attendees is now [available](/participants#visa-information). Since applications can take a while, please apply as soon as possible.
