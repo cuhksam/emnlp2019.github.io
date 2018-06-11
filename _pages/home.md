@@ -36,6 +36,8 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
 
 <h2 id="dates">Important Dates</h2>
 
+<h5>Last updated: June 7, 2018.</h5>
+
 <table style="width: 60%">
     <tbody>
         <tr>
@@ -56,17 +58,17 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
         <tr>
             <td>Author response period starts</td>
             <td>Monday</td>
-            <td>July <strike>6</strike>&nbsp;9, 2018</td>
+            <td>July 9, 2018</td>
         </tr>
         <tr>
             <td>Author responses due</td>
             <td>Friday</td>
-            <td>July <strike>12</strike>&nbsp;13, 2018</td>
+            <td>July 13, 2018</td>
         </tr>
         <tr>
             <td>Notification of acceptance</td>
             <td>Friday</td>
-            <td>August <strike>6</strike>&nbsp;10, 2018</td>
+            <td>August 10, 2018</td>
         </tr>
         <tr>
           <td>Final versions of papers due</td>

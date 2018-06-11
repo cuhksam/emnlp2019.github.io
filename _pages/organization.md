@@ -72,7 +72,8 @@ Fei Liu, University of Central Florida, USA<br/>
 Karen Livescu, Toyota Technological Institute - Chicago, USA<br/>
 Meg Mitchell, Google, USA<br/>
 Rashmi Prasad, Interactions, USA<br/>
-Xiaojun Wan, Peking University, China
+Xiaojun Wan, Peking University, China<br/>
+Zhou Yu, University of California at Davis, USA
 
 <h3> Area Chairs: Machine Translation and Multilinguality </h3>
 Philipp Koehn, Johns Hopkins University, USA (senior chair)<br/>
