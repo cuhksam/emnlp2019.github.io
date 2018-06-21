@@ -15,19 +15,16 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
-**June 7, 2018**. We have adjusted the deadlines for the author responses and the final versions of papers in the [schedule](#dates).
+**June 21, 2018**. We plan to open [registration](/registration) in early August. 
 {: .notice--info} 
+
+**June 7, 2018**. We have adjusted the deadlines for the author responses and the final versions of papers in the [schedule](#dates).
+{: .notice} 
 
 **June 1, 2018**. Information about visas for attendees is now [available](/participants#visa-information). Since applications can take a while, please apply as soon as possible.
-{: .notice--info} 
-
-**May 25, 2018**. EMNLP 2018 received a record-breaking 2,137 valid submissions &mdash; a 46% increase over EMNLP 2017. Thanks to everyone for submitting their work!
 {: .notice} 
 
 **May 18, 2018**. We have an amazing lineup of [Keynote Speakers](/program/keynotes/) for EMNLP 2018.
-{: .notice} 
-
-**April 11, 2018**. We plan to open [registration](/registration) in mid to late-June. 
 {: .notice} 
 
 <h2>Welcome!</h2>

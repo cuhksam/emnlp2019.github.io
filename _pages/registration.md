@@ -10,7 +10,7 @@ sidebar: false
 
 <!-- {% include toc icon="gears" %} -->
 
-We plan to open conference registration in mid to late-June.  
+We plan to open conference registration in early August.  
 
 ## Estimated Fees
 
