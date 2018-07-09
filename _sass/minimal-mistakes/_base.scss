@@ -2,13 +2,6 @@
    BASE ELEMENTS
    ========================================================================== */
 
-$susy: (
-  columns: susy-repeat(20),
-  gutters: 0.25,
-  spread: 'narrow',
-  container-spread: 'narrow',
-);
-
 html {
   /* sticky footer fix */
   position: relative;

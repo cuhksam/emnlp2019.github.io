@@ -60,7 +60,8 @@ a.session-deselector {
 }
 
 div#generatePDFForm {
-    width: span(20);
+    float: left;
+    width: percentage(20/20);
     padding: 0.5em;
     font-family: $serif;
     text-align: center;
@@ -90,7 +91,8 @@ div#generatePDFForm {
 }
 
 div.day {
-    width: span(20);
+    float: left;
+    width: percentage(20/20);
     padding: 0.5em;
     font-family: $serif;
     font-weight: bold;
@@ -122,103 +124,107 @@ div.session {
     border: 1px solid $light-gray;
 
     &.session-tutorials, &.session-plenary, &.session-posters {
-        width: span(20);
+        width: percentage(20/20);
     }
 
     &.session-papers-outstanding1 {
-        width: span(20 of 20);
+        float: left;
+        width: percentage(20/20);
 
         @include breakpoint($medium) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($medium-wide) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($large) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($x-large) {
-            width: span(10 wide);
+            width: percentage(10/20);
         }
 
         @include breakpoint($xx-large) {
-            width: span(10 wide);
+            width: percentage(10/20);
         }
     }
 
     &.session-papers-outstanding2 {
-        width: span(20 of 20);
+        float: right;
+        width: percentage(20/20);
 
         @include breakpoint($medium) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($medium-wide) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($large) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($x-large) {
-            width: span(10) last;
+            width: percentage(10/20);
         }
 
         @include breakpoint($xx-large) {
-            width: span(10) last;
+            width: percentage(10/20);
         }
     }
 
 
     &.session-papers1, &.session-papers2, &.session-papers3, &.session-papers4 {
-        width: span(20 of 20);
+        float: left;
+        width: percentage(20/20);
 
         @include breakpoint($medium) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($medium-wide) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($large) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($x-large) {
-            width: span(4 narrow);
+            width: percentage(4/20);
         }
 
         @include breakpoint($xx-large) {
-            width: span(4 narrow);
+            width: percentage(4/20);
         }
     }
 
     &.session-papers5 {
-        width: span(20 of 20);
+        float: right;
+        width: percentage(20/20);
 
         @include breakpoint($medium) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($medium-wide) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($large) {
-            width: span(20 of 20);
+            width: percentage(20/20);
         }
 
         @include breakpoint($x-large) {
-            width: span(4);
+            width: percentage(4/20);
         }
 
         @include breakpoint($xx-large) {
-            width: span(4);
+            width: percentage(4/20);
         }
     }
 
