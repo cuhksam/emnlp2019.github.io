@@ -96,15 +96,21 @@
     font-size: $type-size-7;
   }
 
+  /* extra small button */
+  &--x-small {
+    font-size: $type-size-8;
+  }
+
+
   /* button for acl conference program location names */
 
   &--location {
 
     padding: 0.25em 0.35em;
-    font-size: $type-size-8;
+    font-size: $type-size-9;
 
     @include breakpoint($medium) {
-          font-size: $type-size-7;
+          font-size: $type-size-9;
     }
   }
 

@@ -18,13 +18,14 @@ div#generatePDF {
 a.session-selector {
     color: #fff;
     background-color: $success-color;
-    font-size: $type-size-8;
+    font-size: $type-size-10;
     padding: 0.35em 0.45em;
     font-family: $sans-serif;
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
     @include breakpoint($medium) {
-      font-size: $type-size-7;
+      font-size: $type-size-9;
     }
     &.disabled {
         background-color: $success-color;
@@ -40,13 +41,14 @@ a.session-selector {
 a.session-deselector {
     color: #fff;
     background-color: $danger-color;
-    font-size: $type-size-8;
+    font-size: $type-size-10;
     padding: 0.35em 0.45em;
     font-family: $sans-serif;
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
     @include breakpoint($medium) {
-      font-size: $type-size-7;
+      font-size: $type-size-9;
     }
     &.disabled {
         background-color: $danger-color;
@@ -61,7 +63,7 @@ a.session-deselector {
 
 div#generatePDFForm {
     float: left;
-    width: percentage(20/20);
+    width: percentage(24/24);
     padding: 0.5em;
     font-family: $serif;
     text-align: center;
@@ -92,7 +94,7 @@ div#generatePDFForm {
 
 div.day {
     float: left;
-    width: percentage(20/20);
+    width: percentage(24/24);
     padding: 0.5em;
     font-family: $serif;
     font-weight: bold;
@@ -120,116 +122,116 @@ div#testingInstructions {
 div.session {
     display: inline-block;
     padding: 0.5em;
-    padding-left: 1em;
+    // padding-left: 1em;
     border: 1px solid $light-gray;
 
     &.session-tutorials, &.session-plenary, &.session-posters {
-        width: percentage(20/20);
+        width: percentage(24/24);
     }
 
     &.session-papers-outstanding1 {
         float: left;
-        width: percentage(20/20);
+        width: percentage(24/24);
 
         @include breakpoint($medium) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($medium-wide) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($large) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($x-large) {
-            width: percentage(10/20);
+            width: percentage(12/24);
         }
 
         @include breakpoint($xx-large) {
-            width: percentage(10/20);
+            width: percentage(12/24);
         }
     }
 
     &.session-papers-outstanding2 {
         float: right;
-        width: percentage(20/20);
+        width: percentage(24/24);
 
         @include breakpoint($medium) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($medium-wide) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($large) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($x-large) {
-            width: percentage(10/20);
+            width: percentage(12/24);
         }
 
         @include breakpoint($xx-large) {
-            width: percentage(10/20);
+            width: percentage(12/24);
         }
     }
 
 
-    &.session-papers1, &.session-papers2, &.session-papers3, &.session-papers4 {
+    &.session-papers1, &.session-papers2, &.session-papers3, &.session-papers4, &.session-papers5 {
         float: left;
-        width: percentage(20/20);
+        width: percentage(24/24);
 
         @include breakpoint($medium) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($medium-wide) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($large) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($x-large) {
-            width: percentage(4/20);
+            width: percentage(4/24);
         }
 
         @include breakpoint($xx-large) {
-            width: percentage(4/20);
+            width: percentage(4/24);
         }
     }
 
-    &.session-papers5 {
+    &.session-papers6 {
         float: right;
-        width: percentage(20/20);
+        width: percentage(24/24);
 
         @include breakpoint($medium) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($medium-wide) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($large) {
-            width: percentage(20/20);
+            width: percentage(24/24);
         }
 
         @include breakpoint($x-large) {
-            width: percentage(4/20);
+            width: percentage(4/24);
         }
 
         @include breakpoint($xx-large) {
-            width: percentage(4/20);
+            width: percentage(4/24);
         }
     }
 
     .session-title {
-        font-size: $type-size-5;
+        font-size: $type-size-6;
         color: $text-color;
         text-decoration: none;
     }
@@ -238,7 +240,7 @@ div.session {
         margin-right: 5px;
         float: left;
 
-        font-size: $type-size-6;
+        font-size: $type-size-7;
         font-style: italic;
     }
 
@@ -257,7 +259,6 @@ div.session {
         margin-left: auto;
         margin-right: auto;
     }
-
 
     .session-abstract {
         font-size: $type-size-6;
@@ -313,12 +314,13 @@ div.session {
     }
 
     .session-people {
-        font-size: $type-size-5;
+        font-size: $type-size-6;
     }
 
     tr#tutorial, tr#poster {
         cursor: pointer;
         background-color: #fff;
+        font-size: $type-size-6;
         &.selected {
             background-color: $lighter-gray2;
         }
@@ -328,6 +330,7 @@ div.session {
     tr#paper {
         cursor: pointer;
         background-color: #fff;
+        font-size: $type-size-6;
         &.selected {
             background-color: $lighter-gray2;
         }
@@ -349,7 +352,7 @@ div.session {
     }
 
     td#paper-time {
-        font-size: $type-size-4;
+        font-size: $type-size-5;
     }
 
     #expander {
