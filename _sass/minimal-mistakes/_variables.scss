@@ -52,6 +52,7 @@ $dark-gray                    : mix(#000, $gray, 40%) !default;
 $darker-gray                  : mix(#000, $gray, 60%) !default;
 $light-gray                   : mix(#fff, $gray, 50%) !default;
 $lighter-gray                 : mix(#fff, $gray, 90%) !default;
+$lighter-gray2                : mix(#fff, $gray, 70%) !default;
 
 $background-color             : #fff !default;
 $code-background-color        : #fafafa !default;
@@ -114,7 +115,7 @@ $medium                       : 768px !default;
 $medium-wide                  : 900px !default;
 $large                        : 1024px !default;
 $x-large                      : 1280px !default;
-
+$xx-large                     : 1900px !default;
 
 /*
    Grid
@@ -123,7 +124,6 @@ $x-large                      : 1280px !default;
 $right-sidebar-width-narrow   : 200px !default;
 $right-sidebar-width          : 300px !default;
 $right-sidebar-width-wide     : 400px !default;
-
 
 /*
    Other
@@ -135,3 +135,4 @@ $navicon-width                : 1.5rem !default;
 $navicon-height               : 0.25rem !default;
 $global-transition            : all 0.2s ease-in-out !default;
 $intro-transition             : intro 0.3s both !default;
+
