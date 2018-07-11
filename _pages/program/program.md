@@ -958,6 +958,7 @@ script: |
             <span class="session-time">10:30 AM &ndash; 12:00 PM</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Salons B/C</span>
+            <br/>
             <div class="paper-session-details">
                 <hr class="detail-separator"/>
                 <a href="#" class="session-selector" id="session-1a-selector">
@@ -1005,6 +1006,7 @@ script: |
             <span class="session-time">10:30 AM &ndash; 12:00 PM</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Salons E/F</span>
+            <br/>
             <div class="paper-session-details">
                 <hr class="detail-separator"/>
                 <a href="#" class="session-selector" id="session-1b-selector">
@@ -1052,6 +1054,7 @@ script: |
             <span class="session-time">10:30 AM &ndash; 12:00 PM</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Salon D</span>
+            <br/>
             <div class="paper-session-details">
                 <hr class="detail-separator"/>
                 <a href="#" class="session-selector" id="session-1c-selector">
@@ -1099,6 +1102,7 @@ script: |
             <span class="session-time">10:30 AM &ndash; 12:00 PM</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Salon 1</span>
+            <br/>
             <div class="paper-session-details">
                 <hr class="detail-separator"/>
                 <a href="#" class="session-selector" id="session-1d-selector">
@@ -1146,6 +1150,7 @@ script: |
             <span class="session-time">10:30 AM &ndash; 12:00 PM</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
+            <br/>
             <div class="paper-session-details">
                 <hr class="detail-separator"/>
                 <a href="#" class="session-selector" id="session-1e-selector">
@@ -1193,6 +1198,7 @@ script: |
             <span class="session-time">10:30 AM &ndash; 12:00 PM</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
+            <br/>
             <div class="paper-session-details">
                 <hr class="detail-separator"/>
                 <a href="#" class="session-selector" id="session-1e-selector">
