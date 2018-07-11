@@ -14,8 +14,9 @@ script: |
         chosenPostersHash = {};
         plenarySessionHash = {};
         includePlenaryInSchedule = true;
+        helpShown = false;
 
-        var instructions = "<div style='font-size: 12px; text-align:left;'><ul><li>Click/Tap on a session title to toggle it. </li> <li>Click/Tap on a tutorial/paper/poster to toggle its selection. </li> <li>You can select more than one paper for a time slot. </li> <li>Tap/Click 'Generate PDF' at the bottom to generate the PDF for your customized schedule. </li> <li>To expand parallel sessions simultaneously, hold Shift and tap/click on one of them. </li> <li>On non-mobile devices, hovering on a paper for a time slot highlights it in yellow and its conflicting papers in red. </li> <li>Hovering on papers selected for a time slot (or their conflicts) highlights them in green. </li> <li>On Safari browsers, use Cmd-P to print and 'File > Save as ...' to download the schedule. </li> <li>The generated PDF might have some blank rows at the bottom as padding to avoid rows being split across pages.</li> <li>While saving the generated PDF on mobile devices, its name cannot be changed.</li> </ul></div>";
+        var instructions = "<div style='font-size: 12px; text-align:left;'><ul><li>Click/Tap on a the '+' button or the title of a session to toggle it. </li> <li>Click/Tap on a tutorial/paper/poster to toggle its selection. </li> <li>You can select more than one paper for a time slot. </li> <li>Tap/Click 'Generate PDF' at the bottom to generate the PDF for your customized schedule. </li> <li>To expand parallel sessions simultaneously, hold Shift and tap/click on one of them. </li> <li>On non-mobile devices, hovering on a paper for a time slot highlights it in yellow and its conflicting papers in red. </li> <li>Hovering on papers selected for a time slot (or their conflicts) highlights them in green. </li> <li>On Safari browsers, use Cmd-P to print and 'File > Save as ...' to download the schedule. </li> <li>The generated PDF might have some blank rows at the bottom as padding to avoid rows being split across pages.</li> <li>While saving the generated PDF on mobile devices, its name cannot be changed.</li> </ul></div>";
 
         function padTime(str) {
             return String('0' + str).slice(-2);
@@ -466,15 +467,19 @@ script: |
 
             /* show the help window whenever "?" is pressed */
             $(document).keypress(function(event) {
-                if (doWhichKey(event) == 63) {
-                    alertify.alert(instructions);
+                if (doWhichKey(event) == 63 && !helpShown) {
+                    helpShown = true;
+                    alertify.alert(instructions, function(event) { helpShown = false;});
                 }
             });
 
             /* show the help window when the help button is clicked */
             $('a#help-button').on('click', function (event) {
-                event.preventDefault();
-                alertify.alert(instructions);
+                if (!helpShown) {
+                    event.preventDefault();
+                    helpShown = true;
+                    alertify.alert(instructions, function(event) { helpShown = false;});
+                }
             });
 
             $('span.session-location, span.inline-location').on('click', function(event) {
