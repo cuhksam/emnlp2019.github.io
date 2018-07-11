@@ -464,14 +464,17 @@ script: |
             /* the include plenary checkbox is checked on startup */
             $('input#includePlenaryCheckBox').prop('checked', true);
 
-            /* hide the testing notes */
-            $('div#testingNotes').hide();
-
             /* show the help window whenever "?" is pressed */
             $(document).keypress(function(event) {
                 if (doWhichKey(event) == 63) {
                     alertify.alert(instructions);
                 }
+            });
+
+            /* show the help window when the help button is clicked */
+            $('a#help-button').on('click', function (event) {
+                event.preventDefault();
+                alertify.alert(instructions);
             });
 
             $('span.session-location, span.inline-location').on('click', function(event) {
@@ -854,6 +857,10 @@ script: |
 <div id="testingInstructions" style="font-size: smaller;">
         <p>On this page, you can choose the sessions (and individual papers/posters) of your choice <em>and</em> generate a PDF of your customized schedule! This page should work on modern browsers on all operating systems. On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. For the best experience, use a non-mobile device. For help, simply type "?" while on the page.</p>
 </div>
+
+<p class="text-center">
+    <a href="#" id="help-button" class="btn btn--small btn--info">Help</a>
+</p>
 
 <div class="schedule">
     <div class="day" id="first-day">Sunday, July 30</div>
