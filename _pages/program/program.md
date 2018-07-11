@@ -15,6 +15,8 @@ script: |
         plenarySessionHash = {};
         includePlenaryInSchedule = true;
 
+        var instructions = "<div style='font-size: 12px; text-align:left;'><ul><li>Click/Tap on a session title to toggle it. </li> <li>Click/Tap on a tutorial/paper/poster to toggle its selection. </li> <li>You can select more than one paper for a time slot. </li> <li>Tap/Click 'Generate PDF' at the bottom to generate the PDF for your customized schedule. </li> <li>To expand parallel sessions simultaneously, hold Shift and tap/click on one of them. </li> <li>On non-mobile devices, hovering on a paper for a time slot highlights it in yellow and its conflicting papers in red. </li> <li>Hovering on papers selected for a time slot (or their conflicts) highlights them in green. </li> <li>On Safari browsers, use Cmd-P to print and 'File > Save as ...' to download the schedule. </li> <li>The generated PDF might have some blank rows at the bottom as padding to avoid rows being split across pages.</li> <li>While saving the generated PDF on mobile devices, its name cannot be changed.</li> </ul></div>";
+
         function padTime(str) {
             return String('0' + str).slice(-2);
         }
@@ -177,6 +179,14 @@ script: |
                     var otherPaperRange =  paperInfoHash[$(this).attr('paper-id')].slice(0, 2);
                     return isOverlapping(thisPaperRange, otherPaperRange) 
                 });
+        }
+
+        function doWhichKey(e) {
+            e = e || window.event;
+            var charCode = e.keyCode || e.which;
+            //Line below not needed, but you can read the key with it
+            //var charStr = String.fromCharCode(charCode);
+            return charCode;
         }
 
         function getConflicts2(paperObject) {
@@ -456,6 +466,13 @@ script: |
 
             /* hide the testing notes */
             $('div#testingNotes').hide();
+
+            /* show the help window whenever "?" is pressed */
+            $(document).keypress(function(event) {
+                if (doWhichKey(event) == 63) {
+                    alertify.alert(instructions);
+                }
+            });
 
             $('span.session-location, span.inline-location').on('click', function(event) {
                 event.stopPropagation();
@@ -825,8 +842,7 @@ script: |
     </script>
 ---
 {% include base_path %}
-
-<link rel="stylesheet" href="/assets/css/alertify.css" />
+<link rel="stylesheet" href="assets/css/alertify.css" id="alertifyCSS">
 
 <table id="hidden-program-table">
     <thead>
@@ -836,35 +852,7 @@ script: |
 </table>
 
 <div id="testingInstructions" style="font-size: smaller;">
-        <p>Welcome! For the first time, the program page will allow conference attendees to choose the sessions (and individual papers and posters) they want to attend <em>and</em> generate a PDF of their customized schedule! </p>
-
-        <p>This page should work on modern browsers on all operating systems (Internet Explorer <= v10 will likely not work). On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. Please read the instructions below. For the best experience, use a non-mobile device.</p>
-
-    <strong>Instructions</strong>:
-    <ul>
-        <li>Click/Tap on the title of a session to expand and collapse the session. </li>
-        <li>Click/Tap on a tutorial/paper/poster to select it, click/tap again to unselect it.</li>
-        <li>You can select more than one paper for a time slot.</li>
-        <li>Click on the <em>Generate PDF</em> button at the bottom of the page to generate the PDF for your selected talks.</li>
-        <li>To expand all parallel sessions at the same time, hold down the Shift key and click on any of the sessions. </li>
-        <li>Shift-clicking is contextual, i.e., if there are any collapsed sessions, it will expand all of them. If all of the sessions are expanded, Shift-clicking will collapse all of them.</li>
-        <li>Clicking/Tapping on any of the location buttons will show the conference floor plan.</li>
-        <li>When you hover on a paper for a time slot, it is highlighted in yellow and its conflicting papers are highlighted in red for an easier comparison. This only works on non-mobile devices where parallel sessions are displayed adjacent to each other.</li>
-        <li>If papers have already been selected for a time slot, hovering on them or on papers that conflict with them highlights them in green.</li>
-        <li>Since parallel sessions can have different combinations of long and short papers, the conflicting papers will depend on the paper you hover on.</li>
-        <li>If you are using Safari, you will need to use <em>Cmd-P</em> to print and <em>File > Save as ... </em>to download the schedule. Chrome and Firefox have buttons for printing and saving as part of their PDF rendering UI.</li>
-        <li>The generated PDF might have some blank rows at the bottom as padding since the PDF generation has been programmed to avoid rows being split across pages.</li>
-        <li>While saving the generated PDF on mobile devices, its name cannot be changed.</li>
-        <li><strong>If you notice any errors, encounter any problems, or have any suggestions, please submit them <a href="https://github.com/acl2017/acl2017.github.io/issues/new" target="_blank">here</a>. You will need a GitHub account.</strong></li>
-    </ul>
-    
-    <strong>Notes</strong>:
-    <ul>
-        <li>If you just want a list of all accepted papers without any timing information, please refer to <a href="https://chairs-blog.acl2017.org/2017/04/05/accepted-papers-and-demonstrations/">this page</a>.</li>
-        <li>This page does not show any paper/poster abstracts. To see the abstracts, please refer to <a href="https://chairs-blog.acl2017.org/2017/06/04/preliminary-paper-details/">this page</a>.</li>
-        <li>This page also does not show workshops or co-located events, which can be found <a href="/workshops">here</a>.</li>
-        <li>The full set of ACL 2017 proceedings can be found <a href="http://www.aclweb.org/anthology/P/P17/">here</a>.</li>
-    </ul>
+        <p>On this page, you can choose the sessions (and individual papers/posters) of your choice <em>and</em> generate a PDF of your customized schedule! This page should work on modern browsers on all operating systems. On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. For the best experience, use a non-mobile device. For help, simply type "?" while on the page.</p>
 </div>
 
 <div class="schedule">
@@ -965,7 +953,7 @@ script: |
                 <a href="#" class="session-deselector" id="session-1a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td colspan="2">Chair: Zornitsa Kozareva</td>
+                        <td class="session-chair" colspan="2">Chair: Zornitsa Kozareva</td>
                     </tr>
                     <tr id="paper" paper-id="1">
                         <td id="paper-time">10:30-10:48</td>
@@ -1012,7 +1000,7 @@ script: |
                 <a href="#" class="session-deselector" id="session-1b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td colspan="2">Chair: Preslav Nakov</td>
+                        <td class="session-chair" colspan="2">Chair: Preslav Nakov</td>
                     </tr>
                     <tr id="paper" paper-id="6">
                         <td id="paper-time">10:30-10:48</td>
@@ -1059,7 +1047,7 @@ script: |
                 <a href="#" class="session-deselector" id="session-1c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td colspan="2">Chair: Yangfeng Ji</td>
+                        <td class="session-chair" colspan="2">Chair: Yangfeng Ji</td>
                     </tr>
                     <tr id="paper" paper-id="11">
                         <td id="paper-time">10:30-10:48</td>
@@ -1106,7 +1094,7 @@ script: |
                 <a href="#" class="session-deselector" id="session-1d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td colspan="2">Chair: Haitao Mi</td>
+                        <td class="session-chair" colspan="2">Chair: Haitao Mi</td>
                     </tr>
                     <tr id="paper" paper-id="16">
                         <td id="paper-time">10:30-10:48</td>
@@ -1153,7 +1141,7 @@ script: |
                 <a href="#" class="session-deselector" id="session-1e-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td colspan="2">Chair: Alexander Rush</td>
+                        <td class="session-chair" colspan="2">Chair: Alexander Rush</td>
                     </tr>
                     <tr id="paper" paper-id="21">
                         <td id="paper-time">10:30-10:48</td>
@@ -1200,7 +1188,7 @@ script: |
                 <a href="#" class="session-deselector" id="session-1e-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td colspan="2">Chair: Alexander Rush</td>
+                        <td class="session-chair" colspan="2">Chair: Alexander Rush</td>
                     </tr>
                     <tr id="paper" paper-id="26">
                         <td id="paper-time">10:30-10:48</td>
