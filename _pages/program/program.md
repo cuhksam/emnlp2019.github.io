@@ -126,7 +126,7 @@ script: |
                     }
                 },
             });
-            doc.output('dataurlnewwindow');
+            doc.output('save');
         }
 
         function getTutorialInfoFromTime(tutorialTimeObj) {
@@ -4001,7 +4001,7 @@ script: |
         <div id="formContainer">
             <input type="checkbox" id="includePlenaryCheckBox" value="second_checkbox"/>&nbsp;&nbsp;<span id="checkBoxLabel">Include plenary sessions in schedule</span>
             <br/>
-            <a href="#" id="generatePDFButton" class="btn btn--info btn--large">Generate PDF</a>
+            <a href="#" id="generatePDFButton" class="btn btn--info btn--large">Download PDF</a>
         </div>
     </div>
 </div>
