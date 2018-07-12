@@ -873,7 +873,7 @@ script: |
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
         <span class="session-time">9:00 AM &ndash; 12:30 PM</span><br/>
         <div class="tutorial-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
@@ -901,7 +901,7 @@ script: |
         <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
         <span class="session-time">2:00 PM &ndash; 5:30 PM</span><br/>
         <div class="tutorial-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
@@ -926,7 +926,7 @@ script: |
         <span class="session-time">6:00 PM &ndash; 9:00 PM</span><br/>
         <span class="session-location btn btn--info btn--location">Bayshore Grand Ballroom</span>
         <div class="paper-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <div class="session-abstract">
                 <p>Catch up with your colleagues at the Welcome Reception!  It will be held immediately following the tutorials at the Westin Bayshore Hotel, Sunday, July 30th, in the Bayshore Grand Ballroom (the conference venue).  Refreshments and a light dinner will be provided and a cash bar will be available.</p>
             </div>
@@ -943,7 +943,7 @@ script: |
         <span class="session-time">9:00 AM &ndash; 10:00 AM</span><br/>
         <span class="session-location btn btn--info btn--location">Bayshore Grande Ballroom</span>
         <div class="paper-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <div class="session-abstract">
                 <p>Computational linguistics is a booming field and our association is flourishing with it. As our conferences grow larger and the pace of publishing quickens, there is a constant need to reflect on strategies that will allow us to prosper and grow even stronger in the future. In my presidential address, I will focus on three topics that I think require our attention. The first is equity and diversity, where the ACL executive committee has recently launched a number of actions intended to improve the inclusiveness and diversity of our community, but where there is clearly a need to do more. The second topic is publishing and reviewing, where the landscape is changing very quickly and our current system is starting to strain under the sheer volume of submissions. In particular, there has been an active discussion recently about the pros and cons of preprint publishing and the way it interacts with our standard model for double-blind reviewing. On this topic, I will present the results of a large-scale survey organized by the ACL executive committee to learn more about current practices and views in our community, a survey that will be followed up by a panel and discussion at the ACL business meeting later in the week. The third and final topic is good science and what we can do to promote scientific methodology and research ethics, which is becoming increasingly important in a world where the role of science in society cannot be taken for granted.</p>
             </div>
@@ -960,7 +960,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons B/C</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-1a-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-1a-deselector">Remove All</a>
@@ -1008,7 +1008,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons E/F</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-1b-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-1b-deselector">Remove All</a>
@@ -1056,7 +1056,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon D</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-1c-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-1c-deselector">Remove All</a>
@@ -1104,7 +1104,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon 1</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-1d-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-1d-deselector">Remove All</a>
@@ -1152,7 +1152,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-1e-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-1e-deselector">Remove All</a>
@@ -1200,7 +1200,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-1f-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-1f-deselector">Remove All</a>
@@ -1252,7 +1252,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons B/C</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-2a-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-2a-deselector">Remove All</a>
@@ -1300,7 +1300,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons E/F</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-2b-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-2b-deselector">Remove All</a>
@@ -1348,7 +1348,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon D</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-2c-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-2c-deselector">Remove All</a>
@@ -1396,7 +1396,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon 1</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-2d-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-2d-deselector">Remove All</a>
@@ -1444,7 +1444,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-2e-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-2e-deselector">Remove All</a>
@@ -1492,7 +1492,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-2f-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-2f-deselector">Remove All</a>
@@ -1544,7 +1544,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons B/C</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-3a-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-3a-deselector">Remove All</a>
@@ -1592,7 +1592,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons E/F</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-3b-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-3b-deselector">Remove All</a>
@@ -1640,7 +1640,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon D</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-3c-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-3c-deselector">Remove All</a>
@@ -1688,7 +1688,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon 1</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-3d-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-3d-deselector">Remove All</a>
@@ -1736,7 +1736,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-3e-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-3e-deselector">Remove All</a>
@@ -1784,7 +1784,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-3f-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-3f-deselector">Remove All</a>
@@ -1831,7 +1831,7 @@ script: |
         <br/>
         <span class="session-location btn btn--info btn--location">Bayshore Grand Ballroom &amp; Foyer/Stanley Park Foyer/Cypress</span>
         <div class="poster-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <h4 class="poster-type">Long Papers</h4>
             <table class="poster-table">
                 <tr id="poster">
@@ -2409,7 +2409,7 @@ script: |
         <span class="session-time">9:00 AM &ndash; 10:10 AM</span><br/>
         <span class="session-location btn btn--info btn--location">Bayshore Grand Ballroom</span>
         <div class="paper-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <div class="session-abstract">
                 <p>The computational linguistics and natural language processing community is experiencing an episode of deep fascination with representation learning.  Like many other presenters at this conference, I will describe new ways to use representation learning in models of natural language.  Noting that a data-driven model always assumes a theory (not necessarily a good one), I will argue for the benefits of language-appropriate inductive bias for representation-learning-infused models of language.  Such bias often comes in the form of assumptions baked into a model, constraints on an inference algorithm, or linguistic analysis applied to data.  Indeed, many decades of research in linguistics (including computational linguistics) put our community in a strong position to identify promising inductive biases.  The new models, in turn, may allow us to explore previously unavailable forms of bias, and to produce findings of interest to linguistics.  I will focus on new models of documents and of sentential semantic structures, and I will emphasize abstract, reusable components and their assumptions rather than applications.</p>
             </div>
@@ -2426,7 +2426,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons B/C</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-4a-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-4a-deselector">Remove All</a>
@@ -2474,7 +2474,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons E/F</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-4b-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-4b-deselector">Remove All</a>
@@ -2522,7 +2522,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon D</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-4c-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-4c-deselector">Remove All</a>
@@ -2570,7 +2570,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon 1</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-4d-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-4d-deselector">Remove All</a>
@@ -2618,7 +2618,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-4e-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-4e-deselector">Remove All</a>
@@ -2666,7 +2666,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-4f-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-4f-deselector">Remove All</a>
@@ -2718,7 +2718,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons B/C</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-5a-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-5a-deselector">Remove All</a>
@@ -2766,7 +2766,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons E/F</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-5b-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-5b-deselector">Remove All</a>
@@ -2814,7 +2814,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon D</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-5c-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-5c-deselector">Remove All</a>
@@ -2862,7 +2862,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon 1</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-5d-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-5d-deselector">Remove All</a>
@@ -2910,7 +2910,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-5e-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-5e-deselector">Remove All</a>
@@ -2958,7 +2958,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-5f-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-5f-deselector">Remove All</a>
@@ -3010,7 +3010,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons B/C</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-6a-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-6a-deselector">Remove All</a>
@@ -3058,7 +3058,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons E/F</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-6b-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-6b-deselector">Remove All</a>
@@ -3106,7 +3106,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon D</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-6c-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-6c-deselector">Remove All</a>
@@ -3154,7 +3154,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salon 1</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-6d-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-6d-deselector">Remove All</a>
@@ -3202,7 +3202,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-6e-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-6e-deselector">Remove All</a>
@@ -3250,7 +3250,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons 2/3</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-6f-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-6f-deselector">Remove All</a>
@@ -3296,7 +3296,7 @@ script: |
         <span class="session-time">5:45 PM &ndash; 7:45 PM</span><br/>
         <span class="session-location btn btn--info btn--location">Bayshore Grand Ballroom/Stanley Park Foyer/Cypress</span>
         <div class="poster-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <h4 class="poster-type">Long Papers</h4>
             <table class="poster-table">
                 <tr id="poster">
@@ -3733,7 +3733,7 @@ script: |
         <span class="session-time">7:30 PM &ndash; 10:30 PM</span><br/>
         <span class="session-external-location btn btn--info btn--location">Vancouver Aquarium</span>
         <div class="paper-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <div class="session-abstract">
                 
                 <p>With over 50,000 amazing aquatic creatures, the Vancouver Aquarium Marine Science Centre provides a beautiful backdrop for our event with unforgettable galleries filled with aquatic life, plus expansive outdoor spaces.</p>
@@ -3757,7 +3757,7 @@ script: |
         <span class="session-time">9:00 AM &ndash; 10:10 AM</span><br/>
         <span class="session-location btn btn--info btn--location">Bayshore Grand Ballroom</span>
         <div class="paper-session-details">
-            <hr class="detail-separator"/>
+            <!-- <hr class="detail-separator"/> --><br/>
             <div class="session-abstract">
                 <p>Recent years have witnessed the development of a wide range of computational tools that process and generate natural language text. Many of these have become familiar to mainstream computer users in the from of web search, question answering, sentiment analysis, and notably machine translation. The accessibility of the web could be further enhanced with applications that not only translate between different languages (e.g., from English to French) but also within the same language, between different modalities, or different data formats. The web is rife with non-linguistic data (e.g., video, images, source code) that cannot be indexed or searched since most retrieval tools operate over textual data.</p>
 
@@ -3776,7 +3776,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons A/B/C</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-7a-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-7a-deselector">Remove All</a>
@@ -3830,7 +3830,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons D/E/F</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-7b-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-7b-deselector">Remove All</a>
@@ -3898,7 +3898,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons A/B/C</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-8a-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-8a-deselector">Remove All</a>
@@ -3946,7 +3946,7 @@ script: |
             <span class="session-location btn btn--info btn--location">Salons D/E/F</span>
             <br/>
             <div class="paper-session-details">
-                <hr class="detail-separator"/>
+                <!-- <hr class="detail-separator"/> --><br/>
                 <a href="#" class="session-selector" id="session-8b-selector">
                 Choose All</a>
                 <a href="#" class="session-deselector" id="session-8b-deselector">Remove All</a>
