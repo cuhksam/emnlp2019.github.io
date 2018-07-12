@@ -24,14 +24,14 @@ a.session-selector {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
+    border-radius: $border-radius;
     @include breakpoint($medium) {
       font-size: $type-size-9;
     }
     &.disabled {
-        background-color: $success-color;
-        /*pointer-events: none;*/
+        background-color: $light-gray;
         cursor: not-allowed;
-        filter: alpha(opacity=40);
+        /* filter: alpha(opacity=40); */
         -webkit-box-shadow: none;
         box-shadow: none;
         opacity: 0.40;
@@ -47,14 +47,14 @@ a.session-deselector {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
+    border-radius: $border-radius;
     @include breakpoint($medium) {
       font-size: $type-size-9;
     }
     &.disabled {
-        background-color: $danger-color;
-        /*pointer-events: none;*/
+        background-color: $light-gray;
         cursor: not-allowed;
-        filter: alpha(opacity=40);
+        /* filter: alpha(opacity=40); */
         -webkit-box-shadow: none;
         box-shadow: none;
         opacity: 0.40;
