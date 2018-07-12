@@ -16,7 +16,7 @@ script: |
         includePlenaryInSchedule = true;
         helpShown = false;
 
-        var instructions = "<div style='font-size: 12px; text-align:left;'><ul><li>Click/Tap on a the '+' button or the title of a session to toggle it. </li> <li>Click/Tap on a tutorial/paper/poster to toggle its selection. </li> <li>You can select more than one paper for a time slot. </li> <li>Tap/Click 'Generate PDF' at the bottom to generate the PDF for your customized schedule. </li> <li>To expand parallel sessions simultaneously, hold Shift and tap/click on one of them. </li> <li>On non-mobile devices, hovering on a paper for a time slot highlights it in yellow and its conflicting papers in red. </li> <li>Hovering on papers selected for a time slot (or their conflicts) highlights them in green. </li> <li>On Safari browsers, use Cmd-P to print and 'File > Save as ...' to download the schedule. </li> <li>The generated PDF might have some blank rows at the bottom as padding to avoid rows being split across pages.</li> <li>While saving the generated PDF on mobile devices, its name cannot be changed.</li> </ul></div>";
+        var instructions = "<div id=\"popupInstructionsDiv\"><div id=\"title\">Help</div><div id=\"popupInstructions\"><ul><li>Click on a the \"<strong>+</strong>\" button or the title of a session to toggle it. </li> <li>Click on a tutorial/paper/poster to toggle its selection. </li> <li>You can select more than one paper for a time slot. </li> <li>Click the <strong>\"Download PDF\"</strong> button at the bottom to download your customized PDF. </li> <li>To expand a parallel sessions simultaneously, hold Shift and click on any of them. </li> <li>On non-mobile devices, hovering on a paper for a time slot highlights it in yellow and its conflicting papers in red. Hovering on papers already selected for a time slot (or their conflicts) highlights them in green. </li> <li>The PDF might have some blank rows at the bottom as padding to avoid rows being split across pages.</li> <li>While saving the generated PDF on mobile devices, its name cannot be changed.</li> </ul></div></div>";
 
         function padTime(str) {
             return String('0' + str).slice(-2);
@@ -859,8 +859,8 @@ script: |
     <tbody></tbody>
 </table>
 
-<div id="testingInstructions" style="font-size: smaller;">
-        <p>On this page, you can choose the sessions (and individual papers/posters) of your choice <em>and</em> generate a PDF of your customized schedule! This page should work on modern browsers on all operating systems. On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. For the best experience, use a non-mobile device. For help, simply type "?" while on the page.</p>
+<div id="introParagraph">
+        <p>On this page, you can choose the sessions (and individual papers/posters) of your choice <em>and</em> generate a PDF of your customized schedule! This page should work on modern browsers on all operating systems. On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. For the best experience, use a non-mobile device. For help, simply type "?"" while on the page or click on the "Help" button.</p>
 </div>
 
 <p class="text-center">

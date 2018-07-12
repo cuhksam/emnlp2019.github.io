@@ -105,19 +105,44 @@ div.day {
     border: 1px solid $light-gray;
 }
 
-div#testingInstructions {
-    font-size: $type-size-6;
-    padding: 10px;
+div#introParagraph {
+    font-size: $type-size-7;
+    padding: 20px;
 
     @include breakpoint($medium) {
-        font-size: $type-size-5;
+        font-size: $type-size-6;
     }
-
-    div#testingNotes {
-        float: left;
-    }
-
 }
+
+div#popupInstructionsDiv {
+
+    div#title {
+        font-size: $type-size-6;
+        font-weight: bold;
+        text-align: center;
+        
+        @include breakpoint($medium) {
+            font-size: $type-size-5;
+        }
+    }
+
+    div#popupInstructions {
+        font-size: $type-size-8;
+        text-align:left;
+        ul {
+            padding-left: 15px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        @include breakpoint($medium) {
+            font-size: $type-size-7;
+            ul {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
 
 div.session {
     display: inline-block;
