@@ -11,7 +11,10 @@ diamond:
     image_path: /assets/images/logos/google-logo.png
     alt: "Google Logo"
     title: "Google"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: http://www.facebook.com
+    image_path: /assets/images/logos/facebook-logo.png
+    alt: "Facebook Logo"
+    title: "Facebook"
 platinum:
   - url: http://www.amazon.com
     image_path: /assets/images/logos/amazon-logo.png
@@ -21,10 +24,6 @@ platinum:
     image_path: /assets/images/logos/baidu-logo.png
     alt: "Baidu Logo"
     title: "Baidu"
-  - url: http://www.facebook.com
-    image_path: /assets/images/logos/facebook-logo.png
-    alt: "Facebook Logo"
-    title: "Facebook"
   - url: https://www.grammarly.com
     image_path: /assets/images/logos/grammarly-logo.png
     alt: "Grammarly Logo"
@@ -33,7 +32,14 @@ platinum:
     image_path: /assets/images/logos/visit_brussels-logo.png
     alt: "Visit Brussels Logo"
     title: "Visit Brussels"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: http://datascience.jd.com
+    image_path: /assets/images/logos/jingdong-logo.png
+    alt: "Jingdong Logo"
+    title: "Jingdong"
+  - url: http://www.europe.naverlabs.com
+    image_path: /assets/images/logos/naverlabs-europe-logo.png
+    alt: "Naver Labs Europe Logo"
+    title: "Naver Labs Europe"
 gold:
   - url: http://www.ebay.com
     image_path: /assets/images/logos/ebay-logo.png
@@ -55,7 +61,10 @@ gold:
     image_path: /assets/images/logos/polyai-logo.png
     alt: "PolyAI Logo"
     title: "PolyAI"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: http://www.cvte.com/en/
+    image_path: /assets/images/logos/cvte-stacked-logo.png
+    alt: "CVTE Logo"
+    title: "CVTE"
 silver:
   - url: http://www.nuance.com/index.htm
     image_path: /assets/images/logos/nuance-logo.png
@@ -65,6 +74,22 @@ silver:
     image_path: /assets/images/logos/huawei-logo.png
     alt: "Huawei Logo"
     title: "Huawei Noah's Ark Lab"
+  - url: http://www.duolingo.com
+    image_path: /assets/images/logos/duolingo-logo.png
+    alt: "Duolingo Logo"
+    title: "Duolingo"
+  - url: https://www.figure-eight.com
+    image_path: /assets/images/logos/figure-eight-logo.png
+    alt: "Figure Eight Logo"
+    title: "Figure Eight"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
+bronze:
+  - url: https://www.nextcanada.com
+    image_path: /assets/images/logos/next-canada-logo.png
+    alt: "Next Canada Logo"
+    title: "Next Canada"
+  - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
 sidebar: 
     nav: "sponsors"
@@ -90,6 +115,10 @@ We gratefully acknowledge support provided by the following for the EMNLP 2018 c
 ## Silver Tier
 
 {% include gallery id="silver" class="fourth" %}
+
+## Bronze Tier
+
+{% include gallery id="bronze" class="fourth" %}
 
 <div class="text-center"> 
 <a href="/sponsors/benefits/"><button class="btn btn--large btn--inverse">Sponsorship Tiers &amp; Pricing</button></a>
