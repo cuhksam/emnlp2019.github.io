@@ -133,7 +133,8 @@ Anna Rumshisky, University of Massachusetts at Lowell, USA<br/>
 Hugo Van hamme, KU Leuven, Belgium
 
 <h3>Childcare Policy &amp; Grant Coordinator</h3>
-Swapna Somasundaran, Educational Testing Service, USA
+Swapna Somasundaran, Educational Testing Service, USA<br/>
+Aoife Cahill, Educational Testing Service, USA
 
 <h3>Website &amp; Conference App Chair</h3>
 Nitin Madnani, Educational Testing Service, USA
