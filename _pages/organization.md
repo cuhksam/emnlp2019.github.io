@@ -119,6 +119,9 @@ Mohit Iyyer, University of Massachusetts at Amherst, USA
 <h3>Conference Handbook Chair</h3>
 Kai-Wei Chang, University of California at Los Angeles, USA
 
+<h3>Video Chair</h3>
+Bonan Min, BBN Technologies, USA
+
 <h3>Conference Handbook Advisor</h3>
 Joachim Bingel, University of Copenhagen, Denmark
 
@@ -128,6 +131,9 @@ He He, Stanford University, USA
 <h3>Student Volunteer Coordinator &amp; Student Scholarship Chair</h3>
 Anna Rumshisky, University of Massachusetts at Lowell, USA<br/>
 Hugo Van hamme, KU Leuven, Belgium
+
+<h3>Childcare Policy &amp; Grant Coordinator</h3>
+Swapna Somasundaran, Educational Testing Service, USA
 
 <h3>Website &amp; Conference App Chair</h3>
 Nitin Madnani, Educational Testing Service, USA
