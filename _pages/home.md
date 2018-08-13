@@ -15,16 +15,13 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
-**June 21, 2018**. We plan to open [registration](/registration) in early August. 
+**August 13, 2018**. Just a reminder: [tutorials](/program/tutorials) &amp; [workshops](/program/workshops) will be held on the _same_ two days this year: October 31 &amp; November 1. The main conference will follow from November 2 &ndash; 4.
 {: .notice--info} 
 
-**June 7, 2018**. We have adjusted the deadlines for the author responses and the final versions of papers in the [schedule](#dates).
+**June 21, 2018**. We plan to open [registration](/registration) in August. 
 {: .notice} 
 
 **June 1, 2018**. Information about visas for attendees is now [available](/participants#visa-information). Since applications can take a while, please apply as soon as possible.
-{: .notice} 
-
-**May 18, 2018**. We have an amazing lineup of [Keynote Speakers](/program/keynotes/) for EMNLP 2018.
 {: .notice} 
 
 <h2>Welcome!</h2>
