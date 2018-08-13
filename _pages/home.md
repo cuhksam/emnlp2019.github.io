@@ -9,17 +9,16 @@ header:
 excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 ---
 
-<!-- <div class="text-center">
-<a href="https://www.softconf.com/emnlp2018/papers/" target="_blank" class="btn btn--primary">Submit a Paper</a>
-</div> -->
+<div class="text-center">
+    <span style="font-weight: bold; font-size: smaller;">
+    Tutorials &amp; Workshops: October 31 &amp; November 1&nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+Main Conference: November 2 &ndash; November 4</span>
+</div>
 
 <h2>News</h2>
 
-**August 13, 2018**. Just a reminder: [tutorials](/program/tutorials) &amp; [workshops](/program/workshops) will be held on the _same_ two days this year: October 31 &amp; November 1. The main conference will follow from November 2 &ndash; 4.
-{: .notice--info} 
-
 **June 21, 2018**. We plan to open [registration](/registration) in August. 
-{: .notice} 
+{: .notice--info} 
 
 **June 1, 2018**. Information about visas for attendees is now [available](/participants#visa-information). Since applications can take a while, please apply as soon as possible.
 {: .notice} 
