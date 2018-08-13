@@ -10,9 +10,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 ---
 
 <div class="text-center">
+    <span style="font-size: normal;"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i></span><br/>
     <span style="font-weight: bold; font-size: smaller;">
-    Tutorials &amp; Workshops: October 31 &amp; November 1&nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-Main Conference: November 2 &ndash; November 4</span>
+    Tutorials &amp; Workshops : October 31 &amp; November 1<br/>Main Conference : November 2 &ndash; November 4</span>
 </div>
 
 <h2>News</h2>
