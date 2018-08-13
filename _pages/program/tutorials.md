@@ -12,14 +12,14 @@ The following tutorials have been accepted for EMNLP 2018 and will be held as ha
 
 ## October 31, 2018
 
-<strong>T1: Joint models for NLP</strong><br/>
+<strong>T1: Joint models for NLP (Morning)</strong><br/>
 <a href="http://people.sutd.edu.sg/~yue_zhang/">Yue Zhang</a>
 
 <div>
 <p>Joint models have received much research attention in NLP, allowing relevant tasks to share common information while avoiding error propagation in multi-stage pepelines. Several main approaches have been taken by statistical joint modeling, while neual models allow parameter sharing and adversarial training. This tutorial reviews main approaches to joint modeling for both statistical and neural methods.</p>
 </div>
 
-<strong>T2: Graph Formalisms for Meaning Representations</strong><br/>
+<strong>T2: Graph Formalisms for Meaning Representations (Morning)</strong><br/>
 <a href="http://alopez.github.io/">Adam Lopez</a> and <a href="http://homepages.inf.ed.ac.uk/s1459276/">Sorcha Gilroy</a>
 
 <div>
@@ -28,7 +28,7 @@ The following tutorials have been accepted for EMNLP 2018 and will be held as ha
 <p>With that in mind, we also plan to discuss Regular Graph Languages (RGL; Courcelle 1991), a subfamily of HRL which are closed under intersection. The definition of RGL is relatively simple after being introduced to HRL. We do not plan on discussing any proofs of why RGL are also a subfamily of MSOL, as described in Gilroy et al. (2017b). We will briefly mention the other formalisms shown in Figure 1 such as MSOL and DAGAL but this will focus on their properties rather than any formal definitions.</p>
 </div>
 
-<strong>T3: Writing Code for NLP Research</strong><br/>
+<strong>T3: Writing Code for NLP Research (Afternoon)</strong><br/>
 <a href="http://www.cs.cmu.edu/~mg1">Matt Gardner</a>, <a href="http://markneumann.xyz">Mark Neumann</a>, <a href="http://joelgrus.com">Joel Grus</a>, and <a href="https://www.linkedin.com/in/nicholaslourie">Nicholas Lourie</a>
 
 <div>
@@ -37,14 +37,14 @@ The following tutorials have been accepted for EMNLP 2018 and will be held as ha
 
 ## November 1, 2018
 
-<strong>T4: Deep Latent Variable Models of Natural Language</strong><br/>
+<strong>T4: Deep Latent Variable Models of Natural Language (Morning)</strong><br/>
 <a href="http://people.seas.harvard.edu/~srush">Alexander Rush</a>, <a href="http://www.people.fas.harvard.edu/~yoonkim">Yoon Kim</a>, and <a href="https://swiseman.github.io">Sam Wiseman</a>
 
 <div>
 <p>The proposed tutorial will cover deep latent variable models both in the case where exact inference over the latent variables is tractable and when it is not. The former case includes neural extensions of unsupervised tagging and parsing models. Our discussion of the latter case, where inference cannot be performed tractably, will restrict itself to continuous latent variables. In particular, we will discuss recent developments both in neural variational inference (e.g., relating to Variational Auto-encoders) and in implicit density modeling (e.g., relating to Generative Adversarial Networks). We will highlight the challenges of applying these families of methods to NLP problems, and discuss recent successes and best practices.</p>
 </div>
 
-<strong>T5: Standardized Tests as benchmarks for Artificial Intelligence</strong><br/>
+<strong>T5: Standardized Tests as benchmarks for Artificial Intelligence (Morning)</strong><br/>
 <a href="https://sites.google.com/site/mrinsachan/">Mrinmaya Sachan</a>, <a href="https://seominjoon.github.io/">Minjoon Seo</a>, <a href="http://ssli.ee.washington.edu/~hannaneh/">Hannaneh Hajishirzi</a>, and <a href="http://www.cs.cmu.edu/~epxing/">Eric Xing</a>
 
 <div>
@@ -53,7 +53,7 @@ The following tutorials have been accepted for EMNLP 2018 and will be held as ha
 <p>For this tutorial, we broadly categorize these tests into two categories: open domain tests such as reading comprehensions and elementary school tests where the goal is to find the support for an answer from the student curriculum, and closed domain tests such as intermediate level math and science tests (algebra, geometry, Newtonian physics problems, etc.). Unlike open domain tests, closed domain tests require the system to have significant domain knowledge and reasoning capabilities. For example, geometry questions typically involve a number of geometry primitives (lines, quadrilaterals, circles, etc) and require students to use axioms and theorems of geometry (Pythagoras theorem, alternating angles, etc) to solve them. These closed domains often have a formal logical basis and the question can be mapped to a formal language by semantic parsing. The formal question representation can then provided as an input to an expert system to solve the question.</p>
 </div>
 
-<strong>T6: Deep Chit-Chat: Deep Learning for ChatBots</strong><br/>
+<strong>T6: Deep Chit-Chat: Deep Learning for ChatBots (Afternoon)</strong><br/>
 <a href="https://www.microsoft.com/en-us/research/people/wuwei">Wei Wu</a> and <a href="http://www.ruiyan.me">Rui Yan</a>
 
 <div>
