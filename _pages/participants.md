@@ -85,6 +85,10 @@ You can book a room in the following ways:
  
 **Note that the official hotel event rates will begin to expire on Tuesday, September 18th, 2018**.
 
+## Childcare Grants
+
+ACL 2017 and NAACL 2018 provided on-site daycare to participants attending the conference at a subsidized rate. However, it was under-utilized at those conferences. To ensure that more people take advantage of childcare assistance, EMNLP will be experimenting with a reimbursement model for childcare expenses. Please read the full policy [here](/downloads/official-emnlp18-childcare-policy.pdf). Once you have read the policy, you may file an application for the grant by filling out [this form](https://docs.google.com/forms/d/e/1FAIpQLSdFs-tYT9my97fcQPv7IRs-7TDyjkkAKsuqJjXqLJ08RZEZCw/viewform).
+
 ## Visa Information
 
 Since visa applications can take almost 2-4 months to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an email to [emnlp2018@kuleuven.be](mailto:emnlp2018@kuleuven.be) with the following information:
