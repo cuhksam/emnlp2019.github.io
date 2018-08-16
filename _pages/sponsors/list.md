@@ -15,6 +15,12 @@ diamond:
     image_path: /assets/images/logos/facebook-logo.png
     alt: "Facebook Logo"
     title: "Facebook"
+  - url: https://wms.cs.kuleuven.be/cs/english/research/index.html
+    image_path: /assets/images/logos/ku-leuven-logo.png
+    alt: "KU Leuven Department of Computer Science Logo"
+    title: "KU Leuven Department of Computer Science"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 platinum:
   - url: http://www.amazon.com
     image_path: /assets/images/logos/amazon-logo.png
