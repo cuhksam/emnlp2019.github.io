@@ -19,7 +19,10 @@ diamond:
     image_path: /assets/images/logos/ku-leuven-logo.png
     alt: "KU Leuven Department of Computer Science Logo"
     title: "KU Leuven Department of Computer Science"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://www.salesforce.com
+    image_path: /assets/images/logos/salesforce-logo.png
+    alt: "Salesforce Logo"
+    title: "Salesforce"
   - image_path: /assets/images/logos/blank-logo.png
 platinum:
   - url: http://www.amazon.com
