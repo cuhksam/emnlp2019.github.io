@@ -17,7 +17,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
-**August 19, 2018**. EMNLP 2018 registration is now [open](https://aclweb.org/conference/emnlp-2018-conference-registration/)!
+**August 19, 2018**. EMNLP 2018 registration is now [open](/registration).
 {: .notice--info} 
 
 **August 16, 2018**. We will be experimenting with a reimbursement model for childcare by awarding grants, as an alternative to on-site childcare. The application deadline is *September 10th, 2018*. Read more about it [here](/participants#childcare-grants).
