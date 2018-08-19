@@ -10,11 +10,7 @@ sidebar: false
 
 <!-- {% include toc icon="gears" %} -->
 
-We plan to open conference registration in early August.  
-
-## Estimated Fees
-
-We expect registration fees to be similar to those at EMNLP 2017, although the fees have not yet been set and may increase somewhat.  Below are the fees charged for EMNLP 2017 that may be used as an approximation for planning your travel budget.
+The EMNLP 2018 conference registration fees are shown below and are the same as for EMNLP 2017. Please register [here](https://aclweb.org/conference/emnlp-2018-conference-registration/).
 
 <table>
   <thead>
