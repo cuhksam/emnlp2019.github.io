@@ -12,6 +12,8 @@ sidebar: false
 
 The EMNLP 2018 conference registration fees are shown below and are the same as for EMNLP 2017. Please register [here](https://aclweb.org/conference/emnlp-2018-conference-registration/).
 
+## Registration Fees
+
 <table>
   <thead>
   <tr>
@@ -85,3 +87,13 @@ The EMNLP 2018 conference registration fees are shown below and are the same as 
 - <em>Main + 1 Day</em> entitles the attendee to attend the main conference plus one day of tutorials and workshops. 
 - <em>1-Day</em> entitles the attendee to attend only one day of tutorials and workshops (no main conference). 
 - <em>2-Day</em> entitles the attendee to attend both workshops and tutorials days but not the main conference.
+
+## Cancellation Policy
+
+- Cancellations received one month or more prior to the conference will receive full refund.
+
+- Cancellations received up to three weeks prior to the conference will receive the ACL membership (if paid as part of the registration) and reimbursement of all amounts paid above the first $200.
+
+- Cancellations received within three weeks prior to the conference and all no-shows will not receive reimbursements but will receive the current full year ACL membership (if paid as part of the registration).
+
+- Cancellations due to governmental travel restrictions or failure to obtain a visa or serious illness that prevents travel to attend the Conference will receive a full refund regardless of when notification is received by the ACL Office.
