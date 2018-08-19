@@ -95,6 +95,18 @@ ACL 2017 and NAACL 2018 provided on-site daycare to participants attending the c
 - Notification of acceptance: September 17, 2018
 - Documentation &amp; receipt submission deadline: November 15, 2018
 
+## Travel Scholarships & Student Volunteer Program
+
+EMNLP 2018 seeks student volunteers who will receive a free registration to the main conference (excluding tutorials &amp; workshops). In addition, we also plan to offer scholarships to students *as well as non-students* with a demonstrated financial need. For more details, please refer to the [Joint Call for Travel Scholarship and Student Volunteer Applications](/downloads/joint-call-scholarship-volunteers.pdf). After reading the policy in detail to determine your eligibility, you can fill out the application form either in [PDF](/downloads/application-travel-program-volunteer.pdf) on in [Word](/downloads/application-travel-program-volunteer.docx) format. If you have further questions, please contact us at [​emnlp2018travel@gmail.com](mailto:​emnlp2018travel@gmail.com).
+
+**Important Dates**
+
+- Application deadline: Septmber 10, 2018
+- Notification of acceptance: September 17, 2018
+
+*Note*: Award recipients *must* register by the early registration deadline of September 24, 2018.
+
+
 ## Visa Information
 
 Since visa applications can take almost 2-4 months to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an email to [emnlp2018@kuleuven.be](mailto:emnlp2018@kuleuven.be) with the following information:

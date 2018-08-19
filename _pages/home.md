@@ -17,14 +17,14 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**August 19, 2018**. EMNLP 2018 seeks student volunteers for the conference. In addition, it's also offering scholarships to subsidize conference attendance for *both* students as well as non-students with a financial need. More details [here](/participants/#travel-scholarships--student-volunteer-program).
+{: .notice--info} 
+
 **August 19, 2018**. EMNLP 2018 registration is now [open](/registration).
 {: .notice--info} 
 
 **August 16, 2018**. We will be experimenting with a reimbursement model for childcare by awarding grants, as an alternative to on-site childcare. The application deadline is *September 10th, 2018*. Read more about it [here](/participants#childcare-grants).
 {: .notice--info} 
-
-**June 1, 2018**. Information about visas for attendees is now [available](/participants#visa-information). Since applications can take a while, please apply as soon as possible.
-{: .notice} 
 
 <h2>Welcome!</h2>
 
