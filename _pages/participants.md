@@ -91,7 +91,7 @@ ACL 2017 and NAACL 2018 provided on-site daycare to participants attending the c
 
 **Important Dates**:
 
-- Application deadline: Septmber 10, 2018
+- Application deadline: September 10, 2018
 - Notification of acceptance: September 17, 2018
 - Documentation &amp; receipt submission deadline: November 15, 2018
 
