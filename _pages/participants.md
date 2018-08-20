@@ -101,7 +101,7 @@ EMNLP 2018 seeks student volunteers who will receive a free registration to the 
 
 **Important Dates**
 
-- Application deadline: Septmber 10, 2018
+- Application deadline: September 10, 2018
 - Notification of acceptance: September 17, 2018
 
 *Note*: Award recipients *must* register by the early registration deadline of September 24, 2018.
