@@ -17,6 +17,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**August 22, 2018**. The lists of accepted [long papers](/program/accepted/long-papers), [short papers](/program/accepted/short-papers), and [system demonstrations](/program/accepted/demos) have been posted. Congratulations to all the authors!
+{: .notice--info} 
+
 **August 19, 2018**. EMNLP 2018 seeks student volunteers for the conference. In addition, it's also offering scholarships to subsidize conference attendance for *both* students as well as non-students with a financial need. More details [here](/participants/#travel-scholarships--student-volunteer-program).
 {: .notice--info} 
 
@@ -24,7 +27,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 {: .notice--info} 
 
 **August 16, 2018**. We will be experimenting with a reimbursement model for childcare by awarding grants, as an alternative to on-site childcare. The application deadline is *September 10th, 2018*. Read more about it [here](/participants#childcare-grants).
-{: .notice--info} 
+{: .notice} 
 
 <h2>Welcome!</h2>
 
