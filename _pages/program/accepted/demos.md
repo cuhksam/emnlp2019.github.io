@@ -10,6 +10,8 @@ sidebar:
 {% include base_path %}
 
 <br/>
+*Congratulations! Please follow these [instructions](/downloads/emnlp2018-final.pdf) to prepare the final, camera-ready versions of your papers.*<br/>
+
 **SyntaViz: Visualizing Voice Queries through a Syntax-Driven Hierarchical Ontology**<br/>
 Md Iftekhar Tanveer and Ferhan Ture
 

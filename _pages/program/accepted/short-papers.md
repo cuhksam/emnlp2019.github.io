@@ -10,6 +10,8 @@ sidebar:
 {% include base_path %}
 
 <br/>
+*Congratulations! Please follow these [instructions](/downloads/emnlp2018-final.pdf) to prepare the final, camera-ready versions of your papers.*<br/>
+
 **What can we learn from Semantic Tagging?**<br/>
 Mostafa Abdou, Artur Kulmizev, Vinit Ravishankar, Lasha Abzianidze and Johan Bos
 

@@ -10,6 +10,8 @@ sidebar:
 {% include base_path %}
 
 <br/>
+*Congratulations! Please follow these [instructions](/downloads/emnlp2018-final.pdf) to prepare the final, camera-ready versions of your papers.*<br/>
+
 **A Probabilistic Model for Joint Learning of Word Embeddings from Texts and Images**<br/>
 Melissa Ailem, Bowen Zhang, Aurélien Bellet, Pascal Denis and Fei Sha
 
