@@ -582,7 +582,7 @@ Paul Michel and Graham Neubig
 **Multilingual Clustering of Streaming News**<br/>
 Sebastião Miranda, Arturs Znotins, Shay B. Cohen and Guntis Barzdins
 
-**Instruction Following for Navigation in Partially Observed 3D Environments**<br/>
+**Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction**<br/>
 Dipendra Misra, Andrew Bennett, Valts Blukis, Eyvind Niklasson, Max Shatkhin and Yoav Artzi
 
 **Policy Shaping and Generalized Update Equations for Semantic Parsing from Denotations**<br/>

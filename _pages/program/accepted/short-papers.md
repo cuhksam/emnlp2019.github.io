@@ -159,7 +159,7 @@ Kristina Gulordava, Laura Aina and Gemma Boleda
 **Improving Reinforcement Learning Based Image Captioning with Natural Language Prior**<br/>
 Tszhang Guo, Shiyu Chang, Mo Yu and Kun Bai
 
-**Task Oriented Parsing**<br/>
+**Semantic Parsing for Task Oriented Dialog using Hierarchical Representations**<br/>
 Sonal Gupta, Rushin Shah, Mrinal Mohit, Anuj Kumar and Mike Lewis
 
 **FewRel: A Large-Scale Supervised Few-shot Relation Classification Dataset with State-of-the-Art Evaluation**<br/>
