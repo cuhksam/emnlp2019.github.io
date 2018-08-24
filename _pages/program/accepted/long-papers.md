@@ -39,7 +39,7 @@ Yujia Bao, Shiyu Chang, Mo Yu and Regina Barzilay
 **Commonsense for Generative Multi-Hop Question Answering Tasks**<br/>
 Lisa Bauer, Yicheng Wang and Mohit Bansal
 
-****<br/>
+**Visual Supervision in Bootstrapped Information Extraction**<br/>
 Matthew Berger, Ajay Nagesh, Joshua Levine, Mihai Surdeanu and Helen Zhang
 
 **Auto-Encoding Dictionary Definitions into Consistent Word Embeddings**<br/>
