@@ -157,7 +157,7 @@ Yufeng Diao, hongfei lin, di wu, liang yang, shaowu zhang, zhihao yang, jian wan
 Erik-Lân Do Dinh, Hannah Wieland and Iryna Gurevych
 
 **BanditSum: Extractive Summarization as a Contextual Bandit**<br/>
-Yue Dong, Yikang Shen, Eric Crawford, Herke van Hoof, Jackie Chi Kit Cheung and Aaron Courville
+Yue Dong, Yikang Shen, Eric Crawford, Herke van Hoof and Jackie Chi Kit Cheung
 
 **Exploiting Deep Representations for Neural Machine Translation**<br/>
 Zi-Yi Dou, Zhaopeng Tu, Xing Wang, Shuming Shi and Tong Zhang
@@ -166,7 +166,7 @@ Zi-Yi Dou, Zhaopeng Tu, Xing Wang, Shuming Shi and Tong Zhang
 Yerai Doval, Jose Camacho-Collados, Luis Espinosa Anke and Steven Schockaert
 
 **Multi-Level Structured Self-Attentions for Distantly Supervised Relation Extraction**<br/>
-Jinhua Du
+Jinhua Du, Jingguang Han, Andy Way and Dadong Wan
 
 **Variational Autoregressive Decoder for Neural Response Generation**<br/>
 Jiachen Du, Wenjie Li, Yulan He, Ruifeng Xu, Lidong Bing and Xuan Wang
@@ -337,7 +337,7 @@ Sen Hu, Lei Zou and Xinbo Zhang
 Minghao Hu, Yuxing Peng, Zhen Huang, Dongsheng Li, Nan Yang, Furu Wei and Ming Zhou
 
 **Playing 20 Question Game with Policy-Based Reinforcement Learning**<br/>
-Huang Hu, Xianchao Wu, Bingfeng Luo, Chongyang Tao, Can Xu and wei wu
+Huang Hu, Xianchao Wu, Bingfeng Luo, Chongyang Tao, Can Xu, Wei Wu and Zhan Chen
 
 **Large Margin Neural Language Model**<br/>
 Jiaji Huang, Yi Li, Wei Ping and Liang Huang
