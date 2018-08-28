@@ -483,9 +483,6 @@ Zhiqing Sun and Zhi-Hong Deng
 **The importance of Being Recurrent for Modeling Hierarchical Structure**<br/>
 Ke Tran, Arianna Bisazza and Christof Monz
 
-**A Memory Network for Open IE-Based Science QA**<br/>
-Akshit Tyagi, Mausam -, Tushar Khot and Ashish Sabharwal
-
 **Refining Pretrained Word Embeddings Using Layer-wise Relevance Propagation**<br/>
 Akira Utsumi
 
