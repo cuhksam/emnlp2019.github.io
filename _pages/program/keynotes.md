@@ -27,7 +27,7 @@ johan:
 ---
 {% include base_path %}
 
-The following speakers have graciously accepted to give keynotes at EMNLP 2018. The titles, abstracts, and exact timings for the talks will be posted later.
+The following speakers have graciously accepted to give keynotes at EMNLP 2018.
 
 {% include feature_row id="johan" type="left" %}
 
