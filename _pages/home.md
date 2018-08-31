@@ -75,6 +75,11 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
           <td>August 27, 2018</td>
         </tr>
         <tr>
+            <td style="width: 40%;">Early Registration Deadline</td>
+            <td style="width: 30%;">Monday</td>
+            <td>September 24, 2018</td>
+        </tr>
+        <tr>
             <td style="width: 40%;">Workshops &amp; tutorials</td>
             <td style="width: 30%;">Wednesday &ndash; Thursday</td>
             <td>October 31 &ndash; November 1, 2018</td>
