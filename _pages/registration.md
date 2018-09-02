@@ -12,6 +12,8 @@ sidebar: false
 
 The EMNLP 2018 conference registration fees are shown below and are the same as for EMNLP 2017. Please register [here](https://aclweb.org/conference/emnlp-2018-conference-registration/).
 
+Note that early registration ends **September 24, 2018**.
+
 ## Registration Fees
 
 <table>
