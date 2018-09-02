@@ -19,17 +19,15 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**September 2, 2018**. **Reminder**: we have two important deadlines coming up this month: (a) **September 10** for [travel scholarships](/participants/#travel-scholarships--student-volunteer-program), [student volunteer awards](/participants/#travel-scholarships--student-volunteer-program) &amp; [childcare grant applications](/participants#childcare-grants) (b) **September 24** for [early registration](/registration). 
+{: .notice--info} 
+
 **August 22, 2018**. The lists of accepted [long papers](/program/accepted/long-papers), [short papers](/program/accepted/short-papers), and [system demonstrations](/program/accepted/demos) have been posted. Congratulations to all the authors! Please follow these [instructions](/downloads/emnlp2018-final.pdf) to prepare the final, camera-ready versions of your papers.
 {: .notice--info} 
 
 **August 19, 2018**. EMNLP 2018 seeks student volunteers for the conference. In addition, it's also offering scholarships to subsidize conference attendance for *both* students as well as non-students with a financial need. More details [here](/participants/#travel-scholarships--student-volunteer-program).
-{: .notice--info} 
-
-**August 19, 2018**. EMNLP 2018 registration is now [open](/registration).
-{: .notice--info} 
-
-**August 16, 2018**. We will be experimenting with a reimbursement model for childcare by awarding grants, as an alternative to on-site childcare. The application deadline is *September 10th, 2018*. Read more about it [here](/participants#childcare-grants).
 {: .notice} 
+
 
 <h2>Welcome!</h2>
 
@@ -75,6 +73,11 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
           <td>Final versions of papers due</td>
           <td>Monday</td>
           <td>August 27, 2018</td>
+        </tr>
+        <tr>
+          <td>Travel scholarships, student volunteer, and childcare grant applications due</td>
+          <td style="width: 30%;">Monday</td>
+          <td>September 10, 2018</td>
         </tr>
         <tr>
             <td style="width: 40%;">Early Registration Deadline</td>
