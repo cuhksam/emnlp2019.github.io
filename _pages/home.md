@@ -19,6 +19,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**September 7, 2018**. **Reminder**: If you need an invitation letter to obtain a visa or for other purposes, please see the [instructions](/participants/#visa-information) at the bottom of our Participants page.
+{: .notice--info} 
+
 **September 2, 2018**. **Reminder**: we have two important deadlines coming up this month: (a) **September 10** for [travel scholarships](/participants/#travel-scholarships--student-volunteer-program), [student volunteer awards](/participants/#travel-scholarships--student-volunteer-program) &amp; [childcare grant applications](/participants#childcare-grants) (b) **September 24** for [early registration](/registration). 
 {: .notice--info} 
 
