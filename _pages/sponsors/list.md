@@ -41,7 +41,7 @@ platinum:
     image_path: /assets/images/logos/visit_brussels-logo.png
     alt: "Visit Brussels Logo"
     title: "Visit Brussels"
-  - url: http://datascience.jd.com
+  - url: http://corporate.jd.com/
     image_path: /assets/images/logos/jingdong-logo.png
     alt: "Jingdong Logo"
     title: "Jingdong"
