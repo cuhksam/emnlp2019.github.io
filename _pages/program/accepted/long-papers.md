@@ -786,9 +786,6 @@ Sho Takase, Jun Suzuki and Masaaki Nagata
 **Beyond Error Propagation in Neural Machine Translation: Characteristics of Language Also Matter**<br/>
 Xu Tan, Lijun Wu, Di He, Fei Tian, Tao QIN, Jianhuang Lai and Tie-Yan Liu
 
-**You Have NO Answer Here: Modeling Answer Validation for Machine Reading Comprehension**<br/>
-Chuanqi Tan, Furu Wei, Qingyu Zhou, Nan Yang, Weifeng Lv and Ming Zhou
-
 **Process Paragraph Comprehension using World Knowledge**<br/>
 Niket Tandon, Bhavana Dalvi, Joel Grus, Wen-tau Yih, Antoine Bosselut and Peter Clark
 

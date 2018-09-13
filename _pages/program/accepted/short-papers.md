@@ -102,9 +102,6 @@ Mathieu Dehouck and Pascal Denis
 **Coherence-Aware Neural Topic Modeling**<br/>
 Ran Ding, Ramesh Nallapati and Bing Xiang
 
-**Densely Connected Bidirectional LSTM with Applications to Sentence Classification**<br/>
-Zixiang Ding, Rui Xia, Jianfei Yu, Xiang Li and Jian Yang
-
 **Unsupervised Bilingual Lexicon Induction via Latent Variable Models**<br/>
 Zi-Yi Dou and Zhi-Hao Zhou
 
@@ -173,9 +170,6 @@ Mareike Hartmann, Yova Kementchedjhieva and Anders Søgaard
 
 **Retrieval-Based Neural Code Generation**<br/>
 Shirley Anugrah Hayati, Raphael Olivier, Pravalika Avvaru, Pengcheng Yin, Anthony Tomasic and Graham Neubig
-
-**Joint Binary Neural Network with Label Relation Prior for Multi-label Emotion Classification**<br/>
-Huihui He and Rui Xia
 
 **Entity Tracking Improves Cloze-style Reading Comprehension**<br/>
 Luong Hoang, Sam Wiseman and Alexander Rush
@@ -331,7 +325,7 @@ Luke Melas-Kyriazi, Alexander Rush and George Han
 Lesly Miculicich, Dhananjay Ram, James Henderson and Nikolaos Pappas
 
 **Listening Comprehension over Argumentative Content**<br/>
-Shachar Mirkin, Guy Moshkowich, Matan Orbach, Lili Kotlerman, Yoav Kantor, Tamar Lavee, Michal Jacovi, Noam Slonim, Ranit Aharonov and Yonatan Bilu
+Shachar Mirkin, Guy Moshkowich, Matan Orbach, Lili Kotlerman, Yoav Kantor, Tamar Lavee, Michal Jacovi, Yonatan Bilu, Ranit Aharonov and Noam Slonim
 
 **Is Nike female? Predicting brand name gender across product categories**<br/>
 Sridhar Moorthy, Ruth Pogacar, Samin Khan and Yang Xu
@@ -561,8 +555,8 @@ Yadollah Yaghoobzadeh and Hinrich Schütze
 **Classifying Referential and Non-referential It Using Gaze**<br/>
 Victoria Yaneva, Le An Ha, Richard Evans and Ruslan Mitkov
 
-**Break the Beam Search Curse: A Study of Score-Revision Methods and Stopping Criteria for Neural Machine Translation**<br/>
-Yilin Yang, Liang Huang and Mingbo Ma
+**Breaking the Beam Search Curse: A Study of (Re-)Scoring Methods and Stopping Criteria for Neural Machine Translation**<br/>
+Yilin Yang, Liang Huang and Mingbo Ma 
 
 **Convolutional Neural Networks with Recurrent Neural Filters**<br/>
 Yi Yang
