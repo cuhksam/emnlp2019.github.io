@@ -98,7 +98,10 @@ bronze:
     image_path: /assets/images/logos/next-canada-logo.png
     alt: "Next Canada Logo"
     title: "Next Canada"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://allenai.org
+    image_path: /assets/images/logos/ai2-logo.png
+    alt: "AI2 Logo"
+    title: "Allen Institute for Artificial Intelligence"
   - image_path: /assets/images/logos/blank-logo.png
 sidebar: 
     nav: "sponsors"
