@@ -26,7 +26,7 @@ a.session-selector {
     text-decoration: none;
     border-radius: $border-radius;
     @include breakpoint($medium) {
-      font-size: $type-size-9;
+      font-size: $type-size-7;
     }
     &.disabled {
         background-color: $light-gray;
@@ -49,7 +49,7 @@ a.session-deselector {
     text-decoration: none;
     border-radius: $border-radius;
     @include breakpoint($medium) {
-      font-size: $type-size-9;
+      font-size: $type-size-7;
     }
     &.disabled {
         background-color: $light-gray;
@@ -74,10 +74,10 @@ div#generatePDFForm {
 
     a#generatePDFButton {
         margin-top: 10px;
-        font-size: $type-size-6;
+        font-size: $type-size-5;
 
         @include breakpoint($medium) {
-            font-size: $type-size-5;
+            font-size: $type-size-4;
         }
     }
 
@@ -149,12 +149,12 @@ div.session-box {
 }
 
 div.session-header {
-    font-size: $type-size-6;
+    font-size: $type-size-5;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
     color: white;
-    height: 30px;
+    height: 35px;
     // background-color: #FFE4E1;
     background-color: red;
 }
@@ -272,7 +272,7 @@ div.session {
     }
 
     .session-title {
-        font-size: $type-size-6;
+        font-size: $type-size-5;
         color: $text-color;
         text-decoration: none;
     }
@@ -281,7 +281,7 @@ div.session {
         margin-right: 5px;
         float: left;
 
-        font-size: $type-size-7;
+        font-size: $type-size-6;
         font-style: italic;
     }
 
@@ -302,7 +302,7 @@ div.session {
     }
 
     .session-abstract {
-        font-size: $type-size-6;
+        font-size: $type-size-5;
     }
 
     .tutorial-table {
@@ -333,6 +333,10 @@ div.session {
         }
     }
 
+    .poster-type {
+        text-decoration: underline;
+    }
+
     .tutorial-title {
         font-size: $type-size-6;
         text-decoration: none;
@@ -343,11 +347,12 @@ div.session {
     }
 
     .session-location {
+        font-size: $type-size-6;
         float: left;
     }
 
     .session-chair {
-        font-size: $type-size-6;
+        font-size: $type-size-5;
     }
 
     .session-external-location {
@@ -359,13 +364,13 @@ div.session {
     }
 
     .session-people {
-        font-size: $type-size-6;
+        font-size: $type-size-5;
     }
 
     tr#tutorial, tr#poster {
         cursor: pointer;
         background-color: #fff;
-        font-size: $type-size-6;
+        font-size: $type-size-5;
         &.selected {
             background-color: $lighter-gray2;
         }
