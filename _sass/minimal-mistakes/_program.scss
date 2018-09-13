@@ -143,6 +143,21 @@ div#popupInstructionsDiv {
     }
 }
 
+div.session-box {
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+div.session-header {
+    font-size: $type-size-6;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    height: 30px;
+    // background-color: #FFE4E1;
+    background-color: red;
+}
 
 div.session {
     display: inline-block;
@@ -167,7 +182,8 @@ div.session {
         }
 
         @include breakpoint($large) {
-            width: percentage(24/24);
+            border-right: none;
+            width: percentage(12/24);
         }
 
         @include breakpoint($x-large) {
@@ -182,7 +198,7 @@ div.session {
     &.session-papers-outstanding2 {
         float: right;
         width: percentage(24/24);
-
+        
         @include breakpoint($medium) {
             width: percentage(24/24);
         }
@@ -192,7 +208,7 @@ div.session {
         }
 
         @include breakpoint($large) {
-            width: percentage(24/24);
+            width: percentage(12/24);
         }
 
         @include breakpoint($x-large) {
@@ -205,7 +221,7 @@ div.session {
     }
 
 
-    &.session-papers1, &.session-papers2, &.session-papers3, &.session-papers4, &.session-papers5 {
+    &.session-papers1, &.session-papers2, &.session-papers3 {
         float: left;
         width: percentage(24/24);
 
@@ -218,19 +234,19 @@ div.session {
         }
 
         @include breakpoint($large) {
-            width: percentage(24/24);
+            width: percentage(6/24);
         }
 
         @include breakpoint($x-large) {
-            width: percentage(4/24);
+            width: percentage(6/24);
         }
 
         @include breakpoint($xx-large) {
-            width: percentage(4/24);
+            width: percentage(6/24);
         }
     }
 
-    &.session-papers6 {
+    &.session-papers4 {
         float: right;
         width: percentage(24/24);
 
@@ -243,15 +259,15 @@ div.session {
         }
 
         @include breakpoint($large) {
-            width: percentage(24/24);
+            width: percentage(6/24);
         }
 
         @include breakpoint($x-large) {
-            width: percentage(4/24);
+            width: percentage(6/24);
         }
 
         @include breakpoint($xx-large) {
-            width: percentage(4/24);
+            width: percentage(6/24);
         }
     }
 
@@ -364,7 +380,7 @@ div.session {
             background-color: $lighter-gray2;
         }
 
-        @include breakpoint($x-large) {
+        @include breakpoint($large) {
             &.hovered {
                 background-color: yellow;
             }
