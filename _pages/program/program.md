@@ -649,7 +649,7 @@ script: |
             $('[class$="-details"]').hide();
 
             /* expand sessions when their title is clicked */
-            $('body').on('click', 'div.session-expandable .session-title, div#expander', function(event) {
+            $('body').on('click touch', 'div.session-expandable .session-title, div#expander', function(event) {
                 event.preventDefault();
                 event.stopPropagation();
                 var sessionObj = $(this).parent();
