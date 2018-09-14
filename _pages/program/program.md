@@ -26,11 +26,6 @@ script: |
             return dateObj.toLocaleDateString() + ' ' + padTime(dateObj.getHours()) + ':' + padTime(dateObj.getMinutes());
         }
 
-        function inferAMPM(time) {
-            var hour = time.split(':')[0];
-            return (hour == 12 || hour <= 6) ? ' PM' : ' AM';
-        }
-
         function generatePDFfromTable() {
 
             /* clear the hidden table before starting */
@@ -140,8 +135,7 @@ script: |
             var tutorialTimes = tutorialTimeText.split(' ');
             var tutorialSlotStart = tutorialTimes[0];
             var tutorialSlotEnd = tutorialTimes[3];
-            var tutorialSlotAMPM = inferAMPM(tutorialSlotStart);
-            var exactTutorialStartingTime = sessionDay + ', 2017 ' + tutorialSlotStart + tutorialSlotAMPM;
+            var exactTutorialStartingTime = sessionDay + ', 2018 ' + tutorialSlotStart;
             return [new Date(exactTutorialStartingTime).getTime(), tutorialSlotStart, tutorialSlotEnd, tutorialSession.attr('id')];
         }
 
@@ -149,15 +143,14 @@ script: |
 
             /* get the poster session and day */
             var posterSession = posterTimeObj.parents('.session');
-            var sessionDay = posterSession.prevAll('.day:first').text().trim();
+            var sessionDay = posterSession.parent().prevAll('.day:first').text().trim();
 
             /* get the poster slot and the starting and ending times */
             var posterTimeText = posterTimeObj.text().trim();
             var posterTimes = posterTimeText.split(' ');
             var posterSlotStart = posterTimes[0];
             var posterSlotEnd = posterTimes[3];
-            var posterSlotAMPM = inferAMPM(posterSlotStart);
-            var exactPosterStartingTime = sessionDay + ', 2017 ' + posterSlotStart + posterSlotAMPM;
+            var exactPosterStartingTime = sessionDay + ', 2018 ' + posterSlotStart;
             return [new Date(exactPosterStartingTime).getTime(), posterSlotStart, posterSlotEnd, posterSession.attr('id')];
         }
 
@@ -209,9 +202,9 @@ script: |
         }
 
         function makePlenarySessionHeaderRow(session) {
-            var startWithoutAMPM = session.start.slice(0, -3);
-            var endWithoutAMPM = session.end.slice(0, -3);
-            return '<tr><td class="time">' + startWithoutAMPM + '&ndash;' + endWithoutAMPM + '</td><td class="location">' + session.location + '</td><td class="info-plenary">' + session.title + '</td></tr>';
+            var sessionStart = session.start;
+            var sessionEnd = session.end;
+            return '<tr><td class="time">' + sessionStart + '&ndash;' + sessionEnd + '</td><td class="location">' + session.location + '</td><td class="info-plenary">' + session.title + '</td></tr>';
         }
 
         function makePaperRows(start, end, titles, sessions) {
@@ -253,9 +246,9 @@ script: |
 
         function makePosterRows(titles, types, sessions) {
             var numPosters = titles.length;
-            var startWithoutAMPM = sessions[0].start.slice(0, -3);
-            var endWithoutAMPM = sessions[0].end.slice(0, -3);
-            rows = ['<tr><td rowspan=' + (numPosters + 1) + ' class="time">' + startWithoutAMPM + '&ndash;' + endWithoutAMPM + '</td><td rowspan=' + (numPosters + 1) + ' class="location">' + sessions[0].location + '</td><td class="info-paper">' + sessions[0].title +  '</td></tr>'];
+            var sessionStart = sessions[0].start;
+            var sessionEnd = sessions[0].end;
+            rows = ['<tr><td rowspan=' + (numPosters + 1) + ' class="time">' + sessionStart + '&ndash;' + sessionEnd + '</td><td rowspan=' + (numPosters + 1) + ' class="location">' + sessions[0].location + '</td><td class="info-paper">' + sessions[0].title +  '</td></tr>'];
             for (var i=0; i<numPosters; i++) {
                 var title = titles[i];
                 var type = types[i];
@@ -346,7 +339,7 @@ script: |
                 var sessionNames = ['session-poster-1', 'session-poster-2'];
                 for (var i=0; i<sessionNames.length; i++) {
                     var session = sessionInfoHash[sessionNames[i]];
-                    var exactSessionStartingTime = session.day + ', 2017 ' + session.start;
+                    var exactSessionStartingTime = session.day + ', 2018 ' + session.start;
                     var newPlenaryKey = new Date(exactSessionStartingTime).getTime();
                     if (!(newPlenaryKey in plenarySessionHash)) {
                         plenarySessionHash[newPlenaryKey] = session;
@@ -357,7 +350,7 @@ script: |
                 var posters = chosenPostersHash[posterSessionKeys[0]];
                 var usedSession = posters[0].session;
                 var unusedSession = usedSession == 'session-poster-1' ? sessionInfoHash['session-poster-2'] : sessionInfoHash['session-poster-1'];
-                var exactSessionStartingTime = unusedSession.day + ', 2017 ' + unusedSession.start;
+                var exactSessionStartingTime = unusedSession.day + ', 2018 ' + unusedSession.start;
                 var newPlenaryKey = new Date(exactSessionStartingTime).getTime();
                 if (!(newPlenaryKey in plenarySessionHash)) {
                     plenarySessionHash[newPlenaryKey] = unusedSession;
@@ -516,7 +509,7 @@ script: |
                 session.day = $(this).prevAll('.day:first').text().trim();
                 session.location = $(this).children('span.session-location').text().trim();
                 var sessionTimeText = $(this).children('span.session-time').text().trim();                
-                var sessionTimes = sessionTimeText.match(/\d+:\d+ [AP]M/g);
+                var sessionTimes = sessionTimeText.match(/\d+:\d+/g);
                 var sessionStart = sessionTimes[0];
                 var sessionEnd = sessionTimes[1];
                 session.start = sessionStart;
@@ -534,7 +527,7 @@ script: |
                 session.location = $(this).children('span.session-location').text().trim();
                 session.day = $(this).prevAll('.day:first').text().trim();
                 var sessionTimeText = $(this).children('span.session-time').text().trim();                
-                var sessionTimes = sessionTimeText.match(/\d+:\d+ [AP]M/g);
+                var sessionTimes = sessionTimeText.match(/\d+:\d+/g);
                 var sessionStart = sessionTimes[0];
                 var sessionEnd = sessionTimes[1];
                 session.start = sessionStart;
@@ -548,7 +541,7 @@ script: |
 
                 /* get the paper session and day */
                 var paperSession = $(this).parents('.session');
-                var sessionDay = paperSession.prevAll('.day:first').text().trim();
+                var sessionDay = paperSession.parent().prevAll('.day:first').text().trim();
 
                 /* get the paper time and title */
                 var paperTimeObj = $(this).children('#paper-time');
@@ -559,10 +552,8 @@ script: |
                 var paperTimes = paperTimeText.split('\u2013');
                 var paperSlotStart = paperTimes[0];
                 var paperSlotEnd = paperTimes[1];
-                var paperSlotStartAMPM = inferAMPM(paperSlotStart);
-                var paperSlotEndAMPM = inferAMPM(paperSlotEnd);
-                var exactPaperStartingTime = sessionDay + ', 2017 ' + paperSlotStart + paperSlotStartAMPM;
-                var exactPaperEndingTime = sessionDay + ', 2017 ' + paperSlotEnd + paperSlotEndAMPM;
+                var exactPaperStartingTime = sessionDay + ', 2018 ' + paperSlotStart;
+                var exactPaperEndingTime = sessionDay + ', 2018 ' + paperSlotEnd;
 
                 paperInfoHash[paperID] = [new Date(exactPaperStartingTime).getTime(), new Date(exactPaperEndingTime).getTime(), paperSlotStart, paperSlotEnd, paperTitle, paperSession.attr('id')];
             });
@@ -580,12 +571,12 @@ script: |
                 session.day = $(this).prevAll('.day:first').text().trim();
                 session.id = $(this).attr('id');
                 var sessionTimeText = $(this).children('span.session-time').text().trim();
-                var sessionTimes = sessionTimeText.match(/\d+:\d+ [AP]M/g);
+                var sessionTimes = sessionTimeText.match(/\d+:\d+/g);
                 var sessionStart = sessionTimes[0];
                 var sessionEnd = sessionTimes[1];
                 session.start = sessionStart;
                 session.end = sessionEnd;
-                var exactSessionStartingTime = session.day + ', 2017 ' + sessionStart;
+                var exactSessionStartingTime = session.day + ', 2018 ' + sessionStart;
                 plenarySessionHash[new Date(exactSessionStartingTime).getTime()] = session;
              });
 
@@ -871,7 +862,7 @@ script: |
     <div class="day" id="first-day">Wednesday, October 31</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials1">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
-        <span class="session-time">9:00 AM &ndash; 12:30 PM</span><br/>
+        <span class="session-time">9:00 &ndash; 12:30</span><br/>
         <div class="tutorial-session-details">
             <!-- <hr class="detail-separator"/> --><br/>
             <table class="tutorial-table">
@@ -890,11 +881,11 @@ script: |
     </div>
     <div class="session session-plenary" id="session-lunch-1">
         <span class="session-title">Lunch</span><br/>        
-        <span class="session-time">12:30 PM &ndash; 2:00 PM</span>
+        <span class="session-time">12:30 &ndash; 14:00</span>
     </div>    
     <div class="session session-expandable session-tutorials" id="session-afternoon-tutorials1">
         <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
-        <span class="session-time">2:00 PM &ndash; 5:30 PM</span><br/>
+        <span class="session-time">14:00 &ndash; 17:30</span><br/>
         <div class="tutorial-session-details">
             <!-- <hr class="detail-separator"/> --><br/>
             <table class="tutorial-table">
@@ -908,7 +899,7 @@ script: |
     </div>
     <div class="session session-expandable session-with-location session-plenary" id="session-reception">
         <div id="expander"></div><a href="#" class="session-title">Welcome Reception</a><br/>        
-        <span class="session-time">6:00 PM &ndash; 9:00 PM</span><br/>
+        <span class="session-time">18:00 &ndash; 21:00</span><br/>
         <span class="session-location btn btn--info btn--location">Bayshore Grand Ballroom</span>
         <div class="paper-session-details">
             <!-- <hr class="detail-separator"/> --><br/>
@@ -920,7 +911,7 @@ script: |
     <div class="day" id="second-day">Thursday, November 1</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials2">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
-        <span class="session-time">9:00 AM &ndash; 12:30 PM</span><br/>
+        <span class="session-time">09:00 &ndash; 12:30</span><br/>
         <div class="tutorial-session-details">
             <!-- <hr class="detail-separator"/> --><br/>
             <table class="tutorial-table">
@@ -939,11 +930,11 @@ script: |
     </div>
     <div class="session session-plenary" id="session-lunch-1">
         <span class="session-title">Lunch</span><br/>        
-        <span class="session-time">12:30 PM &ndash; 2:00 PM</span>
+        <span class="session-time">12:30 &ndash; 14:00</span>
     </div>    
     <div class="session session-expandable session-tutorials" id="session-afternoon-tutorials2">
         <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
-        <span class="session-time">2:00 PM &ndash; 5:30 PM</span><br/>
+        <span class="session-time">14:00 &ndash; 17:30</span><br/>
         <div class="tutorial-session-details">
             <!-- <hr class="detail-separator"/> --><br/>
             <table class="tutorial-table">
@@ -960,7 +951,7 @@ script: |
         <span class="session-title">Breakfast</span><br/>        
         <span class="session-time">7:30 AM &ndash; 8:45 AM</span>
     </div>
-<div class="session session-plenary" id="session-welcome">
+    <div class="session session-plenary" id="session-welcome">
         <span class="session-title">Opening Remarks</span><br/>
         <span class="session-time">9:00 AM &ndash; 9:30 AM</span><br/>
         <span class="session-location btn btn--info btn--location">Gold Hall</span>
@@ -985,7 +976,7 @@ script: |
         <div class="session-header" id="session-header-1">Long Papers and Demos (Orals &amp; Posters) I</div>
         <div class="session session-expandable session-papers1" id="session-1a">
             <div id="expander"></div><a href="#" class="session-title">1A: Information Extraction</a><br/>
-                <span class="session-time">11:00 AM &ndash; 12:30 PM</span>
+                <span class="session-time">11:00 &ndash; 12:30</span>
                 <br/>
                 <span class="session-location btn btn--info btn--location">Gold Hall</span>
                 <br/>
@@ -1033,7 +1024,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers2" id="session-1b">
             <div id="expander"></div><a href="#" class="session-title">1B: Semantics</a><br/>
-                <span class="session-time">11:00 AM &ndash; 12:30 PM</span>
+                <span class="session-time">11:00 &ndash; 12:30</span>
                 <br/>
                 <span class="session-location btn btn--info btn--location">Copper Hall</span>
                 <br/>
@@ -1081,7 +1072,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers3" id="session-1c">
             <div id="expander"></div><a href="#" class="session-title">1C: Discourse</a><br/>
-                <span class="session-time">11:00 AM &ndash; 12:30 PM</span>
+                <span class="session-time">11:00 &ndash; 12:30</span>
                 <br/>
                 <span class="session-location btn btn--info btn--location">Silver Hall</span>
                 <br/>
@@ -1129,7 +1120,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers4" id="session-1d">
             <div id="expander"></div><a href="#" class="session-title">1D: Machine Translation</a><br/>
-                <span class="session-time">11:00 AM &ndash; 12:30 PM</span>
+                <span class="session-time">11:00 &ndash; 12:30</span>
                 <br/>
                 <span class="session-location btn btn--info btn--location">Hall 100</span>
                 <br/>
@@ -1177,7 +1168,7 @@ script: |
         </div>
        <div class="session session-expandable session-posters" id="session-poster-1">
             <div id="expander"></div><a href="#" class="session-title">1E: Posters &amp; Demos</a><br/>        
-            <span class="session-time">11:00 PM &ndash; 12:30 PM</span>
+            <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -1271,7 +1262,7 @@ script: |
     </div>
     <div class="session session-plenary" id="session-lunch-2">
         <span class="session-title">Lunch</span><br/>        
-        <span class="session-time">12:30 PM &ndash; 1:45 PM</span>
+        <span class="session-time">12:30 &ndash; 13:45</span>
     </div> 
     <div id="generatePDFForm">
         <div id="formContainer">
