@@ -307,7 +307,7 @@ Oliver Hellwig and Sebastian Nehrdich
 Lisa Anne Hendricks, Bryan Russell, Eli Shechtman, Josef Sivic, Oliver Wang and Trevor Darrell
 
 **Object Hallucination in Image Captioning**<br/>
-Lisa Anne Hendricks, Anna Rohrbach, Trevor Darrell, Kaylee Burns and Kate Saenko
+Anna Rohrbach, Lisa Anne Hendricks, Kaylee Burns, Trevor Darrell and Kate Saenko
 
 **Decoupling Structure and Lexicon for Zero-Shot Semantic Parsing**<br/>
 Jonathan Herzig and Jonathan Berant
