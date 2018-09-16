@@ -15,14 +15,11 @@ diamond:
     image_path: /assets/images/logos/facebook-logo.png
     alt: "Facebook Logo"
     title: "Facebook"
-  - url: https://wms.cs.kuleuven.be/cs/english/research/index.html
-    image_path: /assets/images/logos/ku-leuven-logo.png
-    alt: "KU Leuven Department of Computer Science Logo"
-    title: "KU Leuven Department of Computer Science"
   - url: https://www.salesforce.com
     image_path: /assets/images/logos/salesforce-logo.png
     alt: "Salesforce Logo"
     title: "Salesforce"
+  - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
 platinum:
   - url: http://www.amazon.com
@@ -49,6 +46,15 @@ platinum:
     image_path: /assets/images/logos/naverlabs-europe-logo.png
     alt: "Naver Labs Europe Logo"
     title: "Naver Labs Europe"
+  - url: https://wms.cs.kuleuven.be/cs/english/research/index.html
+    image_path: /assets/images/logos/ku-leuven-logo.png
+    alt: "KU Leuven Department of Computer Science Logo"
+    title: "KU Leuven Department of Computer Science"
+  - url: http://www.fwo.be/en/ 
+    image_path: /assets/images/logos/flanders-logo.png
+    alt: "Flanders Research Foundation Logo"
+    title: "Flanders Research Foundation"
+  - image_path: /assets/images/logos/blank-logo.png
 gold:
   - url: http://www.ebay.com
     image_path: /assets/images/logos/ebay-logo.png
@@ -103,6 +109,13 @@ bronze:
     alt: "AI2 Logo"
     title: "Allen Institute for Artificial Intelligence"
   - image_path: /assets/images/logos/blank-logo.png
+supporter:
+  - url: http://textiq.com
+    image_path: /assets/images/logos/textiq-logo.png
+    alt: "TextIQ Logo"
+    title: "TextIQ"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 sidebar: 
     nav: "sponsors"
 ---
@@ -131,6 +144,10 @@ We gratefully acknowledge support provided by the following for the EMNLP 2018 c
 ## Bronze Tier
 
 {% include gallery id="bronze" class="fourth" %}
+
+## Supporter Tier
+
+{% include gallery id="supporter" class="fourth" %}
 
 <div class="text-center"> 
 <a href="/sponsors/benefits/"><button class="btn btn--large btn--inverse">Sponsorship Tiers &amp; Pricing</button></a>
