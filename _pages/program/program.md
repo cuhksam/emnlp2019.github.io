@@ -876,7 +876,7 @@ script: |
             </table>
         </div>
     </div>
-    <div class="session session-plenary" id="session-lunch-1">
+    <div class="session session-break session-plenary" id="session-lunch-1">
         <span class="session-title">Lunch</span><br/>        
         <span class="session-time">12:30 &ndash; 14:00</span>
     </div>    
@@ -925,7 +925,7 @@ script: |
             </table>
         </div>
     </div>
-    <div class="session session-plenary" id="session-lunch-1">
+    <div class="session session-break session-plenary" id="session-lunch-2">
         <span class="session-title">Lunch</span><br/>        
         <span class="session-time">12:30 &ndash; 14:00</span>
     </div>    
@@ -944,10 +944,6 @@ script: |
         </div>
     </div>
     <div class="day" id="third-day">Friday, November 2</div>
-    <div class="session session-plenary" id="session-breakfast-1">
-        <span class="session-title">Breakfast</span><br/>        
-        <span class="session-time">7:30 AM &ndash; 8:45 AM</span>
-    </div>
     <div class="session session-plenary" id="session-welcome">
         <span class="session-title">Opening Remarks</span><br/>
         <span class="session-time">9:00 AM &ndash; 9:30 AM</span><br/>
@@ -965,7 +961,7 @@ script: |
             </div>
         </div>
     </div>
-    <div class="session session-plenary" id="session-break-1">
+    <div class="session session-break session-plenary" id="session-break-1">
         <span class="session-title">Coffee Break</span><br/>        
         <span class="session-time">10:30 AM &ndash; 11:00 AM</span>
     </div>
@@ -1257,7 +1253,7 @@ script: |
             </div>
         </div>
     </div>
-    <div class="session session-plenary" id="session-lunch-2">
+    <div class="session session-break session-plenary" id="session-lunch-3">
         <span class="session-title">Lunch</span><br/>        
         <span class="session-time">12:30 &ndash; 13:45</span>
     </div> 
