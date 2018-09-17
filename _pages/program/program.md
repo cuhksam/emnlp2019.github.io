@@ -516,7 +516,7 @@ script: |
 
             /* get all the paper sessions and save the day and location for each of them in a hash */
             var paperSessions = $("[id|='session']").filter(function() { 
-                return this.id.match(/session-\d[a-z]$/);
+                return this.id.match(/session-\d\d?[a-z]$/);
             });
             $(paperSessions).each(function() {
                 var session = {};
