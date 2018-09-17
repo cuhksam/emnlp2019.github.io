@@ -966,31 +966,31 @@ script: |
                             <td class="session-chair" colspan="2">Chair: Zornitsa Kozareva</td>
                         </tr>
                         <tr id="paper" paper-id="1">
-                            <td id="paper-time">10:30&ndash;10:48</td>
+                            <td id="paper-time">11:00&ndash;11:18</td>
                             <td>
                                 <span class="paper-title">Adversarial Multi-task Learning for Text Classification. </span><em>Pengfei Liu, Xipeng Qiu and Xuanjing Huang</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="2">
-                            <td id="paper-time">10:49&ndash;11:07</td>
+                            <td id="paper-time">11:18&ndash;11:36</td>
                             <td>
                                 <span class="paper-title">Neural End-to-End Learning for Computational Argumentation Mining. </span><em>Steffen Eger, Johannes Daxenberger and Iryna Gurevych</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="3">
-                            <td id="paper-time">11:08&ndash;11:26</td>
+                            <td id="paper-time">11:36&ndash;11:54</td>
                             <td>
                                 <span class="paper-title">Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision. </span><em>Chen Liang, Jonathan Berant, Quoc Le, Kenneth D. Forbus and Ni Lao</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="4">
-                            <td id="paper-time">11:27&ndash;11:45</td>
+                            <td id="paper-time">11:54&ndash;12:12</td>
                             <td>
                                 <span class="paper-title">Neural Relation Extraction with Multi-lingual Attention. </span><em>Yankai Lin, Zhiyuan Liu and Maosong Sun</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="5">
-                            <td id="paper-time">11:46&ndash;11:58</td>
+                            <td id="paper-time">12:12&ndash;12:30</td>
                             <td>
                                 <span class="paper-title">Classifying Temporal Relations by Bidirectional LSTM over Dependency Paths. </span><em>Fei Cheng and Yusuke Miyao</em>
                             </td>
@@ -1014,31 +1014,31 @@ script: |
                             <td class="session-chair" colspan="2">Chair: Preslav Nakov</td>
                         </tr>
                         <tr id="paper" paper-id="6">
-                            <td id="paper-time">10:30&ndash;10:48</td>
+                            <td id="paper-time">11:00&ndash;11:18</td>
                             <td>
                                 <span class="paper-title">Learning Structured Natural Language Representations for Semantic Parsing. </span><em>Jianpeng Cheng, Siva Reddy, Vijay Saraswat and Mirella Lapata</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="7">
-                            <td id="paper-time">10:49&ndash;11:07</td>
+                            <td id="paper-time">11:18&ndash;11:36</td>
                             <td>
                                 <span class="paper-title">Morph-fitting: Fine-Tuning Word Vector Spaces with Simple Language-Specific Rules. </span><em>Ivan Vulić, Nikola Mrkšić, Roi Reichart, Diarmuid Ó Séaghdha, Steve Young and Anna Korhonen</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="8">
-                            <td id="paper-time">11:08&ndash;11:26</td>
+                            <td id="paper-time">11:36&ndash;11:54</td>
                             <td>
                                 <span class="paper-title">Skip-Gram – Zipf + Uniform = Vector Additivity. </span><em>Alex Gittens, Dimitris Achlioptas and Michael W. Mahoney</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="9">
-                            <td id="paper-time">11:27&ndash;11:45</td>
+                            <td id="paper-time">11:54&ndash;12:12</td>
                             <td>
                                 <span class="paper-title">The State of the Art in Semantic Representation. </span><em>Omri Abend and Ari Rappoport</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="10">
-                            <td id="paper-time">11:46&ndash;11:58</td>
+                            <td id="paper-time">12:12&ndash;12:30</td>
                             <td>
                                 <span class="paper-title">AMR-to-text Generation with Synchronous Node Replacement Grammar. </span><em>Linfeng Song, Xiaochang Peng, Yue Zhang, Zhiguo Wang and Daniel Gildea</em>
                             </td>
@@ -1062,31 +1062,31 @@ script: |
                             <td class="session-chair" colspan="2">Chair: Yangfeng Ji</td>
                         </tr>
                         <tr id="paper" paper-id="11">
-                            <td id="paper-time">10:30&ndash;10:48</td>
+                            <td id="paper-time">11:00&ndash;11:18</td>
                             <td>
                                 <span class="paper-title">Joint Learning for Coreference Resolution. </span><em>Jing Lu and Vincent Ng</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="12">
-                            <td id="paper-time">10:49&ndash;11:07</td>
+                            <td id="paper-time">11:18&ndash;11:36</td>
                             <td>
                                 <span class="paper-title">Generating and Exploiting Large-scale Pseudo Training Data for Zero Pronoun Resolution. </span><em>Ting Liu, Yiming Cui, Qingyu Yin, Wei-Nan Zhang, Shijin Wang and Guoping Hu</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="13">
-                            <td id="paper-time">11:08&ndash;11:26</td>
+                            <td id="paper-time">11:36&ndash;11:54</td>
                             <td>
                                 <span class="paper-title">Discourse Mode Identification in Essays. </span><em>Wei Song, Dong Wang, Ruiji Fu, Lizhen Liu, Ting Liu and Guoping Hu</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="14">
-                            <td id="paper-time">11:27&ndash;11:45</td>
+                            <td id="paper-time">11:54&ndash;12:12</td>
                             <td>
                                 <span class="paper-title">[TACL] Winning on the Merits: The Joint Effects of Content and Style on Debate Outcomes. </span><em>Lu Wang, Nick Beauchamp, Sarah Shugars, Kechen Qin</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="15">
-                            <td id="paper-time">11:46&ndash;11:58</td>
+                            <td id="paper-time">12:12&ndash;12:30</td>
                             <td>
                                 <span class="paper-title">Lexical Features in Coreference Resolution: To be Used With Caution. </span><em>Nafise Sadat Moosavi and Michael Strube</em>
                             </td>
@@ -1110,31 +1110,31 @@ script: |
                             <td class="session-chair" colspan="2">Chair: Haitao Mi</td>
                         </tr>
                         <tr id="paper" paper-id="16">
-                            <td id="paper-time">10:30&ndash;10:48</td>
+                            <td id="paper-time">11:00&ndash;11:18</td>
                             <td>
                                 <span class="paper-title">A Convolutional Encoder Model for Neural Machine Translation. </span><em>Jonas Gehring, Michael Auli, David Grangier and Yann Dauphin</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="17">
-                            <td id="paper-time">10:49&ndash;11:07</td>
+                            <td id="paper-time">11:18&ndash;11:36</td>
                             <td>
                                 <span class="paper-title">Deep Neural Machine Translation with Linear Associative Unit. </span><em>Mingxuan Wang, Zhengdong Lu, Jie Zhou and Qun Liu</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="18">
-                            <td id="paper-time">11:08&ndash;11:26</td>
+                            <td id="paper-time">11:36&ndash;11:54</td>
                             <td>
                                 <span class="paper-title">[TACL] A Polynomial-Time Dynamic Programming Algorithm for Phrase-Based Decoding with a Fixed Distortion Limit. </span><em>Yin-Wen Chang and Michael Collins</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="19">
-                            <td id="paper-time">11:27&ndash;11:45</td>
+                            <td id="paper-time">11:54&ndash;12:12</td>
                             <td>
                                 <span class="paper-title">[TACL] Context Gates for Neural Machine Translation. </span><em>Zhaopeng Tu, Yang Liu, Zhengdong Lu, Xiaohua Liu and Hang Li</em>
                             </td>
                         </tr>
                         <tr id="paper" paper-id="20">
-                            <td id="paper-time">11:46&ndash;11:58</td>
+                            <td id="paper-time">12:12&ndash;12:30</td>
                             <td>
                                 <span class="paper-title">Alternative Objective Functions for Training MT Evaluation Metrics. </span><em>Miloš Stanojević and Khalil Sima’an</em>
                             </td>
