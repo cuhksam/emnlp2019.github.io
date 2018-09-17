@@ -185,7 +185,7 @@ div.session {
     }
 
     &.session-posters {
-        border-top: 2px solid $light-gray;
+        border-top: 1px solid $light-gray;
         width: percentage(24/24);
     }
 
@@ -197,20 +197,17 @@ div.session {
         margin-bottom: 10px;
     }
 
-
     &.session-papers1 {
         float: left;
         width: percentage(24/24);
-        border-bottom: 2px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
 
         @include breakpoint($medium) {
             width: percentage(24/24);
-            border-bottom: none;
         }
 
         @include breakpoint($medium-wide) {
             width: percentage(24/24);
-            border-bottom: none;
         }
 
         @include breakpoint($large) {
@@ -232,18 +229,16 @@ div.session {
     &.session-papers2, &.session-papers3 {
         float: left;
         width: percentage(24/24);
-        border-bottom: 2px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
 
         @include breakpoint($medium) {
             width: percentage(24/24);
             border-left: 1px solid $light-gray;
-            border-bottom: none;
         }
 
         @include breakpoint($medium-wide) {
             width: percentage(24/24);
             border-left: 1px solid $light-gray;
-            border-bottom: none;
         }
 
         @include breakpoint($large) {
@@ -265,6 +260,7 @@ div.session {
     &.session-papers4 {
         float: right;
         width: percentage(24/24);
+        border-bottom: 1px solid $light-gray;
 
         @include breakpoint($medium) {
             border-left: none;
