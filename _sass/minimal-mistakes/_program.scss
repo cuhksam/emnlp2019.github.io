@@ -100,8 +100,11 @@ div.day {
     text-align: left;
     vertical-align: middle;
     font-size: $type-size-4;
-    background-color: $lighter-gray;
-    border: 2px solid $light-gray;
+    // background-color: $lighter-gray;
+    // border: 2px solid $light-gray;
+    color: white;
+    background-color: red;
+    border: 1px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -156,10 +159,10 @@ div.session-header {
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
-    color: white;
     height: 35px;
+    background-color: $lighter-gray;
     // background-color: #FFE4E1;
-    background-color: red;
+    // background-color: red;
 }
 
 div.session {
