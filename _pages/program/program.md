@@ -573,7 +573,7 @@ script: |
                 var sessionEnd = sessionTimes[1];
                 session.start = sessionStart;
                 session.end = sessionEnd;
-                var exactSessionStartingTime = session.day + sessionStart;
+                var exactSessionStartingTime = session.day + ' ' + sessionStart;
                 plenarySessionHash[new Date(exactSessionStartingTime).getTime()] = session;
              });
 
