@@ -3749,35 +3749,35 @@ script: |
                     <td id="paper-time">16:30&ndash;16:42</td>
                     <td>
                         <span class="paper-title">TITLE.</span>
-                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>(short)
+                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>&nbsp;(short)
                     </td>
                 </tr>
                 <tr id="best-paper" paper-id="ID">
                     <td id="paper-time">16:42&ndash;17:00</td>
                     <td>
                         <span class="paper-title">TITLE.</span>
-                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>(long)
+                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>&nbsp;(long)
                     </td>
                 </tr>
                 <tr id="best-paper" paper-id="ID">
                     <td id="paper-time">17:00&ndash;17:18</td>
                     <td>
                         <span class="paper-title">TITLE.</span>
-                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>(long)
+                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>&nbsp;(long)
                     </td>
                 </tr>
                 <tr id="best-paper" paper-id="ID">
                     <td id="paper-time">17:18&ndash;17:36</td>
                     <td>
                         <span class="paper-title">TITLE.</span>
-                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>(long)
+                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>&nbsp;(long)
                     </td>
                 </tr>
                 <tr id="best-paper" paper-id="ID">
                     <td id="paper-time">17:36&ndash;17:54</td>
                     <td>
                         <span class="paper-title">TITLE.</span>
-                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>(long)
+                        <em>AUTHOR1, AUTHOR2, and AUTHOR3</em>&nbsp;(long)
                     </td>
                 </tr>
             </table>

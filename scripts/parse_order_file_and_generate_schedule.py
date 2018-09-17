@@ -145,7 +145,7 @@ def main():
                 generated_html.append('<div class="session session-expandable session-papers-best"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">Gold Hall</span><br/><div class="paper-session-details"><br/><table class="paper-table">'.format(session_title, session_start, session_end, session_start, session_end))
                 for paper in session:
                     best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_type = BEST_PAPER_REGEXP.match(paper.strip()).groups()
-                    generated_html.append('<tr id="best-paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>AUTHOR1, AUTHOR2, and AUTHOR3</em> ({})</td></tr>'.format(best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_type.lower()))
+                    generated_html.append('<tr id="best-paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>AUTHOR1, AUTHOR2, and AUTHOR3</em>&nbsp;({})</td></tr>'.format(best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_type.lower()))
                 generated_html.append('</table></div></div>')
             elif 'orals' in session_string.lower():
                 session_group_start, session_group_end, session_group_type, session_group_description, session_group_roman_numeral = PAPER_SESSION_GROUP_REGEXP.match(session_string).groups()
