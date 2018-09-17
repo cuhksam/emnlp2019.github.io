@@ -1023,7 +1023,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1077,7 +1077,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1131,7 +1131,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1272,7 +1272,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1326,7 +1326,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1380,7 +1380,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1521,7 +1521,7 @@ script: |
             <br/>
             <span class="session-time">15:00 &ndash; 16:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1575,7 +1575,7 @@ script: |
             <br/>
             <span class="session-time">15:00 &ndash; 16:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1629,7 +1629,7 @@ script: |
             <br/>
             <span class="session-time">15:00 &ndash; 16:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1770,7 +1770,7 @@ script: |
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1824,7 +1824,7 @@ script: |
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -1878,7 +1878,7 @@ script: |
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2015,7 +2015,7 @@ script: |
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2069,7 +2069,7 @@ script: |
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2123,7 +2123,7 @@ script: |
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2264,7 +2264,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2318,7 +2318,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2372,7 +2372,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2513,7 +2513,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2567,7 +2567,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2621,7 +2621,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2783,7 +2783,7 @@ script: |
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2837,7 +2837,7 @@ script: |
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -2891,7 +2891,7 @@ script: |
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3028,7 +3028,7 @@ script: |
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3082,7 +3082,7 @@ script: |
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3136,7 +3136,7 @@ script: |
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3277,7 +3277,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3331,7 +3331,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3385,7 +3385,7 @@ script: |
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3526,7 +3526,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3580,7 +3580,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
@@ -3634,7 +3634,7 @@ script: |
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
+            <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
             <div class="paper-session-details">
                 <br/>
