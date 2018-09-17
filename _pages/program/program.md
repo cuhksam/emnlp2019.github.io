@@ -252,7 +252,8 @@ script: |
             for (var i=0; i<numPosters; i++) {
                 var title = titles[i];
                 var type = types[i];
-                rows.push('<tr><td></td><td></td><td class="info-poster">' + title + ' [' + type + ']</td></tr>');
+                /* rows.push('<tr><td></td><td></td><td class="info-poster">' + title + ' [' + type + ']</td></tr>'); */
+                rows.push('<tr><td></td><td></td><td class="info-poster">' + title</td></tr>');
             }
             return rows;
         }
