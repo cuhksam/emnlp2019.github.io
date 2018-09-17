@@ -333,12 +333,31 @@ script: |
 
         function populateHiddenProgramTable() {
 
-            /* concatenate the tutorial, poster and paper keys */
-            var nonPlenaryKeys = Object.keys(chosenPapersHash).concat(Object.keys(chosenTutorialsHash)).concat(Object.keys(chosenPostersHash));
+            /* since papers and posters might start at the same time we cannot just rely on starting times to differentiate papers vs. posters. so, what we can do is just add an item type before we do the concatenation and then rely on that item type to distinguish the item */
+            
+            var nonPlenaryKeysAndTypes = [];
+            var tutorialKeys = Object.keys(chosenTutorialsHash);
+            var posterKeys = Object.keys(chosenPostersHash);
+            var paperKeys = Object.keys(chosenPapersHash);
+            for (var i=0; i < tutorialKeys.length; i++) {
+                nonPlenaryKeysAndTypes.push([tutorialKeys[i], 'tutorial']);
+            }
+            for (var i=0; i < posterKeys.length; i++) {
+                nonPlenaryKeysAndTypes.push([posterKeys[i], 'poster']);
+            }
+            for (var i=0; i < paperKeys.length; i++) {
+                nonPlenaryKeysAndTypes.push([paperKeys[i], 'paper']);
+            }
+
+            var plenaryKeys = Object.keys(plenarySessionHash);
+            var plenaryKeysAndTypes = [];
+            for (var i=0; i < plenaryKeys.length; i++) {
+                plenaryKeysAndTypes.push([plenaryKeys[i], 'plenary']);
+            }
 
             /* if we are including plenary information in the PDF then sort its keys too and merge the two sets of keys together before sorting */
-            var sortedPaperTimes = includePlenaryInSchedule ? nonPlenaryKeys.concat(Object.keys(plenarySessionHash)) : nonPlenaryKeys;
-            sortedPaperTimes.sort(function(a, b) { return a - b });
+            var sortedPaperTimes = includePlenaryInSchedule ? nonPlenaryKeysAndTypes.concat(plenaryKeysAndTypes) : nonPlenaryKeysAndTypes;
+            sortedPaperTimes.sort(function(a, b) { return a[0] - b[0] });
 
             /* now iterate over these sorted papers and create the rows for the hidden table that will be used to generate the PDF */
             var prevDay = null;
@@ -347,9 +366,11 @@ script: |
 
             /* now iterate over the chosen items */
             for(var i=0; i<sortedPaperTimes.length; i++) {
-                var key = sortedPaperTimes[i];
+                var keyAndType = sortedPaperTimes[i];
+                var key = keyAndType[0];
+                var itemType = keyAndType[1]
                 /* if it's a plenary session */
-                if (key in plenarySessionHash) {
+                if (itemType == 'plenary') {
                     var plenarySession = plenarySessionHash[key];
                     if (plenarySession.day == prevDay) {
                         output.push(makePlenarySessionHeaderRow(plenarySession));
@@ -361,7 +382,7 @@ script: |
                     prevDay = plenarySession.day;
                 }
                 /* if it's tutorials */
-                else if (key in chosenTutorialsHash) {
+                else if (itemType == 'tutorial') {
 
                     /* get the tutorials */
                     var tutorials = chosenTutorialsHash[key];
@@ -382,7 +403,7 @@ script: |
                     prevDay = sessionDay;
                 }
                 /* if it's posters */
-                else if (key in chosenPostersHash) {
+                else if (itemType == 'poster') {
 
                     /* get the posters */
                     var posters = chosenPostersHash[key];
@@ -403,7 +424,7 @@ script: |
                 }
 
                 /* if it's papers  */
-                else if (key in chosenPapersHash) {
+                else if (itemType == 'paper') {
                     var papers = chosenPapersHash[key];
                     /* sort papers by location for easier reading */
                     papers.sort(function(a, b) {
