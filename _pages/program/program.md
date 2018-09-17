@@ -135,7 +135,7 @@ script: |
             var tutorialTimes = tutorialTimeText.split(' ');
             var tutorialSlotStart = tutorialTimes[0];
             var tutorialSlotEnd = tutorialTimes[2];
-            var exactTutorialStartingTime = sessionDay + ', 2018 ' + tutorialSlotStart;
+            var exactTutorialStartingTime = sessionDay + ' ' + tutorialSlotStart;
             return [new Date(exactTutorialStartingTime).getTime(), tutorialSlotStart, tutorialSlotEnd, tutorialSession.attr('id')];
         }
 
@@ -150,7 +150,7 @@ script: |
             var posterTimes = posterTimeText.split(' ');
             var posterSlotStart = posterTimes[0];
             var posterSlotEnd = posterTimes[2];
-            var exactPosterStartingTime = sessionDay + ', 2018 ' + posterSlotStart;
+            var exactPosterStartingTime = sessionDay + ' ' + posterSlotStart;
             return [new Date(exactPosterStartingTime).getTime(), posterSlotStart, posterSlotEnd, posterSession.attr('id')];
         }
 
@@ -549,8 +549,8 @@ script: |
                 var paperTimes = paperTimeText.split('\u2013');
                 var paperSlotStart = paperTimes[0];
                 var paperSlotEnd = paperTimes[1];
-                var exactPaperStartingTime = sessionDay + ', 2018 ' + paperSlotStart;
-                var exactPaperEndingTime = sessionDay + ', 2018 ' + paperSlotEnd;
+                var exactPaperStartingTime = sessionDay + ' ' + paperSlotStart;
+                var exactPaperEndingTime = sessionDay + ' ' + paperSlotEnd;
 
                 paperInfoHash[paperID] = [new Date(exactPaperStartingTime).getTime(), new Date(exactPaperEndingTime).getTime(), paperSlotStart, paperSlotEnd, paperTitle, paperSession.attr('id')];
             });
@@ -573,7 +573,7 @@ script: |
                 var sessionEnd = sessionTimes[1];
                 session.start = sessionStart;
                 session.end = sessionEnd;
-                var exactSessionStartingTime = session.day + ', 2018 ' + sessionStart;
+                var exactSessionStartingTime = session.day + sessionStart;
                 plenarySessionHash[new Date(exactSessionStartingTime).getTime()] = session;
              });
 
@@ -856,7 +856,7 @@ script: |
 </p>
 
 <div class="schedule">
-    <div class="day" id="first-day">Wednesday, October 31</div>
+    <div class="day" id="first-day">Wednesday, October 31, 2018</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials1">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
         <span class="session-time">9:00 &ndash; 12:30</span><br/>
@@ -905,7 +905,7 @@ script: |
             </div>
         </div>
     </div>
-    <div class="day" id="second-day">Thursday, November 1</div>
+    <div class="day" id="second-day">Thursday, November 1, 2018</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials2">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
         <span class="session-time">09:00 &ndash; 12:30</span><br/>
