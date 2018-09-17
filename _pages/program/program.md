@@ -482,7 +482,7 @@ script: |
             $('.session-posters').each(function() {
                 var session = {};
                 session.title = $(this).children('.session-title').text().trim();
-                session.day = $(this).prevAll('.day:first').text().trim();
+                session.day = $(this).parent().prevAll('.day:first').text().trim();
                 session.location = $(this).children('span.session-location').text().trim();
                 var sessionTimeText = $(this).children('span.session-time').text().trim();                
                 var sessionTimes = sessionTimeText.match(/\d+:\d+/g);
@@ -501,7 +501,7 @@ script: |
                 var session = {};
                 session.title = $(this).children('.session-title').text().trim();
                 session.location = $(this).children('span.session-location').text().trim();
-                session.day = $(this).prevAll('.day:first').text().trim();
+                session.day = $(this).parent().prevAll('.day:first').text().trim();
                 var sessionTimeText = $(this).children('span.session-time').text().trim();                
                 var sessionTimes = sessionTimeText.match(/\d+:\d+/g);
                 var sessionStart = sessionTimes[0];
