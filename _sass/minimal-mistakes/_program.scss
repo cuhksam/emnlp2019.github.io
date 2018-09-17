@@ -149,7 +149,7 @@ div#popupInstructionsDiv {
 
 div.session-box {
     overflow: hidden;
-    border: 1px solid $light-gray;
+    border: 2px solid $light-gray;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -160,6 +160,7 @@ div.session-header {
     text-align: center;
     vertical-align: middle;
     height: 35px;
+    border-bottom: 2px solid $light-gray;
     background-color: $lighter-gray;
     // background-color: #FFE4E1;
     // background-color: red;
@@ -168,40 +169,58 @@ div.session-header {
 div.session {
     display: inline-block;
     padding: 0.5em;
-    // padding-left: 1em;
-    border: 1px solid $light-gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 
-    &.session-tutorials, &.session-plenary, &.session-posters {
+    &.session-tutorials, &.session-plenary {
+        width: percentage(24/24);
+        border-top: 2px solid $light-gray;
+        border-left: 2px solid $light-gray;
+        border-bottom: 2px solid $light-gray;
+        border-right: 2px solid $light-gray;
+    }
+
+    &.session-posters {
+        border-top: 2px solid $light-gray;
         width: percentage(24/24);
     }
 
     &.session-papers-best {
         float: left;
         width: percentage(24/24);
+        border: 2px solid $light-gray;
     }
 
  
     &.session-papers1, &.session-papers2, &.session-papers3 {
         float: left;
         width: percentage(24/24);
+        border-bottom: 2px solid $light-gray;
 
         @include breakpoint($medium) {
             width: percentage(24/24);
+            border-bottom: none;
         }
 
         @include breakpoint($medium-wide) {
             width: percentage(24/24);
+            border-bottom: none;
         }
 
         @include breakpoint($large) {
+            border-right: 2px solid $light-gray;
             width: percentage(6/24);
         }
 
         @include breakpoint($x-large) {
+            border-right: 2px solid $light-gray;
             width: percentage(6/24);
         }
 
         @include breakpoint($xx-large) {
+            border-right: 2px solid $light-gray;
             width: percentage(6/24);
         }
     }
@@ -220,6 +239,7 @@ div.session {
 
         @include breakpoint($large) {
             width: percentage(6/24);
+
         }
 
         @include breakpoint($x-large) {
