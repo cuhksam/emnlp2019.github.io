@@ -942,7 +942,9 @@ script: |
     </div>
     <div class="session session-expandable session-plenary">
         <div id="expander"></div>
-        <a href="#" class="session-title">Keynote I: "Truth or Lie? Spoken Indicators of Deception in Speech"</a>
+        <a href="#" class="session-title">
+            <strong>Keynote I: "Truth or Lie? Spoken Indicators of Deception in Speech"</strong>
+        </a>
         <br/>
         <span class="session-people">
             <a href="http://www.cs.columbia.edu/~julia/" target="_blank">Julia Hirschberg (Columbia University)</a>
@@ -2704,7 +2706,9 @@ script: |
     </div>
     <div class="session session-expandable session-plenary">
         <div id="expander"></div>
-        <a href="#" class="session-title">Keynote II: "Understanding the News that Moves Markets"</a>
+        <a href="#" class="session-title">
+            <strong>Keynote II: "Understanding the News that Moves Markets"</strong>
+        </a>
         <br/>
         <span class="session-people">
             <a href="https://sites.google.com/site/gideonmann/" target="_blank">Gideon Mann (Bloomberg, L.P.)</a>
@@ -3719,7 +3723,9 @@ script: |
     </div>
     <div class="session session-expandable session-plenary">
         <div id="expander"></div>
-        <a href="#" class="session-title">Keynote III: "The Moment of Meaning and the Future of Computational Semantics"</a>
+        <a href="#" class="session-title">
+            <strong>Keynote III: "The Moment of Meaning and the Future of Computational Semantics"</strong>
+        </a>
         <br/>
         <span class="session-people">
             <a href="https://www.rug.nl/staff/johan.bos/" target="_blank">Johan Bos (University of Groningen)</a>
@@ -3789,7 +3795,6 @@ script: |
             </table>
         </div>
     </div>
-
     <div id="generatePDFForm">
         <div id="formContainer">
             <input type="checkbox" id="includePlenaryCheckBox" value="second_checkbox"/>&nbsp;&nbsp;<span id="checkBoxLabel">Include plenary sessions in schedule</span>
