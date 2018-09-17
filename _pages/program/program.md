@@ -944,7 +944,9 @@ script: |
         <div id="expander"></div>
         <a href="#" class="session-title">Keynote I: "Truth or Lie? Spoken Indicators of Deception in Speech"</a>
         <br/>
-        <span class="session-people">Julia Hirschberg (Columbia University)</span>
+        <span class="session-people">
+            <a href="http://www.cs.columbia.edu/~julia/" target="_blank">Julia Hirschberg (Columbia University)</a>
+        </span>
         <br/>
         <span class="session-time">09:30 &ndash; 10:30</span>
         <br/>
@@ -2704,7 +2706,9 @@ script: |
         <div id="expander"></div>
         <a href="#" class="session-title">Keynote II: "Understanding the News that Moves Markets"</a>
         <br/>
-        <span class="session-people">Gideon Mann (Bloomberg, L.P.)</span>
+        <span class="session-people">
+            <a href="https://sites.google.com/site/gideonmann/" target="_blank">Gideon Mann (Bloomberg, L.P.)</a>
+        </span>
         <br/>
         <span class="session-time">15:00 &ndash; 16:00</span>
         <br/>
@@ -3717,7 +3721,9 @@ script: |
         <div id="expander"></div>
         <a href="#" class="session-title">Keynote III: "The Moment of Meaning and the Future of Computational Semantics"</a>
         <br/>
-        <span class="session-people">Johan Bos (University of Groningen)</span>
+        <span class="session-people">
+            <a href="https://www.rug.nl/staff/johan.bos/" target="_blank">Johan Bos (University of Groningen)</a>
+        </span>
         <br/>
         <span class="session-time">15:00 &ndash; 16:00</span>
         <br/>

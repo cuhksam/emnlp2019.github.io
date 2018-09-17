@@ -128,15 +128,18 @@ def main():
                     session_title = session_title.replace('Julia Hirschberg ', '')
                     session_abstract = KEYNOTE_ABSTRACT_DICT['Julia']
                     session_people = 'Julia Hirschberg (Columbia University)'
+                    session_people_link = 'http://www.cs.columbia.edu/~julia/'
                 elif 'Gideon' in session_title:
                     session_title = session_title.replace('Gideon Mann ', '')
                     session_abstract = KEYNOTE_ABSTRACT_DICT['Gideon']
                     session_people = 'Gideon Mann (Bloomberg, L.P.)'
+                    session_people_link = 'https://sites.google.com/site/gideonmann/'
                 elif 'Johan' in session_title:
                     session_title = session_title.replace('Johan Bos ', '')
                     session_abstract = KEYNOTE_ABSTRACT_DICT['Johan']
                     session_people = 'Johan Bos (University of Groningen)'
-                generated_html.append('<div class="session session-expandable session-plenary"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-people">{}</span><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="paper-session-details"><br/><div class="session-abstract"><p>{}</p></div></div></div>'.format(session_title, session_people, session_start, session_end, session_location, session_abstract))
+                    session_people_link = 'https://www.rug.nl/staff/johan.bos/'
+                generated_html.append('<div class="session session-expandable session-plenary"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-people"><a href="{}" target="_blank">{}</a></span><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="paper-session-details"><br/><div class="session-abstract"><p>{}</p></div></div></div>'.format(session_title, session_people_link, session_people, session_start, session_end, session_location, session_abstract))
             elif 'opening' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 generated_html.append('<div class="session session-plenary" id="session-welcome"><span class="session-title">{}</span><br/><span class="session-time">{} &ndash; {}</span><br/> <span class="session-location btn btn--info btn--location">{}</span></div>'.format(session_title, session_start, session_end, session_location))
