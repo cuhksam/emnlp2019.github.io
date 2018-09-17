@@ -99,9 +99,11 @@ div.day {
     font-weight: bold;
     text-align: left;
     vertical-align: middle;
-    font-size: $type-size-5;
+    font-size: $type-size-4;
     background-color: $lighter-gray;
-    border: 1px solid $light-gray;
+    border: 2px solid $light-gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 div#introParagraph {
@@ -144,7 +146,9 @@ div#popupInstructionsDiv {
 
 div.session-box {
     overflow: hidden;
-    border: 2px solid black;
+    border: 1px solid $light-gray;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 div.session-header {
@@ -168,58 +172,12 @@ div.session {
         width: percentage(24/24);
     }
 
-    &.session-papers-outstanding1 {
+    &.session-papers-best {
         float: left;
         width: percentage(24/24);
-
-        @include breakpoint($medium) {
-            width: percentage(24/24);
-        }
-
-        @include breakpoint($medium-wide) {
-            width: percentage(24/24);
-        }
-
-        @include breakpoint($large) {
-            border-right: none;
-            width: percentage(12/24);
-        }
-
-        @include breakpoint($x-large) {
-            width: percentage(12/24);
-        }
-
-        @include breakpoint($xx-large) {
-            width: percentage(12/24);
-        }
     }
 
-    &.session-papers-outstanding2 {
-        float: right;
-        width: percentage(24/24);
-        
-        @include breakpoint($medium) {
-            width: percentage(24/24);
-        }
-
-        @include breakpoint($medium-wide) {
-            width: percentage(24/24);
-        }
-
-        @include breakpoint($large) {
-            width: percentage(12/24);
-        }
-
-        @include breakpoint($x-large) {
-            width: percentage(12/24);
-        }
-
-        @include breakpoint($xx-large) {
-            width: percentage(12/24);
-        }
-    }
-
-
+ 
     &.session-papers1, &.session-papers2, &.session-papers3 {
         float: left;
         width: percentage(24/24);
@@ -283,6 +241,12 @@ div.session {
         font-size: $type-size-6;
         font-style: italic;
     }
+
+    &.session-break {
+        border: none;
+        font-style: italic;
+    }
+
 
     .paper-session-details {
         float: left;
