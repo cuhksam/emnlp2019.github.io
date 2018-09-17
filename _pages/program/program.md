@@ -1186,7 +1186,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-1">
             <div id="expander"></div>
-            <a href="#" class="session-title">1E: TBD</a>
+            <a href="#" class="session-title">1E: Poster and Demo presentations</a>
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
@@ -1435,7 +1435,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-2">
             <div id="expander"></div>
-            <a href="#" class="session-title">2E: TBD</a>
+            <a href="#" class="session-title">2E: Poster presentations</a>
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
@@ -1684,7 +1684,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-3">
             <div id="expander"></div>
-            <a href="#" class="session-title">3E: TBD</a>
+            <a href="#" class="session-title">3E: Poster presentations</a>
             <br/>
             <span class="session-time">15:00 &ndash; 16:00</span>
             <br/>
@@ -1933,7 +1933,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-4">
             <div id="expander"></div>
-            <a href="#" class="session-title">4E: TBD</a>
+            <a href="#" class="session-title">4E: Poster and Demo presentations</a>
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
@@ -2178,7 +2178,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-5">
             <div id="expander"></div>
-            <a href="#" class="session-title">5E: TBD</a>
+            <a href="#" class="session-title">5E: Poster and Demo presentations</a>
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
@@ -2427,7 +2427,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-6">
             <div id="expander"></div>
-            <a href="#" class="session-title">6E: TBD</a>
+            <a href="#" class="session-title">6E: Poster and Demo presentations</a>
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
@@ -2676,7 +2676,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-7">
             <div id="expander"></div>
-            <a href="#" class="session-title">7E: TBD</a>
+            <a href="#" class="session-title">7E: Poster presentations</a>
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
@@ -2950,7 +2950,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-8">
             <div id="expander"></div>
-            <a href="#" class="session-title">8E: TBD</a>
+            <a href="#" class="session-title">8E: Poster and Demo presentations</a>
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
@@ -3195,7 +3195,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-9">
             <div id="expander"></div>
-            <a href="#" class="session-title">9E: TBD</a>
+            <a href="#" class="session-title">9E: Poster and Demo presentations</a>
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
@@ -3444,7 +3444,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-10">
             <div id="expander"></div>
-            <a href="#" class="session-title">10E: TBD</a>
+            <a href="#" class="session-title">10E: Poster and Demo presentations</a>
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
@@ -3693,7 +3693,7 @@ script: |
         </div>
         <div class="session session-expandable session-posters" id="session-poster-11">
             <div id="expander"></div>
-            <a href="#" class="session-title">11E: TBD</a>
+            <a href="#" class="session-title">11E: Poster presentations</a>
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
