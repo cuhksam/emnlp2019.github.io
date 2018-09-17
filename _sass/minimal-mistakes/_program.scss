@@ -180,6 +180,8 @@ div.session {
         border-left: 2px solid $light-gray;
         border-bottom: 2px solid $light-gray;
         border-right: 2px solid $light-gray;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     &.session-posters {
@@ -191,6 +193,8 @@ div.session {
         float: left;
         width: percentage(24/24);
         border: 2px solid $light-gray;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
  
