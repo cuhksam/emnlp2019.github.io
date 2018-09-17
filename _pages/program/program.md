@@ -159,7 +159,7 @@ script: |
             var thisEnd = thisPaperRange[1];
             var otherStart = otherPaperRange[0];
             var otherEnd = otherPaperRange[1];
-            return ((thisStart <= otherEnd) && (thisEnd >= otherStart));
+            return ((thisStart < otherEnd) && (thisEnd > otherStart));
         }
 
         function getConflicts(paperObject) {
