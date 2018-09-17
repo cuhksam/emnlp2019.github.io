@@ -149,7 +149,7 @@ script: |
             var posterTimeText = posterTimeObj.text().trim();
             var posterTimes = posterTimeText.split(' ');
             var posterSlotStart = posterTimes[0];
-            var posterSlotEnd = posterTimes[3];
+            var posterSlotEnd = posterTimes[2];
             var exactPosterStartingTime = sessionDay + ', 2018 ' + posterSlotStart;
             return [new Date(exactPosterStartingTime).getTime(), posterSlotStart, posterSlotEnd, posterSession.attr('id')];
         }
