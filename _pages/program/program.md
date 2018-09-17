@@ -840,7 +840,7 @@ script: |
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
         <span class="session-time">9:00 &ndash; 12:30</span><br/>
         <div class="tutorial-session-details">
-            <!-- <hr class="detail-separator"/> --><br/>
+            <br/>
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
@@ -863,7 +863,7 @@ script: |
         <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
         <span class="session-time">14:00 &ndash; 17:30</span><br/>
         <div class="tutorial-session-details">
-            <!-- <hr class="detail-separator"/> --><br/>
+            <br/>
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
@@ -878,7 +878,7 @@ script: |
         <span class="session-time">18:00 &ndash; 21:00</span><br/>
         <span class="session-location btn btn--info btn--location">Bayshore Grand Ballroom</span>
         <div class="paper-session-details">
-            <!-- <hr class="detail-separator"/> --><br/>
+            <br/>
             <div class="session-abstract">
                 <p>Catch up with your colleagues at the Welcome Reception!  It will be held immediately following the tutorials at the Westin Bayshore Hotel, Sunday, July 30th, in the Bayshore Grand Ballroom (the conference venue).  Refreshments and a light dinner will be provided and a cash bar will be available.</p>
             </div>
@@ -889,7 +889,7 @@ script: |
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
         <span class="session-time">09:00 &ndash; 12:30</span><br/>
         <div class="tutorial-session-details">
-            <!-- <hr class="detail-separator"/> --><br/>
+            <br/>
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
@@ -912,7 +912,7 @@ script: |
         <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
         <span class="session-time">14:00 &ndash; 17:30</span><br/>
         <div class="tutorial-session-details">
-            <!-- <hr class="detail-separator"/> --><br/>
+            <br/>
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
@@ -938,7 +938,7 @@ script: |
         <span class="session-time">9:30 AM &ndash; 10:30 AM</span><br/>
         <span class="session-location btn btn--info btn--location">Gold Hall</span>
         <div class="paper-session-details">
-            <!-- <hr class="detail-separator"/> --><br/>
+            <br/>
             <div class="session-abstract">
                 <p>Detecting deception from various forms of human behavior is a longstanding research goal which is of considerable interest to the military, law enforcement, corporate security, social services and mental health workers. However, both humans and polygraphs are very poor at this task. We describe more accurate methods we have developed to detect deception automatically from spoken language. Our classifiers are trained on the largest cleanly recorded corpus of within-subject deceptive and non-deceptive speech that has been collected. To distinguish truth from lie we make use of acoustic-prosodic, lexical, demographic, and personality features. We further examine differences in deceptive behavior based upon gender, personality, and native language (Mandarin Chinese vs. English), comparing our systems to human performance. We extend our studies to identify cues in trusted speech vs. mistrusted speech and how these features differ by speaker and by listener. Why does a listener believe a lie?</p>
             </div>
@@ -957,7 +957,7 @@ script: |
                 <span class="session-location btn btn--info btn--location">Gold Hall</span>
                 <br/>
                 <div class="paper-session-details">
-                    <!-- <hr class="detail-separator"/> --><br/>
+                    <br/>
                     <a href="#" class="session-selector" id="session-1a-selector">
                     Choose All</a>
                     <a href="#" class="session-deselector" id="session-1a-deselector">Remove All</a>
@@ -1005,7 +1005,7 @@ script: |
                 <span class="session-location btn btn--info btn--location">Copper Hall</span>
                 <br/>
                 <div class="paper-session-details">
-                    <!-- <hr class="detail-separator"/> --><br/>
+                    <br/>
                     <a href="#" class="session-selector" id="session-1b-selector">
                     Choose All</a>
                     <a href="#" class="session-deselector" id="session-1b-deselector">Remove All</a>
@@ -1053,7 +1053,7 @@ script: |
                 <span class="session-location btn btn--info btn--location">Silver Hall</span>
                 <br/>
                 <div class="paper-session-details">
-                    <!-- <hr class="detail-separator"/> --><br/>
+                    <br/>
                     <a href="#" class="session-selector" id="session-1c-selector">
                     Choose All</a>
                     <a href="#" class="session-deselector" id="session-1c-deselector">Remove All</a>
@@ -1101,7 +1101,7 @@ script: |
                 <span class="session-location btn btn--info btn--location">Hall 100</span>
                 <br/>
                 <div class="paper-session-details">
-                    <!-- <hr class="detail-separator"/> --><br/>
+                    <br/>
                     <a href="#" class="session-selector" id="session-1d-selector">
                     Choose All</a>
                     <a href="#" class="session-deselector" id="session-1d-deselector">Remove All</a>
@@ -1148,7 +1148,7 @@ script: |
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
-                <!-- <hr class="detail-separator"/> --><br/>
+                <br/>
                 <h4 class="poster-type">Topic 1</h4>
                 <table class="poster-table">
                     <tr id="poster">
