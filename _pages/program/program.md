@@ -333,30 +333,6 @@ script: |
 
         function populateHiddenProgramTable() {
 
-            /* if no posters were selected from either or both of the two poster sessions, we still want a row showing the main plenary poster session information for the unchosen session(s) */
-            var posterSessionKeys = Object.keys(chosenPostersHash);
-            if (posterSessionKeys.length == 0) {
-                var sessionNames = ['session-poster-1', 'session-poster-2'];
-                for (var i=0; i<sessionNames.length; i++) {
-                    var session = sessionInfoHash[sessionNames[i]];
-                    var exactSessionStartingTime = session.day + ', 2018 ' + session.start;
-                    var newPlenaryKey = new Date(exactSessionStartingTime).getTime();
-                    if (!(newPlenaryKey in plenarySessionHash)) {
-                        plenarySessionHash[newPlenaryKey] = session;
-                    }
-                }
-            }
-            else if (posterSessionKeys.length == 1) {
-                var posters = chosenPostersHash[posterSessionKeys[0]];
-                var usedSession = posters[0].session;
-                var unusedSession = usedSession == 'session-poster-1' ? sessionInfoHash['session-poster-2'] : sessionInfoHash['session-poster-1'];
-                var exactSessionStartingTime = unusedSession.day + ', 2018 ' + unusedSession.start;
-                var newPlenaryKey = new Date(exactSessionStartingTime).getTime();
-                if (!(newPlenaryKey in plenarySessionHash)) {
-                    plenarySessionHash[newPlenaryKey] = unusedSession;
-                }
-            }
-
             /* concatenate the tutorial, poster and paper keys */
             var nonPlenaryKeys = Object.keys(chosenPapersHash).concat(Object.keys(chosenTutorialsHash)).concat(Object.keys(chosenPostersHash));
 
