@@ -134,7 +134,7 @@ script: |
             var tutorialTimeText = tutorialTimeObj.text().trim();
             var tutorialTimes = tutorialTimeText.split(' ');
             var tutorialSlotStart = tutorialTimes[0];
-            var tutorialSlotEnd = tutorialTimes[3];
+            var tutorialSlotEnd = tutorialTimes[2];
             var exactTutorialStartingTime = sessionDay + ', 2018 ' + tutorialSlotStart;
             return [new Date(exactTutorialStartingTime).getTime(), tutorialSlotStart, tutorialSlotEnd, tutorialSession.attr('id')];
         }
