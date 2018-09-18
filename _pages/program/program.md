@@ -543,7 +543,7 @@ script: |
 
                 /* get the paper time and title */
                 var paperTimeObj = $(this).children('#paper-time');
-                var paperTitle = paperTimeObj.siblings('td').text().trim();
+                var paperTitle = paperTimeObj.siblings('td').text().trim().replace(/\s\s+/g, " ");
 
                 /* get the paper slot and the starting and ending times */
                 var paperTimeText = paperTimeObj.text().trim();
