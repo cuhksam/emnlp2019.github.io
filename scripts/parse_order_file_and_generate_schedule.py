@@ -200,6 +200,10 @@ def main():
                             if poster_title == 'TITLE':
                                 poster_title = poster_title + '-' + str(next(title_counter))
                             poster_authors = authors_dict[poster_id].strip()
+                            if poster_id.endswith('-demo'):
+                                poster_title = '[DEMO] {}'.format(poster_title)
+                            if poster_id.endswith('-TACL'):
+                                poster_title = '[TACL] {}'.format(poster_title)
                             generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em></td></tr>'.format(poster_id, poster_title, poster_authors))
                         else:
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
@@ -208,6 +212,8 @@ def main():
                             if paper_title == 'TITLE':
                                 paper_title = paper_title + '-' + str(next(title_counter))
                             paper_authors = authors_dict[paper_id].strip()
+                            if paper_id.endswith('-TACL'):
+                                paper_title = '[TACL] {}'.format(paper_title)
                             generated_html.append('<tr id="paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em></td></tr>'.format(paper_id, paper_start, paper_end, paper_title, paper_authors))
                     generated_html.append('</table></div></div>'.format(paper_id, paper_start, paper_end, paper_title))
                 generated_html.append('</div>')

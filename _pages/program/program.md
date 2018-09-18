@@ -1397,14 +1397,14 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="65-demo">
                         <td>
-                            <span class="poster-title">CytonMT: an Efficient Neural Machine Translation Open-source Toolkit Implemented in C++.</span>
-                            <em>Xiaolin Wang, Masao Utiyama and Eiichiro Sumita-demo</em>
+                            <span class="poster-title">[DEMO] CytonMT: an Efficient Neural Machine Translation Open-source Toolkit Implemented in C++.</span>
+                            <em>Xiaolin Wang, Masao Utiyama and Eiichiro Sumita</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="38-demo">
                         <td>
-                            <span class="poster-title">SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing..</span>
-                            <em>Taku Kudo and John Richardson-demo</em>
+                            <span class="poster-title">[DEMO] SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing..</span>
+                            <em>Taku Kudo and John Richardson</em>
                         </td>
                     </tr>
                 </table>
@@ -2546,7 +2546,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1346-TACL">
                         <td>
-                            <span class="poster-title">Linear Algebraic Structure of Word Senses, with Applications to Polysemy.</span>
+                            <span class="poster-title">[TACL] Linear Algebraic Structure of Word Senses, with Applications to Polysemy.</span>
                             <em>Sanjeev Arora, Yuanzhi Li, Yingyu Liang, Tengyu Ma, Andrej Risteski</em>
                         </td>
                     </tr>
@@ -2654,26 +2654,26 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="8-demo">
                         <td>
-                            <span class="poster-title">TRANX: A Transition-based Neural Abstract Syntax Parser for Semantic Parsing and Code Generation.</span>
-                            <em>Pengcheng Yin and Graham Neubig-demo</em>
+                            <span class="poster-title">[DEMO] TRANX: A Transition-based Neural Abstract Syntax Parser for Semantic Parsing and Code Generation.</span>
+                            <em>Pengcheng Yin and Graham Neubig</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="25-demo">
                         <td>
-                            <span class="poster-title">Visual Interrogation of Attention-Based Models for Natural Language Inference and Machine Comprehension.</span>
-                            <em>Shusen Liu, Tao Li, Zhimin Liu, Vivek Srikumar, Valerio Pascucci and Peer-Timo Bremer-demo</em>
+                            <span class="poster-title">[DEMO] Visual Interrogation of Attention-Based Models for Natural Language Inference and Machine Comprehension.</span>
+                            <em>Shusen Liu, Tao Li, Zhimin Liu, Vivek Srikumar, Valerio Pascucci and Peer-Timo Bremer</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="62-demo">
                         <td>
-                            <span class="poster-title">Magnitude: A Fast, Efficient Universal Vector Embedding Utility Package.</span>
-                            <em>Ajay Patel, Alexander Sands, Chris Callison-Burch and Marianna Apidianaki-demo</em>
+                            <span class="poster-title">[DEMO] Magnitude: A Fast, Efficient Universal Vector Embedding Utility Package.</span>
+                            <em>Ajay Patel, Alexander Sands, Chris Callison-Burch and Marianna Apidianaki</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="77-demo">
                         <td>
-                            <span class="poster-title">Universal Sentence Encoder for English.</span>
-                            <em>Daniel Cer, Yinfei Yang, Sheng-yi Kong, Nan Hua, Nicole Limtiaco, Rhomni St. John, Noah Constant, Mario Guajardo-Cespedes, Steve Yuan, Chris Tar, Brian Strope and Ray Kurzweil-demo</em>
+                            <span class="poster-title">[DEMO] Universal Sentence Encoder for English.</span>
+                            <em>Daniel Cer, Yinfei Yang, Sheng-yi Kong, Nan Hua, Nicole Limtiaco, Rhomni St. John, Noah Constant, Mario Guajardo-Cespedes, Steve Yuan, Chris Tar, Brian Strope and Ray Kurzweil</em>
                         </td>
                     </tr>
                 </table>
@@ -2892,7 +2892,7 @@ script: |
                     <tr id="paper" paper-id="1430-TACL">
                         <td id="paper-time">10:12&ndash;10:30</td>
                         <td>
-                            <span class="paper-title">Comparing Bayesian Models of Annotation.</span>
+                            <span class="paper-title">[TACL] Comparing Bayesian Models of Annotation.</span>
                             <em>Silviu Paun, Bob Carpenter, Jon Chamberlain, Dirk Hovy, Udo Kruschwitz, Massimo Poesio</em>
                         </td>
                     </tr>
@@ -3115,44 +3115,44 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="39-demo">
                         <td>
-                            <span class="poster-title">CogCompTime: A Tool for Understanding Time in Natural Language.</span>
-                            <em>Qiang Ning, Ben Zhou, Zhili Feng, Haoruo Peng and Dan Roth-demo</em>
+                            <span class="poster-title">[DEMO] CogCompTime: A Tool for Understanding Time in Natural Language.</span>
+                            <em>Qiang Ning, Ben Zhou, Zhili Feng, Haoruo Peng and Dan Roth</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="29-demo">
                         <td>
-                            <span class="poster-title">DERE: A Task and Domain-Independent Slot Filling Framework for Declarative Relation Extraction.</span>
-                            <em>Heike Adel, Laura Ana Maria Bostan, Sean Papay, Sebastian Padó and Roman Klinger-demo</em>
+                            <span class="poster-title">[DEMO] DERE: A Task and Domain-Independent Slot Filling Framework for Declarative Relation Extraction.</span>
+                            <em>Heike Adel, Laura Ana Maria Bostan, Sean Papay, Sebastian Padó and Roman Klinger</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="63-demo">
                         <td>
-                            <span class="poster-title">Integrating Knowledge-Supported Search into the INCEpTION Annotation Platform.</span>
-                            <em>Beto Boullosa, Richard Eckart de Castilho, Naveen Kumar, Jan-Christoph Klie and Iryna Gurevych-demo</em>
+                            <span class="poster-title">[DEMO] Integrating Knowledge-Supported Search into the INCEpTION Annotation Platform.</span>
+                            <em>Beto Boullosa, Richard Eckart de Castilho, Naveen Kumar, Jan-Christoph Klie and Iryna Gurevych</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="67-demo">
                         <td>
-                            <span class="poster-title">OpenKE: An Open Toolkit for Knowledge Embedding.</span>
-                            <em>Xu Han, Shulin Cao, Xin Lv, Yankai Lin, Zhiyuan Liu, Maosong Sun and Juanzi Li-demo</em>
+                            <span class="poster-title">[DEMO] OpenKE: An Open Toolkit for Knowledge Embedding.</span>
+                            <em>Xu Han, Shulin Cao, Xin Lv, Yankai Lin, Zhiyuan Liu, Maosong Sun and Juanzi Li</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="21-demo">
                         <td>
-                            <span class="poster-title">An Interactive Web-Interface for Visualizing the Inner Workings of the Question Answering LSTM.</span>
-                            <em>Ekaterina Loginova and Günter Neumann-demo</em>
+                            <span class="poster-title">[DEMO] An Interactive Web-Interface for Visualizing the Inner Workings of the Question Answering LSTM.</span>
+                            <em>Ekaterina Loginova and Günter Neumann</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="58-demo">
                         <td>
-                            <span class="poster-title">An Interface for Annotating Science Questions.</span>
-                            <em>Michael Boratko, Harshit Padigela, Divyendra Mikkilineni, Pritish Yuvraj, Rajarshi Das, Andrew McCallum, Maria Chang, Achille Fokoue, Pavan Kapanipathi, Nicholas Mattei, Ryan Musa, Kartik Talamadupula and Michael Witbrock-demo</em>
+                            <span class="poster-title">[DEMO] An Interface for Annotating Science Questions.</span>
+                            <em>Michael Boratko, Harshit Padigela, Divyendra Mikkilineni, Pritish Yuvraj, Rajarshi Das, Andrew McCallum, Maria Chang, Achille Fokoue, Pavan Kapanipathi, Nicholas Mattei, Ryan Musa, Kartik Talamadupula and Michael Witbrock</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="61-demo">
                         <td>
-                            <span class="poster-title">Interactive Instance-based Evaluation of Knowledge Base Question Answering.</span>
-                            <em>Daniil Sorokin and Iryna Gurevych-demo</em>
+                            <span class="poster-title">[DEMO] Interactive Instance-based Evaluation of Knowledge Base Question Answering.</span>
+                            <em>Daniil Sorokin and Iryna Gurevych</em>
                         </td>
                     </tr>
                 </table>
@@ -3532,13 +3532,13 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1199-TACL">
                         <td>
-                            <span class="poster-title">In-Order Transition-based Constituent Parsing.</span>
+                            <span class="poster-title">[TACL] In-Order Transition-based Constituent Parsing.</span>
                             <em>Jiangming Liu and Yue Zhang</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1425-TACL">
                         <td>
-                            <span class="poster-title">Surface Statistics of an Unknown Language Indicate How to Parse It.</span>
+                            <span class="poster-title">[TACL] Surface Statistics of an Unknown Language Indicate How to Parse It.</span>
                             <em>Dingquan Wang and Jason Eisner</em>
                         </td>
                     </tr>
@@ -3562,20 +3562,20 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1446-TACL">
                         <td>
-                            <span class="poster-title">Universal Word Segmentation: Implementation and Interpretation.</span>
+                            <span class="poster-title">[TACL] Universal Word Segmentation: Implementation and Interpretation.</span>
                             <em>Yan Shao, Christian Hardmeier, Joakim Nivre</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="18-demo">
                         <td>
-                            <span class="poster-title">MorAz: an Open-source Morphological Analyzer for Azerbaijani Turkish.</span>
-                            <em>Berke Özenç, Razieh Ehsani and Ercan Solak-demo</em>
+                            <span class="poster-title">[DEMO] MorAz: an Open-source Morphological Analyzer for Azerbaijani Turkish.</span>
+                            <em>Berke Özenç, Razieh Ehsani and Ercan Solak</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="33-demo">
                         <td>
-                            <span class="poster-title">Juman++: A Morphological Analysis Toolkit for Scriptio Continua.</span>
-                            <em>Arseny Tolmachev, Daisuke Kawahara and Sadao Kurohashi-demo</em>
+                            <span class="poster-title">[DEMO] Juman++: A Morphological Analysis Toolkit for Scriptio Continua.</span>
+                            <em>Arseny Tolmachev, Daisuke Kawahara and Sadao Kurohashi</em>
                         </td>
                     </tr>
                 </table>
@@ -3955,13 +3955,13 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1199-TACL">
                         <td>
-                            <span class="poster-title">In-Order Transition-based Constituent Parsing.</span>
+                            <span class="poster-title">[TACL] In-Order Transition-based Constituent Parsing.</span>
                             <em>Jiangming Liu and Yue Zhang</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1425-TACL">
                         <td>
-                            <span class="poster-title">Surface Statistics of an Unknown Language Indicate How to Parse It.</span>
+                            <span class="poster-title">[TACL] Surface Statistics of an Unknown Language Indicate How to Parse It.</span>
                             <em>Dingquan Wang and Jason Eisner</em>
                         </td>
                     </tr>
@@ -3985,20 +3985,20 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1446-TACL">
                         <td>
-                            <span class="poster-title">Universal Word Segmentation: Implementation and Interpretation.</span>
+                            <span class="poster-title">[TACL] Universal Word Segmentation: Implementation and Interpretation.</span>
                             <em>Yan Shao, Christian Hardmeier, Joakim Nivre</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="18-demo">
                         <td>
-                            <span class="poster-title">MorAz: an Open-source Morphological Analyzer for Azerbaijani Turkish.</span>
-                            <em>Berke Özenç, Razieh Ehsani and Ercan Solak-demo</em>
+                            <span class="poster-title">[DEMO] MorAz: an Open-source Morphological Analyzer for Azerbaijani Turkish.</span>
+                            <em>Berke Özenç, Razieh Ehsani and Ercan Solak</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="33-demo">
                         <td>
-                            <span class="poster-title">Juman++: A Morphological Analysis Toolkit for Scriptio Continua.</span>
-                            <em>Arseny Tolmachev, Daisuke Kawahara and Sadao Kurohashi-demo</em>
+                            <span class="poster-title">[DEMO] Juman++: A Morphological Analysis Toolkit for Scriptio Continua.</span>
+                            <em>Arseny Tolmachev, Daisuke Kawahara and Sadao Kurohashi</em>
                         </td>
                     </tr>
                 </table>
@@ -4246,7 +4246,7 @@ script: |
                     <tr id="paper" paper-id="1420-TACL">
                         <td id="paper-time">17:42&ndash;18:00</td>
                         <td>
-                            <span class="paper-title">Recurrent Neural Networks in Linguistic Theory: Revisiting Pinker and Prince (1988) and the Past Tense Debate.</span>
+                            <span class="paper-title">[TACL] Recurrent Neural Networks in Linguistic Theory: Revisiting Pinker and Prince (1988) and the Past Tense Debate.</span>
                             <em>Christo Kirov, Ryan Cotterell</em>
                         </td>
                     </tr>
@@ -4439,20 +4439,20 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="35-demo">
                         <td>
-                            <span class="poster-title">Visualization of the Topic Space of Argument Search Results in args.me.</span>
-                            <em>Yamen Ajjour, Henning Wachsmuth, Dora Kiesel, Patrick Riehmann, Fan Fan, Giuliano Castiglia, Rosemary Adejoh, Bernd Fröhlich and Benno Stein-demo</em>
+                            <span class="poster-title">[DEMO] Visualization of the Topic Space of Argument Search Results in args.me.</span>
+                            <em>Yamen Ajjour, Henning Wachsmuth, Dora Kiesel, Patrick Riehmann, Fan Fan, Giuliano Castiglia, Rosemary Adejoh, Bernd Fröhlich and Benno Stein</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="44-demo">
                         <td>
-                            <span class="poster-title">A Multilingual Information Extraction Pipeline for Investigative Journalism.</span>
-                            <em>Gregor Wiedemann, Seid Muhie Yimam and Chris Biemann-demo</em>
+                            <span class="poster-title">[DEMO] A Multilingual Information Extraction Pipeline for Investigative Journalism.</span>
+                            <em>Gregor Wiedemann, Seid Muhie Yimam and Chris Biemann</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="75-demo">
                         <td>
-                            <span class="poster-title">When science journalism meets artificial intelligence : An interactive demonstration.</span>
-                            <em>Raghuram Vadapalli, Bakhtiyar Syed, Nishant Prabhu, Balaji Vasan Srinivasan and Vasudeva Varma-demo</em>
+                            <span class="poster-title">[DEMO] When science journalism meets artificial intelligence : An interactive demonstration.</span>
+                            <em>Raghuram Vadapalli, Bakhtiyar Syed, Nishant Prabhu, Balaji Vasan Srinivasan and Vasudeva Varma</em>
                         </td>
                     </tr>
                 </table>
@@ -4563,7 +4563,7 @@ script: |
                     <tr id="paper" paper-id="1413-TACL">
                         <td id="paper-time">10:12&ndash;10:30</td>
                         <td>
-                            <span class="paper-title">Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification.</span>
+                            <span class="paper-title">[TACL] Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification.</span>
                             <em>Xilun Chen, Yu Sun, Ben Athiwaratkun, Claire Cardie, Kilian Weinberger</em>
                         </td>
                     </tr>
@@ -4720,7 +4720,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1424-TACL">
                         <td>
-                            <span class="poster-title">Polite Dialogue Generation Without Parallel Data.</span>
+                            <span class="poster-title">[TACL] Polite Dialogue Generation Without Parallel Data.</span>
                             <em>Niu, Tong  and Bansal, Mohit</em>
                         </td>
                     </tr>
@@ -4906,44 +4906,44 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="56-demo">
                         <td>
-                            <span class="poster-title">Visualizing Group Dynamics based on Multiparty Meeting Understanding.</span>
-                            <em>Ni Zhang, Tongtao Zhang, Indrani Bhattacharya, Heng Ji and Rich Radke-demo</em>
+                            <span class="poster-title">[DEMO] Visualizing Group Dynamics based on Multiparty Meeting Understanding.</span>
+                            <em>Ni Zhang, Tongtao Zhang, Indrani Bhattacharya, Heng Ji and Rich Radke</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="70-demo">
                         <td>
-                            <span class="poster-title">PizzaPal: Conversational Pizza Ordering using a High-Density Conversational AI Platform.</span>
-                            <em>Antoine Raux, Yi Ma, Paul Yang and Felicia Wong-demo</em>
+                            <span class="poster-title">[DEMO] PizzaPal: Conversational Pizza Ordering using a High-Density Conversational AI Platform.</span>
+                            <em>Antoine Raux, Yi Ma, Paul Yang and Felicia Wong</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="71-demo">
                         <td>
-                            <span class="poster-title">Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing.</span>
-                            <em>Arushi Raghuvanshi, Lucien Carroll and Karthik Raghunathan-demo</em>
+                            <span class="poster-title">[DEMO] Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing.</span>
+                            <em>Arushi Raghuvanshi, Lucien Carroll and Karthik Raghunathan</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="7-demo">
                         <td>
-                            <span class="poster-title">SyntaViz: Visualizing Voice Queries through a Syntax-Driven Hierarchical Ontology.</span>
-                            <em>Md Iftekhar Tanveer and Ferhan Ture-demo</em>
+                            <span class="poster-title">[DEMO] SyntaViz: Visualizing Voice Queries through a Syntax-Driven Hierarchical Ontology.</span>
+                            <em>Md Iftekhar Tanveer and Ferhan Ture</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="69-demo">
                         <td>
-                            <span class="poster-title">LIA: A Natural Language Programmable Personal Assistant.</span>
-                            <em>Igor Labutov, Shashank Srivastava and Tom Mitchell-demo</em>
+                            <span class="poster-title">[DEMO] LIA: A Natural Language Programmable Personal Assistant.</span>
+                            <em>Igor Labutov, Shashank Srivastava and Tom Mitchell</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="10-demo">
                         <td>
-                            <span class="poster-title">Data2Text Studio: Automated Text Generation from Structured Data.</span>
-                            <em>Longxu Dou, Guanghui Qin, Jinpeng Wang, Jin-Ge Yao and Chin-Yew Lin-demo</em>
+                            <span class="poster-title">[DEMO] Data2Text Studio: Automated Text Generation from Structured Data.</span>
+                            <em>Longxu Dou, Guanghui Qin, Jinpeng Wang, Jin-Ge Yao and Chin-Yew Lin</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="32-demo">
                         <td>
-                            <span class="poster-title">Demonstrating Par4Sem - A Semantic Writing Aid with Adaptive Paraphrasing.</span>
-                            <em>Seid Muhie Yimam and Chris Biemann-demo</em>
+                            <span class="poster-title">[DEMO] Demonstrating Par4Sem - A Semantic Writing Aid with Adaptive Paraphrasing.</span>
+                            <em>Seid Muhie Yimam and Chris Biemann</em>
                         </td>
                     </tr>
                 </table>
@@ -5317,13 +5317,13 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1379-TACL">
                         <td>
-                            <span class="poster-title">Language Modeling for Morphologically Rich Languages: Character-Aware Modeling for Word-Level Prediction.</span>
+                            <span class="poster-title">[TACL] Language Modeling for Morphologically Rich Languages: Character-Aware Modeling for Word-Level Prediction.</span>
                             <em>Daniela Gerz, Ivan Vulić, Edoardo Maria Ponti, Jason Naradowsky, Roi Reichart, Anna Korhonen</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1396-TACL">
                         <td>
-                            <span class="poster-title">LOW-RANK RNN ADAPTATION FOR CONTEXT-AWARE LANGUAGE MODELING.</span>
+                            <span class="poster-title">[TACL] LOW-RANK RNN ADAPTATION FOR CONTEXT-AWARE LANGUAGE MODELING.</span>
                             <em>Aaron Jaech and Mari Ostendorf</em>
                         </td>
                     </tr>
@@ -5359,26 +5359,26 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="49-demo">
                         <td>
-                            <span class="poster-title">Sisyphus, a Workflow Manager Designed for Machine Translation and Automatic Speech Recognition.</span>
-                            <em>Jan-Thorsten Peter, Eugen Beck and Hermann Ney-demo</em>
+                            <span class="poster-title">[DEMO] Sisyphus, a Workflow Manager Designed for Machine Translation and Automatic Speech Recognition.</span>
+                            <em>Jan-Thorsten Peter, Eugen Beck and Hermann Ney</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="59-demo">
                         <td>
-                            <span class="poster-title">APLenty: annotation tool for creating high-quality datasets using active and proactive learning.</span>
-                            <em>Minh-Quoc Nghiem and Sophia Ananiadou-demo</em>
+                            <span class="poster-title">[DEMO] APLenty: annotation tool for creating high-quality datasets using active and proactive learning.</span>
+                            <em>Minh-Quoc Nghiem and Sophia Ananiadou</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="53-demo">
                         <td>
-                            <span class="poster-title">KT-Speech-Crawler: Automatic Dataset Construction for Speech Recognition from YouTube Videos.</span>
-                            <em>Egor Lakomkin, Sven Magg, Cornelius Weber and Stefan Wermter-demo</em>
+                            <span class="poster-title">[DEMO] KT-Speech-Crawler: Automatic Dataset Construction for Speech Recognition from YouTube Videos.</span>
+                            <em>Egor Lakomkin, Sven Magg, Cornelius Weber and Stefan Wermter</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="15-demo">
                         <td>
-                            <span class="poster-title">Term Set Expansion based NLP Architect by Intel AI Lab.</span>
-                            <em>Jonathan Mamou, Oren Pereg, Moshe Wasserblat, Alon Eirew, Yael Green, Shira Guskin, Peter Izsak and Daniel Korat-demo</em>
+                            <span class="poster-title">[DEMO] Term Set Expansion based NLP Architect by Intel AI Lab.</span>
+                            <em>Jonathan Mamou, Oren Pereg, Moshe Wasserblat, Alon Eirew, Yael Green, Shira Guskin, Peter Izsak and Daniel Korat</em>
                         </td>
                     </tr>
                 </table>
