@@ -857,7 +857,7 @@ script: |
 </p>
 
 <div class="schedule">
-    <div class="day" id="first-day">Wednesday, October 31, 2018</div>
+    <div class="day" id="first-day">Wednesday, October 31 2018</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials1">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
         <span class="session-time">9:00 &ndash; 12:30</span><br/>
@@ -895,7 +895,7 @@ script: |
             </table>
         </div>
     </div>
-    <div class="day" id="second-day">Thursday, November 1, 2018</div>
+    <div class="day" id="second-day">Thursday, November 1 2018</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials2">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
         <span class="session-time">09:00 &ndash; 12:30</span><br/>
