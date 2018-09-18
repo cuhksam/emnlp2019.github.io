@@ -954,7 +954,7 @@ script: |
             </table>
         </div>
     </div>
-<div class="day" id="day-3">Friday, 2 November 2018</div>
+    <div class="day" id="day-3">Friday, 2 November 2018</div>
     <div class="session session-plenary" id="session-welcome">
         <span class="session-title">Opening remarks</span>
         <br/>
@@ -1099,7 +1099,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers3" id="session-1c">
             <div id="expander"></div>
-            <a href="#" class="session-title">1C: Vision &amp; Language</a>
+            <a href="#" class="session-title">1C: Vision</a>
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
@@ -1939,7 +1939,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers3" id="session-3c">
             <div id="expander"></div>
-            <a href="#" class="session-title">3C: Semantic Parsing &amp; Generation</a>
+            <a href="#" class="session-title">3C: Semantic Parsing / Generation</a>
             <br/>
             <span class="session-time">15:00 &ndash; 16:00</span>
             <br/>
@@ -1993,7 +1993,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers4" id="session-3d">
             <div id="expander"></div>
-            <a href="#" class="session-title">3D: Vision &amp; Language; Discourse</a>
+            <a href="#" class="session-title">3D: Vision / Discourse</a>
             <br/>
             <span class="session-time">15:00 &ndash; 16:00</span>
             <br/>
@@ -2296,7 +2296,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers2" id="session-4b">
             <div id="expander"></div>
-            <a href="#" class="session-title">4B: Event &amp; Relation Extraction</a>
+            <a href="#" class="session-title">4B: Information Extraction</a>
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
@@ -2404,7 +2404,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers4" id="session-4d">
             <div id="expander"></div>
-            <a href="#" class="session-title">4D: Visual Question Answering</a>
+            <a href="#" class="session-title">4D: Visual QA</a>
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
@@ -2793,7 +2793,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers3" id="session-5c">
             <div id="expander"></div>
-            <a href="#" class="session-title">5C: Information Retrieval &amp; Text Mining</a>
+            <a href="#" class="session-title">5C: IR / Text Mining</a>
             <br/>
             <span class="session-time">09:00 &ndash; 09:30</span>
             <br/>
@@ -3699,7 +3699,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers3" id="session-7c">
             <div id="expander"></div>
-            <a href="#" class="session-title">7C: Named Entity Recognition</a>
+            <a href="#" class="session-title">7C: NER</a>
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
@@ -3753,7 +3753,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers4" id="session-7d">
             <div id="expander"></div>
-            <a href="#" class="session-title">7D: Morphology &amp; Syntactic Parsing</a>
+            <a href="#" class="session-title">7D: Morphology / Parsing</a>
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
@@ -4201,7 +4201,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers4" id="session-8d">
             <div id="expander"></div>
-            <a href="#" class="session-title">8D: Morphology &amp; Phonology</a>
+            <a href="#" class="session-title">8D: Morphology / Phonology</a>
             <br/>
             <span class="session-time">16:30 &ndash; 18:00</span>
             <br/>
@@ -5121,7 +5121,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers4" id="session-10d">
             <div id="expander"></div>
-            <a href="#" class="session-title">10D: Language Evolution &amp; Sociolinguistics</a>
+            <a href="#" class="session-title">10D: Language Evolution / Sociolinguistics</a>
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>
@@ -5394,7 +5394,7 @@ script: |
         <div class="session-header" id="session-header-11">Short Papers IV (Orals &amp; Posters)</div>
         <div class="session session-expandable session-papers1" id="session-11a">
             <div id="expander"></div>
-            <a href="#" class="session-title">11A: Analyzing Model Performance</a>
+            <a href="#" class="session-title">11A: Analyzing Models</a>
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
@@ -5556,7 +5556,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers4" id="session-11d">
             <div id="expander"></div>
-            <a href="#" class="session-title">11D: Question Answering &amp; Knowledge Graphs</a>
+            <a href="#" class="session-title">11D: QA / Knowledge Graphs</a>
             <br/>
             <span class="session-time">13:45 &ndash; 14:45</span>
             <br/>
