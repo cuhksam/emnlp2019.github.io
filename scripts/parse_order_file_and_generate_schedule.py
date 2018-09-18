@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 
 '''
-This script parses the order.txt file provided by the program chairs
-and generates the HTML that can then be added to the program.
+This script parses the following two files provided by the program chairs
+and generates the HTML that can then be added to the program page on the 
+website:
+
+- order.txt
+- authors.csv
 
 Note that:
 
@@ -11,12 +15,13 @@ Note that:
 2. The HTML generated will not contain the abstracts for invited
 talks which are instead read in from this script.
 
-3. The order file does not contain tutorial information.
+3. The order file does not contain tutorial or author information.
 
 4. No poster types are generated for now.
 '''
 
 import argparse
+import csv
 import logging
 import re
 
@@ -26,10 +31,10 @@ from itertools import count, cycle
 NON_PAPER_SESSION_REGEXP = re.compile(r'([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+(.*?)\s+\((.*?)\)')
 BREAK_SESSION_REGEXP = re.compile(r'([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+(.*)')
 PAPER_SESSION_GROUP_REGEXP = re.compile(r'([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+(.*?)\((.*?)\)\s+(.*)')
-PAPER_SESSION_REGEXP = re.compile(r'Session ([^:]+): ([^\(]+)\((.*?), (.*?)\)')
-PAPER_REGEXP = re.compile(r'([^ ]+)\s+([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+#\s+(.*)')
-POSTER_DEMO_REGEXP = re.compile(r'([^ ]+)\s+#\s+(.*)')
-BEST_PAPER_REGEXP = re.compile(r'([^ ]+)\s+([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+#\s+([^ ]+)\s+\((.*)\)')
+PAPER_SESSION_REGEXP = re.compile(r'Session ([^:]+): ([^\(]+) \((.*?)\)')
+PAPER_REGEXP = re.compile(r'([^ ]+)\s+([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s#\s(.*)')
+POSTER_DEMO_REGEXP = re.compile(r'([^ ]+)\s#\s(.*)')
+BEST_PAPER_REGEXP = re.compile(r'([^ ]+)\s+([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s#\s(.*)')
 
 KEYNOTE_ABSTRACT_DICT = {
     'Julia': 'Detecting deception from various forms of human behavior is a longstanding research goal which is of considerable interest to the military, law enforcement, corporate security, social services and mental health workers. However, both humans and polygraphs are very poor at this task. We describe more accurate methods we have developed to detect deception automatically from spoken language. Our classifiers are trained on the largest cleanly recorded corpus of within-subject deceptive and non-deceptive speech that has been collected. To distinguish truth from lie we make use of acoustic-prosodic, lexical, demographic, and personality features. We further examine differences in deceptive behavior based upon gender, personality, and native language (Mandarin Chinese vs. English), comparing our systems to human performance. We extend our studies to identify cues in trusted speech vs. mistrusted speech and how these features differ by speaker and by listener. Why does a listener believe a lie?',
@@ -72,10 +77,14 @@ def main():
 
     # set up an argument parser
     parser = argparse.ArgumentParser(prog='parse_order_file_and_generate_schedule.py')
-    parser.add_argument("--input",
+    parser.add_argument("--order",
                         dest="order_file",
                         required=True,
-                        help="Path to order file")
+                        help="Path to order file containing session information")
+    parser.add_argument("--authors",
+                        dest="authors_csv",
+                        required=True,
+                        help="Path to CSV file containing author information")
 
     # parse given command line arguments
     args = parser.parse_args()
@@ -87,9 +96,17 @@ def main():
     generated_html = []
 
     # open order file and capture the contents of each day into separate lists
-    with open(args.order_file, 'r') as inputfh:
-        processed_lines = [process_line(line) for line in inputfh]
+    with open(args.order_file, 'r') as orderfh:
+        processed_lines = [process_line(line) for line in orderfh]
     days = collect_instances(iter(processed_lines), '*')
+
+    # read in the CSV file mapping paper IDs to authors
+    authors_dict = {}
+    with open(args.authors_csv, 'r') as authorsfh:
+        reader = csv.DictReader(authorsfh, fieldnames=["Submission ID", "Authors"])
+        for row in reader:
+            assert row['Submission ID'] not in authors_dict
+            authors_dict[row['Submission ID']] = row['Authors']
 
     # now in each day, process each session one by one
     days_counter = count(start=3)
@@ -110,7 +127,7 @@ def main():
 
         # now iterate over each session in the day
         for session in day_sessions:
-            session_string = session.pop(0).lstrip('+ ')
+            session_string = session.pop(0).lstrip('+ ').strip()
             if 'break' in session_string.lower() or 'lunch' in session_string.lower():
                 session_start, session_end, break_title = BREAK_SESSION_REGEXP.match(session_string).groups()
                 if break_title.lower() == 'lunch':
@@ -147,8 +164,9 @@ def main():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 generated_html.append('<div class="session session-expandable session-papers-best"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">Gold Hall</span><br/><div class="paper-session-details"><br/><table class="paper-table">'.format(session_title, session_start, session_end, session_start, session_end))
                 for paper in session:
-                    best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_type = BEST_PAPER_REGEXP.match(paper.strip()).groups()
-                    generated_html.append('<tr id="best-paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>AUTHOR1, AUTHOR2, and AUTHOR3</em>&nbsp;({})</td></tr>'.format(best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_type.lower()))
+                    best_paper_id, best_paper_start, best_paper_end, best_paper_title = BEST_PAPER_REGEXP.match(paper.strip()).groups()
+                    best_paper_authors = authors_dict[best_paper_id].strip()
+                    generated_html.append('<tr id="best-paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em></td></tr>'.format(best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_authors))
                 generated_html.append('</table></div></div>')
             elif 'orals' in session_string.lower():
                 session_group_start, session_group_end, session_group_type, session_group_description, session_group_roman_numeral = PAPER_SESSION_GROUP_REGEXP.match(session_string).groups()
@@ -158,27 +176,39 @@ def main():
                 generated_html.append('<div class="session-box" id="session-box-{}"><div class="session-header" id="session-header-{}">{}{} ({})</div>'.format(paper_session_group_id, paper_session_group_id, session_group_type, session_group_roman_numeral, session_group_description))
                 day_session_splits = collect_instances(iter(session), '=')
                 for split in day_session_splits:
-                    split_string = split.pop(0).lstrip('= ')
-                    session_id, session_title, session_type, session_location = PAPER_SESSION_REGEXP.match(split_string).groups()
-                    if 'poster' in session_type.lower():
-                        generated_html.append('<div class="session session-expandable session-posters" id="session-poster-{}"><div id="expander"></div><a href="#" class="session-title">{}: {} ({})</a><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="poster-session-details"><br/><table class="poster-table">'.format(next(poster_session_counter), session_id, session_title, session_type, session_group_start, session_group_end, session_location))
+                    split_string = split.pop(0).lstrip('= ').strip()
+                    session_id, session_title, session_parens = PAPER_SESSION_REGEXP.match(split_string).groups()
+                    session_title = session_title.replace('and', '&amp;')
+                    if ',' in session_parens:
+                        session_type, session_location = session_parens.split(', ')
+                        session_type = session_type.strip()
+                        session_location = session_location.strip()
+                    else:
+                        session_location = session_parens.strip()
+                        session_type = ''
+                    if 'poster' in session_type.lower() or 'poster' in session_title.lower():
+                        session_title = '{} ({})'.format(session_title, session_type) if session_type else session_title
+                        generated_html.append('<div class="session session-expandable session-posters" id="session-poster-{}"><div id="expander"></div><a href="#" class="session-title">{}: {} </a><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="poster-session-details"><br/><table class="poster-table">'.format(next(poster_session_counter), session_id, session_title, session_group_start, session_group_end, session_location))
                     else:
                         generated_html.append('<div class="session session-expandable session-papers{}" id="session-{}"><div id="expander"></div><a href="#" class="session-title">{}: {}</a><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><br/><div class="paper-session-details"><br/><a href="#" class="session-selector" id="session-{}-selector"> Choose All</a><a href="#" class="session-deselector" id="session-{}-deselector">Remove All</a><table class="paper-table"><tr><td class="session-chair" colspan="2">Chair: TBD</td></tr>'.format(next(paper_session_counter), session_id.lower(), session_id, session_title, session_group_start, session_group_end, session_location, session_id.lower(), session_id.lower()))
                     for paper in split:
-                        if 'poster' in session_type.lower():
+                        paper = paper.strip()
+                        if 'poster' in session_type.lower() or 'poster' in session_title.lower():
                             poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
                             if poster_id == 'ID':
                                 poster_id = next(placeholder_poster_id_counter)
                             if poster_title == 'TITLE':
                                 poster_title = poster_title + '-' + str(next(title_counter))
-                            generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>AUTHOR1, AUTHOR2, and AUTHOR3</em></td></tr>'.format(poster_id, poster_title))
+                            poster_authors = authors_dict[poster_id].strip()
+                            generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em></td></tr>'.format(poster_id, poster_title, poster_authors))
                         else:
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
                             if paper_id == 'ID':
                                 paper_id = next(placeholder_paper_id_counter)
                             if paper_title == 'TITLE':
                                 paper_title = paper_title + '-' + str(next(title_counter))
-                            generated_html.append('<tr id="paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>AUTHOR1, AUTHOR2, and AUTHOR3</em></td></tr>'.format(paper_id, paper_start, paper_end, paper_title))
+                            paper_authors = authors_dict[paper_id].strip()
+                            generated_html.append('<tr id="paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em></td></tr>'.format(paper_id, paper_start, paper_end, paper_title, paper_authors))
                     generated_html.append('</table></div></div>'.format(paper_id, paper_start, paper_end, paper_title))
                 generated_html.append('</div>')
 
