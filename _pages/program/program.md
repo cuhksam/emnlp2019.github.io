@@ -473,6 +473,24 @@ script: |
                 }
             });
 
+            /* expand/collapse all sessions when the toggle button is clicked */
+            $('a#toggle-all-button').on('click', function (event) {
+                event.preventDefault();
+                var buttonText = $(this).text();
+
+                / * expand all collapsed sessions */
+                if (buttonText == 'Expand All Sessions ↓') {
+                    $('div#expander').not('.expanded').trigger('click');
+                    $(this).text('Collapse All Sessions ↑');
+                }
+                /* collapse all expanded sessions */
+                else {
+                    $('div#expander.expanded').trigger('click');
+                    $(this).text('Expand All Sessions ↓');
+                }
+            });
+
+
             $('span.session-location, span.inline-location').on('click', function(event) {
                 event.stopPropagation();
             });
@@ -854,6 +872,9 @@ script: |
 
 <p class="text-center">
     <a href="#" id="help-button" class="btn btn--small btn--info">Help</a>
+</p>
+<p class="text-center">
+    <a href="#" id="toggle-all-button" class="btn btn--small btn--info">Expand All Sessions ↓</a>
 </p>
 
 <div class="schedule">
