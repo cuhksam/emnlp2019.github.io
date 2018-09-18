@@ -5121,7 +5121,7 @@ script: |
         </div>
         <div class="session session-expandable session-papers4" id="session-10d">
             <div id="expander"></div>
-            <a href="#" class="session-title">10D: Language Evolution / Sociolinguistics</a>
+            <a href="#" class="session-title">10D: Evolution / Sociolinguistics</a>
             <br/>
             <span class="session-time">11:00 &ndash; 12:30</span>
             <br/>

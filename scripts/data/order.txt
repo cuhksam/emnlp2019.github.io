@@ -569,7 +569,7 @@
 1138 11:36--11:54 # A New Local Coherence Model for Text Quality Assessment
 1268 11:54--12:12 # Deep Attentive Sentence Ordering Network
 1276 12:12--12:30 # Getting to "Hearer-old": Charting Referring Expressions Across Time
-= Session 10D: Language Evolution / Sociolinguistics (Hall 100)
+= Session 10D: Evolution / Sociolinguistics (Hall 100)
 63 11:00--11:18 # Making "fetch" happen: The influence of social and linguistic context on nonstandard word growth and decline
 357 11:18--11:36 # Analyzing Correlated Evolution of Multiple Features Using Latent Representations
 486 11:36--11:54 # Capturing Regional Variation with Distributed Place Representations and Geographic Retrofitting
