@@ -866,12 +866,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T1] Joint Models for NLP.</strong> Yue Zhang.</span> <br/><span class="btn btn--info btn--location inline-location">Mackenzie</span>
+                        <span class="tutorial-title"><strong>[T1] Joint Models for NLP.</strong> Yue Zhang.</span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T2] Graph Formalisms for Meaning Representations.</strong> Adam Lopez and Sorcha Gilroy.</span><br/><span href="#" class="btn btn--info btn--location inline-location">Salon 1</span>
+                        <span class="tutorial-title"><strong>[T2] Graph Formalisms for Meaning Representations.</strong> Adam Lopez and Sorcha Gilroy.</span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
             </table>
@@ -889,7 +889,7 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T3] Writing Code for NLP Research.</strong> Matt Gardner, Mark Neumann, Joel Grus, and Nicholas Lourie. </span><br/><span href="#" class="btn btn--info btn--location inline-location">Salons A/B</span>
+                        <span class="tutorial-title"><strong>[T3] Writing Code for NLP Research.</strong> Matt Gardner, Mark Neumann, Joel Grus, and Nicholas Lourie. </span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
             </table>
@@ -904,12 +904,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T4] Deep Latent Variable Models of Natural Language.</strong> Alexander Rush, Yoon Kim, and Sam Wiseman.</span> <br/><span class="btn btn--info btn--location inline-location">Mackenzie</span>
+                        <span class="tutorial-title"><strong>[T4] Deep Latent Variable Models of Natural Language.</strong> Alexander Rush, Yoon Kim, and Sam Wiseman.</span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T5] Standardized Tests as benchmarks for Artificial Intelligence.</strong> Mrinmaya Sachan, Minjoon Seo, Hannaneh Hajishirzi, and Eric Xing.</span><br/><span href="#" class="btn btn--info btn--location inline-location">Salon 1</span>
+                        <span class="tutorial-title"><strong>[T5] Standardized Tests as benchmarks for Artificial Intelligence.</strong> Mrinmaya Sachan, Minjoon Seo, Hannaneh Hajishirzi, and Eric Xing.</span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
             </table>
@@ -927,7 +927,7 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T4] Deep Chit-Chat: Deep Learning for ChatBots.</strong> Wei Wu and Rui Yan. </span><br/><span href="#" class="btn btn--info btn--location inline-location">Salons A/B</span>
+                        <span class="tutorial-title"><strong>[T4] Deep Chit-Chat: Deep Learning for ChatBots.</strong> Wei Wu and Rui Yan. </span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
             </table>
