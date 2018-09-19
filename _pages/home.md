@@ -19,6 +19,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**September 19, 2018**. A draft version of the [conference schedule](/schedule) is now available. 
+{: .notice--info} 
+
 **September 7, 2018**. **Reminder**: If you need an invitation letter to obtain a visa or for other purposes, please see the [instructions](/participants/#visa-information) at the bottom of our Participants page.
 {: .notice--info} 
 
@@ -27,10 +30,6 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 **August 22, 2018**. The lists of accepted [long papers](/program/accepted/long-papers), [short papers](/program/accepted/short-papers), and [system demonstrations](/program/accepted/demos) have been posted. Congratulations to all the authors! Please follow these [instructions](/downloads/emnlp2018-final.pdf) to prepare the final, camera-ready versions of your papers.
 {: .notice--info} 
-
-**August 19, 2018**. EMNLP 2018 seeks student volunteers for the conference. In addition, it's also offering scholarships to subsidize conference attendance for *both* students as well as non-students with a financial need. More details [here](/participants/#travel-scholarships--student-volunteer-program).
-{: .notice} 
-
 
 <h2>Welcome!</h2>
 
