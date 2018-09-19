@@ -976,7 +976,7 @@ script: |
     <div class="day" id="first-day">Wednesday, October 31 2018</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials1">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
-        <span class="session-time">09:00 &ndash; 12:30</span><br/>
+        <span class="session-time" title="Wednesday, October 31 2018">09:00 &ndash; 12:30</span><br/>
         <div class="tutorial-session-details">
             <br/>
             <table class="tutorial-table">
@@ -995,11 +995,11 @@ script: |
     </div>
     <div class="session session-break session-plenary" id="session-lunch-1">
         <span class="session-title">Lunch</span><br/>        
-        <span class="session-time">12:30 &ndash; 14:00</span>
+        <span class="session-time" title="Wednesday, October 31 2018">12:30 &ndash; 14:00</span>
     </div>    
     <div class="session session-expandable session-tutorials" id="session-afternoon-tutorials1">
         <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
-        <span class="session-time">14:00 &ndash; 17:30</span><br/>
+        <span class="session-time" title="Wednesday, October 31 2018">14:00 &ndash; 17:30</span><br/>
         <div class="tutorial-session-details">
             <br/>
             <table class="tutorial-table">
@@ -1013,7 +1013,7 @@ script: |
     </div>
     <div class="session session-expandable session-workshops" id="session-workshops-1">
         <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
-        <span class="session-time">09:00 &ndash; 17:00</span><br/>
+        <span class="session-time" title="Wednesday, October 31 2018">09:00 &ndash; 17:00</span><br/>
         <div class="workshop-session-details">
             <br/>
             <table class="workshop-table">
@@ -1063,7 +1063,7 @@ script: |
     <div class="day" id="second-day">Thursday, November 1 2018</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials2">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
-        <span class="session-time">09:00 &ndash; 12:30</span><br/>
+        <span class="session-time" title="Thursday, November 1 2018">09:00 &ndash; 12:30</span><br/>
         <div class="tutorial-session-details">
             <br/>
             <table class="tutorial-table">
@@ -1082,11 +1082,11 @@ script: |
     </div>
     <div class="session session-break session-plenary" id="session-lunch-2">
         <span class="session-title">Lunch</span><br/>        
-        <span class="session-time">12:30 &ndash; 14:00</span>
+        <span class="session-time" title="Thursday, November 1 2018">12:30 &ndash; 14:00</span>
     </div>    
     <div class="session session-expandable session-tutorials" id="session-afternoon-tutorials2">
         <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
-        <span class="session-time">14:00 &ndash; 17:30</span><br/>
+        <span class="session-time" title="Thursday, November 1 2018">14:00 &ndash; 17:30</span><br/>
         <div class="tutorial-session-details">
             <br/>
             <table class="tutorial-table">
@@ -1100,7 +1100,7 @@ script: |
     </div>
     <div class="session session-expandable session-workshops" id="session-workshops-2">
         <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
-        <span class="session-time">09:00 &ndash; 17:00</span><br/>
+        <span class="session-time" title="Thursday, November 1 2018">09:00 &ndash; 17:00</span><br/>
         <div class="workshop-session-details">
             <br/>
             <table class="workshop-table">
@@ -1151,7 +1151,7 @@ script: |
         <div id="expander"></div>
         <a href="#" class="session-title">Welcome Reception</a>
         <br/>
-        <span class="session-time">18:00 &ndash; 20:00</span>
+        <span class="session-time" title="Thursday, November 1 2018">18:00 &ndash; 20:00</span>
         <br/>
         <span class="session-location btn btn--info btn--location">TBD</span>
         <div class="paper-session-details">
@@ -1161,11 +1161,11 @@ script: |
             </div>
         </div>
     </div>
-    <div class="day" id="day-3">Friday, 2 November 2018</div>
+<div class="day" id="day-3">Friday, 2 November 2018</div>
     <div class="session session-plenary" id="session-welcome">
         <span class="session-title">Opening remarks</span>
         <br/>
-        <span class="session-time">09:00 &ndash; 09:30</span>
+        <span class="session-time" title="Friday, 2 November 2018">09:00 &ndash; 09:30</span>
         <br/>
         <span class="session-location btn btn--info btn--location">Gold Hall</span>
     </div>
@@ -1179,7 +1179,7 @@ script: |
             <a href="http://www.cs.columbia.edu/~julia/" target="_blank">Julia Hirschberg (Columbia University)</a>
         </span>
         <br/>
-        <span class="session-time">09:30 &ndash; 10:30</span>
+        <span class="session-time" title="Friday, 2 November 2018">09:30 &ndash; 10:30</span>
         <br/>
         <span class="session-location btn btn--info btn--location">Gold Hall</span>
         <div class="paper-session-details">
@@ -1192,7 +1192,7 @@ script: |
     <div class="session session-break session-plenary" id="session-break-1">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">10:30 &ndash; 11:00</span>
+        <span class="session-time" title="Friday, 2 November 2018">10:30 &ndash; 11:00</span>
     </div>
     <div class="session-box" id="session-box-1">
         <div class="session-header" id="session-header-1">Long Papers &amp; Demos I (Orals &amp; Posters)</div>
@@ -1200,7 +1200,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">1A: Social Applications I</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -1254,7 +1254,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">1B: Semantics I</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -1308,7 +1308,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">1C: Vision</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -1362,7 +1362,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">1D: Entities &amp; Coreference</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -1416,7 +1416,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">1E: Machine Translation &amp; Multilingual Methods (Posters and Demos)</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -1621,7 +1621,7 @@ script: |
     <div class="session session-break session-plenary" id="session-lunch-3">
         <span class="session-title">Lunch</span>
         <br/>
-        <span class="session-time">12:30 &ndash; 13:45</span>
+        <span class="session-time" title="Friday, 2 November 2018">12:30 &ndash; 13:45</span>
     </div>
     <div class="session-box" id="session-box-2">
         <div class="session-header" id="session-header-2">Short Papers I (Orals &amp; Posters)</div>
@@ -1629,7 +1629,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">2A: Question Answering I</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -1683,7 +1683,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">2B: Semantics II</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -1737,7 +1737,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">2C: Multilingual Methods I</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -1791,7 +1791,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">2D: Social Media</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -1845,7 +1845,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">2E: Short Posters I</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -2032,7 +2032,7 @@ script: |
     <div class="session session-break session-plenary" id="session-break-2">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">14:45 &ndash; 15:00</span>
+        <span class="session-time" title="Friday, 2 November 2018">14:45 &ndash; 15:00</span>
     </div>
     <div class="session-box" id="session-box-3">
         <div class="session-header" id="session-header-3">Short Papers II (Orals &amp; Posters)</div>
@@ -2040,7 +2040,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">3A: Machine Translation I</a>
             <br/>
-            <span class="session-time">15:00 &ndash; 16:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -2094,7 +2094,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">3B: Machine Learning I</a>
             <br/>
-            <span class="session-time">15:00 &ndash; 16:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -2148,7 +2148,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">3C: Semantic Parsing / Generation</a>
             <br/>
-            <span class="session-time">15:00 &ndash; 16:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -2202,7 +2202,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">3D: Vision / Discourse</a>
             <br/>
-            <span class="session-time">15:00 &ndash; 16:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -2256,7 +2256,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">3E: Short Posters II</a>
             <br/>
-            <span class="session-time">15:00 &ndash; 16:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -2443,7 +2443,7 @@ script: |
     <div class="session session-break session-plenary" id="session-break-3">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">16:00 &ndash; 16:30</span>
+        <span class="session-time" title="Friday, 2 November 2018">16:00 &ndash; 16:30</span>
     </div>
     <div class="session-box" id="session-box-4">
         <div class="session-header" id="session-header-4">Long Papers &amp; Demos II (Orals &amp; Posters)</div>
@@ -2451,7 +2451,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">4A: Language Models</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -2505,7 +2505,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">4B: Information Extraction</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -2559,7 +2559,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">4C: Syntactic Parsing</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -2613,7 +2613,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">4D: Visual QA</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -2667,7 +2667,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">4E: Semantics III (Posters and Demos)</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -2894,7 +2894,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">5A: Semantics IV</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -2948,7 +2948,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">5B: Summarization</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -3002,7 +3002,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">5C: IR / Text Mining</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -3056,7 +3056,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">5D: Machine Learning II</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -3110,7 +3110,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">5E: Information Extraction, Question Answering (Posters and Demos)</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -3369,7 +3369,7 @@ script: |
     <div class="session session-break session-plenary" id="session-break-4">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">10:30 &ndash; 11:00</span>
+        <span class="session-time" title="Saturday, 3 November, 2018">10:30 &ndash; 11:00</span>
     </div>
     <div class="session-box" id="session-box-6">
         <div class="session-header" id="session-header-6">Long Papers &amp; Demos IV (Orals &amp; Posters)</div>
@@ -3377,7 +3377,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">6A: Dialogue I</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -3431,7 +3431,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">6B: Question Answering II</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -3485,7 +3485,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">6C: Semantics V</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -3539,7 +3539,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">6D: Multilingual Methods II</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -3593,7 +3593,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">6E: Syntax, Morphology, Vision &amp; Language I (Posters and Demos)</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -3792,7 +3792,7 @@ script: |
     <div class="session session-break session-plenary" id="session-lunch-4">
         <span class="session-title">Lunch</span>
         <br/>
-        <span class="session-time">12:30 &ndash; 13:45</span>
+        <span class="session-time" title="Saturday, 3 November, 2018">12:30 &ndash; 13:45</span>
     </div>
     <div class="session-box" id="session-box-7">
         <div class="session-header" id="session-header-7">Short Papers III (Orals &amp; Posters)</div>
@@ -3800,7 +3800,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">7A: Dialogue II</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -3854,7 +3854,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">7B: Social Applications II</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -3908,7 +3908,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">7C: NER</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -3962,7 +3962,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">7D: Morphology / Parsing</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -4016,7 +4016,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">7E: Short Posters III</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -4221,7 +4221,7 @@ script: |
     <div class="session session-break session-plenary" id="session-break-5">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">14:45 &ndash; 15:00</span>
+        <span class="session-time" title="Saturday, 3 November, 2018">14:45 &ndash; 15:00</span>
     </div>
     <div class="session session-expandable session-plenary">
         <div id="expander"></div>
@@ -4233,7 +4233,7 @@ script: |
             <a href="https://sites.google.com/site/gideonmann/" target="_blank">Gideon Mann (Bloomberg, L.P.)</a>
         </span>
         <br/>
-        <span class="session-time">15:00 &ndash; 16:00</span>
+        <span class="session-time" title="Saturday, 3 November, 2018">15:00 &ndash; 16:00</span>
         <br/>
         <span class="session-location btn btn--info btn--location">Gold Hall</span>
         <div class="paper-session-details">
@@ -4246,7 +4246,7 @@ script: |
     <div class="session session-break session-plenary" id="session-break-6">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">16:00 &ndash; 16:30</span>
+        <span class="session-time" title="Saturday, 3 November, 2018">16:00 &ndash; 16:30</span>
     </div>
     <div class="session-box" id="session-box-8">
         <div class="session-header" id="session-header-8">Long Papers &amp; Demos V (Orals &amp; Posters)</div>
@@ -4254,7 +4254,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">8A: Text Categorization</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -4308,7 +4308,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">8B: Generation</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -4362,7 +4362,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">8C: Knowledge Graphs</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -4416,7 +4416,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">8D: Morphology / Phonology</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -4470,7 +4470,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">8E: Sentiment, Social Applications, Multimodal Semantics, Discourse (Posters and Demos)</a>
             <br/>
-            <span class="session-time">16:30 &ndash; 18:00</span>
+            <span class="session-time" title="Saturday, 3 November, 2018">16:30 &ndash; 18:00</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -4676,7 +4676,7 @@ script: |
         <div id="expander"></div>
         <a href="#" class="session-title">Social Event</a>
         <br/>
-        <span class="session-time">19:00 &ndash; 22:00</span>
+        <span class="session-time" title="Saturday, 3 November, 2018">19:00 &ndash; 22:00</span>
         <br/>
         <span class="session-external-location btn btn--info btn--location">Royal Museums of Fine Arts of Belgium</span>
         <div class="paper-session-details">
@@ -4693,7 +4693,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">9A: Machine Translation II</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -4747,7 +4747,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">9B: Sentiment I</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -4801,7 +4801,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">9C: Machine Learning III</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -4855,7 +4855,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">9D: Semantics VI</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -4909,7 +4909,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">9E: Generation, Dialog, Summarization; Vision &amp; Language II (Posters and Demos)</a>
             <br/>
-            <span class="session-time">09:00 &ndash; 09:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 09:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -5180,7 +5180,7 @@ script: |
     <div class="session session-break session-plenary" id="session-break-7">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">10:30 &ndash; 11:00</span>
+        <span class="session-time" title="Sunday, 4 November 2018">10:30 &ndash; 11:00</span>
     </div>
     <div class="session-box" id="session-box-10">
         <div class="session-header" id="session-header-10">Long Papers &amp; Demos VII (Orals &amp; Posters)</div>
@@ -5188,7 +5188,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">10A: Question Answering III</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -5242,7 +5242,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">10B: Machine Translation III</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -5296,7 +5296,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">10C: Discourse</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -5350,7 +5350,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">10D: Evolution / Sociolinguistics</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -5404,7 +5404,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">10E: Machine Learning (Posters and Demos)</a>
             <br/>
-            <span class="session-time">11:00 &ndash; 12:30</span>
+            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -5615,7 +5615,7 @@ script: |
     <div class="session session-break session-plenary" id="session-lunch-5">
         <span class="session-title">Lunch</span>
         <br/>
-        <span class="session-time">12:30 &ndash; 13:45</span>
+        <span class="session-time" title="Sunday, 4 November 2018">12:30 &ndash; 13:45</span>
     </div>
     <div class="session-box" id="session-box-11">
         <div class="session-header" id="session-header-11">Short Papers IV (Orals &amp; Posters)</div>
@@ -5623,7 +5623,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">11A: Analyzing Models</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Gold Hall</span>
             <br/>
@@ -5677,7 +5677,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">11B: Sentiment II</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Copper Hall</span>
             <br/>
@@ -5731,7 +5731,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">11C: Machine Translation IV</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Silver Hall</span>
             <br/>
@@ -5785,7 +5785,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">11D: QA / Knowledge Graphs</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Hall 100</span>
             <br/>
@@ -5839,7 +5839,7 @@ script: |
             <div id="expander"></div>
             <a href="#" class="session-title">11E: Short Posters IV</a>
             <br/>
-            <span class="session-time">13:45 &ndash; 14:45</span>
+            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
             <br/>
             <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
             <div class="poster-session-details">
@@ -6014,7 +6014,7 @@ script: |
     <div class="session session-break session-plenary" id="session-break-8">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">14:45 &ndash; 15:00</span>
+        <span class="session-time" title="Sunday, 4 November 2018">14:45 &ndash; 15:00</span>
     </div>
     <div class="session session-expandable session-plenary">
         <div id="expander"></div>
@@ -6026,7 +6026,7 @@ script: |
             <a href="https://www.rug.nl/staff/johan.bos/" target="_blank">Johan Bos (University of Groningen)</a>
         </span>
         <br/>
-        <span class="session-time">15:00 &ndash; 16:00</span>
+        <span class="session-time" title="Sunday, 4 November 2018">15:00 &ndash; 16:00</span>
         <br/>
         <span class="session-location btn btn--info btn--location">Gold Hall</span>
         <div class="paper-session-details">
@@ -6039,13 +6039,13 @@ script: |
     <div class="session session-break session-plenary" id="session-break-9">
         <span class="session-title">Coffee Break</span>
         <br/>
-        <span class="session-time">16:00 &ndash; 16:30</span>
+        <span class="session-time" title="Sunday, 4 November 2018">16:00 &ndash; 16:30</span>
     </div>
     <div class="session session-expandable session-papers-best">
         <div id="expander"></div>
         <a href="#" class="session-title">Best Paper Awards and Closing</a>
         <br/>
-        <span class="session-time">16:30 &ndash; 18:00</span>
+        <span class="session-time" title="Sunday, 4 November 2018">16:30 &ndash; 18:00</span>
         <br/>
         <span class="session-location btn btn--info btn--location">Gold Hall</span>
         <br/>
