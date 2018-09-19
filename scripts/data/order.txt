@@ -332,7 +332,6 @@
 701 # WECA：A WordNet-Encoded Collocation-Attention Network for Homographic Pun Recognition
 928 # A Hybrid Approach to Automatic Corpus Generation for Chinese Spelling Check
 2076 # Neural Quality Estimation of Grammatical Error Correction
-82 # Neural Transductive Learning and Beyond: Morphological Generation in the Minimal-Resource Setting
 622 # Transferring from Formal Newswire Domain with Hypernet for Twitter POS Tagging
 1080 # Free as in Free Word Order: An Energy Based Model for Word Segmentation and Morphological Tagging in Sanskrit
 1174 # A Challenge Set and Methods for Noun-Verb Ambiguity
