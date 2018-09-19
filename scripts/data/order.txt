@@ -207,6 +207,7 @@
 983 # Disambiguated skip-gram model
 1037 # Picking Apart Story Salads
 1175 # Dynamic Meta-Embeddings for Improved Sentence Representations
+1257 # A Probabilistic Model for Joint Learning of Word Embeddings from Texts and Images
 1470 # Transfer and Multi-Task Learning for Noun–Noun Compound Interpretation
 1472 # Dissecting Contextual Word Embeddings: Architecture and Representation
 1790 # Preposition Sense Disambiguation and Representation
@@ -338,7 +339,6 @@
 2208 # Learning Better Internal Structure of Words for Sequence Labeling
 761 # ICON: Interactive Conversational Memory Network for Multimodal Emotion Detection
 978 # Discriminative Learning of Open-Vocabulary Object Retrieval and Localization by Negative Phrase Augmentation
-1257 # A Probabilistic Model for Joint Learning of Word Embeddings from Texts and Images
 1744 # Grounding Semantic Roles in Images
 1822 # Commonsense Justification for Action Explanation
 1928 # Learning Personas from Dialogue with Attentive Memory Networks
