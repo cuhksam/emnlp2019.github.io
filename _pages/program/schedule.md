@@ -502,13 +502,13 @@ script: |
             });
 
             /* show the floorplan when any location is clicked */
-            $('span.session-location, span.inline-location').magnificPopup({
+            /* $('span.session-location, span.inline-location').magnificPopup({
                 items: {
                     src: '/images/westin-floor-plan.png'
                 },
                 type: 'image',
                 fixedContentPos: 'auto'
-            });
+            }); */
             
             /* get all the tutorial sessions and save the day and location for each of them in a hash */
             $('.session-tutorials').each(function() {
