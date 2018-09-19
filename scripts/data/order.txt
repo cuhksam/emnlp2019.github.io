@@ -387,37 +387,38 @@
 1161 14:21--14:33 # Imitation Learning for Neural Morphological String Transduction
 1673 14:33--14:45 # An Encoder-Decoder Approach to the Paradigm Cell Filling Problem
 = Session 7E: Short Posters III (Grand Hall 2)
-701 # WECA：A WordNet-Encoded Collocation-Attention Network for Homographic Pun Recognition
-928 # A Hybrid Approach to Automatic Corpus Generation for Chinese Spelling Check
-2076 # Neural Quality Estimation of Grammatical Error Correction
-82 # Neural Transductive Learning and Beyond: Morphological Generation in the Minimal-Resource Setting
-622 # Part-of-Speech Tagging for Twitter by Different Expression Styles
-1080 # Free as in Free Word Order: An Energy Based Model for Word Segmentation and Morphological Tagging in Sanskrit
-1174 # A Challenge Set and Methods for Noun-Verb Ambiguity
-1237 # What do character-level models learn about morphology? The case of dependency parsing
-2208 # Learning Better Internal Structure of Words for Sequence Labeling
-761 # ICON: Interactive Conversational Memory Network for Multimodal Emotion Detection
-978 # Discriminative Learning of Open-Vocabulary Object Retrieval and Localization by Negative Phrase Augmentation
-1257 # A Probabilistic Model for Joint Learning of Word Embeddings from Texts and Images
-1744 # Grounding Semantic Roles in Images
-1822 # Commonsense Action Explanation in Human-Agent Communication
-1928 # Learning Personas from Dialogue with Attentive Memory Networks
-1951 # Grounding language acquisition by training semantic parsers using captioned videos
-1998 # Translating Navigation Instructions in Natural Language to a High-Level Plan for Behavioral Robot Navigation
-2067 # Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction
-225 # Deconvolutional time series regression: A technique for modeling temporally diffuse effects
-525 # Is this Sentence Difficult? Do you Agree?
-102 # Neural Transition Based Parsing of Web Queries: An Entity Based Approach
-473 # An Investigation of the Interactions Between Pre-Trained Word Embeddings, Character Models and POS Tags in Dependency Parsing
-1611 # Depth-bounding is effective: Improvements and Evaluation of Unsupervised PCFG Induction
-1199-TACL # In-Order Transition-based Constituent Parsing
-1425-TACL # Surface Statistics of an Unknown Language Indicate How to Parse It
-1745 # Incremental Computation of Infix Probabilities for Probabilistic Finite Automata
-2140 # Syntax Encoding with Application in Authorship Attribution
-42 # Sanskrit Word Segmentation Using Character-level Recurrent and Convolutional Neural Networks
-1446-TACL # Universal Word Segmentation: Implementation and Interpretation      
-18-demo # MorAz: an Open-source Morphological Analyzer for Azerbaijani Turkish
-33-demo # Juman++: A Morphological Analysis Toolkit for Scriptio Continua
+281 # Generating Natural Language Adversarial Examples
+1024 # Multi-Head Attention with Disagreement Regularization
+1731 # Deep Bayesian Active Learning for Natural Language Processing: Results of a Large-Scale Empirical Study
+2149 # Bayesian Compression for Natural Language Processing
+601 # Multimodal neural pronunciation modeling for spoken languages with logographic origin
+2045 # Chinese Pinyin Aided IME, Input What You Have Not Keystroked Yet
+722 # Estimating Marginal Probabilities of n-grams for Recurrent Neural Language Models
+1393 # How to represent a word and predict it, too: improving tied architectures for language modelling
+1516 # The Importance of Generation Order in Language Modeling
+183 # Towards Document-Level Neural Machine Translation with Hierarchical Attention Networks
+465 # Three Strategies to Improve One-to-Many Multilingual Translation
+614 # Multi-Source Syntactic Neural Machine Translation
+905 # Fixing Translation Divergences in Parallel Corpora for Neural MT
+1041 # Adversarial Evaluation of Multimodal Machine Translation
+1124 # Loss in Translation: Learning Bilingual Word Mapping with a Retrieval Criterion
+1248 # Learning When to Concentrate or Divert Attention: Automatic Control of Attention Temperature for Neural Machine Translation
+1351 # Accelerating Asynchronous Stochastic Gradient Descent for Neural Machine Translation
+1355 # Learning to Jointly Translate and Predict Dropped Pronouns with a Shared Reconstruction Mechanism
+1367 # Getting Gender Right in Neural MT
+1392 # Towards Two-Dimensional Sequence to Sequence Model in Neural Machine Translation
+1490 # End-to-End Non-Autoregressive Neural Machine Translation with Connectionist Temporal Classification
+1517 # Prediction Improves Simultaneous Neural Machine Translation
+1571 # Training Deeper Neural Machine Translation Models with Transparent Attention
+1773 # Context and Copying in Neural Machine Translation
+1925 # Encoding Gated Translation Memory into Neural Machine Translation
+1996 # Automatic Post-Editing of Machine Translation: A Neural Programmer-Interpreter Approach
+2066 # Break the Beam Search Curse: A Study of Score-Revision Methods and Stopping Criteria for Neural Machine Translation
+602 # Multi-View Learning: Multilingual and Multi-Representation Entity Typing
+719 # Word Embeddings for Code-Mixed Language Processing
+1648 # The Internal Structure of Name Tokens: A Multilingual Study
+1755 # Code-switched Language Models Using Dual RNNs and Same-Source Pretraining
+2282 # Part-of-Speech Tagging for Code-Switched, Transliterated Texts without Explicit Language Identification
 + 14:45--15:00 Mini-Break
 + 15:00--16:00 Keynote II: Gideon Mann "Understanding the News that Moves Markets" (Gold Hall)
 + 16:00--16:30 Coffee Break
