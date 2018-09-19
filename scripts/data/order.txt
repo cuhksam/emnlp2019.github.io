@@ -480,6 +480,7 @@
 35-demo # Visualization of the Topic Space of Argument Search Results in args.me
 44-demo # A Multilingual Information Extraction Pipeline for Investigative Journalism
 75-demo # When science journalism meets artificial intelligence : An interactive demonstration
++ 19:00--22:00 Social Event (Royal Museums of Fine Arts of Belgium)
 * Sunday, 4 November 2018
 + 09:00--10:30 Long Papers and Demos (Orals and Posters) VI
 = Session 9A: Machine Translation II (Gold Hall)
