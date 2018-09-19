@@ -235,7 +235,7 @@
 62-demo # Magnitude: A Fast, Efficient Universal Vector Embedding Utility Package
 77-demo # Universal Sentence Encoder for English
 * Saturday, 3 November, 2018
-+ 09:00--09:30 Long Papers and Demos (Orals and Posters) III
++ 09:00--10:30 Long Papers and Demos (Orals and Posters) III
 = Session 5A: Semantics IV (Gold Hall)
 654 09:00--09:18 # Heuristically Informed Unsupervised Idiom Usage Recognition
 835 09:18--09:36 # Coming to Your Senses: on Controls and Evaluation Sets in Polysemy Research
@@ -481,7 +481,7 @@
 44-demo # A Multilingual Information Extraction Pipeline for Investigative Journalism
 75-demo # When science journalism meets artificial intelligence : An interactive demonstration
 * Sunday, 4 November 2018
-+ 09:00--09:30 Long Papers and Demos (Orals and Posters) VI
++ 09:00--10:30 Long Papers and Demos (Orals and Posters) VI
 = Session 9A: Machine Translation II (Gold Hall)
 499 09:00--09:18 # Beyond Error Propagation in Neural Machine Translation: Characteristics of Language Also Matter
 979 09:18--09:36 # A Study of Reinforcement Learning for Neural Machine Translation
