@@ -496,7 +496,7 @@
 = Session 9C: Machine Learning III (Silver Hall)
 1358 09:00--09:18 # Noise Contrastive Estimation and Negative Sampling for Conditional Models: Consistency and Statistical Efficiency
 1666 09:18--09:36 # CaLcs: Continuously Approximating Longest Common Subsequence for Sequence Level Optimization
-695 09:36--09:54 # Dual Fixed-Size Ordinally Forgetting Encoding (FOFE) for Competitive Neural Language Models
+2051 09:36--09:54 # Pathologies of Neural Models Make Interpretations Difficult
 758 09:54--10:12 # Phrase-level Self-Attention Networks for Universal Sentence Encoding
 1322 10:12--10:30 # BanditSum: Extractive Summarization as a Contextual Bandit
 = Session 9D: Semantics VI (Hall 100)
@@ -617,7 +617,7 @@
 657 13:45--13:57 # A Neural Model of Adaptation in Reading
 103 13:57--14:09 # Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study
 1369 14:09--14:21 # Lexicosyntactic Inference in Neural Models
-2051 14:21--14:33 # Pathologies of Neural Models Make Interpretations Difficult
+695  14:21--14:33 # Dual Fixed-Size Ordinally Forgetting Encoding (FOFE) for Competitive Neural Language Models
 204 14:33--14:45 # The Importance of Being Recurrent for Modeling Hierarchical Structure
 = Session 11B: Sentiment II (Copper Hall)
 1664 13:45--13:57 # Joint Learning for Targeted Sentiment Analysis
