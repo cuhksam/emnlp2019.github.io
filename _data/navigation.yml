@@ -1,8 +1,8 @@
 # main links
 main:
 
-  - title: "Calls"
-    url: /calls/papers
+  - title: "Schedule"
+    url: /schedule
 
   - title: "Registration"
     url: /registration
@@ -16,11 +16,11 @@ main:
   - title: "Organization"
     url: /organization
 
-  # - title: "PC Blog"
-  #   url: https://chairs-blog.acl2017.org
-
   - title: "Sponsors"
     url: /sponsors/list/
+
+  - title: "Calls"
+    url: /calls/papers
 
 pages:
   - title: Organization
