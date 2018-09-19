@@ -13,7 +13,7 @@ Locations for each workshop will be added soon. Please refer to each individual 
 ## October 31 &amp; November 1
 
 ### \[W1\] WMT18
-The [The Third Conference on Machine Translation](http://www.statmt.org/wmt18/) conference builds on a series of annual workshops and conferences on statistical machine translation, going back to 2006.
+[The Third Conference on Machine Translation](http://www.statmt.org/wmt18/) conference builds on a series of annual workshops and conferences on statistical machine translation, going back to 2006.
 
 ### \[W2\] CoNLL 
 [The Conference on Computational Natural Language Learning](http://www.conll.org) is a top-tier conference, yearly organized by SIGNLL (ACL's Special Interest Group on Natural Language Learning).  
