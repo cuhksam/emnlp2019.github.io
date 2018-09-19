@@ -11,6 +11,7 @@ script: |
         paperInfoHash = {};
         chosenPapersHash = {};
         chosenTutorialsHash = {};
+        chosenWorkshopsHash = {};
         chosenPostersHash = {};
         plenarySessionHash = {};
         includePlenaryInSchedule = true;
@@ -139,6 +140,21 @@ script: |
             return [new Date(exactTutorialStartingTime).getTime(), tutorialSlotStart, tutorialSlotEnd, tutorialSession.attr('id')];
         }
 
+        function getWorkshopInfoFromTime(workshopTimeObj) {
+
+            /* get the workshop session and day */
+            var workshopSession = workshopTimeObj.parents('.session');
+            var sessionDay = workshopSession.prevAll('.day:first').text().trim();
+
+            /* get the workshop slot and the starting and ending times */
+            var workshopTimeText = workshopTimeObj.text().trim();
+            var workshopTimes = workshopTimeText.split(' ');
+            var workshopSlotStart = workshopTimes[0];
+            var workshopSlotEnd = workshopTimes[2];
+            var exactworkshopStartingTime = sessionDay + ' ' + workshopSlotStart;
+            return [new Date(exactworkshopStartingTime).getTime(), workshopSlotStart, workshopSlotEnd, workshopSession.attr('id')];
+        }
+
         function getPosterInfoFromTime(posterTimeObj) {
 
             /* get the poster session and day */
@@ -244,6 +260,25 @@ script: |
             return ans;
         }
 
+    function makeWorkshopRows(start, end, titles, locations, sessions) {
+            var ans;
+            if (titles.length == 1) {
+                ans = ['<tr><td class="time">' + start + '&ndash;' + end + '</td><td class="location">' + locations[0] + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
+            }
+            else {
+                var numConflicts = titles.length;
+                rows = ['<tr><td rowspan=' + numConflicts + ' class="time">' + start + '&ndash;' + end + '</td><td class="location">' + locations[0] + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
+                for (var i=1; i<numConflicts; i++) {
+                    var session = sessions[i];
+                    var title = titles[i];
+                    var location = locations[i];
+                    rows.push('<tr><td></td><td class="location">' + location + '</td><td class="info-paper">' + title + ' [' + session.title + ']</td></tr>')
+                }
+                ans = rows;
+            }
+            return ans;
+        }
+
         function makePosterRows(titles, types, sessions) {
             var numPosters = titles.length;
             var sessionStart = sessions[0].start;
@@ -269,6 +304,9 @@ script: |
             }
             else if (type == 'tutorial') {
                 chosenHash = chosenTutorialsHash;
+            }
+            else if (type == 'workshop') {
+                chosenHash = chosenWorkshopsHash;
             }
             else if (type == 'poster') {
                 chosenHash = chosenPostersHash;
@@ -338,10 +376,14 @@ script: |
             
             var nonPlenaryKeysAndTypes = [];
             var tutorialKeys = Object.keys(chosenTutorialsHash);
+            var workshopKeys = Object.keys(chosenWorkshopsHash);
             var posterKeys = Object.keys(chosenPostersHash);
             var paperKeys = Object.keys(chosenPapersHash);
             for (var i=0; i < tutorialKeys.length; i++) {
                 nonPlenaryKeysAndTypes.push([tutorialKeys[i], 'tutorial']);
+            }
+            for (var i=0; i < workshopKeys.length; i++) {
+                nonPlenaryKeysAndTypes.push([workshopKeys[i], 'workshop']);
             }
             for (var i=0; i < posterKeys.length; i++) {
                 nonPlenaryKeysAndTypes.push([posterKeys[i], 'poster']);
@@ -401,6 +443,27 @@ script: |
                         output.push(makeDayHeaderRow(sessionDay));
                     }
                     output = output.concat(makeTutorialRows(tutorials[0].start, tutorials[0].end, titles, locations, sessions));
+                    prevDay = sessionDay;
+                }
+                /* if it's workshops */
+                else if (itemType == 'workshop') {
+
+                    /* get the workshops */
+                    var workshops = chosenWorkshopsHash[key];
+
+                    /* sort the workshops by title instead of selection order */
+                    workshops.sort(function(a, b) {
+                        return a.title.localeCompare(b.title);
+                    });
+
+                    var titles = workshops.map(function(workshop) { return ASCIIFold(workshop.title); });
+                    var locations = workshops.map(function(workshop) { return workshop.location ; });
+                    var sessions = workshops.map(function(workshop) { return sessionInfoHash[workshop.session]; });
+                    var sessionDay = sessions[0].day;
+                    if (sessionDay != prevDay) {
+                        output.push(makeDayHeaderRow(sessionDay));
+                    }
+                    output = output.concat(makeWorkshopRows(workshops[0].start, workshops[0].end, titles, locations, sessions));
                     prevDay = sessionDay;
                 }
                 /* if it's posters */
@@ -512,6 +575,14 @@ script: |
             
             /* get all the tutorial sessions and save the day and location for each of them in a hash */
             $('.session-tutorials').each(function() {
+                var session = {};
+                session.title = $(this).children('.session-title').text().trim();
+                session.day = $(this).prevAll('.day:first').text().trim();
+                sessionInfoHash[$(this).attr('id')] = session;
+            });
+
+            /* get all the workshop sessions and save the day and location for each of them in a hash */
+            $('.session-workshops').each(function() {
                 var session = {};
                 session.title = $(this).children('.session-title').text().trim();
                 session.day = $(this).prevAll('.day:first').text().trim();
@@ -732,7 +803,7 @@ script: |
             $('body').on('click', 'a#generatePDFButton', function(event) {
                 /* if we haven't chosen any papers, and we aren't including plenary sessions either, then raise an error. If we are including plenary sessions and no papers, then confirm. */
                 event.preventDefault();
-                var numChosenItems = Object.keys(chosenPapersHash).length + Object.keys(chosenTutorialsHash).length + Object.keys(chosenPostersHash).length;
+                var numChosenItems = Object.keys(chosenPapersHash).length + Object.keys(chosenTutorialsHash).length + Object.keys(chosenWorkshopsHash).length + Object.keys(chosenPostersHash).length;
                 if (numChosenItems == 0) {
                     if (includePlenaryInSchedule) {
                         alertify.confirm("The PDF will contain only the plenary sessions since nothing was chosen. Proceed?", function () { generatePDFfromTable();
@@ -768,6 +839,30 @@ script: |
                 }
                 else {
                     addToChosen(exactStartingTime, tutorialObject, 'tutorial');
+                    $(this).addClass('selected');                    
+                }
+            });
+
+            $('body').on('click', 'table.workshop-table tr#workshop', function(event) {
+                event.preventDefault();
+                var workshopTimeObj = $(this).parents('.session-workshops').children('.session-time');
+                var workshopInfo = getWorkshopInfoFromTime(workshopTimeObj);
+                var workshopObject = {};
+                var exactStartingTime = workshopInfo[0];
+                workshopObject.start = workshopInfo[1];
+                workshopObject.end = workshopInfo[2];
+                workshopObject.title = $(this).find('.workshop-title').text();
+                workshopObject.session = workshopInfo[3];
+                workshopObject.location = $(this).find('.inline-location').text();
+                workshopObject.exactStartingTime = exactStartingTime;
+
+                /* if we are clicking on an already selected workshop */
+                if (isChosen(exactStartingTime, workshopObject, 'workshop')) {
+                    $(this).removeClass('selected');
+                    removeFromChosen(exactStartingTime, workshopObject, 'workshop');
+                }
+                else {
+                    addToChosen(exactStartingTime, workshopObject, 'workshop');
                     $(this).addClass('selected');                    
                 }
             });
@@ -881,7 +976,7 @@ script: |
     <div class="day" id="first-day">Wednesday, October 31 2018</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials1">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
-        <span class="session-time">9:00 &ndash; 12:30</span><br/>
+        <span class="session-time">09:00 &ndash; 12:30</span><br/>
         <div class="tutorial-session-details">
             <br/>
             <table class="tutorial-table">
@@ -911,6 +1006,55 @@ script: |
                 <tr id="tutorial">
                     <td>
                         <span class="tutorial-title"><strong>[T3] Writing Code for NLP Research.</strong> Matt Gardner, Mark Neumann, Joel Grus, and Nicholas Lourie. </span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="session session-expandable session-workshops" id="session-workshops-1">
+        <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
+        <span class="session-time">09:00 &ndash; 17:00</span><br/>
+        <div class="workshop-session-details">
+            <br/>
+            <table class="workshop-table">
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>                
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W3] LOUHI: The Ninth International Workshop on Health Text Mining and Information Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr> 
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W6] SIGMORPHON: Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W7] WASSA: 9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W8] SMM4H: 3rd Workshop on Social Media Mining for Health Applications Workshop & Shared Task.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
             </table>
@@ -949,6 +1093,55 @@ script: |
                 <tr id="tutorial">
                     <td>
                         <span class="tutorial-title"><strong>[T4] Deep Chit-Chat: Deep Learning for ChatBots.</strong> Wei Wu and Rui Yan. </span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="session session-expandable session-workshops" id="session-workshops-2">
+        <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
+        <span class="session-time">09:00 &ndash; 17:00</span><br/>
+        <div class="workshop-session-details">
+            <br/>
+            <table class="workshop-table">
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>                
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W9] BioASQ: Large-scale Biomedical Semantic Indexing and Question Answering.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr> 
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W10] BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W11] FEVER: First Workshop on Fact Extraction and VERification.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W12] ARGMINING: 5th International Workshop on Argument Mining.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W13] W-NUT: 4th Workshop on Noisy User-generated Text.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W14] UDW-18: Second Workshop on Universal Dependencies.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
             </table>
@@ -3829,190 +4022,196 @@ script: |
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
-                    <tr id="poster" poster-id="701">
+                    <tr id="poster" poster-id="281">
                         <td>
-                            <span class="poster-title">WECA：A WordNet-Encoded Collocation-Attention Network for Homographic Pun Recognition.</span>
-                            <em>Yufeng Diao, Hongfei Lin, Di Wu, Liang Yang, Kan Xu, Zhihao Yang, Jian Wang, Shaowu Zhang, Bo Xu and Dongyu Zhang</em>
+                            <span class="poster-title">Generating Natural Language Adversarial Examples.</span>
+                            <em>Moustafa Alzantot, Yash Sharma, Ahmed Elgohary, Bo-Jhang Ho, Mani Srivastava and Kai-Wei Chang</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="928">
+                    <tr id="poster" poster-id="1024">
                         <td>
-                            <span class="poster-title">A Hybrid Approach to Automatic Corpus Generation for Chinese Spelling Check.</span>
-                            <em>Dingmin Wang, Yan Song, Jing Li, Jialong Han and Haisong Zhang</em>
+                            <span class="poster-title">Multi-Head Attention with Disagreement Regularization.</span>
+                            <em>Jian Li, Zhaopeng Tu, Baosong Yang, Michael R. Lyu and Tong Zhang</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="2076">
+                    <tr id="poster" poster-id="1731">
                         <td>
-                            <span class="poster-title">Neural Quality Estimation of Grammatical Error Correction.</span>
-                            <em>Shamil Chollampatt and Hwee Tou Ng</em>
+                            <span class="poster-title">Deep Bayesian Active Learning for Natural Language Processing: Results of a Large-Scale Empirical Study.</span>
+                            <em>Aditya Siddhant and Zachary C. Lipton</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="82">
+                    <tr id="poster" poster-id="2149">
                         <td>
-                            <span class="poster-title">Neural Transductive Learning and Beyond: Morphological Generation in the Minimal-Resource Setting.</span>
-                            <em>Katharina Kann and Hinrich Schütze</em>
+                            <span class="poster-title">Bayesian Compression for Natural Language Processing.</span>
+                            <em>Nadezhda Chirkova, Ekaterina Lobacheva and Dmitry Vetrov</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="622">
+                    <tr id="poster" poster-id="601">
                         <td>
-                            <span class="poster-title">Part-of-Speech Tagging for Twitter by Different Expression Styles.</span>
-                            <em>Tao Gui, Qi Zhang, Jingjing Gong, Minlong Peng, di liang, Keyu Ding and Xuanjing Huang</em>
+                            <span class="poster-title">Multimodal neural pronunciation modeling for spoken languages with logographic origin.</span>
+                            <em>Minh Nguyen, Gia H Ngo and Nancy Chen</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1080">
+                    <tr id="poster" poster-id="2045">
                         <td>
-                            <span class="poster-title">Free as in Free Word Order: An Energy Based Model for Word Segmentation and Morphological Tagging in Sanskrit.</span>
-                            <em>Amrith Krishna, Bishal Santra, Sasi Prasanth Bandaru, Gaurav Sahu, Vishnu Dutt Sharma, Pavankumar Satuluri and Pawan Goyal</em>
+                            <span class="poster-title">Chinese Pinyin Aided IME, Input What You Have Not Keystroked Yet.</span>
+                            <em>Yafang Huang and Hai Zhao</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1174">
+                    <tr id="poster" poster-id="722">
                         <td>
-                            <span class="poster-title">A Challenge Set and Methods for Noun-Verb Ambiguity.</span>
-                            <em>Ali Elkahky, Kellie Webster, Daniel Andor and Emily Pitler</em>
+                            <span class="poster-title">Estimating Marginal Probabilities of n-grams for Recurrent Neural Language Models.</span>
+                            <em>Thanapon Noraset, Doug Downey and Lidong Bing</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1237">
+                    <tr id="poster" poster-id="1393">
                         <td>
-                            <span class="poster-title">What do character-level models learn about morphology? The case of dependency parsing.</span>
-                            <em>Clara Vania, Andreas Grivas and Adam Lopez</em>
+                            <span class="poster-title">How to represent a word and predict it, too: improving tied architectures for language modelling.</span>
+                            <em>Kristina Gulordava, Laura Aina and Gemma Boleda</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="2208">
+                    <tr id="poster" poster-id="1516">
                         <td>
-                            <span class="poster-title">Learning Better Internal Structure of Words for Sequence Labeling.</span>
-                            <em>Yingwei Xin, Ethan Hart, Vibhuti Mahajan and Jean David Ruvini</em>
+                            <span class="poster-title">The Importance of Generation Order in Language Modeling.</span>
+                            <em>Nicolas Ford, Daniel Duckworth, Mohammad Norouzi and George Dahl</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="761">
+                    <tr id="poster" poster-id="183">
                         <td>
-                            <span class="poster-title">ICON: Interactive Conversational Memory Network for Multimodal Emotion Detection.</span>
-                            <em>Devamanyu Hazarika, Soujanya Poria, Rada Mihalcea, Erik Cambria and Roger Zimmermann</em>
+                            <span class="poster-title">Towards Document-Level Neural Machine Translation with Hierarchical Attention Networks.</span>
+                            <em>Lesly Miculicich, Dhananjay Ram, Nikolaos Pappas and James Henderson</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="978">
+                    <tr id="poster" poster-id="465">
                         <td>
-                            <span class="poster-title">Discriminative Learning of Open-Vocabulary Object Retrieval and Localization by Negative Phrase Augmentation.</span>
-                            <em>Ryota Hinami and Shin'ichi Satoh</em>
+                            <span class="poster-title">Three Strategies to Improve One-to-Many Multilingual Translation.</span>
+                            <em>Yining Wang, Jiajun Zhang, Feifei Zhai, Jingfang Xu and Chengqing Zong</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1257">
+                    <tr id="poster" poster-id="614">
                         <td>
-                            <span class="poster-title">A Probabilistic Model for Joint Learning of Word Embeddings from Texts and Images.</span>
-                            <em>Melissa Ailem, Bowen Zhang, Aurélien Bellet, Pascal Denis and Fei Sha</em>
+                            <span class="poster-title">Multi-Source Syntactic Neural Machine Translation.</span>
+                            <em>Anna Currey and Kenneth Heafield</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1744">
+                    <tr id="poster" poster-id="905">
                         <td>
-                            <span class="poster-title">Grounding Semantic Roles in Images.</span>
-                            <em>Carina Silberer and Manfred Pinkal</em>
+                            <span class="poster-title">Fixing Translation Divergences in Parallel Corpora for Neural MT.</span>
+                            <em>Minh Quang Pham, Josep Crego, Jean Senellart and François Yvon</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1822">
+                    <tr id="poster" poster-id="1041">
                         <td>
-                            <span class="poster-title">Commonsense Action Explanation in Human-Agent Communication.</span>
-                            <em>Shaohua Yang, Qiaozi Gao, sari sadiya and Joyce Chai</em>
+                            <span class="poster-title">Adversarial Evaluation of Multimodal Machine Translation.</span>
+                            <em>Desmond Elliott</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1928">
+                    <tr id="poster" poster-id="1124">
                         <td>
-                            <span class="poster-title">Learning Personas from Dialogue with Attentive Memory Networks.</span>
-                            <em>Eric Chu, Prashanth Vijayaraghavan and Deb Roy</em>
+                            <span class="poster-title">Loss in Translation: Learning Bilingual Word Mapping with a Retrieval Criterion.</span>
+                            <em>Armand Joulin, Piotr Bojanowski, Tomas Mikolov, Hervé Jégou and Edouard Grave</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1951">
+                    <tr id="poster" poster-id="1248">
                         <td>
-                            <span class="poster-title">Grounding language acquisition by training semantic parsers using captioned videos.</span>
-                            <em>Candace Ross, Andrei Barbu, Yevgeni Berzak, Battushig Myanganbayar and Boris Katz</em>
+                            <span class="poster-title">Learning When to Concentrate or Divert Attention: Automatic Control of Attention Temperature for Neural Machine Translation.</span>
+                            <em>Junyang Lin, Xu SUN, Xuancheng Ren, Muyu Li and Qi Su</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1998">
+                    <tr id="poster" poster-id="1351">
                         <td>
-                            <span class="poster-title">Translating Navigation Instructions in Natural Language to a High-Level Plan for Behavioral Robot Navigation.</span>
-                            <em>Xiaoxue Zang, Ashwini Pokle, Marynel Vázquez, Kevin Chen, Juan Carlos Niebles, Alvaro Soto and Silvio Savarese</em>
+                            <span class="poster-title">Accelerating Asynchronous Stochastic Gradient Descent for Neural Machine Translation.</span>
+                            <em>Nikolay Bogoychev, Kenneth Heafield, Alham Fikri Aji and Marcin Junczys-Dowmunt</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="2067">
+                    <tr id="poster" poster-id="1355">
                         <td>
-                            <span class="poster-title">Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction.</span>
-                            <em>Dipendra Misra, Andrew Bennett, Valts Blukis, Eyvind Niklasson, Max Shatkhin and Yoav Artzi</em>
+                            <span class="poster-title">Learning to Jointly Translate and Predict Dropped Pronouns with a Shared Reconstruction Mechanism.</span>
+                            <em>Longyue Wang, Zhaopeng Tu, Andy Way and Qun Liu</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="225">
+                    <tr id="poster" poster-id="1367">
                         <td>
-                            <span class="poster-title">Deconvolutional time series regression: A technique for modeling temporally diffuse effects.</span>
-                            <em>Cory Shain and William Schuler</em>
+                            <span class="poster-title">Getting Gender Right in Neural MT.</span>
+                            <em>Eva Vanmassenhove, Christian Hardmeier and Andy Way</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="525">
+                    <tr id="poster" poster-id="1392">
                         <td>
-                            <span class="poster-title">Is this Sentence Difficult? Do you Agree?.</span>
-                            <em>Dominique Brunato, Lorenzo De Mattei, Felice Dell'Orletta, Benedetta Iavarone and Giulia Venturi</em>
+                            <span class="poster-title">Towards Two-Dimensional Sequence to Sequence Model in Neural Machine Translation.</span>
+                            <em>Parnia Bahar, Christopher Brix and Hermann Ney</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="102">
+                    <tr id="poster" poster-id="1490">
                         <td>
-                            <span class="poster-title">Neural Transition Based Parsing of Web Queries: An Entity Based Approach.</span>
-                            <em>Rivka Malca and Roi Reichart</em>
+                            <span class="poster-title">End-to-End Non-Autoregressive Neural Machine Translation with Connectionist Temporal Classification.</span>
+                            <em>Jindřich Libovický and Jindřich Helcl</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="473">
+                    <tr id="poster" poster-id="1517">
                         <td>
-                            <span class="poster-title">An Investigation of the Interactions Between Pre-Trained Word Embeddings, Character Models and POS Tags in Dependency Parsing.</span>
-                            <em>Aaron Smith, Miryam de Lhoneux, Sara Stymne and Joakim Nivre</em>
+                            <span class="poster-title">Prediction Improves Simultaneous Neural Machine Translation.</span>
+                            <em>Ashkan Alinejad, Maryam Siahbani and Anoop Sarkar</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1611">
+                    <tr id="poster" poster-id="1571">
                         <td>
-                            <span class="poster-title">Depth-bounding is effective: Improvements and Evaluation of Unsupervised PCFG Induction.</span>
-                            <em>Lifeng Jin, Finale Doshi-Velez, Timothy Miller, William Schuler and Lane Schwartz</em>
+                            <span class="poster-title">Training Deeper Neural Machine Translation Models with Transparent Attention.</span>
+                            <em>Ankur Bapna, Mia Chen, Orhan Firat, Yuan Cao and Yonghui Wu</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1199-TACL">
+                    <tr id="poster" poster-id="1773">
                         <td>
-                            <span class="poster-title">[TACL] In-Order Transition-based Constituent Parsing.</span>
-                            <em>Jiangming Liu and Yue Zhang</em>
+                            <span class="poster-title">Context and Copying in Neural Machine Translation.</span>
+                            <em>Rebecca Knowles and Philipp Koehn</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1425-TACL">
+                    <tr id="poster" poster-id="1925">
                         <td>
-                            <span class="poster-title">[TACL] Surface Statistics of an Unknown Language Indicate How to Parse It.</span>
-                            <em>Dingquan Wang and Jason Eisner</em>
+                            <span class="poster-title">Encoding Gated Translation Memory into Neural Machine Translation.</span>
+                            <em>Qian Cao and Deyi Xiong</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1745">
+                    <tr id="poster" poster-id="1996">
                         <td>
-                            <span class="poster-title">Incremental Computation of Infix Probabilities for Probabilistic Finite Automata.</span>
-                            <em>Marco Cognetta, Yo-Sub Han and Soon Chan Kwon</em>
+                            <span class="poster-title">Automatic Post-Editing of Machine Translation: A Neural Programmer-Interpreter Approach.</span>
+                            <em>Thuy-Trang Vu and Gholamreza Haffari</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="2140">
+                    <tr id="poster" poster-id="2066">
                         <td>
-                            <span class="poster-title">Syntax Encoding with Application in Authorship Attribution.</span>
-                            <em>Richong Zhang, Zhiyuan Hu, Hongyu GUO and Yongyi Mao</em>
+                            <span class="poster-title">Break the Beam Search Curse: A Study of Score-Revision Methods and Stopping Criteria for Neural Machine Translation.</span>
+                            <em>Yilin Yang, Liang Huang and Mingbo Ma</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="42">
+                    <tr id="poster" poster-id="602">
                         <td>
-                            <span class="poster-title">Sanskrit Word Segmentation Using Character-level Recurrent and Convolutional Neural Networks.</span>
-                            <em>Oliver Hellwig and Sebastian Nehrdich</em>
+                            <span class="poster-title">Multi-View Learning: Multilingual and Multi-Representation Entity Typing.</span>
+                            <em>Yadollah Yaghoobzadeh and Hinrich Schütze</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1446-TACL">
+                    <tr id="poster" poster-id="719">
                         <td>
-                            <span class="poster-title">[TACL] Universal Word Segmentation: Implementation and Interpretation.</span>
-                            <em>Yan Shao, Christian Hardmeier, Joakim Nivre</em>
+                            <span class="poster-title">Word Embeddings for Code-Mixed Language Processing.</span>
+                            <em>Adithya Pratapa, Monojit Choudhury and Sunayana Sitaram</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="18-demo">
+                    <tr id="poster" poster-id="1648">
                         <td>
-                            <span class="poster-title">[DEMO] MorAz: an Open-source Morphological Analyzer for Azerbaijani Turkish.</span>
-                            <em>Berke Özenç, Razieh Ehsani and Ercan Solak</em>
+                            <span class="poster-title">The Internal Structure of Name Tokens: A Multilingual Study.</span>
+                            <em>Xiaodong Yu, Stephen Mayhew, Mark Sammons and Dan Roth</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="33-demo">
+                    <tr id="poster" poster-id="1755">
                         <td>
-                            <span class="poster-title">[DEMO] Juman++: A Morphological Analysis Toolkit for Scriptio Continua.</span>
-                            <em>Arseny Tolmachev, Daisuke Kawahara and Sadao Kurohashi</em>
+                            <span class="poster-title">Code-switched Language Models Using Dual RNNs and Same-Source Pretraining.</span>
+                            <em>Saurabh Garg, Tanmay Parekh and Preethi Jyothi</em>
+                        </td>
+                    </tr>
+                    <tr id="poster" poster-id="2282">
+                        <td>
+                            <span class="poster-title">Part-of-Speech Tagging for Code-Switched, Transliterated Texts without Explicit Language Identification.</span>
+                            <em>Kelsey Ball and Dan Garrette</em>
                         </td>
                     </tr>
                 </table>
