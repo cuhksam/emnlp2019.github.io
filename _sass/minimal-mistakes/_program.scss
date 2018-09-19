@@ -174,7 +174,7 @@ div.session {
     border-right: none;
     border-bottom: none;
 
-    &.session-tutorials, &.session-plenary {
+    &.session-tutorials, &.session-workshops, &.session-plenary {
         width: percentage(24/24);
         border-top: 2px solid $light-gray;
         border-left: 2px solid $light-gray;
@@ -328,7 +328,7 @@ div.session {
         font-size: $type-size-5;
     }
 
-    .tutorial-table {
+    .tutorial-table, .workshop-table {
         border: 1px;
         font-size: $type-size-5;
         td {
@@ -361,7 +361,7 @@ div.session {
         text-decoration: underline;
     }
 
-    .tutorial-title {
+    .tutorial-title, .workshop-title {
         font-size: $type-size-6;
         text-decoration: none;
     }
@@ -397,7 +397,7 @@ div.session {
         }
     }
 
-    tr#tutorial, tr#poster {
+    tr#tutorial, tr#poster, tr#workshop {
         cursor: pointer;
         background-color: #fff;
         font-size: $type-size-5;

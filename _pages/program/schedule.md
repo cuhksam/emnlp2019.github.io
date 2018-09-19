@@ -11,6 +11,7 @@ script: |
         paperInfoHash = {};
         chosenPapersHash = {};
         chosenTutorialsHash = {};
+        chosenWorkshopsHash = {};
         chosenPostersHash = {};
         plenarySessionHash = {};
         includePlenaryInSchedule = true;
@@ -139,6 +140,21 @@ script: |
             return [new Date(exactTutorialStartingTime).getTime(), tutorialSlotStart, tutorialSlotEnd, tutorialSession.attr('id')];
         }
 
+        function getWorkshopInfoFromTime(workshopTimeObj) {
+
+            /* get the workshop session and day */
+            var workshopSession = workshopTimeObj.parents('.session');
+            var sessionDay = workshopSession.prevAll('.day:first').text().trim();
+
+            /* get the workshop slot and the starting and ending times */
+            var workshopTimeText = workshopTimeObj.text().trim();
+            var workshopTimes = workshopTimeText.split(' ');
+            var workshopSlotStart = workshopTimes[0];
+            var workshopSlotEnd = workshopTimes[2];
+            var exactworkshopStartingTime = sessionDay + ' ' + workshopSlotStart;
+            return [new Date(exactworkshopStartingTime).getTime(), workshopSlotStart, workshopSlotEnd, workshopSession.attr('id')];
+        }
+
         function getPosterInfoFromTime(posterTimeObj) {
 
             /* get the poster session and day */
@@ -244,6 +260,25 @@ script: |
             return ans;
         }
 
+    function makeWorkshopRows(start, end, titles, locations, sessions) {
+            var ans;
+            if (titles.length == 1) {
+                ans = ['<tr><td class="time">' + start + '&ndash;' + end + '</td><td class="location">' + locations[0] + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
+            }
+            else {
+                var numConflicts = titles.length;
+                rows = ['<tr><td rowspan=' + numConflicts + ' class="time">' + start + '&ndash;' + end + '</td><td class="location">' + locations[0] + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
+                for (var i=1; i<numConflicts; i++) {
+                    var session = sessions[i];
+                    var title = titles[i];
+                    var location = locations[i];
+                    rows.push('<tr><td></td><td class="location">' + location + '</td><td class="info-paper">' + title + ' [' + session.title + ']</td></tr>')
+                }
+                ans = rows;
+            }
+            return ans;
+        }
+
         function makePosterRows(titles, types, sessions) {
             var numPosters = titles.length;
             var sessionStart = sessions[0].start;
@@ -269,6 +304,9 @@ script: |
             }
             else if (type == 'tutorial') {
                 chosenHash = chosenTutorialsHash;
+            }
+            else if (type == 'workshop') {
+                chosenHash = chosenWorkshopsHash;
             }
             else if (type == 'poster') {
                 chosenHash = chosenPostersHash;
@@ -338,10 +376,14 @@ script: |
             
             var nonPlenaryKeysAndTypes = [];
             var tutorialKeys = Object.keys(chosenTutorialsHash);
+            var workshopKeys = Object.keys(chosenWorkshopsHash);
             var posterKeys = Object.keys(chosenPostersHash);
             var paperKeys = Object.keys(chosenPapersHash);
             for (var i=0; i < tutorialKeys.length; i++) {
                 nonPlenaryKeysAndTypes.push([tutorialKeys[i], 'tutorial']);
+            }
+            for (var i=0; i < workshopKeys.length; i++) {
+                nonPlenaryKeysAndTypes.push([workshopKeys[i], 'workshop']);
             }
             for (var i=0; i < posterKeys.length; i++) {
                 nonPlenaryKeysAndTypes.push([posterKeys[i], 'poster']);
@@ -401,6 +443,27 @@ script: |
                         output.push(makeDayHeaderRow(sessionDay));
                     }
                     output = output.concat(makeTutorialRows(tutorials[0].start, tutorials[0].end, titles, locations, sessions));
+                    prevDay = sessionDay;
+                }
+                /* if it's workshops */
+                else if (itemType == 'workshop') {
+
+                    /* get the workshops */
+                    var workshops = chosenWorkshopsHash[key];
+
+                    /* sort the workshops by title instead of selection order */
+                    workshops.sort(function(a, b) {
+                        return a.title.localeCompare(b.title);
+                    });
+
+                    var titles = workshops.map(function(workshop) { return ASCIIFold(workshop.title); });
+                    var locations = workshops.map(function(workshop) { return workshop.location ; });
+                    var sessions = workshops.map(function(workshop) { return sessionInfoHash[workshop.session]; });
+                    var sessionDay = sessions[0].day;
+                    if (sessionDay != prevDay) {
+                        output.push(makeDayHeaderRow(sessionDay));
+                    }
+                    output = output.concat(makeWorkshopRows(workshops[0].start, workshops[0].end, titles, locations, sessions));
                     prevDay = sessionDay;
                 }
                 /* if it's posters */
@@ -512,6 +575,14 @@ script: |
             
             /* get all the tutorial sessions and save the day and location for each of them in a hash */
             $('.session-tutorials').each(function() {
+                var session = {};
+                session.title = $(this).children('.session-title').text().trim();
+                session.day = $(this).prevAll('.day:first').text().trim();
+                sessionInfoHash[$(this).attr('id')] = session;
+            });
+
+            /* get all the workshop sessions and save the day and location for each of them in a hash */
+            $('.session-workshops').each(function() {
                 var session = {};
                 session.title = $(this).children('.session-title').text().trim();
                 session.day = $(this).prevAll('.day:first').text().trim();
@@ -732,7 +803,7 @@ script: |
             $('body').on('click', 'a#generatePDFButton', function(event) {
                 /* if we haven't chosen any papers, and we aren't including plenary sessions either, then raise an error. If we are including plenary sessions and no papers, then confirm. */
                 event.preventDefault();
-                var numChosenItems = Object.keys(chosenPapersHash).length + Object.keys(chosenTutorialsHash).length + Object.keys(chosenPostersHash).length;
+                var numChosenItems = Object.keys(chosenPapersHash).length + Object.keys(chosenTutorialsHash).length + Object.keys(chosenWorkshopsHash).length + Object.keys(chosenPostersHash).length;
                 if (numChosenItems == 0) {
                     if (includePlenaryInSchedule) {
                         alertify.confirm("The PDF will contain only the plenary sessions since nothing was chosen. Proceed?", function () { generatePDFfromTable();
@@ -768,6 +839,30 @@ script: |
                 }
                 else {
                     addToChosen(exactStartingTime, tutorialObject, 'tutorial');
+                    $(this).addClass('selected');                    
+                }
+            });
+
+            $('body').on('click', 'table.workshop-table tr#workshop', function(event) {
+                event.preventDefault();
+                var workshopTimeObj = $(this).parents('.session-workshops').children('.session-time');
+                var workshopInfo = getWorkshopInfoFromTime(workshopTimeObj);
+                var workshopObject = {};
+                var exactStartingTime = workshopInfo[0];
+                workshopObject.start = workshopInfo[1];
+                workshopObject.end = workshopInfo[2];
+                workshopObject.title = $(this).find('.workshop-title').text();
+                workshopObject.session = workshopInfo[3];
+                workshopObject.location = $(this).find('.inline-location').text();
+                workshopObject.exactStartingTime = exactStartingTime;
+
+                /* if we are clicking on an already selected workshop */
+                if (isChosen(exactStartingTime, workshopObject, 'workshop')) {
+                    $(this).removeClass('selected');
+                    removeFromChosen(exactStartingTime, workshopObject, 'workshop');
+                }
+                else {
+                    addToChosen(exactStartingTime, workshopObject, 'workshop');
                     $(this).addClass('selected');                    
                 }
             });
@@ -916,6 +1011,55 @@ script: |
             </table>
         </div>
     </div>
+    <div class="session session-expandable session-workshops" id="session-workshops-1">
+        <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
+        <span class="session-time">09:00 &ndash; 17:00</span><br/>
+        <div class="workshop-session-details">
+            <br/>
+            <table class="workshop-table">
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>                
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W3] LOUHI: The Ninth International Workshop on Health Text Mining and Information Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr> 
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W6] SIGMORPHON: Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W7] WASSA: 9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W8] SMM4H: 3rd Workshop on Social Media Mining for Health Applications Workshop & Shared Task.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
     <div class="day" id="second-day">Thursday, November 1 2018</div>
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials2">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
@@ -949,6 +1093,55 @@ script: |
                 <tr id="tutorial">
                     <td>
                         <span class="tutorial-title"><strong>[T4] Deep Chit-Chat: Deep Learning for ChatBots.</strong> Wei Wu and Rui Yan. </span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="session session-expandable session-workshops" id="session-workshops-2">
+        <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
+        <span class="session-time">09:00 &ndash; 17:00</span><br/>
+        <div class="workshop-session-details">
+            <br/>
+            <table class="workshop-table">
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>                
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W9] BioASQ: Large-scale Biomedical Semantic Indexing and Question Answering.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr> 
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W10] BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W11] FEVER: First Workshop on Fact Extraction and VERification.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W12] ARGMINING: 5th International Workshop on Argument Mining.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W13] W-NUT: 4th Workshop on Noisy User-generated Text.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W14] UDW-18: Second Workshop on Universal Dependencies.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
                     </td>
                 </tr>
             </table>
