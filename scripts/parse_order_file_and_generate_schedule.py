@@ -12,10 +12,9 @@ Note that:
 
 1. `dos2unix` must be run on the order file before processing.
 
-2. The HTML generated will not contain the abstracts for invited
-talks which are instead read in from this script.
+2. The order file does not any information about tutorials, workshops, or welcome reception.
 
-3. The order file does not contain tutorial or author information.
+3. It also does not contain any authors for any papers/posters/demos.
 
 4. No poster types are generated for now.
 '''
@@ -138,7 +137,7 @@ def main():
                     break_title = 'Coffee Break'
                     break_type = 'break'
                     break_id = next(break_id_counter)
-                generated_html.append('<div class="session session-break session-plenary" id="session-{}-{}"><span class="session-title">{}</span><br/><span class="session-time">{} &ndash; {}</span></div>'.format(break_type, break_id, break_title, session_start, session_end))
+                generated_html.append('<div class="session session-break session-plenary" id="session-{}-{}"><span class="session-title">{}</span><br/><span class="session-time" title="{}">{} &ndash; {}</span></div>'.format(break_type, break_id, break_title, day_string, session_start, session_end))
             elif 'keynote' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 if 'Julia' in session_title:
@@ -156,13 +155,16 @@ def main():
                     session_abstract = KEYNOTE_ABSTRACT_DICT['Johan']
                     session_people = 'Johan Bos (University of Groningen)'
                     session_people_link = 'https://www.rug.nl/staff/johan.bos/'
-                generated_html.append('<div class="session session-expandable session-plenary"><div id="expander"></div><a href="#" class="session-title"><strong>{}</strong></a><br/><span class="session-people"><a href="{}" target="_blank">{}</a></span><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="paper-session-details"><br/><div class="session-abstract"><p>{}</p></div></div></div>'.format(session_title, session_people_link, session_people, session_start, session_end, session_location, session_abstract))
+                generated_html.append('<div class="session session-expandable session-plenary"><div id="expander"></div><a href="#" class="session-title"><strong>{}</strong></a><br/><span class="session-people"><a href="{}" target="_blank">{}</a></span><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="paper-session-details"><br/><div class="session-abstract"><p>{}</p></div></div></div>'.format(session_title, session_people_link, session_people, day_string, session_start, session_end, session_location, session_abstract))
             elif 'opening' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
-                generated_html.append('<div class="session session-plenary" id="session-welcome"><span class="session-title">{}</span><br/><span class="session-time">{} &ndash; {}</span><br/> <span class="session-location btn btn--info btn--location">{}</span></div>'.format(session_title, session_start, session_end, session_location))
+                generated_html.append('<div class="session session-plenary" id="session-welcome"><span class="session-title">{}</span><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/> <span class="session-location btn btn--info btn--location">{}</span></div>'.format(session_title, day_string, session_start, session_end, session_location))
+            elif 'social event' in session_string.lower():
+                session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
+                generated_html.append('<div class="session session-expandable session-plenary" id="session-social"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-external-location btn btn--info btn--location">{}</span> <div class="paper-session-details"> <br/><div class="session-abstract"><p>On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the Royal Museums of Fine Arts of Belgium. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts — painting, sculpture and drawing — from the 15th to the 21st century.</p></div></div></div>'.format(session_title, day_string, session_start, session_end, session_location))
             elif 'best paper' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
-                generated_html.append('<div class="session session-expandable session-papers-best"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">Gold Hall</span><br/><div class="paper-session-details"><br/><table class="paper-table">'.format(session_title, session_start, session_end, session_start, session_end))
+                generated_html.append('<div class="session session-expandable session-papers-best"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">Gold Hall</span><br/><div class="paper-session-details"><br/><table class="paper-table">'.format(session_title, day_string, session_start, session_end, session_start, session_end))
                 for paper in session:
                     best_paper_id, best_paper_start, best_paper_end, best_paper_title = BEST_PAPER_REGEXP.match(paper.strip()).groups()
                     best_paper_authors = authors_dict[best_paper_id].strip()
@@ -188,9 +190,9 @@ def main():
                         session_type = ''
                     if 'poster' in session_type.lower() or 'poster' in session_title.lower():
                         session_title = '{} ({})'.format(session_title, session_type) if session_type else session_title
-                        generated_html.append('<div class="session session-expandable session-posters" id="session-poster-{}"><div id="expander"></div><a href="#" class="session-title">{}: {} </a><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="poster-session-details"><br/><table class="poster-table">'.format(next(poster_session_counter), session_id, session_title, session_group_start, session_group_end, session_location))
+                        generated_html.append('<div class="session session-expandable session-posters" id="session-poster-{}"><div id="expander"></div><a href="#" class="session-title">{}: {} </a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="poster-session-details"><br/><table class="poster-table">'.format(next(poster_session_counter), session_id, session_title, day_string, session_group_start, session_group_end, session_location))
                     else:
-                        generated_html.append('<div class="session session-expandable session-papers{}" id="session-{}"><div id="expander"></div><a href="#" class="session-title">{}: {}</a><br/><span class="session-time">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><br/><div class="paper-session-details"><br/><a href="#" class="session-selector" id="session-{}-selector"> Choose All</a><a href="#" class="session-deselector" id="session-{}-deselector">Remove All</a><table class="paper-table"><tr><td class="session-chair" colspan="2">Chair: TBD</td></tr>'.format(next(paper_session_counter), session_id.lower(), session_id, session_title, session_group_start, session_group_end, session_location, session_id.lower(), session_id.lower()))
+                        generated_html.append('<div class="session session-expandable session-papers{}" id="session-{}"><div id="expander"></div><a href="#" class="session-title">{}: {}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><br/><div class="paper-session-details"><br/><a href="#" class="session-selector" id="session-{}-selector"> Choose All</a><a href="#" class="session-deselector" id="session-{}-deselector">Remove All</a><table class="paper-table"><tr><td class="session-chair" colspan="2">Chair: TBD</td></tr>'.format(next(paper_session_counter), session_id.lower(), session_id, session_title, day_string, session_group_start, session_group_end, session_location, session_id.lower(), session_id.lower()))
                     for paper in split:
                         paper = paper.strip()
                         if 'poster' in session_type.lower() or 'poster' in session_title.lower():
