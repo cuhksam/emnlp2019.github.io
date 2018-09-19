@@ -497,7 +497,7 @@ script: |
 
             $('span.session-external-location').on('click', function(event) {
                 var placeName = $(this).text().trim().replace(" ", "+");
-                window.open("https://www.google.com/maps/place/" + placeName, "_blank");
+                window.open("https://www.google.com/maps?q=" + placeName, "_blank");
                 event.stopPropagation();
             });
 
@@ -952,6 +952,20 @@ script: |
                     </td>
                 </tr>
             </table>
+        </div>
+    </div>
+    <div class="session session-expandable session-plenary" id="session-reception">
+        <div id="expander"></div>
+        <a href="#" class="session-title">Welcome Reception</a>
+        <br/>
+        <span class="session-time">18:00 &ndash; 20:00</span>
+        <br/>
+        <span class="session-location btn btn--info btn--location">TBD</span>
+        <div class="paper-session-details">
+            <br/><br/>
+            <div class="session-abstract">
+                <p>Catch up with your colleagues at the Welcome Reception! It will be held immediately following the tutorials on Thursday, November 1st. <br/>Appetizers and refreshments will be provided.</p>
+            </div>
         </div>
     </div>
     <div class="day" id="day-3">Friday, 2 November 2018</div>
@@ -4456,6 +4470,20 @@ script: |
                         </td>
                     </tr>
                 </table>
+            </div>
+        </div>
+    </div>
+    <div class="session session-expandable session-plenary" id="session-social">
+        <div id="expander"></div>
+        <a href="#" class="session-title">Social Event</a>
+        <br/>
+        <span class="session-time">19:00 &ndash; 22:00</span>
+        <br/>
+        <span class="session-external-location btn btn--info btn--location">Royal Museums of Fine Arts of Belgium</span>
+        <div class="paper-session-details">
+            <br/>
+            <div class="session-abstract">
+                <p>On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the Royal Museums of Fine Arts of Belgium. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts — painting, sculpture and drawing — from the 15th to the 21st century.</p>
             </div>
         </div>
     </div>
