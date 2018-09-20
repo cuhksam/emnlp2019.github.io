@@ -1236,7 +1236,7 @@ script: |
                     <tr id="paper" paper-id="1879">
                         <td id="paper-time">11:54&ndash;12:12</td>
                         <td>
-                            <span class="paper-title">Its going to be okay: Measuring Access to Support in Online Communities.</span>
+                            <span class="paper-title">It's going to be okay: Measuring Access to Support in Online Communities.</span>
                             <em>Zijian Wang and David Jurgens</em>
                         </td>
                     </tr>
@@ -1269,7 +1269,7 @@ script: |
                     <tr id="paper" paper-id="1172">
                         <td id="paper-time">11:00&ndash;11:18</td>
                         <td>
-                            <span class="paper-title">Process Paragraph Comprehension using World Knowledge.</span>
+                            <span class="paper-title">Reasoning about Actions and State Changes by Injecting Commonsense Knowledge.</span>
                             <em>Niket Tandon, Bhavana Dalvi, Joel Grus, Wen-tau Yih, Antoine Bosselut and Peter Clark</em>
                         </td>
                     </tr>
@@ -1297,7 +1297,7 @@ script: |
                     <tr id="paper" paper-id="2036">
                         <td id="paper-time">12:12&ndash;12:30</td>
                         <td>
-                            <span class="paper-title">TwoWingOS: Claim Entailment with Precise Evidence via a Two-Wing Optimization Strategy.</span>
+                            <span class="paper-title">TwoWingOS: A Two-Wing Optimization Strategy for Evidential Claim Verification.</span>
                             <em>Wenpeng Yin and Dan Roth</em>
                         </td>
                     </tr>
@@ -1330,7 +1330,7 @@ script: |
                     <tr id="paper" paper-id="576">
                         <td id="paper-time">11:18&ndash;11:36</td>
                         <td>
-                            <span class="paper-title">Modeling Game-Based Video-Context Dialogue.</span>
+                            <span class="paper-title">Game-Based Video-Context Dialogue.</span>
                             <em>Ramakanth Pasunuru and Mohit Bansal</em>
                         </td>
                     </tr>
@@ -1391,7 +1391,7 @@ script: |
                     <tr id="paper" paper-id="1286">
                         <td id="paper-time">11:36&ndash;11:54</td>
                         <td>
-                            <span class="paper-title">Using Linguistic Features to Improve Generalization in Neural Coreference Resolvers.</span>
+                            <span class="paper-title">Using Linguistic Features to Improve the Generalization Capability of Neural Coreference Resolvers.</span>
                             <em>Nafise Sadat Moosavi and Michael Strube</em>
                         </td>
                     </tr>
@@ -1405,7 +1405,7 @@ script: |
                     <tr id="paper" paper-id="1846">
                         <td id="paper-time">12:12&ndash;12:30</td>
                         <td>
-                            <span class="paper-title">Variational Sequential Labelers for Semi-Supervised Sequence Labeling.</span>
+                            <span class="paper-title">Variational Sequential Labelers for Semi-Supervised Learning.</span>
                             <em>Mingda Chen, Qingming Tang, Karen Livescu and Kevin Gimpel</em>
                         </td>
                     </tr>
@@ -1436,7 +1436,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="270">
                         <td>
-                            <span class="poster-title">Multi-lingual Common Semantic Space Construction via Cluster-Consistent Word Embedding.</span>
+                            <span class="poster-title">Multi-lingual Common Semantic Space Construction via Cluster-consistent Word Embedding.</span>
                             <em>Lifu Huang, Kyunghyun Cho, Boliang Zhang, Heng Ji and Kevin Knight</em>
                         </td>
                     </tr>
@@ -1448,7 +1448,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="517">
                         <td>
-                            <span class="poster-title">Crosslingual Sense Embeddings in One Space.</span>
+                            <span class="poster-title">CLUSE: Cross-Lingual Unsupervised Sense Embeddings.</span>
                             <em>Ta Chung Chi and Yun-Nung Chen</em>
                         </td>
                     </tr>
@@ -1466,7 +1466,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1134">
                         <td>
-                            <span class="poster-title">AtomicWikiEdits: A Multilingual Corpus of Wikipedia Edits for Modeling Language and Discourse.</span>
+                            <span class="poster-title">WikiAtomicEdits: A Multilingual Corpus of Wikipedia Edits for Modeling Language and Discourse.</span>
                             <em>Manaal Faruqui, Ellie Pavlick, Ian Tenney and Dipanjan Das</em>
                         </td>
                     </tr>
@@ -1484,7 +1484,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1502">
                         <td>
-                            <span class="poster-title">Personalized Microblog Sentiment Classification via Adversarial Cross-lingual learning.</span>
+                            <span class="poster-title">Personalized Microblog Sentiment Classification via Adversarial Cross-lingual Multi-task Learning.</span>
                             <em>Weichao Wang, Shi Feng, Wei Gao, Daling Wang and Yifei Zhang</em>
                         </td>
                     </tr>
@@ -1502,7 +1502,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="2268">
                         <td>
-                            <span class="poster-title">Neural Cross-lingual Named Entity Recognition with Minimal Resources.</span>
+                            <span class="poster-title">Neural Cross-Lingual Named Entity Recognition with Minimal Resources.</span>
                             <em>Jiateng Xie, Zhilin Yang, Graham Neubig, Noah A. Smith and Jaime Carbonell</em>
                         </td>
                     </tr>
@@ -1574,19 +1574,19 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1894">
                         <td>
-                            <span class="poster-title">Bootstrapping Transliteration with Guided Discovery for Low-Resource Languages.</span>
+                            <span class="poster-title">Bootstrapping Transliteration with Constrained Discovery for Low-Resource Languages.</span>
                             <em>Shyam Upadhyay, Jordan Kodner and Dan Roth</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1948">
                         <td>
-                            <span class="poster-title">NORMA: Neighborhood Sensitive Maps for Multilingual Word Embeddings.</span>
+                            <span class="poster-title">NORMA: Neighborhood Sensitive Maps for MultilingualWord Embeddings.</span>
                             <em>Ndapa Nakashole</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1952">
                         <td>
-                            <span class="poster-title">Adaptive Multi-pass Decoder for Neural Machine Translation with Reinforcement Learning.</span>
+                            <span class="poster-title">Adaptive Multi-pass Decoder for Neural Machine Translation.</span>
                             <em>Xinwei Geng, Xiaocheng Feng, Bing Qin and Ting Liu</em>
                         </td>
                     </tr>
@@ -1610,7 +1610,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="38-demo">
                         <td>
-                            <span class="poster-title">[DEMO] SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing..</span>
+                            <span class="poster-title">[DEMO] SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing.</span>
                             <em>Taku Kudo and John Richardson</em>
                         </td>
                     </tr>
@@ -1712,7 +1712,7 @@ script: |
                     <tr id="paper" paper-id="203">
                         <td id="paper-time">14:09&ndash;14:21</td>
                         <td>
-                            <span class="paper-title">Neural Latent Relational Analysis to Capture Lexical Semantic Relation.</span>
+                            <span class="paper-title">Neural Latent Relational Analysis to Capture Lexical Semantic Relations in a Vector Space.</span>
                             <em>Koki Washio and Tsuneaki Kato</em>
                         </td>
                     </tr>
@@ -1834,7 +1834,7 @@ script: |
                     <tr id="paper" paper-id="794">
                         <td id="paper-time">14:33&ndash;14:45</td>
                         <td>
-                            <span class="paper-title">Improving Author Attribute Prediction by Retrofitting Linguistic Representations with Homophily.</span>
+                            <span class="paper-title">Increasing In-Class Similarity by Retrofitting Embeddings with Demographic Information.</span>
                             <em>Dirk Hovy and Tommaso Fornaciari</em>
                         </td>
                     </tr>
@@ -1853,7 +1853,7 @@ script: |
                 <table class="poster-table">
                     <tr id="poster" poster-id="53">
                         <td>
-                            <span class="poster-title">A Syntactic Constraint Based Bidirectional-Asynchronous Approach for Emotional Conversation Generation.</span>
+                            <span class="poster-title">A Syntactically Constrained Bidirectional-Asynchronous Approach for Emotional Conversation Generation.</span>
                             <em>Jingyuan Li and Xiao Sun</em>
                         </td>
                     </tr>
@@ -1901,7 +1901,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="333">
                         <td>
-                            <span class="poster-title">Using Active Learning to Expand Training Data for Implicit Discourse Relation Recognition.</span>
+                            <span class="poster-title">Using active learning to expand training data for implicit discourse relation recognition.</span>
                             <em>Yang Xu, Yu Hong, Huibin Ruan, Jianmin Yao, Min Zhang and Guodong Zhou</em>
                         </td>
                     </tr>
@@ -1919,7 +1919,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="2142">
                         <td>
-                            <span class="poster-title">S2SPMN:A Simple and Effective Framework for Response Generation with Relevant Information.</span>
+                            <span class="poster-title">S2SPMN: A Simple and Effective Framework for Response Generation with Relevant Information.</span>
                             <em>Jiaxin Pei and Chenliang Li</em>
                         </td>
                     </tr>
@@ -1937,7 +1937,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="318">
                         <td>
-                            <span class="poster-title">A Graph-Theoretic Summary Evaluation for Rouge.</span>
+                            <span class="poster-title">A Graph-theoretic Summary Evaluation for ROUGE.</span>
                             <em>Elaheh ShafieiBavani, Mohammad Ebrahimi, Raymond Wong and Fang Chen</em>
                         </td>
                     </tr>
@@ -1967,7 +1967,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1774">
                         <td>
-                            <span class="poster-title">A Reinforcement Learning Framework for Automatic Essay Scoring Incorporating Rating Schema.</span>
+                            <span class="poster-title">Automatic Essay Scoring Incorporating Rating Schema via Reinforcement Learning.</span>
                             <em>Yucheng Wang, Zhongyu Wei, Yaqian Zhou and Xuanjing Huang</em>
                         </td>
                     </tr>
@@ -2191,7 +2191,7 @@ script: |
                     <tr id="paper" paper-id="1708">
                         <td id="paper-time">15:48&ndash;16:00</td>
                         <td>
-                            <span class="paper-title">Neural Davidsonian Semantic Proto-role Labeling.</span>
+                            <span class="paper-title">Neural-Davidsonian Semantic Proto-role Labeling.</span>
                             <em>Rachel Rudinger, Adam Teichert, Ryan Culkin, Sheng Zhang and Benjamin Van Durme</em>
                         </td>
                     </tr>
@@ -2217,7 +2217,7 @@ script: |
                     <tr id="paper" paper-id="626">
                         <td id="paper-time">15:00&ndash;15:12</td>
                         <td>
-                            <span class="paper-title">Conversational Decision Making Model for Predicting Kings Decision in the Annals of the Joseon Dynasty.</span>
+                            <span class="paper-title">Conversational Decision-Making Model for Predicting the King’s Decision in the Annals of the Joseon Dynasty.</span>
                             <em>JinYeong Bak and Alice Oh</em>
                         </td>
                     </tr>
@@ -2264,7 +2264,7 @@ script: |
                 <table class="poster-table">
                     <tr id="poster" poster-id="43">
                         <td>
-                            <span class="poster-title">Attention-Based Capsule Network with Dynamic Routing for Relation Extraction.</span>
+                            <span class="poster-title">Attention-Based Capsule Networks with Dynamic Routing for Relation Extraction.</span>
                             <em>Ningyu Zhang, Shumin Deng, Zhanling Sun, Xi Chen, Wei Zhang and Huajun Chen</em>
                         </td>
                     </tr>
@@ -2288,7 +2288,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1583">
                         <td>
-                            <span class="poster-title">Neural Transition-based Model for Nested Mention Recognition.</span>
+                            <span class="poster-title">A Neural Transition-based Model for Nested Mention Recognition.</span>
                             <em>Bailin Wang, Wei Lu, Yu Wang and Hongxia Jin</em>
                         </td>
                     </tr>
@@ -2312,7 +2312,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="54">
                         <td>
-                            <span class="poster-title">Do explanation modalities make VQA models more predictable to a human?.</span>
+                            <span class="poster-title">Do explanations make VQA models more predictable to a human?.</span>
                             <em>Arjun Chandrasekaran, Viraj Prabhu, Deshraj Yadav, Prithvijit Chattopadhyay and Devi Parikh</em>
                         </td>
                     </tr>
@@ -2336,7 +2336,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="663">
                         <td>
-                            <span class="poster-title">Translating Math Word Problem to Expression Tree.</span>
+                            <span class="poster-title">Translating a MathWord Problem to a Expression Tree.</span>
                             <em>Lei Wang, Yan Wang, Deng Cai, Dongxiang Zhang and Xiaojiang Liu</em>
                         </td>
                     </tr>
@@ -2354,13 +2354,13 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="22">
                         <td>
-                            <span class="poster-title">Improving the results of string kernels by adapting them to your test set.</span>
+                            <span class="poster-title">Improving the results of string kernels in sentiment analysis and Arabic dialect identification by adapting them to your test set.</span>
                             <em>Radu Tudor Ionescu and Andrei M. Butnaru</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="228">
                         <td>
-                            <span class="poster-title">Parameterized Convolutional Neural Networks for Aspect Level Sentiment Classification.</span>
+                            <span class="poster-title">Parameterized Convolutional Neural Networks for Aspect Level Sentiment Classiﬁcation.</span>
                             <em>Binxuan Huang and Kathleen Carley</em>
                         </td>
                     </tr>
@@ -2396,7 +2396,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="586">
                         <td>
-                            <span class="poster-title">Is Nike female? Predicting brand name gender across product categories.</span>
+                            <span class="poster-title">Is Nike female? Exploring the role of sound symbolism in predicting brand name gender.</span>
                             <em>Sridhar Moorthy, Ruth Pogacar, Samin Khan and Yang Xu</em>
                         </td>
                     </tr>
@@ -2414,7 +2414,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="894">
                         <td>
-                            <span class="poster-title">Identifying Control in Social Media from Crowd Annotations.</span>
+                            <span class="poster-title">Identifying Locus of Control in Social Media Language.</span>
                             <em>Masoud Rouhizadeh, Kokil Jaidka, Laura Smith, H. Andrew Schwartz, Anneke Buffone and Lyle Ungar</em>
                         </td>
                     </tr>
@@ -2675,7 +2675,7 @@ script: |
                 <table class="poster-table">
                     <tr id="poster" poster-id="179">
                         <td>
-                            <span class="poster-title">Card-660: A Reliable Evaluation Framework for Rare Word Representation Models.</span>
+                            <span class="poster-title">Card-660: Cambridge Rare Word Dataset - a Reliable Benchmark for Infrequent Word Representation Models.</span>
                             <em>Mohammad Taher Pilehvar, Dimitri Kartsaklis, Victor Prokhorov and Nigel Collier</em>
                         </td>
                     </tr>
@@ -2717,8 +2717,14 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1175">
                         <td>
-                            <span class="poster-title">Context-Attentive Embeddings for Improved Sentence Representations.</span>
+                            <span class="poster-title">Dynamic Meta-Embeddings for Improved Sentence Representations.</span>
                             <em>Douwe Kiela, Changhan Wang and Kyunghyun Cho</em>
+                        </td>
+                    </tr>
+                    <tr id="poster" poster-id="1257">
+                        <td>
+                            <span class="poster-title">A Probabilistic Model for Joint Learning of Word Embeddings from Texts and Images.</span>
+                            <em>Melissa Ailem, Bowen Zhang, Aurélien Bellet, Pascal Denis and Fei Sha</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1470">
@@ -2819,14 +2825,8 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1261">
                         <td>
-                            <span class="poster-title">SyntaxSQLNet: Syntax Tree Networks for Complex and Cross Domain Text-to-SQL Task.</span>
+                            <span class="poster-title">SyntaxSQLNet: Syntax Tree Networks for Complex and Cross-Domain Text-to-SQL Task.</span>
                             <em>Tao Yu, Michihiro Yasunaga, Kai Yang, Rui Zhang, Dongxu Wang, Zifan Li and Dragomir Radev</em>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1262">
-                        <td>
-                            <span class="poster-title">Spider: A Large-Scale Complex Human-Labeled SQL Corpus for Semantic Parsing and Text-to-SQL Generation.</span>
-                            <em>Tao Yu, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li, James Ma, Irene Li, Qingning Yao, Shanelle Roman, Zilin Zhang and Dragomir Radev</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1398">
@@ -2837,7 +2837,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1699">
                         <td>
-                            <span class="poster-title">Learning Semantic Parsers from Natural Language Supervision.</span>
+                            <span class="poster-title">Learning to Learn Semantic Parsers from Natural Language Supervision.</span>
                             <em>Igor Labutov, Bishan Yang and Tom Mitchell</em>
                         </td>
                     </tr>
@@ -2855,7 +2855,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="2073">
                         <td>
-                            <span class="poster-title">Better Transition-Based AMR Parsing with Refined Search Space.</span>
+                            <span class="poster-title">Better Transition-Based AMR Parsing with a Refined Search Space.</span>
                             <em>Zhijiang Guo and Wei Lu</em>
                         </td>
                     </tr>
@@ -2937,7 +2937,7 @@ script: |
                     <tr id="paper" paper-id="2009">
                         <td id="paper-time">10:12&ndash;10:30</td>
                         <td>
-                            <span class="paper-title">Pointwise HSIC: A Linear-Time Kernelized Co-occurrence Norm for Sparse Linguistic Expressions.</span>
+                            <span class="paper-title">Pointwise HSIC: A Linear-Time Kernelized Co-occurrence Norm\\for Sparse Linguistic Expressions.</span>
                             <em>Sho Yokoi, Sosuke Kobayashi, Kenji Fukumizu, Jun Suzuki and Kentaro Inui</em>
                         </td>
                     </tr>
@@ -3024,21 +3024,21 @@ script: |
                     <tr id="paper" paper-id="391">
                         <td id="paper-time">09:18&ndash;09:36</td>
                         <td>
-                            <span class="paper-title">Learning Context-Aware Convolutional Filters for Text Processing.</span>
+                            <span class="paper-title">Learning Context-Sensitive Convolutional Filters for Text Processing.</span>
                             <em>Dinghan Shen, Martin Renqiang Min, Yitong Li and Lawrence Carin</em>
                         </td>
                     </tr>
                     <tr id="paper" paper-id="1186">
                         <td id="paper-time">09:36&ndash;09:54</td>
                         <td>
-                            <span class="paper-title">Deep Relevance Ranking using Enhanced Document-Query Interactions.</span>
+                            <span class="paper-title">Deep Relevance Ranking Using Enhanced Document-Query Interactions.</span>
                             <em>Ryan McDonald, George Brokos and Ion Androutsopoulos</em>
                         </td>
                     </tr>
                     <tr id="paper" paper-id="1586">
                         <td id="paper-time">09:54&ndash;10:12</td>
                         <td>
-                            <span class="paper-title">Learning Neural Embeddings for CLIR with Adversarial Framework.</span>
+                            <span class="paper-title">Learning Neural Representation for CLIR with Adversarial Framework.</span>
                             <em>Bo Li and Ping Cheng</em>
                         </td>
                     </tr>
@@ -3085,7 +3085,7 @@ script: |
                     <tr id="paper" paper-id="1621">
                         <td id="paper-time">09:36&ndash;09:54</td>
                         <td>
-                            <span class="paper-title">Deriving Machine Attention from Human Rationale.</span>
+                            <span class="paper-title">Deriving Machine Attention from Human Rationales.</span>
                             <em>Yujia Bao, Shiyu Chang, Mo Yu and Regina Barzilay</em>
                         </td>
                     </tr>
@@ -3136,7 +3136,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="171">
                         <td>
-                            <span class="poster-title">Mapping Text to Knowledge Graph Entities by Vector Space Transformation.</span>
+                            <span class="poster-title">Mapping Text to Knowledge Graph Entities using Multi-Sense LSTMs.</span>
                             <em>Dimitri Kartsaklis, Mohammad Taher Pilehvar and Nigel Collier</em>
                         </td>
                     </tr>
@@ -3178,7 +3178,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1094">
                         <td>
-                            <span class="poster-title">Annotation of Large Clinical Entity Corpus.</span>
+                            <span class="poster-title">Annotation of a Large Clinical Entity Corpus.</span>
                             <em>Pinal Patel, Disha Davey, Vishal Panchal and Parth Pathak</em>
                         </td>
                     </tr>
@@ -3232,7 +3232,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1630">
                         <td>
-                            <span class="poster-title">Deep and Wide Reader: Effective Memory Augmenting Method for Large-Scale Reading Comprehension.</span>
+                            <span class="poster-title">MemoReader: Large-Scale Reading Comprehension through Neural Memory Controller.</span>
                             <em>Seohyun Back, Seunghak Yu, Sathish Reddy Indurthi, Jihie Kim and Jaegul Choo</em>
                         </td>
                     </tr>
@@ -3286,7 +3286,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="712">
                         <td>
-                            <span class="poster-title">N-ary Relation Extraction using Graph State LSTM.</span>
+                            <span class="poster-title">N-ary Relation Extraction using Graph-State LSTM.</span>
                             <em>Linfeng Song, Yue Zhang, Zhiguo Wang and Daniel Gildea</em>
                         </td>
                     </tr>
@@ -3392,7 +3392,7 @@ script: |
                     <tr id="paper" paper-id="582">
                         <td id="paper-time">11:00&ndash;11:18</td>
                         <td>
-                            <span class="paper-title">Using lexical alignment and referring ability to address data sparsity in situated dialog reference resolution.</span>
+                            <span class="paper-title">Using Lexical Alignment and Referring Ability to Address Data Sparsity in Situated Dialog Reference Resolution.</span>
                             <em>Todd Shore and Gabriel Skantze</em>
                         </td>
                     </tr>
@@ -3568,14 +3568,14 @@ script: |
                     <tr id="paper" paper-id="1605">
                         <td id="paper-time">11:36&ndash;11:54</td>
                         <td>
-                            <span class="paper-title">XNLI: Cross-lingual Sentence Understanding through Inference.</span>
+                            <span class="paper-title">XNLI: Evaluating Cross-lingual Sentence Representations.</span>
                             <em>Alexis Conneau, Ruty Rinott, Guillaume Lample, Adina Williams, Samuel Bowman, Holger Schwenk and Veselin Stoyanov</em>
                         </td>
                     </tr>
                     <tr id="paper" paper-id="1880">
                         <td id="paper-time">11:54&ndash;12:12</td>
                         <td>
-                            <span class="paper-title">The Importance of Joint Multilingual Supervision for Cross-lingual Entity Linking.</span>
+                            <span class="paper-title">Joint Multilingual Supervision for Cross-lingual Entity Linking.</span>
                             <em>Shyam Upadhyay, Nitish Gupta and Dan Roth</em>
                         </td>
                     </tr>
@@ -3617,15 +3617,9 @@ script: |
                             <em>Shamil Chollampatt and Hwee Tou Ng</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="82">
-                        <td>
-                            <span class="poster-title">Neural Transductive Learning and Beyond: Morphological Generation in the Minimal-Resource Setting.</span>
-                            <em>Katharina Kann and Hinrich Schütze</em>
-                        </td>
-                    </tr>
                     <tr id="poster" poster-id="622">
                         <td>
-                            <span class="poster-title">Part-of-Speech Tagging for Twitter by Different Expression Styles.</span>
+                            <span class="poster-title">Transferring from Formal Newswire Domain with Hypernet for Twitter POS Tagging.</span>
                             <em>Tao Gui, Qi Zhang, Jingjing Gong, Minlong Peng, di liang, Keyu Ding and Xuanjing Huang</em>
                         </td>
                     </tr>
@@ -3665,12 +3659,6 @@ script: |
                             <em>Ryota Hinami and Shin'ichi Satoh</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1257">
-                        <td>
-                            <span class="poster-title">A Probabilistic Model for Joint Learning of Word Embeddings from Texts and Images.</span>
-                            <em>Melissa Ailem, Bowen Zhang, Aurélien Bellet, Pascal Denis and Fei Sha</em>
-                        </td>
-                    </tr>
                     <tr id="poster" poster-id="1744">
                         <td>
                             <span class="poster-title">Grounding Semantic Roles in Images.</span>
@@ -3679,7 +3667,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1822">
                         <td>
-                            <span class="poster-title">Commonsense Action Explanation in Human-Agent Communication.</span>
+                            <span class="poster-title">Commonsense Justification for Action Explanation.</span>
                             <em>Shaohua Yang, Qiaozi Gao, sari sadiya and Joyce Chai</em>
                         </td>
                     </tr>
@@ -3709,7 +3697,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="225">
                         <td>
-                            <span class="poster-title">Deconvolutional time series regression: A technique for modeling temporally diffuse effects.</span>
+                            <span class="poster-title">Deconvolutional Time Series Regression: A Technique for Modeling Temporally Diffuse Effects.</span>
                             <em>Cory Shain and William Schuler</em>
                         </td>
                     </tr>
@@ -3733,7 +3721,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1611">
                         <td>
-                            <span class="poster-title">Depth-bounding is effective: Improvements and Evaluation of Unsupervised PCFG Induction.</span>
+                            <span class="poster-title">Depth-bounding is effective: Improvements and evaluation of unsupervised PCFG induction.</span>
                             <em>Lifeng Jin, Finale Doshi-Velez, Timothy Miller, William Schuler and Lane Schwartz</em>
                         </td>
                     </tr>
@@ -3822,7 +3810,7 @@ script: |
                     <tr id="paper" paper-id="867">
                         <td id="paper-time">13:57&ndash;14:09</td>
                         <td>
-                            <span class="paper-title">Toward Less Generic Responses in Neural Conversation Models: A Statistical Re-weighting Method.</span>
+                            <span class="paper-title">Towards Less Generic Responses in Neural Conversation Models: A Statistical Re-weighting Method.</span>
                             <em>Yahui Liu, Wei Bi, Jun Gao, Xiaojiang Liu, Jian Yao and Shuming Shi</em>
                         </td>
                     </tr>
@@ -3843,7 +3831,7 @@ script: |
                     <tr id="paper" paper-id="1854">
                         <td id="paper-time">14:33&ndash;14:45</td>
                         <td>
-                            <span class="paper-title">Task Oriented Parsing.</span>
+                            <span class="paper-title">Semantic Parsing for Task Oriented Dialog using Hierarchical Representations.</span>
                             <em>Sonal Gupta, Rushin Shah, Mrinal Mohit, Anuj Kumar and Mike Lewis</em>
                         </td>
                     </tr>
@@ -3951,7 +3939,7 @@ script: |
                     <tr id="paper" paper-id="1518">
                         <td id="paper-time">14:33&ndash;14:45</td>
                         <td>
-                            <span class="paper-title">Natural Language Processing Not-At-All from Scratch: Evaluating The Utility of Hand-crafted Features in Deep Learning.</span>
+                            <span class="paper-title">Evaluating the Utility of Hand-crafted Features in Sequence Labelling.</span>
                             <em>Minghao Wu, Fei Liu and Trevor Cohn</em>
                         </td>
                     </tr>
@@ -4066,7 +4054,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1393">
                         <td>
-                            <span class="poster-title">How to represent a word and predict it, too: improving tied architectures for language modelling.</span>
+                            <span class="poster-title">How to represent a word and predict it, too: Improving tied architectures for language modelling.</span>
                             <em>Kristina Gulordava, Laura Aina and Gemma Boleda</em>
                         </td>
                     </tr>
@@ -4078,7 +4066,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="183">
                         <td>
-                            <span class="poster-title">Towards Document-Level Neural Machine Translation with Hierarchical Attention Networks.</span>
+                            <span class="poster-title">Document-Level Neural Machine Translation with Hierarchical Attention Networks.</span>
                             <em>Lesly Miculicich, Dhananjay Ram, Nikolaos Pappas and James Henderson</em>
                         </td>
                     </tr>
@@ -4114,7 +4102,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1248">
                         <td>
-                            <span class="poster-title">Learning When to Concentrate or Divert Attention: Automatic Control of Attention Temperature for Neural Machine Translation.</span>
+                            <span class="poster-title">Learning When to Concentrate or Divert Attention: Self-Adaptive Attention Temperature for Neural Machine Translation.</span>
                             <em>Junyang Lin, Xu SUN, Xuancheng Ren, Muyu Li and Qi Su</em>
                         </td>
                     </tr>
@@ -4132,7 +4120,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1367">
                         <td>
-                            <span class="poster-title">Getting Gender Right in Neural MT.</span>
+                            <span class="poster-title">Getting Gender Right in Neural Machine Translation.</span>
                             <em>Eva Vanmassenhove, Christian Hardmeier and Andy Way</em>
                         </td>
                     </tr>
@@ -4180,13 +4168,13 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="2066">
                         <td>
-                            <span class="poster-title">Break the Beam Search Curse: A Study of Score-Revision Methods and Stopping Criteria for Neural Machine Translation.</span>
+                            <span class="poster-title">Breaking the Beam Search Curse: A Study of (Re-)Scoring Methods and Stopping Criteria for Neural Machine Translation.</span>
                             <em>Yilin Yang, Liang Huang and Mingbo Ma</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="602">
                         <td>
-                            <span class="poster-title">Multi-View Learning: Multilingual and Multi-Representation Entity Typing.</span>
+                            <span class="poster-title">Multi-Multi-View Learning: Multilingual and Multi-Representation Entity Typing.</span>
                             <em>Yadollah Yaghoobzadeh and Hinrich Schütze</em>
                         </td>
                     </tr>
@@ -4198,7 +4186,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1648">
                         <td>
-                            <span class="poster-title">The Internal Structure of Name Tokens: A Multilingual Study.</span>
+                            <span class="poster-title">On the Strength of Character Language Models for Multilingual Named Entity Recognition.</span>
                             <em>Xiaodong Yu, Stephen Mayhew, Mark Sammons and Dan Roth</em>
                         </td>
                     </tr>
@@ -4351,7 +4339,7 @@ script: |
                     <tr id="paper" paper-id="2230">
                         <td id="paper-time">17:42&ndash;18:00</td>
                         <td>
-                            <span class="paper-title">Multi-Reference Training with Pseudo-Reference Generation for Text Generation.</span>
+                            <span class="paper-title">Multi-Reference Training with Pseudo-References for Neural Translation and Text Generation.</span>
                             <em>Renjie Zheng, Mingbo Ma and Liang Huang</em>
                         </td>
                     </tr>
@@ -4514,7 +4502,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="113">
                         <td>
-                            <span class="poster-title">LRMM: Learning to Recommend with Missing Modality.</span>
+                            <span class="poster-title">LRMM: Learning to Recommend with Missing Modalities.</span>
                             <em>Cheng Wang, Mathias Niepert and Hui Li</em>
                         </td>
                     </tr>
@@ -4526,7 +4514,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="624">
                         <td>
-                            <span class="poster-title">A Genre-Aware Attention Model to Improve Likability Prediction of Books.</span>
+                            <span class="poster-title">A Genre-Aware Attention Model to Improve the Likability Prediction of Books.</span>
                             <em>Suraj Maharjan, Manuel Montes, Fabio A. González and Thamar Solorio</em>
                         </td>
                     </tr>
@@ -4538,7 +4526,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="461">
                         <td>
-                            <span class="poster-title">Modeling Inter-Aspect Relation in Aspect-Based Sentiment Analysis.</span>
+                            <span class="poster-title">IARM: Inter-Aspect Relation Modeling with Memory Networks in Aspect-Based Sentiment Analysis.</span>
                             <em>Navonil Majumder, Soujanya Poria, Alexander Gelbukh, Md Shad Akhtar, Erik Cambria and Asif Ekbal</em>
                         </td>
                     </tr>
@@ -4568,7 +4556,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1824">
                         <td>
-                            <span class="poster-title">Text, Visual and Acoustic are Friends! A Multi-Modal Attention Framework for Utterance-Level Sentiment Prediction.</span>
+                            <span class="poster-title">Contextual Inter-modal Attention for Multi-modal Sentiment Analysis.</span>
                             <em>Deepanway Ghosal, Md Shad Akhtar, Dushyant Chauhan, Soujanya Poria, Asif Ekbal and Pushpak Bhattacharyya</em>
                         </td>
                     </tr>
@@ -4634,13 +4622,13 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="2198">
                         <td>
-                            <span class="poster-title">Framing and Agenda-Setting in Russian News: a Computational Analysis of Intricate Political Strategies.</span>
+                            <span class="poster-title">Framing and Agenda-setting in Russian News: a Computational Analysis of Intricate Political Strategies.</span>
                             <em>Anjalie Field, Doron Kliger, Shuly Wintner, Jennifer Pan, Dan Jurafsky and Yulia Tsvetkov</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="479">
                         <td>
-                            <span class="poster-title">Identifying the narrative styles of YouTube’s vloggers.</span>
+                            <span class="poster-title">Identifying the sentiment styles of YouTube’s vloggers.</span>
                             <em>Bennett Kleinberg, Maximilian Mozes and Isabelle van der Vegt</em>
                         </td>
                     </tr>
@@ -4816,7 +4804,7 @@ script: |
                     <tr id="paper" paper-id="1358">
                         <td id="paper-time">09:00&ndash;09:18</td>
                         <td>
-                            <span class="paper-title">Noise Contrastive Estimation for Conditional Models: Consistency and Statistical Efficiency.</span>
+                            <span class="paper-title">Noise Contrastive Estimation and Negative Sampling for Conditional Models: Consistency and Statistical Efficiency.</span>
                             <em>Zhuang Ma and Michael Collins</em>
                         </td>
                     </tr>
@@ -4827,11 +4815,11 @@ script: |
                             <em>Semih Yavuz, Chung-Cheng Chiu, Patrick Nguyen and Yonghui Wu</em>
                         </td>
                     </tr>
-                    <tr id="paper" paper-id="695">
+                    <tr id="paper" paper-id="2051">
                         <td id="paper-time">09:36&ndash;09:54</td>
                         <td>
-                            <span class="paper-title">Dual Fixed-Size Ordinally Forgetting Encoding (FOFE) for Competitive Neural Language Models.</span>
-                            <em>Sedtawut Watcharawittayakul, Mingbin Xu and Hui Jiang</em>
+                            <span class="paper-title">Pathologies of Neural Models Make Interpretations Difficult.</span>
+                            <em>Shi Feng, Eric Wallace, Alvin Grissom II, Mohit Iyyer, Pedro Rodriguez and Jordan Boyd-Graber</em>
                         </td>
                     </tr>
                     <tr id="paper" paper-id="758">
@@ -4898,7 +4886,7 @@ script: |
                     <tr id="paper" paper-id="2250">
                         <td id="paper-time">10:12&ndash;10:30</td>
                         <td>
-                            <span class="paper-title">Semantic Role Labeling for Learner Chinese: the Importance of Syntactic Parsing and the L2-L1 Parallel Data.</span>
+                            <span class="paper-title">Semantic Role Labeling for Learner Chinese: the Importance of Syntactic Parsing and L2-L1 Parallel Data.</span>
                             <em>Zi Lin, Yuguang Duan, Yuanyuan Zhao, Weiwei Sun and Xiaojun Wan</em>
                         </td>
                     </tr>
@@ -4953,7 +4941,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="377">
                         <td>
-                            <span class="poster-title">Sentence Editing under Quantifiable Guidance.</span>
+                            <span class="poster-title">QuaSE: Sequence Editing under Quantifiable Guidance.</span>
                             <em>Yi Liao, Lidong Bing, Piji Li, Shuming Shi, Wai Lam and Tong Zhang</em>
                         </td>
                     </tr>
@@ -4965,7 +4953,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="447">
                         <td>
-                            <span class="poster-title">Operation Guided Neural Networks for High Fidelity Data-To-Text Generation.</span>
+                            <span class="poster-title">Operation-guided Neural Networks for High Fidelity Data-To-Text Generation.</span>
                             <em>Feng Nie, Jinpeng Wang, Jin-Ge Yao, Rong Pan and Chin-Yew Lin</em>
                         </td>
                     </tr>
@@ -4979,6 +4967,12 @@ script: |
                         <td>
                             <span class="poster-title">Paragraph-level Neural Question Generation with Maxout Pointer and Gated Self-attention Networks.</span>
                             <em>Yao Zhao, Xiaochuan Ni, Yuanyuan Ding and Qifa Ke</em>
+                        </td>
+                    </tr>
+                    <tr id="poster" poster-id="1262">
+                        <td>
+                            <span class="poster-title">Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task.</span>
+                            <em>Tao Yu, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li, James Ma, Irene Li, Qingning Yao, Shanelle Roman, Zilin Zhang and Dragomir Radev</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1714">
@@ -5013,7 +5007,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1241">
                         <td>
-                            <span class="poster-title">Better Conversations by Modeling, Filtering, and Optimizing for Coherence and Diversity.</span>
+                            <span class="poster-title">Better Conversations by Modeling, Filtering,and Optimizing for Coherence and Diversity.</span>
                             <em>Xinnuo Xu, Ondřej Dušek, Ioannis Konstas and Verena Rieser</em>
                         </td>
                     </tr>
@@ -5049,7 +5043,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="206">
                         <td>
-                            <span class="poster-title">Abstractive Text-Image Summarization based on Multi-Modal Attentional Hierarchical RNN.</span>
+                            <span class="poster-title">Abstractive Text-Image Summarization Using Multi-Modal Attentional Hierarchical RNN.</span>
                             <em>Jingqiang Chen and Hai Zhuge</em>
                         </td>
                     </tr>
@@ -5278,7 +5272,7 @@ script: |
                     <tr id="paper" paper-id="2064">
                         <td id="paper-time">11:54&ndash;12:12</td>
                         <td>
-                            <span class="paper-title">Cube Pruning for Neural Machine Translation.</span>
+                            <span class="paper-title">Speeding Up Neural Machine Translation Decoding by Cube Pruning.</span>
                             <em>Wen Zhang, Liang Huang, Yang Feng, Lei Shen and Qun Liu</em>
                         </td>
                     </tr>
@@ -5318,14 +5312,14 @@ script: |
                     <tr id="paper" paper-id="968">
                         <td id="paper-time">11:18&ndash;11:36</td>
                         <td>
-                            <span class="paper-title">Nexus Network: Connecting the Preceding and the Following in Dialogue Generation.</span>
+                            <span class="paper-title">NEXUS Network: Connecting the Preceding and the Following in Dialogue Generation.</span>
                             <em>Xiaoyu Shen, Hui Su, Wenjie Li and Dietrich Klakow</em>
                         </td>
                     </tr>
                     <tr id="paper" paper-id="1138">
                         <td id="paper-time">11:36&ndash;11:54</td>
                         <td>
-                            <span class="paper-title">A New Local Coherence Model for Text Quality Assessment.</span>
+                            <span class="paper-title">A Neural Local Coherence Model for Text Quality Assessment.</span>
                             <em>Mohsen Mesgar and Michael Strube</em>
                         </td>
                     </tr>
@@ -5442,7 +5436,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1562">
                         <td>
-                            <span class="poster-title">Training RNNs as Fast as CNNs.</span>
+                            <span class="poster-title">Simple Recurrent Units for Highly Parallelizable Recurrence.</span>
                             <em>Tao Lei, Yu Zhang, Sida I. Wang, Hui Dai and Yoav Artzi</em>
                         </td>
                     </tr>
@@ -5562,7 +5556,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1877">
                         <td>
-                            <span class="poster-title">GraphBTM: Graph Enhanced Autoencoded Variational Inference forBiterm Topic Model.</span>
+                            <span class="poster-title">GraphBTM: Graph Enhanced Autoencoded Variational Inference for Biterm Topic Model.</span>
                             <em>Qile Zhu, Zheng Feng and Xiaolin Li</em>
                         </td>
                     </tr>
@@ -5652,21 +5646,21 @@ script: |
                     <tr id="paper" paper-id="1369">
                         <td id="paper-time">14:09&ndash;14:21</td>
                         <td>
-                            <span class="paper-title">Lexicosyntactic inference in neural models.</span>
+                            <span class="paper-title">Lexicosyntactic Inference in Neural Models.</span>
                             <em>Aaron Steven White, Rachel Rudinger, Kyle Rawlins and Benjamin Van Durme</em>
                         </td>
                     </tr>
-                    <tr id="paper" paper-id="2051">
+                    <tr id="paper" paper-id="695">
                         <td id="paper-time">14:21&ndash;14:33</td>
                         <td>
-                            <span class="paper-title">Pathologies of Neural Models Make Interpretation Difficult.</span>
-                            <em>Shi Feng, Eric Wallace, Alvin Grissom II, Mohit Iyyer, Pedro Rodriguez and Jordan Boyd-Graber</em>
+                            <span class="paper-title">Dual Fixed-Size Ordinally Forgetting Encoding (FOFE) for Competitive Neural Language Models.</span>
+                            <em>Sedtawut Watcharawittayakul, Mingbin Xu and Hui Jiang</em>
                         </td>
                     </tr>
                     <tr id="paper" paper-id="204">
                         <td id="paper-time">14:33&ndash;14:45</td>
                         <td>
-                            <span class="paper-title">The importance of Being Recurrent for Modeling Hierarchical Structure.</span>
+                            <span class="paper-title">The Importance of Being Recurrent for Modeling Hierarchical Structure.</span>
                             <em>Ke Tran, Arianna Bisazza and Christof Monz</em>
                         </td>
                     </tr>
@@ -5706,7 +5700,7 @@ script: |
                     <tr id="paper" paper-id="1622">
                         <td id="paper-time">14:09&ndash;14:21</td>
                         <td>
-                            <span class="paper-title">A Co-attention Neural Network Model for Emotion Cause Analysis with Emotional Context Awareness.</span>
+                            <span class="paper-title">A Co-Attention Neural Network Model for Emotion Cause Analysis with Emotional Context Awareness.</span>
                             <em>Xiangju Li, Kaisong Song, Shi Feng, Daling Wang and Yifei Zhang</em>
                         </td>
                     </tr>
@@ -5720,7 +5714,7 @@ script: |
                     <tr id="paper" paper-id="1497">
                         <td id="paper-time">14:33&ndash;14:45</td>
                         <td>
-                            <span class="paper-title">Interpretable Emoji Prediction via Multi-Attention LSTMs.</span>
+                            <span class="paper-title">Interpretable Emoji Prediction via Label-Wise Attention LSTMs.</span>
                             <em>Francesco Barbieri, Luis Espinosa Anke, Jose Camacho-Collados, Steven Schockaert and Horacio Saggion</em>
                         </td>
                     </tr>
@@ -5767,7 +5761,7 @@ script: |
                     <tr id="paper" paper-id="1267">
                         <td id="paper-time">14:21&ndash;14:33</td>
                         <td>
-                            <span class="paper-title">Has Neural Machine Translation Achieved Human Parity? A Case for Document-level Evaluation.</span>
+                            <span class="paper-title">Has Machine Translation Achieved Human Parity? A Case for Document-level Evaluation.</span>
                             <em>Samuel Läubli, Rico Sennrich and Martin Volk</em>
                         </td>
                     </tr>
@@ -5800,7 +5794,7 @@ script: |
                     <tr id="paper" paper-id="2190">
                         <td id="paper-time">13:45&ndash;13:57</td>
                         <td>
-                            <span class="paper-title">FewRel: A Large-Scale Supervised Few-shot Relation Classification Dataset with State-of-the-Art Evaluation.</span>
+                            <span class="paper-title">FewRel: A Large-Scale Supervised Few-Shot Relation Classification Dataset with State-of-the-Art Evaluation.</span>
                             <em>Xu Han, Hao Zhu, Pengfei Yu, Ziyun Wang, Yuan Yao, Zhiyuan Liu and Maosong Sun</em>
                         </td>
                     </tr>
@@ -5821,14 +5815,14 @@ script: |
                     <tr id="paper" paper-id="152">
                         <td id="paper-time">14:21&ndash;14:33</td>
                         <td>
-                            <span class="paper-title">Similar but not the Same - Word Sense Disambiguation Improves Event Detection via Neural Representation Matching.</span>
+                            <span class="paper-title">Similar but not the Same: Word Sense Disambiguation Improves Event Detection via Neural Representation Matching.</span>
                             <em>Weiyi Lu and Thien Huu Nguyen</em>
                         </td>
                     </tr>
                     <tr id="paper" paper-id="1440">
                         <td id="paper-time">14:33&ndash;14:45</td>
                         <td>
-                            <span class="paper-title">Learning Word Representations with Cross-Sentence Dependencyfor End-to-End Co-reference Resolution.</span>
+                            <span class="paper-title">Learning Word Representations with Cross-Sentence Dependency for End-to-End Co-reference Resolution.</span>
                             <em>Hongyin Luo and Jim Glass</em>
                         </td>
                     </tr>
@@ -5877,7 +5871,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1498">
                         <td>
-                            <span class="poster-title">Strong Baselines for Learning Generic Sentence Embeddings.</span>
+                            <span class="poster-title">InferLite: Simple Universal Sentence Representationsfrom Natural Language Inference Data.</span>
                             <em>Jamie Kiros and William Chan</em>
                         </td>
                     </tr>
@@ -5907,7 +5901,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="589">
                         <td>
-                            <span class="poster-title">Bi-LSTMs Are State-of-the-art for Chinese Word Segmentation.</span>
+                            <span class="poster-title">State-of-the-art Chinese Word Segmentation with Bi-LSTMs.</span>
                             <em>Ji Ma, Kuzman Ganchev and David Weiss</em>
                         </td>
                     </tr>
@@ -5955,7 +5949,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="2299">
                         <td>
-                            <span class="poster-title">Toward Understanding and Explaining Complex Deep Models in NLP.</span>
+                            <span class="poster-title">Interpreting Recurrent and Attention-Based Neural Models: a Case Study on Natural Language Inference.</span>
                             <em>Reza Ghaeini, Xiaoli Fern and Prasad Tadepalli</em>
                         </td>
                     </tr>
@@ -5997,7 +5991,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="2165">
                         <td>
-                            <span class="poster-title">Grammar Induction with Neural Language Models: Flawed Experiments, Important Results.</span>
+                            <span class="poster-title">Grammar Induction with Neural Language Models: An Unusual Replication.</span>
                             <em>Phu Mon Htut, Kyunghyun Cho and Samuel Bowman</em>
                         </td>
                     </tr>
