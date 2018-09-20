@@ -2937,7 +2937,7 @@ script: |
                     <tr id="paper" paper-id="2009">
                         <td id="paper-time">10:12&ndash;10:30</td>
                         <td>
-                            <span class="paper-title">Pointwise HSIC: A Linear-Time Kernelized Co-occurrence Norm\\for Sparse Linguistic Expressions.</span>
+                            <span class="paper-title">Pointwise HSIC: A Linear-Time Kernelized Co-occurrence Norm for Sparse Linguistic Expressions.</span>
                             <em>Sho Yokoi, Sosuke Kobayashi, Kenji Fukumizu, Jun Suzuki and Kentaro Inui</em>
                         </td>
                     </tr>
