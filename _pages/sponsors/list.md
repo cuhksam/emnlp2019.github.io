@@ -111,7 +111,10 @@ bronze:
     image_path: /assets/images/logos/ai2-logo.png
     alt: "AI2 Logo"
     title: "Allen Institute for Artificial Intelligence"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://www.textkernel.com
+    image_path: /assets/images/logos/textkernel-logo.png
+    alt: "Textkernel Logo"
+    title: "Textkernel"
 supporter:
   - url: http://textiq.com
     image_path: /assets/images/logos/textiq-logo.png
