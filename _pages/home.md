@@ -19,16 +19,13 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**September 20, 2018**. The following have been chosen as the best papers by the program co-chairs. Congratulations to the authors! <br/><br/>**Best Short Paper**: *How Much Reading Does Reading Comprehension Require? A Critical Investigation of Popular Benchmarks. Divyansh Kaushik and Zachary C. Lipton*<br/>**Best Resource Paper**: *MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling. Paweł Budzianowski, Tsung-Hsien Wen, Bo-Hsiang Tseng, Iñigo Casanueva, Stefan Ultes, Osman Ramadan and Milica Gasic*<br/>**Best Long Paper 1**: *Linguistically-Informed Self-Attention for Semantic Role Labeling. Emma Strubell, Patrick Verga, Daniel Andor, David Weiss and Andrew McCallum*<br/>**Best Long Paper 2**: *Phrase-Based & Neural Unsupervised Machine Translation. Guillaume Lample, Myle Ott, Alexis Conneau, Ludovic Denoyer and Marc'Aurelio Ranzato*
+{: .notice--info} 
+
 **September 19, 2018**. A draft version of the [conference schedule](/schedule) is now available. 
 {: .notice--info} 
 
 **September 7, 2018**. **Reminder**: If you need an invitation letter to obtain a visa or for other purposes, please see the [instructions](/participants/#visa-information) at the bottom of our Participants page.
-{: .notice--info} 
-
-**September 2, 2018**. **Reminder**: we have two important deadlines coming up this month: (a) **September 10** for [travel scholarships](/participants/#travel-scholarships--student-volunteer-program), [student volunteer awards](/participants/#travel-scholarships--student-volunteer-program) &amp; [childcare grant applications](/participants#childcare-grants) (b) **September 24** for [early registration](/registration). 
-{: .notice--info} 
-
-**August 22, 2018**. The lists of accepted [long papers](/program/accepted/long-papers), [short papers](/program/accepted/short-papers), and [system demonstrations](/program/accepted/demos) have been posted. Congratulations to all the authors! Please follow these [instructions](/downloads/emnlp2018-final.pdf) to prepare the final, camera-ready versions of your papers.
 {: .notice--info} 
 
 <h2>Welcome!</h2>
