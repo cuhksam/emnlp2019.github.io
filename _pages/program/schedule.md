@@ -3046,7 +3046,7 @@ script: |
                         <td id="paper-time">10:12&ndash;10:30</td>
                         <td>
                             <span class="paper-title">AD3: Attentive Deep Document Dater.</span>
-                            <em>Swayambhu Nath Ray, SHIB SANKAR DASGUPTA and Partha Talukdar</em>
+                            <em>Swayambhu Nath Ray, Shib Sankar Dasgupta and Partha Talukdar</em>
                         </td>
                     </tr>
                 </table>
