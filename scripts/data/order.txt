@@ -241,7 +241,7 @@
 835 09:18--09:36 # Coming to Your Senses: on Controls and Evaluation Sets in Polysemy Research
 1581 09:36--09:54 # Predicting Semantic Relations using Global Graph Properties
 1728 09:54--10:12 # Learning Scalar Adjective Intensity from Paraphrases
-2009 10:12--10:30 # Pointwise HSIC: A Linear-Time Kernelized Co-occurrence Norm\\for Sparse Linguistic Expressions
+2009 10:12--10:30 # Pointwise HSIC: A Linear-Time Kernelized Co-occurrence Norm for Sparse Linguistic Expressions
 = Session 5B: Summarization (Copper Hall)
 469 09:00--09:18 # Neural Related Work Summarization with a Joint Context-driven Attention Mechanism
 731 09:18--09:36 # Improving Neural Abstractive Document Summarization with Explicit Information Selection Modeling
