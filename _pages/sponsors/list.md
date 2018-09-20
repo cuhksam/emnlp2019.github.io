@@ -19,7 +19,10 @@ diamond:
     image_path: /assets/images/logos/salesforce-logo.png
     alt: "Salesforce Logo"
     title: "Salesforce"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://www.apple.com
+    image_path: /assets/images/logos/apple-logo.png
+    alt: "Apple Logo"
+    title: "Apple"
   - image_path: /assets/images/logos/blank-logo.png
 platinum:
   - url: http://www.amazon.com
