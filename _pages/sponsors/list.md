@@ -57,7 +57,10 @@ platinum:
     image_path: /assets/images/logos/flanders-logo.png
     alt: "Flanders Research Foundation Logo"
     title: "Flanders Research Foundation"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: http://www.megagon.ai 
+    image_path: /assets/images/logos/megagon-labs-logo.png
+    alt: "Megagon Labs Logo"
+    title: "Megagon Labs"
 gold:
   - url: http://www.ebay.com
     image_path: /assets/images/logos/ebay-logo.png
