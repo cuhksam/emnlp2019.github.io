@@ -97,7 +97,7 @@ ACL 2017 and NAACL 2018 provided on-site daycare to participants attending the c
 
 ## Travel Scholarships & Student Volunteer Program
 
-EMNLP 2018 seeks student volunteers who will receive a free registration to the main conference (excluding tutorials &amp; workshops). In addition, we also plan to offer scholarships to students *as well as non-students* with a demonstrated financial need. For more details, please refer to the [Joint Call for Travel Scholarship and Student Volunteer Applications](/downloads/joint-call-scholarship-volunteers.pdf). After reading the policy in detail to determine your eligibility, you can fill out the [application form](/downloads/application-travel-program-volunteer.pdf). If you have further questions, please contact us at [​emnlp2018travel@gmail.com](mailto:​emnlp2018travel@gmail.com).
+EMNLP 2018 seeks student volunteers who will receive a free registration to the main conference, tutorials &amp; workshops. In addition, we also plan to offer scholarships to students *as well as non-students* with a demonstrated financial need. For more details, please refer to the [Joint Call for Travel Scholarship and Student Volunteer Applications](/downloads/joint-call-scholarship-volunteers.pdf). After reading the policy in detail to determine your eligibility, you can fill out the [application form](/downloads/application-travel-program-volunteer.pdf). If you have further questions, please contact us at [​emnlp2018travel@gmail.com](mailto:​emnlp2018travel@gmail.com).
 
 **Important Dates**
 
