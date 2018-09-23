@@ -261,7 +261,6 @@
 1741 09:54--10:12 # Semi-Supervised Sequence Modeling with Cross-View Training
 1430-TACL 10:12--10:30 # Comparing Bayesian Models of Annotation
 = Session 5E: Information Extraction, Question Answering (Posters and Demos, Grand Hall 2)
-500 # A Probabilistic Annotation Model for Crowdsourcing Coreference
 575 # A Deterministic Algorithm for Bridging Anaphora Resolution
 1104 # A Knowledge Hunting Framework for Common Sense Reasoning
 171 # Mapping Text to Knowledge Graph Entities using Multi-Sense LSTMs
@@ -578,6 +577,7 @@
 1702 11:54--12:12 # Characterizing Interactions and Relationships between People
 2160 12:12--12:30 # Why Swear? Analyzing and Inferring the Intentions of Vulgar Expressions
 = Session 10E: Machine Learning (Posters and Demos, Grand Hall 2)
+500 # A Probabilistic Annotation Model for Crowdsourcing Coreference
 256 # Is it Time to Swish? Comparing Deep Learning Activation Functions Across NLP tasks
 648 # Hard Non-Monotonic Attention for Character-Level Transduction
 689 # Speed Reading: Learning to Read ForBackward via Shuttle
