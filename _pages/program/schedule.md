@@ -5550,7 +5550,7 @@ script: |
                     </tr>
                     <tr id="poster" poster-id="1396-TACL">
                         <td>
-                            <span class="poster-title">[TACL] LOW-RANK RNN ADAPTATION FOR CONTEXT-AWARE LANGUAGE MODELING.</span>
+                            <span class="poster-title">[TACL] Low-Rank RNN Adaptation for Context-Aware Language Modeling.</span>
                             <em>Aaron Jaech and Mari Ostendorf</em>
                         </td>
                     </tr>

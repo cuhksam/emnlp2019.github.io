@@ -601,7 +601,7 @@
 1793 # On Tree-Based Neural Sentence Modeling
 1962 # Language Modeling with Sparse Product of Sememe Experts
 1379-TACL # Language Modeling for Morphologically Rich Languages: Character-Aware Modeling for Word-Level Prediction
-1396-TACL # LOW-RANK RNN ADAPTATION FOR CONTEXT-AWARE LANGUAGE MODELING
+1396-TACL # Low-Rank RNN Adaptation for Context-Aware Language Modeling
 912 # Siamese Network-Based Supervised Topic Modeling
 1877 # GraphBTM: Graph Enhanced Autoencoded Variational Inference for Biterm Topic Model
 2098 # Modeling Online Discourse with Coupled Distributed Topics
