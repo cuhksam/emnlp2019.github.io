@@ -118,6 +118,12 @@ bronze:
     image_path: /assets/images/logos/textkernel-logo.png
     alt: "Textkernel Logo"
     title: "Textkernel"
+  - url: http://www.brandeis.edu/departments/computer-science/comp-linguistics/
+    image_path: /assets/images/logos/brandeis-logo.png
+    alt: "Brandeis University Logo"
+    title: "Computational Linguistics@Brandeis University"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 supporter:
   - url: http://textiq.com
     image_path: /assets/images/logos/textiq-logo.png
