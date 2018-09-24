@@ -3155,7 +3155,7 @@ script: |
                     <tr id="poster" poster-id="1898">
                         <td>
                             <span class="poster-title">HyTE: Hyperplane-based Temporally aware Knowledge Graph Embedding.</span>
-                            <em>SHIB SANKAR DASGUPTA, Swayambhu Nath Ray and Partha Talukdar</em>
+                            <em>Shib Sankar Dasgupta, Swayambhu Nath Ray and Partha Talukdar</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="615">
@@ -5860,7 +5860,7 @@ script: |
                     <tr id="poster" poster-id="1098">
                         <td>
                             <span class="poster-title">Learning Gender-Neutral Word Embeddings.</span>
-                            <em>Jieyu Zhao, YICHAO ZHOU, Zeyu Li, Wei Wang and Kai-Wei Chang</em>
+                            <em>Jieyu Zhao, Yichao Zhou, Zeyu Li, Wei Wang and Kai-Wei Chang</em>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1190">
