@@ -1161,7 +1161,7 @@ script: |
             </div>
         </div>
     </div>
-<div class="day" id="day-3">Friday, 2 November 2018</div>
+    <div class="day" id="day-3">Friday, 2 November 2018</div>
     <div class="session session-plenary" id="session-welcome">
         <span class="session-title">Opening remarks</span>
         <br/>
@@ -3116,12 +3116,6 @@ script: |
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
-                    <tr id="poster" poster-id="500">
-                        <td>
-                            <span class="poster-title">A Probabilistic Annotation Model for Crowdsourcing Coreference.</span>
-                            <em>Silviu Paun, Jon Chamberlain, Udo Kruschwitz, Juntao Yu and Massimo Poesio</em>
-                        </td>
-                    </tr>
                     <tr id="poster" poster-id="575">
                         <td>
                             <span class="poster-title">A Deterministic Algorithm for Bridging Anaphora Resolution.</span>
@@ -4975,6 +4969,12 @@ script: |
                             <em>Tao Yu, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li, James Ma, Irene Li, Qingning Yao, Shanelle Roman, Zilin Zhang and Dragomir Radev</em>
                         </td>
                     </tr>
+                    <tr id="poster" poster-id="65">
+                        <td>
+                            <span class="poster-title">Unsupervised Natural Language Generation with Denoising Autoencoders.</span>
+                            <em>Markus Freitag and Scott Roy</em>
+                        </td>
+                    </tr>
                     <tr id="poster" poster-id="1714">
                         <td>
                             <span class="poster-title">Answer-focused and Position-aware Neural Question Generation.</span>
@@ -5404,6 +5404,12 @@ script: |
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
+                    <tr id="poster" poster-id="500">
+                        <td>
+                            <span class="poster-title">A Probabilistic Annotation Model for Crowdsourcing Coreference.</span>
+                            <em>Silviu Paun, Jon Chamberlain, Udo Kruschwitz, Juntao Yu and Massimo Poesio</em>
+                        </td>
+                    </tr>
                     <tr id="poster" poster-id="256">
                         <td>
                             <span class="poster-title">Is it Time to Swish? Comparing Deep Learning Activation Functions Across NLP tasks.</span>
