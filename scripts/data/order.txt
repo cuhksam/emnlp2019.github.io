@@ -28,6 +28,7 @@
 1574 11:54--12:12 # Neural Segmental Hypergraphs for Overlapping Mention Recognition
 1846 12:12--12:30 # Variational Sequential Labelers for Semi-Supervised Learning
 = Session 1E: Machine Translation and Multilingual Methods (Posters and Demos, Grand Hall 2)
+@ Multilingual Methods
 76 # Joint Representation Learning of Cross-lingual Words and Entities via Attentive Distant Supervision
 126 # Deep Pivot-Based Modeling for Cross-language Cross-domain Transfer with Minimal Guidance
 270 # Multi-lingual Common Semantic Space Construction via Cluster-consistent Word Embedding
@@ -42,6 +43,7 @@
 2115 # Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks
 2122 # Cross-lingual Lexical Sememe Prediction
 2268 # Neural Cross-Lingual Named Entity Recognition with Minimal Resources
+@ Machine Translation
 310 # A Stable and Effective Learning Strategy for Trainable Greedy Decoding
 349 # Addressing Troublesome Words in Neural Machine Translation
 566 # Top-down Tree Structured Decoding with Syntactic Connections for Neural Machine Translation and Parsing
@@ -58,6 +60,7 @@
 1952 # Adaptive Multi-pass Decoder for Neural Machine Translation
 2056 # Improving the Transformer Translation Model with Document-Level Context
 2139 # MTNT: A Testbed for Machine Translation of Noisy Text
+@ Demos
 65-demo # CytonMT: an Efficient Neural Machine Translation Open-source Toolkit Implemented in C++
 38-demo # SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing
 + 12:30--13:45 Lunch
@@ -87,6 +90,7 @@
 468 14:21--14:33 # Hybrid Neural Attention for Agreement/Disagreement Inference in Online Debates
 794 14:33--14:45 # Increasing In-Class Similarity by Retrofitting Embeddings with Demographic Information
 = Session 2E: Short Posters I (Grand Hall 2)
+@ Dialog and Discourse
 53 # A Syntactically Constrained Bidirectional-Asynchronous Approach for Emotional Conversation Generation
 501 # Auto-Dialabel: Labeling Dialogue Data with Unsupervised Learning
 679 # Extending Neural Generative Conversational Model using External Knowledge Sources
@@ -96,6 +100,7 @@
 895 # Out-of-domain Detection based on Generative Adversarial Network
 1085 # Listening Comprehension over Argumentative Content
 333 # Using active learning to expand training data for implicit discourse relation recognition
+@ Generation and Summarization
 1474 # Learning To Split and Rephrase From Wikipedia Edit History
 887 # BLEU is Not Suitable for the Evaluation of Text Simplification
 2142 # S2SPMN: A Simple and Effective Framework for Response Generation with Relevant Information
@@ -106,6 +111,7 @@
 1544 # Evaluating Multiple System Summary Lengths: A Case Study
 1617 # Neural Latent Extractive Document Summarization
 2242 # On the Abstractiveness of Neural Document Summarization
+@ Text Classification, Text Mining and Information Retrieval
 1774 # Automatic Essay Scoring Incorporating Rating Schema via Reinforcement Learning
 16 # Identifying Well-formed Natural Language Questions
 747 # Self-Governing Neural Networks for On-Device Short Text Classification
@@ -143,6 +149,7 @@
 1099 15:36--15:48 # Cascaded Mutual Modulation for Visual Reasoning
 208 15:48--16:00 # How agents see things: On visual representations in an emergent language game
 = Session 3E: Short Posters II (Grand Hall 2)
+@ Information Extraction
 43 # Attention-Based Capsule Networks with Dynamic Routing for Relation Extraction
 159 # Put It Back: Entity Typing with Language Model Enhancement
 645 # Event Detection with Neural Networks: A Rigorous Empirical Evaluation
@@ -151,6 +158,7 @@
 1759 # Genre Separation Network with Adversarial Training for Cross-genre Relation Extraction
 2143 # Effective Use of Context in Noisy Entity Linking
 2146 # Exploiting Contextual Information via Dynamic Memory Network for Event Detection
+@ Question Answering
 54 # Do explanations make VQA models more predictable to a human?
 205 # Facts That Matter
 558 # Entity Tracking Improves Cloze-style Reading Comprehension
@@ -158,6 +166,7 @@
 663 # Translating a MathWord Problem to a Expression Tree
 2197 # Semantic Linking in Convolutional Neural Networks for Answer Sentence Selection
 2199 # A dataset and baselines for sequential open-domain question answering
+@ Sentiment Analysis
 22 # Improving the results of string kernels in sentiment analysis and Arabic dialect identification by adapting them to your test set
 228 # Parameterized Convolutional Neural Networks for Aspect Level Sentiment Classiﬁcation
 644 # Improving Multi-label Emotion Classification via Sentiment Classification with Dual Attention Transfer Network
@@ -165,6 +174,7 @@
 1117 # Joint Aspect and Polarity Classification for Aspect-based Sentiment Analysis with End-to-End Neural Networks
 1797 # Representing Social Media Users for Sarcasm Detection
 2326 # Syntactical Analysis of the Weaknesses of Sentiment Analyzers
+@ Social Applications
 586 # Is Nike female? Exploring the role of sound symbolism in predicting brand name gender
 717 # Improving Large-Scale Fact-Checking using Decomposable Attention Models and Lexical Tagging
 814 # Harnessing Popularity in Social Media for Extractive Summarization of Online Conversations
@@ -199,6 +209,7 @@
 1650 17:24--17:42 # TVQA: Localized, Compositional Video Question Answering
 1763 17:42--18:00 # Localizing Moments in Video with Temporal Language
 = Session 4E: Semantics III (Posters and Demos, Grand Hall 2)
+@ Lexical Semantics
 179 # Card-660: Cambridge Rare Word Dataset - a Reliable Benchmark for Infrequent Word Representation Models
 244 # Leveraging Gloss Knowledge in Neural Word Sense Disambiguation by Hierarchical Co-Attention
 741 # Weeding out Conventionalized Metaphors: A Corpus of Novel Metaphor Annotations
@@ -214,11 +225,13 @@
 1870 # Auto-Encoding Dictionary Definitions into Consistent Word Embeddings
 2221 # Spot the Odd Man Out: Exploring the Associative Power of Lexical Resources
 1346-TACL # Linear Algebraic Structure of Word Senses, with Applications to Polysemy
+@ Semantic Inference
 682 # Neural Multitask Learning for Simile Recognition
 911 # Structured Alignment Networks for Matching Sentences
 1669 # Compare, Compress and Propagate: Enhancing Neural Architectures with Alignment Factorization for Natural Language Inference
 1821 # Convolutional Interaction Network for Natural Language Inference
 1837 # Lessons from Natural Language Inference in the Clinical Domain
+@ Semantic Parsing
 264 # Question Generation from SQL Queries Improves Neural Semantic Parsing
 670 # SemRegex: A Semantics-Based Approach for Generating Regular Expressions from Natural Language Specifications
 829 # Decoupling Structure and Lexicon for Zero-Shot Semantic Parsing
@@ -261,19 +274,21 @@
 1741 09:54--10:12 # Semi-Supervised Sequence Modeling with Cross-View Training
 1430-TACL 10:12--10:30 # Comparing Bayesian Models of Annotation
 = Session 5E: Information Extraction, Question Answering (Posters and Demos, Grand Hall 2)
-575 # A Deterministic Algorithm for Bridging Anaphora Resolution
-1104 # A Knowledge Hunting Framework for Common Sense Reasoning
+@ Entities and Coreference
 171 # Mapping Text to Knowledge Graph Entities using Multi-Sense LSTMs
 415 # Differentiating Concepts and Instances for Knowledge Graph Embedding
 1234 # One-Shot Relational Learning for Knowledge Graphs
 1762 # Regular Expression Guided Entity Mention Mining from Noisy Web Data
 1898 # HyTE: Hyperplane-based Temporally aware Knowledge Graph Embedding
+575 # A Deterministic Algorithm for Bridging Anaphora Resolution
+1104 # A Knowledge Hunting Framework for Common Sense Reasoning
 615 # Neural Adaptation Layers for Cross-domain Named Entity Recognition
 855 # Entity Linking within a Social Media Platform: A Case Study on Yelp
 1094 # Annotation of a Large Clinical Entity Corpus
 1344 # Visual Supervision in Bootstrapped Information Extraction
 1631 # Learning Named Entity Tagger using Domain-Specific Dictionary
 1973 # Zero-Shot Open Entity Typing as Type-Compatible Grounding
+@ Question Answering and Reading Comprehension
 94 # Attention-Guided Answer Distillation for Machine Reading Comprehension
 534 # Interpretation of Natural Language Rules in Conversational Machine Reading
 771 # A State-transition Framework to Answer Complex Questions over Knowledge Base
@@ -285,6 +300,7 @@
 2168 # Cross-Pair Text Representations for Answer Sentence Selection
 2177 # QuAC: Question Answering in Context
 2244 # Knowledge Base Question Answering via Encoding of Complex Query Graphs
+@ Relation Extraction
 58 # Neural Relation Extraction via Inner-Sentence Noise Reduction and Transfer Learning
 297 # Graph Convolution over Pruned Dependency Trees Improves Relation Extraction
 425 # Multi-Level Structured Self-Attentions for Distantly Supervised Relation Extraction
@@ -294,6 +310,7 @@
 1048 # Extracting Entities and Relations with Joint Minimum Risk Training
 1232 # Large-scale Exploration of Neural Relation Classification Architectures
 1751 # Possessors Change Over Time: A Case Study with Artworks
+@ Demos
 39-demo # CogCompTime: A Tool for Understanding Time in Natural Language
 29-demo # DERE: A Task and Domain-Independent Slot Filling Framework for Declarative Relation Extraction
 63-demo # Integrating Knowledge-Supported Search into the INCEpTION Annotation Platform
@@ -328,14 +345,17 @@
 1880 11:54--12:12 # Joint Multilingual Supervision for Cross-lingual Entity Linking
 2249 12:12--12:30 # Fine-grained Coordinated Cross-lingual Text Stream Alignment for Endless Language Knowledge Acquisition
 = Session 6E: Syntax, Morphology, Vision and Language I (Posters and Demos, Grand Hall 2)
+@ Morphology, Word Segmentation and POS Tagging
+42 # Sanskrit Word Segmentation Using Character-level Recurrent and Convolutional Neural Networks
+1446-TACL # Universal Word Segmentation: Implementation and Interpretation
 701 # WECA：A WordNet-Encoded Collocation-Attention Network for Homographic Pun Recognition
 928 # A Hybrid Approach to Automatic Corpus Generation for Chinese Spelling Check
-2076 # Neural Quality Estimation of Grammatical Error Correction
 622 # Transferring from Formal Newswire Domain with Hypernet for Twitter POS Tagging
 1080 # Free as in Free Word Order: An Energy Based Model for Word Segmentation and Morphological Tagging in Sanskrit
 1174 # A Challenge Set and Methods for Noun-Verb Ambiguity
 1237 # What do character-level models learn about morphology? The case of dependency parsing
 2208 # Learning Better Internal Structure of Words for Sequence Labeling
+@ Vision and Language
 761 # ICON: Interactive Conversational Memory Network for Multimodal Emotion Detection
 978 # Discriminative Learning of Open-Vocabulary Object Retrieval and Localization by Negative Phrase Augmentation
 1744 # Grounding Semantic Roles in Images
@@ -344,6 +364,7 @@
 1951 # Grounding language acquisition by training semantic parsers using captioned videos
 1998 # Translating Navigation Instructions in Natural Language to a High-Level Plan for Behavioral Robot Navigation
 2067 # Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction
+@ Syntax
 225 # Deconvolutional Time Series Regression: A Technique for Modeling Temporally Diffuse Effects
 525 # Is this Sentence Difficult? Do you Agree?
 102 # Neural Transition Based Parsing of Web Queries: An Entity Based Approach
@@ -353,8 +374,8 @@
 1425-TACL # Surface Statistics of an Unknown Language Indicate How to Parse It
 1745 # Incremental Computation of Infix Probabilities for Probabilistic Finite Automata
 2140 # Syntax Encoding with Application in Authorship Attribution
-42 # Sanskrit Word Segmentation Using Character-level Recurrent and Convolutional Neural Networks
-1446-TACL # Universal Word Segmentation: Implementation and Interpretation
+2076 # Neural Quality Estimation of Grammatical Error Correction
+@ Demos
 18-demo # MorAz: an Open-source Morphological Analyzer for Azerbaijani Turkish
 33-demo # Juman++: A Morphological Analysis Toolkit for Scriptio Continua
 + 12:30--13:45 Lunch
@@ -384,6 +405,7 @@
 1161 14:21--14:33 # Imitation Learning for Neural Morphological String Transduction
 1673 14:33--14:45 # An Encoder-Decoder Approach to the Paradigm Cell Filling Problem
 = Session 7E: Short Posters III (Grand Hall 2)
+@ Neural Architectures and Language Models
 281 # Generating Natural Language Adversarial Examples
 1024 # Multi-Head Attention with Disagreement Regularization
 1731 # Deep Bayesian Active Learning for Natural Language Processing: Results of a Large-Scale Empirical Study
@@ -393,6 +415,7 @@
 722 # Estimating Marginal Probabilities of n-grams for Recurrent Neural Language Models
 1393 # How to represent a word and predict it, too: Improving tied architectures for language modelling
 1516 # The Importance of Generation Order in Language Modeling
+@ Machine Translation
 183 # Document-Level Neural Machine Translation with Hierarchical Attention Networks
 465 # Three Strategies to Improve One-to-Many Multilingual Translation
 614 # Multi-Source Syntactic Neural Machine Translation
@@ -411,6 +434,7 @@
 1925 # Encoding Gated Translation Memory into Neural Machine Translation
 1996 # Automatic Post-Editing of Machine Translation: A Neural Programmer-Interpreter Approach
 2066 # Breaking the Beam Search Curse: A Study of (Re-)Scoring Methods and Stopping Criteria for Neural Machine Translation
+@ Multilingual NLP
 602 # Multi-Multi-View Learning: Multilingual and Multi-Representation Entity Typing
 719 # Word Embeddings for Code-Mixed Language Processing
 1648 # On the Strength of Character Language Models for Multilingual Named Entity Recognition
@@ -445,16 +469,19 @@
 1860 17:24--17:42 # Adapting Word Embeddings to New Languages with Morphological and Phonological Subword Representations
 1420-TACL 17:42--18:00 # Recurrent Neural Networks in Linguistic Theory: Revisiting Pinker and Prince (1988) and the Past Tense Debate
 = Session 8E: Sentiment, Social Applications, Multimodal Semantics, Discourse (Posters and Demos, Grand Hall 2)
+@ Discourse
 470 # A Computational Exploration of Exaggeration
 665 # Building Context-aware Clause Representations for Situation Entity Type Classification
 704 # Hierarchical Dirichlet Gaussian Marked Hawkes Process for Narrative Reconstruction in Continuous Time Domain
 1489 # Investigating the Role of Argumentation in the Rhetorical Analysis of Scientific Publications with Neural Multi-Task Learning Models
 1596 # Neural Ranking Models for Temporal Dependency Structure Parsing
 1554 # Causal Explanation Analysis on Social Media
+@ Recommender Systems
 113 # LRMM: Learning to Recommend with Missing Modalities
 481 # Content Explorer: Recommending Novel Entities for a Document Writer
 624 # A Genre-Aware Attention Model to Improve the Likability Prediction of Books
 1071 # Thread Popularity Prediction and Tracking with a Permutation-invariant Model
+@ Sentiment Analysis
 461 # IARM: Inter-Aspect Relation Modeling with Memory Networks in Aspect-Based Sentiment Analysis
 692 # Limbic: Author-Based Sentiment Aspect Modeling Regularized with Word Embeddings and Discourse Relations
 846 # An Interpretable Neural Network with Topical Information for Relevant Emotion Ranking
@@ -463,6 +490,7 @@
 1824 # Contextual Inter-modal Attention for Multi-modal Sentiment Analysis
 1848 # Adaptive Semi-supervised Learning for Cross-domain Sentiment Classification
 2071 # ExtRA: Extracting Prominent Review Aspects from Customer Feedback
+@ Social Applications and Social Media
 647 # Cross-Lingual Cross-Platform Rumor Verification Pivoting on Multimedia Content
 960 # Extractive Adversarial Networks: High-Recall Explanations for Identifying Personal Attacks in Social Media Posts
 1340 # Automatic Detection of Vague Words and Sentences in Privacy Policies
@@ -474,6 +502,7 @@
 2198 # Framing and Agenda-setting in Russian News: a Computational Analysis of Intricate Political Strategies
 479 # Identifying the sentiment styles of YouTube’s vloggers
 862 # Native Language Identification with User Generated Content
+@ Demos
 35-demo # Visualization of the Topic Space of Argument Search Results in args.me
 44-demo # A Multilingual Information Extraction Pipeline for Investigative Journalism
 75-demo # When science journalism meets artificial intelligence : An interactive demonstration
@@ -505,12 +534,14 @@
 2103 09:54--10:12 # Hierarchical Quantized Representations for Script Generation
 2250 10:12--10:30 # Semantic Role Labeling for Learner Chinese: the Importance of Syntactic Parsing and L2-L1 Parallel Data
 = Session 9E: Generation, Dialog, Summarization; Vision and Language II (Posters and Demos, Grand Hall 2)
+@ Dialog
 305 # A Teacher-Student Framework for Maintainable Dialog Manager
 1511 # Discriminative Deep Dyna-Q: Robust Planning for Dialogue Policy Learning
 1572 # A Self-Attentive Model with Gate Mechanism for Spoken Language Understanding
 1779 # Learning End-to-End Goal-Oriented Dialog with Multiple Answers
 2138 # AirDialogue: An Environment for Goal-Oriented Dialogue Research
 1424-TACL # Polite Dialogue Generation Without Parallel Data
+@ Generation
 377 # QuaSE: Sequence Editing under Quantifiable Guidance
 413 # Paraphrase Generation with Deep Reinforcement Learning
 447 # Operation-guided Neural Networks for High Fidelity Data-To-Text Generation
@@ -524,12 +555,14 @@
 866 # Stylistic Chinese Poetry Generation via Unsupervised Style Disentanglement
 1127 # Generating More Interesting Responses in Neural Conversation Models with Distributional Constraints
 1241 # Better Conversations by Modeling, Filtering,and Optimizing for Coherence and Diversity
+@ Vision and Language
 227 # Incorporating Background Knowledge into Video Description Generation
 229 # Multimodal Differential Network for Visual Question Generation
 232 # Entity-aware Image Caption Generation
 1900 # Learning to Describe Differences Between Pairs of Similar Images
 2074 # Object Hallucination in Image Captioning
 206 # Abstractive Text-Image Summarization Using Multi-Modal Attentional Hierarchical RNN
+@ Summarization
 207 # Keyphrase Generation with Correlation Constraints
 585 # Closed-Book Training to Improve Summarization Encoder Memory
 727 # Improving Neural Abstractive Document Summarization with Structural Regularization
@@ -543,6 +576,7 @@
 1539 # Frustratingly Easy Model Ensemble for Abstractive Summarization
 1575 # Automatic Pyramid Evaluation Exploiting EDU-based Extractive Reference Summaries
 1975 # Learning to Encode Text as Human-Readable Summaries using Generative Adversarial Networks
+@ Demos
 56-demo # Visualizing Group Dynamics based on Multiparty Meeting Understanding
 70-demo # PizzaPal: Conversational Pizza Ordering using a High-Density Conversational AI Platform
 71-demo # Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing
@@ -577,6 +611,7 @@
 1702 11:54--12:12 # Characterizing Interactions and Relationships between People
 2160 12:12--12:30 # Why Swear? Analyzing and Inferring the Intentions of Vulgar Expressions
 = Session 10E: Machine Learning (Posters and Demos, Grand Hall 2)
+@ Architectures and Models
 500 # A Probabilistic Annotation Model for Crowdsourcing Coreference
 256 # Is it Time to Swish? Comparing Deep Learning Activation Functions Across NLP tasks
 648 # Hard Non-Monotonic Attention for Character-Level Transduction
@@ -589,12 +624,19 @@
 1720 # Spherical Latent Spaces for Stable Variational Autoencoders
 1869 # Learning Universal Sentence Representations with Mean-Max Attention Autoencoder
 1891 # Word Mover's Embedding: From Word2Vec to Document Embedding
+1221 # Learning Disentangled Representations of Texts with Application to Biomedical Abstracts
+1781 # Multi-Source Domain Adaptation with Mixture of Experts
+@ Text Classification and Topic Modeling
 707 # Multilingual Clustering of Streaming News
 744 # Multi-Task Label Embedding for Text Classification
 1235 # Semantic-Unit-Based Dilated Convolution for Multi-Label Text Classification
 1512 # MCapsNet: Capsule Network for Text with Multi-Task Learning
 1738 # Uncertainty-aware generative models for inferring document class prevalence
 2087 # Challenges of Using Text Classifiers for Causal Inference
+912 # Siamese Network-Based Supervised Topic Modeling
+1877 # GraphBTM: Graph Enhanced Autoencoded Variational Inference for Biterm Topic Model
+2098 # Modeling Online Discourse with Coupled Distributed Topics
+@ Language Modeling 
 709 # Direct Output Connection for a High-Rank Language Model
 1465 # Disfluency Detection using Auto-Correlational Neural Networks
 1479 # Pyramidal Recurrent Unit for Language Modeling
@@ -602,11 +644,7 @@
 1962 # Language Modeling with Sparse Product of Sememe Experts
 1379-TACL # Language Modeling for Morphologically Rich Languages: Character-Aware Modeling for Word-Level Prediction
 1396-TACL # Low-Rank RNN Adaptation for Context-Aware Language Modeling
-912 # Siamese Network-Based Supervised Topic Modeling
-1877 # GraphBTM: Graph Enhanced Autoencoded Variational Inference for Biterm Topic Model
-2098 # Modeling Online Discourse with Coupled Distributed Topics
-1221 # Learning Disentangled Representations of Texts with Application to Biomedical Abstracts
-1781 # Multi-Source Domain Adaptation with Mixture of Experts
+@ Demos
 49-demo # Sisyphus, a Workflow Manager Designed for Machine Translation and Automatic Speech Recognition
 59-demo # APLenty: annotation tool for creating high-quality datasets using active and proactive learning
 53-demo # KT-Speech-Crawler: Automatic Dataset Construction for Speech Recognition from YouTube Videos
@@ -639,6 +677,19 @@
 152 14:21--14:33 # Similar but not the Same: Word Sense Disambiguation Improves Event Detection via Neural Representation Matching
 1440 14:33--14:45 # Learning Word Representations with Cross-Sentence Dependency for End-to-End Co-reference Resolution
 = Session 11E: Short Posters IV (Grand Hall 2)
+@ Morphology
+589 # State-of-the-art Chinese Word Segmentation with Bi-LSTMs
+901 # Sanskrit Sandhi Splitting using seq2(seq)2
+1120 # Unsupervised Neural Word Segmentation for Chinese via Segmental Language Modeling
+1543 # LemmaTag: Jointly Tagging and Lemmatizing for Morphologically Rich Languages with BRNNs
+2298 # Recovering Missing Characters in Old Hawaiian Writing
+@ Syntax
+875 # Wronging a Right: Generating Better Errors to Improve Grammatical Error Detection
+1307 # Modeling Input Uncertainty in Neural Network Dependency Parsing
+1373 # Parameter sharing between dependency parsers for related languages
+2165 # Grammar Induction with Neural Language Models: An Unusual Replication
+2183 # Data Augmentation via Dependency Tree Morphing for Low-Resource Languages
+@ Lexical Semantics
 821 # Word Relation Autoencoder for Unseen Hypernym Extraction Using Word Embeddings
 1059 # Refining Pretrained Word Embeddings Using Layer-wise Relevance Propagation
 1098 # Learning Gender-Neutral Word Embeddings
@@ -649,11 +700,7 @@
 1576 # What can we learn from Semantic Tagging?
 1610 # Conditional Word Embedding and Hypothesis Testing via Bayes-by-Backprop
 1553 # Classifying Referential and Non-referential It Using Gaze
-589 # State-of-the-art Chinese Word Segmentation with Bi-LSTMs
-901 # Sanskrit Sandhi Splitting using seq2(seq)2
-1120 # Unsupervised Neural Word Segmentation for Chinese via Segmental Language Modeling
-1543 # LemmaTag: Jointly Tagging and Lemmatizing for Morphologically Rich Languages with BRNNs
-2298 # Recovering Missing Characters in Old Hawaiian Writing
+@ Semantic Parsing and Semantic Inference
 1410 # When data permutations are pathological: the case of neural natural language inference
 1735 # Bridging Knowledge Gaps in Neural Entailment via Symbolic Models
 2032 # The BQ Corpus: A Large-scale Domain-specific Chinese Corpus For Sentence Semantic Equivalence Identification
@@ -661,11 +708,6 @@
 1375 # Towards Semi-Supervised Learning for Deep Semantic Role Labeling
 1668 # Identifying Domain Adjacent Instances for Semantic Parsers
 1719 # Mapping natural language commands to web elements
-875 # Wronging a Right: Generating Better Errors to Improve Grammatical Error Detection
-1307 # Modeling Input Uncertainty in Neural Network Dependency Parsing
-1373 # Parameter sharing between dependency parsers for related languages
-2165 # Grammar Induction with Neural Language Models: An Unusual Replication
-2183 # Data Augmentation via Dependency Tree Morphing for Low-Resource Languages
 + 14:45--15:00 Mini-Break
 + 15:00--16:00 Keynote III: Johan Bos "The Moment of Meaning and the Future of Computational Semantics" (Gold Hall)
 + 16:00--16:30 Coffee Break
