@@ -19,17 +19,18 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**October 1, 2018**. Reminder: EMNLP special [hotel rates](http://emnlp2018.org/participants/#accommodation) expire October 8th. Book your hotel room now.
+{: .notice--info}
+
 **September 23, 2018**. Reminder: early [registration](https://aclweb.org/conference/emnlp-2018-conference-registration/) ends tomorrow (September 24).
 {: .notice--info}
 
 **September 20, 2018**. The following have been chosen as the best papers by the program co-chairs. Congratulations to the authors! <br/><br/>**Best Short Paper**: *How Much Reading Does Reading Comprehension Require? A Critical Investigation of Popular Benchmarks. Divyansh Kaushik and Zachary C. Lipton*<br/>**Best Resource Paper**: *MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling. Paweł Budzianowski, Tsung-Hsien Wen, Bo-Hsiang Tseng, Iñigo Casanueva, Stefan Ultes, Osman Ramadan and Milica Gasic*<br/>**Best Long Paper 1**: *Linguistically-Informed Self-Attention for Semantic Role Labeling. Emma Strubell, Patrick Verga, Daniel Andor, David Weiss and Andrew McCallum*<br/>**Best Long Paper 2**: *Phrase-Based & Neural Unsupervised Machine Translation. Guillaume Lample, Myle Ott, Alexis Conneau, Ludovic Denoyer and Marc'Aurelio Ranzato*
-{: .notice--info} 
+{: .notice} 
 
 **September 19, 2018**. A draft version of the [conference schedule](/schedule) is now available. 
-{: .notice--info} 
-
-**September 7, 2018**. **Reminder**: If you need an invitation letter to obtain a visa or for other purposes, please see the [instructions](/participants/#visa-information) at the bottom of our Participants page.
 {: .notice} 
+
 
 <h2>Welcome!</h2>
 
