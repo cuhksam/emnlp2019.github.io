@@ -39,7 +39,7 @@ David Smith, Northeastern University, USA
 Kam-Fai Wong, Chinese University of Hong Kong (senior chair)<br/>
 Eiji Aramaki, Nara Institute of Science and Technology, Japan<br/>
 Mona Diab, George Washington University, USA<br/>
-Yulan He, Aston University, United Kingdom<br/>
+Yulan He, University of Warwick, United Kingdom<br/>
 Dirk Hovy, Bocconi University, Italy<br/>
 Rada Mihalcea, University of Michigan, USA<br/>
 Alice Oh, KAIST, Korea<br/>
