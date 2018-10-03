@@ -90,7 +90,7 @@
 468 14:21--14:33 # Hybrid Neural Attention for Agreement/Disagreement Inference in Online Debates
 794 14:33--14:45 # Increasing In-Class Similarity by Retrofitting Embeddings with Demographic Information
 = Session 2E: Short Posters I (Grand Hall 2)
-@ Dialog and Discourse
+@ Dialogue and Discourse
 53 # A Syntactically Constrained Bidirectional-Asynchronous Approach for Emotional Conversation Generation
 501 # Auto-Dialabel: Labeling Dialogue Data with Unsupervised Learning
 679 # Extending Neural Generative Conversational Model using External Knowledge Sources
@@ -533,8 +533,8 @@
 2060 09:36--09:54 # Syntactic Scaffolds for Semantic Structures
 2103 09:54--10:12 # Hierarchical Quantized Representations for Script Generation
 2250 10:12--10:30 # Semantic Role Labeling for Learner Chinese: the Importance of Syntactic Parsing and L2-L1 Parallel Data
-= Session 9E: Generation, Dialog, Summarization; Vision and Language II (Posters and Demos, Grand Hall 2)
-@ Dialog
+= Session 9E: Generation, Dialogue, Summarization; Vision and Language II (Posters and Demos, Grand Hall 2)
+@ Dialogue
 305 # A Teacher-Student Framework for Maintainable Dialog Manager
 1511 # Discriminative Deep Dyna-Q: Robust Planning for Dialogue Policy Learning
 1572 # A Self-Attentive Model with Gate Mechanism for Spoken Language Understanding
