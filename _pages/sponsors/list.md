@@ -23,7 +23,10 @@ diamond:
     image_path: /assets/images/logos/apple-logo.png
     alt: "Apple Logo"
     title: "Apple"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://www.asapp.com
+    image_path: /assets/images/logos/asapp-logo.png
+    alt: "Asapp Logo"
+    title: "Asapp"
 platinum:
   - url: http://www.amazon.com
     image_path: /assets/images/logos/amazon-logo.png
@@ -86,6 +89,15 @@ gold:
     image_path: /assets/images/logos/cvte-stacked-logo.png
     alt: "CVTE Logo"
     title: "CVTE"
+  - url: http://www.yitu-inc.com
+    image_path: /assets/images/logos/yitu-logo.png
+    alt: "Yitu Logo"
+    title: "Yitu"
+  - url: http://www.sogou.com
+    image_path: /assets/images/logos/sogou-logo.png
+    alt: "Sogou Logo"
+    title: "Sogou"
+  - image_path: /assets/images/logos/blank-logo.png
 silver:
   - url: http://www.nuance.com/index.htm
     image_path: /assets/images/logos/nuance-logo.png
@@ -110,10 +122,6 @@ bronze:
     image_path: /assets/images/logos/next-canada-logo.png
     alt: "Next Canada Logo"
     title: "Next Canada"
-  - url: https://allenai.org
-    image_path: /assets/images/logos/ai2-logo.png
-    alt: "AI2 Logo"
-    title: "Allen Institute for Artificial Intelligence"
   - url: https://www.textkernel.com
     image_path: /assets/images/logos/textkernel-logo.png
     alt: "Textkernel Logo"
@@ -122,14 +130,15 @@ bronze:
     image_path: /assets/images/logos/brandeis-logo.png
     alt: "Brandeis University Logo"
     title: "Computational Linguistics@Brandeis University"
-  - image_path: /assets/images/logos/blank-logo.png
-  - image_path: /assets/images/logos/blank-logo.png
 supporter:
   - url: http://textiq.com
     image_path: /assets/images/logos/textiq-logo.png
     alt: "TextIQ Logo"
     title: "TextIQ"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://allenai.org
+    image_path: /assets/images/logos/ai2-logo.png
+    alt: "AI2 Logo"
+    title: "Allen Institute for Artificial Intelligence"
   - image_path: /assets/images/logos/blank-logo.png
 sidebar: 
     nav: "sponsors"
