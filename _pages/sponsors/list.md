@@ -111,10 +111,7 @@ silver:
     image_path: /assets/images/logos/duolingo-logo.png
     alt: "Duolingo Logo"
     title: "Duolingo"
-  - url: https://www.figure-eight.com
-    image_path: /assets/images/logos/figure-eight-logo.png
-    alt: "Figure Eight Logo"
-    title: "Figure Eight"
+  - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
 bronze:
