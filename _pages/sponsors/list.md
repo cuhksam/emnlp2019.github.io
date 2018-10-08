@@ -69,7 +69,7 @@ gold:
     image_path: /assets/images/logos/ebay-logo.png
     alt: "Ebay Logo"
     title: "Ebay"
-  - url: http://www.microsoft.com
+  - url: https://www.microsoft.com/research
     image_path: /assets/images/logos/microsoft-logo.png
     alt: "Microsoft Logo"
     title: "Microsoft"
