@@ -111,9 +111,6 @@ silver:
     image_path: /assets/images/logos/duolingo-logo.png
     alt: "Duolingo Logo"
     title: "Duolingo"
-  - image_path: /assets/images/logos/blank-logo.png
-  - image_path: /assets/images/logos/blank-logo.png
-  - image_path: /assets/images/logos/blank-logo.png
 bronze:
   - url: https://www.nextcanada.com
     image_path: /assets/images/logos/next-canada-logo.png
