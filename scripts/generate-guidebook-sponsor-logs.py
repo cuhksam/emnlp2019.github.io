@@ -26,7 +26,7 @@ thumbnail_zipfh = zipfile.ZipFile('sponsor-thumbs.zip', 'w')
 # read in the frontmatter from the sponsors page so that we can get
 # the logos by sponsor level
 content = frontmatter.load('../_pages/sponsors/list.md')
-for level in ['diamond', 'platinum', 'gold', 'silver', 'bronze']:
+for level in ['diamond', 'platinum', 'gold', 'silver', 'bronze', 'supporter']:
     print(level)
     try:
         logo_info = [(obj['title'], obj['image_path']) for obj in content[level] if 'title' in obj]
