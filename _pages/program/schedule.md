@@ -372,7 +372,7 @@ script: |
 
         function populateHiddenProgramTable() {
 
-            /* since papers and posters might start at the same time we cannot just rely on starting times to differentiate papers vs. posters. so, what we can do is just add an item type before we do the concatenation and then rely on that item type to distinguish the item */
+            /* since papers and posters might start at the same time we cannot just rely on starting times to differentiate papers vs. posters. so, what we can do is just add an item type after we do the concatenation and then rely on that item type to distinguish the item */
             
             var nonPlenaryKeysAndTypes = [];
             var tutorialKeys = Object.keys(chosenTutorialsHash);
