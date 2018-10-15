@@ -196,14 +196,15 @@ def main():
                     for paper in split:
                         paper = paper.strip()
                         if 'poster' in session_type.lower() or 'poster' in session_title.lower():
-                            poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
-                            if poster_id == 'ID':
-                                poster_id = next(placeholder_poster_id_counter)
-                            if poster_title == 'TITLE':
-                                poster_title = poster_title + '-' + str(next(title_counter))
+                            if paper.startswith('@'):
+                                poster_topic = paper.lstrip('@ ')
+                                generated_html.append('<tr><td><span class="poster-type">{}</span></td></tr>'.format(poster_topic))
+                                continue
+                            else:
+                                poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
                             poster_authors = authors_dict[poster_id].strip()
                             if poster_id.endswith('-demo'):
-                                poster_title = '[DEMO] {}'.format(poster_title)
+                                poster_title = '{}'.format(poster_title)
                             if poster_id.endswith('-TACL'):
                                 poster_title = '[TACL] {}'.format(poster_title)
                             generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em></td></tr>'.format(poster_id, poster_title, poster_authors))
