@@ -12,11 +12,9 @@ Note that:
 
 1. `dos2unix` must be run on the order file before processing.
 
-2. The order file does not any information about tutorials, workshops, or welcome reception.
+2. The order file does not contain any information about tutorials, workshops, or welcome reception.
 
 3. It also does not contain any authors for any papers/posters/demos.
-
-4. No poster types are generated for now.
 '''
 
 import argparse
@@ -162,6 +160,9 @@ def main():
             elif 'social event' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 generated_html.append('<div class="session session-expandable session-plenary" id="session-social"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-external-location btn btn--info btn--location">{}</span> <div class="paper-session-details"> <br/><div class="session-abstract"><p>On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the Royal Museums of Fine Arts of Belgium. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts — painting, sculpture and drawing — from the 15th to the 21st century.</p></div></div></div>'.format(session_title, day_string, session_start, session_end, session_location))
+            elif 'business meeting' in session_string.lower():
+                session_start, session_end, session_title = BREAK_SESSION_REGEXP.match(session_string).groups()
+                generated_html.append('<div class="session session-plenary" id="session-business"><span class="session-title">{}<br/><strong>All attendees are encouraged to participate in the business meeting.</strong> </span><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/></div>'.format(session_title, day_string, session_start, session_end, session_location))
             elif 'best paper' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 generated_html.append('<div class="session session-expandable session-papers-best"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">Gold Hall</span><br/><div class="paper-session-details"><br/><table class="paper-table">'.format(session_title, day_string, session_start, session_end, session_start, session_end))

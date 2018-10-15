@@ -649,7 +649,7 @@
 59-demo # APLenty: annotation tool for creating high-quality datasets using active and proactive learning
 53-demo # KT-Speech-Crawler: Automatic Dataset Construction for Speech Recognition from YouTube Videos
 15-demo # Term Set Expansion based NLP Architect by Intel AI Lab
-+ 12:30--13:45 Lunch
++ 12:30--13:00 Lunch
 + 13:00--13:45 Business Meeting
 + 13:45--14:45 Short Papers (Orals and Posters) IV
 = Session 11A: Analyzing Models (Gold Hall)
