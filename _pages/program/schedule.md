@@ -1161,7 +1161,7 @@ script: |
             </div>
         </div>
     </div>
-    <div class="day" id="day-3">Friday, 2 November 2018</div>
+<div class="day" id="day-3">Friday, 2 November 2018</div>
     <div class="session session-plenary" id="session-welcome">
         <span class="session-title">Opening remarks</span>
         <br/>
@@ -1210,7 +1210,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-1a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:mail@dirkhovy.com">Dirk Hovy</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="523">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -1264,7 +1266,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-1b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:natschluter@itu.dk">Natalie Schluter</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1172">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -1318,7 +1322,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-1c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:g.chrupala@uvt.nl">Grzegorz Chrupała</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="201">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -1372,7 +1378,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-1d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:eduardo.blanco@unt.edu">Eduardo Blanco</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="392">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -1654,7 +1662,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-2a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:scottyih@allenai.org">Scott Wen-tau Yih</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="592">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -1708,7 +1718,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-2b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:xu.1265@osu.edu">Wei Xu</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1297">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -1762,7 +1774,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-2c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:shacharmirkin@gmail.com">Shachar Mirkin</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1376">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -1816,7 +1830,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-2d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:luwang@ccs.neu.edu">Lu Wang</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="977">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -2080,7 +2096,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-3a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:l.specia@sheffield.ac.uk">Lucia Specia</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1527">
                         <td id="paper-time">15:00&ndash;15:12</td>
@@ -2134,7 +2152,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-3b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:byron.wallace@gmail.com">Byron Wallace</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="747">
                         <td id="paper-time">15:00&ndash;15:12</td>
@@ -2188,7 +2208,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-3c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:reut.tsarfaty@gmail.com">Reut Tsarfaty</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="526">
                         <td id="paper-time">15:00&ndash;15:12</td>
@@ -2242,7 +2264,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-3d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:joyu@ucdavis.edu">Zhou Yu</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="626">
                         <td id="paper-time">15:00&ndash;15:12</td>
@@ -2511,7 +2535,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-4a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:cdyer@google.com">Chris Dyer</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="953">
                         <td id="paper-time">16:30&ndash;16:48</td>
@@ -2565,7 +2591,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-4b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:jih@rpi.edu">Heng Ji</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="224">
                         <td id="paper-time">16:30&ndash;16:48</td>
@@ -2619,7 +2647,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-4c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:joakim.nivre@lingfil.uu.se">Joakim Nivre</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="217">
                         <td id="paper-time">16:30&ndash;16:48</td>
@@ -2673,7 +2703,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-4d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:CarinaSilberer@gmail.com">Carina Silberer</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="247">
                         <td id="paper-time">16:30&ndash;16:48</td>
@@ -2969,7 +3001,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-5a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:oe@ifi.uio.no">Stephan Oepen</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="654">
                         <td id="paper-time">09:00&ndash;09:18</td>
@@ -3023,7 +3057,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-5b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:feiliu@cs.ucf.edu">Fei Liu</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="469">
                         <td id="paper-time">09:00&ndash;09:18</td>
@@ -3077,7 +3113,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-5c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:amoschitti@gmail.com">Alessandro Moschitti</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="190">
                         <td id="paper-time">09:00&ndash;09:18</td>
@@ -3131,7 +3169,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-5d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:kw@kwchang.net">Kai-Wei Chang</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1406">
                         <td id="paper-time">09:00&ndash;09:18</td>
@@ -3466,7 +3506,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-6a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:mbansal@cs.unc.edu">Mohit Bansal</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="582">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -3520,7 +3562,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-6b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:william@cs.ucsb.edu">William Wang</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="628">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -3574,7 +3618,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-6c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:iv250@cam.ac.uk">Ivan Vulić</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1128">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -3628,7 +3674,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-6d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:bplank@gmail.com">Barbara Plank</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="189">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -3897,7 +3945,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-7a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:zkozareva@gmail.com">Zornitsa Kozareva</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1236">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -3951,7 +4001,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-7b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:shomir@psu.edu">Shomir Wilson</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1733">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -4005,7 +4057,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-7c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:ritter.1492@osu.edu">Alan Ritter</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1776">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -4059,7 +4113,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-7d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:kann@nyu.edu">Katharina Kann</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="990">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -4366,7 +4422,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-8a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:IONANDR@GMAIL.COM">Ion Androutsopoulos</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="245">
                         <td id="paper-time">16:30&ndash;16:48</td>
@@ -4420,7 +4478,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-8b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:i.konstas@hw.ac.uk">Ioannis Konstas</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="300">
                         <td id="paper-time">16:30&ndash;16:48</td>
@@ -4474,7 +4534,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-8c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:ppt@iisc.ac.in">Partha Talukdar</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1000">
                         <td id="paper-time">16:30&ndash;16:48</td>
@@ -4528,7 +4590,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-8d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:nematzadeh@google.com">Aida Nematzadeh</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="82">
                         <td id="paper-time">16:30&ndash;16:48</td>
@@ -4830,7 +4894,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-9a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:schwenk@fb.com">Holger Schwenk</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="499">
                         <td id="paper-time">09:00&ndash;09:18</td>
@@ -4884,7 +4950,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-9b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:Yulan.He@warwick.ac.uk">Yulan He</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="136">
                         <td id="paper-time">09:00&ndash;09:18</td>
@@ -4938,7 +5006,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-9c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:ravi.sujith@gmail.com">Sujith Ravi</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1358">
                         <td id="paper-time">09:00&ndash;09:18</td>
@@ -4992,7 +5062,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-9d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:gabriel.satanovsky@gmail.com">Gabriel Stanovsky</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="652">
                         <td id="paper-time">09:00&ndash;09:18</td>
@@ -5362,7 +5434,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-10a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:jbg@umiacs.umd.edu">Jordan Boyd-Graber</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="587">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -5416,7 +5490,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-10b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:jorg.tiedemann@helsinki.fi">Joerg Tiedemann</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1021">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -5470,7 +5546,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-10c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:mlap@inf.ed.ac.uk">Mirella Lapata</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="907">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -5524,7 +5602,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-10d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:jurgens@umich.edu">David Jurgens</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="63">
                         <td id="paper-time">11:00&ndash;11:18</td>
@@ -5807,14 +5887,16 @@ script: |
         <br/>
         <span class="session-time" title="Sunday, 4 November 2018">12:30 &ndash; 13:00</span>
     </div>
-    <div class="session session-plenary" id="session-business">
-        <span class="session-title">Business Meeting
-            <br/>
-            <strong>All attendees are encouraged to participate in the business meeting.</strong>
-        </span>
+    <div class="session session-expandable session-plenary" id="session-business">
+        <div id="expander"></div>
+        <a href="#" class="session-title">Business Meeting</a>
         <br/>
         <span class="session-time" title="Sunday, 4 November 2018">13:00 &ndash; 13:45</span>
         <br/>
+        <div class="paper-session-details">
+            <br/>
+            <div class="session-abstract">All attendees are encouraged to participate in the business meeting.</div>
+        </div>
     </div>
     <div class="session-box" id="session-box-11">
         <div class="session-header" id="session-header-11">Short Papers IV (Orals &amp; Posters)</div>
@@ -5832,7 +5914,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-11a-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:lsz@cs.washington.edu">Luke Zettlemoyer</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="657">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -5886,7 +5970,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-11b-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:thamar.solorio@gmail.com">Thamar Solorio</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="1664">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -5940,7 +6026,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-11c-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:tarow@google.com">Taro Watanabe</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="958">
                         <td id="paper-time">13:45&ndash;13:57</td>
@@ -5994,7 +6082,9 @@ script: |
                 <a href="#" class="session-deselector" id="session-11d-deselector">Remove All</a>
                 <table class="paper-table">
                     <tr>
-                        <td class="session-chair" colspan="2">Chair: TBD</td>
+                        <td class="session-chair" colspan="2">Chair:
+                            <a href="mailto:beroth@cis.uni-muenchen.de">Benjamin Roth</a>
+                        </td>
                     </tr>
                     <tr id="paper" paper-id="2190">
                         <td id="paper-time">13:45&ndash;13:57</td>

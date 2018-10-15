@@ -82,6 +82,10 @@ def main():
                         dest="authors_csv",
                         required=True,
                         help="Path to CSV file containing author information")
+    parser.add_argument("--chairs",
+                        dest="chairs_csv",
+                        required=True,
+                        help="Path to CSV file containing session chair information")
 
     # parse given command line arguments
     args = parser.parse_args()
@@ -105,6 +109,15 @@ def main():
             assert row['Submission ID'] not in authors_dict
             authors_dict[row['Submission ID']] = row['Authors']
 
+    # read in the CSV file mapping sessions to chairs
+    chairs_dict = {}
+    with open(args.chairs_csv, 'r') as chairsfh:
+        reader = csv.DictReader(chairsfh, fieldnames=["Session", "Name", "Email"])
+        for row in reader:
+            session_id = row['Session'].split(':')[0]
+            assert session_id not in chairs_dict
+            chairs_dict[session_id] = (row['Name'], row['Email'])
+
     # now in each day, process each session one by one
     days_counter = count(start=3)
     lunch_id_counter = count(start=3)
@@ -112,9 +125,6 @@ def main():
     paper_session_group_counter = count(start=1)
     paper_session_counter = cycle([1, 2, 3, 4])
     poster_session_counter = count(start=1)
-    placeholder_paper_id_counter = count(start=1)
-    placeholder_poster_id_counter = count(start=1)
-    title_counter = ('{:03}'.format(i) for i in count(start=1))
     for day in days:
         day_string = day.pop(0).lstrip('* ')
         generated_html.append('<div class="day" id="day-{}">{}</div>'.format(next(days_counter), day_string))
@@ -162,7 +172,7 @@ def main():
                 generated_html.append('<div class="session session-expandable session-plenary" id="session-social"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-external-location btn btn--info btn--location">{}</span> <div class="paper-session-details"> <br/><div class="session-abstract"><p>On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the Royal Museums of Fine Arts of Belgium. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts — painting, sculpture and drawing — from the 15th to the 21st century.</p></div></div></div>'.format(session_title, day_string, session_start, session_end, session_location))
             elif 'business meeting' in session_string.lower():
                 session_start, session_end, session_title = BREAK_SESSION_REGEXP.match(session_string).groups()
-                generated_html.append('<div class="session session-plenary" id="session-business"><span class="session-title">{}<br/><strong>All attendees are encouraged to participate in the business meeting.</strong> </span><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/></div>'.format(session_title, day_string, session_start, session_end, session_location))
+                generated_html.append('<div class="session session-expandable session-plenary" id="session-business"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><div class="paper-session-details"> <br/><div class="session-abstract">All attendees are encouraged to participate in the business meeting.</div></div></div>'.format(session_title, day_string, session_start, session_end))
             elif 'best paper' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 generated_html.append('<div class="session session-expandable session-papers-best"><div id="expander"></div><a href="#" class="session-title">{}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">Gold Hall</span><br/><div class="paper-session-details"><br/><table class="paper-table">'.format(session_title, day_string, session_start, session_end, session_start, session_end))
@@ -193,7 +203,8 @@ def main():
                         session_title = '{} ({})'.format(session_title, session_type) if session_type else session_title
                         generated_html.append('<div class="session session-expandable session-posters" id="session-poster-{}"><div id="expander"></div><a href="#" class="session-title">{}: {} </a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="poster-session-details"><br/><table class="poster-table">'.format(next(poster_session_counter), session_id, session_title, day_string, session_group_start, session_group_end, session_location))
                     else:
-                        generated_html.append('<div class="session session-expandable session-papers{}" id="session-{}"><div id="expander"></div><a href="#" class="session-title">{}: {}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><br/><div class="paper-session-details"><br/><a href="#" class="session-selector" id="session-{}-selector"> Choose All</a><a href="#" class="session-deselector" id="session-{}-deselector">Remove All</a><table class="paper-table"><tr><td class="session-chair" colspan="2">Chair: TBD</td></tr>'.format(next(paper_session_counter), session_id.lower(), session_id, session_title, day_string, session_group_start, session_group_end, session_location, session_id.lower(), session_id.lower()))
+                        session_chair_name, session_chair_email = chairs_dict[session_id]
+                        generated_html.append('<div class="session session-expandable session-papers{}" id="session-{}"><div id="expander"></div><a href="#" class="session-title">{}: {}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><br/><div class="paper-session-details"><br/><a href="#" class="session-selector" id="session-{}-selector"> Choose All</a><a href="#" class="session-deselector" id="session-{}-deselector">Remove All</a><table class="paper-table"><tr><td class="session-chair" colspan="2">Chair: <a href="mailto:{}">{}</a></td></tr>'.format(next(paper_session_counter), session_id.lower(), session_id, session_title, day_string, session_group_start, session_group_end, session_location, session_id.lower(), session_id.lower(), session_chair_email, session_chair_name))
                     for paper in split:
                         paper = paper.strip()
                         if 'poster' in session_type.lower() or 'poster' in session_title.lower():
@@ -211,10 +222,6 @@ def main():
                             generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em></td></tr>'.format(poster_id, poster_title, poster_authors))
                         else:
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
-                            if paper_id == 'ID':
-                                paper_id = next(placeholder_paper_id_counter)
-                            if paper_title == 'TITLE':
-                                paper_title = paper_title + '-' + str(next(title_counter))
                             paper_authors = authors_dict[paper_id].strip()
                             if paper_id.endswith('-TACL'):
                                 paper_title = '[TACL] {}'.format(paper_title)

@@ -379,6 +379,9 @@ div.session {
 
     .session-chair {
         font-size: $type-size-5;
+        a {
+            color: black;
+        }
     }
 
     .session-external-location {
