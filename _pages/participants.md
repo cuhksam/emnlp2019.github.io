@@ -66,6 +66,21 @@ SQUARE, located in the vibrant Mont de Arts cultural quarter in the heart of Bru
 
 {% include gallery id="square" %}
 
+## Instructions for Presenters
+
+These instructions will be updated as more details become available.
+
+### Oral Presentations
+
+- Long papers will be given an 18 minute slot (15 minutes for the talk and 3 minutes for questions).
+- Short papers will be given a 12 minute slot (10 minutes for the talk and 2 minutes for questions).
+
+Please arrive at your session 10 minutes early. Please introduce yourself to the session chair, who will help you test your laptop with the projector.
+
+### Posters
+
+Posters should be A0 size in vertical (portrait) orientation, or no wider than 91 cm (36 in) and no higher than 122 cm (48 in). Materials for mounting your poster will be provided.
+
 ## Social Event
 
 On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the [Royal Museums of Fine Arts of Belgium](https://www.fine-arts-museum.be/en). Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts &mdash; painting, sculpture and drawing &mdash; from the 15th to the 21st century.
