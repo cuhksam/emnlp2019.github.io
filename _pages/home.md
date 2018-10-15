@@ -19,7 +19,7 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
-**October 1, 2018**. Reminder: EMNLP special [hotel rates](http://emnlp2018.org/participants/#accommodation) expire October 8th. Book your hotel room now.
+**October 1, 2018**. EMNLP special [hotel rates](http://emnlp2018.org/participants/#accommodation) have been extended until October 19th. Book as soon as possible!
 {: .notice--info}
 
 **September 23, 2018**. Reminder: early [registration](https://aclweb.org/conference/emnlp-2018-conference-registration/) ends tomorrow (September 24).
