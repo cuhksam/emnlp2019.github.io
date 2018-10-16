@@ -345,7 +345,7 @@ div.session {
     }
 
     td#tutorial-location {
-        cursor: text;
+        cursor: pointer;
     }
 
     .paper-table {
@@ -374,7 +374,7 @@ div.session {
     .session-location {
         font-size: $type-size-6;
         float: left;
-        cursor: text;
+        cursor: pointer;
     }
 
     .session-chair {
