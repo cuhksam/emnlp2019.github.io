@@ -3251,12 +3251,6 @@ script: |
                             <em>Shanshan Zhang, Lihong He, Slobodan Vucetic and Eduard Dragut</em>
                         </td>
                     </tr>
-                    <tr id="poster" poster-id="1898">
-                        <td>
-                            <span class="poster-title">HyTE: Hyperplane-based Temporally aware Knowledge Graph Embedding.</span>
-                            <em>Shib Sankar Dasgupta, Swayambhu Nath Ray and Partha Talukdar</em>
-                        </td>
-                    </tr>
                     <tr id="poster" poster-id="575">
                         <td>
                             <span class="poster-title">A Deterministic Algorithm for Bridging Anaphora Resolution.</span>
@@ -5742,6 +5736,12 @@ script: |
                         <td>
                             <span class="poster-title">Multi-Source Domain Adaptation with Mixture of Experts.</span>
                             <em>Jiang Guo, Darsh Shah and Regina Barzilay</em>
+                        </td>
+                    </tr>
+                    <tr id="poster" poster-id="1898">
+                        <td>
+                            <span class="poster-title">HyTE: Hyperplane-based Temporally aware Knowledge Graph Embedding.</span>
+                            <em>Shib Sankar Dasgupta, Swayambhu Nath Ray and Partha Talukdar</em>
                         </td>
                     </tr>
                     <tr>
