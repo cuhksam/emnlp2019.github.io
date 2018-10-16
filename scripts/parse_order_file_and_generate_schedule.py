@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
 '''
-This script parses the following two files provided by the program chairs
-and generates the HTML that can then be added to the program page on the 
+This script parses the following three files provided by the program chairs
+and generates the HTML that can then be added to the program page on the
 website:
 
 - order.txt
 - authors.csv
+- session-chairs.csv
 
 Note that:
 
@@ -93,7 +94,7 @@ def main():
     # set up the logging
     logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
-    # initialize the list of generated HTML license
+    # initialize the list of generated HTML items
     generated_html = []
 
     # open order file and capture the contents of each day into separate lists
