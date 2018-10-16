@@ -279,7 +279,6 @@
 415 # Differentiating Concepts and Instances for Knowledge Graph Embedding
 1234 # One-Shot Relational Learning for Knowledge Graphs
 1762 # Regular Expression Guided Entity Mention Mining from Noisy Web Data
-1898 # HyTE: Hyperplane-based Temporally aware Knowledge Graph Embedding
 575 # A Deterministic Algorithm for Bridging Anaphora Resolution
 1104 # A Knowledge Hunting Framework for Common Sense Reasoning
 615 # Neural Adaptation Layers for Cross-domain Named Entity Recognition
@@ -626,6 +625,7 @@
 1891 # Word Mover's Embedding: From Word2Vec to Document Embedding
 1221 # Learning Disentangled Representations of Texts with Application to Biomedical Abstracts
 1781 # Multi-Source Domain Adaptation with Mixture of Experts
+1898 # HyTE: Hyperplane-based Temporally aware Knowledge Graph Embedding
 @ Text Classification and Topic Modeling
 707 # Multilingual Clustering of Streaming News
 744 # Multi-Task Label Embedding for Text Classification
