@@ -982,12 +982,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T1] Joint Models for NLP.</strong> Yue Zhang.</span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="tutorial-title"><strong>[T1] Joint Models for NLP.</strong> Yue Zhang.</span> <br/><span class="btn btn--info btn--location inline-location">Gold Hall</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T2] Graph Formalisms for Meaning Representations.</strong> Adam Lopez and Sorcha Gilroy.</span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="tutorial-title"><strong>[T2] Graph Formalisms for Meaning Representations.</strong> Adam Lopez and Sorcha Gilroy.</span><br/><span href="#" class="btn btn--info btn--location inline-location">Hall 100</span>
                     </td>
                 </tr>
             </table>
@@ -1005,7 +1005,7 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T3] Writing Code for NLP Research.</strong> Matt Gardner, Mark Neumann, Joel Grus, and Nicholas Lourie. </span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="tutorial-title"><strong>[T3] Writing Code for NLP Research.</strong> Matt Gardner, Mark Neumann, Joel Grus, and Nicholas Lourie. </span><br/><span href="#" class="btn btn--info btn--location inline-location">Gold Hall</span>
                     </td>
                 </tr>
             </table>
@@ -1013,48 +1013,48 @@ script: |
     </div>
     <div class="session session-expandable session-workshops" id="session-workshops-1">
         <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
-        <span class="session-time" title="Wednesday, October 31 2018">09:00 &ndash; 17:00</span><br/>
+        <span class="session-time" title="Wednesday, October 31 2018">08:30 &ndash; 18:00</span><br/>
         <div class="workshop-session-details">
             <br/>
             <table class="workshop-table">
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Bozar Salle M / Grand Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Copper Hall / Studio 311 &ndash; 312 / Grand Hall</span>
                     </td>
                 </tr>                
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W3] LOUHI: The Ninth International Workshop on Health Text Mining and Information Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W3] LOUHI: The Ninth International Workshop on Health Text Mining and Information Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">The Arc / Grand Hall</span>
                     </td>
                 </tr> 
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 313 &ndash; 315 / Grand Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Studio 211 &ndash; 212 / Grand Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W6] SIGMORPHON: Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W6] SIGMORPHON: Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 213 &ndash; 215 / Grand Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W7] WASSA: 9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W7] WASSA: 9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Hall 400 / Grand Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W8] SMM4H: 3rd Workshop on Social Media Mining for Health Applications Workshop & Shared Task.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W8] SMM4H: 3rd Workshop on Social Media Mining for Health Applications Workshop & Shared Task.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 201A/B</span>
                     </td>
                 </tr>
             </table>
@@ -1069,12 +1069,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T4] Deep Latent Variable Models of Natural Language.</strong> Alexander Rush, Yoon Kim, and Sam Wiseman.</span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="tutorial-title"><strong>[T4] Deep Latent Variable Models of Natural Language.</strong> Alexander Rush, Yoon Kim, and Sam Wiseman.</span> <br/><span class="btn btn--info btn--location inline-location">Gold Hall</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T5] Standardized Tests as benchmarks for Artificial Intelligence.</strong> Mrinmaya Sachan, Minjoon Seo, Hannaneh Hajishirzi, and Eric Xing.</span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="tutorial-title"><strong>[T5] Standardized Tests as benchmarks for Artificial Intelligence.</strong> Mrinmaya Sachan, Minjoon Seo, Hannaneh Hajishirzi, and Eric Xing.</span><br/><span href="#" class="btn btn--info btn--location inline-location">Hall 400</span>
                     </td>
                 </tr>
             </table>
@@ -1092,7 +1092,7 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T4] Deep Chit-Chat: Deep Learning for ChatBots.</strong> Wei Wu and Rui Yan. </span><br/><span href="#" class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="tutorial-title"><strong>[T4] Deep Chit-Chat: Deep Learning for ChatBots.</strong> Wei Wu and Rui Yan. </span><br/><span href="#" class="btn btn--info btn--location inline-location">Gold Hall</span>
                     </td>
                 </tr>
             </table>
@@ -1106,42 +1106,42 @@ script: |
             <table class="workshop-table">
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Bozar Salle M / Grand Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Copper Hall / Studio 311 &ndash; 312 / Grand Hall</span>
                     </td>
                 </tr>                
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W9] BioASQ: Large-scale Biomedical Semantic Indexing and Question Answering.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W9] BioASQ: Large-scale Biomedical Semantic Indexing and Question Answering.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 313 &ndash; 315</span>
                     </td>
                 </tr> 
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W10] BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W10] BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Hall 100 / Grand Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W11] FEVER: First Workshop on Fact Extraction and VERification.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W11] FEVER: First Workshop on Fact Extraction and VERification.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">The Arc / Grand Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W12] ARGMINING: 5th International Workshop on Argument Mining.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W12] ARGMINING: 5th International Workshop on Argument Mining.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 213 &ndash; 215</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W13] W-NUT: 4th Workshop on Noisy User-generated Text.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W13] W-NUT: 4th Workshop on Noisy User-generated Text.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Panoramic Hall</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W14] UDW-18: Second Workshop on Universal Dependencies.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">TBD</span>
+                        <span class="workshop-title"><strong>[W14] UDW-18: Second Workshop on Universal Dependencies.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 201A-B / Grand Hall</span>
                     </td>
                 </tr>
             </table>
@@ -1153,7 +1153,7 @@ script: |
         <br/>
         <span class="session-time" title="Thursday, November 1 2018">18:00 &ndash; 20:00</span>
         <br/>
-        <span class="session-location btn btn--info btn--location">TBD</span>
+        <span class="session-location btn btn--info btn--location">Grand Hall</span>
         <div class="paper-session-details">
             <br/><br/>
             <div class="session-abstract">
