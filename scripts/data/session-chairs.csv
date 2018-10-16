@@ -1,0 +1,45 @@
+Session,Name,Email
+1A: Social Applications I,Dirk Hovy ,mail@dirkhovy.com
+1B: Semantics I,Natalie Schluter,natschluter@itu.dk
+1C: Vision and Language,Grzegorz Chrupała,g.chrupala@uvt.nl
+1D: Entities and Coreference,Eduardo Blanco,eduardo.blanco@unt.edu
+2A: Question Answering I,Scott Wen-tau Yih,scottyih@allenai.org
+2B: Semantics II,Wei Xu,xu.1265@osu.edu
+2C: Multilingual Methods I,Shachar Mirkin,shacharmirkin@gmail.com
+2D: Social Media,Lu Wang,luwang@ccs.neu.edu
+3A: Machine Translation,Lucia Specia,l.specia@sheffield.ac.uk
+3B: Machine learning I,Byron Wallace,byron.wallace@gmail.com
+3C: Semantic Parsing and Generation,Reut Tsarfaty,reut.tsarfaty@gmail.com
+3D: Vision and Language; Discourse,Zhou Yu,joyu@ucdavis.edu
+4A: Language Models,Chris Dyer,cdyer@google.com
+4B: Event and Relation Extraction,Heng Ji,jih@rpi.edu
+4C: Syntactic Parsing,Joakim Nivre,joakim.nivre@lingfil.uu.se
+4D: Visual QA,Carina Silberer ,CarinaSilberer@gmail.com
+5A: Semantics IV,Stephan Oepen,oe@ifi.uio.no
+5B: Summarization,Fei Liu,feiliu@cs.ucf.edu
+5C: Information Retrieval and Text Mining,Alessandro Moschitti,amoschitti@gmail.com
+5D: Machine Learning II,Kai-Wei Chang,kw@kwchang.net
+6A: Dialogue I,Mohit Bansal,mbansal@cs.unc.edu
+6B: Question Answering II,William Wang,william@cs.ucsb.edu
+6C: Semantics V,Ivan Vulić,iv250@cam.ac.uk
+6D: Multilingual Methods II,Barbara Plank,bplank@gmail.com
+7A: Dialogue II,Zornitsa Kozareva,zkozareva@gmail.com
+7B: Social Applications II,Shomir Wilson,shomir@psu.edu
+7C: Named Entity Recognition,Alan Ritter,ritter.1492@osu.edu
+7D: Morphology and Syntactic Parsing,Katharina Kann,kann@nyu.edu
+8A: Text Categorization,Ion Androutsopoulos,IONANDR@GMAIL.COM
+8B: Generation,Ioannis Konstas,i.konstas@hw.ac.uk
+8C: Knowledge Graphs,Partha Talukdar,ppt@iisc.ac.in
+8D: Morphology and Phonology,Aida Nematzadeh,nematzadeh@google.com
+9A: Machine Translation II,Holger Schwenk,schwenk@fb.com
+9B: Sentiment I,Yulan He,Yulan.He@warwick.ac.uk
+9C: Machine Learning III,Sujith Ravi,ravi.sujith@gmail.com
+9D: Semantics VI,Gabriel Stanovsky,gabriel.satanovsky@gmail.com
+10A: Question Answering III,Jordan Boyd-Graber,jbg@umiacs.umd.edu
+10B: Machine Translation III,Joerg Tiedemann ,jorg.tiedemann@helsinki.fi
+10C: Discourse,Mirella Lapata ,mlap@inf.ed.ac.uk
+10D: Evolution/Sociolinguistics,David Jurgens,jurgens@umich.edu
+11A: Analyzing Models,Luke Zettlemoyer,lsz@cs.washington.edu
+11B: Sentiment II,Thamar Solorio,thamar.solorio@gmail.com
+11C: Machine Translation IV,Taro Watanabe,tarow@google.com
+11D: Question Answering and Knowledge Graphs,Benjamin Roth,beroth@cis.uni-muenchen.de
