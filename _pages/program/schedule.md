@@ -1019,37 +1019,37 @@ script: |
             <table class="workshop-table">
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Bozar Salle M / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Bozar Hall (Salle M)</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Copper Hall / Studio 311 &ndash; 312 / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Copper Hall / Studio 311 &ndash; 312</span>
                     </td>
                 </tr>                
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W3] LOUHI: The Ninth International Workshop on Health Text Mining and Information Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">The Arc / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W3] LOUHI: The Ninth International Workshop on Health Text Mining and Information Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">The Arc</span>
                     </td>
                 </tr> 
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 313 &ndash; 315 / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 313 &ndash; 315</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Studio 211 &ndash; 212 / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Studio 211 &ndash; 212</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W6] SIGMORPHON: Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 213 &ndash; 215 / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W6] SIGMORPHON: Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 213 &ndash; 215</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W7] WASSA: 9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Hall 400 / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W7] WASSA: 9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Hall 400</span>
                     </td>
                 </tr>
                 <tr id="workshop">
@@ -1106,12 +1106,12 @@ script: |
             <table class="workshop-table">
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Bozar Salle M / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Bozar Hall (Salle M)</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Copper Hall / Studio 311 &ndash; 312 / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Copper Hall / Studio 311 &ndash; 312</span>
                     </td>
                 </tr>                
                 <tr id="workshop">
@@ -1121,12 +1121,12 @@ script: |
                 </tr> 
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W10] BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Hall 100 / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W10] BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Hall 100</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W11] FEVER: First Workshop on Fact Extraction and VERification.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">The Arc / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W11] FEVER: First Workshop on Fact Extraction and VERification.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">The Arc</span>
                     </td>
                 </tr>
                 <tr id="workshop">
@@ -1141,7 +1141,7 @@ script: |
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W14] UDW-18: Second Workshop on Universal Dependencies.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 201A-B / Grand Hall</span>
+                        <span class="workshop-title"><strong>[W14] UDW-18: Second Workshop on Universal Dependencies.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 201A/B</span>
                     </td>
                 </tr>
             </table>
