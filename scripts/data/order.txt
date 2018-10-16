@@ -1,6 +1,6 @@
 * Friday, 2 November 2018
-+ 09:00--09:30 Opening remarks (Gold Hall)
-+ 09:30--10:30 Keynote I: Julia Hirschberg "Truth or Lie? Spoken Indicators of Deception in Speech" (Gold Hall)
++ 09:00--09:30 Opening remarks (Gold Hall / Copper Hall / Silver Hall / Hall 100)
++ 09:30--10:30 Keynote I: Julia Hirschberg "Truth or Lie? Spoken Indicators of Deception in Speech" (Gold Hall / Copper Hall / Silver Hall / Hall 100)
 + 10:30--11:00 Coffee Break
 + 11:00--12:30 Long Papers and Demos (Orals and Posters) I
 = Session 1A: Social Applications I (Gold Hall)
@@ -15,19 +15,19 @@
 1634 11:36--11:54 # Textual Analogy Parsing: What's Shared and What's Compared among Analogous Facts
 2020 11:54--12:12 # SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference
 2036 12:12--12:30 # TwoWingOS: A Two-Wing Optimization Strategy for Evidential Claim Verification
-= Session 1C: Vision (Silver Hall)
+= Session 1C: Vision (Silver Hall / Panoramic Hall)
 201 11:00--11:18 # Associative Multichannel Autoencoder for Multimodal Word Representation
 576 11:18--11:36 # Game-Based Video-Context Dialogue
 836 11:36--11:54 # simNet: Stepwise Image-Topic Merging Network for Generating Detailed and Comprehensive Image Captions
 1792 11:54--12:12 # Multimodal Language Analysis with Recurrent Multistage Fusion
 1845 12:12--12:30 # Temporally Grounding Natural Sentence in Video
-= Session 1D: Entities and Coreference (Hall 100)
+= Session 1D: Entities and Coreference (Hall 100 / Hall 400)
 392 11:00--11:18 # PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution
 627 11:18--11:36 # Adversarial Transfer Learning for Chinese Named Entity Recognition with Self-Attention Mechanism
 1286 11:36--11:54 # Using Linguistic Features to Improve the Generalization Capability of Neural Coreference Resolvers
 1574 11:54--12:12 # Neural Segmental Hypergraphs for Overlapping Mention Recognition
 1846 12:12--12:30 # Variational Sequential Labelers for Semi-Supervised Learning
-= Session 1E: Machine Translation and Multilingual Methods (Posters and Demos, Grand Hall 2)
+= Session 1E: Machine Translation and Multilingual Methods (Posters and Demos, Grand Hall)
 @ Multilingual Methods
 76 # Joint Representation Learning of Cross-lingual Words and Entities via Attentive Distant Supervision
 126 # Deep Pivot-Based Modeling for Cross-language Cross-domain Transfer with Minimal Guidance
@@ -77,19 +77,19 @@
 203 14:09--14:21 # Neural Latent Relational Analysis to Capture Lexical Semantic Relations in a Vector Space
 2267 14:21--14:33 # Generalizing Word Embeddings using Bag of Subwords
 2075 14:33--14:45 # Neural Metaphor Detection in Context
-= Session 2C: Multilingual Methods I (Silver Hall)
+= Session 2C: Multilingual Methods I (Silver Hall / Panoramic Hall)
 1376 13:45--13:57 # Distant Supervision from Disparate Sources for Low-Resource Part-of-Speech Tagging
 446 13:57--14:09 # Unsupervised Bilingual Lexicon Induction via Latent Variable Models
 1434 14:09--14:21 # Learning Unsupervised Word Translations Without Adversaries
 728 14:21--14:33 # Adversarial Training for Multi-task and Multi-lingual Joint Modeling of Utterance Intent Classification
 1462 14:33--14:45 # Surprisingly Easy Hard-Attention for Sequence to Sequence Learning
-= Session 2D: Social Media (Hall 100)
+= Session 2D: Social Media (Hall 100 / Hall 400)
 977 13:45--13:57 # Joint Learning for Emotion Classification and Emotion Cause Detection
 2240 13:57--14:09 # Exploring Optimism and Pessimism in Twitter Using Deep Learning
 2004 14:09--14:21 # Predicting News Headline Popularity with Syntactic and Semantic Knowledge Using Multi-Task Learning
 468 14:21--14:33 # Hybrid Neural Attention for Agreement/Disagreement Inference in Online Debates
 794 14:33--14:45 # Increasing In-Class Similarity by Retrofitting Embeddings with Demographic Information
-= Session 2E: Short Posters I (Grand Hall 2)
+= Session 2E: Short Posters I (Grand Hall)
 @ Dialogue and Discourse
 53 # A Syntactically Constrained Bidirectional-Asynchronous Approach for Emotional Conversation Generation
 501 # Auto-Dialabel: Labeling Dialogue Data with Unsupervised Learning
@@ -136,19 +136,19 @@
 1039 15:24--15:36 # A Deep Neural Network Sentence Level Classification Method with Context Information
 1198 15:36--15:48 # Towards Dynamic Computation Graphs via Sparse Latent Structure
 1111 15:48--16:00 # Convolutional Neural Networks with Recurrent Neural Filters
-= Session 3C: Semantic Parsing / Generation (Silver Hall)
+= Session 3C: Semantic Parsing / Generation (Silver Hall / Panoramic Hall)
 526 15:00--15:12 # Exploiting Rich Syntactic Information for Semantic Parsing with Graph-to-Sequence Model
 1231 15:12--15:24 # Retrieval-Based Neural Code Generation
 553 15:24--15:36 # SQL-to-Text Generation with Graph-to-Sequence Model
 739 15:36--15:48 # Generating Syntactic Paraphrases
 1708 15:48--16:00 # Neural-Davidsonian Semantic Proto-role Labeling
-= Session 3D: Vision / Discourse (Hall 100)
+= Session 3D: Vision / Discourse (Hall 100 / Hall 400)
 626 15:00--15:12 # Conversational Decision-Making Model for Predicting the King’s Decision in the Annals of the Joseon Dynasty
 1858 15:12--15:24 # Toward Fast and Accurate Neural Discourse Segmentation
 2127 15:24--15:36 # A Dataset for Telling the Stories of Social Media Videos
 1099 15:36--15:48 # Cascaded Mutual Modulation for Visual Reasoning
 208 15:48--16:00 # How agents see things: On visual representations in an emergent language game
-= Session 3E: Short Posters II (Grand Hall 2)
+= Session 3E: Short Posters II (Grand Hall)
 @ Information Extraction
 43 # Attention-Based Capsule Networks with Dynamic Routing for Relation Extraction
 159 # Put It Back: Entity Typing with Language Model Enhancement
@@ -196,19 +196,19 @@
 1177 17:06--17:24 # Jointly Multiple Events Extraction via Attention-based Graph Information Aggregation
 1613 17:24--17:42 # RESIDE: Improving Distantly-Supervised Neural Relation Extraction using Side Information
 1924 17:42--18:00 # Collective Event Detection via a Hierarchical and Bias Tagging Networks with Gated Multi-level Attention Mechanisms
-= Session 4C: Syntactic Parsing (Silver Hall)
+= Session 4C: Syntactic Parsing (Silver Hall / Panoramic Hall)
 217 16:30--16:48 # Valency-Augmented Dependency Parsing
 336 16:48--17:06 # Unsupervised Learning of Syntactic Structure with Invertible Neural Projections
 791 17:06--17:24 # Dynamic Oracles for Top-Down and In-Order Shift-Reduce Constituent Parsing
 1147 17:24--17:42 # Constituent Parsing as Sequence Labeling
 2217 17:42--18:00 # Synthetic Data Made to Order: The Case of Parsing
-= Session 4D: Visual QA (Hall 100)
+= Session 4D: Visual QA (Hall 100 / Hall 400)
 247 16:30--16:48 # Tell-and-Answer: Towards Explainable Visual Question Answering using Attributes and Captions
 282 16:48--17:06 # Learning a Policy for Opportunistic Active Learning
 1213 17:06--17:24 # RecipeQA: A Challenge Dataset for Multimodal Comprehension of Cooking Recipes
 1650 17:24--17:42 # TVQA: Localized, Compositional Video Question Answering
 1763 17:42--18:00 # Localizing Moments in Video with Temporal Language
-= Session 4E: Semantics III (Posters and Demos, Grand Hall 2)
+= Session 4E: Semantics III (Posters and Demos, Grand Hall)
 @ Lexical Semantics
 179 # Card-660: Cambridge Rare Word Dataset - a Reliable Benchmark for Infrequent Word Representation Models
 244 # Leveraging Gloss Knowledge in Neural Word Sense Disambiguation by Hierarchical Co-Attention
@@ -247,7 +247,7 @@
 25-demo # Visual Interrogation of Attention-Based Models for Natural Language Inference and Machine Comprehension
 62-demo # Magnitude: A Fast, Efficient Universal Vector Embedding Utility Package
 77-demo # Universal Sentence Encoder for English
-* Saturday, 3 November, 2018
+* Saturday, 3 November 2018
 + 09:00--10:30 Long Papers and Demos (Orals and Posters) III
 = Session 5A: Semantics IV (Gold Hall)
 654 09:00--09:18 # Heuristically Informed Unsupervised Idiom Usage Recognition
@@ -261,19 +261,19 @@
 1090 09:36--09:54 # Don't Give Me the Details, Just the Summary! Topic-Aware Convolutional Neural Networks for Extreme Summarization
 1778 09:54--10:12 # Improving Abstraction in Text Summarization
 2164 10:12--10:30 # Content Selection in Deep Learning Models of Summarization
-= Session 5C: IR / Text Mining (Silver Hall)
+= Session 5C: IR / Text Mining (Silver Hall / Panoramic Hall)
 190 09:00--09:18 # Improved Semantic-Aware Network Embedding with Fine-Grained Word Alignment
 391 09:18--09:36 # Learning Context-Sensitive Convolutional Filters for Text Processing
 1186 09:36--09:54 # Deep Relevance Ranking Using Enhanced Document-Query Interactions
 1586 09:54--10:12 # Learning Neural Representation for CLIR with Adversarial Framework
 1659 10:12--10:30 # AD3: Attentive Deep Document Dater
-= Session 5D: Machine Learning II (Hall 100)
+= Session 5D: Machine Learning II (Hall 100 / Hall 400)
 1406 09:00--09:18 # Gromov-Wasserstein Alignment of Word Embedding Spaces
 1504 09:18--09:36 # Deep Probabilistic Logic: A Unifying Framework for Indirect Supervision
 1621 09:36--09:54 # Deriving Machine Attention from Human Rationales
 1741 09:54--10:12 # Semi-Supervised Sequence Modeling with Cross-View Training
 1430-TACL 10:12--10:30 # Comparing Bayesian Models of Annotation
-= Session 5E: Information Extraction, Question Answering (Posters and Demos, Grand Hall 2)
+= Session 5E: Information Extraction, Question Answering (Posters and Demos, Grand Hall)
 @ Entities and Coreference
 171 # Mapping Text to Knowledge Graph Entities using Multi-Sense LSTMs
 415 # Differentiating Concepts and Instances for Knowledge Graph Embedding
@@ -332,19 +332,19 @@
 2015 11:36--11:54 # HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering
 2133 11:54--12:12 # Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering
 2312 12:12--12:30 # Evaluating Theory of Mind in Question Answering
-= Session 6C: Semantics V (Silver Hall)
+= Session 6C: Semantics V (Silver Hall / Panoramic Hall)
 1128 11:00--11:18 # A Unified Syntax-aware Framework for Semantic Role Labeling
 1247 11:18--11:36 # Semantics as a Foreign Language
 1478 11:36--11:54 # An AMR Aligner Tuned by Transition-based Parser
 2179 11:54--12:12 # Dependency-based Hybrid Trees for Semantic Parsing
 2214 12:12--12:30 # Policy Shaping and Generalized Update Equations for Semantic Parsing from Denotations
-= Session 6D: Multilingual Methods II (Hall 100)
+= Session 6D: Multilingual Methods II (Hall 100 / Hall 400)
 189 11:00--11:18 # Sentence Compression for Arbitrary Languages via Multilingual Pivoting
 768 11:18--11:36 # Unsupervised Cross-lingual Transfer of Word Embedding Spaces
 1605 11:36--11:54 # XNLI: Evaluating Cross-lingual Sentence Representations
 1880 11:54--12:12 # Joint Multilingual Supervision for Cross-lingual Entity Linking
 2249 12:12--12:30 # Fine-grained Coordinated Cross-lingual Text Stream Alignment for Endless Language Knowledge Acquisition
-= Session 6E: Syntax, Morphology, Vision and Language I (Posters and Demos, Grand Hall 2)
+= Session 6E: Syntax, Morphology, Vision and Language I (Posters and Demos, Grand Hall)
 @ Morphology, Word Segmentation and POS Tagging
 42 # Sanskrit Word Segmentation Using Character-level Recurrent and Convolutional Neural Networks
 1446-TACL # Universal Word Segmentation: Implementation and Interpretation
@@ -392,19 +392,19 @@
 66 14:09--14:21 # SafeCity: Understanding Diverse Forms of Sexual Harassment Personal Stories
 539 14:21--14:33 # Learning multiview embeddings for assessing dementia
 1441 14:33--14:45 # WikiConv: A Corpus of the Complete Conversational History of a Large Online Collaborative Community
-= Session 7C: NER (Silver Hall)
+= Session 7C: NER (Silver Hall / Panoramic Hall)
 1776 13:45--13:57 # Marginal Likelihood Training of BiLSTM-CRF for Biomedical Named Entity Recognition from Disjoint Label Sets
 146 13:57--14:09 # Adversarial training for multi-context joint entity and relation extraction
 430 14:09--14:21 # Structured Multi-Label Biomedical Text Tagging via Attentive Neural Tree Decoding
 2264 14:21--14:33 # Deep Exhaustive Model for Nested Named Entity Recognition
 1518 14:33--14:45 # Evaluating the Utility of Hand-crafted Features in Sequence Labelling
-= Session 7D: Morphology / Parsing (Hall 100)
+= Session 7D: Morphology / Parsing (Hall 100 / Hall 400)
 990 13:45--13:57 # Improved Dependency Parsing using Implicit Word Connections Learned from Unlabeled Data
 774 13:57--14:09 # A Framework for Understanding the Role of Morphology in Universal Dependency Parsing
 1002 14:09--14:21 # The Lazy Encoder: A Fine-Grained Analysis of the Role of Morphology in Neural Machine Translation
 1161 14:21--14:33 # Imitation Learning for Neural Morphological String Transduction
 1673 14:33--14:45 # An Encoder-Decoder Approach to the Paradigm Cell Filling Problem
-= Session 7E: Short Posters III (Grand Hall 2)
+= Session 7E: Short Posters III (Grand Hall)
 @ Neural Architectures and Language Models
 281 # Generating Natural Language Adversarial Examples
 1024 # Multi-Head Attention with Disagreement Regularization
@@ -441,7 +441,7 @@
 1755 # Code-switched Language Models Using Dual RNNs and Same-Source Pretraining
 2282 # Part-of-Speech Tagging for Code-Switched, Transliterated Texts without Explicit Language Identification
 + 14:45--15:00 Mini-Break
-+ 15:00--16:00 Keynote II: Gideon Mann "Understanding the News that Moves Markets" (Gold Hall)
++ 15:00--16:00 Keynote II: Gideon Mann "Understanding the News that Moves Markets" (Gold Hall / Copper Hall / Silver Hall / Hall 100)
 + 16:00--16:30 Coffee Break
 + 16:30--18:00 Long Papers and Demos (Orals and Posters) V
 = Session 8A: Text Categorization (Gold Hall)
@@ -456,19 +456,19 @@
 1746 17:06--17:24 # Integrating Transformer and Paraphrase Rules for Sentence Simplification
 2025 17:24--17:42 # Learning Neural Templates for Text Generation
 2230 17:42--18:00 # Multi-Reference Training with Pseudo-References for Neural Translation and Text Generation
-= Session 8C: Knowledge Graphs (Silver Hall)
+= Session 8C: Knowledge Graphs (Silver Hall / Panoramic Hall)
 1000 16:30--16:48 # Knowledge Graph Embedding with Hierarchical Relation Structure
 1331 16:48--17:06 # Embedding Multimodal Relational Data for Knowledge Base Completion
 1947 17:06--17:24 # Multi-Task Identification of Entities, Relations, and Coreference for Scientific Knowledge Graph Construction
 2100 17:24--17:42 # Playing 20 Question Game with Policy-Based Reinforcement Learning
 2201 17:42--18:00 # Multi-Hop Knowledge Graph Reasoning with Reward Shaping
-= Session 8D: Morphology / Phonology (Hall 100)
+= Session 8D: Morphology / Phonology (Hall 100 / Hall 400)
 82 16:30--16:48 # Neural Transductive Learning and Beyond: Morphological Generation in the Minimal-Resource Setting
 538 16:48--17:06 # Implicational Universals in Stochastic Constraint-Based Phonology
 1533 17:06--17:24 # Explaining Character-Aware Neural Networks for Word-Level Prediction: Do They Discover Linguistic Rules?
 1860 17:24--17:42 # Adapting Word Embeddings to New Languages with Morphological and Phonological Subword Representations
 1420-TACL 17:42--18:00 # Recurrent Neural Networks in Linguistic Theory: Revisiting Pinker and Prince (1988) and the Past Tense Debate
-= Session 8E: Sentiment, Social Applications, Multimodal Semantics, Discourse (Posters and Demos, Grand Hall 2)
+= Session 8E: Sentiment, Social Applications, Multimodal Semantics, Discourse (Posters and Demos, Grand Hall)
 @ Discourse
 470 # A Computational Exploration of Exaggeration
 665 # Building Context-aware Clause Representations for Situation Entity Type Classification
@@ -521,19 +521,19 @@
 335 09:36--09:54 # Summarizing Opinions: Aspect Extraction Meets Sentiment Prediction and They Are Both Weakly Supervised
 1305 09:54--10:12 # CARER: Contextualized Affect Representations for Emotion Recognition
 1413-TACL 10:12--10:30 # Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification
-= Session 9C: Machine Learning III (Silver Hall)
+= Session 9C: Machine Learning III (Silver Hall / Panoramic Hall)
 1358 09:00--09:18 # Noise Contrastive Estimation and Negative Sampling for Conditional Models: Consistency and Statistical Efficiency
 1666 09:18--09:36 # CaLcs: Continuously Approximating Longest Common Subsequence for Sequence Level Optimization
 2051 09:36--09:54 # Pathologies of Neural Models Make Interpretations Difficult
 758 09:54--10:12 # Phrase-level Self-Attention Networks for Universal Sentence Encoding
 1322 10:12--10:30 # BanditSum: Extractive Summarization as a Contextual Bandit
-= Session 9D: Semantics VI (Hall 100)
+= Session 9D: Semantics VI (Hall 100 / Hall 400)
 652 09:00--09:18 # A Word-Complexity Lexicon and A Neural Readability Ranking Model for Lexical Simplification
 1411 09:18--09:36 # Learning Latent Semantic Annotations for Grounding Natural Language to Structured Data
 2060 09:36--09:54 # Syntactic Scaffolds for Semantic Structures
 2103 09:54--10:12 # Hierarchical Quantized Representations for Script Generation
 2250 10:12--10:30 # Semantic Role Labeling for Learner Chinese: the Importance of Syntactic Parsing and L2-L1 Parallel Data
-= Session 9E: Generation, Dialogue, Summarization; Vision and Language II (Posters and Demos, Grand Hall 2)
+= Session 9E: Generation, Dialogue, Summarization; Vision and Language II (Posters and Demos, Grand Hall)
 @ Dialogue
 305 # A Teacher-Student Framework for Maintainable Dialog Manager
 1511 # Discriminative Deep Dyna-Q: Robust Planning for Dialogue Policy Learning
@@ -598,19 +598,19 @@
 1507 11:36--11:54 # Simplifying Neural Machine Translation with Addition-Subtraction Twin-Gated Recurrent Networks
 2064 11:54--12:12 # Speeding Up Neural Machine Translation Decoding by Cube Pruning
 2304 12:12--12:30 # Revisiting Character-Based Neural Machine Translation with Capacity and Compression
-= Session 10C: Discourse (Silver Hall)
+= Session 10C: Discourse (Silver Hall / Panoramic Hall)
 907 11:00--11:18 # A Skeleton-Based Model for Promoting Coherence Among Sentences in Narrative Story Generation
 968 11:18--11:36 # NEXUS Network: Connecting the Preceding and the Following in Dialogue Generation
 1138 11:36--11:54 # A Neural Local Coherence Model for Text Quality Assessment
 1268 11:54--12:12 # Deep Attentive Sentence Ordering Network
 1276 12:12--12:30 # Getting to "Hearer-old": Charting Referring Expressions Across Time
-= Session 10D: Evolution / Sociolinguistics (Hall 100)
+= Session 10D: Evolution / Sociolinguistics (Hall 100 / Hall 400)
 63 11:00--11:18 # Making "fetch" happen: The influence of social and linguistic context on nonstandard word growth and decline
 357 11:18--11:36 # Analyzing Correlated Evolution of Multiple Features Using Latent Representations
 486 11:36--11:54 # Capturing Regional Variation with Distributed Place Representations and Geographic Retrofitting
 1702 11:54--12:12 # Characterizing Interactions and Relationships between People
 2160 12:12--12:30 # Why Swear? Analyzing and Inferring the Intentions of Vulgar Expressions
-= Session 10E: Machine Learning (Posters and Demos, Grand Hall 2)
+= Session 10E: Machine Learning (Posters and Demos, Grand Hall)
 @ Architectures and Models
 500 # A Probabilistic Annotation Model for Crowdsourcing Coreference
 256 # Is it Time to Swish? Comparing Deep Learning Activation Functions Across NLP tasks
@@ -650,7 +650,7 @@
 53-demo # KT-Speech-Crawler: Automatic Dataset Construction for Speech Recognition from YouTube Videos
 15-demo # Term Set Expansion based NLP Architect by Intel AI Lab
 + 12:30--13:00 Lunch
-+ 13:00--13:45 Business Meeting
++ 13:00--13:45 Business Meeting (Copper Hall)
 + 13:45--14:45 Short Papers (Orals and Posters) IV
 = Session 11A: Analyzing Models (Gold Hall)
 657 13:45--13:57 # A Neural Model of Adaptation in Reading
@@ -664,19 +664,19 @@
 1622 14:09--14:21 # A Co-Attention Neural Network Model for Emotion Cause Analysis with Emotional Context Awareness
 1217 14:21--14:33 # Modeling Empathy and Distress in Reaction to News Stories
 1497 14:33--14:45 # Interpretable Emoji Prediction via Label-Wise Attention LSTMs
-= Session 11C: Machine Translation IV (Silver Hall)
+= Session 11C: Machine Translation IV (Silver Hall / Panoramic Hall)
 958 13:45--13:57 # A Tree-based Decoder for Neural Machine Translation
 1176 13:57--14:09 # Greedy Search with Probabilistic N-gram Matching for Neural Machine Translation
 464 14:09--14:21 # Exploring Recombination for Efficient Decoding of Neural Machine Translation
 1267 14:21--14:33 # Has Machine Translation Achieved Human Parity? A Case for Document-level Evaluation
 1150 14:33--14:45 # Automatic Reference-Based Evaluation of Pronoun Translation Misses the Point
-= Session 11D: QA / Knowledge Graphs (Hall 100)
+= Session 11D: QA / Knowledge Graphs (Hall 100 / Hall 400)
 2190 13:45--13:57 # FewRel: A Large-Scale Supervised Few-Shot Relation Classification Dataset with State-of-the-Art Evaluation
 1270 13:57--14:09 # A strong baseline for question relevancy ranking
 946 14:09--14:21 # Learning Sequence Encoders for Temporal Knowledge Graph Completion
 152 14:21--14:33 # Similar but not the Same: Word Sense Disambiguation Improves Event Detection via Neural Representation Matching
 1440 14:33--14:45 # Learning Word Representations with Cross-Sentence Dependency for End-to-End Co-reference Resolution
-= Session 11E: Short Posters IV (Grand Hall 2)
+= Session 11E: Short Posters IV (Grand Hall)
 @ Morphology
 589 # State-of-the-art Chinese Word Segmentation with Bi-LSTMs
 901 # Sanskrit Sandhi Splitting using seq2(seq)2
@@ -709,9 +709,9 @@
 1668 # Identifying Domain Adjacent Instances for Semantic Parsers
 1719 # Mapping natural language commands to web elements
 + 14:45--15:00 Mini-Break
-+ 15:00--16:00 Keynote III: Johan Bos "The Moment of Meaning and the Future of Computational Semantics" (Gold Hall)
++ 15:00--16:00 Keynote III: Johan Bos "The Moment of Meaning and the Future of Computational Semantics" (Gold Hall / Copper Hall / Silver Hall / Hall 100)
 + 16:00--16:30 Coffee Break
-+ 16:30--18:00 Best Paper Awards and Closing (Gold Hall)
++ 16:30--18:00 Best Paper Awards and Closing (Gold Hall / Copper Hall / Silver Hall / Hall 100)
 1904 16:30--16:42 # How Much Reading Does Reading Comprehension Require? A Critical Investigation of Popular Benchmarks
 71 16:42--17:00 # MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling
 1537 17:00--17:18 # Linguistically-Informed Self-Attention for Semantic Role Labeling
