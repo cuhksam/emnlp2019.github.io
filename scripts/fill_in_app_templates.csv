@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+
+'''
+This script takes the various templates needed to create the schedule
+in the GuideBook app and fills them in with the relevant information.
+The inputs for this script are generated using the
+`parse_order_file_for_app.py` script.
+'''
+
+import argparse
+import logging
+
+import pandas as pd
+
+
+def main():
+
+    # set up an argument parser
+    parser = argparse.ArgumentParser(prog='fill_in_app_templates.py')
+    parser.add_argument("--sessions",
+                        dest="sessions_csv",
+                        required=True,
+                        help="The CSV file containing sessions information")
+    parser.add_argument("--authors",
+                        dest="authors_csv",
+                        required=True,
+                        help="Path to CSV file containing authors information")
+    parser.add_argument("--papers",
+                        dest="papers_csv",
+                        required=True,
+                        help="Path to CSV file containing papers information")
+    parser.add_argument("--linking",
+                        dest="linking_csv",
+                        required=True,
+                        help="Path to CSV file containing the links "
+                             "between sessions, papers, and authors.")
+
+    # parse given command line arguments
+    args = parser.parse_args()
+
+    # set up the logging
+    logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
+
+    # Step 1: read in the sessions and papers CSVs and take their appropriate columns
+    # and add them to the Guidebook Schedule Template CSV
+    df_sessions = pd.read_csv(args.sessions_csv)
+    df_papers = pd.read_csv(args.papers_csv)
+    df_schedule_template = pd.read_csv('data/app/Guidebook_Schedule_Template.csv')
+    df_sessions_to_fill = df_sessions[['Session ID', 'Date', 'Time Start', 'Time End', 'Room/Location', 'Schedule Track', 'Description']].copy()
+    df_papers_to_fill = df_papers[['Presentation ID', 'Date', 'Time Start', 'Time End', 'Room/Location', 'Schedule Track', 'Description']].copy()
+    df_papers_to_fill.rename(columns={'Presentation ID': 'Session ID'}, inplace=True)
+    df_all_sessions_to_fill = df_sessions_to_fill.append(df_papers_to_fill)
+
+    # fill in the template columns
+    df_schedule_template['Session Title'] = df_all_sessions_to_fill['Session ID']
+    df_schedule_template['Date'] = df_all_sessions_to_fill['Date']
+    df_schedule_template['Time Start'] = df_all_sessions_to_fill['Time Start']
+    df_schedule_template['Time End'] = df_all_sessions_to_fill['Time End']
+    df_schedule_template['Room/Location'] = df_all_sessions_to_fill['Room/Location']
+    df_schedule_template['Schedule Track (Optional)'] = df_all_sessions_to_fill['Schedule Track']
+    df_schedule_template['Description (Optional)'] = df_all_sessions_to_fill['Description']
+
+    # write out the filled template
+    df_schedule_template.to_csv('data/app/all-sessions-ids-as-names.csv', index=False)
+
+    # Step 2: read in the authors file and write out the UNIQUE author IDs to the
+    # a new author custom list template
+    df_authors = pd.read_csv(args.authors_csv)
+    df_customlist_template = pd.read_csv('data/app/Guidebook_CL_Template.csv')
+    df_customlist_template['Name'] = df_authors['Author ID'].unique()
+
+    # write out the filled template
+    df_customlist_template.to_csv('data/app/all-authors-ids-as-names.csv', index=False)
+
+    # Step 3: make the authors to presentations links
+    df_linking = pd.read_csv(args.linking_csv)
+    df_customlist_links_template = pd.read_csv('data/app/CustomListItem_Link_template.csv')
+    df_customlist_links_template['Item Name (Optional)'] = df_linking['Author ID']
+    df_customlist_links_template['Link To Session Name (Optional)'] = df_linking['Presentation ID']
+
+    # write out the filled links template
+    df_customlist_links_template.to_csv('data/app/authors-to-presentations-links.csv', index=False)
+
+    # Step 4: make the presentations to sessions links
+    df_schedule_links_template = pd.read_csv('data/app/Sessions_Link_template.csv')
+    df_schedule_links_template['Session Name (Optional)'] = df_linking['Session ID']
+    df_schedule_links_template['Link To Session Name (Optional)'] = df_linking['Presentation ID']
+
+    # write out the filled links template
+    df_schedule_links_template.to_csv('data/app/sessions-to-presentations-links.csv', index=False)
+
+
+if __name__ == '__main__':
+    main()
