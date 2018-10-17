@@ -42,6 +42,11 @@ def main():
             paper_id = '{}-TACL'.format(int(paper_id.split('-')[1]))
         elif paper_id.startswith('demos-'):
             paper_id = '{}-demo'.format(int(paper_id.split('-')[1]))
+        # ignore any papers that do not have a starting prefix
+        else:
+            continue
+
+        # read in the abstract and store it
         with open(abstract_file_path, 'r') as abstractfh:
             abstract = abstractfh.read().strip()
         abstract_rows.append((paper_id, abstract))
