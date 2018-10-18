@@ -22,6 +22,8 @@
     - `data/app/papers.csv`
     - `data/app/linking.csv`
 
+Note that `sessions.csv`, `authors.csv` and `linking.csv` are already pre-populated (with tutorial and workshop info) and will be appended to rather than created from scratch. `papers.csv` only pertains to posters and presentations and will be created from scratch.
+
 3. Run `python fill_in_app_templates.csv` to generate the follwing files:
     - `data/app/all-sessions-ids-as-names.csv`
     - `data/app/all-authors-ids-as-names.csv`
@@ -44,3 +46,5 @@
     - `data/app/authors-import-with-names.csv`
 
 10. Upload the above two files into the "Schedule" and "Authors" sections of the app respectively.
+
+11. Make sure the "Schedule" section in the app is disabled. Add "Sessions & Events", "All Presentations", "Tutorials", and "Workshops" tracks as menu items. 

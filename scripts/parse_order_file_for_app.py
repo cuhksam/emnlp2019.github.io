@@ -96,16 +96,25 @@ def main():
     paper_csv_writer = csv.writer(papersfh)
     paper_csv_writer.writerow(["Session ID", "Presentation ID", "Session Title", "Date", "Time Start", "Time End", "Room/Location", "Schedule Track", "Description"])
 
-    authorsfh = open('data/app/authors.csv', 'w')
+    # we have the tutorial and keynote authors pre-populated
+    # in this CSV file so first let's read those into a dictionary
+    # so that we don't mistakenly assign these authors new IDs
+    with open('data/app/authors.csv', 'r') as authors_infh:
+        reader = csv.DictReader(authors_infh,
+                                fieldnames=['Presentation ID', 'Author ID', 'Name'])
+        app_author_id_dict = {}
+        for row in reader:
+            app_author_id_dict[row['Name']] = row['Author ID']
+
+    # and now open the file in append mode since we will be appending
+    # new authors to this file
+    authorsfh = open('data/app/authors.csv', 'a')
     author_csv_writer = csv.writer(authorsfh)
-    author_csv_writer.writerow(['Presentation ID', 'Author ID', 'Name'])
-    app_author_id_dict = {}
 
-    linkingfh = open('data/app/linking.csv', 'w')
+    linkingfh = open('data/app/linking.csv', 'a')
     linking_csv_writer = csv.writer(linkingfh)
-    linking_csv_writer.writerow(['Session ID', 'Presentation ID', 'Author ID'])
 
-    app_id_counter = count(start=29)
+    app_id_counter = count(start=45)
 
     # now in each day, process each session one by one
     for day in days:
@@ -125,7 +134,7 @@ def main():
                     break_title = 'Lunch'
                 else:
                     break_title = 'Coffee Break'
-                session_csv_writer.writerow([next(app_id_counter), break_title, day_datetime.strftime('%D'), session_start, session_end, '', 'Main Schedule', ''])
+                session_csv_writer.writerow([next(app_id_counter), break_title, day_datetime.strftime('%D'), session_start, session_end, '', 'Sessions & Events', ''])
             elif 'keynote' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 if 'Julia' in session_title:
@@ -143,25 +152,25 @@ def main():
                     session_abstract = KEYNOTE_ABSTRACT_DICT['Johan']
                     session_people = 'Johan Bos (University of Groningen)'
                     session_people_link = 'https://www.rug.nl/staff/johan.bos/'
-                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Main Schedule', session_abstract])
+                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Sessions & Events', session_abstract])
             elif 'opening' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
-                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Main Schedule', ''])
+                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Sessions & Events', ''])
             elif 'social event' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
-                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, 'Royal Museums of Fine Arts of Belgium', 'Main Schedule', 'On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the Royal Museums of Fine Arts of Belgium. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts — painting, sculpture and drawing — from the 15th to the 21st century.'])
+                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, 'Royal Museums of Fine Arts of Belgium', 'Sessions & Events', 'On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the Royal Museums of Fine Arts of Belgium. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts — painting, sculpture and drawing — from the 15th to the 21st century.'])
             elif 'business meeting' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
-                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Main Schedule', 'All attendees are strongly encouraged to participate in the business meeting.'])
+                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Sessions & Events', 'All attendees are strongly encouraged to participate in the business meeting.'])
             elif 'best paper' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 app_session_id = next(app_id_counter)
-                session_csv_writer.writerow([app_session_id, session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Main Schedule', ''])
+                session_csv_writer.writerow([app_session_id, session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Sessions & Events', ''])
                 for paper in session:
                     app_paper_id = next(app_id_counter)
                     best_paper_id, best_paper_start, best_paper_end, best_paper_title = BEST_PAPER_REGEXP.match(paper.strip()).groups()
                     best_paper_abstract = abstract_dict[best_paper_id]
-                    paper_csv_writer.writerow([app_session_id, app_paper_id, best_paper_title, day_datetime.strftime('%D'), best_paper_start, best_paper_end, session_location, 'Presentations', best_paper_abstract])
+                    paper_csv_writer.writerow([app_session_id, app_paper_id, best_paper_title, day_datetime.strftime('%D'), best_paper_start, best_paper_end, session_location, 'All Presentations', best_paper_abstract])
                     best_paper_authors = authors_dict[best_paper_id].strip()
                     best_paper_authors_list = best_paper_authors.replace(" and ", ", ").split(", ")
                     for best_paper_author in best_paper_authors_list:
@@ -189,7 +198,7 @@ def main():
                         session_location = session_parens.strip()
                         session_type = ''
                     app_session_id = next(app_id_counter)
-                    session_csv_writer.writerow([app_session_id, session_title, day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Main Schedule', ''])
+                    session_csv_writer.writerow([app_session_id, session_title, day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Sessions & Events', ''])
                     if 'poster' in session_type.lower() or 'poster' in session_title.lower():
                         session_title = '{} ({})'.format(session_title, session_type) if session_type else session_title
                     else:
@@ -203,7 +212,7 @@ def main():
                                 poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
                                 poster_abstract = abstract_dict[poster_id]
                                 app_paper_id = next(app_id_counter)
-                                paper_csv_writer.writerow([app_session_id, app_paper_id, poster_title, day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Presentations', poster_abstract])
+                                paper_csv_writer.writerow([app_session_id, app_paper_id, poster_title, day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'All Presentations', poster_abstract])
                                 poster_authors = authors_dict[poster_id].strip()
                                 poster_authors_list = poster_authors.replace(" and ", ", ").split(', ')
                                 for poster_author in poster_authors_list:
@@ -220,7 +229,7 @@ def main():
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
                             paper_abstract = abstract_dict[paper_id]
                             app_paper_id = next(app_id_counter)
-                            paper_csv_writer.writerow([app_session_id, app_paper_id, paper_title, day_datetime.strftime('%D'), paper_start, paper_end, session_location, 'Presentations', paper_abstract])
+                            paper_csv_writer.writerow([app_session_id, app_paper_id, paper_title, day_datetime.strftime('%D'), paper_start, paper_end, session_location, 'All Presentations', paper_abstract])
                             paper_authors = authors_dict[paper_id].strip()
                             paper_authors_list = paper_authors.replace(" and ", ", ").split(', ')
                             for paper_author in paper_authors_list:
