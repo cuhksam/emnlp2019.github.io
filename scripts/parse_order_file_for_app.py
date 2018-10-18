@@ -152,7 +152,7 @@ def main():
                     session_abstract = KEYNOTE_ABSTRACT_DICT['Johan']
                     session_people = 'Johan Bos (University of Groningen)'
                     session_people_link = 'https://www.rug.nl/staff/johan.bos/'
-                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', session_abstract])
+                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', session_people + '\n\n' + session_abstract])
             elif 'opening' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', ''])
@@ -198,11 +198,12 @@ def main():
                         session_location = session_parens.strip()
                         session_type = ''
                     app_session_id = next(app_id_counter)
-                    session_csv_writer.writerow([app_session_id, session_title, day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Conference Sessions', ''])
                     if 'poster' in session_type.lower() or 'poster' in session_title.lower():
                         session_title = '{} ({})'.format(session_title, session_type) if session_type else session_title
+                        session_csv_writer.writerow([app_session_id, session_title.replace('&amp;', '&'), day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Conference Sessions', ''])
                     else:
                         session_chair_name, session_chair_email = chairs_dict[session_id]
+                        session_csv_writer.writerow([app_session_id, session_title.replace('&amp;', '&'), day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Conference Sessions', 'Session Chair: {}'.format(session_chair_name)])
                     for paper in split:
                         paper = paper.strip()
                         if 'poster' in session_type.lower() or 'poster' in session_title.lower():
