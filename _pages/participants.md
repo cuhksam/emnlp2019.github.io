@@ -72,14 +72,23 @@ These instructions will be updated as more details become available.
 
 ### Oral Presentations
 
+**Talk length:**
 - Long papers will be given an 18 minute slot (15 minutes for the talk and 3 minutes for questions).
 - Short papers will be given a 12 minute slot (10 minutes for the talk and 2 minutes for questions).
 
-Please arrive at your session 10 minutes early. Please introduce yourself to the session chair, who will help you test your laptop with the projector.
+**Audiovisual equipment:** The projectors have HDMI connectors and a resolution of 1920 x 1080 pixels (16:9 aspect ratio). Please be sure to bring display adapters for your laptop, if necessary.
+
+**Preparation:** Please be sure to arrive at your session during the preceding break (at least 15 minutes before the start of the session). Please introduce yourself to the session chair and the volunteers, who will help you to test your laptop with the projector.
+
+**Video recording:** We have hired a professional videographer to record all of the oral presentations at EMNLP 2018.  We will make the videos available online after the conference.  Our goal is to improve the dissemination of the scientific materials that are generated for the conference.  To simplify the logistics, all talks will be recorded.  If you want to opt out before/after the conference, please send an email to emnlp2018-video-chair@googlegroups.com to have your talk removed from the archive.
 
 ### Posters
 
-Posters should be A0 size in vertical (portrait) orientation, or no wider than 91 cm (36 in) and no higher than 122 cm (48 in). Materials for mounting your poster will be provided.
+**Poster size:** Posters should be no wider than 91 cm (36 in) and no higher than 122 cm (48 in), in vertical/portrait orientation. A0 paper (in vertical/portrait orientation) meets these requirements. 
+
+**Preparation:** Please arrive in Grand Hall 2 during the preceding break (at least 15 minutes before the start of the session) to find your poster's location and to mount your poster using the materials provided. Poster locations will be listed in a guide distributed to all participants, and volunteers will be available to assist you if needed.
+
+**Cleanup:** Please remove your poster right after the poster session ends; do not leave your poster in the room.
 
 ## Social Event
 
