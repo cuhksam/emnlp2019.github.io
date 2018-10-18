@@ -30,13 +30,13 @@ Note that `sessions.csv`, `authors.csv` and `linking.csv` are already pre-popula
     - `data/app/authors-to-presentations-links.csv`
     - `data/app/sessions-to-presentations-links.csv`
 
-4. Upload the file `all-sessions-ids-as-names.csv` into the "Schedule" section of the app.
+4. Upload the file `all-sessions-ids-as-names.csv` into the "Full Schedule" section of the app.
 
-5. Upload the file `all-authors-ids-as-names.csv` into the "Authors" custom list section of the app.
+5. Upload the file `all-authors-ids-as-names.csv` into the "All Authors" custom list section of the app.
 
-6. Upload the file `authors-to-presentations-links.csv` into the "Links" part of the "Authors" section of the app.
+6. Upload the file `authors-to-presentations-links.csv` into the "Links" part of the "All Authors" section of the app.
 
-7. Upload the file `sessions-to-presentations-links.csv` into the "Links" part of the "Schedule" section of the app.
+7. Upload the file `sessions-to-presentations-links.csv` into the "Links" part of the "Full Schedule" section of the app.
 
 8. Export the CSVs for the "Schedule Sessions" and "Authors" from the Guidebook dashboard under "Advanced Tools" -> "Export Data".
 
@@ -45,6 +45,8 @@ Note that `sessions.csv`, `authors.csv` and `linking.csv` are already pre-popula
     - `data/app/sessions-import-with-names.csv`
     - `data/app/authors-import-with-names.csv`
 
-10. Upload the above two files into the "Schedule" and "Authors" sections of the app respectively.
+10. Upload the above two files into the "Full Schedule" and "All Authors" sections of the app respectively.
 
-11. Make sure the "Schedule" section in the app is disabled. Add "Sessions & Events", "All Presentations", "Tutorials", and "Workshops" tracks as menu items. 
+11. Make sure the "Schedule" section in the app is disabled. Add "Conference Sessions", "Main Papers & Posters", "Tutorials", and "Workshops" tracks as menu items. 
+
+12. Reorder the "All Authors" item by selecting "Quick Reorder" and choosing "By Last Word (A -> Z)".
