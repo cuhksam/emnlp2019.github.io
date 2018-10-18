@@ -1427,7 +1427,7 @@ script: |
             <br/>
             <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -1879,7 +1879,7 @@ script: |
             <br/>
             <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -2313,7 +2313,7 @@ script: |
             <br/>
             <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -2752,7 +2752,7 @@ script: |
             <br/>
             <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -3223,7 +3223,7 @@ script: |
             <br/>
             <span class="session-time" title="Saturday, 3 November 2018">09:00 &ndash; 10:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -3722,7 +3722,7 @@ script: |
             <br/>
             <span class="session-time" title="Saturday, 3 November 2018">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -4161,7 +4161,7 @@ script: |
             <br/>
             <span class="session-time" title="Saturday, 3 November 2018">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -4638,7 +4638,7 @@ script: |
             <br/>
             <span class="session-time" title="Saturday, 3 November 2018">16:30 &ndash; 18:00</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -5110,7 +5110,7 @@ script: |
             <br/>
             <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 10:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -5650,7 +5650,7 @@ script: |
             <br/>
             <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
@@ -6138,7 +6138,7 @@ script: |
             <br/>
             <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
             <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall 2</span>
+            <span class="session-location btn btn--info btn--location">Grand Hall</span>
             <div class="poster-session-details">
                 <br/>
                 <table class="poster-table">
