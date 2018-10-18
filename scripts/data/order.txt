@@ -27,7 +27,7 @@
 1286 11:36--11:54 # Using Linguistic Features to Improve the Generalization Capability of Neural Coreference Resolvers
 1574 11:54--12:12 # Neural Segmental Hypergraphs for Overlapping Mention Recognition
 1846 12:12--12:30 # Variational Sequential Labelers for Semi-Supervised Learning
-= Session 1E: Machine Translation and Multilingual Methods (Posters and Demos, Grand Hall 2)
+= Session 1E: Machine Translation and Multilingual Methods (Posters and Demos, Grand Hall)
 @ Multilingual Methods
 76 # Joint Representation Learning of Cross-lingual Words and Entities via Attentive Distant Supervision
 126 # Deep Pivot-Based Modeling for Cross-language Cross-domain Transfer with Minimal Guidance
@@ -89,7 +89,7 @@
 2004 14:09--14:21 # Predicting News Headline Popularity with Syntactic and Semantic Knowledge Using Multi-Task Learning
 468 14:21--14:33 # Hybrid Neural Attention for Agreement/Disagreement Inference in Online Debates
 794 14:33--14:45 # Increasing In-Class Similarity by Retrofitting Embeddings with Demographic Information
-= Session 2E: Short Posters I (Grand Hall 2)
+= Session 2E: Short Posters I (Grand Hall)
 @ Dialogue and Discourse
 53 # A Syntactically Constrained Bidirectional-Asynchronous Approach for Emotional Conversation Generation
 501 # Auto-Dialabel: Labeling Dialogue Data with Unsupervised Learning
@@ -148,7 +148,7 @@
 2127 15:24--15:36 # A Dataset for Telling the Stories of Social Media Videos
 1099 15:36--15:48 # Cascaded Mutual Modulation for Visual Reasoning
 208 15:48--16:00 # How agents see things: On visual representations in an emergent language game
-= Session 3E: Short Posters II (Grand Hall 2)
+= Session 3E: Short Posters II (Grand Hall)
 @ Information Extraction
 43 # Attention-Based Capsule Networks with Dynamic Routing for Relation Extraction
 159 # Put It Back: Entity Typing with Language Model Enhancement
@@ -208,7 +208,7 @@
 1213 17:06--17:24 # RecipeQA: A Challenge Dataset for Multimodal Comprehension of Cooking Recipes
 1650 17:24--17:42 # TVQA: Localized, Compositional Video Question Answering
 1763 17:42--18:00 # Localizing Moments in Video with Temporal Language
-= Session 4E: Semantics III (Posters and Demos, Grand Hall 2)
+= Session 4E: Semantics III (Posters and Demos, Grand Hall)
 @ Lexical Semantics
 179 # Card-660: Cambridge Rare Word Dataset - a Reliable Benchmark for Infrequent Word Representation Models
 244 # Leveraging Gloss Knowledge in Neural Word Sense Disambiguation by Hierarchical Co-Attention
@@ -274,7 +274,7 @@
 1621 09:36--09:54 # Deriving Machine Attention from Human Rationales
 1741 09:54--10:12 # Semi-Supervised Sequence Modeling with Cross-View Training
 1430-TACL 10:12--10:30 # Comparing Bayesian Models of Annotation
-= Session 5E: Information Extraction, Question Answering (Posters and Demos, Grand Hall 2)
+= Session 5E: Information Extraction, Question Answering (Posters and Demos, Grand Hall)
 @ Entities and Coreference
 171 # Mapping Text to Knowledge Graph Entities using Multi-Sense LSTMs
 415 # Differentiating Concepts and Instances for Knowledge Graph Embedding
@@ -344,7 +344,7 @@
 1605 11:36--11:54 # XNLI: Evaluating Cross-lingual Sentence Representations
 1880 11:54--12:12 # Joint Multilingual Supervision for Cross-lingual Entity Linking
 2249 12:12--12:30 # Fine-grained Coordinated Cross-lingual Text Stream Alignment for Endless Language Knowledge Acquisition
-= Session 6E: Syntax, Morphology, Vision and Language I (Posters and Demos, Grand Hall 2)
+= Session 6E: Syntax, Morphology, Vision and Language I (Posters and Demos, Grand Hall)
 @ Morphology, Word Segmentation and POS Tagging
 42 # Sanskrit Word Segmentation Using Character-level Recurrent and Convolutional Neural Networks
 1446-TACL # Universal Word Segmentation: Implementation and Interpretation
@@ -404,7 +404,7 @@
 1002 14:09--14:21 # The Lazy Encoder: A Fine-Grained Analysis of the Role of Morphology in Neural Machine Translation
 1161 14:21--14:33 # Imitation Learning for Neural Morphological String Transduction
 1673 14:33--14:45 # An Encoder-Decoder Approach to the Paradigm Cell Filling Problem
-= Session 7E: Short Posters III (Grand Hall 2)
+= Session 7E: Short Posters III (Grand Hall)
 @ Neural Architectures and Language Models
 281 # Generating Natural Language Adversarial Examples
 1024 # Multi-Head Attention with Disagreement Regularization
@@ -468,7 +468,7 @@
 1533 17:06--17:24 # Explaining Character-Aware Neural Networks for Word-Level Prediction: Do They Discover Linguistic Rules?
 1860 17:24--17:42 # Adapting Word Embeddings to New Languages with Morphological and Phonological Subword Representations
 1420-TACL 17:42--18:00 # Recurrent Neural Networks in Linguistic Theory: Revisiting Pinker and Prince (1988) and the Past Tense Debate
-= Session 8E: Sentiment, Social Applications, Multimodal Semantics, Discourse (Posters and Demos, Grand Hall 2)
+= Session 8E: Sentiment, Social Applications, Multimodal Semantics, Discourse (Posters and Demos, Grand Hall)
 @ Discourse
 470 # A Computational Exploration of Exaggeration
 665 # Building Context-aware Clause Representations for Situation Entity Type Classification
@@ -533,7 +533,7 @@
 2060 09:36--09:54 # Syntactic Scaffolds for Semantic Structures
 2103 09:54--10:12 # Hierarchical Quantized Representations for Script Generation
 2250 10:12--10:30 # Semantic Role Labeling for Learner Chinese: the Importance of Syntactic Parsing and L2-L1 Parallel Data
-= Session 9E: Generation, Dialogue, Summarization; Vision and Language II (Posters and Demos, Grand Hall 2)
+= Session 9E: Generation, Dialogue, Summarization; Vision and Language II (Posters and Demos, Grand Hall)
 @ Dialogue
 305 # A Teacher-Student Framework for Maintainable Dialog Manager
 1511 # Discriminative Deep Dyna-Q: Robust Planning for Dialogue Policy Learning
@@ -610,7 +610,7 @@
 486 11:36--11:54 # Capturing Regional Variation with Distributed Place Representations and Geographic Retrofitting
 1702 11:54--12:12 # Characterizing Interactions and Relationships between People
 2160 12:12--12:30 # Why Swear? Analyzing and Inferring the Intentions of Vulgar Expressions
-= Session 10E: Machine Learning (Posters and Demos, Grand Hall 2)
+= Session 10E: Machine Learning (Posters and Demos, Grand Hall)
 @ Architectures and Models
 500 # A Probabilistic Annotation Model for Crowdsourcing Coreference
 256 # Is it Time to Swish? Comparing Deep Learning Activation Functions Across NLP tasks
@@ -677,7 +677,7 @@
 946 14:09--14:21 # Learning Sequence Encoders for Temporal Knowledge Graph Completion
 152 14:21--14:33 # Similar but not the Same: Word Sense Disambiguation Improves Event Detection via Neural Representation Matching
 1440 14:33--14:45 # Learning Word Representations with Cross-Sentence Dependency for End-to-End Co-reference Resolution
-= Session 11E: Short Posters IV (Grand Hall 2)
+= Session 11E: Short Posters IV (Grand Hall)
 @ Morphology
 589 # State-of-the-art Chinese Word Segmentation with Bi-LSTMs
 901 # Sanskrit Sandhi Splitting using seq2(seq)2
