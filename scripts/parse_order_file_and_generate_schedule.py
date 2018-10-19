@@ -142,7 +142,11 @@ def main():
                     break_title = 'Lunch'
                     break_type = 'lunch'
                     break_id = next(lunch_id_counter)
-                else:
+                elif 'mini' in break_title.lower():
+                    break_title = 'Mini-Break'
+                    break_type = 'break'
+                    break_id = next(break_id_counter)
+                else: 
                     break_title = 'Coffee Break'
                     break_type = 'break'
                     break_id = next(break_id_counter)

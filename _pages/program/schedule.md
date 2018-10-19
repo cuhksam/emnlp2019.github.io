@@ -2077,7 +2077,7 @@ script: |
         </div>
     </div>
     <div class="session session-break session-plenary" id="session-break-2">
-        <span class="session-title">Coffee Break</span>
+        <span class="session-title">Mini-Break</span>
         <br/>
         <span class="session-time" title="Friday, 2 November 2018">14:45 &ndash; 15:00</span>
     </div>
@@ -4377,7 +4377,7 @@ script: |
         </div>
     </div>
     <div class="session session-break session-plenary" id="session-break-5">
-        <span class="session-title">Coffee Break</span>
+        <span class="session-title">Mini-Break</span>
         <br/>
         <span class="session-time" title="Saturday, 3 November 2018">14:45 &ndash; 15:00</span>
     </div>
@@ -6329,7 +6329,7 @@ script: |
         </div>
     </div>
     <div class="session session-break session-plenary" id="session-break-8">
-        <span class="session-title">Coffee Break</span>
+        <span class="session-title">Mini-Break</span>
         <br/>
         <span class="session-time" title="Sunday, 4 November 2018">14:45 &ndash; 15:00</span>
     </div>
