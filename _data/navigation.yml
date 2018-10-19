@@ -45,12 +45,6 @@ program:
         url: /program/tutorials/
       - title: "Workshops"
         url: /program/workshops/
-      - title: "Accepted Long Papers"
-        url: /program/accepted/long-papers
-      - title: "Accepted Short Papers"
-        url: /program/accepted/short-papers
-      - title: "Accepted Demos"
-        url: /program/accepted/demos
 
 # participants:
 #   - title: "Information for Participants"
