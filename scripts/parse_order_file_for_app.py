@@ -154,7 +154,7 @@ def main():
                     session_abstract = KEYNOTE_ABSTRACT_DICT['Johan']
                     session_people = 'Johan Bos (University of Groningen)'
                     session_people_link = 'https://www.rug.nl/staff/johan.bos/'
-                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', session_people + '\n\n' + session_abstract])
+                session_csv_writer.writerow([next(app_id_counter), '{} - {}'.format(session_title, session_people), day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', session_abstract])
             elif 'opening' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', ''])
