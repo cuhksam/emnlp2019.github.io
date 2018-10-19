@@ -5895,7 +5895,7 @@ script: |
     </div>
     <div class="session session-expandable session-plenary" id="session-business">
         <div id="expander"></div>
-        <a href="#" class="session-title">Business Meeting</a>
+        <a href="#" class="session-title">SIGDAT Business Meeting</a>
         <br/>
         <span class="session-time" title="Sunday, 4 November 2018">13:00 &ndash; 13:45</span>
         <br/>
