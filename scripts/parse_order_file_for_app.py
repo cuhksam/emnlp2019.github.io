@@ -132,6 +132,8 @@ def main():
                 session_start, session_end, break_title = BREAK_SESSION_REGEXP.match(session_string).groups()
                 if break_title.lower() == 'lunch':
                     break_title = 'Lunch'
+                elif 'mini' in break_title.lower():
+                    break_title = 'Mini-Break'
                 else:
                     break_title = 'Coffee Break'
                 session_csv_writer.writerow([next(app_id_counter), break_title, day_datetime.strftime('%D'), session_start, session_end, '', 'Conference Sessions', ''])
