@@ -651,7 +651,7 @@
 53-demo # KT-Speech-Crawler: Automatic Dataset Construction for Speech Recognition from YouTube Videos
 15-demo # Term Set Expansion based NLP Architect by Intel AI Lab
 + 12:30--13:00 Lunch
-+ 13:00--13:45 Business Meeting (Copper Hall)
++ 13:00--13:45 SIGDAT Business Meeting (Copper Hall)
 + 13:45--14:45 Short Papers (Orals and Posters) IV
 = Session 11A: Analyzing Models (Gold Hall)
 657 13:45--13:57 # A Neural Model of Adaptation in Reading
