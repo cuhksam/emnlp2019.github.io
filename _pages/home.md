@@ -13,8 +13,6 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
     <span style="font-size: normal;"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i></span><br/>
     <span style="font-weight: bold; font-size: smaller;">
     Tutorials &amp; Workshops : October 31 &amp; November 1<br/>Main Conference : November 2 &ndash; November 4</span>
-    <br/><br/>
-    <a href="https://aclweb.org/conference/emnlp-2018-conference-registration/" target="_blank" class="btn btn--primary">Register Now</a>
 </div>
 
 <h2>News</h2>
