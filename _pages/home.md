@@ -20,6 +20,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 **October 22, 2018**. The complete conference schedule is now [available](/schedule) with finalized room assignments and time slots. 
 {: .notice--info}
 
+**October 21, 2018**. Early and late [registration](/registration) has now closed. You can now only register on site. 
+{: .notice--info}
+
 
 <h2>Welcome!</h2>
 
