@@ -34,6 +34,11 @@ social:
     image_path: "/assets/images/social/magritte-th.jpg"
     alt: "The Magritte Museum"
     title: "The Magritte Museum &nbsp;&nbsp; (&copy; visit.brussels)"
+floorplan:
+  - url: /downloads/square-3d-floor-plan.pdf
+    image_path: "/assets/images/square/square-3d-floor-plan-icon.png"
+    alt: "Square Floorplans"
+    title: "Square Floorplans"
 ---
 {% include base_path %}
 
@@ -65,6 +70,12 @@ E-mail: <a href="mailto:info@square-brussels.com">info@square-brussels.com</a>
 SQUARE, located in the vibrant Mont de Arts cultural quarter in the heart of Brussels, is a modern meeting center with 7 halls, 5 auditoria and 23 meeting rooms. It is only a 2-minute walk from the Brussels central train station and less than 30 minutes from the Brussels International Airport.
 
 {% include gallery id="square" %}
+
+## Floorplan
+
+A printable version of the SQUARE Floorplan can be downloaded by clicking on the icon below.
+
+{% include gallery id="floorplan" %}
 
 ## Instructions for Presenters
 
