@@ -17,11 +17,8 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
-**October 14, 2018**. EMNLP special [hotel rates](http://emnlp2018.org/participants/#accommodation) have been extended until October 19th. Book as soon as possible!
+**October 22, 2018**. The complete conference schedule is now [available](/schedule) with finalized room assignments and time slots. 
 {: .notice--info}
-
-**September 19, 2018**. A draft version of the [conference schedule](/schedule) is now available. 
-{: .notice} 
 
 
 <h2>Welcome!</h2>
