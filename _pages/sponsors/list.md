@@ -111,6 +111,12 @@ silver:
     image_path: /assets/images/logos/duolingo-logo.png
     alt: "Duolingo Logo"
     title: "Duolingo"
+  - url: http://shannon.ai
+    image_path: /assets/images/logos/shannon-ai-logo.png
+    alt: "Shannon AI Logo"
+    title: "Shannon AI"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 bronze:
   - url: https://www.nextcanada.com
     image_path: /assets/images/logos/next-canada-logo.png
