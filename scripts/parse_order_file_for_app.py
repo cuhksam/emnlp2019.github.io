@@ -29,7 +29,8 @@ from parse_order_file_and_generate_schedule import (NON_PAPER_SESSION_REGEXP,
                                                     BEST_PAPER_REGEXP,
                                                     KEYNOTE_ABSTRACT_DICT,
                                                     process_line,
-                                                    collect_instances)
+                                                    collect_instances,
+                                                    make_anthologizer)
 
 
 def main():
@@ -114,7 +115,11 @@ def main():
     linkingfh = open('data/app/linking.csv', 'a')
     linking_csv_writer = csv.writer(linkingfh)
 
+    # the counter for the IDs used in the app
     app_id_counter = count(start=45)
+
+    # the object that will generate the anthology URLs
+    anthologizer = make_anthologizer()
 
     # now in each day, process each session one by one
     for day in days:
@@ -170,9 +175,10 @@ def main():
                 session_csv_writer.writerow([app_session_id, session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', ''])
                 for paper in session:
                     app_paper_id = next(app_id_counter)
+                    best_paper_url = next(anthologizer)
                     best_paper_id, best_paper_start, best_paper_end, best_paper_title = BEST_PAPER_REGEXP.match(paper.strip()).groups()
                     best_paper_abstract = abstract_dict[best_paper_id]
-                    paper_csv_writer.writerow([app_session_id, app_paper_id, best_paper_title, day_datetime.strftime('%D'), best_paper_start, best_paper_end, session_location, 'Main Papers & Posters', best_paper_abstract])
+                    paper_csv_writer.writerow([app_session_id, app_paper_id, best_paper_title, day_datetime.strftime('%D'), best_paper_start, best_paper_end, session_location, 'Main Papers & Posters', best_paper_abstract + " [<a href='{}'>PDF</a>]".format(best_paper_url)])
                     best_paper_authors = authors_dict[best_paper_id].strip()
                     best_paper_authors_list = best_paper_authors.replace(" and ", ", ").split(", ")
                     for best_paper_author in best_paper_authors_list:
@@ -215,7 +221,8 @@ def main():
                                 poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
                                 poster_abstract = abstract_dict[poster_id]
                                 app_paper_id = next(app_id_counter)
-                                paper_csv_writer.writerow([app_session_id, app_paper_id, poster_title, day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Main Papers & Posters', poster_abstract])
+                                poster_url = next(anthologizer)
+                                paper_csv_writer.writerow([app_session_id, app_paper_id, poster_title, day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Main Papers & Posters', poster_abstract + " [<a href='{}'>PDF</a>]".format(poster_url)])
                                 poster_authors = authors_dict[poster_id].strip()
                                 poster_authors_list = poster_authors.replace(" and ", ", ").split(', ')
                                 for poster_author in poster_authors_list:
@@ -232,7 +239,8 @@ def main():
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
                             paper_abstract = abstract_dict[paper_id]
                             app_paper_id = next(app_id_counter)
-                            paper_csv_writer.writerow([app_session_id, app_paper_id, paper_title, day_datetime.strftime('%D'), paper_start, paper_end, session_location, 'Main Papers & Posters', paper_abstract])
+                            paper_url = next(anthologizer)
+                            paper_csv_writer.writerow([app_session_id, app_paper_id, paper_title, day_datetime.strftime('%D'), paper_start, paper_end, session_location, 'Main Papers & Posters', paper_abstract + " [<a href='{}'>PDF</a>]".format(paper_url)])
                             paper_authors = authors_dict[paper_id].strip()
                             paper_authors_list = paper_authors.replace(" and ", ", ").split(', ')
                             for paper_author in paper_authors_list:
