@@ -435,6 +435,12 @@ div.session {
         }
     }
 
+    tr#best-paper {
+        i.paper-icon {
+            cursor: pointer;
+        }
+    }
+
     td#paper-time {
         font-size: $type-size-5;
     }
