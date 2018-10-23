@@ -71,6 +71,13 @@ def collect_instances(iterator, character):
     return groups
 
 
+def make_anthologizer():
+    start = 1000
+    while 1:
+        start += 1
+        yield "http://www.aclweb.org/anthology/D/D18/D18-{}.pdf".format(start)
+
+
 def main():
 
     # set up an argument parser
@@ -119,6 +126,9 @@ def main():
             assert session_id not in chairs_dict
             chairs_dict[session_id] = (row['Name'], row['Email'])
 
+    # we need a special iterator for anthology URLs
+    anthologizer = make_anthologizer()
+
     # now in each day, process each session one by one
     days_counter = count(start=3)
     lunch_id_counter = count(start=3)
@@ -146,7 +156,7 @@ def main():
                     break_title = 'Mini-Break'
                     break_type = 'break'
                     break_id = next(break_id_counter)
-                else: 
+                else:
                     break_title = 'Coffee Break'
                     break_type = 'break'
                     break_id = next(break_id_counter)
@@ -184,7 +194,8 @@ def main():
                 for paper in session:
                     best_paper_id, best_paper_start, best_paper_end, best_paper_title = BEST_PAPER_REGEXP.match(paper.strip()).groups()
                     best_paper_authors = authors_dict[best_paper_id].strip()
-                    generated_html.append('<tr id="best-paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em></td></tr>'.format(best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_authors))
+                    best_paper_url = next(anthologizer)
+                    generated_html.append('<tr id="best-paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_authors, best_paper_url))
                 generated_html.append('</table></div></div>')
             elif 'orals' in session_string.lower():
                 session_group_start, session_group_end, session_group_type, session_group_description, session_group_roman_numeral = PAPER_SESSION_GROUP_REGEXP.match(session_string).groups()
@@ -219,18 +230,20 @@ def main():
                                 continue
                             else:
                                 poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
+                            poster_url = next(anthologizer)
                             poster_authors = authors_dict[poster_id].strip()
                             if poster_id.endswith('-demo'):
                                 poster_title = '{}'.format(poster_title)
                             if poster_id.endswith('-TACL'):
                                 poster_title = '[TACL] {}'.format(poster_title)
-                            generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em></td></tr>'.format(poster_id, poster_title, poster_authors))
+                            generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(poster_id, poster_title, poster_authors, poster_url))
                         else:
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
                             paper_authors = authors_dict[paper_id].strip()
+                            paper_url = next(anthologizer)
                             if paper_id.endswith('-TACL'):
                                 paper_title = '[TACL] {}'.format(paper_title)
-                            generated_html.append('<tr id="paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em></td></tr>'.format(paper_id, paper_start, paper_end, paper_title, paper_authors))
+                            generated_html.append('<tr id="paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(paper_id, paper_start, paper_end, paper_title, paper_authors, paper_url))
                     generated_html.append('</table></div></div>'.format(paper_id, paper_start, paper_end, paper_title))
                 generated_html.append('</div>')
 
