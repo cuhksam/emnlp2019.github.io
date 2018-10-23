@@ -230,13 +230,13 @@ def main():
                                 continue
                             else:
                                 poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
-                            poster_url = next(anthologizer)
-                            poster_authors = authors_dict[poster_id].strip()
-                            if poster_id.endswith('-demo'):
-                                poster_title = '{}'.format(poster_title)
-                            if poster_id.endswith('-TACL'):
-                                poster_title = '[TACL] {}'.format(poster_title)
-                            generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(poster_id, poster_title, poster_authors, poster_url))
+                                poster_url = next(anthologizer)
+                                poster_authors = authors_dict[poster_id].strip()
+                                if poster_id.endswith('-demo'):
+                                    poster_title = '{}'.format(poster_title)
+                                if poster_id.endswith('-TACL'):
+                                    poster_title = '[TACL] {}'.format(poster_title)
+                                generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(poster_id, poster_title, poster_authors, poster_url))
                         else:
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
                             paper_authors = authors_dict[paper_id].strip()
