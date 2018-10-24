@@ -77,6 +77,31 @@ A printable version of the SQUARE Floorplan can be downloaded by clicking on the
 
 {% include gallery id="floorplan" %}
 
+## WiFi Access
+
+<table>
+<tr><td><strong>SSID (Network Name)</strong></td><td><pre>square-guest</pre></td></tr>
+<tr><td><strong>Login</strong></td><td><pre>emnlp</pre></td></tr>
+<tr><td><strong>Password</strong></td><td><pre>emnlp18!</pre></td></tr>
+</table>
+
+### Instructions
+
+1. Enable your Wi-Fi.
+2. Join the SSID (Network Name) : "square-guest".
+3. If not automatically asked by your computer, open a web browser.
+4. Try to connect to any website and then you’ll be automatically redirected to the authentication page.
+5. Enter the login & password.
+6. Check the box near the disclaimer to accept it and click on the locker icon. 
+7. You should be connected to the Internet.
+
+### Important Notes
+- Active from October 31, 2018 through November 4, 2018.
+- Connection through a captive portal (Web page).
+- Users will be automatically disconnected after 30 mins of inactivity.
+- Bandwidth is limited to 1 Mbps upstream & downstream.
+
+
 ## Instructions for Presenters
 
 These instructions will be updated as more details become available.
