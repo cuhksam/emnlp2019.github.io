@@ -1048,12 +1048,12 @@ script: |
                 </tr> 
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 313 &ndash; 315</span>
+                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 211 &ndash; 212</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
-                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Studio 211 &ndash; 212</span>
+                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Studio 313 &ndash; 315</span>
                     </td>
                 </tr>
                 <tr id="workshop">
