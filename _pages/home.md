@@ -17,6 +17,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**October 27, 2018**. The conference app is now live! If you already have the Guidebook app on your device, click on "Find Guides" and search for "EMNLP 2018" or scan the [QR code](/participants/#conference-app). Otherwise, click <a href="https://guidebook.com/g/emnlp2018/" target="_blank">here</a>.
+{: .notice--info}
+
 **October 26, 2018**. The papers/posters/demos in the [conference schedule](/schedule) are now linked to the corresponding PDFs in the ACL anthology.
 {: .notice--info}
 

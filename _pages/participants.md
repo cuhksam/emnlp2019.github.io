@@ -101,6 +101,14 @@ A printable version of the SQUARE Floorplan can be downloaded by clicking on the
 - Users will be automatically disconnected after 30 mins of inactivity.
 - Bandwidth is limited to 1 Mbps upstream & downstream.
 
+## Conference App
+
+There's a companion app for the conference published on the <a href="https://guidebook.com/" target="_blank">Guidebook</a> platform. If you already have Guidebook on your device, click on "Find Guides" and search for "EMNLP 2018" or scan the QR code below. If you do not, click <a href="https://guidebook.com/g/emnlp2018/" target="_blank">here</a> to get set up.
+
+![image-center](/assets/images/guideqr.png){: .align-center}
+
+There's also a web version of the guide available <a href="http://guidebook.com/guide/120298" target="_blank">here</a>, although that's not as full-featured as the app version.
+
 
 ## Instructions for Presenters
 
