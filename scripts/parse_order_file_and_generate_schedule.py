@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 '''
-This script parses the following three files provided by the program chairs
-and generates the HTML that can then be added to the program page on the
-website:
+This script parses the following four files and generates the HTML that can
+then be added to the program page on the website:
 
 - order.txt
 - authors.csv
 - session-chairs.csv
+- anthology-mapping.csv
 
 Note that:
 
@@ -16,6 +16,10 @@ Note that:
 2. The order file does not contain any information about tutorials, workshops, or welcome reception.
 
 3. It also does not contain any authors for any papers/posters/demos.
+
+4. The first three files were provided by the program chairs.
+
+5. The last file was scraped manually from the anthology webpage. Although this should not be necessary as the anthology links are generated based on the `order.txt` file, in this case, changes were made to the order file AFTER the handbook was published and, therefore, the anthology was out of sync.
 '''
 
 import argparse
@@ -71,11 +75,8 @@ def collect_instances(iterator, character):
     return groups
 
 
-def make_anthologizer():
-    start = 1000
-    while 1:
-        start += 1
-        yield "http://www.aclweb.org/anthology/D/D18/D18-{}.pdf".format(start)
+def get_anthology_link(anthology_id):
+    return "http://aclweb.org/anthology/{}".format(anthology_id)
 
 
 def main():
@@ -94,6 +95,10 @@ def main():
                         dest="chairs_csv",
                         required=True,
                         help="Path to CSV file containing session chair information")
+    parser.add_argument("--anthology",
+                        dest="anthology_csv",
+                        required=True,
+                        help="Path to CSV file containing anthology IDs for papers, posters, and demos")
 
     # parse given command line arguments
     args = parser.parse_args()
@@ -126,8 +131,12 @@ def main():
             assert session_id not in chairs_dict
             chairs_dict[session_id] = (row['Name'], row['Email'])
 
-    # we need a special iterator for anthology URLs
-    anthologizer = make_anthologizer()
+    # read in the CSV file mapping paper/poster titles to anthology IDs
+    anthology_dict = {}
+    with open(args.anthology_csv, 'r') as anthologyfh:
+        reader = csv.DictReader(anthologyfh, fieldnames=["Title", "ID"])
+        for row in reader:
+            anthology_dict[row['Title'].lower()] = row['ID']
 
     # now in each day, process each session one by one
     days_counter = count(start=3)
@@ -194,7 +203,7 @@ def main():
                 for paper in session:
                     best_paper_id, best_paper_start, best_paper_end, best_paper_title = BEST_PAPER_REGEXP.match(paper.strip()).groups()
                     best_paper_authors = authors_dict[best_paper_id].strip()
-                    best_paper_url = next(anthologizer)
+                    best_paper_url = get_anthology_link(anthology_dict[best_paper_title.lower()])
                     generated_html.append('<tr id="best-paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_authors, best_paper_url))
                 generated_html.append('</table></div></div>')
             elif 'orals' in session_string.lower():
@@ -230,19 +239,33 @@ def main():
                                 continue
                             else:
                                 poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
-                                poster_url = next(anthologizer)
-                                poster_authors = authors_dict[poster_id].strip()
-                                if poster_id.endswith('-demo'):
-                                    poster_title = '{}'.format(poster_title)
                                 if poster_id.endswith('-TACL'):
                                     poster_title = '[TACL] {}'.format(poster_title)
+                                    # tacl_article_id = poster_id.split('-')[0]
+                                    # poster_url = 'https://transacl.org/ojs/index.php/tacl/article/view/{}'.format(tacl_article_id)
+                                    poster_url = ''
+                                else:
+                                    try:
+                                        poster_url = get_anthology_link(anthology_dict[poster_title.lower()])
+                                    except KeyError:
+                                        import ipdb
+                                        ipdb.set_trace()
+                                poster_authors = authors_dict[poster_id].strip()
                                 generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(poster_id, poster_title, poster_authors, poster_url))
                         else:
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
                             paper_authors = authors_dict[paper_id].strip()
-                            paper_url = next(anthologizer)
                             if paper_id.endswith('-TACL'):
                                 paper_title = '[TACL] {}'.format(paper_title)
+                                # tacl_article_id = paper_id.split('-')[0]
+                                # paper_url = 'https://transacl.org/ojs/index.php/tacl/article/view/{}'.format(tacl_article_id)
+                                paper_url = ''
+                            else:
+                                try:
+                                    paper_url = get_anthology_link(anthology_dict[paper_title.lower()])
+                                except KeyError:
+                                    import ipdb
+                                    ipdb.set_trace()
                             generated_html.append('<tr id="paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(paper_id, paper_start, paper_end, paper_title, paper_authors, paper_url))
                     generated_html.append('</table></div></div>'.format(paper_id, paper_start, paper_end, paper_title))
                 generated_html.append('</div>')
