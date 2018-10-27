@@ -904,8 +904,10 @@ script: |
             $('body').on('click', 'table.paper-table tr#paper i.paper-icon,table.paper-table tr#best-paper i.paper-icon,table.poster-table tr#poster i.paper-icon', function(event) {
                 event.stopPropagation();
                 event.preventDefault();
-                window.open($(this).attr('data'), "_blank");
-
+                var urlToOpen = $(this).attr('data');
+                if (urlToOpen.substr(0, 4) == 'http') {
+                    window.open(urlToOpen, "_blank");
+                }
             });
 
             $('body').on('click', 'table.paper-table tr#paper', function(event, fromSession) {
