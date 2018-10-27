@@ -245,11 +245,7 @@ def main():
                                     # poster_url = 'https://transacl.org/ojs/index.php/tacl/article/view/{}'.format(tacl_article_id)
                                     poster_url = ''
                                 else:
-                                    try:
-                                        poster_url = get_anthology_link(anthology_dict[poster_title.lower()])
-                                    except KeyError:
-                                        import ipdb
-                                        ipdb.set_trace()
+                                    poster_url = get_anthology_link(anthology_dict[poster_title.lower()])
                                 poster_authors = authors_dict[poster_id].strip()
                                 generated_html.append('<tr id="poster" poster-id="{}"><td><span class="poster-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(poster_id, poster_title, poster_authors, poster_url))
                         else:
@@ -261,11 +257,7 @@ def main():
                                 # paper_url = 'https://transacl.org/ojs/index.php/tacl/article/view/{}'.format(tacl_article_id)
                                 paper_url = ''
                             else:
-                                try:
-                                    paper_url = get_anthology_link(anthology_dict[paper_title.lower()])
-                                except KeyError:
-                                    import ipdb
-                                    ipdb.set_trace()
+                                paper_url = get_anthology_link(anthology_dict[paper_title.lower()])
                             generated_html.append('<tr id="paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(paper_id, paper_start, paper_end, paper_title, paper_authors, paper_url))
                     generated_html.append('</table></div></div>'.format(paper_id, paper_start, paper_end, paper_title))
                 generated_html.append('</div>')
