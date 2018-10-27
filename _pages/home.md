@@ -17,11 +17,14 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**October 26, 2018**. The papers/posters/demos in the [conference schedule](/schedule) are now linked to the corresponding PDFs in the ACL anthology.
+{: .notice--info}
+
 **October 22, 2018**. The complete conference schedule is now [available](/schedule) with finalized room assignments and time slots. 
 {: .notice--info}
 
 **October 21, 2018**. Early and late [registration](/registration) has now closed. You can now only register on site. 
-{: .notice--info}
+{: .notice}
 
 
 <h2>Welcome!</h2>
