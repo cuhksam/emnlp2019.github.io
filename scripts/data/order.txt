@@ -56,7 +56,7 @@
 1536 # Semi-Autoregressive Neural Machine Translation
 1542 # Understanding Back-Translation at Scale
 1894 # Bootstrapping Transliteration with Constrained Discovery for Low-Resource Languages
-1948 # NORMA: Neighborhood Sensitive Maps for MultilingualWord Embeddings
+1948 # NORMA: Neighborhood Sensitive Maps for Multilingual Word Embeddings
 1952 # Adaptive Multi-pass Decoder for Neural Machine Translation
 2056 # Improving the Transformer Translation Model with Document-Level Context
 2139 # MTNT: A Testbed for Machine Translation of Noisy Text
@@ -163,12 +163,12 @@
 205 # Facts That Matter
 558 # Entity Tracking Improves Cloze-style Reading Comprehension
 590 # Adversarial Domain Adaptation for Duplicate Question Detection
-663 # Translating a MathWord Problem to a Expression Tree
+663 # Translating a Math Word Problem to a Expression Tree
 2197 # Semantic Linking in Convolutional Neural Networks for Answer Sentence Selection
 2199 # A dataset and baselines for sequential open-domain question answering
 @ Sentiment Analysis
 22 # Improving the results of string kernels in sentiment analysis and Arabic dialect identification by adapting them to your test set
-228 # Parameterized Convolutional Neural Networks for Aspect Level Sentiment Classiﬁcation
+228 # Parameterized Convolutional Neural Networks for Aspect Level Sentiment Classification
 644 # Improving Multi-label Emotion Classification via Sentiment Classification with Dual Attention Transfer Network
 995 # Learning Sentiment Memories for Sentiment Modification without Parallel Data
 1117 # Joint Aspect and Polarity Classification for Aspect-based Sentiment Analysis with End-to-End Neural Networks
@@ -500,7 +500,7 @@
 2016 # Hierarchical CVAE for Fine-Grained Hate Speech Classification
 2107 # Residualized Factor Adaptation for Community Social Media Prediction Tasks
 2198 # Framing and Agenda-setting in Russian News: a Computational Analysis of Intricate Political Strategies
-479 # Identifying the sentiment styles of YouTube’s vloggers
+479 # Identifying the sentiment styles of YouTube's vloggers
 862 # Native Language Identification with User Generated Content
 @ Demos
 35-demo # Visualization of the Topic Space of Argument Search Results in args.me
@@ -554,7 +554,7 @@
 2039 # Towards a Better Metric for Evaluating Question Generation Systems
 866 # Stylistic Chinese Poetry Generation via Unsupervised Style Disentanglement
 1127 # Generating More Interesting Responses in Neural Conversation Models with Distributional Constraints
-1241 # Better Conversations by Modeling, Filtering,and Optimizing for Coherence and Diversity
+1241 # Better Conversations by Modeling, Filtering, and Optimizing for Coherence and Diversity
 @ Vision and Language
 227 # Incorporating Background Knowledge into Video Description Generation
 229 # Multimodal Differential Network for Visual Question Generation
@@ -696,7 +696,7 @@
 1098 # Learning Gender-Neutral Word Embeddings
 1190 # Learning Concept Abstractness Using Weak Supervision
 1487 # Word Sense Induction with Neural biLM and Symmetric Patterns
-1498 # InferLite: Simple Universal Sentence Representationsfrom Natural Language Inference Data
+1498 # InferLite: Simple Universal Sentence Representations from Natural Language Inference Data
 1541 # Similarity-Based Reconstruction Loss for Meaning Representation
 1576 # What can we learn from Semantic Tagging?
 1610 # Conditional Word Embedding and Hypothesis Testing via Bayes-by-Backprop
