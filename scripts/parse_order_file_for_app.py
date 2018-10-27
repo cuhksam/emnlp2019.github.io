@@ -8,6 +8,7 @@ and generates the various files needed to build the schedule in the conference a
 - authors.csv
 - session-chairs.csv
 - abstracts.csv
+- anthology-mapping.csv
 
 Note that `dos2unix` must be run on the order file before processing.
 
@@ -30,7 +31,7 @@ from parse_order_file_and_generate_schedule import (NON_PAPER_SESSION_REGEXP,
                                                     KEYNOTE_ABSTRACT_DICT,
                                                     process_line,
                                                     collect_instances,
-                                                    make_anthologizer)
+                                                    get_anthology_link)
 
 
 def main():
@@ -53,6 +54,10 @@ def main():
                         dest="abstracts_csv",
                         required=True,
                         help="Path to CSV file containing the abstracts")
+    parser.add_argument("--anthology",
+                        dest="anthology_csv",
+                        required=True,
+                        help="Path to CSV file containing anthology IDs for papers, posters, and demos")
 
     # parse given command line arguments
     args = parser.parse_args()
@@ -81,6 +86,13 @@ def main():
             session_id = row['Session'].split(':')[0]
             assert session_id not in chairs_dict
             chairs_dict[session_id] = (row['Name'], row['Email'])
+
+    # read in the CSV file mapping paper/poster titles to anthology IDs
+    anthology_dict = {}
+    with open(args.anthology_csv, 'r') as anthologyfh:
+        reader = csv.DictReader(anthologyfh, fieldnames=["Title", "ID"])
+        for row in reader:
+            anthology_dict[row['Title'].lower()] = row['ID']
 
     # read in the CSV file mapping paper IDs to abstracts
     abstract_dict = {}
@@ -117,9 +129,6 @@ def main():
 
     # the counter for the IDs used in the app
     app_id_counter = count(start=45)
-
-    # the object that will generate the anthology URLs
-    anthologizer = make_anthologizer()
 
     # now in each day, process each session one by one
     for day in days:
@@ -175,8 +184,8 @@ def main():
                 session_csv_writer.writerow([app_session_id, session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', ''])
                 for paper in session:
                     app_paper_id = next(app_id_counter)
-                    best_paper_url = next(anthologizer)
                     best_paper_id, best_paper_start, best_paper_end, best_paper_title = BEST_PAPER_REGEXP.match(paper.strip()).groups()
+                    best_paper_url = get_anthology_link(anthology_dict[best_paper_title.lower()])
                     best_paper_abstract = abstract_dict[best_paper_id]
                     paper_csv_writer.writerow([app_session_id, app_paper_id, best_paper_title, day_datetime.strftime('%D'), best_paper_start, best_paper_end, session_location, 'Main Papers & Posters', best_paper_abstract + " [<a href='{}'>PDF</a>]".format(best_paper_url)])
                     best_paper_authors = authors_dict[best_paper_id].strip()
@@ -221,7 +230,14 @@ def main():
                                 poster_id, poster_title = POSTER_DEMO_REGEXP.match(paper).groups()
                                 poster_abstract = abstract_dict[poster_id]
                                 app_paper_id = next(app_id_counter)
-                                poster_url = next(anthologizer)
+                                if poster_id.endswith('-demo'):
+                                    paper_title = '[DEMO] {}'.format(poster_title)
+                                    poster_url = get_anthology_link(anthology_dict[poster_title.lower()])
+                                elif poster_id.endswith('-TACL'):
+                                    poster_title = '[TACL] {}'.format(poster_title)
+                                    poster_url = ''
+                                else:
+                                    poster_url = get_anthology_link(anthology_dict[poster_title.lower()])
                                 paper_csv_writer.writerow([app_session_id, app_paper_id, poster_title, day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Main Papers & Posters', poster_abstract + " [<a href='{}'>PDF</a>]".format(poster_url)])
                                 poster_authors = authors_dict[poster_id].strip()
                                 poster_authors_list = poster_authors.replace(" and ", ", ").split(', ')
@@ -233,13 +249,15 @@ def main():
                                         app_author_id_dict[poster_author] = app_author_id
                                     author_csv_writer.writerow([app_paper_id, app_author_id, poster_author])
                                     linking_csv_writer.writerow([app_session_id, app_paper_id, app_author_id])
-                                if poster_id.endswith('-TACL'):
-                                    poster_title = '[TACL] {}'.format(poster_title)
                         else:
                             paper_id, paper_start, paper_end, paper_title = PAPER_REGEXP.match(paper.strip()).groups()
                             paper_abstract = abstract_dict[paper_id]
                             app_paper_id = next(app_id_counter)
-                            paper_url = next(anthologizer)
+                            if paper_id.endswith('-TACL'):
+                                paper_title = '[TACL] {}'.format(paper_title)
+                                paper_url = ''
+                            else:
+                                paper_url = get_anthology_link(anthology_dict[paper_title.lower()])
                             paper_csv_writer.writerow([app_session_id, app_paper_id, paper_title, day_datetime.strftime('%D'), paper_start, paper_end, session_location, 'Main Papers & Posters', paper_abstract + " [<a href='{}'>PDF</a>]".format(paper_url)])
                             paper_authors = authors_dict[paper_id].strip()
                             paper_authors_list = paper_authors.replace(" and ", ", ").split(', ')
@@ -251,8 +269,6 @@ def main():
                                     app_author_id_dict[paper_author] = app_author_id
                                 author_csv_writer.writerow([app_paper_id, app_author_id, paper_author])
                                 linking_csv_writer.writerow([app_session_id, app_paper_id, app_author_id])
-                            if paper_id.endswith('-TACL'):
-                                paper_title = '[TACL] {}'.format(paper_title)
 
     # close the file handles
     sessionsfh.close()
