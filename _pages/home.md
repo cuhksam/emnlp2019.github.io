@@ -17,6 +17,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**October 30, 2018**. One of the baggage handling companies at Brussels airport is on strike today. As far as we know, only airlines mentioned on [this page](https://www.brusselsairport.be/en/passengers/work-stoppage-at-baggage-handler-aviapartner) are affected but please check with your airport and airline to confirm.
+{: .notice--info}
+
 **October 27, 2018**. The conference app is now live! If you already have the Guidebook app on your device, click on "Find Guides" and search for "EMNLP 2018" or scan the [QR code](/participants/#conference-app). Otherwise, click <a href="https://guidebook.com/g/emnlp2018/" target="_blank">here</a>.
 {: .notice--info}
 
@@ -24,9 +27,6 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 {: .notice--info}
 
 **October 22, 2018**. The complete conference schedule is now [available](/schedule) with finalized room assignments and time slots. 
-{: .notice--info}
-
-**October 21, 2018**. Early and late [registration](/registration) has now closed. You can now only register on site. 
 {: .notice}
 
 
