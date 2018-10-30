@@ -17,6 +17,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**October 30, 2018**. Due to limited room space at the venue, attendees will need to spread themselves across FOUR rooms for all conference plenary sessions: **Gold Hall**, **Copper Hall**, **Silver Hall**, and **Hall 100**.
+{: .notice--info}
+
 **October 30, 2018**. One of the baggage handling companies at Brussels airport is on strike today. As far as we know, only airlines mentioned on [this page](https://www.brusselsairport.be/en/passengers/work-stoppage-at-baggage-handler-aviapartner) are affected but please check with your airport and airline to confirm.
 {: .notice--info}
 
@@ -24,9 +27,6 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 {: .notice--info}
 
 **October 26, 2018**. The papers/posters/demos in the [conference schedule](/schedule) are now linked to the corresponding PDFs in the ACL anthology.
-{: .notice--info}
-
-**October 22, 2018**. The complete conference schedule is now [available](/schedule) with finalized room assignments and time slots. 
 {: .notice}
 
 
