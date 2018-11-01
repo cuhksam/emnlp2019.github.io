@@ -4,6 +4,8 @@
 
 2. Run `python parse_order_file_and_generate_schedule.py --order data/order.txt --authors data/authors.csv --chairs data/session-chairs.csv --anthology data/anthology-mapping.csv`. This will print out the HTML schedule to standard output. Take this output and replace the HTML in `schedule.md` in the appropriate place (which is the HTML that starts at the div block of Day 2 of the conference - November 2, 2018 and goes till right before the div block of the form containing the generate PDF button).
 
+3. Manually link the TACL PDFs (under `downloads`) to the appropriate papers in the schedule.
+
 ## To generate the sponsor thumbnails for the GuideBook app
 
 1. Install the python-frontmatter package. 
@@ -59,3 +61,5 @@
 12. Make sure the "Schedule" section in the app is disabled. Add "Conference Sessions", "Main Papers & Posters", "Tutorials", and "Workshops" tracks as menu items. 
 
 13. Reorder the "All Authors" item by selecting "Quick Reorder" and choosing "By Last Word (A -> Z)".
+
+14. Manually link the TACL paper PDFs (under `downloads`) to the relevant papers in the app. 
