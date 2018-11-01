@@ -905,7 +905,7 @@ script: |
                 event.stopPropagation();
                 event.preventDefault();
                 var urlToOpen = $(this).attr('data');
-                if (urlToOpen.substr(0, 4) == 'http') {
+                if (urlToOpen !== '') {
                     window.open(urlToOpen, "_blank");
                 }
             });
@@ -3451,7 +3451,7 @@ script: |
                         <td>
                             <span class="paper-title">[TACL] Comparing Bayesian Models of Annotation.</span>
                             <em>Silviu Paun, Bob Carpenter, Jon Chamberlain, Dirk Hovy, Udo Kruschwitz, Massimo Poesio</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
+                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL01.pdf" aria-hidden="true"></i>
                         </td>
                     </tr>
                 </table>
@@ -4041,7 +4041,7 @@ script: |
                         <td>
                             <span class="poster-title">[TACL] Universal Word Segmentation: Implementation and Interpretation.</span>
                             <em>Yan Shao, Christian Hardmeier, Joakim Nivre</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
+                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL02.pdf" aria-hidden="true"></i>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="701">
@@ -4205,7 +4205,7 @@ script: |
                         <td>
                             <span class="poster-title">[TACL] Surface Statistics of an Unknown Language Indicate How to Parse It.</span>
                             <em>Dingquan Wang and Jason Eisner</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
+                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL06.pdf" aria-hidden="true"></i>
                         </td>
                     </tr>
                     <tr id="poster" poster-id="1745">
@@ -5026,7 +5026,7 @@ script: |
                         <td>
                             <span class="paper-title">[TACL] Recurrent Neural Networks in Linguistic Theory: Revisiting Pinker and Prince (1988) and the Past Tense Debate.</span>
                             <em>Christo Kirov, Ryan Cotterell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
+                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL03.pdf" aria-hidden="true"></i>
                         </td>
                     </tr>
                 </table>
@@ -5428,7 +5428,7 @@ script: |
                         <td>
                             <span class="paper-title">[TACL] Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification.</span>
                             <em>Xilun Chen, Yu Sun, Ben Athiwaratkun, Claire Cardie, Kilian Weinberger</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
+                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL04.pdf" aria-hidden="true"></i>
                         </td>
                     </tr>
                 </table>
@@ -5610,7 +5610,7 @@ script: |
                         <td>
                             <span class="poster-title">[TACL] Polite Dialogue Generation Without Parallel Data.</span>
                             <em>Niu, Tong  and Bansal, Mohit</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
+                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL05.pdf" aria-hidden="true"></i>
                         </td>
                     </tr>
                     <tr>
