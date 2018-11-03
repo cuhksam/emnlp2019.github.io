@@ -17,6 +17,9 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 <h2>News</h2>
 
+**November 2, 2018**. A PDF version of the conference handbook is also available [online](https://drive.google.com/file/d/1Ya0F3QaMqfACS7sHc9_bcnSfSjhWpumX/view). 
+{: .notice--info}
+
 **October 30, 2018**. Due to limited room space at the venue, attendees will need to spread themselves across FOUR rooms for all conference plenary sessions: **Gold Hall**, **Copper Hall**, **Silver Hall**, and **Hall 100**.
 {: .notice--info}
 
