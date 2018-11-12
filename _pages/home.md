@@ -1,22 +1,27 @@
 ---
-title: "2018 Conference on Empirical Methods in Natural Language Processing"
+title: "2019 Conference on Empirical Methods in Natural Language Processing"
 layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: "/assets/images/pano-tapis-de-fleurs-darkened-resize10.jpg"
-  caption: 'Photo by <a href="https://www.flickr.com/photos/jp2remy/28859979631/">Jean Paul Remy</a> / <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>'
-excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
+  overlay_image: "/assets/images/hongkong-skyline-wide.jpg"
+  caption: 'Photo from <a href="https://pixabay.com/de/hong-kong-china-nacht-stadtbild-1081704/">Pixabay</a>, CC0 Creative Commons</a>'
+excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 ---
 
+<!--
 <div class="text-center">
     <span style="font-size: normal;"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i></span><br/>
     <span style="font-weight: bold; font-size: smaller;">
     Tutorials &amp; Workshops : October 31 &amp; November 1<br/>Main Conference : November 2 &ndash; November 4</span>
 </div>
+--> 
 
 <h2>News</h2>
 
+Coming soon.
+
+<!--
 **November 2, 2018**. A PDF version of the conference handbook is also available [online](https://drive.google.com/file/d/1Ya0F3QaMqfACS7sHc9_bcnSfSjhWpumX/view). 
 {: .notice--info}
 
@@ -31,14 +36,21 @@ excerpt: "October 31&ndash;November 4<br/>Brussels, Belgium"
 
 **October 26, 2018**. The papers/posters/demos in the [conference schedule](/schedule) are now linked to the corresponding PDFs in the ACL anthology.
 {: .notice}
-
+-->
 
 <h2>Welcome!</h2>
 
-SIGDAT, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, invites you to participate in the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP) in Brussels, Belgium. EMNLP 2018 will be held at the [Square Meeting Center](http://square-brussels.com) in Brussels from October 31st through November 4th, 2018.
+SIGDAT, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, invites you to participate in the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP) in Hong Kong. EMNLP 2019 will be held 
+<!--
+at the [Square Meeting Center](http://square-brussels.com) 
+-->
+in Hong Kong from November 3rd through November 7th, 2019.
 
 <h2 id="dates">Important Dates</h2>
 
+Coming soon.
+
+<!--
 <h5>Last updated: June 7, 2018.</h5>
 
 <table style="width: 60%">
@@ -101,6 +113,7 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
     </tbody>
 </table>
 <h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
+-->
 
-<h2>EMNLP 2018 Anti-Harassment Policy</h2>
-EMNLP 2018 adheres to the <a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">ACL Anti-Harassment Policy</a>. Any participant who experiences harassment or hostile behavior may contact any current member of the <a href="https://www.aclweb.org/portal/about">ACL Executive Committee</a> or contact <a href="mailto:acl@aclweb.org">Priscilla Rasmussen</a>, who is usually available at the registration desk of the conference. Please be assured that if you approach us, your concerns will be kept in strict confidence, and we will consult with you on any actions taken.
+<h2>EMNLP 2019 Anti-Harassment Policy</h2>
+EMNLP 2019 adheres to the <a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">ACL Anti-Harassment Policy</a>. Any participant who experiences harassment or hostile behavior may contact any current member of the <a href="https://www.aclweb.org/portal/about">ACL Executive Committee</a> or contact <a href="mailto:acl@aclweb.org">Priscilla Rasmussen</a>, who is usually available at the registration desk of the conference. Please be assured that if you approach us, your concerns will be kept in strict confidence, and we will consult with you on any actions taken.
