@@ -5,7 +5,7 @@ permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/hongkong-skyline-wide.jpg"
-  caption: 'Photo from <a href="https://pixabay.com/de/hong-kong-china-nacht-stadtbild-1081704/">Pixabay</a>, CC0 Creative Commons</a>'
+  caption: 'Hong Kong skyline, photo from <a href="https://pixabay.com/de/hong-kong-china-nacht-stadtbild-1081704/">Pixabay</a>, CC0 Creative Commons'
 excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 ---
 
