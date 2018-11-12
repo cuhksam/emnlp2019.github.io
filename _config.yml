@@ -9,10 +9,10 @@ minimal_mistakes_skin    : "contrast" # "mint", "aqua", "air", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en"
-title                    : "EMNLP 2019"
+title                    : "EMNLP-IJCNLP 2019"
 title_separator          : "-"
 name                     : "SIGDAT"
-description              : "Official website for the 2019 Conference on Empirical Methods in Natural Language Processing"
+description              : "Official website for the Conference on Empirical Methods in Natural Language Processing & International Joint Conference on Natural Language Processing 2019"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

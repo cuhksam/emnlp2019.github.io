@@ -1,5 +1,5 @@
 ---
-title: "2019 Conference on Empirical Methods in Natural Language Processing"
+title: "Conference on Empirical Methods in Natural Language Processing & International Joint Conference on Natural Language Processing 2019"
 layout: splash
 permalink: /
 header:
@@ -40,11 +40,7 @@ Coming soon.
 
 <h2>Welcome!</h2>
 
-SIGDAT, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, invites you to participate in the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP) in Hong Kong. EMNLP 2019 will be held 
-<!--
-at the [Square Meeting Center](http://square-brussels.com) 
--->
-in Hong Kong from November 3rd through November 7th, 2019.
+SIGDAT, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the AFNLP, the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
 
 <h2 id="dates">Important Dates</h2>
 
@@ -115,5 +111,5 @@ Coming soon.
 <h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
 -->
 
-<h2>EMNLP 2019 Anti-Harassment Policy</h2>
-EMNLP 2019 adheres to the <a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">ACL Anti-Harassment Policy</a>. Any participant who experiences harassment or hostile behavior may contact any current member of the <a href="https://www.aclweb.org/portal/about">ACL Executive Committee</a> or contact <a href="mailto:acl@aclweb.org">Priscilla Rasmussen</a>, who is usually available at the registration desk of the conference. Please be assured that if you approach us, your concerns will be kept in strict confidence, and we will consult with you on any actions taken.
+<h2>EMNLP-IJCNLP 2019 Anti-Harassment Policy</h2>
+EMNLP-IJCNLP 2019 adheres to the <a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">ACL Anti-Harassment Policy</a>. Any participant who experiences harassment or hostile behavior may contact any current member of the <a href="https://www.aclweb.org/portal/about">ACL Executive Committee</a> or contact <a href="mailto:acl@aclweb.org">Priscilla Rasmussen</a>, who is usually available at the registration desk of the conference. Please be assured that if you approach us, your concerns will be kept in strict confidence, and we will consult with you on any actions taken.
