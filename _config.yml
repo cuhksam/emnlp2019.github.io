@@ -253,3 +253,5 @@ defaults:
       share: false
       related: true
       sidebar: false
+
+theme: jekyll-theme-slate
