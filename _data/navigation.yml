@@ -13,8 +13,8 @@ main:
 #  - title: "Participants"
 #    url: "/participants"
 
-#  - title: "Organization"
-#    url: /organization
+  - title: "Organization"
+    url: /organization
 
 #  - title: "Sponsors"
 #    url: /sponsors/list/
