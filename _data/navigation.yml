@@ -1,26 +1,26 @@
 # main links
 main:
 
-  - title: "Schedule"
-    url: /schedule
+#  - title: "Schedule"
+#    url: /schedule
 
-  - title: "Registration"
-    url: /registration
+#  - title: "Registration"
+#   url: /registration
 
-  - title: "Program"
-    url: "/program/keynotes/"
+#  - title: "Program"
+#    url: "/program/keynotes/"
 
-  - title: "Participants"
-    url: "/participants"
+#  - title: "Participants"
+#    url: "/participants"
 
-  - title: "Organization"
-    url: /organization
+#  - title: "Organization"
+#    url: /organization
 
-  - title: "Sponsors"
-    url: /sponsors/list/
+#  - title: "Sponsors"
+#    url: /sponsors/list/
 
-  - title: "Calls"
-    url: /calls/papers
+#  - title: "Calls"
+#    url: /calls/papers
 
 pages:
   - title: Organization
