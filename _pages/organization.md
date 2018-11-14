@@ -38,8 +38,8 @@ Fei Liu, University of Central Florida, USA<br/>
 Pontus Stenetorp, University College London, UK
 	
 <h3>Demonstration Chairs</h3>
-Sebastian Pad&oacute;, University of Stuttgart<br/>
-Ruihong Huang, Texas A&M University
+Sebastian Pad&oacute;, University of Stuttgart, Germany<br/>
+Ruihong Huang, Texas A&M University, USA
 
 <h3>Publicity Chair</h3>
 Wei Xu, Ohio State University, USA
