@@ -20,6 +20,8 @@ Xiaojun Wan, Peking University, China
 TBA 
 
 <h3>Local Organizing Committee</h3>
+Kam-Fai Wong, Chinese University of Hong Kong, China<br/>
+Samuel Tam, Chinese University of Hong Kong, China<br/>
 TBA
 
 <h3>Workshop Chairs</h3>
