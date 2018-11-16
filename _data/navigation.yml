@@ -1,3 +1,5 @@
+# NOTICE: Some links commented out that should be commented in once available.
+
 # main links
 main:
 
@@ -22,29 +24,29 @@ main:
 #  - title: "Calls"
 #    url: /calls/papers
 
-pages:
-  - title: Organization
-    children:
-      - title: "Organizing Committee"
-      - url: /pages/organization.md
+# pages:
+#   - title: Organization
+#     children:
+#       - title: "Organizing Committee"
+#       - url: /pages/organization.md
 
-calls:
-  - title: Call for
-    children:
-      - title: "Long & Short Papers"
-        url: /calls/papers/
-      - title: "System Demonstrations"
-        url: /calls/demos/
+# calls:
+#   - title: Call for
+#     children:
+#       - title: "Long & Short Papers"
+#         url: /calls/papers/
+#       - title: "System Demonstrations"
+#         url: /calls/demos/
 
-program:
-  - title: Program Details
-    children:
-      - title: "Keynote Speakers"
-        url: /program/keynotes/
-      - title: "Tutorials"
-        url: /program/tutorials/
-      - title: "Workshops"
-        url: /program/workshops/
+# program:
+#   - title: Program Details
+#     children:
+#       - title: "Keynote Speakers"
+#         url: /program/keynotes/
+#       - title: "Tutorials"
+#         url: /program/tutorials/
+#       - title: "Workshops"
+#         url: /program/workshops/
 
 # participants:
 #   - title: "Information for Participants"
@@ -54,10 +56,10 @@ program:
 #       - title: "Social Event"
 #         url: /participants/social/
 
-sponsors:
-  - title: Sponsorship
-    children:
-      - title: "List of Sponsors"
-        url: /sponsors/list/
-      - title: "Tiers &amp; Pricing"
-        url: /sponsors/benefits/
+# sponsors:
+#   - title: Sponsorship
+#     children:
+#       - title: "List of Sponsors"
+#         url: /sponsors/list/
+#       - title: "Tiers &amp; Pricing"
+#         url: /sponsors/benefits/

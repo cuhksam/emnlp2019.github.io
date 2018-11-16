@@ -5,6 +5,27 @@ This is the code for the official website for the Conference on Empirical Method
 The code is based on the code of the EMNLP 2018 developed by Nitin Madnani. It has been adapted and extended by Kevin Duh and Henning Wachsmuth for EMNLP-IJCNLP 2019.
 
 
+## Files that require updates for each conference
+
+./_pages/xxx.md
+The md files contain the main contents of the different web pages of the website.
+
+./downloads/...
+Contains files that can be downloaded from the website.
+
+./assets/css/main.css
+CSS settings that override the underlying website basis (see below).
+
+./_data/navigation.xml
+Stores the page links that will also create the menu of the website.
+
+_config.yml
+Meta information about the website that should be once set properly for a new conference. Details are given in the file.
+
+
+
+
+
 ## Website basis
 
 The website is currently using the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/).
