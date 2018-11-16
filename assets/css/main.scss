@@ -6,7 +6,8 @@
 
 // override the general link colors
 $link-color: cornflowerblue;
-$primary-color: cornflowerblue;
+// $primary-color: cornflowerblue;
+$navicon-link-color-hover: cornflowerblue;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -21,18 +22,6 @@ $primary-color: cornflowerblue;
   background-color: cornflowerblue;
 }
 
-// overriding the toggle menu color
-.greedy-nav__toggle .visually-hidden .navicon div {
-  background-color: cornflowerblue;
-}
-// overriding the toggle menu color
-.greedy-nav__toggle .visually-hidden .navicon span {
-  background-color: cornflowerblue;
-}
-// overriding the toggle menu color
-.greedy-nav__toggle .visually-hidden .navicon button {
-  background-color: cornflowerblue;
-}
 
 
 
