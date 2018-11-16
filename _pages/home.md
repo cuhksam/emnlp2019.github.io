@@ -19,24 +19,9 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 
 <h2>News</h2>
 
-Coming soon.
+**November 16, 2018**. The website has been launched.
 
-<!--
-**November 2, 2018**. A PDF version of the conference handbook is also available [online](https://drive.google.com/file/d/1Ya0F3QaMqfACS7sHc9_bcnSfSjhWpumX/view). 
-{: .notice--info}
 
-**October 30, 2018**. Due to limited room space at the venue, attendees will need to spread themselves across FOUR rooms for all conference plenary sessions: **Gold Hall**, **Copper Hall**, **Silver Hall**, and **Hall 100**.
-{: .notice--info}
-
-**October 30, 2018**. One of the baggage handling companies at Brussels airport is on strike today. As far as we know, only airlines mentioned on [this page](https://www.brusselsairport.be/en/passengers/work-stoppage-at-baggage-handler-aviapartner) are affected but please check with your airport and airline to confirm.
-{: .notice--info}
-
-**October 27, 2018**. The conference app is now live! If you already have the Guidebook app on your device, click on "Find Guides" and search for "EMNLP 2018" or scan the [QR code](/participants/#conference-app). Otherwise, click <a href="https://guidebook.com/g/emnlp2018/" target="_blank">here</a>.
-{: .notice--info}
-
-**October 26, 2018**. The papers/posters/demos in the [conference schedule](/schedule) are now linked to the corresponding PDFs in the ACL anthology.
-{: .notice}
--->
 
 <h2>Welcome!</h2>
 
@@ -44,10 +29,9 @@ SIGDAT, the Association for Computational Linguistics (ACL) special interest gro
 
 <h2 id="dates">Important Dates</h2>
 
-Coming soon.
+TBA
 
-<!--
-<h5>Last updated: June 7, 2018.</h5>
+<!-- From 2018 --
 
 <table style="width: 60%">
     <tbody>
