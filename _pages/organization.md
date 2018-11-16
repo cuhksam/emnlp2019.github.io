@@ -65,7 +65,7 @@ TBA
 TBA
 
 <h3>Website &amp; Conference App Chair</h3>
-Kevin Duh, John Hopkins University, USA.<br/>
+Kevin Duh, John Hopkins University, USA<br/>
 Henning Wachsmuth, Paderborn University, Germany
 
 <h3>Local Sponsorship Chair</h3>
