@@ -9,7 +9,11 @@
 
 // overriding the color of the masthead link colors
 .masthead__menu-item a {
-    color: red;
+    color: cornflowerblue; <!-- was "red" in 2018 -->
+}
+
+.greedy-nav__toggle div {
+    color: cornflowerblue; 
 }
 
 // overriding the color of the splash image caption
