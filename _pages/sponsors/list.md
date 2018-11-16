@@ -1,7 +1,18 @@
+<!-- 
+NOTICE: 
+Content below still from 2018. 
+Once updated, comment in the permalink to make the page being created.
+Comment in the page in navigation.xml to make it appear in the menu.
+-->
+
 ---
 title: "List of Sponsors"
 layout: single
+
+<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
 permalink: /sponsors/list/
+-->
+
 diamond:
   - url: https://www.techatbloomberg.com/nlp/
     image_path: /assets/images/logos/bloomberg-logo.png

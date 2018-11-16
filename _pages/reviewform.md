@@ -1,17 +1,26 @@
-<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
+<!-- 
+NOTICE: 
+Content below still from 2018. 
+Once updated, comment in the permalink to make the page being created.
+Comment in the page in navigation.xml to make it appear in the menu.
+-->
 
 ---
 title: EMNLP 2018 Review Form Commentary
 layout: single
 excerpt: "EMNLP 2018 Review Form Commentary."
+
+<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
 permalink: /reviewform/
+-->
+
 sidebar: false
 toc: true
 toc_label: "On This Page"
 toc_icon: "gear"
 ---
 
--->
+
 
 ## Introduction
 This year, EMNLP is using a new review form, which we hope will prompt reviewers to give useful and constructive feedback to authors, as well as help the area chairs and program chairs make informed decisions about which papers to accept.

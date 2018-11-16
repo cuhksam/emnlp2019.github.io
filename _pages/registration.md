@@ -1,18 +1,21 @@
-<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
+<!-- 
+NOTICE: 
+Content below still from 2018. 
+Once updated, comment in the permalink to make the page being created.
+Comment in the page in navigation.xml to make it appear in the menu.
+-->
 
 ---
 title: Registration
 layout: single
 excerpt: "EMNLP 2018 Conference Registration."
+
+<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
 permalink: /registration/
-sidebar: false
-
----
-
 -->
 
-
-
+sidebar: false
+---
 {% include base_path %}
 
 <!-- {% include toc icon="gears" %} -->
