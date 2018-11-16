@@ -4,10 +4,9 @@
 
 @charset "utf-8";
 
-// override the general link colors
+// override the general colors
+$primary-color: cornflowerblue;
 $link-color: cornflowerblue;
-// $primary-color: cornflowerblue;
-$navicon-link-color-hover: cornflowerblue;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
