@@ -6,6 +6,7 @@
 
 // override the general link colors
 $link-color: cornflowerblue;
+$primary-color: cornflowerblue;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
