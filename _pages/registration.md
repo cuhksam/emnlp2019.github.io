@@ -1,3 +1,5 @@
+<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
+
 ---
 title: Registration
 layout: single
@@ -6,6 +8,11 @@ permalink: /registration/
 sidebar: false
 
 ---
+
+-->
+
+
+
 {% include base_path %}
 
 <!-- {% include toc icon="gears" %} -->
@@ -97,3 +104,5 @@ The EMNLP 2018 conference registration fees are shown below and are the same as 
 - Cancellations received within three weeks prior to the conference and all no-shows will not receive reimbursements but will receive the current full year ACL membership (if paid as part of the registration).
 
 - Cancellations due to governmental travel restrictions or failure to obtain a visa or serious illness that prevents travel to attend the Conference will receive a full refund regardless of when notification is received by the ACL Office.
+
+-->

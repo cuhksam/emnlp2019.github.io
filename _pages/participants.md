@@ -1,6 +1,4 @@
-TBA 
-
-<!--
+<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
 
 ---
 title: Information for Participants
@@ -44,6 +42,11 @@ floorplan:
     alt: "Square Floorplans"
     title: "Square Floorplans"
 ---
+
+-->
+
+
+
 {% include base_path %}
 
 {% include toc icon="gears" %}
@@ -187,6 +190,4 @@ Since visa applications can take almost 2-4 months to be approved, we advise tha
 * Your work address
 * The name(s) of any accepted papers
 * The email address of the embassy that will handle your request
-
--->
 
