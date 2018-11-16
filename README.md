@@ -7,19 +7,19 @@ The code is based on the code of the EMNLP 2018 developed by Nitin Madnani. It h
 
 ## Files that require updates for each conference
 
-./_pages/xxx.md
+./_pages/xxx.md <br/>
 The md files contain the main contents of the different web pages of the website.
 
-./downloads/...
+./downloads/ <br/>
 Contains files that can be downloaded from the website.
 
-./assets/css/main.css
+./assets/css/main.css <br/>
 CSS settings that override the underlying website basis (see below).
 
-./_data/navigation.xml
+./_data/navigation.xml <br/>
 Stores the page links that will also create the menu of the website.
 
-_config.yml
+_config.yml <br/>
 Meta information about the website that should be once set properly for a new conference. Details are given in the file.
 
 
@@ -46,10 +46,10 @@ The following settings connect the the main domain booked for the conference (he
 
 On the domain side, the following DNS settings needed to be set up. All four IPs belong to Github, the last row connects the www subdomain to the main domain:
 	
-   A	  @	    185.199.108.153	
-   A	  @	    185.199.109.153		
-   A	  @	    185.199.110.153		
-   A	  @	    185.199.111.153		
+   A	  @	    185.199.108.153 <br/>	
+   A	  @	    185.199.109.153 <br/>		
+   A	  @	    185.199.110.153	<br/>	
+   A	  @	    185.199.111.153 <br/>		
    CNAME  www	emnlp-ijcnlp2019.org
 
 In the Github page settings, the "custom domain" needs to be set to the main domain. This will create a CNAME file in the top folder of the Github repository.
@@ -61,7 +61,7 @@ That's it. Notice that changes may take some minutes until they get effective on
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Association for Computational Linguistics.
+Copyright (c) 2018 Association for Computational Linguistics.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
