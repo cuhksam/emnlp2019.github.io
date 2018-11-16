@@ -4,6 +4,7 @@
 
 @charset "utf-8";
 
+// override the general link colors
 $link-color: cornflowerblue;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -14,7 +15,21 @@ $link-color: cornflowerblue;
     color: cornflowerblue; 
 }
 
+// overriding the masthead link underline colors
 .greedy-nav .visible-links a:before {
+  background-color: cornflowerblue;
+}
+
+// overriding the toggle menu color
+.greedy-nav__toggle .visually-hidden .navicon div {
+  background-color: cornflowerblue;
+}
+// overriding the toggle menu color
+.greedy-nav__toggle .visually-hidden .navicon span {
+  background-color: cornflowerblue;
+}
+// overriding the toggle menu color
+.greedy-nav__toggle .visually-hidden .navicon button {
   background-color: cornflowerblue;
 }
 
