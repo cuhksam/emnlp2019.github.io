@@ -31,11 +31,13 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 
 <table style="width: 60%">
     <tbody>
+<!--
         <tr>
             <td><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
             <td>Sunday</td>
             <td>April 21, 2019</td>
         </tr>
+-->
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
