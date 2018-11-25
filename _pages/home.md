@@ -34,7 +34,7 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
         <tr>
             <td><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
             <td>Sunday</td>
-            <td>April 22, 2018</td>
+            <td>April 21, 2019</td>
         </tr>
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
@@ -93,9 +93,7 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
     </tbody>
 </table>
 
-<!--
 <h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
--->
 
 <h2>EMNLP-IJCNLP 2019 Anti-Harassment Policy</h2>
 EMNLP-IJCNLP 2019 adheres to the <a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">ACL Anti-Harassment Policy</a>. Any participant who experiences harassment or hostile behavior may contact any current member of the <a href="https://www.aclweb.org/portal/about">ACL Executive Committee</a> or contact <a href="mailto:acl@aclweb.org">Priscilla Rasmussen</a>, who is usually available at the registration desk of the conference. Please be assured that if you approach us, your concerns will be kept in strict confidence, and we will consult with you on any actions taken.
