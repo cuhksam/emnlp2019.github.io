@@ -25,13 +25,9 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 
 <h2>Welcome!</h2>
 
-SIGDAT, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the AFNLP, the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
+<a href="http://sigdat.org" target="_blank">SIGDAT</a>, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the AFNLP, the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
 
 <h2 id="dates">Important Dates</h2>
-
-TBA
-
-<!-- From 2018 --
 
 <table style="width: 60%">
     <tbody>
@@ -43,33 +39,36 @@ TBA
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
-            <td>May 22, 2018</td>
-        </tr>
+            <td>May 21, 2019</td>
+        </tr>      
+<!--
         <tr>
             <td style="width: 40%;">Submissions due (<i>demos</i>)</td>
             <td style="width: 30%;">Friday</td>
             <td>June 1, 2018</td>
         </tr>
+--> 
         <tr>
             <td>Author response period starts</td>
-            <td>Monday</td>
-            <td>July 9, 2018</td>
+            <td>Tuesday</td>
+            <td>July 9, 2019</td>
         </tr>
         <tr>
             <td>Author responses due</td>
-            <td>Friday</td>
-            <td>July 13, 2018</td>
+            <td>Monday</td>
+            <td>July 15, 2019</td>
         </tr>
         <tr>
             <td>Notification of acceptance</td>
-            <td>Friday</td>
-            <td>August 10, 2018</td>
+            <td>Monday</td>
+            <td>August 12, 2019</td>
         </tr>
         <tr>
-          <td>Final versions of papers due</td>
-          <td>Monday</td>
-          <td>August 27, 2018</td>
+          <td>Camera-ready papers due</td>
+          <td>Friday</td>
+          <td>August 30, 2019</td>
         </tr>
+<!--
         <tr>
           <td>Travel scholarships, student volunteer, and childcare grant applications due</td>
           <td style="width: 30%;">Monday</td>
@@ -80,18 +79,21 @@ TBA
             <td style="width: 30%;">Monday</td>
             <td>September 24, 2018</td>
         </tr>
+-->
         <tr>
             <td style="width: 40%;">Workshops &amp; tutorials</td>
-            <td style="width: 30%;">Wednesday &ndash; Thursday</td>
-            <td>October 31 &ndash; November 1, 2018</td>
+            <td style="width: 30%;">Sunday &ndash; Monday</td>
+            <td>November 3&ndash;4, 2019</td>
         </tr>
         <tr>
             <td>Main conference</td>
-            <td>Friday &ndash; Sunday</td>
-            <td>November 2 &ndash; November 4, 2018</td>
+            <td>Tuesday &ndash; Thursday</td>
+            <td>November 5&ndash;7, 2019</td>
         </tr>        
     </tbody>
 </table>
+
+<!--
 <h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
 -->
 

@@ -30,7 +30,7 @@ Naoaki Okazaki, Tokyo Institute of Technology, Japan
 
 <h3>Tutorial Chairs</h3>
 Marine Carpuat, University of Maryland, USA<br/>
-Tim Baldwin, University of Melbourne, Australia
+Timothy Baldwin, University of Melbourne, Australia
 
 <h3>General Publication Chair</h3>
 Micha Elsner, The Ohio State University, USA
