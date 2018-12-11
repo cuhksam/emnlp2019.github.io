@@ -25,7 +25,7 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 
 <h2>Welcome!</h2>
 
-<a href="http://sigdat.org" target="_blank">SIGDAT</a>, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the AFNLP, the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
+<a href="http://sigdat.org" target="_blank">SIGDAT</a>, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the <a href="http://www.afnlp.org" target="_blank">AFNLP</a>, the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
 
 <h2 id="dates">Important Dates</h2>
 
