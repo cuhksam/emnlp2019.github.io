@@ -8,7 +8,7 @@ sidebar:
 ---
 {% include base_path %}
 
-Locations and dates for each workshop and event will be added later. Please refer to each individual event's website for more details.
+Locations and dates of all workshops and events will be added later. Please refer to the linked websites for more details on the the workshops and events.
 
 <!-- ## October 31 &amp; November 1 -->
 
@@ -67,7 +67,7 @@ Locations and dates for each workshop and event will be added later. Please refe
 <!-- Insert one-sentence summary maybe -->
 
 ### \[W14\] DiscoMT19
-[DISCOURSE IN MACHINE TRANSLATION 2019](https://www.idiap.ch/workshop/DiscoMT) 
+[Discourse in Machine Translation 2019](https://www.idiap.ch/workshop/DiscoMT) 
 <!-- Insert one-sentence summary maybe -->
 
 ### \[W15\] LANTERN
