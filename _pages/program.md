@@ -8,6 +8,10 @@ sidebar:
 ---
 {% include base_path %}
 
-Workshops and events collocated with EMNLP-IJCNLP 2019 can be found <a href="./workshops/">here</a>.
+## Workshops &amp; Co-located Events
 
-Futher details on the program follow later.
+EMNLP-IJCNLP 2019 will host 18 workshops and co-located events. The list of accepted workshops can be found <a href="./workshops/">here</a>.
+
+## Further details on the program
+
+TBA
