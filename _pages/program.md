@@ -2,7 +2,10 @@
 title: Program
 layout: single
 excerpt: "EMNLP-IJCNLP 2019 Program."
+<!--
 permalink: /program
+-->
+
 sidebar:
     nav: "program"
 ---
