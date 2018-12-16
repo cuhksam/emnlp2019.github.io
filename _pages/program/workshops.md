@@ -8,7 +8,7 @@ sidebar:
 ---
 {% include base_path %}
 
-Locations and dates of all workshops and events will be added later. Please refer to the linked websites for more details on the the workshops and events.
+Locations and dates of all workshops and events will be added later. Please refer to the linked websites for more details on the workshops and events.
 
 <!-- ## October 31 &amp; November 1 -->
 
