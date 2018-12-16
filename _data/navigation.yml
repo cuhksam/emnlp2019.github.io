@@ -10,8 +10,7 @@ main:
 #   url: /registration
 
 #  - title: "Program"
-#    url: "/program/keynotes/"
-     url: "/program/keynotes/"
+     url: "/program"
 
 #  - title: "Participants"
 #    url: "/participants"
