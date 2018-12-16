@@ -1,7 +1,7 @@
 ---
 title: Workshops &amp; Co-located Events
 layout: single
-excerpt: "EMNLP 2018 Workshops."
+excerpt: "EMNLP-IJCNLP 2019 Workshops."
 permalink: /program/workshops/
 sidebar:
     nav: "program"
