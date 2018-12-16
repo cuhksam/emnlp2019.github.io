@@ -19,7 +19,9 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 
 <h2>News</h2>
 
-**November 16, 2018**. The website has been launched.
+**December 16, 2018**. The list of accepted <a href="./program/workshops/">workshops</a has been added.
+
+**November 25, 2018**. The important dates have been added.
 
 
 
