@@ -9,8 +9,8 @@ main:
 #  - title: "Registration"
 #   url: /registration
 
-#  - title: "Program"
-#    url: "/program/keynotes/"
+  - title: "Program"
+    url: "/program/"
 
 #  - title: "Participants"
 #    url: "/participants"
@@ -38,15 +38,15 @@ main:
 #       - title: "System Demonstrations"
 #         url: /calls/demos/
 
- program:
-   - title: Program Details
-     children:
-       - title: "Workshops"
-         url: /program/workshops/
+# program:
+#   - title: Program Details
+#     children:
 #       - title: "Keynote Speakers"
 #         url: /program/keynotes/
 #       - title: "Tutorials"
 #         url: /program/tutorials/
+#       - title: "Workshops"
+#         url: /program/workshops/
 
 # participants:
 #   - title: "Information for Participants"
