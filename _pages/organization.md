@@ -1,7 +1,7 @@
 ---
 title: Organizing Committee
 layout: single
-excerpt: "EMNLP 2019 organizing committee."
+excerpt: "EMNLP-IJCNLP 2019 organizing committee."
 permalink: /organization
 sidebar: false
 ---
