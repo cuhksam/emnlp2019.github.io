@@ -1,72 +1,89 @@
-<!-- 
-NOTICE: 
-Content below still from 2018. 
-Once updated, comment in the permalink to make the page being created.
-Comment in the page in navigation.xml to make it appear in the menu.
--->
-
 ---
 title: Workshops &amp; Co-located Events
 layout: single
 excerpt: "EMNLP 2018 Workshops."
 
-<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
 permalink: /program/workshops/
--->
 
 sidebar:
     nav: "program"
 ---
 {% include base_path %}
 
-Locations for each workshop will be added soon. Please refer to each individual event's website for more details.
+Locations and dates for each workshop will be added later. Please refer to each individual event's website for more details.
 
-## October 31 &amp; November 1
+<!-- ## October 31 &amp; November 1 -->
 
-### \[W1\] WMT18
-[The Third Conference on Machine Translation](http://www.statmt.org/wmt18/) conference builds on a series of annual workshops and conferences on statistical machine translation, going back to 2006.
+### \[W1\] W-NUT 2019
+[5th Workshop on Noisy User-generated Text](http://noisy-text.github.io/) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W2\] CoNLL 
-[The Conference on Computational Natural Language Learning](http://www.conll.org) is a top-tier conference, yearly organized by SIGNLL (ACL's Special Interest Group on Natural Language Learning).  
+### \[W2\] WNGT
+[The 3rd Workshop on Neural Generation and Translation](https://sites.google.com/view/wngt18/home) 
+<!-- Insert one-sentence summary maybe -->
 
-## October 31
+### \[W3\] CoNLL 2019 
+[The Conference on Computational Natural Language Learning](http://www.conll.org) 
+<!-- is a top-tier conference, yearly organized by SIGNLL (ACL's Special Interest Group on Natural Language Learning).   -->
 
-### \[W3\] LOUHI
-[The Ninth International Workshop on Health Text Mining and Information Analysis](https://louhi2018.fbk.eu) provides an interdisciplinary forum for researchers interested in automated processing of health documents.
+<!-- ## October 31 -->
 
-### \[W4\] ALW2
-The last few years have seen a surge in abusive online behavior, with governments, social media platforms, and individuals struggling to cope with the consequences and to produce effective methods to combat it. The [Second Workshop on Abusive Language Online](https://sites.google.com/view/alw2018) bring researchers of various disciplines together to discuss approaches to abusive language. 
+### \[W4\] WAT2019
+[The 6th Workshop on Asian Translation](http://lotus.kuee.kyoto-u.ac.jp/WAT/) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W5\] SCAI
-The [Search-Oriented Conversational AI](http://scai.info) workshop aims to bring together AI/Deep Learning specialists on one hand and search/IR specialists on the other hand to lay the ground for search-oriented conversational AI and establish future directions and collaborations.
+### \[W5\] NLP4IF
+[Natural Language Processing for Internet Freedom ](http://netsci.montclair.edu/nlp4if/) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W6\] SIGMORPHON 
-The [Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology](https://sigmorphon.github.io) organized by the ACL Special Interest Group on Computational Morphology and Phonology provides a forum for exchanging news of recent research developments and other matters of interest in computational morphology and phonology.
+### \[W6\] DeepLo 2019
+[Deep Learning for Low-Resource Natural Language Processing](https://sites.google.com/view/deeplo19/) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W7\] WASSA
-The aim of the [9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis](https://wt-public.emm4u.eu/wassa2018/) is to continue the line of the previous editions, bringing together researchers in Computational Linguistics working on Subjectivity and Sentiment Analysis and researchers working on interdisciplinary aspects of affect computation from text.
+### \[W7\] FEVER
+[The second workshop on Fact Extraction and VERification](http://fever.ai) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W8\] SMM4H
-The [3rd Workshop on Social Media Mining for Health Applications Workshop & Shared Task](https://healthlanguageprocessing.org/smm4h/) seeks to attract researchers interested in automatic methods for the collection, extraction, representation, analysis, and validation of social media data for health informatics. It serves as a unique forum to discuss novel approaches to text and data mining methods that are applicable to social media data and may prove invaluable for health monitoring and surveillance.
+### \[W8\] TextGraphs-13
+[Graph-based Methods for Natural Language Processing](https://sites.google.com/view/textgraphs2019) 
+<!-- Insert one-sentence summary maybe -->
 
-## November 1
+### \[W9\] LOUHI 2019
+[The Tenth International Workshop on Health Text Mining and Information Analysis](http://louhi2019.fbk.eu/) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W9\] BioASQ
-The aim of [Large-scale Biomedical Semantic Indexing and Question Answering](http://bioasq.org/workshop) workshop is to push the research frontier towards systems that use the diverse and voluminous information available online to respond directly to the information needs of biomedical scientists.
+### \[W10\] COIN
+[COmmonsense INference in NLP](http://www.coli.uni-saarland.de/~mroth/COIN/) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W10\] BlackboxNLP
-The goal of the [Analyzing and Interpreting Neural Networks for NLP](https://blackboxnlp.github.io) workshop is to bring together people who are attempting to peek inside the neural network black box, taking inspiration from machine learning, psychology, linguistics and neuroscience. 
+### \[W11\] 
+[Workshop on New Frontiers in Summarization](https://summarization2019.github.io/) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W11\] FEVER
-The [First Workshop on Fact Extraction and VERification](http://fever.ai) brings together researchers working on various tasks related to fact extraction and verification and also hosts the FEVER Challenge, an information verification shared task.
+### \[W12\] ECONLP 2019
+[2nd Workshop on Economics and Natural Language Processing](https://julielab.de/econlp/2019) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W12\] ARGMINING
-The goal of the [5th International Workshop on Argument Mining](https://www.research.ibm.com/haifa/Workshops/argmining17/) is to provide a continuing forum to the last four years’ Argumentation Mining workshops at ACL and NAACL, the first research forum devoted to argumentation mining in all domains of discourse.
+### \[W13\] AnnoNLP
+[Aggregating and analysing crowdsourced annotations for NLP](http://dali.eecs.qmul.ac.uk/annonlp) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W13\] W-NUT
-The [4th Workshop on Noisy User-generated Text](https://noisy-text.github.io/2018/index.html) focuses on Natural Language Processing applied to noisy user-generated text, such as that found in social media, online reviews, crowdsourced data, web forums, clinical records and language learner essays. 
+### \[W14\] DiscoMT19
+[DISCOURSE IN MACHINE TRANSLATION 2019](https://www.idiap.ch/workshop/DiscoMT) 
+<!-- Insert one-sentence summary maybe -->
 
-### \[W14\] UDW-18
-The [Second Workshop on Universal Dependencies](http://universaldependencies.org/udw18/) invites papers on all topics relevant to universal dependencies. Priority will be given to papers that adopt a cross-lingual perspective.
+### \[W15\] LANTERN
+[Beyond Vision and Language: Integrating Knowledge from the Real World](https://www.lantern.uni-saarland.de/) 
+<!-- Insert one-sentence summary maybe -->
 
+### \[W16\] MRQA
+[The 2nd Workshop on Machine Reading for Question Answering](https://mrqa.github.io/) 
+<!-- Insert one-sentence summary maybe -->
 
+### \[W17\] MSR 2019
+[Second Workshop on Multilingual Surface Realization](http://taln.upf.edu/pages/msr2019-ws/) 
+<!-- Insert one-sentence summary maybe -->
+
+### \[W18\] BioNLP-OST 2019
+[International Workshop on BioNLP Open Shared Tasks 2019](http://2019.bionlp-ost.org) 
+<!-- Insert one-sentence summary maybe -->

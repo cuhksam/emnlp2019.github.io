@@ -11,6 +11,7 @@ main:
 
 #  - title: "Program"
 #    url: "/program/keynotes/"
+     url: "/program/keynotes/"
 
 #  - title: "Participants"
 #    url: "/participants"
@@ -39,14 +40,14 @@ main:
 #         url: /calls/demos/
 
 # program:
-#   - title: Program Details
-#     children:
+   - title: Program Details
+     children:
 #       - title: "Keynote Speakers"
 #         url: /program/keynotes/
 #       - title: "Tutorials"
 #         url: /program/tutorials/
-#       - title: "Workshops"
-#         url: /program/workshops/
+       - title: "Workshops"
+         url: /program/workshops/
 
 # participants:
 #   - title: "Information for Participants"
