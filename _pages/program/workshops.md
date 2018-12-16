@@ -2,15 +2,13 @@
 title: Workshops &amp; Co-located Events
 layout: single
 excerpt: "EMNLP 2018 Workshops."
-
 permalink: /program/workshops/
-
 sidebar:
     nav: "program"
 ---
 {% include base_path %}
 
-Locations and dates for each workshop will be added later. Please refer to each individual event's website for more details.
+Locations and dates for each workshop and event will be added later. Please refer to each individual event's website for more details.
 
 <!-- ## October 31 &amp; November 1 -->
 

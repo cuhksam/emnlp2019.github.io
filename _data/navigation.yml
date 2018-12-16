@@ -10,7 +10,7 @@ main:
 #   url: /registration
 
   - title: "Program"
-     url: "/program"
+     url: "/program/workshops"
 
 #  - title: "Participants"
 #    url: "/participants"
@@ -23,6 +23,8 @@ main:
 
 #  - title: "Calls"
 #    url: /calls/papers
+
+
 
 # pages:
 #   - title: Organization
