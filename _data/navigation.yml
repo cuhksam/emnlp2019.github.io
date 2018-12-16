@@ -9,7 +9,7 @@ main:
 #  - title: "Registration"
 #   url: /registration
 
-#  - title: "Program"
+  - title: "Program"
      url: "/program"
 
 #  - title: "Participants"
