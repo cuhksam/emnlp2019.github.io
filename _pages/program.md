@@ -10,7 +10,9 @@ sidebar:
 
 ## Workshops &amp; Co-located Events
 
-EMNLP-IJCNLP 2019 will host 18 workshops and co-located events. The list of accepted workshops can be found <a href="./workshops/">here</a>.
+EMNLP-IJCNLP 2019 will host 18 workshops and co-located events, taking place November 3&ndash;4. 
+
+The list of accepted workshops can be found <a href="./workshops/">here</a>.
 
 ## Further details on the program
 
