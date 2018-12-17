@@ -8,10 +8,13 @@ sidebar:
 ---
 {% include base_path %}
 
-EMNLP-IJCNLP 2019 will host the following 18 workshops and events. Locations and dates will be added later. For more details on the workshops and events, please refer to their websites.
+EMNLP-IJCNLP 2019 will host the following 18 workshops and events, taking place on November 3&ndash;4. Exact dates and locations and dates will be added later. 
 
-<!-- ## October 31 -->
-<!-- ## October 31 &amp; November 1 -->
+For more details on the workshops and events, please refer to their websites.
+
+<!-- ## November 3 -->
+<!-- ## November 3&ndash;4 -->
+<!-- ## November 4 -->
 
 ### \[W1\] W-NUT 2019
 [The 5th Workshop on Noisy User-generated Text](http://noisy-text.github.io/) 
