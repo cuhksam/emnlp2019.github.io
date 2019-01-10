@@ -78,7 +78,7 @@ aims to to bring together researchers from different disciplines but united by t
 
 ### \[W16\] MRQA
 [The 2nd Workshop on Machine Reading for Question Answering](https://mrqa.github.io/) 
-focuses on understanding and improving methods for question answering (QA) from the text. This year, we will host a shared task on QA with an emphasis on generalization.
+focuses on understanding and improving methods for question answering (QA) from the text. This year, the workshop will host a shared task on QA with an emphasis on generalization.
 
 ### \[W17\] MSR 2019
 [The second Workshop on Multilingual Surface Realization](http://taln.upf.edu/pages/msr2019-ws/) 
