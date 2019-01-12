@@ -58,8 +58,8 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-# twitter:
-#   username             : emnlp2019
+ twitter:
+   username             : emnlp2019
 # facebook:
 #   username             : emnlp19
   app_id                 :
