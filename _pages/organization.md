@@ -20,9 +20,13 @@ Xiaojun Wan, Peking University, China
 TBA 
 
 <h3>Local Organizing Committee</h3>
-Kam-Fai Wong, Chinese University of Hong Kong, China<br/>
+Kam-Fai Wong, Chinese University of Hong Kong, China (chair)<br/>
 Samuel Tam, Chinese University of Hong Kong, China<br/>
-TBA
+Emmanuele Chersoni, Hong Kong Polytechnic University, China<br/>
+Churen Huang, Hong Kong Polytechnic University, China<br/>
+Wenjie LI, Department of Computing, Hong Kong Polytechnic University, China<br/>
+Derek F. Wong, University of Macau, China<br/>
+Ruifeng Xu, Harbin Institute of Technology Shenzhen Graduate School, China
 
 <h3>Workshop Chairs</h3>
 Vera Demberg, Saarland University, Germany<br/>
