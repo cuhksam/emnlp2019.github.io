@@ -24,7 +24,7 @@ Kam-Fai Wong, Chinese University of Hong Kong, China (chair)<br/>
 Samuel Tam, Chinese University of Hong Kong, China<br/>
 Emmanuele Chersoni, Hong Kong Polytechnic University, China<br/>
 Churen Huang, Hong Kong Polytechnic University, China<br/>
-Wenjie LI, Department of Computing, Hong Kong Polytechnic University, China<br/>
+Wenjie Li, Department of Computing, Hong Kong Polytechnic University, China<br/>
 Derek F. Wong, University of Macau, China<br/>
 Ruifeng Xu, Harbin Institute of Technology Shenzhen Graduate School, China
 
