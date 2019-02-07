@@ -18,8 +18,8 @@ main:
   - title: "Organization"
     url: /organization
 
-#  - title: "Sponsors"
-#    url: /sponsors/list/
+  - title: "Sponsors"
+    url: /sponsors/list/
 
 #  - title: "Calls"
 #    url: /calls/papers

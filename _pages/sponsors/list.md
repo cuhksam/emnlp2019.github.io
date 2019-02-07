@@ -1,10 +1,3 @@
-<!-- 
-NOTICE: 
-Content below still from 2018. 
-Once updated, comment in the permalink to make the page being created.
-Comment in the page in navigation.xml to make it appear in the menu.
--->
-
 ---
 title: "List of Sponsors"
 layout: single
@@ -14,10 +7,6 @@ permalink: /sponsors/list/
 -->
 
 diamond:
-  - url: https://www.techatbloomberg.com/nlp/
-    image_path: /assets/images/logos/bloomberg-logo.png
-    alt: "Bloomberg Logo"
-    title: "Bloomberg"
   - url: http://www.google.com
     image_path: /assets/images/logos/google-logo.png
     alt: "Google Logo"
@@ -26,19 +15,48 @@ diamond:
     image_path: /assets/images/logos/facebook-logo.png
     alt: "Facebook Logo"
     title: "Facebook"
-  - url: https://www.salesforce.com
-    image_path: /assets/images/logos/salesforce-logo.png
-    alt: "Salesforce Logo"
-    title: "Salesforce"
-  - url: https://www.apple.com
-    image_path: /assets/images/logos/apple-logo.png
-    alt: "Apple Logo"
-    title: "Apple"
-  - url: https://www.asapp.com
-    image_path: /assets/images/logos/asapp-logo.png
-    alt: "Asapp Logo"
-    title: "Asapp"
+  - url: http://www.google.com
+    image_path: /assets/images/logos/google-logo.png
+    alt: "Google Logo"
+    title: "Google"
+  - url: http://www.discoverhongkong.com
+    image_path: /assets/images/logos/hongkong-tourism-logo.png
+    alt: "Hong Kong Tourism Board Logo"
+    title: "Hong Kong Tourism Board"
+    
 platinum:
+
+gold:
+
+silver:
+  - url: http://www.duolingo.com
+    image_path: /assets/images/logos/duolingo-logo.png
+    alt: "Duolingo Logo"
+    title: "Duolingo"
+  - url: https://www.sap.com
+    image_path: /assets/images/logos/sap-logo.png
+    alt: "SAP Logo"
+    title: "SAP" 
+bronze:
+
+supporter:
+
+diversity:
+  - url: https://www.techatbloomberg.com/nlp/
+    image_path: /assets/images/logos/bloomberg-logo.png
+    alt: "Bloomberg Logo"
+    title: "Bloomberg"
+  - url: http://www.google.com
+    image_path: /assets/images/logos/google-logo.png
+    alt: "Google Logo"
+    title: "Google"
+    
+
+sidebar: 
+    nav: "sponsors"
+    
+ <!-- others from previous years
+ 
   - url: http://www.amazon.com
     image_path: /assets/images/logos/amazon-logo.png
     alt: "Amazon Logo"
@@ -75,7 +93,20 @@ platinum:
     image_path: /assets/images/logos/megagon-labs-logo.png
     alt: "Megagon Labs Logo"
     title: "Megagon Labs"
-gold:
+    
+  - url: https://www.salesforce.com
+    image_path: /assets/images/logos/salesforce-logo.png
+    alt: "Salesforce Logo"
+    title: "Salesforce"
+  - url: https://www.apple.com
+    image_path: /assets/images/logos/apple-logo.png
+    alt: "Apple Logo"
+    title: "Apple"
+  - url: https://www.asapp.com
+    image_path: /assets/images/logos/asapp-logo.png
+    alt: "Asapp Logo"
+    title: "Asapp"
+    
   - url: http://www.ebay.com
     image_path: /assets/images/logos/ebay-logo.png
     alt: "Ebay Logo"
@@ -109,26 +140,17 @@ gold:
     alt: "Sogou Logo"
     title: "Sogou"
   - image_path: /assets/images/logos/blank-logo.png
-silver:
-  - url: http://www.nuance.com/index.htm
-    image_path: /assets/images/logos/nuance-logo.png
-    alt: "Nuance Logo"
-    title: "Nuance"
-  - url: http://www.noahlab.com.hk
-    image_path: /assets/images/logos/huawei-logo.png
-    alt: "Huawei Logo"
-    title: "Huawei Noah's Ark Lab"
-  - url: http://www.duolingo.com
-    image_path: /assets/images/logos/duolingo-logo.png
-    alt: "Duolingo Logo"
-    title: "Duolingo"
-  - url: http://shannon.ai
-    image_path: /assets/images/logos/shannon-ai-logo.png
-    alt: "Shannon AI Logo"
-    title: "Shannon AI"
+  
+  - url: http://textiq.com
+    image_path: /assets/images/logos/textiq-logo.png
+    alt: "TextIQ Logo"
+    title: "TextIQ"
+  - url: https://allenai.org
+    image_path: /assets/images/logos/ai2-logo.png
+    alt: "AI2 Logo"
+    title: "Allen Institute for Artificial Intelligence"
   - image_path: /assets/images/logos/blank-logo.png
-  - image_path: /assets/images/logos/blank-logo.png
-bronze:
+  
   - url: https://www.nextcanada.com
     image_path: /assets/images/logos/next-canada-logo.png
     alt: "Next Canada Logo"
@@ -141,29 +163,36 @@ bronze:
     image_path: /assets/images/logos/brandeis-logo.png
     alt: "Brandeis University Logo"
     title: "Computational Linguistics@Brandeis University"
-supporter:
-  - url: http://textiq.com
-    image_path: /assets/images/logos/textiq-logo.png
-    alt: "TextIQ Logo"
-    title: "TextIQ"
-  - url: https://allenai.org
-    image_path: /assets/images/logos/ai2-logo.png
-    alt: "AI2 Logo"
-    title: "Allen Institute for Artificial Intelligence"
+ 
+  - url: http://www.nuance.com/index.htm
+    image_path: /assets/images/logos/nuance-logo.png
+    alt: "Nuance Logo"
+    title: "Nuance"
+  - url: http://www.noahlab.com.hk
+    image_path: /assets/images/logos/huawei-logo.png
+    alt: "Huawei Logo"
+    title: "Huawei Noah's Ark Lab"
+  - url: http://shannon.ai
+    image_path: /assets/images/logos/shannon-ai-logo.png
+    alt: "Shannon AI Logo"
+    title: "Shannon AI"
   - image_path: /assets/images/logos/blank-logo.png
-sidebar: 
-    nav: "sponsors"
+  - image_path: /assets/images/logos/blank-logo.png
+ -->   
+    
 ---
 {% include base_path %}
 
 {% include toc icon="gears" %}
 
-We gratefully acknowledge support provided by the following for the EMNLP 2018 conference.
+We gratefully acknowledge support provided by the following for the EMNLP-IJCNLP 2019 conference.
+Further sponsors to be announced.
 
-## Diamond Tier
+## Diamond Level
 
 {% include gallery id="diamond" class="fourth" %}
 
+<!--
 ## Platinum Tier
 
 {% include gallery id="platinum" class="fourth" %}
@@ -171,11 +200,16 @@ We gratefully acknowledge support provided by the following for the EMNLP 2018 c
 ## Gold Tier
 
 {% include gallery id="gold" class="fourth" %}
+-->
 
-## Silver Tier
+
+## Silver Level
 
 {% include gallery id="silver" class="fourth" %}
 
+
+
+<!--
 ## Bronze Tier
 
 {% include gallery id="bronze" class="fourth" %}
@@ -187,4 +221,5 @@ We gratefully acknowledge support provided by the following for the EMNLP 2018 c
 <div class="text-center"> 
 <a href="/sponsors/benefits/"><button class="btn btn--large btn--inverse">Sponsorship Tiers &amp; Pricing</button></a>
 </div>
+-->
 <br/>
