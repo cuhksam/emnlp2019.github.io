@@ -28,6 +28,7 @@ silver:
     image_path: /assets/images/logos/sap-logo.jpg
     alt: "SAP Logo"
     title: "SAP" 
+  - image_path: /assets/images/logos/blank-logo.png
 ---
 {% include base_path %}
 
