@@ -2,7 +2,7 @@
 title: "List of Sponsors"
 layout: single
 
-permalink: /sponsors/list/
+permalink: /sponsors/list
 
 diamond:
   - url: http://www.google.com
