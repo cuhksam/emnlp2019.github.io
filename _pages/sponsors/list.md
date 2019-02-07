@@ -25,7 +25,7 @@ silver:
     alt: "Duolingo Logo"
     title: "Duolingo"
   - url: https://www.sap.com
-    image_path: /assets/images/logos/sap-logo.png
+    image_path: /assets/images/logos/sap-logo.jpg
     alt: "SAP Logo"
     title: "SAP" 
 ---
