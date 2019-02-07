@@ -1,8 +1,8 @@
 ---
 title: "List of Sponsors"
 layout: single
-
-permalink: /sponsors/list
+excerpt: "EMNLP-IJCNLP 2019 Sponsors."
+permalink: /sponsors/list/
 
 diamond:
   - url: http://www.google.com
@@ -36,19 +36,6 @@ silver:
     alt: "SAP Logo"
     title: "SAP" 
 bronze:
-
-supporter:
-
-diversity:
-  - url: https://www.techatbloomberg.com/nlp/
-    image_path: /assets/images/logos/bloomberg-logo.png
-    alt: "Bloomberg Logo"
-    title: "Bloomberg"
-  - url: http://www.google.com
-    image_path: /assets/images/logos/google-logo.png
-    alt: "Google Logo"
-    title: "Google"
-    
 
 sidebar: 
     nav: "sponsors"
@@ -206,7 +193,6 @@ Further sponsors to be announced.
 {% include gallery id="silver" class="fourth" %}
 
 
-
 <!--
 ## Bronze Tier
 
@@ -220,4 +206,5 @@ Further sponsors to be announced.
 <a href="/sponsors/benefits/"><button class="btn btn--large btn--inverse">Sponsorship Tiers &amp; Pricing</button></a>
 </div>
 -->
+
 <br/>
