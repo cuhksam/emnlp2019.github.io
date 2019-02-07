@@ -58,7 +58,7 @@ program:
 #       - title: "Social Event"
 #         url: /participants/social/
 
-# sponsors:
+sponsors:
    - title: Sponsorship
      children:
        - title: "List of Sponsors"
