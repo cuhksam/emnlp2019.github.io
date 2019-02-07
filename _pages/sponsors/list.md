@@ -2,9 +2,7 @@
 title: "List of Sponsors"
 layout: single
 
-<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
 permalink: /sponsors/list/
--->
 
 diamond:
   - url: http://www.google.com
