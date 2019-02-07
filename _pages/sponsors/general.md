@@ -36,7 +36,7 @@ silver:
 
 We gratefully acknowledge support provided by the following for the EMNLP-IJCNLP 2019 conference.
 
-See also our <a href="./diversity/">diversity &amp; inclusion sponsors</a>.
+See also our <a href="../diversity/">diversity &amp; inclusion sponsors</a>.
 
 Further sponsors to be announced.
 
