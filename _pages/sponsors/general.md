@@ -1,8 +1,8 @@
 ---
-title: "List of Sponsors"
+title: "General Sponsors"
 layout: single
-excerpt: "EMNLP-IJCNLP 2019 Sponsors."
-permalink: /sponsors/list/
+excerpt: "EMNLP-IJCNLP 2019 General Sponsors."
+permalink: /sponsors/general/
 sidebar: 
     nav: "sponsors"
     
@@ -35,6 +35,9 @@ silver:
 {% include toc icon="gears" %}
 
 We gratefully acknowledge support provided by the following for the EMNLP-IJCNLP 2019 conference.
+
+See also our <a href="./diversity/">diversity &amp; inclusion sponsors</a>.
+
 Further sponsors to be announced.
 
 ## Diamond Level

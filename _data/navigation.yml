@@ -19,7 +19,7 @@ main:
     url: /organization
 
   - title: "Sponsors"
-    url: /sponsors/list/
+    url: /sponsors/general/
 
 #  - title: "Calls"
 #    url: /calls/papers
@@ -61,7 +61,9 @@ program:
 sponsors:
    - title: Sponsorship
      children:
-       - title: "List of Sponsors"
-         url: /sponsors/list/
+       - title: "General Sponsors"
+         url: /sponsors/general/
+       - title: "Diversity &amp; Inclusion Sponsors"
+         url: /sponsors/diversity/
 #       - title: "Tiers &amp; Pricing"
 #         url: /sponsors/benefits/

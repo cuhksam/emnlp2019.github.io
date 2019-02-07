@@ -1,0 +1,46 @@
+---
+title: "List of Sponsors"
+layout: single
+excerpt: "EMNLP-IJCNLP 2019 Diversity &amp; Inclusion Sponsors."
+permalink: /sponsors/diversity/
+sidebar: 
+    nav: "sponsors"
+
+champion:
+    
+
+ally:
+  - url: https://www.techatbloomberg.com/nlp/
+    image_path: /assets/images/logos/bloomberg-logo.png
+    alt: "Bloomberg Logo"
+    title: "Bloomberg"
+  - url: http://www.google.com
+    image_path: /assets/images/logos/google-logo.png
+    alt: "Google Logo"
+    title: "Google"
+    
+
+    
+
+    
+---
+{% include base_path %}
+
+{% include toc icon="gears" %}
+
+
+We gratefully acknowledge support for our new initiative "Diversity &amp; Inclusion" provided by the following sponsors for the EMNLP-IJCNLP 2019 conference. This initiative helps people attend if they have disabilities, supports remote presentations, provided gender and/or family/childcare needs, and similar.
+
+Further sponsors to be announced.
+
+<!--
+## Champion Level
+
+{% include gallery id="champion" class="fourth" %}
+-->
+
+
+## Ally Level
+
+{% include gallery id="ally" class="fourth" %}
+<br/>
