@@ -59,9 +59,9 @@ program:
 #         url: /participants/social/
 
 # sponsors:
-#   - title: Sponsorship
-#     children:
-#       - title: "List of Sponsors"
-#         url: /sponsors/list/
+   - title: Sponsorship
+     children:
+       - title: "List of Sponsors"
+         url: /sponsors/list/
 #       - title: "Tiers &amp; Pricing"
 #         url: /sponsors/benefits/
