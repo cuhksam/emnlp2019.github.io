@@ -27,7 +27,9 @@ ally:
 {% include toc icon="gears" %}
 
 
-We gratefully acknowledge support for the new ACL initiative "Diversity &amp; Inclusion" provided by the following sponsors for EMNLP-IJCNLP 2019. This initiative helps people attend if they have disabilities, supports remote presentations, provided gender and/or family/childcare needs, and similar.
+We gratefully acknowledge support for the new ACL initiative "Diversity &amp; Inclusion" provided by the following sponsors for EMNLP-IJCNLP 2019. 
+
+"Diversity &amp; Inclusion" helps people attend if they have disabilities, supports remote presentations, provided gender and/or family/childcare needs, and similar.
 
 Further sponsors to be announced.
 
