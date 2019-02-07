@@ -3,7 +3,9 @@ title: "List of Sponsors"
 layout: single
 excerpt: "EMNLP-IJCNLP 2019 Sponsors."
 permalink: /sponsors/list/
-
+sidebar: 
+    nav: "sponsors"
+    
 diamond:
   - url: http://www.google.com
     image_path: /assets/images/logos/google-logo.png
@@ -21,11 +23,6 @@ diamond:
     image_path: /assets/images/logos/hongkong-tourism-logo.png
     alt: "Hong Kong Tourism Board Logo"
     title: "Hong Kong Tourism Board"
-    
-platinum:
-
-gold:
-
 silver:
   - url: http://www.duolingo.com
     image_path: /assets/images/logos/duolingo-logo.png
@@ -35,13 +32,13 @@ silver:
     image_path: /assets/images/logos/sap-logo.png
     alt: "SAP Logo"
     title: "SAP" 
-bronze:
 
-sidebar: 
-    nav: "sponsors"
-    
  <!-- others from previous years
  
+platinum:
+gold:    
+bronze:
+
   - url: http://www.amazon.com
     image_path: /assets/images/logos/amazon-logo.png
     alt: "Amazon Logo"
@@ -161,7 +158,6 @@ sidebar:
     image_path: /assets/images/logos/shannon-ai-logo.png
     alt: "Shannon AI Logo"
     title: "Shannon AI"
-  - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
  -->   
     
