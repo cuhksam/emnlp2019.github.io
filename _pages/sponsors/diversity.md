@@ -1,5 +1,5 @@
 ---
-title: "List of Sponsors"
+title: "Diversity &amp; Inclusion Sponsors"
 layout: single
 excerpt: "EMNLP-IJCNLP 2019 Diversity &amp; Inclusion Sponsors."
 permalink: /sponsors/diversity/
@@ -18,10 +18,8 @@ ally:
     image_path: /assets/images/logos/google-logo.png
     alt: "Google Logo"
     title: "Google"
+  - image_path: /assets/images/logos/blank-logo.png
     
-
-    
-
     
 ---
 {% include base_path %}
