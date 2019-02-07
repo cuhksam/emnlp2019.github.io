@@ -12,13 +12,9 @@ diamond:
     alt: "Google Logo"
     title: "Google"
   - url: http://www.facebook.com
-    image_path: /assets/images/logos/facebook-logo.png
+    image_path: /assets/images/logos/facebook-logo.jpg
     alt: "Facebook Logo"
     title: "Facebook"
-  - url: http://www.google.com
-    image_path: /assets/images/logos/google-logo.png
-    alt: "Google Logo"
-    title: "Google"
   - url: http://www.discoverhongkong.com
     image_path: /assets/images/logos/hongkong-tourism-logo.png
     alt: "Hong Kong Tourism Board Logo"
