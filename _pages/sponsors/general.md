@@ -29,7 +29,7 @@ silver:
     alt: "SAP Logo"
     title: "SAP" 
   - url: http://babelscape.com
-    image_path: /assets/images/logos/babelscape-logo.jpg
+    image_path: /assets/images/logos/babelscape-logo.png
     alt: "Babelscape Logo"
     title: "Babelscape" 
 ---
