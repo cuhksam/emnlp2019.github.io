@@ -20,7 +20,7 @@ Xiaojun Wan, Peking University, China
 
 <!-- Notice: One point per area -->
 ## Area Chairs
-<span style="color: light gray">TBA</span>
+<span style="color: lightgray">TBA</span>
 
 ## Local Organizing Committee
 Kam-Fai Wong, Chinese University of Hong Kong, China (chair)<br/>
@@ -57,19 +57,19 @@ Wei Xu, Ohio State University, USA
 Serena Villata, CNRS, France
 
 ## Video Chair
-TBA
+<span style="color: lightgray">TBA</span>
 
 ## Handbook Advisor
 Kai-Wei Chang, University of California at Los Angeles, USA
 
 ## Conference Handbook Proofreader
-TBA
+<span style="color: lightgray">TBA</span>
 
 ## Student Volunteer Coordinator &amp; Student Scholarship Chair
-TBA
+<span style="color: lightgray">TBA</span>
 
 ## Childcare Policy &amp; Grant Coordinator
-TBA
+<span style="color: lightgray">TBA</span>
 
 ## Website &amp; Conference App Chairs
 Kevin Duh, John Hopkins University, USA<br/>
