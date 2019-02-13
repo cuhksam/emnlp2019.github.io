@@ -8,6 +8,8 @@ sidebar:
 ---
 {% include base_path %}
 
+{% include toc icon="gears" %}
+
 EMNLP-IJCNLP 2019 will host the following 18 workshops and events, taking place November 3&ndash;4. 
 
 Exact dates and locations and dates will be added later. For more details on the workshops and events, please refer to their websites.

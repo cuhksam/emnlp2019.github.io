@@ -7,7 +7,6 @@ sidebar: false
 ---
 {% include base_path %}
 
-
 {% include toc icon="gears" %}
 
 ## General Chair
