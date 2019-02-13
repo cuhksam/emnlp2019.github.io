@@ -35,7 +35,6 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
 ## Important Dates
 
 <table>
-    <tbody>
 <!--
         <tr>
             <td><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
@@ -97,7 +96,6 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
             <td>Tuesday &ndash; Thursday</td>
             <td>November 5&ndash;7, 2019</td>
         </tr>        
-    </tbody>
 </table>
 
 <h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
