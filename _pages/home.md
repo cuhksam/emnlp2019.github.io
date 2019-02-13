@@ -4,7 +4,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: "https://www.emnlp-ijcnlp2019.org/assets/images/hongkong-skyline-wide.jpg"
+  overlay_image: "https://emnlp-ijcnlp2019.org/assets/images/hongkong-skyline-wide.jpg"
   caption: 'Photo from <a href="https://pixabay.com/de/hong-kong-china-nacht-stadtbild-1081704/">Pixabay</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 Creative Commons</a>'
 excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 ---
