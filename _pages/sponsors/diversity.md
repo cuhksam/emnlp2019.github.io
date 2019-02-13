@@ -26,13 +26,7 @@ ally:
 
 {% include toc icon="gears" %}
 
-The new ACL initiative "Diversity &amp; Inclusion" is designed to help the community make our conferences more accessible and inclusive. Three main axes are addressed through sponsorship:
-
-<b>Parental inclusion and childcare.</b> ACL wants to become more family-friendly and inclusive of researchers who would have difficulty in attending conferences without additional support.
-
-<b>Disability access.</b> The physical environment of conferences should encourage all attendees. Therefore, the ACL aims to extend special support to participants whose access to integral parts of the conference would be compromised by poor disability access.
-
-<b>Low-income support.</b> Students and researchers at institutions with access to fewer resources are often prevented from attending ACL conferences. ACL would like to offer financial support to help as many of them as possible to attend the conference in person.
+The new ACL initiative "Diversity &amp; Inclusion" is designed to help the community make our conferences more accessible and inclusive. Details on the initative are found below.
 
 We gratefully acknowledge support for the initiative provided by the following sponsors for EMNLP-IJCNLP 2019. 
 
@@ -49,3 +43,14 @@ Further sponsors to be announced.
 
 {% include gallery id="ally" class="fourth" %}
 <br/>
+
+
+## Details on the Initiative
+
+Three main axes are addressed by the the Diversity &amp; Inclusion iniative through sponsorship:
+
+<b>Parental inclusion and childcare.</b> ACL wants to become more family-friendly and inclusive of researchers who would have difficulty in attending conferences without additional support.
+
+<b>Disability access.</b> The physical environment of conferences should encourage all attendees. Therefore, the ACL aims to extend special support to participants whose access to integral parts of the conference would be compromised by poor disability access.
+
+<b>Low-income support.</b> Students and researchers at institutions with access to fewer resources are often prevented from attending ACL conferences. ACL would like to offer financial support to help as many of them as possible to attend the conference in person.
