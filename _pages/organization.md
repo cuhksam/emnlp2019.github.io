@@ -19,8 +19,8 @@ Vincent Ng, University of Texas at Dallas, USA<br/>
 Xiaojun Wan, Peking University, China
 
 <!-- Notice: One point per area -->
-## Area Chairs
-TBA 
+### Area Chairs
+<span style="color: gray">TBA</span>
 
 ## Local Organizing Committee
 Kam-Fai Wong, Chinese University of Hong Kong, China (chair)<br/>
@@ -56,7 +56,7 @@ Wei Xu, Ohio State University, USA
 ## Handbook Chair
 Serena Villata, CNRS, France
 
-## Video Chair<
+## Video Chair
 TBA
 
 ## Handbook Advisor
@@ -71,7 +71,7 @@ TBA
 ## Childcare Policy &amp; Grant Coordinator
 TBA
 
-## Website &amp; Conference App Chair
+## Website &amp; Conference App Chairs
 Kevin Duh, John Hopkins University, USA<br/>
 Henning Wachsmuth, Paderborn University, Germany
 
