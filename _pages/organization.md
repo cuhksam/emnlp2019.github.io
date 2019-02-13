@@ -19,8 +19,8 @@ Vincent Ng, University of Texas at Dallas, USA<br/>
 Xiaojun Wan, Peking University, China
 
 <!-- Notice: One point per area -->
-### Area Chairs
-<span style="color: gray">TBA</span>
+## Area Chairs
+<span style="color: light gray">TBA</span>
 
 ## Local Organizing Committee
 Kam-Fai Wong, Chinese University of Hong Kong, China (chair)<br/>
