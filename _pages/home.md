@@ -25,13 +25,14 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 
 
 
-<h2>Welcome!</h2>
+## Welcome!
 
 [SIGDAT](http://sigdat.org"), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org"), the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. 
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
 
-<h2 id="dates">Important Dates</h2>
+
+## Important Dates
 
 <table style="width: 60%">
     <tbody>
@@ -39,13 +40,13 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr>
             <td><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
             <td>Sunday</td>
-            <td><span style="color:red">April 21, 2019</span></td>
+            <td>April 21, 2019</td>
         </tr>
 -->
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
-            <td>May 21, 2019</td>
+            <td><span style="color:red">May 21, 2019</span></td>
         </tr>      
 <!--
         <tr>
@@ -101,5 +102,7 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
 
 <h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
 
-<h2>EMNLP-IJCNLP 2019 Anti-Harassment Policy</h2>
+
+## EMNLP-IJCNLP 2019 Anti-Harassment Policy
+
 EMNLP-IJCNLP 2019 adheres to the <a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">ACL Anti-Harassment Policy</a>. Any participant who experiences harassment or hostile behavior may contact any current member of the <a href="https://www.aclweb.org/portal/about">ACL Executive Committee</a> or contact <a href="mailto:acl@aclweb.org">Priscilla Rasmussen</a>, who is usually available at the registration desk of the conference. Please be assured that if you approach us, your concerns will be kept in strict confidence, and we will consult with you on any actions taken.
