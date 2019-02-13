@@ -21,7 +21,7 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 
 **December 16, 2018**. The list of accepted <a href="./program/workshops/">workshops</a> is out.
 
-**November 25, 2018**. The important dates have been announced.
+**November 25, 2018**. The important dates have been announced (see below).
 
 
 
@@ -98,10 +98,10 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         </tr>        
 </table>
 
-<h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
+<b>Note.</b> All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).
 
 
-## EMNLP-IJCNLP 2019 Anti-Harassment Policy
+## Anti-Harassment Policy
 
 EMNLP-IJCNLP 2019 adheres to the <a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">ACL Anti-Harassment Policy</a>. 
 
