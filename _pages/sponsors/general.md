@@ -19,6 +19,12 @@ diamond:
     image_path: /assets/images/logos/hongkong-tourism-logo.png
     alt: "Hong Kong Tourism Board Logo"
     title: "Hong Kong Tourism Board"
+  - url: https://www.apple.com
+    image_path: /assets/images/logos/apple-logo.png
+    alt: "Apple Logo"
+    title: "Apple"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 silver:
   - url: http://www.duolingo.com
     image_path: /assets/images/logos/duolingo-logo.png
