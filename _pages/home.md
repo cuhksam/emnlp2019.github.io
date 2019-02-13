@@ -6,7 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: "https://emnlp-ijcnlp2019.org/assets/images/hongkong-skyline-wide.jpg"
   caption: 'Photo from <a href="https://pixabay.com/de/hong-kong-china-nacht-stadtbild-1081704/">Pixabay</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 Creative Commons</a>'
-excerpt: "November 3&ndash;November 7<br/>Hong Kong"
+excerpt: "November 3&ndash;7<br/>Hong Kong"
 ---
 
 <!--
@@ -27,7 +27,9 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
 
 <h2>Welcome!</h2>
 
-<a href="http://sigdat.org" target="_blank">SIGDAT</a>, the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the <a href="http://www.afnlp.org" target="_blank">AFNLP</a>, the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
+[SIGDAT](http://sigdat.org"), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org"), the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. 
+
+EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
 
 <h2 id="dates">Important Dates</h2>
 
@@ -37,7 +39,7 @@ excerpt: "November 3&ndash;November 7<br/>Hong Kong"
         <tr>
             <td><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
             <td>Sunday</td>
-            <td>April 21, 2019</td>
+            <td><span style="color:red">April 21, 2019</span></td>
         </tr>
 -->
         <tr>
