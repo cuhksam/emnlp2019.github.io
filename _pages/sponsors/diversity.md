@@ -30,7 +30,7 @@ The new ACL initiative "Diversity &amp; Inclusion" is designed to help the commu
 
 <b>Parental inclusion and childcare.</b> ACL wants to become more family-friendly and inclusive of researchers who would have difficulty in attending conferences without additional support.
 
-<b>Disability access.</b> The physical environment of conferences should encourage all attendees. Therefore, the ACL aims to extend special support to participants whose access to integral parts of the conference would be compromised due to poor disability access.
+<b>Disability access.</b> The physical environment of conferences should encourage all attendees. Therefore, the ACL aims to extend special support to participants whose access to integral parts of the conference would be compromised by poor disability access.
 
 <b>Low-income support.</b> Students and researchers at institutions with access to fewer resources are often prevented from attending ACL conferences. ACL would like to offer financial support to help as many of them as possible to attend the conference in person.
 
