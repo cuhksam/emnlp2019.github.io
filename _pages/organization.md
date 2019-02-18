@@ -65,10 +65,11 @@ Kai-Wei Chang, University of California at Los Angeles, USA
 <span style="color: lightgray">TBA</span>
 
 ## Student Volunteer Coordinator &amp; Student Scholarship Chair
-<span style="color: lightgray">TBA</span>
+Wenjie Li, Hong Kong Polytechnic University, China
 
 ## Childcare Policy &amp; Grant Coordinator
-<span style="color: lightgray">TBA</span>
+Olivia Kwong, Chinese University of Hong Kong, China<br/>
+Sujian Li, Peking University, China
 
 ## Website &amp; Conference App Chairs
 Kevin Duh, John Hopkins University, USA<br/>
