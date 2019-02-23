@@ -26,7 +26,7 @@ Kam-Fai Wong, Chinese University of Hong Kong, China (chair)<br/>
 Samuel Tam, Chinese University of Hong Kong, China<br/>
 Emmanuele Chersoni, Hong Kong Polytechnic University, China<br/>
 Churen Huang, Hong Kong Polytechnic University, China<br/>
-Wenjie Li, Department of Computing, Hong Kong Polytechnic University, China<br/>
+Wenjie Li, Hong Kong Polytechnic University, China<br/>
 Derek F. Wong, University of Macau, China<br/>
 Ruifeng Xu, Harbin Institute of Technology Shenzhen Graduate School, China
 
@@ -64,8 +64,9 @@ Kai-Wei Chang, University of California at Los Angeles, USA
 ## Conference Handbook Proofreader
 <span style="color: lightgray">TBA</span>
 
-## Student Volunteer Coordinator &amp; Student Scholarship Chair
-Wenjie Li, Hong Kong Polytechnic University, China
+## Student Volunteer Coordinator &amp; Student Scholarship Chairs
+Wenjie Li, Hong Kong Polytechnic University, China<br/>
+Marzieh Saeidi, Facebook AI Research, UK
 
 ## Childcare Policy &amp; Grant Coordinator
 Olivia Kwong, Chinese University of Hong Kong, China<br/>
