@@ -25,6 +25,13 @@ diamond:
     title: "Apple"
   - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
+gold:
+  - url: https://www.poly-ai.com
+    image_path: /assets/images/logos/polyai-logo.png
+    alt: "PolyAI Logo"
+    title: "PolyAI"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 silver:
   - url: http://www.duolingo.com
     image_path: /assets/images/logos/duolingo-logo.png
@@ -57,11 +64,12 @@ Further sponsors to be announced.
 ## Platinum Tier
 
 {% include gallery id="platinum" class="fourth" %}
+-->
 
 ## Gold Tier
 
 {% include gallery id="gold" class="fourth" %}
--->
+
 
 
 ## Silver Level
