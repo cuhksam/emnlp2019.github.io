@@ -61,12 +61,12 @@ Further sponsors to be announced.
 {% include gallery id="diamond" class="fourth" %}
 
 <!--
-## Platinum Tier
+## Platinum Level
 
 {% include gallery id="platinum" class="fourth" %}
 -->
 
-## Gold Tier
+## Gold Level
 
 {% include gallery id="gold" class="fourth" %}
 
