@@ -113,11 +113,22 @@ $navicon-link-color-hover     : mix(#fff, $primary-color, 75%) !default;
    ========================================================================== */
 
 $small                        : 600px !default;
+$medium                       : 650px !default;
+$medium-wide                  : 700px !default;
+$large                        : 800px !default;
+$x-large                      : 1280px !default;
+$xx-large                     : 1900px !default;
+
+/*
+OLD (CHANGED BY HW)
+$small                        : 600px !default;
 $medium                       : 768px !default;
 $medium-wide                  : 900px !default;
 $large                        : 1024px !default;
 $x-large                      : 1280px !default;
 $xx-large                     : 1900px !default;
+*/
+
 
 /*
    Grid
