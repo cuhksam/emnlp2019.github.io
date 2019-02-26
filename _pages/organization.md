@@ -50,7 +50,7 @@ Sebastian Pad&oacute;, University of Stuttgart, Germany<br/>
 Ruihong Huang, Texas A&M University, USA
 
 ## Publicity Chairs
-Wei Xu, Ohio State University, USA</br>
+Wei Xu, Ohio State University, USA<br/>
 Sebastian Ruder, National University of Ireland, Ireland
 
 ## Handbook Chair
