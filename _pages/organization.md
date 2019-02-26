@@ -49,8 +49,9 @@ Pontus Stenetorp, University College London, UK
 Sebastian Pad&oacute;, University of Stuttgart, Germany<br/>
 Ruihong Huang, Texas A&M University, USA
 
-## Publicity Chair
-Wei Xu, Ohio State University, USA
+## Publicity Chairs
+Wei Xu, Ohio State University, USA</br>
+Sebastian Ruder, National University of Ireland, Ireland
 
 ## Handbook Chair
 Serena Villata, CNRS, France
@@ -62,7 +63,7 @@ Serena Villata, CNRS, France
 Kai-Wei Chang, University of California at Los Angeles, USA
 
 ## Conference Handbook Proofreader
-<span style="color: lightgray">TBA</span>
+Natalie Schluter, IT University of Copenhagen, Denmark
 
 ## Student Volunteer Coordinator &amp; Student Scholarship Chairs
 Wenjie Li, Hong Kong Polytechnic University, China<br/>
