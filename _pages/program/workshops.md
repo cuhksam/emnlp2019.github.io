@@ -23,7 +23,7 @@ Exact dates and locations and dates will be added later. For more details on the
 focuses on Natural Language Processing applied to noisy user-generated text, such as that found in social media, online reviews, crowdsourced data, web forums, clinical records and language learner essays.
 
 ### \[W2\] WNGT
-[The 3rd Workshop on Neural Generation and Translation](https://sites.google.com/view/wngt18/home) 
+[The 3rd Workshop on Neural Generation and Translation](https://sites.google.com/view/wngt19/home) 
 aims to provide a forum for research in applications of neural models to language generation and translation tasks.
 
 ### \[W3\] CoNLL 2019 
