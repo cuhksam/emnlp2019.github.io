@@ -1,5 +1,5 @@
 ---
-title: 
+title: Call for Papers
 layout: single
 
 permalink: /calls/papers/
@@ -11,7 +11,9 @@ sidebar:
 
 {% include toc icon="gears" %}
 
+<!--
 <span style="font-weight: bolder;font-size: larger;">Call For Papers</span>
+-->
 
 [SIGDAT](http://sigdat.org"), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org"), the Asian Federation of Natural Language Processing, invite you to submit your papers to EMNLP-IJCNLP 2019, the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (November 3&ndash;7, 2019) in Hong Kong.
 
