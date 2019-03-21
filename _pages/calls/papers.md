@@ -146,14 +146,14 @@ To ensure anonymity, submissions and supplementary materials must not include th
 
 ### Multiple Submission Policy
 
-<span style="color:red">EMNLP-IJCNLP 2019 will not consider any paper that is under review in a journal or another conference at the time of submission.</span> Neither will the conference consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. In addition, <span style="color:red">authors may not submit the paper elsewhere during EMNLP-IJCNLP 2019's review period.</span> Authors submitting more than one paper to EMNLP-IJCNLP 2019 must ensure that the submissions do not overlap significantly (>25%) with each other in content or results.
+`EMNLP-IJCNLP 2019 will not consider any paper that is under review in a journal or another conference at the time of submission.` Neither will the conference consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. In addition, `authors may not submit the paper elsewhere during EMNLP-IJCNLP 2019's review period.` Authors submitting more than one paper to EMNLP-IJCNLP 2019 must ensure that the submissions do not overlap significantly (>25%) with each other in content or results.
 
 
 ### Formatting Requirements
 
 Both long and short papers must follow the EMNLP-IJCNLP 2019 two-column format. Please do not modify these style files, or use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.
 
-<span style="color:red">Links to EMNLP-IJCNLP 2019 paper templates will follow soon.</span>
+`Links to EMNLP-IJCNLP 2019 paper templates will follow soon.`
 
 <!--
 Both long and short papers must follow the EMNLP 2018 two-column format, using the [LaTeX style files](/downloads/emnlp19-latex.zip) or [Word template](/downloads/emnlp19-word.zip). Please do not modify these style files, or use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.
@@ -162,7 +162,7 @@ Both long and short papers must follow the EMNLP 2018 two-column format, using t
 
 ### Optional Supplementary Materials: Appendices, Software and Data
 
-Each EMNLP-IJCNLP 2019 submission can be accompanied by a single PDF appendix, one one `.tgz` or `.zip` archive containing software, and one `.tgz` or `.zip` archive containing data. EMNLP-IJCNLP 2019 encourages the submission of these supplementary materials to improve the reproducibility of results, and to enable authors to provide additional information that does not fit in the paper. For example, preprocessing decisions, model parameters, feature templates, lengthy proofs or derivations, pseudocode, sample system inputs/outputs, and other details that are necessary for the exact replication of the work described in the paper can be put into the appendix. However, the paper submissions need to remain fully self-contained, as these supplementary materials are completely optional, and reviewers are not even asked to review or download them. If the pseudo-code or derivations or model specifications are an important part of the contribution, or if they are important for the reviewers to assess the technical correctness of the work, they should be a part of the main paper, and not appear in the appendix. Supplementary materials need to be fully anonymized to preserve the double-blind reviewing policy.
+Each EMNLP-IJCNLP 2019 submission can be accompanied by a single PDF appendix, one one .tgz or .zip archive containing software, and one .tgz or .zip archive containing data. EMNLP-IJCNLP 2019 encourages the submission of these supplementary materials to improve the reproducibility of results, and to enable authors to provide additional information that does not fit in the paper. For example, preprocessing decisions, model parameters, feature templates, lengthy proofs or derivations, pseudocode, sample system inputs/outputs, and other details that are necessary for the exact replication of the work described in the paper can be put into the appendix. However, the paper submissions need to remain fully self-contained, as these supplementary materials are completely optional, and reviewers are not even asked to review or download them. If the pseudo-code or derivations or model specifications are an important part of the contribution, or if they are important for the reviewers to assess the technical correctness of the work, they should be a part of the main paper, and not appear in the appendix. Supplementary materials need to be fully anonymized to preserve the double-blind reviewing policy.
 
 
 ## Presentation Requirement
@@ -179,7 +179,6 @@ The conference website will continue to be updated with information on workshops
 
 - General Chair: 
       Kentaro Inui (Tohuku University, Japan)
-      
 - Program Co-Chairs: 
       Jing Jiang (Singapore Management University, Singapore), 
       Vincent Ng (University of Texas at Dallas, USA), and 
