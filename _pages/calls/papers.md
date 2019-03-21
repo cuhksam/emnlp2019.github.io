@@ -25,8 +25,8 @@ We invite the submission of long and short papers related to empirical methods i
 -->
 
 
-
 ## Topics
+
 EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for the conference include, but are not limited to, the following areas (in alphabetical order):
 
 - Dialog and Interactive Systems
