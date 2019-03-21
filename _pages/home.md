@@ -1,5 +1,5 @@
 ---
-title: "Conference on Empirical Methods in Natural Language Processing & International Joint Conference on Natural Language Processing 2019"
+title: "2019 Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on Natural Language Processing"
 layout: splash
 permalink: /
 header:
@@ -33,7 +33,7 @@ The important dates have been announced (see below).
 
 ## Welcome!
 
-[SIGDAT](http://sigdat.org"), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org"), the Asian Federation of Natural Language Processing, invite you to participate in the Conference on Empirical Methods in Natural Language Processing (EMNLP) & International Joint Conference on Natural Language Processing (IJCNLP) 2019 in Hong Kong. 
+[SIGDAT](http://sigdat.org"), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org"), the Asian Federation of Natural Language Processing, invite you to participate in the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP) and 9th International Joint Conference on Natural Language Processing (IJCNLP) in Hong Kong. 
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
 
