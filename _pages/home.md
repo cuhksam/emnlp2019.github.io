@@ -20,7 +20,8 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <h2>News</h2>
 
 **March 21, 2019**. 
-The <a href="./calls/papers/">call for papers</a> is out. Abstracts are due by May 14, one week before the paper submission deadline (May 21).
+The <a href="./calls/papers/">call for papers</a> is out.<br>
+Abstracts are due by May 14, one week before the paper submission deadline (May 21).
 
 **December 16, 2018**. 
 The list of accepted <a href="./program/workshops/">workshops</a> is out.
