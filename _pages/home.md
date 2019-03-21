@@ -42,7 +42,7 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
 
 <table>
         <tr>
-            <td style="width: 40%;"><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
+            <td style="width: 40%;"><a href="/calls/papers#important-anonymity-period">Anonymity period</a> begins</td>
             <td style="width: 30%;">Sunday</td>
             <td><span style="color:red">April 21, 2019</span></td>
         </tr>
