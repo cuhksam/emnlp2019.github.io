@@ -63,8 +63,8 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
         </tr>
         <tr>
             <td>Abstracts due (<i>long &amp; short</i>)</td>
-            <td>Tuesday</td>
-            <td><span style="color:red">May 14, 2019</span></td>
+            <td>Wednesday</td>
+            <td><span style="color:red">May 15, 2019</span></td>
         </tr>
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>

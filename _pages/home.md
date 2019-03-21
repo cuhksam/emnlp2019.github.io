@@ -20,8 +20,7 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <h2>News</h2>
 
 **March 21, 2019**. 
-The <a href="./calls/papers/">call for papers</a> is out.<br>
-Abstracts are due by May 14, one week before the paper submission deadline (May 21).
+The <a href="./calls/papers/">call for papers</a> is out. Abstracts are due by May 15, paper submission by May 21.
 
 **December 16, 2018**. 
 The list of accepted <a href="./program/workshops/">workshops</a> is out.
@@ -48,8 +47,8 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         </tr>
         <tr>
             <td style="width: 40%;">Abstracts due (<i>long &amp; short</i>)</td>
-            <td style="width: 30%;">Tuesday</td>
-            <td><span style="color:red">May 14, 2019</span></td>
+            <td style="width: 30%;">Wednesday</td>
+            <td><span style="color:red">May 15, 2019</span></td>
         </tr>
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
