@@ -54,7 +54,7 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
-            <td>>May 21, 2019</td>
+            <td>May 21, 2019</td>
         </tr>      
 <!--
         <tr>
