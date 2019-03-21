@@ -19,9 +19,14 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 
 <h2>News</h2>
 
-**December 16, 2018**. The list of accepted <a href="./program/workshops/">workshops</a> is out.
+**March 21, 2019**. 
+The <a href="./calls/papers/">call for papers</a> is out. Abstracts are due by May 14, one week before the paper submission deadline (May 21).
 
-**November 25, 2018**. The important dates have been announced (see below).
+**December 16, 2018**. 
+The list of accepted <a href="./program/workshops/">workshops</a> is out.
+
+**November 25, 2018**. 
+The important dates have been announced (see below).
 
 
 
@@ -35,17 +40,20 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
 ## Important Dates
 
 <table>
-<!--
         <tr>
-            <td><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
-            <td>Sunday</td>
-            <td>April 21, 2019</td>
+            <td style="width: 40%;"><a href="/calls/papers#important-new-submission-guidelines">Anonymity period</a> begins</td>
+            <td style="width: 30%;">Sunday</td>
+            <td><span style="color:red">April 21, 2019</span></td>
         </tr>
--->
+        <tr>
+            <td style="width: 40%;">Abstracts due (<i>long &amp; short</i>)</td>
+            <td style="width: 30%;">Tuesday</td>
+            <td><span style="color:red">May 14, 2019</span></td>
+        </tr>
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
-            <td><span style="color:red">May 21, 2019</span></td>
+            <td>>May 21, 2019</td>
         </tr>      
 <!--
         <tr>

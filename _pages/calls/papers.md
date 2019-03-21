@@ -61,8 +61,8 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
         </tr>
         <tr>
             <td>Abstracts due (<i>long &amp; short</i>)</td>
-            <td>Wednesday</td>
-            <td><span style="color:red">May 15, 2019</span></td>
+            <td>Tuesday</td>
+            <td><span style="color:red">May 14, 2019</span></td>
         </tr>
         <tr>
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
@@ -146,7 +146,7 @@ To ensure anonymity, submissions and supplementary materials must not include th
 
 ### Multiple Submission Policy
 
-<b>EMNLP-IJCNLP 2019 will not consider any paper that is under review in a journal or another conference at the time of submission.</b> Neither will the conference consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. In addition, <b>authors may not submit the paper elsewhere during EMNLP-IJCNLP 2019's review period.</b> Authors submitting more than one paper to EMNLP-IJCNLP 2019 must ensure that the submissions do not overlap significantly (>25%) with each other in content or results.
+<span style="color:red">EMNLP-IJCNLP 2019 will not consider any paper that is under review in a journal or another conference at the time of submission.</span> Neither will the conference consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. In addition, <span style="color:red">authors may not submit the paper elsewhere during EMNLP-IJCNLP 2019's review period.</span> Authors submitting more than one paper to EMNLP-IJCNLP 2019 must ensure that the submissions do not overlap significantly (>25%) with each other in content or results.
 
 
 ### Formatting Requirements
