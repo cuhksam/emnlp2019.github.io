@@ -103,7 +103,8 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
         </tr>        
     </tbody>
 </table>
-<h5>Note: All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).</h5>
+
+<b>Note.</b> All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).
 
 
 
