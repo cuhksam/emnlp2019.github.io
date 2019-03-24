@@ -57,8 +57,8 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
 <table>
     <tbody>
         <tr style="background-color: #eee;">
-            <td><a href="#important-anonymity-period">Anonymity period</a> begins</td>
-            <td>Sunday</td>
+            <td style="width: 45%;"><a href="#important-anonymity-period">Anonymity period</a> begins</td>
+            <td style="width: 25%;">Sunday</td>
             <td><span style="color:red">April 21, 2019</span></td>
         </tr>
         <tr style="background-color: #fff;">
@@ -67,8 +67,8 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
             <td><span style="color:red">May 15, 2019</span></td>
         </tr>
         <tr style="background-color: #eee;">
-            <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
-            <td style="width: 30%;">Tuesday</td>
+            <td>Submissions due (<i>long &amp; short</i>)</td>
+            <td>Tuesday</td>
             <td>May 21, 2019</td>
         </tr>
         <tr style="background-color: #fff;">
@@ -92,13 +92,13 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
           <td>August 30, 2019</td>
         </tr>
         <tr style="background-color: #fff;">
-            <td style="width: 40%;">Workshops &amp; tutorials</td>
-            <td style="width: 30%;">Sunday &ndash; Monday</td>
+            <td>Workshops &amp; tutorials</td>
+            <td>Sunday&ndash;Monday</td>
             <td>November 3&ndash;4, 2019</td>
         </tr>
         <tr style="background-color: #eee;">
             <td>Main conference</td>
-            <td>Tuesday &ndash; Thursday</td>
+            <td>Tuesday&ndash;Thursday</td>
             <td>November 5&ndash;7, 2019</td>
         </tr>        
     </tbody>
