@@ -149,14 +149,14 @@ To ensure anonymity, submissions and supplementary materials must not include th
 
 ### Multiple Submission Policy
 
-`EMNLP-IJCNLP 2019 will not consider any paper that is under review in a journal or another conference at the time of submission.` Neither will the conference consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. In addition, `authors may not submit the paper elsewhere during EMNLP-IJCNLP 2019's review period.` Authors submitting more than one paper to EMNLP-IJCNLP 2019 must ensure that the submissions do not overlap significantly (>25%) with each other in content or results.
+<span style="color:cornflowerblue">EMNLP-IJCNLP 2019 will not consider any paper that is under review in a journal or another conference at the time of submission.</span> Neither will the conference consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. In addition, <span style="color:cornflowerblue">authors may not submit the paper elsewhere during EMNLP-IJCNLP 2019's review period.</span> Authors submitting more than one paper to EMNLP-IJCNLP 2019 must ensure that the submissions do not overlap significantly (>25%) with each other in content or results.
 
 
 ### Formatting Requirements
 
 Both long and short papers must follow the EMNLP-IJCNLP 2019 two-column format. Please do not modify these style files, or use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.
 
-`Links to EMNLP-IJCNLP 2019 paper templates will follow soon.`
+<span style="color:cornflowerblue">Links to EMNLP-IJCNLP 2019 paper templates will follow soon.</span>
 
 <!--
 Both long and short papers must follow the EMNLP 2018 two-column format, using the [LaTeX style files](/downloads/emnlp19-latex.zip) or [Word template](/downloads/emnlp19-word.zip). Please do not modify these style files, or use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.
