@@ -21,21 +21,28 @@ $link-color: cornflowerblue;
   background-color: cornflowerblue;
 }
 
+
 html {
   font-size: 12px; // change to whatever
-
-  @include breakpoint($medium) {
-    font-size: 14px; // change to whatever
-  }
-
-  @include breakpoint($large) {
-    font-size: 16px; // change to whatever
-  }
-
-  @include breakpoint($x-large) {
-    font-size: 18px; // change to whatever
-  }
 }
+
+$type-size-1                  : 2.441em !default;  // ~29.292px
+$type-size-2                  : 1.953em !default;  // ~23.436px
+$type-size-3                  : 1.563em !default;  // ~18.756px
+$type-size-4                  : 1.25em !default;   // ~15px
+$type-size-5                  : 1em !default;      // ~12px
+$type-size-6                  : 0.75em !default;   // ~9px
+$type-size-6                  : 0.75em !default;   // ~9px
+$type-size-6                  : 0.75em !default;   // ~9px
+$type-size-6                  : 0.75em !default;   // ~9px
+$type-size-6                  : 0.75em !default;   // ~9px
+
+
+table {
+  font-size: $type-size-4;
+}
+
+
 
 
 
