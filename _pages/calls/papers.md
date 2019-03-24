@@ -56,47 +56,47 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
 
 <table>
     <tbody>
-        <tr>
+        <tr style="background-color: #eee;">
             <td><a href="#important-anonymity-period">Anonymity period</a> begins</td>
             <td>Sunday</td>
             <td><span style="color:red">April 21, 2019</span></td>
         </tr>
-        <tr>
+        <tr style="background-color: #fff;">
             <td>Abstracts due (<i>long &amp; short</i>)</td>
             <td>Wednesday</td>
             <td><span style="color:red">May 15, 2019</span></td>
         </tr>
-        <tr>
+        <tr style="background-color: #eee;">
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
             <td>May 21, 2019</td>
         </tr>
-        <tr>
+        <tr style="background-color: #fff;">
             <td>Author response period starts</td>
             <td>Tuesday</td>
             <td>July 9, 2019</td>
         </tr>
-        <tr>
+        <tr style="background-color: #eee;">
             <td>Author responses due</td>
             <td>Monday</td>
             <td>July 15, 2019</td>
         </tr>
-        <tr>
+        <tr style="background-color: #fff;">
             <td>Notification of acceptance</td>
             <td>Monday</td>
             <td>August 12, 2019</td>
         </tr>
-        <tr>
+        <tr style="background-color: #eee;">
           <td>Camera-ready due</td>
           <td>Friday</td>
           <td>August 30, 2019</td>
         </tr>
-        <tr>
+        <tr style="background-color: #fff;">
             <td style="width: 40%;">Workshops &amp; tutorials</td>
             <td style="width: 30%;">Sunday &ndash; Monday</td>
             <td>November 3&ndash;4, 2019</td>
         </tr>
-        <tr>
+        <tr style="background-color: #eee;">
             <td>Main conference</td>
             <td>Tuesday &ndash; Thursday</td>
             <td>November 5&ndash;7, 2019</td>

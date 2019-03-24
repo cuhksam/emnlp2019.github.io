@@ -53,9 +53,11 @@ $type-size-10                  : 0.75em !default;   // ~9px
 // Overriding table size
 table {
   font-size: $type-size-5;
-  background-color: #eee;
 }
 
+td {
+  border-bottom: 0px;
+}
 
 
 
