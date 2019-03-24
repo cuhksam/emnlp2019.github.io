@@ -21,9 +21,22 @@ $link-color: cornflowerblue;
   background-color: cornflowerblue;
 }
 
-
+// overriding general font sizes
 html {
-  font-size: 12px; // change to whatever
+  font-size: 12px;
+  
+  
+  @include breakpoint($medium) {
+    font-size: 14px;
+  }
+
+  @include breakpoint($large) {
+    font-size: 16px; 
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px; 
+  }
 }
 
 $type-size-1                  : 2.441em !default;  // ~29.292px
@@ -32,14 +45,14 @@ $type-size-3                  : 1.563em !default;  // ~18.756px
 $type-size-4                  : 1.25em !default;   // ~15px
 $type-size-5                  : 1em !default;      // ~12px
 $type-size-6                  : 0.75em !default;   // ~9px
-$type-size-6                  : 0.75em !default;   // ~9px
-$type-size-6                  : 0.75em !default;   // ~9px
-$type-size-6                  : 0.75em !default;   // ~9px
-$type-size-6                  : 0.75em !default;   // ~9px
+$type-size-7                  : 0.75em !default;   // ~9px
+$type-size-8                  : 0.75em !default;   // ~9px
+$type-size-9                  : 0.75em !default;   // ~9px
+$type-size-10                  : 0.75em !default;   // ~9px
 
-
+// Overriding table size
 table {
-  font-size: $type-size-4;
+  font-size: $type-size-5;
 }
 
 
