@@ -38,7 +38,7 @@ floorplan:
 
 {% include toc icon="gears" %}
 
-Below, all information for participants available so far are given. More details to be announced.
+Below, all information for participants are given that are available so far. More details to be announced.
 
 
 <!--
