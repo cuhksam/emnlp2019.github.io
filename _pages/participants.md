@@ -137,3 +137,8 @@ TBD
 
 TBD
 -->
+
+
+## Further participant information 
+
+<span style="color: lightgray">TBA</span>
