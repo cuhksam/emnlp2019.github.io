@@ -12,8 +12,8 @@ main:
   - title: "Program"
     url: "/program/"
 
-#  - title: "Participants"
-#    url: "/participants"
+  - title: "Participants"
+    url: "/participants"
 
   - title: "Organization"
     url: /organization
