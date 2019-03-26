@@ -10,6 +10,8 @@ sidebar:
 
 {% include toc icon="gears" %}
 
+Below, all information on the program EMNLP-IJCNLP 2019 available so far are given. More details to be announced.
+
 
 ## Workshops &amp; Co-located Events
 
@@ -17,7 +19,3 @@ EMNLP-IJCNLP 2019 will host 18 workshops and co-located events, taking place Nov
 
 The list of accepted workshops can be found <a href="./workshops/">here</a>.
 
-
-## Further program details 
-
-<span style="color: lightgray">TBA</span>

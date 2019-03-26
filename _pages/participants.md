@@ -38,6 +38,8 @@ floorplan:
 
 {% include toc icon="gears" %}
 
+Below, all information for participants available so far are given. More details to be announced.
+
 
 <!--
 ## About Hong Kong
@@ -138,7 +140,3 @@ TBD
 TBD
 -->
 
-
-## Further participant information 
-
-<span style="color: lightgray">TBA</span>

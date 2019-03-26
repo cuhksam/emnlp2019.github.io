@@ -9,6 +9,9 @@ sidebar: false
 
 {% include toc icon="gears" %}
 
+All members of the organizing committee, as far as available already, can be found below.
+
+
 ## General Chair
 Kentaro Inui, Tohuku University, Japan
 
