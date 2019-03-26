@@ -50,9 +50,11 @@ program:
 #       - title: "Tutorials"
 #         url: /program/tutorials/
 
-# participants:
-#   - title: "Information for Participants"
+participants:
+#  - title: "Information for Participants"
 #     children:
+#       - title: "Participants"
+#         url: /participants
 #       - title: "Accommodation"
 #         url: /participants/accommodation/
 #       - title: "Social Event"

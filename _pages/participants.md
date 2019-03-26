@@ -1,11 +1,11 @@
 ---
 title: Information for Participants
 layout: single
-
+excerpt: "EMNLP-IJCNLP 2019 information for participants"
 permalink: /participants
+sidebar: false
 
 <!--
-sidebar: false
 hongkong:
   - url: "/assets/images/hongkong/xxxxxxxxx.jpg"
     image_path: "/assets/images/hongkong/xxxxxxxxxxx.jpg"
@@ -32,8 +32,9 @@ floorplan:
     alt: "XXXXXX"
     title: "Grand Palace &nbsp;&nbsp; (&copy; xxxxx)"
 -->
-
 ---
+
+
 {% include base_path %}
 
 {% include toc icon="gears" %}
