@@ -13,7 +13,7 @@ main:
     url: "/program/"
 
   - title: "Participants"
-    url: "/participants"
+    url: /participants
 
   - title: "Organization"
     url: /organization
