@@ -3,14 +3,17 @@
 # main links
 main:
 
+  - title: "Calls"
+    url: /calls/papers
+
+  - title: "Program"
+    url: "/program/"
+
 #  - title: "Schedule"
 #    url: /schedule
 
 #  - title: "Registration"
 #   url: /registration
-
-  - title: "Program"
-    url: "/program/"
 
   - title: "Participants"
     url: /participants
@@ -20,9 +23,6 @@ main:
 
   - title: "Sponsors"
     url: /sponsors/general/
-
-  - title: "Calls"
-    url: /calls/papers
 
 # pages:
 #   - title: Organization
