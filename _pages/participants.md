@@ -2,7 +2,7 @@
 title: Information for Participants
 layout: single
 
-permalink: /participants/
+permalink: /participants
 
 <!--
 sidebar: false
