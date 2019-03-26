@@ -20,7 +20,7 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <h2>News</h2>
 
 **March 26, 2019**. 
-Preliminary information on childcare grants available <a href="./participants/">here</a>. 
+Preliminary information on childcare grants available <a href="./participants">here</a>. 
 
 **March 21, 2019**. 
 The <a href="./calls/papers/">call for papers</a> is out. Abstracts are due by May 15, paper submissions by May 21.
