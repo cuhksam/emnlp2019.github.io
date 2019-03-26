@@ -50,7 +50,7 @@ program:
 #       - title: "Tutorials"
 #         url: /program/tutorials/
 
-participants:
+# participants:
 #  - title: "Information for Participants"
 #     children:
 #       - title: "Participants"
