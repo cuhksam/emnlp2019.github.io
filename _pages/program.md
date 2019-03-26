@@ -10,7 +10,7 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-Below, all information on the program EMNLP-IJCNLP 2019 available so far are given. More details to be announced.
+Below, all information on the program of EMNLP-IJCNLP 2019 are given that are available so far. More details to be announced.
 
 
 ## Workshops &amp; Co-located Events
