@@ -23,14 +23,33 @@ diamond:
     image_path: /assets/images/logos/apple-logo.png
     alt: "Apple Logo"
     title: "Apple"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://www.asapp.com
+    image_path: /assets/images/logos/asapp-logo.png
+    alt: "Asapp Logo"
+    title: "Asapp"
+  - url: https://www.salesforce.com
+    image_path: /assets/images/logos/salesforce-logo.png
+    alt: "Salesforce Logo"
+    title: "Salesforce"
+platinum:
+  - url: http://www.noahlab.com.hk
+    image_path: /assets/images/logos/huawei-logo.png
+    alt: "Huawei Logo"
+    title: "Huawei / Noah's Ark Lab"
+  - url: http://www.baidu.com
+    image_path: /assets/images/logos/baidu-logo.png
+    alt: "Baidu Logo"
+    title: "Baidu"
   - image_path: /assets/images/logos/blank-logo.png
 gold:
   - url: https://www.poly-ai.com
     image_path: /assets/images/logos/polyai-logo.png
     alt: "PolyAI Logo"
     title: "PolyAI"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: http://www.europe.naverlabs.com
+    image_path: /assets/images/logos/naverlabs-europe-logo.png
+    alt: "Naver Labs Europe Logo"
+    title: "Naver Labs Europe"
   - image_path: /assets/images/logos/blank-logo.png
 silver:
   - url: http://www.duolingo.com
@@ -44,7 +63,27 @@ silver:
   - url: http://babelscape.com
     image_path: /assets/images/logos/babelscape-logo.png
     alt: "Babelscape Logo"
-    title: "Babelscape" 
+    title: "Babelscape"   
+  - url: http://www.ebay.com
+    image_path: /assets/images/logos/ebay-logo.png
+    alt: "Ebay Logo"
+    title: "Ebay"
+  - url: https://www.cisco.com
+    image_path: /assets/images/logos/cisco-logo.png
+    alt: "Cisco Logo"
+    title: "Cisco"
+  - image_path: /assets/images/logos/blank-logo.png
+bronze:  
+  - url: https://www.isi.edu
+    image_path: /assets/images/logos/isi-logo.png
+    alt: "ISI Logo"
+    title: "Information Science Institute"
+  - url: http://shannon.ai
+    image_path: /assets/images/logos/shannon-logo.png
+    alt: "Shannon AI Logo"
+    title: "Shannon AI"    
+  - image_path: /assets/images/logos/blank-logo.png
+    
 ---
 {% include base_path %}
 
@@ -54,22 +93,20 @@ We gratefully acknowledge support provided by the following for the EMNLP-IJCNLP
 
 See also our <a href="../diversity/">diversity &amp; inclusion sponsors</a>.
 
-Further sponsors to be announced.
 
 ## Diamond Level
 
 {% include gallery id="diamond" class="fourth" %}
 
-<!--
+
 ## Platinum Level
 
 {% include gallery id="platinum" class="fourth" %}
--->
+
 
 ## Gold Level
 
 {% include gallery id="gold" class="fourth" %}
-
 
 
 ## Silver Level
@@ -77,10 +114,10 @@ Further sponsors to be announced.
 {% include gallery id="silver" class="fourth" %}
 
 
-<!--
 ## Bronze Tier
 
 {% include gallery id="bronze" class="fourth" %}
+
 
 ## Supporter Tier
 
