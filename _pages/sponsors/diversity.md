@@ -32,7 +32,7 @@ The new ACL initiative "Diversity &amp; Inclusion" is designed to help the commu
 
 We gratefully acknowledge support for the initiative provided by the following sponsors for EMNLP-IJCNLP 2019. 
 
-Further sponsors to be announced.
+
 
 <!--
 ## Champion Level
