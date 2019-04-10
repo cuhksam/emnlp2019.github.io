@@ -114,13 +114,13 @@ See also our <a href="../diversity/">diversity &amp; inclusion sponsors</a>.
 {% include gallery id="silver" class="fourth" %}
 
 
-## Bronze Tier
+## Bronze Level
 
 {% include gallery id="bronze" class="fourth" %}
 
 
 <!--
-## Supporter Tier
+## Supporter Level
 
 {% include gallery id="supporter" class="fourth" %}
 
