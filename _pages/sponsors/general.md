@@ -119,6 +119,7 @@ See also our <a href="../diversity/">diversity &amp; inclusion sponsors</a>.
 {% include gallery id="bronze" class="fourth" %}
 
 
+<!--
 ## Supporter Tier
 
 {% include gallery id="supporter" class="fourth" %}
