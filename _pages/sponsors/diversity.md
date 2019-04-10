@@ -19,7 +19,7 @@ ally:
     alt: "Google Logo"
     title: "Google"
   - url: http://www.europe.naverlabs.com
-    image_path: /assets/images/logos/naverlabs-europe-logo.png
+    image_path: /assets/images/logos/naverlabs-logo.png
     alt: "Naver Labs Europe Logo"
     title: "Naver Labs Europe"    
     
