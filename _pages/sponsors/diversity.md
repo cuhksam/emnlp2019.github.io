@@ -18,8 +18,10 @@ ally:
     image_path: /assets/images/logos/google-logo.png
     alt: "Google Logo"
     title: "Google"
-  - image_path: /assets/images/logos/blank-logo.png
-    
+  - url: http://www.europe.naverlabs.com
+    image_path: /assets/images/logos/naverlabs-europe-logo.png
+    alt: "Naver Labs Europe Logo"
+    title: "Naver Labs Europe"    
     
 ---
 {% include base_path %}
