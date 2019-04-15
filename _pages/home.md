@@ -19,18 +19,22 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 
 <h2>News</h2>
 
+**April 15, 2019**.
+Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers#formatting-requirements">call for papers</a>.
+
 **March 26, 2019**. 
 Preliminary information on childcare grants available <a href="./participants">here</a>. 
 
 **March 21, 2019**. 
 The <a href="./calls/papers/">call for papers</a> is out. Abstracts are due by May 15, paper submissions by May 21.
 
+<!-- OLDER NEWS
 **December 16, 2018**. 
 The list of accepted <a href="./program/workshops/">workshops</a> is out.
 
 **November 25, 2018**. 
 The important dates have been announced (see below).
-
+-->
 
 
 ## Welcome!

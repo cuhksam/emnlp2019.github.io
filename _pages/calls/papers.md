@@ -156,7 +156,7 @@ To ensure anonymity, submissions and supplementary materials must not include th
 
 Both long and short papers must follow the EMNLP-IJCNLP 2019 two-column format. Please do not modify these style files, or use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.
 
-Both long and short papers must follow the EMNLP-IJCNLP 2019 two-column format, using the [LaTeX style files](/downloads/emnlp-ijcnlp-2019-latex.zip), the [Word template](/downloads/emnlp-ijcnlp-2019-word.zip), or the [Overleaf template](https://www.overleaf.com/latex/templates/emnlp-2019-templates/jmjnzffkknqc). Please do not modify these style files, or use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.
+All submitted papers must follow the EMNLP-IJCNLP 2019 two-column format, using the [LaTeX style files](/downloads/emnlp-ijcnlp-2019-latex.zip), the [Word template](/downloads/emnlp-ijcnlp-2019-word.zip), or the [Overleaf template](https://www.overleaf.com/latex/templates/emnlp-2019-templates/jmjnzffkknqc). Please neither modify these style files, nor use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.
 
 
 
