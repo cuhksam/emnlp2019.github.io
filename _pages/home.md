@@ -20,7 +20,7 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <h2>News</h2>
 
 **April 15, 2019**.
-Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers#formatting-requirements">call for papers</a>.
+Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers/#formatting-requirements">call for papers</a>.
 
 **March 26, 2019**. 
 Preliminary information on childcare grants available <a href="./participants">here</a>. 
