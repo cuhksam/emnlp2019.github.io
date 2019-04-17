@@ -158,6 +158,17 @@ Both long and short papers must follow the EMNLP-IJCNLP 2019 two-column format. 
 
 All submitted papers must follow the EMNLP-IJCNLP 2019 two-column format, using the [LaTeX style files](http://bit.ly/emnlp-ijcnlp2019-latex), the [Word template](http://bit.ly/emnlp-ijcnlp2019-word), or the [Overleaf template](http://bit.ly/emnlp-ijcnlp2019-overleaf). Please neither modify these style files, nor use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.
 
+<!-- TO MEASURE CLICK STATISTICS
+https://www.emnlp-ijcnlp2019.org/downloads/emnlp-ijcnlp-2019-latex.zip
+replaced by http://bit.ly/emnlp-ijcnlp2019-latex
+
+https://www.emnlp-ijcnlp2019.org/downloads/emnlp-ijcnlp-2019-word.zip
+replaced by http://bit.ly/emnlp-ijcnlp2019-word
+
+https://www.overleaf.com/latex/templates/emnlp-2019-templates/jmjnzffkknqc
+replaced by http://bit.ly/emnlp-ijcnlp2019-overleaf
+-->
+
 
 
 ### Optional Supplementary Materials: Appendices, Software and Data
