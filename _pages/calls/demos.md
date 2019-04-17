@@ -1,18 +1,7 @@
-<!-- 
-NOTICE: 
-Content below still from 2018. 
-Once updated, comment in the permalink to make the page being created.
-Comment in the page in navigation.xml to make it appear in the menu.
--->
-
 ---
 title: 
 layout: single
-
-<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
 permalink: /calls/demos/
--->
-
 sidebar: 
     nav: "calls"
 ---
@@ -22,13 +11,17 @@ sidebar:
 
 <span style="font-weight: bolder;font-size: larger;">Call For System Demonstrations</span>
 
+To be announced soon.
+
+<!-- OUTDATED INFORMATION FROM 2018
+
 The EMNLP 2018 System Demonstration Program Committee invites proposals for the Demonstrations Program. Submissions may range from early research prototypes to mature production-ready systems. Of particular interest are publicly available open-source or open-access systems. We would like to strongly encourage demonstrations of industrial systems as long as they prove technologically innovative given the current state of the art of theory and applied research in computational linguistics.
 
 ## Topics 
 
 Areas of interest include all topics related to theoretical and applied computational linguistics, such as (but not limited to) the topics listed in the conference [call for papers](/calls/papers/). Accepted submissions will be published in a companion volume of the EMNLP 2018 conference proceedings, and will be presented during a demo session with an accompanying poster. 
 
-The systems may be of the following kinds:        
+The systems may be of the following kinds:
 - Natural Language Processing systems or system components
 - Application systems using language technology components
 - Software tools for computational linguistics research
@@ -75,3 +68,5 @@ Reviewing will be single-blind,  so authors do not need to conceal their identi
 ## Demonstration Chairs
 - Eduardo Blanco, University of North Texas, USA
 - Wei Lu, Singapore University of Technology and Design, Singapore
+
+-->
