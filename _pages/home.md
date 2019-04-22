@@ -19,6 +19,9 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 
 <h2>News</h2>
 
+**April 22, 2019**
+The <a href="./calls/papers/">call for system demonstrations</a> is out. Submissions are due by July 1. 
+
 **April 15, 2019**.
 Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers/#formatting-requirements">call for papers</a>.
 
@@ -61,30 +64,28 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
             <td>May 21, 2019</td>
-        </tr>      
-<!--
-        <tr>
+        </tr>     
+        <tr style="background-color: #fff;">
             <td style="width: 40%;">Submissions due (<i>demos</i>)</td>
             <td style="width: 30%;">Friday</td>
-            <td>June 1, 2018</td>
+            <td>July 1, 2019</td>
         </tr>
---> 
-        <tr style="background-color: #fff;">
+        <tr style="background-color: #eee;">
             <td>Author response period starts</td>
             <td>Tuesday</td>
             <td>July 9, 2019</td>
         </tr>
-        <tr style="background-color: #eee;">
+        <tr style="background-color: #fff;">
             <td>Author responses due</td>
             <td>Monday</td>
             <td>July 15, 2019</td>
         </tr>
-        <tr style="background-color: #fff;">
+        <tr style="background-color: #eee;">
             <td>Notification of acceptance</td>
             <td>Monday</td>
             <td>August 12, 2019</td>
         </tr>
-        <tr style="background-color: #eee;">
+        <tr style="background-color: #fff;">
           <td>Camera-ready papers due</td>
           <td>Friday</td>
           <td>August 30, 2019</td>
