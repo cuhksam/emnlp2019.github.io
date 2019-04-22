@@ -57,7 +57,7 @@ The organizers will provide a monitor, internet access, and electric outlets. In
         <tr style="background-color: #eee;">
             <td>Submissions due (<i>long &amp; short</i>)</td>
             <td>Monday</td>
-            <td>July 1, 2019</td>
+            <td><span style="color:red">July 1, 2019</span></td>
         </tr>
         <tr style="background-color: #fff;">
             <td>Notification of acceptance</td>
@@ -69,7 +69,7 @@ The organizers will provide a monitor, internet access, and electric outlets. In
           <td>Friday</td>
           <td>August 30, 2019</td>
         </tr>
-        <tr style="background-color: #eee;">
+        <tr style="background-color: #fff;">
             <td>Main conference</td>
             <td>Tuesday&ndash;Thursday</td>
             <td>November 5&ndash;7, 2019</td>
