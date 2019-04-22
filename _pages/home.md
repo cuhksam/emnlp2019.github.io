@@ -102,12 +102,12 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
             <td>September 24, 2018</td>
         </tr>
 -->
-        <tr style="background-color: #fff;">
+        <tr style="background-color: #eee;">
             <td style="width: 40%;">Workshops &amp; tutorials</td>
             <td style="width: 30%;">Sunday &ndash; Monday</td>
             <td>November 3&ndash;4, 2019</td>
         </tr>
-        <tr style="background-color: #eee;">
+        <tr style="background-color: #fff;">
             <td>Main conference</td>
             <td>Tuesday &ndash; Thursday</td>
             <td>November 5&ndash;7, 2019</td>
