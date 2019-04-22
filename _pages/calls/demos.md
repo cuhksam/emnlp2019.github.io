@@ -61,7 +61,7 @@ The organizers will provide a monitor, internet access, and electric outlets. In
         </tr>
         <tr style="background-color: #fff;">
             <td>Notification of acceptance</td>
-            <td>Monday9</td>
+            <td>Monday</td>
             <td>August 12, 2019</td>
         </tr>
         <tr style="background-color: #eee;">
