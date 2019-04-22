@@ -1,7 +1,7 @@
 ---
 title: 
 layout: single
-permalink: /calls/demos/
+permalink: /calls/papers/
 sidebar: 
     nav: "calls"
 ---
