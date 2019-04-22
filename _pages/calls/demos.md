@@ -1,9 +1,7 @@
 ---
-title: Call for Papers
+title: Call for System Demonstrations
 layout: single
-
-permalink: /calls/demos/
-
+permalink: /calls/demos
 sidebar: 
     nav: "calls"
 ---

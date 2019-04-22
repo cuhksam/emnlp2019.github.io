@@ -1,7 +1,7 @@
 ---
-title: 
+title: Call for Papers
 layout: single
-permalink: /calls/papers/
+permalink: /calls/papers
 sidebar: 
     nav: "calls"
 ---
