@@ -20,7 +20,7 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <h2>News</h2>
 
 **April 22, 2019**
-The <a href="./calls/papers/">call for system demonstrations</a> is out. Submissions are due by July 1. 
+The <a href="./calls/demos">call for system demonstrations</a> is out. Submissions are due by July 1. 
 
 **April 15, 2019**.
 Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers/#formatting-requirements">call for papers</a>.
@@ -29,7 +29,7 @@ Latex, Word, and Overleaf paper templates can now be found in the <a href="/call
 Preliminary information on childcare grants available <a href="./participants">here</a>. 
 
 **March 21, 2019**. 
-The <a href="./calls/papers/">call for papers</a> is out. Abstracts are due by May 15, paper submissions by May 21.
+The <a href="./calls/papers">call for papers</a> is out. Abstracts are due by May 15, paper submissions by May 21.
 
 <!-- OLDER NEWS
 **December 16, 2018**. 
