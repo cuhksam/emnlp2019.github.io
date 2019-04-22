@@ -186,10 +186,11 @@ The conference website will continue to be updated with information on workshops
 
 ## Organizers
 
-- General Chair: 
-      Kentaro Inui (Tohuku University, Japan)
-- Program Co-Chairs: 
-      Jing Jiang (Singapore Management University, Singapore), 
-      Vincent Ng (University of Texas at Dallas, USA), and 
-      Xiaojun Wan (Peking University, China)
+<b>General Chair</b><br> 
+Kentaro Inui (Tohuku University, Japan)
+
+<b>Program Co-Chairs</b><br> 
+Jing Jiang (Singapore Management University, Singapore)<br> 
+Vincent Ng (University of Texas at Dallas, USA)<br> 
+Xiaojun Wan (Peking University, China)
 

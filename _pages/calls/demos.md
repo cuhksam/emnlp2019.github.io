@@ -83,6 +83,6 @@ The organizers will provide a monitor, internet access, and electric outlets. In
 
 ## Organizers
 
-- Demonstration Chairs: 
-      Ruihong Huang, Texas A&M University
-      Sebastian Pado, University of Stuttgart
+<b>Demonstration Chairs</b><br> 
+Ruihong Huang, Texas A&M University<br> 
+Sebastian Pado, University of Stuttgart
