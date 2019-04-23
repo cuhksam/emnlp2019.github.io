@@ -50,7 +50,10 @@ gold:
     image_path: /assets/images/logos/naverlabs-logo.png
     alt: "Naver Labs Europe Logo"
     title: "Naver Labs Europe"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://bytedance.com
+    image_path: /assets/images/logos/bytedance-logo.png
+    alt: "ByteDance Logo"
+    title: "ByteDance"
 silver:
   - url: http://www.duolingo.com
     image_path: /assets/images/logos/duolingo-logo.png
