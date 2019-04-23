@@ -20,13 +20,13 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <h2>News</h2>
 
 **April 23, 2019**. 
-Please notice the new <a href="/calls/papers/#multiple-submission-policy">multiple submission policy</a> in the call for papers. 
+Please notice the new <a href="/calls/papers#multiple-submission-policy">multiple submission policy</a> in the call for papers. 
 
 **April 22, 2019**
 The <a href="./calls/demos">call for system demonstrations</a> is out. Submissions are due by July 1. 
 
 **April 15, 2019**.
-Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers/#formatting-requirements">call for papers</a>.
+Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers#formatting-requirements">call for papers</a>.
 
 **March 26, 2019**. 
 Preliminary information on childcare grants available <a href="./participants">here</a>. 
