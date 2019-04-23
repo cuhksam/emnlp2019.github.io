@@ -147,7 +147,8 @@ To ensure anonymity, submissions and supplementary materials must not include th
 
 ### Multiple Submission Policy
 
-<span style="color:cornflowerblue">EMNLP-IJCNLP 2019 will not consider any paper that is under review in a journal or another conference at the time of submission.</span> Neither will the conference consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. In addition, <span style="color:cornflowerblue">authors may not submit the paper elsewhere during EMNLP-IJCNLP 2019's review period.</span> Authors submitting more than one paper to EMNLP-IJCNLP 2019 must ensure that the submissions do not overlap significantly (>25%) with each other in content or results.
+An important change has been made regarding this year's multiple submission policy. <span style="color:cornflowerblue">EMNLP-IJCNLP 2019 will not consider any paper that is under review in a journal or another conference at the time of submission.</span> In addition, we will not consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. </span>Papers may not be submitted elsewhere during the EMNLP-IJCNLP 2019 review period.</span> Authors submitting more than one paper to EMNLP-IJCNLP 2019 must ensure that the submissions do not overlap significantly (>25%) with each other in content or results. Due to a significant increase in submissions to recent NLP conferences, we had to change the policy in order to reduce the workload for reviewers.
+
 
 
 ### Formatting Requirements
