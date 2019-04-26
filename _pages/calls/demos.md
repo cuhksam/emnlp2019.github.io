@@ -55,7 +55,7 @@ The organizers will provide a monitor, internet access, and electric outlets. In
 <table>
     <tbody>
         <tr style="background-color: #eee;">
-            <td>Submissions due (<i>long &amp; short</i>)</td>
+            <td>Submissions due</td>
             <td>Monday</td>
             <td><span style="color:red">July 1, 2019</span></td>
         </tr>
