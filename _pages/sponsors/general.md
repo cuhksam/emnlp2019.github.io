@@ -54,6 +54,12 @@ gold:
     image_path: /assets/images/logos/bytedance-logo.png
     alt: "ByteDance Logo"
     title: "ByteDance"
+  - url: http://www.megagon.ai 
+    image_path: /assets/images/logos/megagon-logo.png
+    alt: "Megagon Labs Logo"
+    title: "Megagon Labs"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 silver:
   - url: http://www.duolingo.com
     image_path: /assets/images/logos/duolingo-logo.png
