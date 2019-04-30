@@ -58,7 +58,10 @@ gold:
     image_path: /assets/images/logos/megagon-logo.png
     alt: "Megagon Labs Logo"
     title: "Megagon Labs"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://zhuiyi.ai/en/
+    image_path: /assets/images/logos/zhuiyi-logo.png
+    alt: "Zhuiyi Logo"
+    title: "Zhuiyi"
   - image_path: /assets/images/logos/blank-logo.png
 silver:
   - url: http://www.duolingo.com
