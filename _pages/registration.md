@@ -1,9 +1,3 @@
-<!-- 
-NOTICE: 
-Once updated, comment in the permalink to make the page being created.
-Comment in the page in navigation.xml to make it appear in the menu.
--->
-
 ---
 title: Registration
 layout: single
