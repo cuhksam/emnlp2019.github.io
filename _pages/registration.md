@@ -2,7 +2,7 @@
 title: Registration
 layout: single
 excerpt: "EMNLP 2019 Conference Registration."
-permalink: /registration
+permalink: /registration/
 sidebar: false
 ---
 {% include base_path %}
