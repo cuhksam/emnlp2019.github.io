@@ -7,7 +7,7 @@ sidebar: false
 ---
 {% include base_path %}
 
-<!-- {% include toc icon="gears" %} -->
+{% include toc icon="gears" %}
 
 The EMNLP-IJCNLP 2019 conference registration fees are not confirmed yet. We hope to keep the fees the same as for EMNLP 2018. Below are the EMNLP 2018 fees to use as an estimate when planning your travels.  We hope to have the final registration fees posted here and open registration in mid-August.
 
