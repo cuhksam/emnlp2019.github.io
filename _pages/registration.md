@@ -1,6 +1,5 @@
 <!-- 
 NOTICE: 
-Content below still from 2018. 
 Once updated, comment in the permalink to make the page being created.
 Comment in the page in navigation.xml to make it appear in the menu.
 -->
@@ -8,21 +7,17 @@ Comment in the page in navigation.xml to make it appear in the menu.
 ---
 title: Registration
 layout: single
-excerpt: "EMNLP 2018 Conference Registration."
-
-<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
+excerpt: "EMNLP 2019 Conference Registration."
 permalink: /registration/
--->
-
 sidebar: false
 ---
 {% include base_path %}
 
 <!-- {% include toc icon="gears" %} -->
 
-The EMNLP 2018 conference registration fees are shown below and are the same as for EMNLP 2017. Note that both early and late registration ended on **September 24, 2018** and **October 19, 2018** respectively. You can now only register on site.
+The EMNLP-IJCNLP 2019 conference registration fees are not confirmed yet. We hope to keep the fees the same as for EMNLP 2018. Below are the EMNLP 2018 fees to use as an estimate when planning your travels.  We hope to have the final registration fees posted here and open registration in mid-August.
 
-## Registration Fees
+## Previous EMNLP2018 Registration Fees
 
 <table>
   <thead>
@@ -108,4 +103,3 @@ The EMNLP 2018 conference registration fees are shown below and are the same as 
 
 - Cancellations due to governmental travel restrictions or failure to obtain a visa or serious illness that prevents travel to attend the Conference will receive a full refund regardless of when notification is received by the ACL Office.
 
--->

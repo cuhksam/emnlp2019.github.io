@@ -12,8 +12,8 @@ main:
 #  - title: "Schedule"
 #    url: /schedule
 
-#  - title: "Registration"
-#   url: /registration
+  - title: "Registration"
+    url: /registration
 
   - title: "Participants"
     url: /participants
