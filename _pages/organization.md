@@ -20,9 +20,13 @@ Jing Jiang, Singapore Management University, Singapore<br/>
 Vincent Ng, University of Texas at Dallas, USA<br/>
 Xiaojun Wan, Peking University, China
 
-<!-- Notice: One point per area -->
+## Senior Program Committee
+<span style="color: lightgray">TBA</span>
+
+<!-- Notice: One point per area
 ## Area Chairs
 <span style="color: lightgray">TBA</span>
+ -->
 
 ## Local Organizing Committee
 Kam-Fai Wong, Chinese University of Hong Kong, China (chair)<br/>
@@ -41,32 +45,36 @@ Naoaki Okazaki, Tokyo Institute of Technology, Japan
 Marine Carpuat, University of Maryland, USA<br/>
 Timothy Baldwin, University of Melbourne, Australia
 
+## Demonstration Chairs
+Sebastian Pad&oacute;, University of Stuttgart, Germany<br/>
+Ruihong Huang, Texas A&M University, USA
+
 ## General Publication Chair
 Micha Elsner, The Ohio State University, USA
 	
 ## Publication Chairs
 Fei Liu, University of Central Florida, USA<br/>
 Pontus Stenetorp, University College London, UK
-	
-## Demonstration Chairs
-Sebastian Pad&oacute;, University of Stuttgart, Germany<br/>
-Ruihong Huang, Texas A&M University, USA
 
-## Publicity Chairs
-Wei Xu, Ohio State University, USA<br/>
-Sebastian Ruder, National University of Ireland, Ireland
-
-## Handbook Chair
+## Conference Handbook Chair
 Serena Villata, CNRS, France
 
-## Video Chair
-<span style="color: lightgray">TBA</span>
-
-## Handbook Advisor
+## Conference Handbook Advisor
 Kai-Wei Chang, University of California at Los Angeles, USA
 
 ## Conference Handbook Proofreader
 Natalie Schluter, IT University of Copenhagen, Denmark
+	
+## Publicity Chairs
+Wei Xu, Ohio State University, USA<br/>
+Sebastian Ruder, National University of Ireland, Ireland
+
+## Website &amp; Conference App Chairs
+Kevin Duh, John Hopkins University, USA<br/>
+Henning Wachsmuth, Paderborn University, Germany
+
+## Video Chair
+<span style="color: lightgray">TBA</span>
 
 ## Student Volunteer Coordinator &amp; Student Scholarship Chairs
 Wenjie Li, Hong Kong Polytechnic University, China<br/>
@@ -76,9 +84,8 @@ Marzieh Saeidi, Facebook AI Research, UK
 Olivia Kwong, Chinese University of Hong Kong, China<br/>
 Sujian Li, Peking University, China
 
-## Website &amp; Conference App Chairs
-Kevin Duh, John Hopkins University, USA<br/>
-Henning Wachsmuth, Paderborn University, Germany
-
 ## Local Sponsorship Chair
 Dongyan Zhao, Peking University, China
+
+## ACL Business Manager
+Priscilla Rasmussen, Association for Computational Linguistics, USA
