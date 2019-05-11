@@ -3,7 +3,8 @@ title: Organizing Committee
 layout: single
 excerpt: "EMNLP-IJCNLP 2019 organizing committee."
 permalink: /organization
-sidebar: false
+sidebar: 
+    nav: "organization"
 ---
 {% include base_path %}
 

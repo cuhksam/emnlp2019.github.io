@@ -60,6 +60,14 @@ program:
 #       - title: "Social Event"
 #         url: /participants/social/
 
+organization:
+   - title: Organization
+     children:
+       - title: "Organizing committee"
+         url: /organization
+       - title: "Program committee"
+         url: /pc
+
 sponsors:
    - title: Sponsorship
      children:
