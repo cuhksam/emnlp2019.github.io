@@ -18,11 +18,10 @@ sidebar:
 We invite the submission of long and short papers related to empirical methods in natural language processing. Accepted papers will be presented as oral talks or posters. As in recent years, the conference will also include presentations of selected papers accepted by the [Transactions of the Association for Computational Linguistics (TACL)](http://www.transacl.org).
 
 
-<!--
 <div class="text-center">
 <a href="https://www.softconf.com/emnlp2019/papers/" target="_blank" class="btn btn--primary">Submit a Paper</a>
 </div>
--->
+
 
 
 ## Topics
@@ -194,4 +193,24 @@ Kentaro Inui (Tohuku University, Japan)
 Jing Jiang (Singapore Management University, Singapore)<br> 
 Vincent Ng (University of Texas at Dallas, USA)<br> 
 Xiaojun Wan (Peking University, China)
+
+<b>Senior Area Chairs</b><br>
+Dialog and Interactive Systems: Amanda Stent<br>
+Discourse and Pragmatics: Bonnie Webber<br>
+Information Extraction: Dan Roth<br>
+Information Retrieval and Document Analysis: Hang Li<br>
+Lexical Semantics: Mona Diab<br>
+Linguistic Theories, Cognitive Modeling and Psycholinguistics: Andrew Kehler<br>
+Machine Learning for NLP: Kevin Duh<br>
+Machine Translation and Multilinguality: Chris Quirk<br>
+Phonology, Morphology and Word Segmentation: Yuji Matsumoto<br>
+Question Answering: Scott Yih<br>
+Sentence-level Semantics: Mirella Lapata<br>
+Sentiment Analysis and Argument Mining: Yulan He<br>
+Social Media and Computational Social Science: Dirk Hovy<br>
+Speech, Vision, Robotics, Multimodal and Grounding: Li Haizhou<br>
+Summarization and Generation: Michael White<br>
+Tagging, Chunking, Syntax and Parsing: Yue Zhang<br>
+Text Mining and NLP Applications: Jimmy Lin<br>
+Textual Inference and Other Areas of Semantics: Alessandro Moschitti
 
