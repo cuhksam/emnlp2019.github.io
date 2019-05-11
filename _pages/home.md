@@ -21,6 +21,8 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <a href="https://www.softconf.com/emnlp2019/papers/" target="_blank" class="btn btn--primary">Submit long or short paper</a>
 &nbsp;
 <a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit demo paper</a>
+<br>
+<i>long/short abstracts due May 15, long/short papers due May 21, demo papers due July 1</i>
 </div>
 
 <h2>News</h2>
