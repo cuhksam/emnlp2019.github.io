@@ -17,7 +17,16 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 </div>
 --> 
 
+<div class="text-center">
+<a href="https://www.softconf.com/emnlp2019/papers/" target="_blank" class="btn btn--primary">Submit long or short paper</a>
+&nbsp;
+<a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit demo paper</a>
+</div>
+
 <h2>News</h2>
+
+**May 11, 2019**. 
+The <a href="./pc">senior program committee</a> has been announced.
 
 **April 23, 2019**. 
 Please notice the new <a href="/calls/papers#multiple-submission-policy">multiple submission policy</a> in the call for papers. 
