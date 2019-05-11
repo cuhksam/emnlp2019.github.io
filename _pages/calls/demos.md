@@ -12,7 +12,11 @@ sidebar:
 The EMNLP 2019 System Demonstration Program Committee invites proposals for the Demonstrations Program. Submissions may range from early research prototypes to mature production-ready systems. Of particular interest are publicly available open-source or open-access systems. We would like to encourage demonstrations of industrial systems as long as they prove technologically innovative given the current state of the art of theory and applied research in computational linguistics. Areas of interest include all topics related to theoretical and applied computational linguistics, such as (but not limited to) the topics listed in the conference call for papers.
 
 Accepted submissions will be published in a companion volume of the EMNLP 2019 conference proceedings. We expect at least one of the authors to present a live demo during a demo session at EMNLP 2019, with an accompanying poster.
- 
+
+
+<div class="text-center">
+<a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit a demo paper</a>
+</div> 
 
 
 ## Submission and reviewing
