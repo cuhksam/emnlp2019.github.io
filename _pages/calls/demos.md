@@ -16,10 +16,6 @@ Accepted submissions will be published in a companion volume of the EMNLP 2019 c
 
 <div class="text-center">
 <a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit demo paper</a>
-
-<h6>
-due July 1 (UTC -7h)
-</h6>
 </div> 
 
 
