@@ -22,12 +22,8 @@ Vincent Ng, University of Texas at Dallas, USA<br/>
 Xiaojun Wan, Peking University, China
 
 ## Senior Program Committee
-<span style="color: lightgray">TBA</span>
+See <a href="./pc">program committee page</a>.
 
-<!-- Notice: One point per area
-## Area Chairs
-<span style="color: lightgray">TBA</span>
- -->
 
 ## Local Organizing Committee
 Kam-Fai Wong, Chinese University of Hong Kong, China (chair)<br/>
