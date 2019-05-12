@@ -29,6 +29,9 @@ long/short abstracts due May 15, long/short papers due May 21, demo papers due J
 
 <h2>News</h2>
 
+**May 12, 2019**
+[Submission Guidelines](./calls/submission) have been published to address some common questions.
+
 **May 11, 2019**. 
 The <a href="./pc">senior program committee</a> has been announced.
 
