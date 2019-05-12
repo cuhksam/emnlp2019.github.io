@@ -29,7 +29,7 @@ long/short abstracts due May 15, long/short papers due May 21, demo papers due J
 
 <h2>News</h2>
 
-**May 12, 2019**
+**May 12, 2019**.
 [Submission Guidelines](./calls/submission) have been published to address some common questions.
 
 **May 11, 2019**. 
@@ -38,7 +38,7 @@ The <a href="./pc">senior program committee</a> has been announced.
 **April 23, 2019**. 
 Please notice the new <a href="/calls/papers#multiple-submission-policy">multiple submission policy</a> in the call for papers. 
 
-**April 22, 2019**
+**April 22, 2019**.
 The <a href="./calls/demos">call for system demonstrations</a> is out. Submissions are due by July 1. 
 
 **April 15, 2019**.
