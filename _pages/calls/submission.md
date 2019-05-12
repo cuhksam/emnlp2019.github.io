@@ -7,6 +7,8 @@ sidebar:
 ---
 {% include base_path %}
 
+{% include toc icon="gears" %}
+
 Both abstract submissions and full paper submissions are to be made through the START system at [https://www.softconf.com/emnlp2019/papers/](https://www.softconf.com/emnlp2019/papers/).
 
 
