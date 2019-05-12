@@ -44,11 +44,10 @@ The <a href="./calls/demos">call for system demonstrations</a> is out. Submissio
 **April 15, 2019**.
 Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers#formatting-requirements">call for papers</a>.
 
+<!-- OLDER NEWS
 **March 26, 2019**. 
 Preliminary information on childcare grants available <a href="./participants">here</a>. 
 
-
-<!-- OLDER NEWS
 **March 21, 2019**. 
 The <a href="./calls/papers">call for papers</a> is out. Abstracts are due by May 15, paper submissions by May 21.
 
