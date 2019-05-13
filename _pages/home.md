@@ -23,7 +23,9 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit demo paper</a>
 
 <h6>
-long/short abstracts due May 15, long/short papers due May 21, demo papers due July 1 (all UTC -7h)
+Long/short abstracts due May 15, long/short papers due May 21, demo papers due July 1 (all UTC -7h).
+
+For questions on submissions, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
 </h6>
 </div>
 
