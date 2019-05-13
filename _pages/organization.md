@@ -21,7 +21,7 @@ Jing Jiang, Singapore Management University, Singapore<br/>
 Vincent Ng, University of Texas at Dallas, USA<br/>
 Xiaojun Wan, Peking University, China
 
-<i>For questions on questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program chairs</a>.</i>
+<i>For questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program chairs</a>.</i>
 
 
 ## Senior Program Committee
