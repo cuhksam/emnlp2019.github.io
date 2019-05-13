@@ -13,6 +13,9 @@ sidebar:
 All members of the organizing committee, as far as defined already, can be found below.
 
 
+<i>For questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.</i>
+
+
 ## General Chair
 Kentaro Inui, Tohuku University, Japan
 
@@ -20,9 +23,6 @@ Kentaro Inui, Tohuku University, Japan
 Jing Jiang, Singapore Management University, Singapore<br/>
 Vincent Ng, University of Texas at Dallas, USA<br/>
 Xiaojun Wan, Peking University, China
-
-<i>For questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.</i>
-
 
 ## Senior Program Committee
 See <a href="./pc">program committee page</a>.
