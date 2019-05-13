@@ -10,9 +10,7 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-The EMNLP-IJCNLP 2019 program committee is chaired by the following people. Area chairs to be announced later.
-
-<i>For questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.</i>
+The EMNLP-IJCNLP 2019 program committee is chaired by the following people. Area chairs to be announced later. For questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
 
 
 ## Program Co-Chairs
