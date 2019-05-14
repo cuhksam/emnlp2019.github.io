@@ -25,14 +25,14 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <h6>
 Long/short abstracts due May 15, long/short papers due May 21, demo papers due July 1 (all UTC -7h).
 <br>
-For questions on submissions, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
+For questions on submissions, check the [FAQs](./calls/submission) or send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
 </h6>
 </div>
 
 <h2>News</h2>
 
-**May 12, 2019**.
-[Submission Guidelines](./calls/submission) have been published to address some common questions.
+**May 14, 2019**.
+[Submission FAQs](./calls/submission) have been published, including general guidelines and specific questions. 
 
 **May 11, 2019**. 
 The <a href="./pc">senior program committee</a> has been announced.
@@ -47,6 +47,9 @@ The <a href="./calls/demos">call for system demonstrations</a> is out. Submissio
 Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers#formatting-requirements">call for papers</a>.
 
 <!-- OLDER NEWS
+**May 12, 2019**.
+[Submission Guidelines](./calls/submission) have been published to address some common questions.
+
 **March 26, 2019**. 
 Preliminary information on childcare grants available <a href="./participants">here</a>. 
 
