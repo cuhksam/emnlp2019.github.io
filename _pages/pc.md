@@ -61,7 +61,7 @@ Yulan He
 Dirk Hovy
 
 ### Speech, Vision, Robotics, Multimodal and Grounding
-Li Haizhou
+Haizhou Li
 
 ### Summarization and Generation
 Michael White
