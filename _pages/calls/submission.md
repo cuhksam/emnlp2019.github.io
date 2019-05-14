@@ -35,12 +35,14 @@ The list of authors cannot be changed after the full paper submission deadline, 
 <b>Is there a separate abstract submission page?</b><br>
 No. Both abstract submission and paper submission are done through the [START](https://www.softconf.com/emnlp2019/papers/) system. Before the abstract submission deadline, submission of the paper (in PDF format) is optional. After the abstract submission deadline, submission of the paper (in PDF format) is mandatory.
 
-<b>Can the abstract be changed after the abstract submission deadline?</b> 
+<b>Can the abstract be changed after the abstract submission deadline?</b><br>
 Yes, the abstract can still be modified after the abstract submission deadline, but no substantial changes should be made, i.e., the modified abstract should stay faithful to the original version.
 
-<b>What if my paper is relevant to multiple Subject Areas?</b> 
+<b>What if my paper is relevant to multiple Subject Areas?</b><br> 
 Your paper will be handled within a single area. Therefore, we suggest that you choose the area that your paper is most relevant to during submission. The Senior Area Chairs will try their best to assign your paper to the right reviewers.
 
+<b>I don't know whether my submission will be a long paper or a short paper until the final submission deadline. What should I do for abstract submission?</b><br>
+Make both a long abstract submission and a short abstract submission before the abstract deadline. Withdraw the submission that is not needed anymore before the final submission deadline.
 
 
 
