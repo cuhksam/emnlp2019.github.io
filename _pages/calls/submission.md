@@ -33,7 +33,7 @@ The list of authors cannot be changed after the full paper submission deadline, 
 ## Questions and answers on submissions
 
 <b>Q:</b> Is there a separate abstract submission page?<br>
-<b>A:</b> No. Both abstract submission and paper submission are done through the START system. Before the abstract submission deadline, submission of the paper (in PDF format) is optional. After the abstract submission deadline, submission of the paper (in PDF format) is mandatory.
+<b>A:</b> No. Both abstract submission and paper submission are done through the [START](https://www.softconf.com/emnlp2019/papers/) system. Before the abstract submission deadline, submission of the paper (in PDF format) is optional. After the abstract submission deadline, submission of the paper (in PDF format) is mandatory.
 
 <b>Q:</b> Can the abstract be changed after the abstract submission deadline?
 <b>A:</b> Yes, the abstract can still be modified after the abstract submission deadline, but no substantial changes should be made, i.e., the modified abstract should stay faithful to the original version.
