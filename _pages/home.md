@@ -25,7 +25,7 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 <h6>
 Long/short abstracts due May 15, long/short papers due May 21, demo papers due July 1 (all UTC -7h).
 <br>
-For questions on submissions, first check the (<a href="./calls/submission>FAQs</a>. If needed, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
+For questions on submissions, first check the <a href="./calls/submission">FAQs</a>. If needed, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
 </h6>
 </div>
 
