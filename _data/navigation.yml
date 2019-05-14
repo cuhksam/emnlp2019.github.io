@@ -37,7 +37,7 @@ calls:
          url: /calls/papers
        - title: "System Demonstrations"
          url: /calls/demos
-       - title: "Submission Guidelines"
+       - title: "Submission FAQs"
          url: /calls/submission
 
 program:
