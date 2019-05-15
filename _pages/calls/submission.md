@@ -18,7 +18,7 @@ For all submissions, abstracts must be submitted by May 15, 2019, Pacific Daylig
 
 It is mandatory to submit the abstract of the paper. The abstract can still be modified after the abstract submission deadline, but no substantial changes should be made, i.e., the modified abstract should stay faithful to the original version.
 
-It is mandatory to choose the Subject Area of the paper, and this cannot be changed after the abstract submission deadline.
+It is mandatory to choose the Subject Area of the paper, and this cannot be changed after the abstract submission deadline. Please note that your choice of a subject area helps the program chairs to place your paper into an area, but the program chairs may move your paper to a different area when the program chairs see fit.
 
 It is optional to submit the full paper as part of the abstract submission.
 
