@@ -23,21 +23,21 @@ Xiaojun Wan, Peking University, China
 
 <br>
 ![image-left](/assets/images/organizers/amanda_stent.jpg){: .align-left}
-### Dialog and Interactive Systems
+<b>Dialog and Interactive Systems</b><br>
 Amanda Stent
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
-### Discourse and Pragmatics
+<b>Discourse and Pragmatics</b><br>
 Bonnie Webber
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/dan_roth.jpg){: .align-left}
-### Information Extraction
+<b>Information Extraction</b><br>
 Dan Roth
 
 <p>&nbsp;</p>
