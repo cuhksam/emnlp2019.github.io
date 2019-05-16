@@ -26,7 +26,7 @@ Xiaojun Wan, Peking University, China
 ### Dialog and Interactive Systems
 Amanda Stent
 
-<p>&nbsp;</p>
+<p>&nbsp;<br></p>
 
 
 ![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
