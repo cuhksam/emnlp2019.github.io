@@ -141,7 +141,7 @@ Jimmy Lin
 <p>&nbsp;</p>
 
 
-![image-left](/assets/images/organizers/alessandro-moschitti.jpg){: .align-left}
+![image-left](/assets/images/organizers/alessandro_moschitti.jpg){: .align-left}
 ### Textual Inference and Other Areas of Semantics
 Alessandro Moschitti
 
