@@ -37,88 +37,95 @@ Peking University, China<br>
 </table>
 
 
+
+
+
+
+
+
+
 ## Senior Area Chairs 
 
-![image-left](/assets/images/organizers/amanda_stent.jpg){: .align-left}
-<b>Dialog and Interactive Systems</b><br>
-Amanda Stent
+<table>
+<tr>
+<td><img src="/assets/images/organizers/amanda_stent.jpg"></td>
+<td><b>Dialog and Interactive Systems</b><br>
+Amanda Stent<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/bonnie_webber.jpg"></td>
+<td><b>Discourse and Pragmatics</b><br>
+Bonnie Webber<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/dan_roth.jpg"></td>
+<td><b>Information Extraction</b><br>
+Dan Roth<br>
+&nbsp;</td>
+</tr>
 
-<p>&nbsp;</p>
+<tr>
+<td><img src="/assets/images/organizers/hang_li.jpg"></td>
+<td><b>Information Retrieval and Document Analysis</b><br>
+Hang Li<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/mona_diab.jpg"></td>
+<td><b>Lexical Semantics</b><br>
+Mona Diab<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/andrew_kehler.jpg"></td>
+<td><b>Linguistic Theories, Cognitive Modeling and Psycholinguistics</b><br>
+Andrew Kehler<br>
+&nbsp;</td>
+</tr>
 
-<br>
-![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
-<b>Discourse and Pragmatics</b><br>
-Bonnie Webber
+<tr>
+<td><img src="/assets/images/organizers/kevin_duh.jpg"></td>
+<td><b>Machine Learning for NLP</b><br>
+Kevin Duh<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/chris_quirk.jpg"></td>
+<td><b>Machine Translation and Multilinguality</b><br>
+Chris Quirk<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/yuji_matsumoto.jpg"></td>
+<td><b>Phonology, Morphology and Word Segmentation</b><br>
+Yuji Matsumoto<br>
+&nbsp;</td>
+</tr>
 
-<p>&nbsp;</p>
+<tr>
+<td><img src="/assets/images/organizers/scott_yih.jpg"></td>
+<td><b>Question Answering</b><br>
+Scott Yih<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/mirella_lapata.jpg"></td>
+<td><b>Sentence-level Semantics</b><br>
+Mirella Lapata<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/yulan_he.jpg"></td>
+<td><b>Sentiment Analysis and Argument Mining</b><br>
+Yulan He<br>
+&nbsp;</td>
+</tr>
+</table>
 
-<br>
-![image-left](/assets/images/organizers/dan_roth.jpg){: .align-left}
-<b>Information Extraction</b><br>
-Dan Roth
 
-<p>&nbsp;</p>
 
-<br>
-![image-left](/assets/images/organizers/hang_li.jpg){: .align-left}
-<b>Information Retrieval and Document Analysis</b><br>
-Hang Li
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/mona_diab.jpg){: .align-left}
-<b>Lexical Semantics</b><br>
-Mona Diab
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/andrew_kehler.jpg){: .align-left}
-<b>Linguistic Theories, Cognitive Modeling and Psycholinguistics</b><br>
-Andrew Kehler
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/kevin_duh.jpg){: .align-left}
-<b>Machine Learning for NLP</b><br>
-Kevin Duh
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/chris_quirk.jpg){: .align-left}
-<b>Machine Translation and Multilinguality</b><br>
-Chris Quirk
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/yuji_matsumoto.jpg){: .align-left}
-<b>Phonology, Morphology and Word Segmentation</b><br>
-Yuji Matsumoto
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/scott_yih.jpg){: .align-left}
-<b>Question Answering</b><br>
-Scott Yih
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/mirella_lapata.jpg){: .align-left}
-<b>Sentence-level Semantics</b><br>
-Mirella Lapata
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/yulan_he.jpg){: .align-left}
-<b>Sentiment Analysis and Argument Mining</b><br>
-Yulan He
 
 <p>&nbsp;</p>
 
