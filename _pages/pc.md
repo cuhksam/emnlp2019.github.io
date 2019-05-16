@@ -41,14 +41,10 @@ Peking University, China
 <b>Dialog and Interactive Systems</b><br>
 Amanda Stent
 
-<p>&nbsp;</p>
-
 <br>
 ![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
 <b>Discourse and Pragmatics</b><br>
 Bonnie Webber
-
-<p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/dan_roth.jpg){: .align-left}
