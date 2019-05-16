@@ -25,6 +25,7 @@ Xiaojun Wan, Peking University, China
 ### Dialog and Interactive Systems
 Amanda Stent
 
+![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
 ### Discourse and Pragmatics
 Bonnie Webber
 
