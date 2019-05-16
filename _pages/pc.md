@@ -19,7 +19,7 @@ The EMNLP-IJCNLP 2019 program committee is chaired by the following people. Area
 <table>
 <tr size="128px">
 <td><img src="/assets/images/organizers/jing_jiang.jpg"></td>
-<td>Jing Jiang<br>
+<td align="left">Jing Jiang<br>
 Singapore Management University, Singapore<br>
 &nbsp;</td>
 </tr>
