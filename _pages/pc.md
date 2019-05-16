@@ -21,12 +21,14 @@ Singapore Management University, Singapore
 
 <p>&nbsp;</p>
 
+<br>
 ![image-left](/assets/images/organizers/vincent_ng.jpg){: .align-left}
 Vincent Ng<br>
 University of Texas at Dallas, USA
 
 <p>&nbsp;</p>
 
+<br>
 ![image-left](/assets/images/organizers/xiaojun_wan.jpg){: .align-left}
 Xiaojun Wan<br>
 Peking University, China
@@ -42,12 +44,14 @@ Amanda Stent
 
 <p>&nbsp;</p>
 
+<br>
 ![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
 <b>Discourse and Pragmatics</b><br>
 Bonnie Webber
 
 <p>&nbsp;</p>
 
+<br>
 ![image-left](/assets/images/organizers/dan_roth.jpg){: .align-left}
 <b>Information Extraction</b><br>
 Dan Roth
@@ -61,6 +65,7 @@ Hang Li
 
 <p>&nbsp;</p>
 
+<br>
 ![image-left](/assets/images/organizers/mona_diab.jpg){: .align-left}
 <b>Lexical Semantics</b><br>
 Mona Diab
