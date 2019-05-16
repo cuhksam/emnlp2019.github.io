@@ -27,8 +27,8 @@ Xiaojun Wan, Peking University, China
 Amanda Stent
 </div>
 
-<div>
 ![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
+<div>
 ### Discourse and Pragmatics
 Bonnie Webber
 </div>
