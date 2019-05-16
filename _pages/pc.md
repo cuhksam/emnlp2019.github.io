@@ -21,17 +21,15 @@ Xiaojun Wan, Peking University, China
 
 ## Senior Area Chairs 
 
-<div>
+
 ![image-left](/assets/images/organizers/amanda_stent.jpg){: .align-left}
-### Dialog and Interactive Systems
-Amanda Stent
-</div>
+### Dialog and Interactive Systems{: .align-left}
+Amanda Stent{: .align-left}
 
 ![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
-<div>
-### Discourse and Pragmatics
-Bonnie Webber
-</div>
+### Discourse and Pragmatics{: .align-left}
+Bonnie Webber{: .align-left}
+
 
 ### Information Extraction
 Dan Roth
