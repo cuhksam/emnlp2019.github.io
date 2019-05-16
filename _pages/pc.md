@@ -29,7 +29,7 @@ University of Texas at Dallas, USA
 <p>&nbsp;</p>
 
 <br>
-![image-left](/assets/images/organizers/xiao_wan.jpg){: .align-left}
+![image-left](/assets/images/organizers/xiaojun_wan.jpg){: .align-left}
 Xiaojun Wan<br>
 Peking University, China
 
