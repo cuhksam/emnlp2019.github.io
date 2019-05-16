@@ -31,6 +31,7 @@ University of Texas at Dallas, USA
 Xiaojun Wan<br>
 Peking University, China
 
+<p>&nbsp;</p>
 
 
 ## Senior Area Chairs 
@@ -60,7 +61,6 @@ Hang Li
 
 <p>&nbsp;</p>
 
-<br>
 ![image-left](/assets/images/organizers/mona_diab.jpg){: .align-left}
 <b>Lexical Semantics</b><br>
 Mona Diab
