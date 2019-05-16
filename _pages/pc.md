@@ -19,21 +19,19 @@ The EMNLP-IJCNLP 2019 program committee is chaired by the following people. Area
 Jing Jiang<br>
 Singapore Management University, Singapore
 
-<p>&nbsp;</p>
+<hr size="0">
 
-<br>
 ![image-left](/assets/images/organizers/vincent_ng.jpg){: .align-left}
 Vincent Ng<br>
 University of Texas at Dallas, USA
 
-<p>&nbsp;</p>
+<hr size="0">
 
-<br>
 ![image-left](/assets/images/organizers/xiaojun_wan.jpg){: .align-left}
 Xiaojun Wan<br>
 Peking University, China
 
-<p>&nbsp;</p>
+<hr size="0">
 
 
 ## Senior Area Chairs 
