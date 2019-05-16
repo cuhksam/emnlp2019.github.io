@@ -76,7 +76,7 @@ Andrew Kehler
 
 <br>
 ![image-left](/assets/images/organizers/kevin_duh.jpg){: .align-left}
-### Machine Learning for NLP</b><br>
+<b>Machine Learning for NLP</b><br>
 Kevin Duh
 
 <p>&nbsp;</p>
