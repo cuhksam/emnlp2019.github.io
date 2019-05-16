@@ -21,7 +21,6 @@ Xiaojun Wan, Peking University, China
 
 ## Senior Area Chairs 
 
-<br>
 ![image-left](/assets/images/organizers/amanda_stent.jpg){: .align-left}
 <b>Dialog and Interactive Systems</b><br>
 Amanda Stent
@@ -44,105 +43,105 @@ Dan Roth
 
 <br>
 ![image-left](/assets/images/organizers/hang_li.jpg){: .align-left}
-### Information Retrieval and Document Analysis
+<b>Information Retrieval and Document Analysis</b><br>
 Hang Li
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/mona_diab.jpg){: .align-left}
-### Lexical Semantics
+<b>Lexical Semantics</b><br>
 Mona Diab
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/andrew_kehler.jpg){: .align-left}
-### Linguistic Theories, Cognitive Modeling and Psycholinguistics
+<b>Linguistic Theories, Cognitive Modeling and Psycholinguistics</b><br>
 Andrew Kehler
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/kevin_duh.jpg){: .align-left}
-### Machine Learning for NLP
+### Machine Learning for NLP</b><br>
 Kevin Duh
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/chris_quirk.jpg){: .align-left}
-### Machine Translation and Multilinguality
+<b>Machine Translation and Multilinguality</b><br>
 Chris Quirk
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/yuji_matsumoto.jpg){: .align-left}
-### Phonology, Morphology and Word Segmentation
+<b>Phonology, Morphology and Word Segmentation</b><br>
 Yuji Matsumoto
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/scott_yih.jpg){: .align-left}
-### Question Answering
+<b>Question Answering</b><br>
 Scott Yih
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/mirella_lapata.jpg){: .align-left}
-### Sentence-level Semantics
+<b>Sentence-level Semantics</b><br>
 Mirella Lapata
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/yulan_he.jpg){: .align-left}
-### Sentiment Analysis and Argument Mining
+<b>Sentiment Analysis and Argument Mining</b><br>
 Yulan He
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/dirk_hovy.jpg){: .align-left}
-### Social Media and Computational Social Science
+<b>Social Media and Computational Social Science</b><br>
 Dirk Hovy
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/haizhou_li.jpg){: .align-left}
-### Speech, Vision, Robotics, Multimodal and Grounding
+<b>Speech, Vision, Robotics, Multimodal and Grounding</b><br>
 Haizhou Li
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/michael_white.jpg){: .align-left}
-### Summarization and Generation
+<b>Summarization and Generation</b><br>
 Michael White
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/yue_zhang.jpg){: .align-left}
-### Tagging, Chunking, Syntax and Parsing
+<b>Tagging, Chunking, Syntax and Parsing</b><br>
 Yue Zhang
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/jimmy_lin.jpg){: .align-left}
-### Text Mining and NLP Applications
+<b>Text Mining and NLP Applications</b><br>
 Jimmy Lin
 
 <p>&nbsp;</p>
 
 <br>
 ![image-left](/assets/images/organizers/alessandro_moschitti.jpg){: .align-left}
-### Textual Inference and Other Areas of Semantics
+<b>Textual Inference and Other Areas of Semantics</b><br>
 Alessandro Moschitti
 
 
