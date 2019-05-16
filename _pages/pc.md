@@ -13,34 +13,29 @@ sidebar:
 The EMNLP-IJCNLP 2019 program committee is chaired by the following people. Area chairs to be announced later. For questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
 
 
+
 ## Program Co-Chairs
 
 <table>
 <tr>
-<td><img src="/assets/images/organizers/jing_jiang.jpg"></td>
+<td><img src="/assets/images/organizers/jing_jiang.jpg" width="128px"></td>
 <td>Jing Jiang<br>
 Singapore Management University, Singapore<br>
 &nbsp;</td>
 </tr>
 <tr>
-<td><img src="/assets/images/organizers/vincent_ng.jpg"></td>
+<td><img src="/assets/images/organizers/vincent_ng.jpg" width="128px"></td>
 <td>Vincent Ng<br>
 University of Texas at Dallas, USA<br>
 &nbsp;</td>
 </tr>
 <tr>
-<td><img src="/assets/images/organizers/xiaojun_wan.jpg"></td>
+<td><img src="/assets/images/organizers/xiaojun_wan.jpg" width="128px"></td>
 <td>Xiaojun Wan<br>
 Peking University, China<br>
 &nbsp;</td>
 </tr>
 </table>
-
-
-
-
-
-
 
 
 
