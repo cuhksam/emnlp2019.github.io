@@ -18,8 +18,8 @@ The EMNLP-IJCNLP 2019 program committee is chaired by the following people. Area
 
 <table>
 <tr>
-<td><img src="/assets/images/organizers/jing_jiang.jpg"></td>
-<td align="left">Jing Jiang<br>
+<td width="128px"><img src="/assets/images/organizers/jing_jiang.jpg"></td>
+<td>Jing Jiang<br>
 Singapore Management University, Singapore<br>
 &nbsp;</td>
 </tr>
@@ -62,7 +62,7 @@ Dan Roth<br>
 </tr>
 
 <tr>
-<td width="128px"><img src="/assets/images/organizers/hang_li.jpg"></td>
+<td><img src="/assets/images/organizers/hang_li.jpg"></td>
 <td><b>Information Retrieval and Document Analysis</b><br>
 Hang Li<br>
 &nbsp;</td>
