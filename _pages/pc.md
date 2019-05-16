@@ -21,14 +21,12 @@ Singapore Management University, Singapore
 
 <p>&nbsp;</p>
 
-<br>
 ![image-left](/assets/images/organizers/vincent_ng.jpg){: .align-left}
 Vincent Ng<br>
 University of Texas at Dallas, USA
 
 <p>&nbsp;</p>
 
-<br>
 ![image-left](/assets/images/organizers/xiaojun_wan.jpg){: .align-left}
 Xiaojun Wan<br>
 Peking University, China
@@ -41,12 +39,14 @@ Peking University, China
 <b>Dialog and Interactive Systems</b><br>
 Amanda Stent
 
-<br>
+<p>&nbsp;</p>
+
 ![image-left](/assets/images/organizers/bonnie_webber.jpg){: .align-left}
 <b>Discourse and Pragmatics</b><br>
 Bonnie Webber
 
-<br>
+<p>&nbsp;</p>
+
 ![image-left](/assets/images/organizers/dan_roth.jpg){: .align-left}
 <b>Information Extraction</b><br>
 Dan Roth
