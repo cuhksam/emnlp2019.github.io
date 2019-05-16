@@ -21,6 +21,7 @@ Xiaojun Wan, Peking University, China
 
 ## Senior Area Chairs 
 
+<br>
 ![image-left](/assets/images/organizers/amanda_stent.jpg){: .align-left}
 ### Dialog and Interactive Systems
 Amanda Stent
