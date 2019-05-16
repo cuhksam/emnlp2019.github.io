@@ -17,7 +17,7 @@ The EMNLP-IJCNLP 2019 program committee is chaired by the following people. Area
 ## Program Co-Chairs
 
 <table>
-<tr size="128px">
+<tr width="128px">
 <td><img src="/assets/images/organizers/jing_jiang.jpg"></td>
 <td align="left">Jing Jiang<br>
 Singapore Management University, Singapore<br>
@@ -42,7 +42,7 @@ Peking University, China<br>
 ## Senior Area Chairs 
 
 <table>
-<tr size="128px">
+<tr width="128px">
 <td><img src="/assets/images/organizers/amanda_stent.jpg"></td>
 <td><b>Dialog and Interactive Systems</b><br>
 Amanda Stent<br>
