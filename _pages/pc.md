@@ -122,51 +122,46 @@ Mirella Lapata<br>
 Yulan He<br>
 &nbsp;</td>
 </tr>
+
+<tr>
+<td><img src="/assets/images/organizers/dirk_hovy.jpg"></td>
+<td><b>Social Media and Computational Social Science</b><br>
+Dirk Hovy<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/haizhou_li.jpg"></td>
+<td><b>Speech, Vision, Robotics, Multimodal and Grounding</b><br>
+Haizhou Li<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/michael_white.jpg"></td>
+<td><b>Summarization and Generation</b><br>
+Michael White<br>
+&nbsp;</td>
+</tr>
+
+<tr>
+<td><img src="/assets/images/organizers/yue_zhang.jpg"></td>
+<td><b>Tagging, Chunking, Syntax and Parsing</b><br>
+Yue Zhang<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/jimmy_lin.jpg"></td>
+<td><b>Text Mining and NLP Applications</b><br>
+Jimmy Lin<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td><img src="/assets/images/organizers/alessandro_moschitti.jpg"></td>
+<td><b>Textual Inference and Other Areas of Semantics</b><br>
+Alessandro Moschitti<br>
+&nbsp;</td>
+</tr>
 </table>
 
 
-
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/dirk_hovy.jpg){: .align-left}
-<b>Social Media and Computational Social Science</b><br>
-Dirk Hovy
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/haizhou_li.jpg){: .align-left}
-<b>Speech, Vision, Robotics, Multimodal and Grounding</b><br>
-Haizhou Li
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/michael_white.jpg){: .align-left}
-<b>Summarization and Generation</b><br>
-Michael White
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/yue_zhang.jpg){: .align-left}
-<b>Tagging, Chunking, Syntax and Parsing</b><br>
-Yue Zhang
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/jimmy_lin.jpg){: .align-left}
-<b>Text Mining and NLP Applications</b><br>
-Jimmy Lin
-
-<p>&nbsp;</p>
-
-<br>
-![image-left](/assets/images/organizers/alessandro_moschitti.jpg){: .align-left}
-<b>Textual Inference and Other Areas of Semantics</b><br>
-Alessandro Moschitti
 
 
