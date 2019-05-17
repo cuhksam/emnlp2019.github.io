@@ -131,7 +131,7 @@ University of Maryland, USA<br>
 &nbsp;</td>
 </tr>
 <tr>
-<td><img src="/assets/images/organizers/timothy_baldwin.jpg"></td>
+<td><img src="/assets/images/organizers/tim_baldwin.jpg"></td>
 <td>Timothy Baldwin<br>
 University of Melbourne, Australia<br>
 &nbsp;</td>
