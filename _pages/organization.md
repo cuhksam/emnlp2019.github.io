@@ -97,7 +97,7 @@ University of Macau, China<br>
 <tr>
 <td><img src="/assets/images/organizers/ruifeng_xu.jpg"></td>
 <td>Ruifeng Xu<br>
-Harbin Institute of Technology Shenzhen Graduate School, China<br>
+Harbin Institute of Technology, Shenzhen, China<br>
 &nbsp;</td>
 </tr>
 </table>
