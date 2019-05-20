@@ -19,7 +19,7 @@ All members of the organizing committee, as far as defined already, can be found
 <tr>
 <td width="128px"><img src="/assets/images/organizers/kentaro_inui.jpg"></td>
 <td>Kentaro Inui<br>
-Tohuku University, Japan<br>
+Tohoku University, Japan<br>
 &nbsp;</td>
 </tr>
 </table>
