@@ -18,14 +18,18 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 --> 
 
 <div class="text-center">
+<!--
 <a href="https://www.softconf.com/emnlp2019/papers/" target="_blank" class="btn btn--primary">Submit long or short paper</a>
 &nbsp;
+-->
 <a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit demo paper</a>
 
 <h6>
-Long/short abstracts due May 15, long/short papers due May 21, demo papers due July 1 (all UTC -7h).
+Demo papers due July 1 (all UTC -7h).
+<!--
 <br>
 For questions on submissions, first check the <a href="./calls/submission">FAQs</a>. If not answered, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
+-->
 </h6>
 </div>
 
@@ -91,12 +95,12 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr style="background-color: #eee;">
             <td style="width: 40%;">Submissions due (<i>long &amp; short</i>)</td>
             <td style="width: 30%;">Tuesday</td>
-            <td><span style="color:red">May 21, 2019</span></td>
+            <td><strike>May 21, 2019</strike></td>
         </tr>     
         <tr style="background-color: #fff;">
             <td style="width: 40%;">Submissions due (<i>demos</i>)</td>
             <td style="width: 30%;">Friday</td>
-            <td>July 1, 2019</td>
+            <td><span style="color:red">July 1, 2019</span></td>
         </tr>
         <tr style="background-color: #eee;">
             <td>Author response period starts</td>

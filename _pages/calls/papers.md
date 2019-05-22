@@ -13,12 +13,13 @@ sidebar:
 
 We invite the submission of long and short papers related to empirical methods in natural language processing. Accepted papers will be presented as oral talks or posters. As in recent years, the conference will also include presentations of selected papers accepted by the [Transactions of the Association for Computational Linguistics (TACL)](http://www.transacl.org).
 
-
+<!--
 <div class="text-center">
 <a href="https://www.softconf.com/emnlp2019/papers/" target="_blank" class="btn btn--primary">Submit long or short paper</a>
 </div>
 
 &nbsp;<br>For questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
+-->
 
 
 ## Topics
@@ -63,7 +64,7 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
         <tr style="background-color: #eee;">
             <td>Submissions due (<i>long &amp; short</i>)</td>
             <td>Tuesday</td>
-            <td><span style="color:red">May 21, 2019</span></td>
+            <td><strike>May 21, 2019</strike></td>
         </tr>
         <tr style="background-color: #fff;">
             <td>Author response period starts</td>
