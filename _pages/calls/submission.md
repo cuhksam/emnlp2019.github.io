@@ -14,7 +14,7 @@ Both abstract submissions and full paper submissions are to be made through the 
 
 ## Demo paper submissions
 
-Concurrent posting of demo submissions to arXiv is admissible. Accordingly, the anonymity period of long and short papers is of no relevance for demo submissions. 
+Concurrent posting of demo submissions to arXiv is admissible. Accordingly, the anonymity period of long and short papers is of no relevance to demo submissions. 
 
 
 ## Abstract submissions
