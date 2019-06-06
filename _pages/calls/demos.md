@@ -25,7 +25,7 @@ All submissions should be made electronically via [START](https://www.softconf.c
 
 Submissions may consist of 6 pages (including references). Papers must conform to the official EMNLP guidelines which are contained in the LaTeX style files and the Word template. Submissions will be electronic in PDF format through the START conference management system.
 
-Reviewing will be single-blind, so authors do not need to conceal their identity. The paper should include the authors' names and affiliations. Self-references are also allowed.
+Reviewing will be single-blind, so authors do not need to conceal their identity. The paper should include the authors' names and affiliations. Self-references are also allowed. In contrast to the main session, concurrent posting of demo submissions to arXiv is admissible.
 
 
 ## Best Demo Award 

@@ -122,7 +122,7 @@ EMNLP-IJCNLP 2019 also solicits short papers. Short paper submissions must descr
 
 ### IMPORTANT: Anonymity Period
 
-EMNLP-IJCNLP 2019 adopts ACL's [new policies for submission, review, and citation](https://www.aclweb.org/portal/content/new-policies-submission-review-and-citation). Submissions that violate any of these policies will be rejected without review. 
+EMNLP-IJCNLP 2019 adopts ACL's [new policies for submission, review, and citation](https://www.aclweb.org/portal/content/new-policies-submission-review-and-citation). Submissions that violate any of these policies will be rejected without review. Note this does not apply to demo papers, which are subject to single-blind review.
 
 Most importantly, the policies define an anonymity period, which starts on April 21, 2019 (11:59pm PDT).
 

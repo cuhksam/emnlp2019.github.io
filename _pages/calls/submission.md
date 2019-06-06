@@ -12,6 +12,11 @@ sidebar:
 Both abstract submissions and full paper submissions are to be made through the START system at [https://www.softconf.com/emnlp2019/papers/](https://www.softconf.com/emnlp2019/papers/).
 
 
+## Demo paper submissions
+
+Concurrent posting of demo submissions to arXiv is admissible. Accordingly, the anonymity period of long and short papers is of no relevance for demo submissions. 
+
+
 ## Abstract submissions
 
 For all submissions, abstracts must be submitted by May 15, 2019, Pacific Daylight Savings Time (UTC -7h). No new submissions can be made after this deadline.
