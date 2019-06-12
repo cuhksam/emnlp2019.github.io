@@ -58,7 +58,7 @@ provides an interdisciplinary forum for researchers interested in automated proc
 [COmmonsense INference in NLP](http://www.coli.uni-saarland.de/~mroth/COIN/) 
 is a workshop that aims at bringing together researchers that are interested in modeling commonsense knowledge, developing computational models thereof, and applying commonsense inference methods in NLP tasks.
 
-### \[W11\] 
+### \[W11\] NewSum
 [The Workshop on New Frontiers in Summarization](https://summarization2019.github.io/) 
 seeks to bring together researchers from a diverse range of fields (e.g., summarization, visualization, language generation, cognitive and psycholinguistics) for discussion on key issues related to automatic summarization.
 
