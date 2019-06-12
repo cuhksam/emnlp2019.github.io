@@ -35,7 +35,7 @@ is a top-tier conference, yearly organized by SIGNLL (ACL's Special Interest Gro
 is a new open evaluation campaign focusing on Asian languages.
 
 ### \[W5\] NLP4IF
-[NLP for Freedom: Censorship, Disinformation, and Propaganda](http://netsci.montclair.edu/nlp4if/) 
+[NLP for Freedom: Censorship, Disinformation, and Propaganda](http://www.netcopia.net/nlp4if/) 
 is a workshop dedicated to NLP methods that potentially contribute (either positively or negatively) to the free flow of information on the Internet, or to our understanding of the issues that arise in this area.
 
 ### \[W6\] DeepLo 2019
