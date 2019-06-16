@@ -3,7 +3,7 @@
 # main links
 main:
 
-  - title: "Calls"
+  - title: "Submission"
     url: /calls/papers
 
   - title: "Program"
@@ -39,6 +39,8 @@ calls:
          url: /calls/demos
        - title: "Submission FAQs"
          url: /calls/submission
+       - title: "Reviewer Instructions"
+         url: /calls/reviewing
 
 program:
    - title: Program Details
