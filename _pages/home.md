@@ -35,6 +35,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
+**June 16, 2019**.
+If you are a reviewer at EMNLP-IJCNLP 2019, please check our [instructions for reviewers](./calls/reviewing) before reviewing.
+
 **May 17, 2019**.
 Get to know our [organizing committee](./organization) and [senior program committee](./pc).
 
