@@ -35,7 +35,7 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
-** June 19, 2019**
+**June 19, 2019**.
 Since the review process has started, authors now cannot withdraw their long and short paper submissions directly in START. If you'd like to withdraw your submission, please [contact the program chairs](mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com) with your submission ID.
 
 **June 16, 2019**.
