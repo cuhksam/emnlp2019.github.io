@@ -34,6 +34,8 @@ Full paper submissions are due by May 21, 2019, Pacific Daylight Savings Time (U
 
 The list of authors cannot be changed after the full paper submission deadline, i.e., the list of authors cannot be changed for accepted papers during camera-ready submission.
 
+During the review process, authors now cannot withdraw their paper submissions directly in START. If you'd like to withdraw your submission, please [contact the program chairs](mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com) with your submission ID.
+
 
 ## Questions and answers on submissions
 
