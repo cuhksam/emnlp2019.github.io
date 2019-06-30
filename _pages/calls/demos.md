@@ -18,6 +18,8 @@ Accepted submissions will be published in a companion volume of the EMNLP 2019 c
 <a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit demo paper</a>
 </div> 
 
+&nbsp;<br>For questions on paper submissions and other system demonstration-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-demo-chairs@googlegroups.com">mail to the demo chairs</a>.
+
 
 ## Submission and reviewing
 
