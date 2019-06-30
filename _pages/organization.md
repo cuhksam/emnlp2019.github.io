@@ -10,7 +10,11 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-All members of the organizing committee, as far as defined already, can be found below. For questions on paper submissions and other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
+All members of the organizing committee, as far as defined already, can be found below. 
+
+For questions on long and short paper submissions as well as other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>. 
+
+For questions on demo paper submissions and other system demonstration-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-demo-chairs@googlegroups.com">mail to the demo chairs</a>.
 
 
 ## General Chair
