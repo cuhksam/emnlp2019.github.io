@@ -35,14 +35,14 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
+**July 1, 2019**.
+The full list of [area chairs](./pc#area-chairs) is now available.
+
 **June 19, 2019**.
 Since the review process has started, authors now cannot withdraw their long and short paper submissions directly in START. If you'd like to withdraw your submission, please [contact the program chairs](mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com) with your submission ID.
 
 **June 16, 2019**.
 If you are a reviewer at EMNLP-IJCNLP 2019, please check our [instructions for reviewers](./calls/reviewing) before reviewing.
-
-**May 17, 2019**.
-Get to know our [organizing committee](./organization) and [senior program committee](./pc).
 
 **May 14, 2019**.
 [Submission FAQs](./calls/submission) have been published, including general guidelines and specific questions. 
@@ -55,6 +55,9 @@ The <a href="./calls/demos">call for system demonstrations</a> is out. Submissio
 
 
 <!-- OLDER NEWS
+**May 17, 2019**.
+Get to know our [organizing committee](./organization) and [senior program committee](./pc).
+
 **May 12, 2019**.
 [Submission Guidelines](./calls/submission) have been published to address some common questions.
 
