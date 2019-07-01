@@ -120,8 +120,7 @@ Haizhou Li (senior AC), Yoav Artzi, Hannaneh Hajishirzi, Xiaodong He, Gina-Anne 
 <tr>
 <td style="vertical-align:top"><img src="/assets/images/organizers/michael_white.jpg"></td>
 <td style="vertical-align:top"><b>Summarization and Generation</b><br>
-Michael White (senior AC), Anya Belz, Giuseppe Carenini, Jackie Chi Kit Cheung, Mark Dras, Michael Elhadad, Mary Ellen Foster, Claire Gardent, Albert Gatt, Chin-Yew Lin, Kathleen McKeown, Shashi Narayan, Lu Wang, Leo Wanner, Sina Zarrie&szlig;<br>
-&nbsp;</td>
+Michael White (senior AC), Anya Belz, Giuseppe Carenini, Jackie Chi Kit Cheung, Mark Dras, Michael Elhadad, Mary Ellen Foster, Claire Gardent, Albert Gatt, Chin-Yew Lin, Kathleen McKeown, Shashi Narayan, Lu Wang, Leo Wanner, Sina Zarrie&szlig;</td>
 </tr>
 
 <tr>
