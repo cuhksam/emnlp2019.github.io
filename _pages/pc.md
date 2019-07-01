@@ -39,13 +39,15 @@ Peking University, China<br>
 
 
 
-## Senior Area Chairs 
+## Area Chairs 
 
 <table>
 <tr>
 <td width="128px"><img src="/assets/images/organizers/amanda_stent.jpg"></td>
 <td><b>Dialog and Interactive Systems</b><br>
-Amanda Stent<br>
+Senior area chair: Amanda Stent<br>
+Area chairs: Luciana Benotti, Asli Celikyilmaz, Yun-Nung Chen, Milica Gasic
+Ryuichiro Higashinaka, Casey Kennington, Kazunori Komatani, Sungjin Lee, Stefan Ultes<br>
 &nbsp;</td>
 </tr>
 <tr>
