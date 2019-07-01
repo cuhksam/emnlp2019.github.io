@@ -68,21 +68,18 @@ Hang Li (senior AC), Eugene Agichtein, Gerard de Melo, Oren Kurland, Craig Macdo
 <tr>
 <td valign="top"><img src="/assets/images/organizers/mona_diab.jpg"></td>
 <td><b>Lexical Semantics</b><br>
-Mona Diab (senior AC), Marianna Apidianaki, Mohit Bansal, Manaal Faruqui, Qin Lu, Michael Roth<br>
-&nbsp;</td>
+Mona Diab (senior AC), Marianna Apidianaki, Mohit Bansal, Manaal Faruqui, Qin Lu, Michael Roth</td>
 </tr>
 <tr>
 <td valign="top"><img src="/assets/images/organizers/andrew_kehler.jpg"></td>
 <td><b>Linguistic Theories, Cognitive Modeling and Psycholinguistics</b><br>
-Andrew Kehler (senior AC), Leon Bergen, Richard Futrell, William Schuler, Suzanne Stevenson<br>
-&nbsp;</td>
+Andrew Kehler (senior AC), Leon Bergen, Richard Futrell, William Schuler, Suzanne Stevenson</td>
 </tr>
 
 <tr>
 <td valign="top"><img src="/assets/images/organizers/kevin_duh.jpg"></td>
 <td><b>Machine Learning for NLP</b><br>
-Kevin Duh (senior AC), Isabelle Augenstein, Lo&iuml;c Barrault, Danushka Bollegala, Shay B. Cohen, Yoav Goldberg, Gholamreza Haffari, Shou-de Lin, Nanyun Peng, Sujith Ravi, Laura Rimell, Sameer Singh, Jun Suzuki, Andreas Vlachos, William Yang Wang<br>
-&nbsp;</td>
+Kevin Duh (senior AC), Isabelle Augenstein, Lo&iuml;c Barrault, Danushka Bollegala, Shay B. Cohen, Yoav Goldberg, Gholamreza Haffari, Shou-de Lin, Nanyun Peng, Sujith Ravi, Laura Rimell, Sameer Singh, Jun Suzuki, Andreas Vlachos, William Yang Wang</td>
 </tr>
 <tr>
 <td valign="top"><img src="/assets/images/organizers/chris_quirk.jpg"></td>
@@ -93,14 +90,14 @@ Chris Quirk (senior AC), Marine Carpuat, Daniel Cer, Boxing Chen, Colin Cherry, 
 <tr>
 <td valign="top"><img src="/assets/images/organizers/yuji_matsumoto.jpg"></td>
 <td><b>Phonology, Morphology and Word Segmentation</b><br>
-Yuji Matsumoto (senior AC), <br>
+Yuji Matsumoto (senior AC), Nizar Habash, Kemal Oflazer, Xipeng Qiu, Hiroyuki Shindo<br>
 &nbsp;</td>
 </tr>
 
 <tr>
 <td valign="top"><img src="/assets/images/organizers/scott_yih.jpg"></td>
 <td><b>Question Answering</b><br>
-Scott Yih (senior AC), <br>
+Scott Yih (senior AC), Danqi Chen, Eunsol Choi, Yansong Feng, Matt Gardner, Sanda Harabagiu, Mohit Iyyer, Furu Wei, Caiming Xiong<br>
 &nbsp;</td>
 </tr>
 <tr>
