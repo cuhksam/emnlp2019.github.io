@@ -127,20 +127,17 @@ Michael White (senior AC), Anya Belz, Giuseppe Carenini, Jackie Chi Kit Cheung, 
 <tr>
 <td style="vertical-align:top"><img src="/assets/images/organizers/yue_zhang.jpg"></td>
 <td style="vertical-align:top"><b>Tagging, Chunking, Syntax and Parsing</b><br>
-Yue Zhang (senior AC), <br>
-&nbsp;</td>
+Yue Zhang (senior AC), Miguel Ballesteros, James Henderson, Emily Pitler, Barbara Plank, Kenji Sagae, Weiwei Sun, Meishan Zhang</td>
 </tr>
 <tr>
 <td style="vertical-align:top"><img src="/assets/images/organizers/jimmy_lin.jpg"></td>
 <td style="vertical-align:top"><b>Text Mining and NLP Applications</b><br>
-Jimmy Lin (senior AC), <br>
-&nbsp;</td>
+Jimmy Lin (senior AC), Kai-Wei Chang, Wei Gao, Lun-Wei Ku, Lei Li, Zhiyuan Liu, David Mimno, Preslav Nakov, Ming-Feng Tsai, Yoshimasa Tsuruoka, Byron C. Wallace, Min Zhang</td>
 </tr>
 <tr>
 <td style="vertical-align:top"><img src="/assets/images/organizers/alessandro_moschitti.jpg"></td>
 <td style="vertical-align:top"><b>Textual Inference and Other Areas of Semantics</b><br>
-Alessandro Moschitti (senior AC), <br>
-&nbsp;</td>
+Alessandro Moschitti (senior AC), Weiwei Cheng, Markus Dreyer, Cicero Nogueira dos Santos, Aliaksei Severyn, Kevin Small, Nianwen Xue, Fabio Massimo Zanzotto</td>
 </tr>
 </table>
 
