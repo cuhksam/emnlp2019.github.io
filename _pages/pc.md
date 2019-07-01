@@ -84,21 +84,18 @@ Kevin Duh (senior AC), Isabelle Augenstein, Lo&iuml;c Barrault, Danushka Bollega
 <tr>
 <td valign="top"><img src="/assets/images/organizers/chris_quirk.jpg"></td>
 <td><b>Machine Translation and Multilinguality</b><br>
-Chris Quirk (senior AC), Marine Carpuat, Daniel Cer, Boxing Chen, Colin Cherry, David Chiang, Ann Clifton, Marcello Federico, Orhan Firat, George Foster, Yang Liu, Minh-Thang Luong, Haitao Mi, Anders Søgaard, Jinsong Su, Zhaopeng Tu, Taro Watanabe, Deyi Xiong, Jiajun Zhang<br>
-&nbsp;</td>
+Chris Quirk (senior AC), Marine Carpuat, Daniel Cer, Boxing Chen, Colin Cherry, David Chiang, Ann Clifton, Marcello Federico, Orhan Firat, George Foster, Yang Liu, Minh-Thang Luong, Haitao Mi, Anders S&oslash;gaard, Jinsong Su, Zhaopeng Tu, Taro Watanabe, Deyi Xiong, Jiajun Zhang</td>
 </tr>
 <tr>
 <td valign="top"><img src="/assets/images/organizers/yuji_matsumoto.jpg"></td>
 <td><b>Phonology, Morphology and Word Segmentation</b><br>
-Yuji Matsumoto (senior AC), Nizar Habash, Kemal Oflazer, Xipeng Qiu, Hiroyuki Shindo<br>
-&nbsp;</td>
+Yuji Matsumoto (senior AC), Nizar Habash, Kemal Oflazer, Xipeng Qiu, Hiroyuki Shindo</td>
 </tr>
 
 <tr>
 <td valign="top"><img src="/assets/images/organizers/scott_yih.jpg"></td>
 <td><b>Question Answering</b><br>
-Scott Yih (senior AC), Danqi Chen, Eunsol Choi, Yansong Feng, Matt Gardner, Sanda Harabagiu, Mohit Iyyer, Furu Wei, Caiming Xiong<br>
-&nbsp;</td>
+Scott Yih (senior AC), Danqi Chen, Eunsol Choi, Yansong Feng, Matt Gardner, Sanda Harabagiu, Mohit Iyyer, Furu Wei, Caiming Xiong</td>
 </tr>
 <tr>
 <td valign="top"><img src="/assets/images/organizers/mirella_lapata.jpg"></td>
