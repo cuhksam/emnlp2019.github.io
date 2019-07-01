@@ -84,7 +84,7 @@ Andrew Kehler (Senior AC), Leon Bergen, Richard Futrell, William Schuler, Suzann
 <tr>
 <td valign="top"><img src="/assets/images/organizers/kevin_duh.jpg"></td>
 <td><b>Machine Learning for NLP</b><br>
-Kevin Duh (Senior AC), Isabelle Augenstein, Loïc Barrault, Danushka Bollegala, Shay B. Cohen, Yoav Goldberg, Gholamreza Haffari, Shou-de Lin, Nanyun Peng, Sujith Ravi, Laura Rimell, Sameer Singh, Jun Suzuki, Andreas Vlachos, William Yang Wang<br>
+Kevin Duh (Senior AC), Isabelle Augenstein, Lo&iuml;c Barrault, Danushka Bollegala, Shay B. Cohen, Yoav Goldberg, Gholamreza Haffari, Shou-de Lin, Nanyun Peng, Sujith Ravi, Laura Rimell, Sameer Singh, Jun Suzuki, Andreas Vlachos, William Yang Wang<br>
 &nbsp;</td>
 </tr>
 <tr>
