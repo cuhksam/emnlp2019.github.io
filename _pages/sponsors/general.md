@@ -40,7 +40,10 @@ platinum:
     image_path: /assets/images/logos/baidu-logo.png
     alt: "Baidu Logo"
     title: "Baidu"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: http://www.gtcom.com.cn/en/
+    image_path: /assets/images/logos/gtcom-logo.png
+    alt: "GTCOM Logo"
+    title: "GTCOM"
 gold:
   - url: https://www.poly-ai.com
     image_path: /assets/images/logos/polyai-logo.png
@@ -62,7 +65,10 @@ gold:
     image_path: /assets/images/logos/zhuiyi-logo.png
     alt: "Zhuiyi Logo"
     title: "Zhuiyi"
-  - image_path: /assets/images/logos/blank-logo.png
+  - url: https://www.verisk.com
+    image_path: /assets/images/logos/verisk-logo.png
+    alt: "Verisk Logo"
+    title: "Verisk"
 silver:
   - url: http://www.duolingo.com
     image_path: /assets/images/logos/duolingo-logo.png
