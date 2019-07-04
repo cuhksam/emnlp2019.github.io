@@ -111,17 +111,17 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr style="background-color: #fff;">
             <td style="width: 40%;">Submissions due (<i>demos</i>)</td>
             <td style="width: 30%;">Monday</td>
-            <td><span style="color:red">July 1, 2019</span></td>
+            <td><strike>July 1, 2019</strike></td>
         </tr>
         <tr style="background-color: #eee;">
             <td>Author response period starts</td>
             <td>Tuesday</td>
-            <td>July 9, 2019</td>
+            <td><span style="color:red">July 9, 2019</span></td>
         </tr>
         <tr style="background-color: #fff;">
             <td>Author responses due</td>
             <td>Monday</td>
-            <td>July 15, 2019</td>
+            <td><span style="color:red">July 15, 2019</span></td>
         </tr>
         <tr style="background-color: #eee;">
             <td>Notification of acceptance</td>
