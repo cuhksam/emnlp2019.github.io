@@ -69,7 +69,7 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
         <tr style="background-color: #fff;">
             <td>Author response period starts</td>
             <td>Tuesday</td>
-            <td><span style="color:red">July 9, 2019</span></td>
+            <td>July 9, 2019</td>
         </tr>
         <tr style="background-color: #eee;">
             <td>Author responses due</td>
