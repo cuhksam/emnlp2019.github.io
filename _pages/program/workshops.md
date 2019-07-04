@@ -63,7 +63,7 @@ is a workshop that aims at bringing together researchers that are interested in 
 seeks to bring together researchers from a diverse range of fields (e.g., summarization, visualization, language generation, cognitive and psycholinguistics) for discussion on key issues related to automatic summarization.
 
 ### \[W12\] ECONLP 2019
-[The 2nd Workshop on Economics and Natural Language Processing](https://julielab.de/econlp/2019) 
+[The 2nd Workshop on Economics and Natural Language Processing](https://sites.google.com/view/econlp-2019) 
 addresses the increasing relevance of natural language processing (NLP) for regional, national and international economy, both in terms of already operational language technology products and systems, as well as newly emerging methodologies and techniques reflecting the requirements at the intersection of economics and NLP. 
 
 ### \[W13\] AnnoNLP
