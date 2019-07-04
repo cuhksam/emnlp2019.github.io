@@ -13,12 +13,13 @@ The EMNLP 2019 System Demonstration Program Committee invites proposals for the 
 
 Accepted submissions will be published in a companion volume of the EMNLP 2019 conference proceedings. We expect at least one of the authors to present a live demo during a demo session at EMNLP 2019, with an accompanying poster.
 
-
+<!--
 <div class="text-center">
 <a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit demo paper</a>
 </div> 
 
 &nbsp;<br>For questions on paper submissions and other system demonstration-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-demo-chairs@googlegroups.com">mail to the demo chairs</a>.
+-->
 
 
 ## Submission and reviewing

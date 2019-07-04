@@ -17,11 +17,11 @@ excerpt: "November 3&ndash;7<br/>Hong Kong"
 </div>
 --> 
 
-<div class="text-center">
 <!--
+<div class="text-center">
+
 <a href="https://www.softconf.com/emnlp2019/papers/" target="_blank" class="btn btn--primary">Submit long or short paper</a>
 &nbsp;
--->
 <a href="https://www.softconf.com/emnlp2019/demo/" target="_blank" class="btn btn--primary">Submit demo paper</a>
 
 <h6>
@@ -29,9 +29,10 @@ Demo papers due July 1 (all UTC -7h).
 <!--
 <br>
 For questions on submissions, first check the <a href="./calls/submission">FAQs</a>. If not answered, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>.
--->
 </h6>
 </div>
+-->
+
 
 <h2>News</h2>
 
@@ -44,19 +45,17 @@ Since the review process has started, authors now cannot withdraw their long and
 **June 16, 2019**.
 If you are a reviewer at EMNLP-IJCNLP 2019, please check our [instructions for reviewers](./calls/reviewing) before reviewing.
 
-**May 14, 2019**.
-[Submission FAQs](./calls/submission) have been published, including general guidelines and specific questions. 
-
 **April 23, 2019**. 
 Please notice the new <a href="/calls/papers#multiple-submission-policy">multiple submission policy</a> in the call for papers. 
 
-**April 22, 2019**.
-The <a href="./calls/demos">call for system demonstrations</a> is out. Submissions are due by July 1. 
 
 
 <!-- OLDER NEWS
 **May 17, 2019**.
 Get to know our [organizing committee](./organization) and [senior program committee](./pc).
+
+**May 14, 2019**.
+[Submission FAQs](./calls/submission) have been published, including general guidelines and specific questions. 
 
 **May 12, 2019**.
 [Submission Guidelines](./calls/submission) have been published to address some common questions.
@@ -66,6 +65,9 @@ The <a href="./pc">senior program committee</a> has been announced.
 
 **April 15, 2019**.
 Latex, Word, and Overleaf paper templates can now be found in the <a href="/calls/papers#formatting-requirements">call for papers</a>.
+
+**April 22, 2019**.
+The <a href="./calls/demos">call for system demonstrations</a> is out. Submissions are due by July 1. 
 
 **March 26, 2019**. 
 Preliminary information on childcare grants available <a href="./participants">here</a>. 
