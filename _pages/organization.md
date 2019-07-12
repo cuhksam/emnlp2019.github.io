@@ -302,6 +302,24 @@ Peking University, China<br>
 </table>
 
 
+## Diversity &amp; Inclusion Chairs
+
+<table>
+<tr>
+<td width="128px"><img src="/assets/images/organizers/vivek_srikumar.jpg"></td>
+<td>Vivek Srikumar<br>
+University of Utah, USA<br>
+&nbsp;</td>
+</tr>
+<tr>
+<td width="128px"><img src="/assets/images/organizers/chikiu_lo.jpg"></td>
+<td>Chi-Kiu (Jackie) Lo<br>
+National Research Council Canada, Canada<br>
+&nbsp;</td>
+</tr>
+</table>
+
+
 ## Local Sponsorship Chair
 
 <table>
