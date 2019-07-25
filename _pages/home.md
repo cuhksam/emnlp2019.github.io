@@ -85,7 +85,7 @@ The important dates have been announced (see below).
 
 ## Welcome!
 
-[SIGDAT](http://sigdat.org"), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org"), the Asian Federation of Natural Language Processing, invite you to participate in the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP) and 9th International Joint Conference on Natural Language Processing (IJCNLP) in Hong Kong. 
+[SIGDAT](http://sigdat.org), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org), the Asian Federation of Natural Language Processing, invite you to participate in the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP) and 9th International Joint Conference on Natural Language Processing (IJCNLP) in Hong Kong. 
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
 
@@ -116,12 +116,12 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr style="background-color: #eee;">
             <td>Author response period starts</td>
             <td>Tuesday</td>
-            <td>July 9, 2019</td>
+            <td><strike>July 9, 2019</strike></td>
         </tr>
         <tr style="background-color: #fff;">
             <td>Author responses due</td>
             <td>Monday</td>
-            <td><span style="color:red">July 15, 2019</span></td>
+            <td><strike>July 15, 2019</strike></td>
         </tr>
         <tr style="background-color: #eee;">
             <td>Notification of acceptance</td>
