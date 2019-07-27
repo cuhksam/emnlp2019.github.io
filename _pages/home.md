@@ -36,6 +36,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
+**July 27, 2019**.
+We added dedicated contact e-mail addreses for multiple chairs from our [Organizing Committee](./organization).
+
 **July 1, 2019**.
 The full list of [area chairs](./pc#area-chairs) is now available.
 

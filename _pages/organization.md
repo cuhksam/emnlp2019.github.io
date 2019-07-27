@@ -10,11 +10,8 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-All members of the organizing committee, as far as defined already, can be found below. 
+The members of the organizing committee can be found below, in several cases along with dedicated contact addresses.
 
-For questions on long and short paper submissions as well as other program-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">mail to the program co-chairs</a>. 
-
-For questions on demo paper submissions and other system demonstration-related aspects, send a <a href="mailto:emnlp-ijcnlp-2019-demo-chairs@googlegroups.com">mail to the demo chairs</a>.
 
 
 ## General Chair
@@ -52,6 +49,8 @@ Peking University, China<br>
 </tr>
 </table>
 
+In case you have questions on any program-related aspects, just send a mail to <a href="mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com">emnlp-ijcnlp-2019-program-chairs@googlegroups.com</a>.
+
 
 ## Senior Program Committee
 See <a href="./pc">program committee page</a>.
@@ -78,7 +77,6 @@ Chinese University of Hong Kong, China<br>
 Hong Kong Polytechnic University, China<br>
 &nbsp;</td>
 </tr>
-
 <tr>
 <td width="128px"><img src="/assets/images/organizers/churen_huang.jpg"></td>
 <td>Churen Huang<br>
@@ -97,7 +95,6 @@ Hong Kong Polytechnic University, China<br>
 University of Macau, China<br>
 &nbsp;</td>
 </tr>
-
 <tr>
 <td><img src="/assets/images/organizers/ruifeng_xu.jpg"></td>
 <td>Ruifeng Xu<br>
@@ -105,6 +102,8 @@ Harbin Institute of Technology, Shenzhen, China<br>
 &nbsp;</td>
 </tr>
 </table>
+
+In case you have questions to the Local Organizing Committee, just send a mail to <a href="mailto:emnlp-ijcnlp-2019-local-organizing-com@googlegroups.com">emnlp-ijcnlp-2019-local-organizing-com@googlegroups.com</a>.
 
 
 ## Workshop Chairs
@@ -159,6 +158,8 @@ Texas A&M University, USA<br>
 &nbsp;</td>
 </tr>
 </table>
+
+In case you have questions on any system demonstration-related aspects, just send a mail to <a href="mailto:emnlp-ijcnlp-2019-demo-chairs@googlegroups.com">emnlp-ijcnlp-2019-demo-chairs@googlegroups.com</a>.
 
 
 ## General Publication Chair
@@ -283,8 +284,10 @@ Facebook AI Research, UK<br>
 </tr>
 </table>
 
+In case you have questions to the Student Volunteer Coordinator &amp; Student Scholarship Chairs, just send a mail to <a href="mailto:emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com">emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com</a>.
 
-## Childcare Policy &amp; Grant Coordinator
+
+## Childcare Policy &amp; Grant Coordinators
 
 <table>
 <tr>
@@ -300,6 +303,8 @@ Peking University, China<br>
 &nbsp;</td>
 </tr>
 </table>
+
+In case you have questions to the Childcare Policy &amp; Grant Coordinators, just send a mail to <a href="mailto:emnlp-ijcnlp-2019-childcare@googlegroups.com">emnlp-ijcnlp-2019-childcare@googlegroups.com</a>.
 
 
 ## Diversity &amp; Inclusion Chairs
@@ -318,6 +323,8 @@ National Research Council Canada, Canada<br>
 &nbsp;</td>
 </tr>
 </table>
+
+In case you have questions to the Diversity &amp; Inclusion Chairs, just send a mail to <a href="mailto:emnlp-ijcnlp-2019-diversity-inclusion@googlegroups.com">emnlp-ijcnlp-2019-diversity-inclusion@googlegroups.com</a>.
 
 
 ## Local Sponsorship Chair
