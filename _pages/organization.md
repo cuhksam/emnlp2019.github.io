@@ -103,7 +103,7 @@ Harbin Institute of Technology, Shenzhen, China<br>
 </tr>
 </table>
 
-In case you have questions to the Local Organizing Committee, just send a mail to <a href="mailto:emnlp-ijcnlp-2019-local-organizing-com@googlegroups.com">emnlp-ijcnlp-2019-local-organizing-com@googlegroups.com</a>.
+In case you have questions to the Local Organizing Committee, just send a mail to <a href="mailto:emnlp-ijcnlp-2019-local-organizing-committee@googlegroups.com">emnlp-ijcnlp-2019-local-organizing-committee@googlegroups.com</a>.
 
 
 ## Workshop Chairs
