@@ -7,10 +7,10 @@ sidebar:
     nav: "sponsors"
 
 champion:
-  - url: http://www.google.com
-    image_path: /assets/images/logos/google-logo.png
-    alt: "Google Logo"
-    title: "Google"
+  - url: http://www.deepmind.com
+    image_path: /assets/images/logos/deepmind-logo.png
+    alt: "DeepMind Logo"
+    title: "DeepMind"
   - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
 
@@ -38,11 +38,11 @@ The new ACL initiative "Diversity &amp; Inclusion" is designed to help the commu
 We gratefully acknowledge support for the initiative provided by the following sponsors for EMNLP-IJCNLP 2019. 
 
 
-<!--
+
 ## Champion Level
 
 {% include gallery id="champion" class="fourth" %}
--->
+
 
 
 

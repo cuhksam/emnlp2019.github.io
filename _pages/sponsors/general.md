@@ -44,6 +44,12 @@ platinum:
     image_path: /assets/images/logos/gtcom-logo.png
     alt: "GTCOM Logo"
     title: "GTCOM"
+  - url: http://www.deepmind.com
+    image_path: /assets/images/logos/deepmind-logo.png
+    alt: "DeepMind Logo"
+    title: "DeepMind"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 gold:
   - url: https://www.poly-ai.com
     image_path: /assets/images/logos/polyai-logo.png
