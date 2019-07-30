@@ -7,7 +7,12 @@ sidebar:
     nav: "sponsors"
 
 champion:
-    
+  - url: http://www.google.com
+    image_path: /assets/images/logos/google-logo.png
+    alt: "Google Logo"
+    title: "Google"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 
 ally:
   - url: https://www.techatbloomberg.com/nlp/
@@ -34,11 +39,10 @@ We gratefully acknowledge support for the initiative provided by the following s
 
 
 
-<!--
 ## Champion Level
 
 {% include gallery id="champion" class="fourth" %}
--->
+
 
 
 ## Ally Level
