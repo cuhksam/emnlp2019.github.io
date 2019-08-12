@@ -36,7 +36,7 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 **August 12, 2019**.
-Information on [travel scholarships &amp; student volunteer program](./participants) now available.
+Information on [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program) now available.
 
 **July 27, 2019**.
 We added dedicated contact e-mail addreses for multiple chairs from our [Organizing Committee](./organization).
