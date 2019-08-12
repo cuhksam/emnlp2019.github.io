@@ -35,18 +35,14 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**August 12, 2019**.
+Information on [travel scholarships &amp; student volunteer program](./participants) now available.
 
 **July 27, 2019**.
 We added dedicated contact e-mail addreses for multiple chairs from our [Organizing Committee](./organization).
 
-**July 1, 2019**.
-The full list of [area chairs](./pc#area-chairs) is now available.
-
 **June 19, 2019**.
 Since the review process has started, authors now cannot withdraw their long and short paper submissions directly in START. If you'd like to withdraw your submission, please [contact the program chairs](mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com) with your submission ID.
-
-**June 16, 2019**.
-If you are a reviewer at EMNLP-IJCNLP 2019, please check our [instructions for reviewers](./calls/reviewing) before reviewing.
 
 **April 23, 2019**. 
 Please notice the new <a href="/calls/papers#multiple-submission-policy">multiple submission policy</a> in the call for papers. 
@@ -54,6 +50,12 @@ Please notice the new <a href="/calls/papers#multiple-submission-policy">multipl
 
 
 <!-- OLDER NEWS
+**July 1, 2019**.
+The full list of [area chairs](./pc#area-chairs) is now available.
+
+**June 16, 2019**.
+If you are a reviewer at EMNLP-IJCNLP 2019, please check our [instructions for reviewers](./calls/reviewing) before reviewing.
+
 **May 17, 2019**.
 Get to know our [organizing committee](./organization) and [senior program committee](./pc).
 
