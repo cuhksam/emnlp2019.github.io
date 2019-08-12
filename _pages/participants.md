@@ -150,7 +150,7 @@ EMNLP 2019 seeks student volunteers who will receive a free registration to the 
     </tbody>
 </table>
 
-<b>Note.</b>Award recipients must register by the early registration deadline of October 1, 2019.
+<b>Note.</b> Award recipients must register by the early registration deadline of October 1, 2019.
 
 <b>Note.</b> All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).
 
