@@ -127,11 +127,34 @@ Following the family-friendly policy of ACL, EMNLP 2019 is happy to announce the
 More details to be announced.
 
 
-<!--
+
 ## Travel Scholarships & Student Volunteer Program
 
-TBD
--->
+EMNLP 2019 seeks student volunteers who will receive a free registration to the main conference, tutorials & workshops. In addition, we also plan to offer scholarships to students as well as non-students with a demonstrated financial need. For more details, please refer to the Joint Call for Travel Scholarship and Student Volunteer Applications. After reading the policy in detail to determine your eligibility, you can fill out the application form. If you have further questions, please contact us at <a href="mailto:emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com">emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com</a>.
+
+
+### Important Dates
+
+<table>
+    <tbody>
+        <tr style="background-color: #eee;">
+            <td>Application deadline</td>
+            <td>Thursday</td>
+            <td>September 12, 2019</td>
+        </tr>
+        <tr style="background-color: #fff;">
+            <td>Notification of acceptance</td>
+            <td>Thursday</td>
+            <td>September 19, 2019</td>
+        </tr>      
+    </tbody>
+</table>
+
+<b>Note.</b>Award recipients must register by the early registration deadline of October 1, 2019.
+
+<b>Note.</b> All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).
+
+
 
 
 <!--
