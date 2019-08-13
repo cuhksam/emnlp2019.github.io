@@ -43,17 +43,16 @@ We are in the process of sending out the notification emails. However, the START
 Information on [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program) now available.
 
 **July 27, 2019**.
-We added dedicated contact e-mail addreses for multiple chairs from our [Organizing Committee](./organization).
+We added dedicated contact e-mail addresses for multiple chairs from our [Organizing Committee](./organization).
 
+
+<!-- OLDER NEWS
 **June 19, 2019**.
 Since the review process has started, authors now cannot withdraw their long and short paper submissions directly in START. If you'd like to withdraw your submission, please [contact the program chairs](mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com) with your submission ID.
 
 **April 23, 2019**. 
 Please notice the new <a href="/calls/papers#multiple-submission-policy">multiple submission policy</a> in the call for papers. 
 
-
-
-<!-- OLDER NEWS
 **July 1, 2019**.
 The full list of [area chairs](./pc#area-chairs) is now available.
 
