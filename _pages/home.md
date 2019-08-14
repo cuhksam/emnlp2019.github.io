@@ -36,8 +36,8 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
-**August 13, 2019**.
-We are in the process of sending out the notification emails. However, the START system is extremely slow, preventing us from sending out the emails smoothly, probably because many authors are checking the system right now. Please refrain from checking the system in the next 12 hours. We are trying our best to reach each contact author to inform you of the final outcome of your paper. Thank you for your understanding!
+**August 14, 2019**.
+Some preliminary information on registration found [here](./registration). More to follow soon.
 
 **August 12, 2019**.
 Information on [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program) now available.
@@ -46,7 +46,10 @@ Information on [travel scholarships &amp; student volunteer program](./participa
 We added dedicated contact e-mail addresses for multiple chairs from our [Organizing Committee](./organization).
 
 
-<!-- OLDER NEWS
+<!-- OUTDATED NEWS
+**August 13, 2019**.
+We are in the process of sending out the notification emails. However, the START system is extremely slow, preventing us from sending out the emails smoothly, probably because many authors are checking the system right now. Please refrain from checking the system in the next 12 hours. We are trying our best to reach each contact author to inform you of the final outcome of your paper. Thank you for your understanding!
+
 **June 19, 2019**.
 Since the review process has started, authors now cannot withdraw their long and short paper submissions directly in START. If you'd like to withdraw your submission, please [contact the program chairs](mailto:emnlp-ijcnlp-2019-program-chairs@googlegroups.com) with your submission ID.
 

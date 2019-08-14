@@ -14,11 +14,11 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
 
 ## Planned Timeline
 
-- <em>Open of registration form:</em> End of August or early September 
+- <em>Opening of registration form:</em> End of August or early September 
 
-- <em>Close of early registrations:</em> October 1
+- <em>Early registrations due:</em> October 1
 
-- <em>Close of late registrations:</em> Mid or late October
+- <em>Late registrations due:</em> Mid or late October
 
 
 
