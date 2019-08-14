@@ -84,7 +84,7 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
         <tr style="background-color: #eee;">
           <td>Camera-ready due</td>
           <td>Friday</td>
-          <td>August 30, 2019</td>
+          <td><span style="color:red">August 30, 2019</span></td>
         </tr>
         <tr style="background-color: #fff;">
             <td>Workshops &amp; tutorials</td>
