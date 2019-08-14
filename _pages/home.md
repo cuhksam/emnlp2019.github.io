@@ -104,7 +104,7 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr style="background-color: #eee;">
             <td style="width: 43%;"><a href="/calls/papers#important-anonymity-period">Anonymity period</a> begins</td>
             <td style="width: 27%;">Sunday</td>
-            <td><span style="color:red">April 21, 2019</span></td>
+            <td><strike>April 21, 2019</strike></td>
         </tr>
         <tr style="background-color: #fff;">
             <td>Abstracts due (<i>long &amp; short</i>)</td>
@@ -134,23 +134,29 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr style="background-color: #eee;">
             <td>Notification of acceptance</td>
             <td>Monday</td>
-            <td>August 12, 2019</td>
+            <td><strike>August 12, 2019</strike></td>
         </tr>
         <tr style="background-color: #fff;">
           <td>Camera-ready papers due</td>
           <td>Friday</td>
           <td>August 30, 2019</td>
         </tr>
-<!--
         <tr>
-          <td>Travel scholarships, student volunteer, and childcare grant applications due</td>
-          <td style="width: 30%;">Monday</td>
-          <td>September 10, 2018</td>
+          <td><a href="./participants#travel-scholarships--student-volunteer-program">Travel scholarships &amp; student volunteer application due</td>
+          <td style="width: 30%;">Thursday</td>
+          <td>September 12, 2019</td>
         </tr>
+        <tr>
+          <td>Travel scholarships &amp; student volunteer notification</td>
+          <td style="width: 30%;">Thursday</td>
+          <td>September 19, 2019</td>
+        </tr>
+        
+<!--
         <tr>
             <td style="width: 40%;">Early Registration Deadline</td>
             <td style="width: 30%;">Monday</td>
-            <td>September 24, 2018</td>
+            <td>September 19, 2019</td>
         </tr>
 -->
         <tr style="background-color: #eee;">
