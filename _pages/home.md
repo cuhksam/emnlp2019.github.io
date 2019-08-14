@@ -6,7 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: "https://emnlp-ijcnlp2019.org/assets/images/hongkong-skyline-wide.jpg"
   caption: 'Photo from <a href="https://pixabay.com/de/hong-kong-china-nacht-stadtbild-1081704/">Pixabay</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 Creative Commons</a>'
-excerpt: "November 3&ndash;7<br/>Hong Kong"
+excerpt: "November 3&ndash;7<br/>Hong Kong, China"
 ---
 
 <!--
@@ -93,7 +93,7 @@ The important dates have been announced (see below).
 
 ## Welcome!
 
-[SIGDAT](http://sigdat.org), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org), the Asian Federation of Natural Language Processing, invite you to participate in the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP) and 9th International Joint Conference on Natural Language Processing (IJCNLP) in Hong Kong. 
+[SIGDAT](http://sigdat.org), the Association for Computational Linguistics (ACL) special interest group on linguistic data and corpus-based approaches to NLP, and the [AFNLP](http://www.afnlp.org), the Asian Federation of Natural Language Processing, invite you to participate in the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP) and 9th International Joint Conference on Natural Language Processing (IJCNLP) in Hong Kong, China. 
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong from November 3rd through November 7th, 2019.
 

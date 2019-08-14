@@ -50,7 +50,7 @@ TBD
 
 ## Conference Venue
 
-EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong.
+EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong, China.
 
 More details to be announced.
 
