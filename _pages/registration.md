@@ -11,7 +11,8 @@ sidebar: false
 
 The EMNLP-IJCNLP 2019 conference registration fees are not confirmed yet. We hope to keep the fees the same as for EMNLP 2018. Below are the EMNLP 2018 fees to use as an estimate when planning your travels.  We hope to have the final registration fees posted here and open registration in mid-August.
 
-## Previous EMNLP2018 Registration Fees
+
+## Previous EMNLP 2018 Registration Fees
 
 <table>
   <thead>
@@ -26,7 +27,7 @@ The EMNLP-IJCNLP 2019 conference registration fees are not confirmed yet. We hop
   </tr>
 </thead>
   <tr>
-    <td rowspan="3" style="background-color: #F2F3F3; font-weight: bold;">Regular</td>
+    <td rowspan="3" style="background-color: #F2F3F3; font-weight: bold;  vertical-align:top;" >Regular</td>
     <td>Early</td>
     <td class="amount">$925</td>
     <td class="amount">$625</td>
@@ -53,7 +54,7 @@ The EMNLP-IJCNLP 2019 conference registration fees are not confirmed yet. We hop
     <td class="amount">$450</td>
   </tr>
   <tr>
-    <td rowspan="3" style="background-color: #F2F3F3; font-weight: bold;">Student</td>
+    <td rowspan="3" style="background-color: #F2F3F3; font-weight: bold;  vertical-align:top;">Student</td>
     <td>Early</td>
     <td class="amount">$425</td>
     <td class="amount">$285</td>
@@ -86,6 +87,7 @@ The EMNLP-IJCNLP 2019 conference registration fees are not confirmed yet. We hop
 - <em>Main + 1 Day</em> entitles the attendee to attend the main conference plus one day of tutorials and workshops. 
 - <em>1-Day</em> entitles the attendee to attend only one day of tutorials and workshops (no main conference). 
 - <em>2-Day</em> entitles the attendee to attend both workshops and tutorials days but not the main conference.
+
 
 ## Cancellation Policy
 
