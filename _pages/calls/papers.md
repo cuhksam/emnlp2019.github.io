@@ -54,7 +54,7 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
         <tr style="background-color: #eee;">
             <td style="width: 43%;"><a href="#important-anonymity-period">Anonymity period</a> begins</td>
             <td style="width: 27%;">Sunday</td>
-            <td><span style="color:red">April 21, 2019</span></td>
+            <td><strike>April 21, 2019</strike></td>
         </tr>
         <tr style="background-color: #fff;">
             <td>Abstracts due (<i>long &amp; short</i>)</td>
@@ -79,7 +79,7 @@ EMNLP-IJCNLP 2019 has the goal of a broad technical program. Relevant topics for
         <tr style="background-color: #fff;">
             <td>Notification of acceptance</td>
             <td>Monday</td>
-            <td>August 12, 2019</td>
+            <td><strike>August 12, 2019</strike></td>
         </tr>
         <tr style="background-color: #eee;">
           <td>Camera-ready due</td>
