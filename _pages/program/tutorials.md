@@ -8,7 +8,10 @@ permalink: /program/tutorials/
 sidebar: 
     nav: "program"
 ---
+
 {% include base_path %}
+
+{% include toc icon="gears" %}
 
 The following tutorials have been accepted for EMNLP-IJCNLP 2019 and will be held on Sunday, November 3, 2019 and Monday, November 4, 2019. URLs and exact timings will be posted later.
 
