@@ -70,11 +70,11 @@ Recent advances in data-driven machine learning techniques (e.g., deep neural ne
 
 In this tutorial, we will review the history of bias and fairness studies in machine learning and language processing and present recent community effort in quantifying and mitigating bias in natural language processing models for a wide spectrum of tasks, including word embeddings, co-reference resolution, machine translation, and vision-and-language tasks. In particular, we will focus on the following topics:
 
-- Definitions of fairness and bias. 
+- Definitions of fairness and bias. 
 
 - Data, algorithms, and models that propagate and even amplify social bias to NLP applications and metrics to quantify these biases. 
 
-- Algorithmic solutions; learning objective; design principles to prevent social bias in NLP systems and their potential drawbacks.
+- Algorithmic solutions; learning objective; design principles to prevent social bias in NLP systems and their potential drawbacks.
 
 The tutorial will bring researchers and practitioners to be aware of this issue, and encourage the research community to propose innovative solutions to promote fairness in NLP.
 
