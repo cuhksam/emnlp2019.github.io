@@ -36,6 +36,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
+**August 15, 2019**.
+The list of accepted <a href="./program/tutorials/">tutorials</a> is out.
+
 **August 14, 2019**.
 Some preliminary information on registration found [here](./registration). More to follow soon.
 

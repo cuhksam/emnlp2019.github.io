@@ -15,7 +15,13 @@ Below, all information on the program of EMNLP-IJCNLP 2019 are given that are av
 
 ## Workshops &amp; Co-located Events
 
-EMNLP-IJCNLP 2019 will host 18 workshops and co-located events, taking place November 3&ndash;4. 
+EMNLP-IJCNLP 2019 will host 18 workshops and co-located events, taking place on November 3&ndash;4. 
 
-The list of accepted workshops can be found <a href="./workshops/">here</a>.
+See the <a href="./workshops/">list of workshops</a> along with their descriptions.
 
+
+## Tutorials
+
+EMNLP-IJCNLP 2019 will host 1 full-day tutorial and 6 half-day tutorials, also taking place on November 3&ndash;4. 
+
+See the <a href="./tutorials/">list of tutorials</a> along with their descriptions.
