@@ -43,7 +43,7 @@ The list of accepted <a href="./program/tutorials/">tutorials</a> is out.
 Some preliminary information on registration found [here](./registration). More to follow soon.
 
 **August 12, 2019**.
-Information on [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program) now available.
+Information on [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program) now available. The application form will follow soon.
 
 **July 27, 2019**.
 We added dedicated contact e-mail addresses for multiple chairs from our [Organizing Committee](./organization).
