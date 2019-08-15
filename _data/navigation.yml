@@ -49,10 +49,10 @@ program:
          url: /program/
        - title: "Workshops"
          url: /program/workshops/
+       - title: "Tutorials"
+         url: /program/tutorials/
 #       - title: "Keynote Speakers"
 #         url: /program/keynotes/
-#       - title: "Tutorials"
-#         url: /program/tutorials/
 
 # participants:
 #  - title: "Information for Participants"

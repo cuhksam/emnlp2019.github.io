@@ -1,76 +1,101 @@
-<!-- 
-NOTICE: 
-Content below still from 2018. 
-Once updated, comment in the permalink to make the page being created.
-Comment in the page in navigation.xml to make it appear in the menu.
--->
-
 ---
 title: Tutorials
 layout: single
-excerpt: "EMNLP 2018 Tutorials."
+excerpt: "EMNLP-IJCNLP 2019 Tutorials."
 
-<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
 permalink: /program/tutorials/
--->
 
 sidebar: 
     nav: "program"
 ---
 {% include base_path %}
 
-The following tutorials have been accepted for EMNLP 2018 and will be held as half-day sessions on Wednesday, October 31, 2018 and Thursday, November 1, 2018. Exact timings will be posted later as part of the official program.
+The following tutorials have been accepted for EMNLP-IJCNLP 2019 and will be held on Sunday, November 3, 2019 and Monday, November 4, 2019. URLs and exact timings will be posted later.
 
-## October 31, 2018
 
-<strong>T1: Joint models for NLP (Morning)</strong><br/>
-<a href="http://people.sutd.edu.sg/~yue_zhang/">Yue Zhang</a>
 
-<div>
-<p>Joint models have received much research attention in NLP, allowing relevant tasks to share common information while avoiding error propagation in multi-stage pepelines. Several main approaches have been taken by statistical joint modeling, while neual models allow parameter sharing and adversarial training. This tutorial reviews main approaches to joint modeling for both statistical and neural methods.</p>
-</div>
+## November 3, 2019 (morning)
 
-<strong>T2: Graph Formalisms for Meaning Representations (Morning)</strong><br/>
-<a href="http://alopez.github.io/">Adam Lopez</a> and <a href="http://homepages.inf.ed.ac.uk/s1459276/">Sorcha Gilroy</a>
+### Dive into Deep Learning for Natural Language Processing
+<em>Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola</em>
 
-<div>
-<p>In this tutorial we will focus on Hyperedge Replacement Languages (HRL; Drewes et al. 1997), a context-free graph rewriting system. HRL are one of the most popular graph formalisms to be studied in NLP (Chiang et al., 2013; Peng et al., 2015; Bauer and Rambow, 2016). We will discuss HRL by formally defining them, studying several examples, discussing their properties, and providing exercises for the tutorial. While HRL have been used in NLP in the past, there is some speculation that they are more expressive than is necessary for graphs representing natural language (Drewes, 2017). Part of our own research has been exploring what restrictions of HRL could yield languages that are more useful for NLP and also those that have desirable properties for NLP models, such as being closed under intersection. </p>
+Deep learning has become the dominant approach to NLP problems, especially when applied on large scale corpora. Recent progress on unsupervised pre-training techniques such as BERT, ELMo, GPT-2, and language modeling in general, when applied on large corpora, is shown to be effective in improving a wide variety of downstream tasks. These techniques push the limits of available hardware, requiring specialized frameworks optimized for GPU, ASIC, and distributed cloud-based training.
 
-<p>With that in mind, we also plan to discuss Regular Graph Languages (RGL; Courcelle 1991), a subfamily of HRL which are closed under intersection. The definition of RGL is relatively simple after being introduced to HRL. We do not plan on discussing any proofs of why RGL are also a subfamily of MSOL, as described in Gilroy et al. (2017b). We will briefly mention the other formalisms shown in Figure 1 such as MSOL and DAGAL but this will focus on their properties rather than any formal definitions.</p>
-</div>
+A few complexities pose challenges to scale these models and algorithms effectively. Compared to other areas where deep learning is applied, these NLP models contain a variety of moving parts: text normalization and tokenization, word representation at subword-level and word-level, variable-length models such as RNN and attention, and sequential decoder based on beam search, among others.
 
-<strong>T3: Writing Code for NLP Research (Afternoon)</strong><br/>
-<a href="http://www.cs.cmu.edu/~mg1">Matt Gardner</a>, <a href="http://markneumann.xyz">Mark Neumann</a>, <a href="http://joelgrus.com">Joel Grus</a>, and <a href="https://www.linkedin.com/in/nicholaslourie">Nicholas Lourie</a>
-
-<div>
-<p>Doing modern NLP research requires writing code. Good code enables fast prototyping, easy debugging, controlled experiments, and accessible visualizations that help researchers understand what a model is doing. Bad code leads to research that is at best hard to reproduce and extend, and at worst simply incorrect. Indeed, there is a growing recognition of the importance of having good tools to assist good research in our field, as the upcoming workshop on open source software for NLP demonstrates. This tutorial aims to share best practices for writing code for NLP research, drawing on the instructors' experience designing the recently-released AllenNLP toolkit, a PyTorch-based library for deep learning NLP research. We will explain how a library with the right abstractions and components enables better code and better science, using models implemented in AllenNLP as examples. Participants will learn how to write research code in a way that facilitates good science and easy experimentation, regardless of what framework they use.</p>
-</div>
-
-## November 1, 2018
-
-<strong>T4: Deep Latent Variable Models of Natural Language (Morning)</strong><br/>
-<a href="http://people.seas.harvard.edu/~srush">Alexander Rush</a>, <a href="http://www.people.fas.harvard.edu/~yoonkim">Yoon Kim</a>, and <a href="https://swiseman.github.io">Sam Wiseman</a>
-
-<div>
-<p>The proposed tutorial will cover deep latent variable models both in the case where exact inference over the latent variables is tractable and when it is not. The former case includes neural extensions of unsupervised tagging and parsing models. Our discussion of the latter case, where inference cannot be performed tractably, will restrict itself to continuous latent variables. In particular, we will discuss recent developments both in neural variational inference (e.g., relating to Variational Auto-encoders) and in implicit density modeling (e.g., relating to Generative Adversarial Networks). We will highlight the challenges of applying these families of methods to NLP problems, and discuss recent successes and best practices.</p>
-</div>
-
-<strong>T5: Standardized Tests as benchmarks for Artificial Intelligence (Morning)</strong><br/>
-<a href="https://sites.google.com/site/mrinsachan/">Mrinmaya Sachan</a>, <a href="https://seominjoon.github.io/">Minjoon Seo</a>, <a href="http://ssli.ee.washington.edu/~hannaneh/">Hannaneh Hajishirzi</a>, and <a href="http://www.cs.cmu.edu/~epxing/">Eric Xing</a>
-
-<div>
-<p>Standardized tests have recently been proposed as replacements to the Turing test as a driver for progress in AI (Clark, 2015). These include tests on understanding passages and stories and answering questions about them (Richardson et al., 2013; Rajpurkar et al., 2016a, inter alia), science question answering (Schoenick et al., 2016, inter alia), algebra word problems (Kushman et al., 2014, inter alia), geometry problems (Seo et al., 2015; Sachan et al., 2016), visual question answering (Antol et al., 2015), etc. Many of these tests require sophisticated understanding of the world, aiming to push the boundaries of AI. </p>
-
-<p>For this tutorial, we broadly categorize these tests into two categories: open domain tests such as reading comprehensions and elementary school tests where the goal is to find the support for an answer from the student curriculum, and closed domain tests such as intermediate level math and science tests (algebra, geometry, Newtonian physics problems, etc.). Unlike open domain tests, closed domain tests require the system to have significant domain knowledge and reasoning capabilities. For example, geometry questions typically involve a number of geometry primitives (lines, quadrilaterals, circles, etc) and require students to use axioms and theorems of geometry (Pythagoras theorem, alternating angles, etc) to solve them. These closed domains often have a formal logical basis and the question can be mapped to a formal language by semantic parsing. The formal question representation can then provided as an input to an expert system to solve the question.</p>
-</div>
-
-<strong>T6: Deep Chit-Chat: Deep Learning for ChatBots (Afternoon)</strong><br/>
-<a href="https://www.microsoft.com/en-us/research/people/wuwei">Wei Wu</a> and <a href="http://www.ruiyan.me">Rui Yan</a>
-
-<div>
-<p>The tutorial is based on the long-term efforts on building conversational models with deep learning approaches for chatbots. We will summarize the fundamental challenges in modeling open domain dialogues, clarify the difference from modeling goal-oriented dialogues, and give an overview of state-of-the-art methods for open domain conversation including both retrieval-based methods and generation-based methods. In addition to these, our tutorial will also cover some new trends of research of chatbots, such as how to design a reasonable evaluation system and how to "control" conversations from a chatbot with some specific information such as personas, styles, and emotions, etc.</p>
-</div>
+In this hands-on tutorial, we take a closer look at the challenges from these complexities and see how with proper tooling with Apache MXNet and GluonNLP, we can overcome these challenges and achieve state-of-the-art results for real-world problems. GluonNLP is a powerful new toolkit that combines MXNet's speed, the flexibility of Gluon, and an extensive new library automating the most laborious aspects of deep learning for NLP.
 
 
 
 
+### Processing and Understanding Mixed Language Data
+<em>Monojit Choudhury and Kalika Bali</em>
+
+ Multilingual communities exhibit code-mixing, that is, mixing of two or more socially stable languages in a single conversation, sometimes even in a single utterance. This phenomenon has been widely studied by linguists and interaction scientists in the spoken language of such communities. However, with the prevalence of social media and other informal interactive platforms, code-switching is now also ubiquitously observed in user-generated text. As multilingual communities are more the norm from a global perspective, it becomes essential that code-switched text and speech are adequately handled by language technologies and NUIs.
+
+Code-mixing is extremely prevalent in all multilingual societies. Current studies have shown that as much as 20% of user generated content from some geographies, like South Asia, parts of Europe, and Singapore, are code-mixed. Thus, it is very important to handle code-mixed content as a part of NLP systems and applications for these geographies.
+
+In the past 5 years, there has been an active interest in computational models for code-mixing with a substantive research outcome in terms of publications, datasets and systems. However, it is not easy to find a single point of access for a complete and coherent overview of the research. This tutorial is expecting to fill this gap and provide new researchers in the area with a foundation in both linguistic and computational aspects of code-mixing. We hope that this then becomes a starting point for those who wish to pursue research, design, development and deployment of code-mixed systems in multilingual societies.
+
+
+
+## November 3, 2019 (afternoon)
+
+### Dive into Deep Learning for Natural Language Processing (cont.)
+<em>Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola</em>
+
+Continuation of morning tutorial (see description above).
+    
+    
+### Data Collection and End-to-End Learning for Conversational AI
+<em>Tsung-Hsien Wen, Pei-Hao Su, Pawe&#322; Budzianowski, I&ntilde;igo Casanueva and Ivan Vuli&#263;</em>
+
+A fundamental long-term goal of conversational AI is to merge two main dialogue system paradigms into a standalone multi-purpose system. Such a system should be capable of conversing about arbitrary topics (Paradigm 1: open-domain dialogue systems), and simultaneously assist humans with completing a wide range of tasks with well-defined semantics such as restaurant search and booking, customer service applications, or ticket bookings (Paradigm 2: task-based dialogue systems).
+
+The recent developmental leaps in conversational AI technology are undoubtedly linked to more and more sophisticated deep learning algorithms that capture patterns in increasing amounts of data generated by various data collection mechanisms. The goal of this tutorial is therefore twofold. First, it aims at familiarising the research community with the recent advances in algorithmic design of statistical dialogue systems for both open-domain and task-based dialogue paradigms. The focus of the tutorial is on recently introduced end-to-end learning for dialogue systems and their relation to more common modular systems. In theory, learning end-to-end from data offers seamless and unprecedented portability of dialogue systems to a wide spectrum of tasks and languages. From a practical point of view, there are still plenty of research challenges and opportunities remaining: in this tutorial we analyse this gap between theory and practice, and introduce the research community with the main advantages as well as with key practical limitations of current end-to-end dialogue learning.
+
+The critical requirement of each statistical dialogue system is the data at hand. The system cannot provide assistance for the task without having appropriate task-related data to learn from. Therefore, the second major goal of this tutorial is to provide a comprehensive overview of the current approaches to data collection for dialogue, and analyse the current gaps and challenges with diverse data collection protocols, as well as their relation to and current limitations of data-driven end-to-end dialogue modeling. We will again analyse this relation and limitations both from research and industry perspective, and provide key insights on the application of state-of-the-art methodology into industry-scale conversational AI systems.
+    
+    
+
+## November 4, 2019 (morning)
+
+### Bias and Fairness in Natural Language Processing
+<em>Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez</em>
+
+Recent advances in data-driven machine learning techniques (e.g., deep neural networks) have revolutionized many natural language processing applications. These approaches automatically learn how to make decisions based on the statistics and diagnostic information from large amounts of training data. Despite the remarkable accuracy of machine learning in various applications, learning algorithms run the risk of relying on societal biases encoded in the training data to make predictions. This often occurs even when gender and ethnicity information is not explicitly provided to the system because learning algorithms are able to discover implicit associations between individuals and their demographic information based on other variables such as names, titles, home addresses, etc. Therefore, machine learning algorithms risk potentially encouraging unfair and discriminatory decision making and raise serious privacy concerns. Without properly quantifying and reducing the reliance on such correlations, broad adoption of these models might have the undesirable effect of magnifying harmful stereotypes or implicit biases that rely on sensitive demographic attributes.
+
+In this tutorial, we will review the history of bias and fairness studies in machine learning and language processing and present recent community effort in quantifying and mitigating bias in natural language processing models for a wide spectrum of tasks, including word embeddings, co-reference resolution, machine translation, and vision-and-language tasks. In particular, we will focus on the following topics:
+
+- Definitions of fairness and bias. 
+
+- Data, algorithms, and models that propagate and even amplify social bias to NLP applications and metrics to quantify these biases. 
+
+- Algorithmic solutions; learning objective; design principles to prevent social bias in NLP systems and their potential drawbacks.
+
+The tutorial will bring researchers and practitioners to be aware of this issue, and encourage the research community to propose innovative solutions to promote fairness in NLP.
+
+
+### Discreteness in Neural Natural Language Processing
+<em>Lili Mou, Hao Zhou and Lei Li</em>
+
+This tutorial provides a comprehensive guide to the process of discreteness in neural NLP.
+
+As a gentle start, we will briefly introduce the background of deep learning based NLP, where we point out the ubiquitous discreteness of natural language and its challenges in neural information processing. Particularly, we will focus on how such discreteness plays a role in the input space, the latent space, and the output space of a neural network. In each part, we will provide examples, discuss machine learning techniques, as well as demonstrate NLP applications.
+    
+    
+
+## November 4, 2019 (afternoon)
+
+### Graph-based Deep Learning in Natural Language Processing
+<em>Shikhar Vashishth, Naganand Yadati and Partha Talukdar</em>
+
+This tutorial aims to introduce recent advances in graph-based deep learning techniques such as Graph Convolutional Networks (GCNs) for Natural Language Processing (NLP). It provides a brief introduction to deep learning methods on non-Euclidean domains such as graphs and justifies their relevance in NLP. It then covers recent advances in applying graph-based deep learning methods for various NLP tasks, such as semantic role labeling, machine translation, relationship extraction, and many more.
+
+
+### Semantic Specialization of Distributional Word Vectors
+<em>Goran Glava&#347;, Edoardo Maria Ponti and Ivan Vuli&#263;</em>
+
+Distributional word vectors have become an indispensable component of most state-of-art NLP models. As a major artefact of the underlying distributional hypothesis, distributional word vector spaces conflate various paradigmatic and syntagmatic lexico-semantic relations. For example, relations such as synonymy/similarity (e.g., car-automobile) or lexical entailment (e.g., car-vehicle) often cannot be distinguished from antonymy (e.g., black-white), meronymy (e.g., car-wheel) or broader thematic relatedness (e.g., car-driver) based on the distances in the distributional vector space. This inherent property of distributional spaces often harms performance in downstream applications, since different lexico-semantic relations support different classes of NLP applications. For instance, Semantic Similarity provides guidance for Paraphrasing, Dialogue State Tracking, and Text Simplification, Lexical Entailment supports Natural Language Inference and Taxonomy Induction, whereas broader thematic relatedness yields gains for Named Entity Recognition, Parsing, and Text Classification and Retrieval.
+
+A plethora of methods have been proposed to emphasize specific lexico-semantic relations in a reshaped (i.e., specialized) vector space. A common solution is to move beyond purely unsupervised word representation learning and include external lexico-semantic knowledge, in a process commonly referred to as semantic specialization. In this tutorial, we provide a thorough overview of specialization methods, covering: 1) joint specialization methods, which augment distributional learning objectives with external linguistic constraints, 2) post-processing retrofitting models, which fine-tune pre-trained distributional vectors to better reflect external linguistic constraints, and 3) the most recently proposed post-specialization methods that generalize the perturbations of the post-processing methods to the whole distributional space. In addition to providing a comprehensive overview of specialization methods, we will introduce the most recent developments, such as (among others): handling asymmetric relations (e.g., hypernymy-hyponymy) in Euclidean and hyperbolic spaces by accounting for vector magnitude as well as for vector distance; cross-lingual transfer of semantic specialization for languages without external lexico-semantic resources; downstream effects of specializing distributional vector spaces; injecting external knowledge into unsupervised pretraining architectures such as ELMo or BERT.
