@@ -50,7 +50,7 @@ TBD
 
 ## Visa Information
 
-Since visa applications can take almost two months or more to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an email to the Local Organizing Secretariat via [email](mailto:emnlp-ijcnlp-2019-local-organizing-committee@googlegroups.com?subject=EMNNLP-IJCNLP 2019: Letter of Invitation and Visa) with the following information and a copy of your passport:
+Since visa applications can take almost two months or more to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an [email to the Local Organizing Secretariat](mailto:emnlp-ijcnlp-2019-local-organizing-committee@googlegroups.com?subject=EMNNLP-IJCNLP 2019: Letter of Invitation and Visa) with the following information and a copy of your passport:
 
 - Your full name as it appears in your passport
 - Your work address
