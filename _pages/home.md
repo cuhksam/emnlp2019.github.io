@@ -36,6 +36,10 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
+**August 17, 2019**.
+Important [visa information](./participants#visa-information) now available.
+
+
 **August 15, 2019**.
 The list of accepted <a href="./program/tutorials/">tutorials</a> is out.
 
