@@ -59,7 +59,7 @@ Since visa applications can take almost two months or more to be approved, we ad
 
 It is understood that such an invitation is intended to help delegates to raise funds to obtain a visa and does not imply a commitment from the conference organizers to provide any financial support or scheduling of presentation.
 
-To find out whether you need a visa to enter Hong Kong, check for instance [here](https://www.hongkong.net/info/visa.html)
+To find out whether you need a visa for Hong Kong, check for instance [here](https://www.hongkong.net/info/visa.html).
 
 
 ## Conference Venue
