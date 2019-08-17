@@ -48,6 +48,22 @@ TBD
 -->
 
 
+## Visa Information
+
+Since visa applications can take almost two months or more to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an email to the Local Organizing Secretariat via email [[mailto:emnlp-ijcnlp-2019-local-organizing-committee@googlegroups.com?subject=EMNNLP-IJCNLP 2019: Letter of Invitation and Visa]] with the following information and a copy of your passport:
+
+- Your full name as it appears in your passport
+
+- Your work address
+
+- The name(s) of any accepted papers
+
+- The email address of the embassy that will handle your request
+
+It is understood that such an invitation is intended to help delegates to raise funds to obtain a visa and does not imply a commitment from the conference organizers to provide any financial support or scheduling of presentation.
+
+
+
 ## Conference Venue
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong, China.
