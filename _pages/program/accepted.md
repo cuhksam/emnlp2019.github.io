@@ -14,19 +14,19 @@ The demo papers listed below have been accepted at the EMNLP-IJCNLP 2019. Accept
 
 
 
-## Accepted Long Papers
+## Long Papers
 
 <span style="color: lightgray">TBA</span>
 
 
 
-## Accepted Short Papers
+## Short Papers
 
 <span style="color: lightgray">TBA</span>
 
 
 
-## Accepted Demo Papers
+## Demo Papers
 
 - A Stylometry Toolkit for Latin Literature<br><i>Thomas Bolt, Jeffrey Flynt, Pramit Chaudhuri and Joseph Dexter</i>
 - A Summarization System for Scientific Documents<br><i>Shai Erera, Michal Shmueli-Scheuer, Guy Feigenblat, Ora Peled Nakash, Odellia Boni, Haggai Roitman, Doron Cohen, Bar Weiner, Yosi Mass, Or Rivlin, Guy Lev, Achiya Jerbi, Jonathan Herzig, Yufang Hou, Charles Jochim, Martin Gleize, Francesca Bonin, and David Konopnicki</i>
