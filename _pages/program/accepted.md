@@ -52,7 +52,7 @@ The demo papers listed below have been accepted at the EMNLP-IJCNLP 2019. Accept
 - 	<span style="color:cornflowerblue">	Joey NMT: A Minimalist NMT Toolkit for Novices	</span>	<br>	<i>	Julia Kreutzer, Joost Bastings and Stefan Riezler	</i>
 - 	<span style="color:cornflowerblue">	Journalist-in-the-Loop: Continuous Learning as a Service for Rumour Analysis	</span>	<br>	<i>	Twin Karmakharm, Kalina Bontcheva and Nikolaos Aletras	</i>
 - 	<span style="color:cornflowerblue">	LIDA: Lightweight Interactive Dialogue Annotator	</span>	<br>	<i>	Edward Collins, Nikolai Rozanov and Bingbing Zhang	</i>
-- 	<span style="color:cornflowerblue">	LINSPECTOR WEB: A Multilingual Probing Suite for Word Representations	</span>	<br>	<i>	Max Eichler, G&ouml;zde G&uuml;l &Scedil;ahin and Iryna Gurevych	</i>
+- 	<span style="color:cornflowerblue">	LINSPECTOR WEB: A Multilingual Probing Suite for Word Representations	</span>	<br>	<i>	Max Eichler, G&ouml;zde G&uuml;l &#350;ahin and Iryna Gurevych	</i>
 - 	<span style="color:cornflowerblue">	MAssistant: A Personal Knowledge Assistant for MOOC Learners	</span>	<br>	<i>	Lan Jiang, Shuhan Hu, Mingyu Huang, Zhichun Wang, Jinjian Yang, Xiaoju Ye and Wei Zheng	</i>
 - 	<span style="color:cornflowerblue">	MedCATTrainer: A Biomedical Free Text Annotation Interface with Active Learning and Research Use Case Specific Customisation	</span>	<br>	<i>	Thomas Searle, Zeljko Kraljevic, Rebecca Bendayan, Daniel Bean and Richard Dobson	</i>
 - 	<span style="color:cornflowerblue">	Memory Grounded Conversational Reasoning	</span>	<br>	<i>	Seungwhan Moon, Pararth Shah, Rajen Subba and Anuj Kumar	</i>
