@@ -13,6 +13,14 @@ sidebar:
 Below, all information on the program of EMNLP-IJCNLP 2019 are given that are available so far. More details to be announced.
 
 
+## Accepted Papers
+
+EMNLP-IJCNLP 2019 will feature 684 long and short papers as well as 44 demos papers, to be presented during the main conference on November 5&dash;7.
+
+See the <a href="./accepted/">list of accepted papers</a> along with their authors. 
+
+
+
 ## Workshops &amp; Co-located Events
 
 EMNLP-IJCNLP 2019 will host 18 workshops and co-located events, taking place on November 3&ndash;4. 
