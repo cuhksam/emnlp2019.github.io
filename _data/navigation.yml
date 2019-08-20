@@ -47,6 +47,8 @@ program:
      children:
        - title: "Program"
          url: /program/
+       - title: "Accepted Papers"
+         url: /program/accepted/
        - title: "Workshops"
          url: /program/workshops/
        - title: "Tutorials"
