@@ -35,7 +35,7 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
-**August 20, 2019**
+**August 20, 2019**.
 The list of [accepted demo papers](./program/accepted/#demo-papers) is out.
 
 **August 17, 2019**.
