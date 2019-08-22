@@ -36,7 +36,7 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 **August 22, 2019**.
-If you have a paper accepted, please see the [instructions for camera-ready versions](./calls/final).
+If you got a paper accepted, please see the [instructions for camera-ready versions](./calls/final).
 
 **August 20, 2019**.
 The list of [accepted demo papers](./program/accepted/#demo-papers) is out.
