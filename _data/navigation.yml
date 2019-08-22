@@ -41,6 +41,8 @@ calls:
          url: /calls/submission
        - title: "Reviewer Instructions"
          url: /calls/reviewing
+       - title: "Camera-ready Instructions"
+         url: /calls/final
 
 program:
    - title: Program Details
