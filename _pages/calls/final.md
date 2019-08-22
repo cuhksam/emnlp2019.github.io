@@ -40,11 +40,6 @@ The camera-ready version of your paper should incorporate the comments of the re
 
 ## Where does the supplemental material go?
 
-Supplementary materials are allowed as a stand-alone document uploaded as a supplementary file. Supplementary materials are supplementary, and you have no obligation to read them. You should treat them like other citations in submissions that may be helpful in understanding background or details beyond the scope of the paper itself.
-
-
-## Secondary Reviewers
-
 Supplemental material should be placed into a single .zip file with a maximum size of 10MB. You can include a single PDF file of appendices and non-readable supplemental material such as data and software inside the .zip file. For appendices, please format them using the same EMNLP-IJCNLP 2019 style files.
 
 
