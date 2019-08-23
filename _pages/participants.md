@@ -76,6 +76,8 @@ The conference organizing committee has been working hard to welcome you on Nov 
 - Information on accommodation near the conference venue will be provided;
 - We're continuously observing the local situation and will keep you up-to-date on this website. 
 
+More information on the venue to be announced.
+
 
 
 <!--
