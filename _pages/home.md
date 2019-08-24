@@ -35,14 +35,14 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**August 24, 2019**.
+The list of [accepted long, short, and demo papers](./program/accepted/) is out.
+
 **August 23, 2019**.
 See our [update on conference organization](./participants#an-update-on-conference-organization) in light of the current situation in Hong Kong.
 
 **August 22, 2019**.
 If you got a paper accepted, please see the [instructions for camera-ready versions](./calls/final).
-
-**August 20, 2019**.
-The list of [accepted demo papers](./program/accepted/#demo-papers) is out.
 
 **August 17, 2019**.
 Important [visa information](./participants#visa-information) now available.
@@ -57,9 +57,11 @@ Information on [travel scholarships &amp; student volunteer program](./participa
 
 <!-- OUTDATED NEWS
 
+**August 20, 2019**.
+The list of [accepted demo papers](./program/accepted/#demo-papers) is out.
+
 **August 15, 2019**.
 The list of accepted <a href="./program/tutorials/">tutorials</a> is out.
-
 
 **July 27, 2019**.
 We added dedicated contact e-mail addresses for multiple chairs from our [Organizing Committee](./organization).
