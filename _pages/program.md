@@ -15,7 +15,7 @@ Below, all information on the program of EMNLP-IJCNLP 2019 are given that are av
 
 ## Accepted Papers
 
-EMNLP-IJCNLP 2019 will feature 684 long and short papers as well as 44 demos papers, to be presented during the main conference on November 5&ndash;7.
+EMNLP-IJCNLP 2019 will feature 466 long papers, 217 short papers, as well as 44 demos papers, all to be presented during the main conference on November 5&ndash;7.
 
 See the <a href="./accepted/">list of accepted papers</a> along with their authors. 
 
