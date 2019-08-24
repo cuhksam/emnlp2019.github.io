@@ -45,12 +45,12 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">A Split-and-Recombine Approach for Follow-up Query Analysis</span><br><i>Qian Liu, Bei Chen, Haoyan Liu, Jian-Guang LOU, Lei Fang, Bin Zhou and Dongmei Zhang</i>
 - <span style="color:cornflowerblue">A Stack-Propagation Framework with Token-Level Intent Detection for Spoken Language Understanding</span><br><i>Libo Qin, Wanxiang Che, Yangming Li, Haoyang Wen and Ting Liu</i>
 - <span style="color:cornflowerblue">A Syntax-aware Multi-task Learning Framework for Chinese Semantic Role Labeling</span><br><i>Qingrong Xia, Zhenghua Li and Min Zhang</i>
-- <span style="color:cornflowerblue">A systematic comparison of methods for low-resource dependency parsing on genuinely low-resource languages</span><br><i>Clara Vania, Yova Kementchedjhieva, Anders S�gaard and Adam Lopez</i>
+- <span style="color:cornflowerblue">A systematic comparison of methods for low-resource dependency parsing on genuinely low-resource languages</span><br><i>Clara Vania, Yova Kementchedjhieva, Anders SÃ¸gaard and Adam Lopez</i>
 - <span style="color:cornflowerblue">A Topic Augmented Text Generation Model: Joint Learning of Semantics and Structural Features</span><br><i>hongyin tang, Miao Li and Beihong Jin</i>
 - <span style="color:cornflowerblue">A Unified Neural Coherence Model</span><br><i>Han Cheol Moon, Tasnim Mohiuddin, Shafiq Joty and Chi Xu</i>
 - <span style="color:cornflowerblue">Achieving Verified Robustness to Symbol Substitutions via Interval Bound Propagation</span><br><i>Po-Sen Huang, Robert Stanforth, Johannes Welbl, Chris Dyer, Dani Yogatama, Sven Gowal, Krishnamurthy Dvijotham and Pushmeet Kohli</i>
 - <span style="color:cornflowerblue">Adaptive Parameterization for Neural Dialogue Generation</span><br><i>Hengyi Cai, Hongshen Chen, Cheng Zhang, Yonghao Song, Xiaofang Zhao and Dawei Yin</i>
-- <span style="color:cornflowerblue">Adaptively Sparse Transformers</span><br><i>Gon�alo M. Correia, Vlad Niculae and Andr&eacute; F. T. Martins</i>
+- <span style="color:cornflowerblue">Adaptively Sparse Transformers</span><br><i>GonÃ§alo M. Correia, Vlad Niculae and André F. T. Martins</i>
 - <span style="color:cornflowerblue">Addressing Semantic Drift in Question Generation for Semi-Supervised Question Answering</span><br><i>Shiyue Zhang and Mohit Bansal</i>
 - <span style="color:cornflowerblue">Adversarial Domain Adaptation for Machine Reading Comprehension</span><br><i>Huazheng Wang, Zhe Gan, Xiaodong Liu, Jingjing Liu, Jianfeng Gao and Hongning Wang</i>
 - <span style="color:cornflowerblue">Adversarial Reprogramming of Text Classification Neural Networks</span><br><i>Paarth Neekhara, Shehzeen Hussain, Shlomo Dubnov and Farinaz Koushanfar</i>
@@ -75,7 +75,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Automatic Argument Quality Assessment - New Datasets and Methods</span><br><i>Assaf Toledo, Shai Gretz, Edo Cohen-Karlik, Roni Friedman, Elad Venezian, Dan Lahav, Michal Jacovi, Ranit Aharonov and Noam Slonim</i>
 - <span style="color:cornflowerblue">Benchmarking Zero-shot Text Classification: Datasets, Evaluation and Entailment Approach</span><br><i>Wenpeng Yin, Jamaal Hay and Dan Roth</i>
 - <span style="color:cornflowerblue">Beto, Bentz, Becas: The Surprising Cross-Lingual Effectiveness of BERT</span><br><i>Shijie Wu and Mark Dredze</i>
-- <span style="color:cornflowerblue">Better Rewards Yield Better Summaries: Learning to Summarise Without References</span><br><i>Florian B&ouml;hm, Yang Gao, Christian M. Meyer, Ori Shapira, Ido Dagan and Iryna Gurevych</i>
+- <span style="color:cornflowerblue">Better Rewards Yield Better Summaries: Learning to Summarise Without References</span><br><i>Florian Böhm, Yang Gao, Christian M. Meyer, Ori Shapira, Ido Dagan and Iryna Gurevych</i>
 - <span style="color:cornflowerblue">BiPaR: A Bilingual Parallel Dataset for Multilingual and Cross-lingual Reading Comprehension on Novels</span><br><i>Yimin Jing, Deyi Xiong and Zhen Yan</i>
 - <span style="color:cornflowerblue">Bridging the Gap of Relevance Matching and Semantic Matching with Hierarchical Co-Attention Network</span><br><i>Jinfeng Rao, Linqing Liu, Tay Yi, Wei Yang, Peng Shi and Jimmy Lin</i>
 - <span style="color:cornflowerblue">Broad-Coverage Semantic Parsing as Transduction</span><br><i>Sheng Zhang, Xutai Ma, Kevin Duh and Benjamin Van Durme</i>
@@ -85,7 +85,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Capsule Network with Interactive Attention for Aspect-Level Sentiment Classification</span><br><i>Chunning Du, Haifeng Sun, Jingyu Wang, Qi Qi, Jianxin Liao, Tong Xu and Ming Liu</i>
 - <span style="color:cornflowerblue">Capturing Argument Interaction in Semantic Role Labeling with Capsule Networks</span><br><i>Xinchi Chen, Chunchuan Lyu and Ivan Titov</i>
 - <span style="color:cornflowerblue">CaRe: Open Knowledge Graph Embeddings</span><br><i>Swapnil Gupta, Sreyash Kenkre and Partha Talukdar</i>
-- <span style="color:cornflowerblue">Certified Robustness to Adversarial Word Substitutions</span><br><i>Robin Jia, Aditi Raghunathan, Kerem G&ouml;ksel and Percy Liang</i>
+- <span style="color:cornflowerblue">Certified Robustness to Adversarial Word Substitutions</span><br><i>Robin Jia, Aditi Raghunathan, Kerem Göksel and Percy Liang</i>
 - <span style="color:cornflowerblue">Clickbait? Sensational Headline Generation with Auto-tuned Reinforcement Learning</span><br><i>Peng Xu, Chien-Sheng Wu, Andrea Madotto and Pascale Fung</i>
 - <span style="color:cornflowerblue">Cloze-driven Pretraining of Self-attention Networks</span><br><i>Alexei Baevski, Sergey Edunov, Yinhan Liu, Luke Zettlemoyer and Michael Auli</i>
 - <span style="color:cornflowerblue">CLUTRR: A Diagnostic Benchmark for Inductive Reasoning from Text</span><br><i>Koustuv Sinha, Shagun Sodhani, Jin Dong, Joelle Pineau and William L. Hamilton</i>
@@ -93,7 +93,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">CodeSwitch-Reddit: Exploration of Written Multilingual Discourse in Online Discussion Forums</span><br><i>Ella Rabinovich, Masih Sultani and Suzanne Stevenson</i>
 - <span style="color:cornflowerblue">Collaborative Policy Learning for Open Knowledge Graph Reasoning</span><br><i>Cong Fu, Tong Chen, Meng Qu, Woojeong Jin and Xiang Ren</i>
 - <span style="color:cornflowerblue">Combining Unsupervised Pre-training and Annotator Rationales to Improve Low-shot Text Classification</span><br><i>Oren Melamud, Mihaela Bornea and Ken Barker</i>
-- <span style="color:cornflowerblue">Comparing and Developing Tools to Measure the Readability of Domain-Specific Texts</span><br><i>Elissa Redmiles, Lisa Maszkiewicz, Emily Hwang, Dhruv Kuchhal, Everest Liu, Miraida Morales, Denis Peskov, Sudha Rao, Rock Stevens, Kristina Gligori&#263;, Sean Kross, Michelle Mazurek and Hal Daum&eacute; III</i>
+- <span style="color:cornflowerblue">Comparing and Developing Tools to Measure the Readability of Domain-Specific Texts</span><br><i>Elissa Redmiles, Lisa Maszkiewicz, Emily Hwang, Dhruv Kuchhal, Everest Liu, Miraida Morales, Denis Peskov, Sudha Rao, Rock Stevens, Kristina Gligorić, Sean Kross, Michelle Mazurek and Hal Daumé III</i>
 - <span style="color:cornflowerblue">Compositional Generalization for Premitive Substitutions</span><br><i>Yuanpeng Li, Liang Zhao, Jianyu Wang and Joel Hestness</i>
 - <span style="color:cornflowerblue">Concept Pointer Network for Abstractive Summarization</span><br><i>Wenbo Wang, Yang Gao, Heyan Huang and Yuxiang Zhou</i>
 - <span style="color:cornflowerblue">Connecting the Dots: Document-level Neural Relation Extraction with Edge-oriented Graphs</span><br><i>Fenia Christopoulou, Makoto Miwa and Sophia Ananiadou</i>
@@ -113,7 +113,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Cross-Cultural Transfer Learning for Text Classification</span><br><i>Dor Ringel, Kira Radinsky, Ido Guy and Gal Lavee</i>
 - <span style="color:cornflowerblue">Cross-Lingual Dependency Parsing Using Code-Mixed TreeBank</span><br><i>Meishan Zhang, Yue Zhang and Guohong Fu</i>
 - <span style="color:cornflowerblue">Cross-Lingual Machine Reading Comprehension</span><br><i>Yiming Cui, Wanxiang Che, Ting Liu, Bing Qin, Shijin Wang and Guoping Hu</i>
-- <span style="color:cornflowerblue">Cross-lingual Semantic Specialization via Lexical Relation Induction</span><br><i>Edoardo Maria Ponti, Ivan Vuli&#263;, Goran Glava&#347;, Roi Reichart and Anna Korhonen</i>
+- <span style="color:cornflowerblue">Cross-lingual Semantic Specialization via Lexical Relation Induction</span><br><i>Edoardo Maria Ponti, Ivan Vulić, Goran Glavaś, Roi Reichart and Anna Korhonen</i>
 - <span style="color:cornflowerblue">Cross-lingual Structure Transfer for Relation and Event Extraction</span><br><i>Ananya Subburathinam, Di Lu, Heng Ji, Jonathan May, Shih-Fu Chang, Avirup Sil and Clare Voss</i>
 - <span style="color:cornflowerblue">CrossWeigh: Training Named Entity Tagger from Imperfect Annotations</span><br><i>Zihan Wang, Jingbo Shang, Liyuan Liu, Lihao Lu, Jiacheng Liu and Jiawei Han</i>
 - <span style="color:cornflowerblue">Data-Anonymous Encoding for Text-to-SQL Generation</span><br><i>Zhen Dong, Shizhao Sun, Hongzhi Liu, Jian-Guang Lou and Dongmei Zhang</i>
@@ -136,7 +136,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Distributionally Robust Language Modeling</span><br><i>Yonatan Oren, Shiori Sagawa, Tatsunori Hashimoto and Percy Liang</i>
 - <span style="color:cornflowerblue">DIVINE: A Generative Adversarial Imitation Learning Framework for Knowledge Graph Reasoning</span><br><i>Ruiping Li and Xiang Cheng</i>
 - <span style="color:cornflowerblue">Do Neural NLP Models Know Numbers? Probing Numeracy in Embeddings</span><br><i>Eric Wallace, Yizhong Wang, Sujian Li, Sameer Singh and Matt Gardner</i>
-- <span style="color:cornflowerblue">Do We Really Need Fully Unsupervised Cross-Lingual Embeddings?</span><br><i>Ivan Vuli&#263;, Goran Glava&#347;, Roi Reichart and Anna Korhonen</i>
+- <span style="color:cornflowerblue">Do We Really Need Fully Unsupervised Cross-Lingual Embeddings?</span><br><i>Ivan Vulić, Goran Glavaś, Roi Reichart and Anna Korhonen</i>
 - <span style="color:cornflowerblue">Doc2EDAG: An End-to-End Document-level Framework for Chinese Financial Event Extraction</span><br><i>Shun Zheng, Wei Cao, Wei Xu and Jiang Bian</i>
 - <span style="color:cornflowerblue">Document Hashing with Mixture-Prior Generative Models</span><br><i>Wei Dong, Qinliang Su, Dinghan Shen and Changyou Chen</i>
 - <span style="color:cornflowerblue">Domain Adaptation for Person-Job Fit with Transferable Deep Global Match Network</span><br><i>Shuqing Bian, Wayne Xin Zhao, Yang Song, Tao Zhang and Ji-Rong Wen</i>
@@ -185,19 +185,19 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Fact-Checking Meets Fauxtography: Verifying Claims About Images</span><br><i>Dimitrina Zlatkova, Preslav Nakov and Ivan Koychev</i>
 - <span style="color:cornflowerblue">Finding Generalizable Evidence by Learning to Convince Q&A Models</span><br><i>Ethan Perez, Siddharth Karamcheti, Rob Fergus, Jason Weston, Douwe Kiela and Kyunghyun Cho</i>
 - <span style="color:cornflowerblue">Finding Microaggressions in the Wild: A Case for Locating Elusive Phenomena in Social Media Posts</span><br><i>Luke Breitfeller, Emily Ahn, Aldrian Obaja Muis, David Jurgens and Yulia Tsvetkov</i>
-- <span style="color:cornflowerblue">Fine-Grained Analysis of Propaganda in News Articles</span><br><i>Giovanni Da San Martino, Seunghak Yu, Alberto Barr&oacute;n-Cede&ntilde;o, Rostislav Petrov and Preslav Nakov</i>
+- <span style="color:cornflowerblue">Fine-Grained Analysis of Propaganda in News Articles</span><br><i>Giovanni Da San Martino, Seunghak Yu, Alberto Barrón-Cedeño, Rostislav Petrov and Preslav Nakov</i>
 - <span style="color:cornflowerblue">Fine-Grained Entity Typing via Hierarchical Multi Graph Convolutional Networks</span><br><i>Hailong Jin, Lei Hou, Juanzi Li and Tiansi Dong</i>
-- <span style="color:cornflowerblue">Fine-Grained Evaluation for Entity Linking</span><br><i>Henry Rosales-M&eacute;ndez, Aidan Hogan and Barbara Poblete</i>
+- <span style="color:cornflowerblue">Fine-Grained Evaluation for Entity Linking</span><br><i>Henry Rosales-Méndez, Aidan Hogan and Barbara Poblete</i>
 - <span style="color:cornflowerblue">Fine-grained Knowledge Fusion for Sequence Labeling Domain Adaptation</span><br><i>Huiyun Yang, Shujian Huang, XIN-YU DAI and Jiajun CHEN</i>
 - <span style="color:cornflowerblue">FlowSeq: Non-Autoregressive Conditional Sequence Generation with Generative Flow</span><br><i>Xuezhe Ma, Chunting Zhou, Xian Li, Graham Neubig and Eduard Hovy</i>
-- <span style="color:cornflowerblue">From the Token to the Review: A Hierarchical Multimodal approach to Opinion Mining</span><br><i>Alexandre Garcia, Pierre Colombo, Florence d'Alch&eacute;-Buc, Slim Essid and Chlo&eacute; Clavel</i>
+- <span style="color:cornflowerblue">From the Token to the Review: A Hierarchical Multimodal approach to Opinion Mining</span><br><i>Alexandre Garcia, Pierre Colombo, Florence d'Alché-Buc, Slim Essid and Chloé Clavel</i>
 - <span style="color:cornflowerblue">Fusion of Detected Objects in Text for Visual Question Answering</span><br><i>Chris Alberti, Jeffrey Ling, Michael Collins and David Reitter</i>
 - <span style="color:cornflowerblue">Game Theory Meets Embeddings: a Unified Framework for Word Sense Disambiguation</span><br><i>Rocco Tripodi and Roberto Navigli</i>
 - <span style="color:cornflowerblue">GECOR: An End-to-End Generative Ellipsis and Co-reference Resolution Model for Task-Oriented Dialogue</span><br><i>Jun Quan, Deyi Xiong, Bonnie Webber and Changjian Hu</i>
 - <span style="color:cornflowerblue">Generating Questions for Knowledge Bases via Incorporating Diversified Contexts and Answer-Aware Loss</span><br><i>Cao Liu, Kang Liu, Shizhu He, Zaiqing Nie and Jun Zhao</i>
 - <span style="color:cornflowerblue">Guided Dialog Policy Learning: Reward Estimation for Multi-Domain Task-Oriented Dialog</span><br><i>Ryuichi Takanobu, Hanlin Zhu and Minlie Huang</i>
 - <span style="color:cornflowerblue">Guiding the Flowing of Semantics: Interpretable Video Captioning via POS Tag</span><br><i>Xinyu Xiao, Lingfeng Wang, Bin Fan, Shinming Xiang and Chunhong Pan</i>
-- <span style="color:cornflowerblue">Help, Anna! Vision-based Navigation with Natural Multimodal Assistance via Retrospective Curiosity-Encouraging Imitation Learning</span><br><i>Khanh Nguyen and Hal Daum&eacute; III</i>
+- <span style="color:cornflowerblue">Help, Anna! Vision-based Navigation with Natural Multimodal Assistance via Retrospective Curiosity-Encouraging Imitation Learning</span><br><i>Khanh Nguyen and Hal Daumé III</i>
 - <span style="color:cornflowerblue">Heterogeneous Graph Attention Networks for Semi-supervised Short Text Classification</span><br><i>Hu Linmei, Tianchi Yang, Chuan Shi, Houye Ji and Xiaoli Li</i>
 - <span style="color:cornflowerblue">Hierarchical Attention Prototypical Networks for Few-Shot Text Classification</span><br><i>Shengli Sun, Qingfeng Sun, Kevin Zhou and Tengchao Lv</i>
 - <span style="color:cornflowerblue">Hierarchical Modeling of Global Context for Document-Level Neural Machine Translation</span><br><i>Xin Tan, Longyin Zhang, Deyi Xiong and Guodong Zhou</i>
@@ -211,7 +211,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">How well do NLI models capture verb veridicality?</span><br><i>Alexis Ross and Ellie Pavlick</i>
 - <span style="color:cornflowerblue">Human-grounded Evaluations of Explanation Methods for Text Classification</span><br><i>Piyawat Lertvittayakumjorn and Francesca Toni</i>
 - <span style="color:cornflowerblue">Human-Like Decision Making: Document-level Aspect Sentiment Classification via Hierarchical Reinforcement Learning</span><br><i>Jingjing Wang, Changlong Sun, Shoushan Li, Jiancheng Wang, Luo Si, Min Zhang, Xiaozhong Liu and Guodong Zhou</i>
-- <span style="color:cornflowerblue">Identifying and Explaining Discriminative Attributes</span><br><i>Armins Stepanjans and Andr&eacute; Freitas</i>
+- <span style="color:cornflowerblue">Identifying and Explaining Discriminative Attributes</span><br><i>Armins Stepanjans and André Freitas</i>
 - <span style="color:cornflowerblue">Identifying Predictive Causal Factors from News Streams</span><br><i>Ananth Balashankar, Sunandan Chakraborty, Samuel Fraiberger and Lakshminarayanan Subramanian</i>
 - <span style="color:cornflowerblue">Image Captioning with Very Scarce Supervised Data: Adversarial Semi-Supervised Learning Approach</span><br><i>Dong-Jin Kim, Jinsoo Choi, Tae-Hyun Oh and In So Kweon</i>
 - <span style="color:cornflowerblue">Implicit Deep Latent Variable Models for Text Generation</span><br><i>Le Fang, Chunyuan Li, Jianfeng Gao, Wen Dong and Changyou Chen</i>
@@ -229,13 +229,13 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Induction Networks for Few-Shot Text Classification</span><br><i>Ruiying Geng, Binhua Li, Yongbin Li, Xiaodan Zhu, Ping Jian and Jian Sun</i>
 - <span style="color:cornflowerblue">Injecting Phrasal Paraphrase Relation into Sentence Representation for Semantic Equivalence Assessment</span><br><i>Yuki Arase and Jun'ichi Tsujii</i>
 - <span style="color:cornflowerblue">Integrating Text and Image: Determining Multimodal Document Intent in Instagram Posts</span><br><i>Julia Kruk, Jonah Lubin, Karan Sikka, Xiao Lin, Dan Jurafsky and Ajay Divakaran</i>
-- <span style="color:cornflowerblue">Interactive Language Learning by Question Answering</span><br><i>Xingdi Yuan, Marc-Alexandre C&ocirc;t&eacute;, Jie Fu, Zhouhan Lin, Chris Pal, Yoshua Bengio and Adam Trischler</i>
+- <span style="color:cornflowerblue">Interactive Language Learning by Question Answering</span><br><i>Xingdi Yuan, Marc-Alexandre Côté, Jie Fu, Zhouhan Lin, Chris Pal, Yoshua Bengio and Adam Trischler</i>
 - <span style="color:cornflowerblue">Interpoetry: Generating Classical Chinese Poems from Vernacular Chinese</span><br><i>Zhichao Yang, Pengshan Cai, Yansong Feng, Fei Li, Weijiang Feng, Elena Suet-Ying Chiu and hong yu</i>
 - <span style="color:cornflowerblue">Interpretable Relevant Emotion Ranking with Event-Driven Attention</span><br><i>Yang Yang, Deyu ZHOU, Yulan He and Meng Zhang</i>
 - <span style="color:cornflowerblue">Investigating BERT's Knowledge of Language: Five Analysis Methods with NPIs</span><br><i>Alex Warstadt, Yu Cao, Ioana Grosu, Wei Peng, Hagen Blix, Yining Nie, Anna Alsop, Shikha Bordia, Haokun Liu, Alicia Parrish, Sheng-Fu Wang, Jason Phang, Anhad Mohananey, Phu Mon Htut, Paloma Jeretic and Samuel R. Bowman</i>
 - <span style="color:cornflowerblue">Investigating Capsule Network and Semantic Feature on Hyperplanes for Text Classification</span><br><i>Chunning Du, Haifeng Sun, Jingyu Wang, Qi Qi, Jianxin Liao, Chun Wang and Bing Ma</i>
 - <span style="color:cornflowerblue">Investigating Multilingual NMT Representations at Scale</span><br><i>Sneha Kudugunta, Ankur Bapna, Isaac Caswell and Orhan Firat</i>
-- <span style="color:cornflowerblue">Is the Red Square Big? MALeViC: Modeling Adjectives Leveraging Visual Contexts</span><br><i>Sandro Pezzelle and Raquel Fern&aacute;ndez</i>
+- <span style="color:cornflowerblue">Is the Red Square Big? MALeViC: Modeling Adjectives Leveraging Visual Contexts</span><br><i>Sandro Pezzelle and Raquel Fernández</i>
 - <span style="color:cornflowerblue">It's All in the Name: Mitigating Gender Bias with Name-Based Counterfactual Data Augmentation</span><br><i>Rowan Hall Maudslay, Hila Gonen, Ryan Cotterell and Simone Teufel</i>
 - <span style="color:cornflowerblue">Iterative Dual Domain Adaptation for Neural Machine Translation</span><br><i>Jiali Zeng, Yang Liu, jinsong su, yubing Ge, Yaojie Lu, Yongjing Yin and jiebo luo</i>
 - <span style="color:cornflowerblue">Joint Event and Temporal Relation Extraction with Shared Representations and Structured Prediction</span><br><i>Rujun Han, Qiang Ning and Nanyun Peng</i>
@@ -254,7 +254,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">KnowledgeNet: A Benchmark Dataset for Knowledge Base Population</span><br><i>Filipe Mesquita, Matteo Cannaviccio, Jordan Schmidek, Paramita Mirza and Denilson Barbosa</i>
 - <span style="color:cornflowerblue">Label-Specific Document Representation for Multi-Label Text Classification</span><br><i>Lin Xiao, Xin Huang, Boli Chen and Liping Jing</i>
 - <span style="color:cornflowerblue">Language Modeling for Code-Switching: Evaluation, Integration of Monolingual Data, and Discriminative Training</span><br><i>Hila Gonen and Yoav Goldberg</i>
-- <span style="color:cornflowerblue">Language Models as Knowledge Bases?</span><br><i>Fabio Petroni, Tim Rockt&auml;schel, Sebastian Riedel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu and Alexander Miller</i>
+- <span style="color:cornflowerblue">Language Models as Knowledge Bases?</span><br><i>Fabio Petroni, Tim Rocktäschel, Sebastian Riedel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu and Alexander Miller</i>
 - <span style="color:cornflowerblue">Latent Part-of-Speech Sequences for Neural Machine Translation</span><br><i>Xuewen Yang, Yingru Liu, Dongliang Xie, Xin Wang and Niranjan Balasubramanian</i>
 - <span style="color:cornflowerblue">Latent Suicide Risk Detection on Microblog via Suicide-Oriented Word Embeddings and Layered Attention</span><br><i>Lei Cao, Huijun Zhang, Ling Feng, Zihan Wei, Xin Wang, Ningyun Li and Xiaohao He</i>
 - <span style="color:cornflowerblue">Latent-Variable Generative Text Classifiers for Data-Efficient NLP</span><br><i>Xiaoan Ding and Kevin Gimpel</i>
@@ -272,7 +272,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Learning to Discriminate Perturbations for Blocking Adversarial Attacks in Text Classification</span><br><i>Yichao Zhou, Jyun-Yu Jiang, Kai-Wei Chang and Wei Wang</i>
 - <span style="color:cornflowerblue">Learning to Infer Entities, Properties and their Relations from Clinical Conversations</span><br><i>Nan Du, Mingqiu Wang, Linh Tran, Gang Lee and Izhak Shafran</i>
 - <span style="color:cornflowerblue">Learning to Learn and Predict: A Meta-Learning Approach for Multi-Label Classification</span><br><i>Jiawei Wu, Wenhan Xiong and William Yang Wang</i>
-- <span style="color:cornflowerblue">Learning to Speak and Act in a Fantasy Text Adventure Game</span><br><i>Jack Urbanek, Angela Fan, Siddharth Karamcheti, Saachi Jain, Samuel Humeau, Emily Dinan, Tim Rockt&auml;schel, Douwe Kiela, Arthur Szlam and Jason Weston</i>
+- <span style="color:cornflowerblue">Learning to Speak and Act in a Fantasy Text Adventure Game</span><br><i>Jack Urbanek, Angela Fan, Siddharth Karamcheti, Saachi Jain, Samuel Humeau, Emily Dinan, Tim Rocktäschel, Douwe Kiela, Arthur Szlam and Jason Weston</i>
 - <span style="color:cornflowerblue">Learning to Update Knowledge Graph by Reading News</span><br><i>Jizhi Tang, Yansong Feng and Dongyan Zhao</i>
 - <span style="color:cornflowerblue">Learning with Limited Data for Multilingual Reading Comprehension</span><br><i>Kyungjae Lee, Sunghyun Park, Hojae Han, Jinyoung Yeo, Seung-won Hwang and Juho Lee</i>
 - <span style="color:cornflowerblue">Let's Ask Again: Refine Network for Automatic Question Generation</span><br><i>Preksha Nema, Akash Kumar Mohankumar, Mitesh M. Khapra, Balaji Vasan Srinivasan and Balaraman Ravindran</i>
@@ -319,7 +319,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Multi-label Categorization of Accounts of Sexism using a Neural Framework</span><br><i>Pulkit Parikh, Harika Abburi, Pinkesh Badjatiya, Radhika Krishnan, Niyati Chhaya, Manish Gupta and Vasudeva Varma</i>
 - <span style="color:cornflowerblue">Multi-Relational Word Embeddings for Selectional Preferences</span><br><i>Hongming Zhang, Jiaxin Bai, Yan Song, Kun Xu, Changlong Yu, Yangqiu Song, Wilfred Ng and Dong Yu</i>
 - <span style="color:cornflowerblue">Multi-task Learning for Conversational Question Answering Over a Large-Scale Knowledge Base</span><br><i>Tao Shen, Xiubo Geng, Tao QIN, Daya Guo, Duyu Tang, Nan Duan, Guodong Long and Daxin Jiang</i>
-- <span style="color:cornflowerblue">Multi-View Domain Adapted Sentence Embeddings for Low-Resource Unsupervised Duplicate Question Detection</span><br><i>Nina Poerner and Hinrich Sch&uuml;tze</i>
+- <span style="color:cornflowerblue">Multi-View Domain Adapted Sentence Embeddings for Low-Resource Unsupervised Duplicate Question Detection</span><br><i>Nina Poerner and Hinrich Schütze</i>
 - <span style="color:cornflowerblue">MultiDoGO: Multi-Domain Goal-Oriented Dialogues</span><br><i>Denis Peskov, Nancy Clarke, Jason Krone, Brigi Fodor, Yi Zhang, Adel Youssef and Mona Diab</i>
 - <span style="color:cornflowerblue">MultiFC: A Real-World Multi-Domain Dataset for Evidence-Based Fact Checking of Claims</span><br><i>Isabelle Augenstein, Christina Lioma, Dongsheng Wang, Lucas Chaves Lima, Casper Hansen, Christian Hansen and Jakob Grue Simonsen</i>
 - <span style="color:cornflowerblue">Multilingual and Multi-aspect Hate Speech Analysis</span><br><i>Nedjma Ousidhoum, Zizheng Lin, Hongming Zhang, Yangqiu Song and Dit-Yan Yeung</i>
@@ -331,7 +331,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Neural Cross-Lingual Event Detection with Minimal Parallel Resources</span><br><i>Jian Liu, Yubo Chen, Kang Liu and Jun Zhao</i>
 - <span style="color:cornflowerblue">Neural Cross-Lingual Relation Extraction Based on Bilingual Word Embedding Mapping</span><br><i>Jian Ni and Radu Florian</i>
 - <span style="color:cornflowerblue">Neural data-to-text generation: A comparison between pipeline and end-to-end architectures</span><br><i>Thiago Castro Ferreira, Chris van der Lee, Emiel van Miltenburg and Emiel Krahmer</i>
-- <span style="color:cornflowerblue">Neural Duplicate Question Detection without Labeled Training Data</span><br><i>Andreas R&uuml;ckl&eacute;, Nafise Sadat Moosavi and Iryna Gurevych</i>
+- <span style="color:cornflowerblue">Neural Duplicate Question Detection without Labeled Training Data</span><br><i>Andreas Rücklé, Nafise Sadat Moosavi and Iryna Gurevych</i>
 - <span style="color:cornflowerblue">Neural Extractive Text Summarization with Syntactic Compression</span><br><i>Jiacheng Xu and Greg Durrett</i>
 - <span style="color:cornflowerblue">Neural Gaussian Copula for Variational Autoencoder</span><br><i>Prince Zizhuang Wang and William Yang Wang</i>
 - <span style="color:cornflowerblue">Neural Generative Rhetorical Structure Parsing</span><br><i>Amandla Mabona, Laura Rimell, Stephen Clark and Andreas Vlachos</i>
@@ -433,7 +433,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">The Role of Pragmatic and Discourse Context in Determining Argument Impact</span><br><i>Esin Durmus, Faisal Ladhak and Claire Cardie</i>
 - <span style="color:cornflowerblue">The Trumpiest Trump? Identifying a Subject's Most Characteristic Tweets</span><br><i>Charuta Pethe and Steve Skiena</i>
 - <span style="color:cornflowerblue">TIGEr: Text-to-Image Grounding for Image Caption Evaluation</span><br><i>Ming Jiang, Qiuyuan Huang, Lei Zhang, Xin Wang, Pengchuan Zhang, Zhe Gan, Jana Diesner and Jianfeng Gao</i>
-- <span style="color:cornflowerblue">To Annotate or Not? Unsupervised Prediction of Performance Drop due to Domain Shift</span><br><i>Hady Elsahar and Matthias Gall&eacute;</i>
+- <span style="color:cornflowerblue">To Annotate or Not? Unsupervised Prediction of Performance Drop due to Domain Shift</span><br><i>Hady Elsahar and Matthias Gallé</i>
 - <span style="color:cornflowerblue">Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information</span><br><i>Byungkook Oh, Seungmin Seo, Cheolheon Shin, Eunju Jo and Kyong-Ho Lee</i>
 - <span style="color:cornflowerblue">Topics to Avoid: Demoting Latent Confounds in Text Classification</span><br><i>Sachin Kumar, Shuly Wintner, Noah A. Smith and Yulia Tsvetkov</i>
 - <span style="color:cornflowerblue">Toward a task of feedback comment generation for writing learning</span><br><i>Ryo Nagata</i>
@@ -441,7 +441,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Towards Knowledge-Based Recommender Dialog System</span><br><i>Qibin Chen, Junyang Lin, Yichang Zhang, Ming Ding, Yukuo Cen, Hongxia Yang and Jie Tang</i>
 - <span style="color:cornflowerblue">Towards Linear Time Neural Machine Translation with Capsule Networks</span><br><i>Mingxuan Wang</i>
 - <span style="color:cornflowerblue">Towards Understanding Neural Machine Translation with Word Importance</span><br><i>Shilin He, Zhaopeng Tu, Xing Wang, Longyue Wang, Michael Lyu and Shuming Shi</i>
-- <span style="color:cornflowerblue">Towards Zero-shot Language Modelling</span><br><i>Edoardo Maria Ponti, Ivan Vuli&#263;, Ryan Cotterell, Roi Reichart and Anna Korhonen</i>
+- <span style="color:cornflowerblue">Towards Zero-shot Language Modelling</span><br><i>Edoardo Maria Ponti, Ivan Vulić, Ryan Cotterell, Roi Reichart and Anna Korhonen</i>
 - <span style="color:cornflowerblue">Training Data Augmentation for Detecting Adverse Drug Reactions in User-Generated Content</span><br><i>Sepideh Mesbah, Jie Yang, Robert-Jan Sips, Manuel Valle Torre, Christoph Lofi, Alessandro Bozzon and Geert-Jan Houben</i>
 - <span style="color:cornflowerblue">Transfer Learning Between Related Tasks Using Expected Label Proportions</span><br><i>Matan Ben Noach and Yoav Goldberg</i>
 - <span style="color:cornflowerblue">Transfer Learning from Medical Literature for Section Prediction in Electronic Health Records</span><br><i>Sara Rosenthal, Ken Barker and Zhicheng Liang</i>
@@ -451,7 +451,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Tree-structured Decoding for Solving Math Word Problems</span><br><i>Qianying Liu, Wenyv Guan, Sujian Li and Daisuke Kawahara</i>
 - <span style="color:cornflowerblue">Trouble on the Horizon: Forecasting the Derailment of Online Conversations as they Develop</span><br><i>Jonathan P. Chang and Cristian Danescu-Niculescu-Mizil</i>
 - <span style="color:cornflowerblue">TuckER: Tensor Factorization for Knowledge Graph Completion</span><br><i>Ivana Balazevic, Carl Allen and Timothy Hospedales</i>
-- <span style="color:cornflowerblue">Two New Evaluation Datasets for Low-Resource Machine Translation: Nepali-English and Sinhala English</span><br><i>Francisco Guzm&aacute;n, Peng-Jen Chen, Myle Ott, Juan Pino, Guillaume Lample, Philipp Koehn, Vishrav Chaudhary and Marc'Aurelio Ranzato</i>
+- <span style="color:cornflowerblue">Two New Evaluation Datasets for Low-Resource Machine Translation: Nepali-English and Sinhala English</span><br><i>Francisco Guzmán, Peng-Jen Chen, Myle Ott, Juan Pino, Guillaume Lample, Philipp Koehn, Vishrav Chaudhary and Marc'Aurelio Ranzato</i>
 - <span style="color:cornflowerblue">Uncover Sexual Harassment Patterns from Personal Stories by Joint Key Element Extraction and Categorization</span><br><i>Yingchi Liu, Quanzhi Li, Marika Cifor, Xiaozhong Liu, Qiong Zhang and Luo Si</i>
 - <span style="color:cornflowerblue">Uncover the Ground-Truth Relations in Distant Supervision: A Neural Expectation Maximization Framework</span><br><i>Junfan Chen, Richong Zhang, Yongyi Mao, Hongyu Guo and Jie Xu</i>
 - <span style="color:cornflowerblue">Unicoder: A Universal Language Encoder by Pre-training with Multiple Cross-lingual Tasks</span><br><i>Haoyang Huang, Yaobo Liang, Nan Duan, Ming Gong, Linjun Shou, Daxin Jiang and Ming Zhou</i>
@@ -464,13 +464,13 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Unsupervised Text Attribute Transfer via Iterative Matching and Translation</span><br><i>Zhijing Jin, Di Jin, Jonas Mueller, Nicholas Matthews and Enrico Santus</i>
 - <span style="color:cornflowerblue">UR-FUNNY: A Multimodal Language Dataset for Understanding Humor</span><br><i>Md Kamrul Hasan, Wasifur Rahman, AmirAli Bagher Zadeh, Jianyuan Zhong, Md Iftekhar Tanveer, Louis-Philippe Morency and Mohammed (Ehsan) Hoque</i>
 - <span style="color:cornflowerblue">Using Customer Service Dialogues for Satisfaction Analysis with Context-Assisted Multiple Instance Learning</span><br><i>Kaisong Song, Lidong Bing, Wei Gao, Jun Lin, Lujun Zhao, Jiancheng Wang, Changlong Sun, Xiaozhong Liu and Qiong Zhang</i>
-- <span style="color:cornflowerblue">Using Local Knowledge Graph Construction to Scale Seq2Seq Models to Multi-Document Inputs</span><br><i>Angela Fan, Claire Gardent, Chlo&eacute; Braud and Antoine Bordes</i>
-- <span style="color:cornflowerblue">Variable beam search for generative neural parsing and its relevance for neuro-imaging signal analysis</span><br><i>Benoit Crabb&eacute;, Murielle Fabre and Christophe Pallier</i>
+- <span style="color:cornflowerblue">Using Local Knowledge Graph Construction to Scale Seq2Seq Models to Multi-Document Inputs</span><br><i>Angela Fan, Claire Gardent, Chloé Braud and Antoine Bordes</i>
+- <span style="color:cornflowerblue">Variable beam search for generative neural parsing and its relevance for neuro-imaging signal analysis</span><br><i>Benoit Crabbé, Murielle Fabre and Christophe Pallier</i>
 - <span style="color:cornflowerblue">Variational Hierarchical User-based Conversation Model</span><br><i>JinYeong Bak and Alice Oh</i>
 - <span style="color:cornflowerblue">VerbAtlas: a Novel Large-Scale Verbal Semantic Resource and Its Application to Semantic Role Labeling</span><br><i>Andrea Di Fabio, Simone Conia and Roberto Navigli</i>
 - <span style="color:cornflowerblue">Video Dialog via Progressive Inference and Cross-Transformer</span><br><i>Weike Jin, Zhou Zhao, Mao Gu, Jun Xiao, Furu Wei and Yueting Zhuang</i>
 - <span style="color:cornflowerblue">Visualizing and Understanding the Effectiveness of BERT</span><br><i>Yaru Hao, Li Dong, Furu Wei and Ke Xu</i>
-- <span style="color:cornflowerblue">Weak Supervision for Learning Discourse Structure</span><br><i>Sonia Badene, Kate Thompson, Jean-Pierre Lorr&eacute; and Nicholas Asher</i>
+- <span style="color:cornflowerblue">Weak Supervision for Learning Discourse Structure</span><br><i>Sonia Badene, Kate Thompson, Jean-Pierre Lorré and Nicholas Asher</i>
 - <span style="color:cornflowerblue">Weakly Supervised Cross-lingual Semantic Relation Classification via Knowledge Distillation</span><br><i>Yogarshi Vyas and Marine Carpuat</i>
 - <span style="color:cornflowerblue">Weakly Supervised Multilingual Causality Extraction fromWikipedia</span><br><i>Chikara Hashimoto</i>
 - <span style="color:cornflowerblue">Weakly-Supervised Concept-based Adversarial Learning for Cross-lingual Word Embeddings</span><br><i>Haozhou Wang, James Henderson and Paola Merlo</i>
@@ -479,7 +479,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">What's Missing: A Knowledge Gap Guided Approach for Multi-hop Question Answering</span><br><i>Tushar Khot, Ashish Sabharwal and Peter Clark</i>
 - <span style="color:cornflowerblue">Who Is Speaking to Whom? Learning to Identify Utterance Addressee in Multi-Party Conversations</span><br><i>Ran Le, Wenpeng Hu, Mingyue Shang, Zhenjun You, Lidong Bing, Dongyan Zhao and Rui Yan</i>
 - <span style="color:cornflowerblue">WikiCREM: A large unsupervised corpus for co-reference resolution</span><br><i>Vid Kocijan, Oana-Maria Camburu, Ana-Maria Cretu, Yordan Yordanov, Phil Blunsom and Thomas Lukasiewicz</i>
-- <span style="color:cornflowerblue">You Shall Know a User by the Company It Keeps: Dynamic Representations for Social Media Users in NLP</span><br><i>Marco Del Tredici, Diego Marcheggiani, Sabine Schulte im Walde and Raquel Fern&aacute;ndez</i>
+- <span style="color:cornflowerblue">You Shall Know a User by the Company It Keeps: Dynamic Representations for Social Media Users in NLP</span><br><i>Marco Del Tredici, Diego Marcheggiani, Sabine Schulte im Walde and Raquel Fernández</i>
 - <span style="color:cornflowerblue">YouMakeup: A Large-Scale Domain-Specific Multimodal Dataset for Fine-Grained Semantic Comprehension</span><br><i>Weiying Wang, Yongcheng Wang, Shizhe Chen and Qin Jin</i>
 
 
@@ -487,7 +487,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 
 ## Short Papers
 
-- <span style="color:cornflowerblue">"A Buster Keaton of Linguistics": First Automated Approaches for the Extraction of Vossian Antonomasia</span><br><i>Michel Schwab, Robert J&auml;schke, Frank Fischer and Jannik Str&ouml;tgen</i>
+- <span style="color:cornflowerblue">"A Buster Keaton of Linguistics": First Automated Approaches for the Extraction of Vossian Antonomasia</span><br><i>Michel Schwab, Robert Jäschke, Frank Fischer and Jannik Strötgen</i>
 - <span style="color:cornflowerblue">"Going on a vacation" takes longer than "Going for a walk": A Study of Temporal Commonsense Understanding</span><br><i>Ben Zhou, Daniel Khashabi, Qiang Ning and Dan Roth</i>
 - <span style="color:cornflowerblue">A Challenge Dataset and Effective Models for Aspect-Based Sentiment Analysis</span><br><i>Qingnan Jiang, Lei Chen, Ruifeng Xu, Xiang Ao and Min Yang</i>
 - <span style="color:cornflowerblue">A deep-learning framework to detect sarcasm targets</span><br><i>Jasabanta Patro, Srijan Bansal and Animesh Mukherjee</i>
@@ -505,7 +505,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Abstract Text Summarization: A Low Resource Challenge</span><br><i>Shantipriya Parida and Petr Motlicek</i>
 - <span style="color:cornflowerblue">Adapting Meta Knowledge Graph Information for Multi-Hop Reasoning over Few-Shot Relations</span><br><i>Xin Lv, Yuxian Gu, Xu Han, Lei Hou, Juanzi Li and Zhiyuan Liu</i>
 - <span style="color:cornflowerblue">Adversarial Learning with Contextual Embeddings for Zero-resource Cross-lingual Classification and NER</span><br><i>Phillip Keung, yichao lu and Vikas Bhardwaj</i>
-- <span style="color:cornflowerblue">Adversarial Removal of Demographic Attributes Revisited</span><br><i>Maria Barrett, Yova Kementchedjhieva, Yanai Elazar, Desmond Elliott and Anders S�gaard</i>
+- <span style="color:cornflowerblue">Adversarial Removal of Demographic Attributes Revisited</span><br><i>Maria Barrett, Yova Kementchedjhieva, Yanai Elazar, Desmond Elliott and Anders SÃ¸gaard</i>
 - <span style="color:cornflowerblue">Aggregating Bidirectional Encoder Representations Using MatchLSTM for Sequence Matching</span><br><i>Bo Shao, Yeyun Gong, Weizhen Qi, Nan Duan and Xiaola Lin</i>
 - <span style="color:cornflowerblue">An Attentive Fine-Grained Entity Typing Model with Latent Type Representation</span><br><i>Ying Lin and Heng Ji</i>
 - <span style="color:cornflowerblue">An Empirical Comparison on Imitation Learning and Reinforcement Learning for Paraphrase Generation</span><br><i>Wanyu Du and Yangfeng Ji</i>
@@ -513,8 +513,8 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction</span><br><i>Shun Kiyono, Jun Suzuki, Masato Mita, Tomoya Mizumoto and Kentaro Inui</i>
 - <span style="color:cornflowerblue">An Evaluation for Intent Classification and Out-of-Scope Prediction</span><br><i>Stefan Larson, Anish Mahendran, Joseph J. Peper, Christopher Clarke, Andrew Lee, Parker Hill, Jonathan K. Kummerfeld, Kevin Leach, Michael A. Laurenzano, Lingjia Tang and Jason mars</i>
 - <span style="color:cornflowerblue">An Improved Neural Baseline for Temporal Relation Extraction</span><br><i>Qiang Ning, Sanjay Subramanian and Dan Roth</i>
-- <span style="color:cornflowerblue">Analysing the Representational Geometry of Neural Language Encoders</span><br><i>Mostafa Abdou, Artur Kulmizev, Felix Hill, Daniel M. Low and Anders S�gaard</i>
-- <span style="color:cornflowerblue">Analytical Methods for Interpretable Ultradense Word Embeddings</span><br><i>Philipp Dufter and Hinrich Sch&uuml;tze</i>
+- <span style="color:cornflowerblue">Analysing the Representational Geometry of Neural Language Encoders</span><br><i>Mostafa Abdou, Artur Kulmizev, Felix Hill, Daniel M. Low and Anders SÃ¸gaard</i>
+- <span style="color:cornflowerblue">Analytical Methods for Interpretable Ultradense Word Embeddings</span><br><i>Philipp Dufter and Hinrich Schütze</i>
 - <span style="color:cornflowerblue">Answering Conversational Questions on Structured Data without Logical Forms</span><br><i>Thomas Mueller, Francesco Piccinno, Peter Shaw, Massimo Nicosia and Yasemin Altun</i>
 - <span style="color:cornflowerblue">Are We Modeling the Task or the Annotator? An Investigation of Annotator Bias in Natural Language Understanding Datasets</span><br><i>Mor Geva, Yoav Goldberg and Jonathan Berant</i>
 - <span style="color:cornflowerblue">Attention Optimization for Abstractive Document Summarization</span><br><i>Min Gui, Junfeng Tian, Rui Wang and Zhenglu Yang</i>
@@ -539,7 +539,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Coverage of Information Extraction from Sentences and Paragraphs</span><br><i>Simon Razniewski, Nitisha Jain, Paramita Mirza and Gerhard Weikum</i>
 - <span style="color:cornflowerblue">Cross-Domain Modeling of Sentence-Level Evidence for Document Retrieval</span><br><i>Zeynep Akkalyoncu Yilmaz, Wei Yang, Haotian Zhang and Jimmy Lin</i>
 - <span style="color:cornflowerblue">Cross-Lingual BERT Transformation for Zero-Shot Dependency Parsing</span><br><i>Yuxuan Wang, Wanxiang Che, Jiang Guo, Yijia Liu and Ting Liu</i>
-- <span style="color:cornflowerblue">Cross-lingual intent classification in a low resource industrial setting</span><br><i>Talaat Khalil, Kornel Kie&#322;czewski, Georgios Christos Chouliaras, Amina Keldibek and Maarten Versteegh</i>
+- <span style="color:cornflowerblue">Cross-lingual intent classification in a low resource industrial setting</span><br><i>Talaat Khalil, Kornel Kiełczewski, Georgios Christos Chouliaras, Amina Keldibek and Maarten Versteegh</i>
 - <span style="color:cornflowerblue">Cross-lingual Transfer Learning with Data Selection for Large-Scale Spoken Language Understanding</span><br><i>Quynh Do and Judith Gaspers</i>
 - <span style="color:cornflowerblue">Cross-Sentence N-ary Relation Extraction using Lower-Arity Universal Schemas</span><br><i>Kosuke Akimoto, Takuya Hiraoka, Kunihiko Sadamasa and Mathias Niepert</i>
 - <span style="color:cornflowerblue">Data Augmentation with Atomic Templates for Spoken Language Understanding</span><br><i>Zijian Zhao, Su Zhu and Kai Yu</i>
@@ -568,7 +568,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Fine-tune BERT with Sparse Self-Attention Mechanism</span><br><i>Baiyun Cui, Yingming Li, Ming Chen and Zhongfei Zhang</i>
 - <span style="color:cornflowerblue">GEANN: Gazetteer-Enhanced Attentive Neural Networks for Named Entity Recognition</span><br><i>Hongyu Lin, Yaojie Lu, Xianpei Han, Le Sun, Bin Dong and Shanshan Jiang</i>
 - <span style="color:cornflowerblue">Generating Highly Relevant Questions</span><br><i>Jiazuo Qiu and Deyi Xiong</i>
-- <span style="color:cornflowerblue">Generating Modern Poetry Automatically in Finnish</span><br><i>Mika H&auml;m&auml;l&auml;inen and Khalid Alnajjar</i>
+- <span style="color:cornflowerblue">Generating Modern Poetry Automatically in Finnish</span><br><i>Mika Hämäläinen and Khalid Alnajjar</i>
 - <span style="color:cornflowerblue">Generating Natural Anagrams: Towards Language Generation under Hard Combinatorial Constraints</span><br><i>Masaaki Nishino, Sho Takase, Tsutomu Hirao and Masaaki Nagata</i>
 - <span style="color:cornflowerblue">Generating Personalized Recipes from Historical User Preferences</span><br><i>Bodhisattwa Prasad Majumder, Shuyang Li, Jianmo Ni and Julian McAuley</i>
 - <span style="color:cornflowerblue">GeoSQA: A Benchmark for Scenario-based Question Answering in the Geography Domain at High School Level</span><br><i>Zixian Huang, Yulin Shen, Xiao Li, Yu'ang Wei, Gong Cheng, Lin Zhou, Xinyu Dai and Yuzhong Qu</i>
@@ -594,18 +594,18 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Incorporating Contextual and Syntactic Structures Improves Semantic Similarity Modeling</span><br><i>Linqing Liu, Wei Yang, Jinfeng Rao, Raphael Tang and Jimmy Lin</i>
 - <span style="color:cornflowerblue">Incorporating Domain Knowledge into Medical NLI using Knowledge Graphs</span><br><i>Soumya Sharma, Bishal Santra, Abhik Jana, Santosh Tokala, Niloy Ganguly and Pawan Goyal</i>
 - <span style="color:cornflowerblue">Incorporating Label Dependencies in Multilabel Stance Detection</span><br><i>William Ferreira and Andreas Vlachos</i>
-- <span style="color:cornflowerblue">Interpretable Word Embeddings via Informative Priors</span><br><i>Miriam Hurtado Bodell, Martin Arvidsson and M�ns Magnusson</i>
+- <span style="color:cornflowerblue">Interpretable Word Embeddings via Informative Priors</span><br><i>Miriam Hurtado Bodell, Martin Arvidsson and MÃ¥ns Magnusson</i>
 - <span style="color:cornflowerblue">Investigating Dynamic Routing in Tree-Structured LSTM for Sentiment Analysis</span><br><i>Jin Wang, Liang-Chih Yu, K. Robert Lai and Xuejie Zhang</i>
 - <span style="color:cornflowerblue">Investigating Meta-Learning Algorithms for Low-Resource Natural Language Understanding Tasks</span><br><i>Zi-Yi Dou, Keyi Yu and Antonios Anastasopoulos</i>
 - <span style="color:cornflowerblue">Investigating Sports Commentator Bias within a Large Corpus of American Football Broadcasts</span><br><i>Jack Merullo, Luke Yeh, Abram Handler, Alvin Grissom II, Brendan O'Connor and Mohit Iyyer</i>
-- <span style="color:cornflowerblue">Investigating the Effectiveness of BPE: The Power of Shorter Sequences</span><br><i>Matthias Gall&eacute;</i>
+- <span style="color:cornflowerblue">Investigating the Effectiveness of BPE: The Power of Shorter Sequences</span><br><i>Matthias Gallé</i>
 - <span style="color:cornflowerblue">Korean Morphological Analysis with Tied Sequence-to-Sequence Multi-Task Model</span><br><i>Hyun-Je Song and Seong-Bae Park</i>
 - <span style="color:cornflowerblue">Label Embedding using Hierarchical Structure of Labels for Twitter Classification</span><br><i>Taro Miyazaki, Kiminobu Makino, Yuka Takei, Hiroki Okamoto and Jun Goto</i>
 - <span style="color:cornflowerblue">Learning Rhyming Constraints using Structured Adversaries</span><br><i>Harsh Jhamtani, Sanket Vaibhav Mehta, Jaime Carbonell, and Taylor Berg-Kirkpatrick</i>
 - <span style="color:cornflowerblue">Learning with Noisy Labels for Sentence-level Sentiment Classification</span><br><i>Hao Wang, Bing Liu, Chaozhuo Li, Yan Yang and Tianrui Li</i>
 - <span style="color:cornflowerblue">Leveraging Adjective-Noun Phrasing Knowledge for Comparison Relation Prediction in Text-to-SQL</span><br><i>Haoyan Liu, Lei Fang, Qian Liu, Bei Chen, Jian-Guang LOU and Zhoujun Li</i>
 - <span style="color:cornflowerblue">Linguistic Versus Latent Relations for Modeling a Flow in Paragraphs</span><br><i>Dongyeop Kang and Eduard Hovy</i>
-- <span style="color:cornflowerblue">Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction</span><br><i>Yova Kementchedjhieva, Mareike Hartmann and Anders S�gaard</i>
+- <span style="color:cornflowerblue">Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction</span><br><i>Yova Kementchedjhieva, Mareike Hartmann and Anders SÃ¸gaard</i>
 - <span style="color:cornflowerblue">Low-Resource Neural Machine Translation by Exploiting Multilingualism through Multi-Step Fine-Tuning Using N-way Parallel Corpora</span><br><i>Raj Dabre, Atsushi Fujita and Chenhui Chu</i>
 - <span style="color:cornflowerblue">Machine Reading Comprehension Using Structural Knowledge Graph-aware Network</span><br><i>Delai Qiu, Yuanzhe Zhang, Xinwei Feng, Xiangwen Liao, Wenbin Jiang, Yajuan Lyu, Kang Liu and Jun Zhao</i>
 - <span style="color:cornflowerblue">Machine Translation for Machines: the Sentiment Classification Use Case</span><br><i>amirhossein tebbifakhr, Luisa Bentivogli, Matteo Negri and Marco Turchi</i>
@@ -614,7 +614,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Modeling Multi-Action Policy for Task-Oriented Dialogues</span><br><i>Lei Shu, Hu Xu, Bing Liu and Piero Molino</i>
 - <span style="color:cornflowerblue">Modelling Stopping Criteria using Poisson Processes</span><br><i>Alison Sneyd and Mark Stevenson</i>
 - <span style="color:cornflowerblue">Multi-Head Attention with Diversity for Learning Grounded Multilingual Multimodal Representations</span><br><i>Po-Yao Huang, Xiaojun Chang and Alexander Hauptmann</i>
-- <span style="color:cornflowerblue">Multi�-passage BERT: A Globally Normalized BERT Model for Open�-domain Question Answering</span><br><i>Zhiguo Wang, Patrick Ng, Xiaofei Ma, Ramesh Nallapati and Bing Xiang</i>
+- <span style="color:cornflowerblue">MultiÂ­-passage BERT: A Globally Normalized BERT Model for OpenÂ­-domain Question Answering</span><br><i>Zhiguo Wang, Patrick Ng, Xiaofei Ma, Ramesh Nallapati and Bing Xiang</i>
 - <span style="color:cornflowerblue">Multi-Task Learning for Chemical Named Entity Recognition with Chemical Compound Paraphrase</span><br><i>Taiki Watanabe, Akihiro Tamura, Takashi Ninomiya, Takuya Makino and Tomoya Iwakura</i>
 - <span style="color:cornflowerblue">Multi-task Learning for Natural Language Generation in Task-Oriented Dialogue</span><br><i>Chenguang Zhu, Michael Zeng and Xuedong Huang</i>
 - <span style="color:cornflowerblue">Multi-Task Learning with Language Modeling for Question Generation</span><br><i>Wenjie Zhou, Minghua Zhang and Yunfang Wu</i>
@@ -653,7 +653,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Restoring ancient text using deep learning: a case study on Greek epigraphy</span><br><i>Yannis Assael, Thea Sommerschield and Jonathan Prag</i>
 - <span style="color:cornflowerblue">Retrofitting Contextualized Word Embeddings with Paraphrases</span><br><i>Weijia Shi, Muhao Chen, Pei Zhou and Kai-Wei Chang</i>
 - <span style="color:cornflowerblue">Revisiting the Evaluation of Theory of Mind through Question Answering</span><br><i>Matthew Le, Y-Lan Boureau and Maximilian Nickel</i>
-- <span style="color:cornflowerblue">Rewarding Coreference Resolvers for Being Consistent with World Knowledge</span><br><i>Rahul Aralikatte, Heather Lent, Ana Valeria Gonzalez, Daniel Herschcovich, Chen Qiu, Anders Sandholm, Michael Ringaard and Anders S�gaard</i>
+- <span style="color:cornflowerblue">Rewarding Coreference Resolvers for Being Consistent with World Knowledge</span><br><i>Rahul Aralikatte, Heather Lent, Ana Valeria Gonzalez, Daniel Herschcovich, Chen Qiu, Anders Sandholm, Michael Ringaard and Anders SÃ¸gaard</i>
 - <span style="color:cornflowerblue">RNN Architecture Learning with Sparse Regularization</span><br><i>Jesse Dodge, Roy Schwartz, Hao Peng and Noah A. Smith</i>
 - <span style="color:cornflowerblue">Robust Text Classifier on Test-Time Budgets</span><br><i>Md Rizwan Parvez, Tolga Bolukbasi, Kai-Wei Chang and Venkatesh Saligrama</i>
 - <span style="color:cornflowerblue">Rotate King to get Queen: Word Relationships as Orthogonal Transformations in Embedding Space</span><br><i>Kawin Ethayarajh</i>
@@ -661,8 +661,8 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Sampling Matters! An Empirical Study of Negative Sampling Strategies for Learning of Matching Models in Retrieval-based Dialogue Systems</span><br><i>Jia Li, Chongyang Tao, wei wu, Yansong Feng, Dongyan Zhao and Rui Yan</i>
 - <span style="color:cornflowerblue">SciBERT: A Pretrained Language Model for Scientific Text</span><br><i>Iz Beltagy, Kyle Lo and Arman Cohan</i>
 - <span style="color:cornflowerblue">Self-Attention with Structural Position Representations</span><br><i>Xing Wang, Zhaopeng Tu, Longyue Wang and Shuming Shi</i>
-- <span style="color:cornflowerblue">Semantic Relatedness based Re-ranker for Text Spotting</span><br><i>Ahmed Sabir, Francesc Moreno and Llu&iacute;s Padr&oacute;</i>
-- <span style="color:cornflowerblue">Semi-Supervised Bootstrapping of Dialogue State Trackers for Task-Oriented Modelling</span><br><i>Bo-Hsiang Tseng, Marek Rei, Pawe&#322; Budzianowski, Richard Turner, Bill Byrne and Anna Korhonen</i>
+- <span style="color:cornflowerblue">Semantic Relatedness based Re-ranker for Text Spotting</span><br><i>Ahmed Sabir, Francesc Moreno and Lluís Padró</i>
+- <span style="color:cornflowerblue">Semi-Supervised Bootstrapping of Dialogue State Trackers for Task-Oriented Modelling</span><br><i>Bo-Hsiang Tseng, Marek Rei, Paweł Budzianowski, Richard Turner, Bill Byrne and Anna Korhonen</i>
 - <span style="color:cornflowerblue">Simple and Effective Noisy Channel Modeling for Neural Machine Translation</span><br><i>Kyra Yee, Yann Dauphin and Michael Auli</i>
 - <span style="color:cornflowerblue">Simpler and Faster Learning of Adaptive Policies for Simultaneous Translation</span><br><i>Baigong Zheng, Renjie Zheng, Mingbo Ma and Liang Huang</i>
 - <span style="color:cornflowerblue">Single Training Dimension Selection for Word Embedding with PCA</span><br><i>Yu Wang</i>
@@ -686,7 +686,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Towards Debiasing Fact Verification Models</span><br><i>Tal Schuster, Darsh Shah, Yun Jie Serene Yeo, Daniel Roberto Filizzola Ortiz, Enrico Santus and Regina Barzilay</i>
 - <span style="color:cornflowerblue">Towards Extracting Medical Family History from Natural Language Interactions: A New Dataset and Baselines</span><br><i>Mahmoud Azab, Stephane Dadian, Vivi Nastase, Larry An and Rada Mihalcea</i>
 - <span style="color:cornflowerblue">Towards Machine Reading for Interventions from Humanitarian-Assistance Program Literature</span><br><i>Bonan Min, Yee Seng Chan, Haoling Qiu and Joshua Fasching</i>
-- <span style="color:cornflowerblue">Towards Making a Dependency Parser See</span><br><i>Michalina Strzyz, David Vilares and Carlos G&oacute;mez-Rodr&iacute;guez</i>
+- <span style="color:cornflowerblue">Towards Making a Dependency Parser See</span><br><i>Michalina Strzyz, David Vilares and Carlos Gómez-Rodríguez</i>
 - <span style="color:cornflowerblue">Towards Realistic Practices In Low-Resource Natural Language Processing: The Development Set</span><br><i>Katharina Kann, Kyunghyun Cho and Samuel R. Bowman</i>
 - <span style="color:cornflowerblue">Transductive Learning of Neural Language Models for Syntactic and Semantic Analysis</span><br><i>Hiroki Ouchi, Jun Suzuki and Kentaro Inui</i>
 - <span style="color:cornflowerblue">Understanding Data Augmentation in Neural Machine Translation: Two Perspectives towards Generalization</span><br><i>Guanlin Li, Lemao Liu, Guoping Huang, Conghui Zhu and Tiejun Zhao</i>
@@ -734,20 +734,20 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - 	<span style="color:cornflowerblue">	Joey NMT: A Minimalist NMT Toolkit for Novices	</span>	<br>	<i>	Julia Kreutzer, Joost Bastings and Stefan Riezler	</i>
 - 	<span style="color:cornflowerblue">	Journalist-in-the-Loop: Continuous Learning as a Service for Rumour Analysis	</span>	<br>	<i>	Twin Karmakharm, Kalina Bontcheva and Nikolaos Aletras	</i>
 - 	<span style="color:cornflowerblue">	LIDA: Lightweight Interactive Dialogue Annotator	</span>	<br>	<i>	Edward Collins, Nikolai Rozanov and Bingbing Zhang	</i>
-- 	<span style="color:cornflowerblue">	LINSPECTOR WEB: A Multilingual Probing Suite for Word Representations	</span>	<br>	<i>	Max Eichler, G&ouml;zde G&uuml;l &#350;ahin and Iryna Gurevych	</i>
+- 	<span style="color:cornflowerblue">	LINSPECTOR WEB: A Multilingual Probing Suite for Word Representations	</span>	<br>	<i>	Max Eichler, Gözde Gül Şahin and Iryna Gurevych	</i>
 - 	<span style="color:cornflowerblue">	MAssistant: A Personal Knowledge Assistant for MOOC Learners	</span>	<br>	<i>	Lan Jiang, Shuhan Hu, Mingyu Huang, Zhichun Wang, Jinjian Yang, Xiaoju Ye and Wei Zheng	</i>
 - 	<span style="color:cornflowerblue">	MedCATTrainer: A Biomedical Free Text Annotation Interface with Active Learning and Research Use Case Specific Customisation	</span>	<br>	<i>	Thomas Searle, Zeljko Kraljevic, Rebecca Bendayan, Daniel Bean and Richard Dobson	</i>
 - 	<span style="color:cornflowerblue">	Memory Grounded Conversational Reasoning	</span>	<br>	<i>	Seungwhan Moon, Pararth Shah, Rajen Subba and Anuj Kumar	</i>
-- 	<span style="color:cornflowerblue">	Multilingual, Multi-scale and Multi-layer Visualization of Intermediate Representations	</span>	<br>	<i>	Carlos Escolano, Marta R. Costa-juss&agrave;, Elora Lacroux and Pere-Pau V&aacute;zquez	</i>
+- 	<span style="color:cornflowerblue">	Multilingual, Multi-scale and Multi-layer Visualization of Intermediate Representations	</span>	<br>	<i>	Carlos Escolano, Marta R. Costa-jussà, Elora Lacroux and Pere-Pau Vázquez	</i>
 - 	<span style="color:cornflowerblue">	MY-AKKHARA: A Romanization-based Burmese (Myanmar) Input Method	</span>	<br>	<i>	Chenchen Ding, Masao Utiyama and Eiichiro Sumita	</i>
 - 	<span style="color:cornflowerblue">	NeuronBlocks: Building Your NLP DNN Models Like Playing Lego	</span>	<br>	<i>	Ming Gong, Linjun Shou, Wutao Lin, Zhijie Sang, Quanjia Yan, Ze Yang, Feixiang Cheng and Daxin Jiang	</i>
 - 	<span style="color:cornflowerblue">	OpenNRE: An Open and Extensible Toolkit for Neural Relation Extraction	</span>	<br>	<i>	Xu Han, Tianyu Gao, Yuan Yao, Deming Ye, Zhiyuan Liu and Maosong Sun	</i>
 - 	<span style="color:cornflowerblue">	ParaQG: A System for Generating Questions and Answers from Paragraphs	</span>	<br>	<i>	vishwajeet kumar, Sivaanandh Muneeswaran, Ganesh Ramakrishnan and Yuan-Fang Li	</i>
-- 	<span style="color:cornflowerblue">	PolyResponse: A Rank-based Approach to Task-Oriented Dialogue with Application in Restaurant Search and Booking	</span>	<br>	<i>	Matthew Henderson, Ivan Vuli&#263;, I&ntilde;igo Casanueva, Pawe&#322; Budzianowski, Daniela Gerz, Sam Coope, Georgios Spithourakis, Tsung-Hsien Wen, Nikola Mrk&scaron;i&#263; and Pei-Hao Su	</i>
+- 	<span style="color:cornflowerblue">	PolyResponse: A Rank-based Approach to Task-Oriented Dialogue with Application in Restaurant Search and Booking	</span>	<br>	<i>	Matthew Henderson, Ivan Vulić, Iñigo Casanueva, Paweł Budzianowski, Daniela Gerz, Sam Coope, Georgios Spithourakis, Tsung-Hsien Wen, Nikola Mrkšić and Pei-Hao Su	</i>
 - 	<span style="color:cornflowerblue">	PyOpenDial: A Python-based Domain-Independent Toolkit for Developing Spoken Dialogue Systems with Probabilistic Rules	</span>	<br>	<i>	Youngsoo Jang, Jongmin Lee, Jaeyoung Park, Kyeng-Hun Lee, Pierre Lison and Kee-Eung Kim	</i>
 - 	<span style="color:cornflowerblue">	Redcoat: A Collaborative Annotation Tool for Hierarchical Entity Typing	</span>	<br>	<i>	Michael Stewart, Wei Liu and Rachel Cardell-Oliver	</i>
-- 	<span style="color:cornflowerblue">	SEAGLE: A Platform for Comparative Evaluation of Semantic Encoders for Information Retrieval	</span>	<br>	<i>	Fabian David Schmidt, Markus Dietsche, Simone Paolo Ponzetto and Goran Glava&scaron;	</i>
-- 	<span style="color:cornflowerblue">	Tanbih: Get To Know What You Are Reading	</span>	<br>	<i>	Yifan Zhang, Giovanni Da San Martino, Alberto Barr&oacute;n-Cede&ntilde;o, Salvatore Romeo, Jisun An, Haewoon Kwak, Todor Staykovski, Israa Jaradat, Georgi Karadzhov, Ramy Baly, Kareem Darwish, James Glass and Preslav Nakov	</i>
+- 	<span style="color:cornflowerblue">	SEAGLE: A Platform for Comparative Evaluation of Semantic Encoders for Information Retrieval	</span>	<br>	<i>	Fabian David Schmidt, Markus Dietsche, Simone Paolo Ponzetto and Goran Glavaš	</i>
+- 	<span style="color:cornflowerblue">	Tanbih: Get To Know What You Are Reading	</span>	<br>	<i>	Yifan Zhang, Giovanni Da San Martino, Alberto Barrón-Cedeño, Salvatore Romeo, Jisun An, Haewoon Kwak, Todor Staykovski, Israa Jaradat, Georgi Karadzhov, Ramy Baly, Kareem Darwish, James Glass and Preslav Nakov	</i>
 - 	<span style="color:cornflowerblue">	TEASPN: Framework and Protocol for Integrated Writing Assistance Environments	</span>	<br>	<i>	Masato Hagiwara, Takumi Ito, Tatsuki Kuribayashi, Jun Suzuki and Kentaro Inui	</i>
 - 	<span style="color:cornflowerblue">	TellMeWhy: Learning to Explain Corrective Feedback for Second Language Learners	</span>	<br>	<i>	Yi-Huei Lai and Jason Chang	</i>
 - 	<span style="color:cornflowerblue">	UER: An Open-Source Toolkit for Pre-training Models	</span>	<br>	<i>	Zhe Zhao, Hui Chen, Jinbin Zhang, Xin Zhao, Tao Liu, Wei Lu, Xi Chen, Haotang Deng, Qi Ju and Xiaoyong Du	</i>
