@@ -298,7 +298,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Meta Relational Learning for Few-Shot Link Prediction in Knowledge Graphs</span><br><i>Mingyang Chen, Wen Zhang, Wei Zhang, Qiang Chen and Huajun Chen</i>
 - <span style="color:cornflowerblue">Mixture Content Selection for Diverse Sequence Generation</span><br><i>Jaemin Cho, Minjoon Seo and Hannaneh Hajishirzi</i>
 - <span style="color:cornflowerblue">Model-based Interactive Semantic Parsing: A Unified Formulation and A Text-to-SQL Case Study</span><br><i>Ziyu Yao, Yu Su, Huan Sun and Wen-tau Yih</i>
-- <span style="color:cornflowerblue">Modeling Color Terminology Across Thousands of Languages</span><br><i>Arya D. McCarthy, Winston Wu, Aaron Mueller, William Watson and David Yarowsky</i>
+- <span style="color:cornflowerblue">Modeling Color Terminology Across Thousands of Languages</span><br><i>Arya D. McCarthy, Winston Wu, Aaron Mueller, William Watson and David Yarowsky</i>
 - <span style="color:cornflowerblue">Modeling Conversation Structure and Temporal Dynamics for Jointly Predicting Rumor Stance and Veracity</span><br><i>Penghui Wei, Nan Xu and Wenji Mao</i>
 - <span style="color:cornflowerblue">Modeling Event Background for If-Then Commonsense Reasoning Using Context-aware Variational Autoencoder</span><br><i>Li Du, Xiao Ding, Ting Liu and Zhongyang Li</i>
 - <span style="color:cornflowerblue">Modeling Frames in Argumentation</span><br><i>Yamen Ajjour, Milad Alshomary, Henning Wachsmuth and Benno Stein</i>
