@@ -45,12 +45,12 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">A Split-and-Recombine Approach for Follow-up Query Analysis</span><br><i>Qian Liu, Bei Chen, Haoyan Liu, Jian-Guang LOU, Lei Fang, Bin Zhou and Dongmei Zhang</i>
 - <span style="color:cornflowerblue">A Stack-Propagation Framework with Token-Level Intent Detection for Spoken Language Understanding</span><br><i>Libo Qin, Wanxiang Che, Yangming Li, Haoyang Wen and Ting Liu</i>
 - <span style="color:cornflowerblue">A Syntax-aware Multi-task Learning Framework for Chinese Semantic Role Labeling</span><br><i>Qingrong Xia, Zhenghua Li and Min Zhang</i>
-- <span style="color:cornflowerblue">A systematic comparison of methods for low-resource dependency parsing on genuinely low-resource languages</span><br><i>Clara Vania, Yova Kementchedjhieva, Anders SÃ¸gaard and Adam Lopez</i>
+- <span style="color:cornflowerblue">A systematic comparison of methods for low-resource dependency parsing on genuinely low-resource languages</span><br><i>Clara Vania, Yova Kementchedjhieva, Anders S&oslash;gaard and Adam Lopez</i>
 - <span style="color:cornflowerblue">A Topic Augmented Text Generation Model: Joint Learning of Semantics and Structural Features</span><br><i>hongyin tang, Miao Li and Beihong Jin</i>
 - <span style="color:cornflowerblue">A Unified Neural Coherence Model</span><br><i>Han Cheol Moon, Tasnim Mohiuddin, Shafiq Joty and Chi Xu</i>
 - <span style="color:cornflowerblue">Achieving Verified Robustness to Symbol Substitutions via Interval Bound Propagation</span><br><i>Po-Sen Huang, Robert Stanforth, Johannes Welbl, Chris Dyer, Dani Yogatama, Sven Gowal, Krishnamurthy Dvijotham and Pushmeet Kohli</i>
 - <span style="color:cornflowerblue">Adaptive Parameterization for Neural Dialogue Generation</span><br><i>Hengyi Cai, Hongshen Chen, Cheng Zhang, Yonghao Song, Xiaofang Zhao and Dawei Yin</i>
-- <span style="color:cornflowerblue">Adaptively Sparse Transformers</span><br><i>GonÃ§alo M. Correia, Vlad Niculae and André F. T. Martins</i>
+- <span style="color:cornflowerblue">Adaptively Sparse Transformers</span><br><i>Gon&ccedil;alo M. Correia, Vlad Niculae and Andr&eacute; F. T. Martins</i>
 - <span style="color:cornflowerblue">Addressing Semantic Drift in Question Generation for Semi-Supervised Question Answering</span><br><i>Shiyue Zhang and Mohit Bansal</i>
 - <span style="color:cornflowerblue">Adversarial Domain Adaptation for Machine Reading Comprehension</span><br><i>Huazheng Wang, Zhe Gan, Xiaodong Liu, Jingjing Liu, Jianfeng Gao and Hongning Wang</i>
 - <span style="color:cornflowerblue">Adversarial Reprogramming of Text Classification Neural Networks</span><br><i>Paarth Neekhara, Shehzeen Hussain, Shlomo Dubnov and Farinaz Koushanfar</i>
