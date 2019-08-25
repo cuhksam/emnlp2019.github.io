@@ -614,7 +614,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Modeling Multi-Action Policy for Task-Oriented Dialogues</span><br><i>Lei Shu, Hu Xu, Bing Liu and Piero Molino</i>
 - <span style="color:cornflowerblue">Modelling Stopping Criteria using Poisson Processes</span><br><i>Alison Sneyd and Mark Stevenson</i>
 - <span style="color:cornflowerblue">Multi-Head Attention with Diversity for Learning Grounded Multilingual Multimodal Representations</span><br><i>Po-Yao Huang, Xiaojun Chang and Alexander Hauptmann</i>
-- <span style="color:cornflowerblue">MultiÂ­-passage BERT: A Globally Normalized BERT Model for OpenÂ­-domain Question Answering</span><br><i>Zhiguo Wang, Patrick Ng, Xiaofei Ma, Ramesh Nallapati and Bing Xiang</i>
+- <span style="color:cornflowerblue">Multi-passage BERT: A Globally Normalized BERT Model for Open-domain Question Answering</span><br><i>Zhiguo Wang, Patrick Ng, Xiaofei Ma, Ramesh Nallapati and Bing Xiang</i>
 - <span style="color:cornflowerblue">Multi-Task Learning for Chemical Named Entity Recognition with Chemical Compound Paraphrase</span><br><i>Taiki Watanabe, Akihiro Tamura, Takashi Ninomiya, Takuya Makino and Tomoya Iwakura</i>
 - <span style="color:cornflowerblue">Multi-task Learning for Natural Language Generation in Task-Oriented Dialogue</span><br><i>Chenguang Zhu, Michael Zeng and Xuedong Huang</i>
 - <span style="color:cornflowerblue">Multi-Task Learning with Language Modeling for Question Generation</span><br><i>Wenjie Zhou, Minghua Zhang and Yunfang Wu</i>
