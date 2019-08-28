@@ -155,7 +155,7 @@ More details to be announced.
 
 ## Travel Scholarships & Student Volunteer Program
 
-EMNLP 2019 seeks student volunteers who will receive a free registration to the main conference, tutorials & workshops. In addition, we also plan to offer scholarships to students as well as non-students with a demonstrated financial need. For more details, please refer to the <a href="./downloads/joint-call-scholarship-volunteers.pdf" target="_blank">Joint Call for Travel Scholarship and Student Volunteer Applications</a>. After reading the policy in detail to determine your eligibility, you can fill out the application form. <span style="color:cornflowerblue">The application form will be available here soon.</span> If you have further questions, please contact us at <a href="mailto:emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com">emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com</a>.
+EMNLP 2019 seeks student volunteers who will receive a free registration to the main conference, tutorials & workshops. In addition, we also plan to offer scholarships to students as well as non-students with a demonstrated financial need. For more details, please refer to the <a href="./downloads/joint-call-scholarship-volunteers.pdf" target="_blank">Joint Call for Travel Scholarship and Student Volunteer Applications</a>. After reading the policy in detail to determine your eligibility, you can fill out the application form and include a CV through softconf <a href="https://www.softconf.com/emnlp2019/travel_support">here</a>, by making a new submission. If you have further questions, please contact us at <a href="mailto:emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com">emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com</a>.
 
 ### Important Dates
 

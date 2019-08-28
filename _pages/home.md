@@ -35,6 +35,10 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+
+**August 28, 2019**.
+Apply to the [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program)! Application instructions and submission website are now available (deadline: Sept 12, 2019). 
+
 **August 24, 2019**.
 The list of [accepted long, short, and demo papers](./program/accepted/) is out.
 
