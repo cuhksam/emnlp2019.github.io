@@ -36,6 +36,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
+**August 30, 2019**.
+We are happy to announce [Childcare Grants](./participants#childcare-grants) for participants with young children. Please apply by Sept 19, 2019.
+
 **August 28, 2019**.
 Apply to the [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program)! Application instructions and submission website are now available (deadline: Sept 12, 2019). 
 
