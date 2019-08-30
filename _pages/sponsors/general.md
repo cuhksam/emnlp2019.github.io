@@ -48,12 +48,11 @@ platinum:
     image_path: /assets/images/logos/deepmind-logo.png
     alt: "DeepMind Logo"
     title: "DeepMind"
-  - image_path: /assets/images/logos/blank-logo.png
   - url: http://www.amazon.com
     image_path: /assets/images/logos/amazon-logo.png
     alt: "Amazon Logo"
     title: "Amazon"
-  - image_path: /assets/images/logos/amazon-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 gold:
   - url: https://www.poly-ai.com
     image_path: /assets/images/logos/polyai-logo.png
