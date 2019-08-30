@@ -147,9 +147,30 @@ TBD
 
 ## Childcare Grants
 
-Following the family-friendly policy of ACL, EMNLP 2019 is happy to announce the Childcare Grants offered to participants with young children.  Grants of up to US$400 per family are available for attendees who incur extra childcare expenses on account of their conference travel.  Attendees are responsible for making their own arrangements for child care, and will be reimbursed after the conference upon receipt of necessary support documentation. The full policy and the application procedures will be available in due course.
 
-More details to be announced.
+Following the family-friendly policy of ACL, EMNLP-IJCNLP 2019 is happy to announce Childcare Grants offered to participants with young children. Grants of up to US$400 per family are available for attendees who incur extra childcare expenses during their conference travel.
+ 
+
+Here is the <a href="downloads/childcare-policy.pdf">full policy</a>, and please fill out the application form <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__oehnzNUNjEzM0cyM1JTS001WEZWVTJFTks2QlZGQy4u">here</a>.
+
+ 
+
+Important Dates:
+
+* Application deadline: 19 September 2019
+
+* Notification of acceptance: 26 September 2019           
+
+ 
+For those who are bringing their children to the conference and are looking for local childcare services, the following links may be of use:
+
+  * [https://www.babysitter.hk/en/](https://www.babysitter.hk/en/)
+
+  * [http://www.rent-a-mum.com/](http://www.rent-a-mum.com/)
+
+  * [http://dreamcare.com.hk/temporary-nanny/](http://dreamcare.com.hk/temporary-nanny/)
+
+Attendees are responsible for making their own arrangements for childcare and will be reimbursed after the conference upon receipt of necessary supporting documentation.
 
 
 
