@@ -47,6 +47,17 @@ Below, all information for participants are given that are available so far. Mor
 TBD
 -->
 
+## An Update on Conference Organization
+
+(August 23, 2019)
+
+The conference organizing committee has been working hard to welcome you on Nov 3&ndash;7 in Hong Kong. We fully expect EMNLP-IJCNLP 2019 will proceed as planned.
+
+- HK International Airport has been back to normal operation for some time;
+- The conference venue, Asia World Expo (AWE), is near the airport. AWE, as well as Disneyland, the social event venue, are both located on Lantau Island. They're remote from currently affected areas in Hong Kong Island, Kowloon, and the New Territories; 
+- Information on accommodation near the conference venue will be provided;
+- We're continuously observing the local situation and will keep you up-to-date on this website. 
+
 
 ## Visa Information
 
@@ -130,16 +141,6 @@ Tourism information </td>
 Dining Guide</td>
 </tr>
 </table>
-
-## An Update on Conference Organization
-
-The conference organizing committee has been working hard to welcome you on Nov 3&ndash;7 in Hong Kong. We fully expect EMNLP-IJCNLP 2019 will proceed as planned.
-
-- HK International Airport has been back to normal operation for some time;
-- The conference venue, Asia World Expo (AWE), is near the airport. AWE, as well as Disneyland, the social event venue, are both located on Lantau Island. They're remote from currently affected areas in Hong Kong Island, Kowloon, and the New Territories; 
-- Information on accommodation near the conference venue will be provided;
-- We're continuously observing the local situation and will keep you up-to-date on this website. 
-
 
 
 
