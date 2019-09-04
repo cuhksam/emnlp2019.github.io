@@ -36,6 +36,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
+**September 3, 2019**.
+Updated information on [Conference Venue](./participants#conference-venue) and [Hong Kong Travel](./participants#about-hong-kong).
+
 **August 30, 2019**.
 We are happy to announce [Childcare Grants](./participants#childcare-grants) for participants with young children. Please apply by Sept 19, 2019.
 

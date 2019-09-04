@@ -66,17 +66,79 @@ To find out whether you need a visa for Hong Kong, check for instance [here](htt
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong, China.
 
+### Venue
 
-### An Update on Conference Organization
+<img src="/assets/images/hongkong/venue2.png" alt="Venue: Marriott" style="width:225px;height:127px;">
+<img src="/assets/images/hongkong/venue1.png" alt="Venue: Asia World Expo" style="width:190px;height:127px;">
+
+Main Conference (Nov 5-7): Meeting Rooms 201-203 (2/F) and AsiaWorld-Summit (Hall 2) (G/F), AsiaWorld Expo
+
+Workshops and Tutorials (Nov 3-4): Meeting Rooms 201-203 (2/F), AsiaWorld Expo and Grand Ballroom and Meeting Rooms, Hong Kong SkyCity Marriott Hotel
+
+Please refer to the following Google <a href="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en">map</a> for more information on conference venues, accommodations, restaurants and attractions, and transportation information:
+<iframe src="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en" width="640" height="480"></iframe>
+
+### Access to the Venue
+
+Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Kong International Airport, with a built-in Airport Express railway station, as well as other transportation facilities. You may come to AsiaWorld-Expo by your preferred transportation means:
+
+* By MTR
+  * Take the Airport Express line to AsiaWorld Expo Station, which is about 2 mins ride from Hong Kong International Airport. A single trip fare is HK$ 6.0.
+
+* By Bus
+  * Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo, which is about 20 mins ride. A single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.
+  * Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo.  However, it will be operated in specified period only.  We will update the operation date once available.
+
+## About Hong Kong
+
+Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions – only Hong Kong!
+
+For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
+
+Below are some third-party apps that may be helpful for planning your stay:
+
+
+<table>
+<tr>
+<td width="128px"><img src="/assets/images/hongkong/app1.png"></td>
+<td>Search: “KMB & LW” in ITunes/App Store <br>
+KMB & Long Win bus route information </td>
+</tr>
+<tr>
+<td width="128px"><img src="/assets/images/hongkong/app2.png"></td>
+<td>Search: “MTR mobile” in ITunes/App Store <br> 
+MTR route map, fare information, train schedule</td>
+</tr>
+<tr>
+<td width="128px"><img src="/assets/images/hongkong/app3.png"></td>
+<td>Search: “City bus & New World First Bus” in ITunes/App Store <br>
+City bus & New World First Bus information </td>
+</tr>
+<tr>
+<td width="128px"><img src="/assets/images/hongkong/app4.png"></td>
+<td>Search: “Myobservatory” in ITunes/App Store <br>
+Personalized weather services </td>
+</tr>
+<tr>
+<td width="128px"><img src="/assets/images/hongkong/app5.png"></td>
+<td>Search: “Discover Hong Kong - Island Walks” in ITunes/App Store <br>
+Tourism information </td>
+</tr>
+<tr>
+<td width="128px"><img src="/assets/images/hongkong/app6.png"></td>
+<td>Search: “OpenRice Hong Kong” in ITunes/App Store <br> 
+Dining Guide</td>
+</tr>
+</table>
+
+## An Update on Conference Organization
 
 The conference organizing committee has been working hard to welcome you on Nov 3&ndash;7 in Hong Kong, where we fully expect a very stimulating, enjoyable, and successful conference in the 25-year thriving tradition of EMNLP and IJCNLP. We fully expect EMNLP-IJCNLP 2019 will proceed as planned.
 
 - HK International Airport has been back to normal operation for some time;
 - The conference venue, Asia World Expo (AWE), is near the airport. AWE, as well as Disneyland, the social event venue, are both located on Lantau Island. They're remote from currently affected areas in Hong Kong Island, Kowloon, and the New Territories; 
-- Information on accommodation near the conference venue will be provided;
 - We're continuously observing the local situation and will keep you up-to-date on this website. 
 
-More information on the venue to be announced.
 
 
 
