@@ -33,9 +33,9 @@ main:
 calls:
    - title: Calls and Submission
      children:
-       - title: "Long & Short Papers"
+       - title: "Call for Papers"
          url: /calls/papers
-       - title: "System Demonstrations"
+       - title: "Call for Demo Papers"
          url: /calls/demos
        - title: "Submission FAQs"
          url: /calls/submission
@@ -47,7 +47,7 @@ calls:
 program:
    - title: Program Details
      children:
-       - title: "Program"
+       - title: "Program Overview"
          url: /program/
        - title: "Accepted Papers"
          url: /program/accepted/
