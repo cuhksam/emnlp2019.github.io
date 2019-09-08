@@ -55,8 +55,8 @@ program:
          url: /program/workshops/
        - title: "Tutorials"
          url: /program/tutorials/
-#       - title: "Keynote Speakers"
-#         url: /program/keynotes/
+       - title: "Keynote Speakers"
+         url: /program/keynotes/
 
 # participants:
 #  - title: "Information for Participants"
