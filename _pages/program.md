@@ -15,14 +15,14 @@ Below, all information on the program of EMNLP-IJCNLP 2019 are given that are av
 
 ## Accepted Papers
 
-EMNLP-IJCNLP 2019 will feature 465 long papers, 218 short papers, and 44 demos papers, all to  presented at the main conference on November 5&ndash;7.
+EMNLP-IJCNLP 2019 will feature 465 long papers, 218 short papers, and 44 demos papers, all to presented at the main conference on November 5&ndash;7.
 
 See the <a href="./accepted/">list of accepted papers</a> along with their authors. 
 
 
 ## Keynotes
 
-EMNLP-IJCNLP 2019 will have three keynotes, given by Meeyoung Cha, Kyunghyun Cho, and Noam Slonim. Details on the [Keynote Speakers page](./program/keynotes/).
+EMNLP-IJCNLP 2019 will have three keynotes, given by Meeyoung Cha, Kyunghyun Cho, and Noam Slonim. Details on the [keynote speakers](./program/keynotes/) page.
 
 
 
