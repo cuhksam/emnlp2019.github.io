@@ -30,8 +30,6 @@ noam:
 ---
 {% include base_path %}
 
-{% include toc icon="gears" %}
-
 The following speakers have graciously accepted to give keynotes at EMNLP-IJCNLP 2019. Missing information will be added soon.
 
 {% include feature_row id="meeyoung" type="left" %}
