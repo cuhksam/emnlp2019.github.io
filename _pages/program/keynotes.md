@@ -16,7 +16,7 @@ meeyoung:
     small_excerpt: '<strong>Bio:</strong> TBA'
 
 kyunghyun:
-  - image_path: /assets/images/keynotes/gideonmann.png
+  - image_path: /assets/images/keynotes/kyunghyun_cho.jpg
     alt: "Kyunghyun Cho"
     title: "Kyunghyun Cho (New York University)"
     excerpt: '<strong>Title:</strong> TBA<br/><strong>Abstract:</strong> TBA'
