@@ -110,7 +110,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Counterfactual Story Reasoning and Generation</span><br><i>Lianhui Qin, Antoine Bosselut, Ari Holtzman, Chandra Bhagavatula, Elizabeth Clark and Yejin Choi</i>
 - <span style="color:cornflowerblue">Countering Language Drift via Grounding</span><br><i>Jason Lee, Kyunghyun Cho and Douwe Kiela</i>
 - <span style="color:cornflowerblue">Coupling Global and Local Context for Unsupervised Aspect Extraction</span><br><i>Ming Liao, Jing Li, Haisong Zhang, Lingzhi Wang, Xixin Wu and Kam-Fai Wong</i>
-- <span style="color:cornflowerblue">Cross-Cultural Transfer Learning for Text Classification</span><br><i>Dor Ringel, Kira Radinsky, Ido Guy and Gal Lavee</i>
+- <span style="color:cornflowerblue">Cross-Cultural Transfer Learning for Text Classification</span><br><i>Dor Ringel, Gal Lavee, Ido Guy and Kira Radinsky</i>
 - <span style="color:cornflowerblue">Cross-Lingual Dependency Parsing Using Code-Mixed TreeBank</span><br><i>Meishan Zhang, Yue Zhang and Guohong Fu</i>
 - <span style="color:cornflowerblue">Cross-Lingual Machine Reading Comprehension</span><br><i>Yiming Cui, Wanxiang Che, Ting Liu, Bing Qin, Shijin Wang and Guoping Hu</i>
 - <span style="color:cornflowerblue">Cross-lingual Semantic Specialization via Lexical Relation Induction</span><br><i>Edoardo Maria Ponti, Ivan Vulić, Goran Glavaś, Roi Reichart and Anna Korhonen</i>
@@ -249,7 +249,6 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Keeping Consistency of Sentence Generation and Document Classification with Multi-Task Learning</span><br><i>Toru Nishino, Shotaro Misawa, Ryuji Kano, Tomoki Taniguchi, Yasuhide Miura and Tomoko Ohkuma</i>
 - <span style="color:cornflowerblue">Knowledge Aware Conversation Generation with Explainable Reasoning on Augmented Graphs</span><br><i>zhibin liu, Zheng-Yu Niu, Hua Wu and Haifeng Wang</i>
 - <span style="color:cornflowerblue">Knowledge Enhanced Contextual Word Representations</span><br><i>Matthew E. Peters, Mark Neumann, Robert Logan, Roy Schwartz, Vidur Joshi, Sameer Singh and Noah A. Smith</i>
-- <span style="color:cornflowerblue">Knowledge-Aware Paragraph Generation: A Graph Inference Approach</span><br><i>Jingjing Xu, Pengcheng Yang, Yancheng He, Houfeng Wang and Xu SUN</i>
 - <span style="color:cornflowerblue">Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations</span><br><i>Peixiang Zhong, Di Wang and Chunyan Miao</i>
 - <span style="color:cornflowerblue">KnowledgeNet: A Benchmark Dataset for Knowledge Base Population</span><br><i>Filipe Mesquita, Matteo Cannaviccio, Jordan Schmidek, Paramita Mirza and Denilson Barbosa</i>
 - <span style="color:cornflowerblue">Label-Specific Document Representation for Multi-Label Text Classification</span><br><i>Lin Xiao, Xin Huang, Boli Chen and Liping Jing</i>
@@ -527,6 +526,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">CaRB: A Crowdsourced Benchmark for Open IE</span><br><i>Sangnie Bhardwaj, Samarth Aggarwal and Mausam -</i>
 - <span style="color:cornflowerblue">CASA-NLU: Context-Aware Self-Attentive Natural Language Understanding for Task-Oriented Chatbots</span><br><i>Arshit Gupta, Peng Zhang, Garima Lalwani and Mona Diab</i>
 - <span style="color:cornflowerblue">Challenging Supervised Word Sense Disambiguation with Lexical-Semantic Combinations</span><br><i>Marco Maru, Federico Scozzafava, Federico Martelli and Roberto Navigli</i>
+- <span style="color:cornflowerblue">Charge-Based Prison Term Prediction with Deep Gating Network</span><br><i>Huajie Chen, Deng Cai, Wei Dai, Zehui Dai and Yadong Ding</i>
 - <span style="color:cornflowerblue">CLAR: Contextualized and Lexicalized Aspect Representation for Non-factoid Question Answering</span><br><i>Hojae Han, Seungtaek Choi, Haeju Park and Seung-won Hwang</i>
 - <span style="color:cornflowerblue">Clause-Wise and Recursive Decoding for Complex and Cross-Domain Text-to-SQL Generation</span><br><i>Dongjun Lee</i>
 - <span style="color:cornflowerblue">Combining Global Sparse Gradients with Local Gradients in Distributed Neural Network Training</span><br><i>Alham Fikri Aji, Kenneth Heafield and Nikolay Bogoychev</i>
