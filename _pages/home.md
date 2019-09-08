@@ -35,6 +35,8 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**September 8, 2019**.
+We are delighted to announce three [keynote speakers](./program/keynotes/).
 
 **September 3, 2019**.
 Updated information on [Conference Venue](./participants#conference-venue) and [Hong Kong Travel](./participants#about-hong-kong).
@@ -44,9 +46,6 @@ We are happy to announce [Childcare Grants](./participants#childcare-grants) for
 
 **August 28, 2019**.
 Apply to the [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program)! Application instructions and submission website are now available (deadline: Sept 12, 2019). 
-
-**August 24, 2019**.
-The list of [accepted long, short, and demo papers](./program/accepted/) is out.
 
 **August 23, 2019**.
 See our [update on conference organization](./participants#an-update-on-conference-organization) in light of the current situation in Hong Kong.
@@ -59,6 +58,9 @@ Some preliminary information on registration found [here](./registration). More 
 
 
 <!-- OUTDATED NEWS
+
+**August 24, 2019**.
+The list of [accepted long, short, and demo papers](./program/accepted/) is out.
 
 **August 22, 2019**.
 If you got a paper accepted, please see the [instructions for camera-ready versions](./calls/final).
