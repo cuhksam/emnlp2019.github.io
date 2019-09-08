@@ -51,12 +51,12 @@ program:
          url: /program/
        - title: "Accepted Papers"
          url: /program/accepted/
+       - title: "Keynote Speakers"
+         url: /program/keynotes/
        - title: "Workshops"
          url: /program/workshops/
        - title: "Tutorials"
          url: /program/tutorials/
-       - title: "Keynote Speakers"
-         url: /program/keynotes/
 
 # participants:
 #  - title: "Information for Participants"
