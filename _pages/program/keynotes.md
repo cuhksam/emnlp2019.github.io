@@ -5,21 +5,18 @@ excerpt: "EMNLP-IJCNLP 2019 Keynote Speakers."
 permalink: /program/keynotes/
 sidebar: 
     nav: "program"
-
 meeyoung:
   - image_path: /assets/images/keynotes/meeyoung_cha.jpg
     alt: "Meeyoung Cha"
     title: "Meeyoung Cha <br/>(KAIST)"
     excerpt: "<strong>Title:</strong> TBA<br/><strong>Abstract:</strong> TBA"
     small_excerpt: 'TBA'
-
 kyunghyun:
   - image_path: /assets/images/keynotes/kyunghyun_cho.jpg
     alt: "Kyunghyun Cho"
     title: "Kyunghyun Cho <br/>(New York University)"
     excerpt: '<strong>Title:</strong> TBA<br/><strong>Abstract:</strong> TBA'
     small_excerpt: 'Kyunghyun Cho is an associate professor of computer science and data science at New York University and a research scientist at Facebook AI Research. He was a postdoctoral fellow at University of Montreal until summer 2015 under the supervision of Prof. Yoshua Bengio, and received PhD and MSc degrees from Aalto University early 2014 under the supervision of Prof. Juha Karhunen, Dr. Tapani Raiko and Dr. Alexander Ilin. He tries his best to find a balance among machine learning, natural language processing, and life, but almost always fails to do so.'
-    
 noam:
   - image_path: /assets/images/keynotes/noam_slonim.png
     alt: "Noam Slonim"
@@ -29,6 +26,8 @@ noam:
     
 ---
 {% include base_path %}
+
+{% include toc icon="gears" %}
 
 The following speakers have graciously accepted to give keynotes at EMNLP-IJCNLP 2019. Missing information will be added soon.
 
