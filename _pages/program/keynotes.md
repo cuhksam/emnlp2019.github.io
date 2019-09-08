@@ -32,7 +32,7 @@ noam:
 ---
 {% include base_path %}
 
-The following speakers have graciously accepted to give keynotes at EMNLP-IJCNLP 2019. Missing details will be announced soon
+The following speakers have graciously accepted to give keynotes at EMNLP-IJCNLP 2019. Missing information will be added soon.
 
 {% include feature_row id="meeyoung" type="left" %}
 
