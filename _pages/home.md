@@ -35,6 +35,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**September 10, 2019**.
+The dates of the [workshops](./program/workshops/) have been assigned.
+
 **September 8, 2019**.
 We are delighted to announce three [keynote speakers](./program/keynotes/).
 

@@ -10,7 +10,7 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-EMNLP-IJCNLP 2019 will host one co-located conference and 17 workshops, taking place on November 3&ndash;4. Locations will be added later. 
+EMNLP-IJCNLP 2019 will host one co-located conference and 17 workshops, taking place on November 3&ndash;4. Workshops are full-day, unless indicated otherwise. Locations will be added later. 
 
 For more details on these events, please refer to their websites.
 
@@ -26,7 +26,7 @@ is a top-tier conference, yearly organized by SIGNLL (ACL's Special Interest Gro
 
 ## Workshop day 1, November 3
 
-### \[W2\] FEVER (full day)
+### \[W2\] FEVER
 [The second workshop on Fact Extraction and VERification](http://fever.ai) 
 brings together researchers working on various tasks related to fact extraction and verification and also hosts the FEVER Challenge, an information verification shared task.
 
@@ -38,11 +38,11 @@ focuses on language processing techniques, whether theoretically-inspired or emp
 [Beyond Vision and Language: Integrating Knowledge from the Real World](https://www.lantern.uni-saarland.de/) 
 aims to to bring together researchers from different disciplines but united by their adoption of techniques from machine learning, neuroscience, multi-agents, natural language processing, computer vision and psychology to interconnect language and vision by leveraging external knowledge provided by either fixed or environments.
 
-### \[W5\] MSR 2019 (full day)
+### \[W5\] MSR 2019
 [The second Workshop on Multilingual Surface Realization](http://taln.upf.edu/pages/msr2019-ws/) 
 aims at bringing together people who are interested in surface-oriented Natural Language Generation problems such as word order determination, inflection, functional word determination, paraphrasing, etc.
 
-### \[W6\] LOUHI 2019 (full day)
+### \[W6\] LOUHI 2019
 [The Tenth International Workshop on Health Text Mining and Information Analysis](http://louhi2019.fbk.eu/) 
 provides an interdisciplinary forum for researchers interested in automated processing of health documents.
 
