@@ -10,8 +10,8 @@ meeyoung:
   - image_path: /assets/images/keynotes/meeyoung_cha.jpg
     alt: "Meeyoung Cha"
     title: "Meeyoung Cha<br/>(KAIST)"
-    excerpt: "<strong>Title:</strong> TBA<br/><strong>Abstract:</strong> TBA"
-    small_excerpt: '<strong>Bio:</strong> TBA'
+    excerpt: "<strong>Title:</strong> Current Challenges in Computational Social Science<br/><strong>Abstract:</strong> TBA"
+    small_excerpt: '<strong>Bio:</strong> Meeyoung Cha is an associate professor at the School of Computing in KAIST. Dr. Cha's research interests are in analyzing complex network systems, including web and social media. Her research in the field of data science, artificial intelligence, and computational social science has gained more than 12,000 citations based on Google Scholar and has received the best paper awards at ACM IMC and ICWSM. Dr. Cha is currently in the editorial board member of PeerJ and ACM Transactions on Social Computing, and she has served as a program co-chair for ICWSM 2015. Dr. Cha has worked at Facebook's Data Science Team as a Visiting Professor in 2015-2016. Since 2019, she is jointly affiliated with the Institute for Basic Science (IBS) in Korea as a Chief Investigator.'
     
 kyunghyun:
   - image_path: /assets/images/keynotes/kyunghyun_cho.jpg
