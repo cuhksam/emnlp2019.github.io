@@ -10,9 +10,9 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-EMNLP-IJCNLP 2019 will host one co-located conference and 17 workshops, taking place on November 3&ndash;4. The workshops are full-day, unless indicated otherwise.  
+EMNLP-IJCNLP 2019 will host one co-located conference and 17 workshops, taking place on November 3&ndash;4. The workshops are full-day, unless indicated otherwise. Locations will be added later.
 
-For more details on all these events, please refer to their websites. Locations will be added later.
+For more details on all these events, please refer to their websites. 
 
 
 
