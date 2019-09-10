@@ -1,5 +1,5 @@
 ---
-title: Workshops &amp; Co-located Events
+title: Workshops &amp; Co-located Conference
 layout: single
 excerpt: "EMNLP-IJCNLP 2019 Workshops."
 permalink: /program/workshops/
@@ -10,9 +10,9 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-EMNLP-IJCNLP 2019 will host one co-located conference and 17 workshops, taking place on November 3&ndash;4. Workshops are full-day, unless indicated otherwise. Locations will be added later. 
+EMNLP-IJCNLP 2019 will host one co-located conference and 17 workshops, taking place on November 3&ndash;4. The workshops are full-day, unless indicated otherwise.  
 
-For more details on these events, please refer to their websites.
+For more details on all these events, please refer to their websites. Locations will be added later.
 
 
 
