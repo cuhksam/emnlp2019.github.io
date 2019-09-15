@@ -186,9 +186,14 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr style="background-color: #eee;">
           <td><a href="./participants#travel-scholarships--student-volunteer-program">Travel scholarships &amp; student volunteer application</a> due</td>
           <td style="width: 30%;">Thursday</td>
-          <td><span style="color:red">September 12, 2019</span></td>
+          <td><strike>September 12, 2019</strike></td>
         </tr>
         <tr>
+          <td><a href="./participants#childcare-grants">Childcare grant application</a> due</td>
+          <td style="width: 30%;">Thursday</td>
+          <td><span style="color:red">September 19, 2019</span></td>
+        </tr>
+        <tr style="background-color: #eee;">
           <td>Travel scholarships &amp; student volunteer notification</td>
           <td style="width: 30%;">Thursday</td>
           <td>September 19, 2019</td>
@@ -201,12 +206,12 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
             <td>September 19, 2019</td>
         </tr>
 -->
-        <tr style="background-color: #eee;">
+        <tr>
             <td style="width: 40%;">Workshops &amp; tutorials</td>
             <td style="width: 30%;">Sunday &ndash; Monday</td>
             <td>November 3&ndash;4, 2019</td>
         </tr>
-        <tr style="background-color: #fff;">
+        <tr  style="background-color: #eee;">
             <td>Main conference</td>
             <td>Tuesday &ndash; Thursday</td>
             <td>November 5&ndash;7, 2019</td>
