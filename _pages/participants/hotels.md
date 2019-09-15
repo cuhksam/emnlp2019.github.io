@@ -31,12 +31,12 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> Hong Kong International Airport, Lantau Island, 9 Cheong Tat Rd, Chek Lap Kok<br>
 <b>Room Rate:</b> HKD1300+10%  tax/service charge per room per night<br>
-<b>Breakfast:</b> Included
+<b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 1 minute by Airport Express<br>
 <b>Direction:</b> Take Airport Express at Airport Station (Departure Hall) to AsiaWorld Expo Station (1 Station). Then walk to the conference venue.<br>
 <b>Booking Method:</b> <a href="https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp" target="_blank">Regal Hotel booking link</a><br>
-<b>Contact:</b> Ms. Fanny Chan, <a href="mailto:rah.sales1@regalhotel.com">rah.sales1@regalhotel.com</a>
+<b>Contact:</b> Ms. Fanny Chan <a href="mailto:rah.sales1@regalhotel.com">rah.sales1@regalhotel.com</a>
 </td>
 </tr>
 </table>
@@ -55,7 +55,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Date:</b> <br>
 <b>Address:</b> 1 Sky City Road East, Hong Kong International Airport, Hong Kong<br>
 <b>Room Rate:</b> HKD1550 + 10% tax/service charge per room per night<br>
-<b>Breakfast:</b> Included
+<b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 5 minutes walking<br>
 <b>Direction:</b> Cross the bridge and walk to the direction of AsiaWorld Expo.<br>
@@ -78,7 +78,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> 51 Man Tung Road, Tung Chung Hong Kong<br>
 <b>Room Rate:</b> HKD1500 + 10%  tax/service charge per room per night<br>
-<b>Breakfast:</b> Included
+<b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 38 minutes by Airport Express / S1 bus<br>
 <b>Direction:</b> (1) BUS: Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo Stop.  The ride is about 20 mins ride and single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo. (2) BUS: Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo.  However, it will be operated in specified period only.  Please check the schedule at KMB or CityBus (you can also download their apps to check the latest information). (3) MTR / AIRPORT EXPRESS: At Tung Chung Station, take Tung Chung Line to Tsing Yi Station and then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
@@ -101,7 +101,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> 15-19 Chun Pin Street, Kwai Chung, Hong Kong<br>
 <b>Room Rate:</b> HKD620 + 10%  tax/service charge per room per night<br>
-<b>Breakfast:</b> Included
+<b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 1 hour by E32 bus<br>
 <b>Direction:</b> BUS: Walk (about 9 mins) to Kwong Fai Circuit Bus Stop at Kwai Chung Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
@@ -124,7 +124,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> 443 Castle Peak Road, Kwai Chung, Hong Kong <br>
 <b>Room Rate:</b> HKD630 + 10%  tax/service charge per room per night<br>
-<b>Breakfast:</b> Included
+<b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 35 minutes by MTR<br>
 <b>Direction:</b> (1) BUS: Walk (about 5 mins) to Kwong Fai Circuit Bus Stop at Kwai Chung Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal). (2) MTR / AIRPORT EXPRESS: Walk (about 8 mins)  to Kwai Hing Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
@@ -147,7 +147,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Date:</b> <br>
 <b>Address:</b> 28 Kin Chuen Street, Kwai Chung, Kowloon, Hong Kong, Hong Kong <br>
 <b>Room Rate:</b> HKD660  + 10%  tax/service charge per room per night<br>
-<b>Breakfast:</b> Included
+<b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 55 minutes by MTR<br>
 <b>Direction:</b> (1) BUS: Bus route E32 just pposite to the hotel, this bus heading to AsiaWorld Expo (Bus Terminal). (2) MTR / AIRPORT EXPRESS: Walk (about 8  mins)  to Tai Wo Hau Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
@@ -170,7 +170,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> 3 Tsuen Wah Street, Tsuen Wan, Hong Kong<br>
 <b>Room Rate:</b> HKD760 + 10%  tax/service charge per room per night<br>
-<b>Breakfast:</b> Included
+<b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 37 minutes by MTR<br>
 <b>Direction:</b> (1) BUS: Walk (about 5 mins) to Tsuan Fu Street Bus Stop at Texaco Road Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).
