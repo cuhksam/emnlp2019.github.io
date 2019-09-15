@@ -35,7 +35,10 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
-**August 15, 2019**.
+**September 15, 2019**.
+We will provide a list of hotels remote from the protesting areas and advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, we will provide coaches. 
+
+**September 15, 2019**.
 The [registration](./registration) is going to open within the next week.
 
 **September 10, 2019**.
