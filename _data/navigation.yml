@@ -60,7 +60,7 @@ program:
 
 participants:
    - title: "Information for Participants"
-#     children:
+#    children:
        - title: "Information for Participants"
          url: /participants
        - title: "Recommended Hotels"
