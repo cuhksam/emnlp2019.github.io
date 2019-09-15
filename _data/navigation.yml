@@ -58,10 +58,10 @@ program:
        - title: "Tutorials"
          url: /program/tutorials/
 
-# participants:
-#  - title: "Information for Participants"
+participants:
+   - title: "Information for Participants"
 #     children:
-       - title: "Participants"
+       - title: "Information for Participants"
          url: /participants
        - title: "Recommended Hotels"
          url: /participants/hotels/
