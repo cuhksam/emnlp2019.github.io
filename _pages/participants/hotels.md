@@ -11,7 +11,7 @@ sidebar:
 {% include toc icon="gears" %}
 
 The following hotels are recommended for participants of the EMNLP-IJCNLP 2019. 
-The information on the first page is provided by the China Travel Service (Hong Kong) Limited. For more information, send a mail to (mailto:emnlp-ijcnlp2019@hkcts.com)[emnlp-ijcnlp2019@hkcts.com].
+The information on the first page is provided by the China Travel Service (Hong Kong) Limited. For more information, send a mail to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com).
 
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
