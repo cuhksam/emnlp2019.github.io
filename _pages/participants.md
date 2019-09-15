@@ -3,7 +3,8 @@ title: Information for Participants
 layout: single
 excerpt: "EMNLP-IJCNLP 2019 information for participants"
 permalink: /participants
-sidebar: false
+sidebar: 
+    nav: "participants"
 ---
 <!-- PUT INSIDE UPPER PART
 hongkong:

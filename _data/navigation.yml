@@ -61,8 +61,10 @@ program:
 # participants:
 #  - title: "Information for Participants"
 #     children:
-#       - title: "Participants"
-#         url: /participants
+       - title: "Participants"
+         url: /participants
+       - title: "Recommended Hotels"
+         url: /participants/hotels/
 #       - title: "Accommodation"
 #         url: /participants/accommodation/
 #       - title: "Social Event"
