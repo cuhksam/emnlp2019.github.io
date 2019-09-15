@@ -11,11 +11,11 @@ sidebar:
 {% include toc icon="gears" %}
 
 The following hotels are recommended for participants of EMNLP-IJCNLP 2019. 
-The information on this page is provided by [China Travel Service (Hong Kong) Limited. For more information, send a mail to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com).
+The information on this page is provided by China Travel Service (Hong Kong) Limited. For more information, send a mail to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com).
 
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
-Except for the first hotel (where a [booking link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [form](./downloads/hotel-booking-form.pdf).
+Except for the first hotel (where a [booking link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [form](../../downloads/hotel-booking-form.pdf).
 			
 
 
@@ -36,7 +36,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Distance to Venue:</b> 1 minute by Airport Express<br>
 <b>Direction:</b> Take Airport Express at Airport Station (Departure Hall) to AsiaWorld Expo Station (1 Station). Then walk to the conference venue.<br>
 <b>Booking Method:</b> <a href="https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp" target="_blank">Regal Hotel booking link</a><br>
-<b>Hotel Contact:</b> Ms. Fanny Chan, <a href="mailto:rah.sales1@regalhotel.com">rah.sales1@regalhotel.com</a>
+<b>Contact:</b> Ms. Fanny Chan, <a href="mailto:rah.sales1@regalhotel.com">rah.sales1@regalhotel.com</a>
 </td>
 </tr>
 </table>
