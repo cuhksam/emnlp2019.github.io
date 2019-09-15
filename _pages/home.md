@@ -35,6 +35,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**August 15, 2019**.
+The [registration](./registration) is going to open within the next week.
+
 **September 10, 2019**.
 The dates of the [workshops](./program/workshops/) have been assigned.
 
@@ -47,17 +50,11 @@ Updated information on [Conference Venue](./participants#conference-venue) and [
 **August 30, 2019**.
 We are happy to announce [Childcare Grants](./participants#childcare-grants) for participants with young children. Please apply by Sept 19, 2019.
 
-**August 28, 2019**.
-Apply to the [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program)! Application instructions and submission website are now available (deadline: Sept 12, 2019). 
-
 **August 23, 2019**.
 See our [update on conference organization](./participants#an-update-on-conference-organization) in light of the current situation in Hong Kong.
 
 **August 17, 2019**.
 Important [visa information](./participants#visa-information) now available.
-
-**August 14, 2019**.
-Some preliminary information on registration found [here](./registration). More to follow soon.
 
 
 <!-- OUTDATED NEWS
@@ -71,8 +68,14 @@ If you got a paper accepted, please see the [instructions for camera-ready versi
 **August 20, 2019**.
 The list of [accepted demo papers](./program/accepted/#demo-papers) is out.
 
+**August 28, 2019**.
+Apply to the [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program)! Application instructions and submission website are now available (deadline: Sept 12, 2019). 
+
 **August 15, 2019**.
 The list of accepted <a href="./program/tutorials/">tutorials</a> is out.
+
+**August 14, 2019**.
+Some preliminary information on registration found [here](./registration). More to follow soon.
 
 **August 12, 2019**.
 Information on [travel scholarships &amp; student volunteer program](./participants#travel-scholarships--student-volunteer-program) now available. The application form will follow soon.

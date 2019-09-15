@@ -249,7 +249,7 @@ EMNLP 2019 seeks student volunteers who will receive a free registration to the 
         <tr style="background-color: #eee;">
             <td>Application deadline</td>
             <td>Thursday</td>
-            <td>September 12, 2019</td>
+            <td><strike>September 12, 2019</strike></td>
         </tr>
         <tr style="background-color: #fff;">
             <td>Notification of acceptance</td>
