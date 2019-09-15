@@ -11,11 +11,11 @@ sidebar:
 {% include toc icon="gears" %}
 
 The following hotels are recommended for participants of the EMNLP-IJCNLP 2019. 
-The information on the first page is provided by the China Travel Service (Hong Kong) Limited. For more information, send a mail to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com).
+The information on this page is provided by the China Travel Service (Hong Kong) Limited. For more information, send a mail to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com).
 
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
-Except for the first hotel (where a booking [link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [form](./downloads/hotel-booking-form.pdf).
+Except for the first hotel (where a [booking link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [form](./downloads/hotel-booking-form.pdf).
 			
 
 
