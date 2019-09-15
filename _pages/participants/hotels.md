@@ -30,7 +30,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Room type:</b> Deluxe Room<br>
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> Hong Kong International Airport, Lantau Island, 9 Cheong Tat Rd, Chek Lap Kok<br>
-<b>Room Rate:</b> HKD1300+10%  tax/service charge per room per night<br>
+<b>Room Rate:</b> HKD1300 + 10% tax/service charge per room per night<br>
 <b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 1 minute by Airport Express<br>
@@ -81,7 +81,9 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 38 minutes by Airport Express / S1 bus<br>
-<b>Direction:</b> (1) BUS: Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo Stop.  The ride is about 20 mins ride and single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo. (2) BUS: Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo.  However, it will be operated in specified period only.  Please check the schedule at KMB or CityBus (you can also download their apps to check the latest information). (3) MTR / AIRPORT EXPRESS: At Tung Chung Station, take Tung Chung Line to Tsing Yi Station and then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
+<b>Direction:</b> <i>BUS:</i> Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo Stop.  The ride is about 20 mins ride and single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.<br>
+<i>BUS:</i> Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo.  However, it will be operated in specified period only.  Please check the schedule at KMB or CityBus (you can also download their apps to check the latest information).<br>
+<i>MTR / AIRPORT EXPRESS:</i> At Tung Chung Station, take Tung Chung Line to Tsing Yi Station and then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
 <b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
 </td>
 </tr>
@@ -104,7 +106,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 1 hour by E32 bus<br>
-<b>Direction:</b> BUS: Walk (about 9 mins) to Kwong Fai Circuit Bus Stop at Kwai Chung Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
+<b>Direction:</b> Walk (about 9 mins) to Kwong Fai Circuit Bus Stop at Kwai Chung Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
 <b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
 </td>
 </tr>
@@ -127,7 +129,8 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 35 minutes by MTR<br>
-<b>Direction:</b> (1) BUS: Walk (about 5 mins) to Kwong Fai Circuit Bus Stop at Kwai Chung Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal). (2) MTR / AIRPORT EXPRESS: Walk (about 8 mins)  to Kwai Hing Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
+<b>Direction:</b> <i>BUS:</i>Walk (about 5 mins) to Kwong Fai Circuit Bus Stop at Kwai Chung Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br> 
+<i>MTR / AIRPORT EXPRESS:</i> Walk (about 8 mins)  to Kwai Hing Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
 <b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
 </td>
 </tr>
@@ -150,7 +153,8 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 55 minutes by MTR<br>
-<b>Direction:</b> (1) BUS: Bus route E32 just pposite to the hotel, this bus heading to AsiaWorld Expo (Bus Terminal). (2) MTR / AIRPORT EXPRESS: Walk (about 8  mins)  to Tai Wo Hau Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
+<b>Direction:</b> <i>BUS:</i> Bus route E32 just pposite to the hotel, this bus heading to AsiaWorld Expo (Bus Terminal).<br>
+<i>MTR / AIRPORT EXPRESS:</i> Walk (about 8  mins)  to Tai Wo Hau Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station. Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
 <b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
 </td>
 </tr>
@@ -173,8 +177,8 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 37 minutes by MTR<br>
-<b>Direction:</b> (1) BUS: Walk (about 5 mins) to Tsuan Fu Street Bus Stop at Texaco Road Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).
-(2) MTR / AIRPORT EXPRESS: Walk (about 10 mins)  to Tsuan Wan Station or Tai Wo Hau Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
+<b>Direction:</b> <i>BUS:</i> Walk (about 5 mins) to Tsuan Fu Street Bus Stop at Texaco Road Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
+<i>MTR / AIRPORT EXPRESS:</i> Walk (about 10 mins)  to Tsuan Wan Station or Tai Wo Hau Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station. Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
 <b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
 </td>
 </tr>
@@ -197,7 +201,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Breakfast:</b> NOT included
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 10 minutes by Airport Express<br>
-<b>Direction:</b> BUS: Walk (about 5 mins) to Ching Tao House Cheung Ching Estate Bus Stop (only operate during 10:00-15:40) and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).
+<b>Direction:</b> Walk (about 5 mins) to Ching Tao House Cheung Ching Estate Bus Stop (only operate during 10:00-15:40) and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).
 (2) AIRPORT EXPRESS: Walk (about 6 mins)  to Ching Tao House Cheung Ching Estate Bus Stop and take bus no 249X to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.
 Booking Method: <br>
 <b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
