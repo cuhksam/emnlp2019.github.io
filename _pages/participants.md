@@ -78,6 +78,7 @@ To find out whether you need a visa for Hong Kong, check for instance [here](htt
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong, China.
 
+
 ### Venue
 
 <img src="/assets/images/hongkong/venue2.png" alt="Venue: Marriott" style="width:225px;height:127px;">
@@ -90,6 +91,7 @@ Workshops and Tutorials (Nov 3-4): Meeting Rooms 201-203 (2/F), AsiaWorld Expo a
 Please refer to the following Google <a href="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en">map</a> for more information on conference venues, accommodations, restaurants and attractions, and transportation information:
 <iframe src="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en" width="640" height="480"></iframe>
 
+
 ### Access to the Venue
 
 Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Kong International Airport, with a built-in Airport Express railway station, as well as other transportation facilities. You may come to AsiaWorld-Expo by your preferred transportation means:
@@ -101,6 +103,15 @@ Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Ko
   * Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo, which is about 20 mins ride. A single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.
   * Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo.  However, it will be operated in specified period only.  We will update the operation date once available.
 
+
+## Accomodation
+
+EMNLP-IJCNLP 2019 provides a [list of recommended hotels](./participants/hotels/) remote from the protesting areas. We advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided.
+
+Information on how to book the hotels is provided in the beginning of the [list](./participants/hotels/).
+
+
+
 ## About Hong Kong
 
 Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions – only Hong Kong!
@@ -108,7 +119,6 @@ Discover a diverse modern metropolis steeped in unique blends of Eastern and Wes
 For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
 
 Below are some third-party apps that may be helpful for planning your stay:
-
 
 <table>
 <tr>
