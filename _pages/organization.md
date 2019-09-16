@@ -276,11 +276,6 @@ University of Macau, China<br>
 </table>
 
 
-## Video Chair
-<span style="color: lightgray">TBA</span>
-
-
-
 
 ## Student Volunteer Coordinator &amp; Student Scholarship Chairs
 
