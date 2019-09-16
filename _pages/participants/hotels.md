@@ -15,7 +15,7 @@ The information on this page is provided by China Travel Service (Hong Kong) Lim
 
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
-Except for the first hotel (where a [booking link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [docx](../../downloads/hotel-booking-form.docx) or [pdf](../../downloads/hotel-booking-form.pdf) form.
+Except for the first hotel (where a [booking link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [docx](../../downloads/hotel-booking-form.docx) or [pdf](../../downloads/hotel-booking-form.pdf) form. The form needs to be sent to the e-mail address above.
 			
 
 
