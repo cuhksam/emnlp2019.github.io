@@ -268,7 +268,7 @@ Paderborn University, Germany<br>
 
 <table>
 <tr>
-<td><img src="/assets/images/organizers/derek_wong.jpg"></td>
+<td width="128px"><img src="/assets/images/organizers/derek_wong.jpg"></td>
 <td>Derek F. Wong<br>
 University of Macau, China<br>
 &nbsp;</td>
