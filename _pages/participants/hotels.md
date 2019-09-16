@@ -91,7 +91,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 
 
 
-## 4. Hotel Ease, Tsuen Wan (4*, min. 8-room)
+## 4. Hotel Ease, Tsuen Wan (4*)
 
 [https://www.hotelease.com.hk/](https://www.hotelease.com.hk/)
 
@@ -138,7 +138,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 
 
 
-## 6. Dorsett, Tsuen Wan (4*, min. 8-room)
+## 6. Dorsett, Tsuen Wan (4*)
 
 [https://www.dorsetthotels.com/](https://www.dorsetthotels.com/)
 
