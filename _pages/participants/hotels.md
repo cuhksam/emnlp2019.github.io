@@ -35,7 +35,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 1 minute by Airport Express<br>
 <b>Direction:</b> Take Airport Express at Airport Station (Departure Hall) to AsiaWorld Expo Station (1 Station). Then walk to the conference venue.<br>
-<b>Contact:</b> Ms. Fanny Chan <a href="mailto:rah.sales1@regalhotel.com">rah.sales1@regalhotel.com</a>
+<b>Contact:</b> Ms. Fanny Chan <a href="mailto:rah.sales1@regalhotel.com">rah.sales1@regalhotel.com</a><br>
 <b>Website:</b> <a here="https://www.regalhotel.com/" target="_blank">www.regalhotel.com</a>
 </td>
 </tr>
