@@ -264,8 +264,23 @@ Paderborn University, Germany<br>
 </table>
 
 
+## Remote Presentation Chair
+
+<table>
+<tr>
+<td><img src="/assets/images/organizers/derek_wong.jpg"></td>
+<td>Derek F. Wong<br>
+University of Macau, China<br>
+&nbsp;</td>
+</tr>
+</table>
+
+
 ## Video Chair
 <span style="color: lightgray">TBA</span>
+
+
+
 
 ## Student Volunteer Coordinator &amp; Student Scholarship Chairs
 
