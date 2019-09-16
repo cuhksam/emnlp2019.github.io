@@ -15,7 +15,7 @@ The information on this page is provided by China Travel Service (Hong Kong) Lim
 
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
-Except for the first hotel (where a [booking link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [form](../../downloads/hotel-booking-form.pdf).
+Except for the first hotel (where a [booking link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [docx](../../downloads/hotel-booking-form.docx) or [pdf](../../downloads/hotel-booking-form.pdf) form.
 			
 
 
@@ -27,7 +27,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <tr>
 <td width="200px" style="vertical-align:top"><img src="/assets/images/hotels/hotel-regal-airport.png"></td>
 <td style="vertical-align:top">
-<b>Room type:</b> Deluxe Room<br>
+<b>Room type:</b> Superior Room<br>
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> Hong Kong International Airport, Lantau Island, 9 Cheong Tat Rd, Chek Lap Kok<br>
 <b>Room Rate:</b> HKD1300 + 10% tax/service charge per room per night<br>
@@ -51,15 +51,15 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <tr>
 <td width="200px" style="vertical-align:top"><img src="/assets/images/hotels/hotel-skycity-marriott.png"></td>
 <td style="vertical-align:top">
-<b>Room type:</b> <br>
-<b>Date:</b> <br>
+<b>Room type:</b> Deluxe Room<br>
+<b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> 1 Sky City Road East, Hong Kong International Airport, Hong Kong<br>
 <b>Room Rate:</b> HKD1550 + 10% tax/service charge per room per night<br>
 <b>Breakfast:</b> Included<br>
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 5 minutes walking<br>
 <b>Direction:</b> Cross the bridge and walk to the direction of AsiaWorld Expo.<br>
-<b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
+<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 </td>
 </tr>
 </table>
@@ -84,7 +84,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Direction:</b> <i>BUS:</i> Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo Stop.  The ride is about 20 mins ride and single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.<br>
 <i>BUS:</i> Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo.  However, it will be operated in specified period only.  Please check the schedule at KMB or CityBus (you can also download their apps to check the latest information).<br>
 <i>MTR / AIRPORT EXPRESS:</i> At Tung Chung Station, take Tung Chung Line to Tsing Yi Station and then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
-<b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
+<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 </td>
 </tr>
 </table>
@@ -99,7 +99,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <tr>
 <td width="200px" style="vertical-align:top"><img src="/assets/images/hotels/hotel-ease.png"></td>
 <td style="vertical-align:top">
-<b>Room type:</b> Standard Room<br>
+<b>Room type:</b> Superior Room<br>
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> 15-19 Chun Pin Street, Kwai Chung, Hong Kong<br>
 <b>Room Rate:</b> HKD620 + 10%  tax/service charge per room per night<br>
@@ -107,7 +107,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 1 hour by E32 bus<br>
 <b>Direction:</b> Walk (about 9 mins) to Kwong Fai Circuit Bus Stop at Kwai Chung Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
-<b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
+<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 </td>
 </tr>
 </table>
@@ -131,7 +131,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Distance to Venue:</b> 35 minutes by MTR<br>
 <b>Direction:</b> <i>BUS:</i>Walk (about 5 mins) to Kwong Fai Circuit Bus Stop at Kwai Chung Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br> 
 <i>MTR / AIRPORT EXPRESS:</i> Walk (about 8 mins)  to Kwai Hing Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
-<b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
+<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 </td>
 </tr>
 </table>
@@ -146,8 +146,8 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <tr>
 <td width="200px" style="vertical-align:top"><img src="/assets/images/hotels/hotel-dorsett.png"></td>
 <td style="vertical-align:top">
-<b>Room type:</b> Standard Room<br>
-<b>Date:</b> <br>
+<b>Room type:</b> Superior Room<br>
+<b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> 28 Kin Chuen Street, Kwai Chung, Kowloon, Hong Kong, Hong Kong <br>
 <b>Room Rate:</b> HKD660  + 10%  tax/service charge per room per night<br>
 <b>Breakfast:</b> Included<br>
@@ -155,7 +155,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Distance to Venue:</b> 55 minutes by MTR<br>
 <b>Direction:</b> <i>BUS:</i> Bus route E32 just pposite to the hotel, this bus heading to AsiaWorld Expo (Bus Terminal).<br>
 <i>MTR / AIRPORT EXPRESS:</i> Walk (about 8  mins)  to Tai Wo Hau Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station. Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
-<b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
+<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 </td>
 </tr>
 </table>
@@ -170,7 +170,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <tr>
 <td width="200px" style="vertical-align:top"><img src="/assets/images/hotels/hotel-panda.png"></td>
 <td style="vertical-align:top">
-<b>Room type:</b> Superior Room<br>
+<b>Room type:</b> Deluxe Room<br>
 <b>Date:</b> November 2&ndash;8<br>
 <b>Address:</b> 3 Tsuen Wah Street, Tsuen Wan, Hong Kong<br>
 <b>Room Rate:</b> HKD760 + 10%  tax/service charge per room per night<br>
@@ -179,14 +179,14 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Distance to Venue:</b> 37 minutes by MTR<br>
 <b>Direction:</b> <i>BUS:</i> Walk (about 5 mins) to Tsuan Fu Street Bus Stop at Texaco Road Road and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
 <i>MTR / AIRPORT EXPRESS:</i> Walk (about 10 mins)  to Tsuan Wan Station or Tai Wo Hau Station, take Tsuan Wan Line to Lai King Station and interchange to Tung Ching Ling to Tsing Yi Station. Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
-<b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
+<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 </td>
 </tr>
 </table>
 
 
 
-## 8. Rambler Garden Hotel
+## 8. Rambler Garden Hotel (3*)
 
 [https://www.ramblerhotels.com/garden/ContactUs-en.htm](https://www.ramblerhotels.com/garden/ContactUs-en.htm)
 
@@ -204,7 +204,7 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Direction:</b> <i>BUS:</i> Walk (about 5 mins) to Ching Tao House Cheung Ching Estate Bus Stop (only operate during 10:00-15:40) and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
 <i>AIRPORT EXPRESS:</i> Walk (about 6 mins)  to Ching Tao House Cheung Ching Estate Bus Stop and take bus no 249X to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.
 Booking Method: <br>
-<b>Booking Method:</b> <a href="../../downloads/hotel-booking-form.pdf">form</a>
+<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 </td>
 </tr>
 </table>
