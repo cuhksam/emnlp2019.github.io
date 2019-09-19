@@ -113,7 +113,7 @@ Information on how to book the hotels is provided in the beginning of the [list]
 
 ### Accomodation for Student Participants
 
-Students that participate in the conference can also apply for shared [student accomodation](../downloads/student-accomodation-details.pdf) at the [Rambler Garden Hotel](./participants/hotels/#8-rambler-garden-hotel-3) at a reduced rate.
+Students that participate in the conference can also apply for [accomodation in a shared room](../downloads/student-accomodation-details.pdf) at the [Rambler Garden Hotel](./participants/hotels/#8-rambler-garden-hotel-3) at a reduced rate.
 
 
 
