@@ -191,7 +191,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 <b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)<br>
 
-<b>For student accommodation:</b> <a href="https://docs.google.com/forms/d/e/1FAIpQLSe179uSeJNCLvFOL7l8LjnTcSwI1JKINUsvdPrDxAhTR_dayw/viewform" target="_blank">Application form</a> (please first see details here: <a href="../../downloads/student-accomodation-details.pdf">PDF</a>)
+<b>Student accommodation:</b> <a href="https://docs.google.com/forms/d/e/1FAIpQLSe179uSeJNCLvFOL7l8LjnTcSwI1JKINUsvdPrDxAhTR_dayw/viewform" target="_blank">Application form</a> (see details here: <a href="../../downloads/student-accomodation-details.pdf">PDF</a>)
 
 <table>
 <tr>
