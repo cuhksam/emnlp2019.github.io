@@ -104,11 +104,16 @@ Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Ko
   * Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo.  However, it will be operated in specified period only.  We will update the operation date once available.
 
 
+
 ## Accommodation
 
 EMNLP-IJCNLP 2019 provides a [list of recommended hotels](./participants/hotels/) remote from the protesting areas. We advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided.
 
 Information on how to book the hotels is provided in the beginning of the [list](./participants/hotels/).
+
+### Accomodation for Student Participants
+
+Students that participate in the conference can also apply for specific [student accomodation](../downloads/student-accomodation-details.pdf) at a reduced rate.
 
 
 

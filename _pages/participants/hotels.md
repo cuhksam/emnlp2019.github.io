@@ -10,13 +10,14 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-The following hotels are recommended for participants of EMNLP-IJCNLP 2019. 
-The information on this page is provided by China Travel Service (Hong Kong) Limited. For more information, send a mail to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com).
+The following hotels are recommended for participants of EMNLP-IJCNLP 2019. The information on this page is provided by China Travel Service (Hong Kong) Limited. 
 
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
-Except for the first hotel (where a [booking link](https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp) is provided), the hotels can be booked by filling the provided [docx](../../downloads/hotel-booking-form.docx) or [pdf](../../downloads/hotel-booking-form.pdf) form. The form needs to be sent to the e-mail address above.
-			
+For most hotels, a booking form is provided below that needs to be filled sent to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com). 
+
+Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are reserved for student participants sharing the room so as to lower their accommodation costs.  Please see the details and application procedures [here](../../downloads/student-accomodation-details.pdf).
+
 
 
 ## 1. Regal Airport Hotel (5*) 
@@ -188,7 +189,9 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 
 ## 8. Rambler Garden Hotel (3*)
 
-<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)<br>
+
+<b>For student accommodation:</b> <a href="https://docs.google.com/forms/d/e/1FAIpQLSe179uSeJNCLvFOL7l8LjnTcSwI1JKINUsvdPrDxAhTR_dayw/viewform" target="_blank">Application form</a> (please first see details here: <a href="../../downloads/student-accomodation-details.pdf">PDF</a>)
 
 <table>
 <tr>
@@ -204,8 +207,9 @@ Except for the first hotel (where a [booking link](https://www.booking.regalhote
 <b>Direction:</b> <i>BUS:</i> Walk (about 5 mins) to Ching Tao House Cheung Ching Estate Bus Stop (only operate during 10:00-15:40) and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
 <i>AIRPORT EXPRESS:</i> Walk (about 6 mins)  to Ching Tao House Cheung Ching Estate Bus Stop and take bus no 249X to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.
 Booking Method: <br>
-<b>Website:</b> <a here="https://www.ramblerhotels.com/garden/" target="_blank">www.ramblerhotels.com/garden</a>
+<b>Website:</b> <a here="https://www.ramblerhotels.com/garden/Index-en.htm" target="_blank">www.ramblerhotels.com/garden/Index-en.htm</a>
 </td>
 </tr>
 </table>
+
 

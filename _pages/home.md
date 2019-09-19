@@ -35,6 +35,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**September 19, 2019**.
+For students participating in the conference, specific [accomodation](./participants#accommodation) is provided at a reduced rate.
+
 **September 15, 2019**.
 We have published a [list of hotels](./participants/hotels/) remote from the protesting areas and advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided. 
 
@@ -53,8 +56,8 @@ Updated information on [Conference Venue](./participants#conference-venue) and [
 **August 30, 2019**.
 We are happy to announce [Childcare Grants](./participants#childcare-grants) for participants with young children. Please apply by Sept 19, 2019.
 
-**August 23, 2019**.
-See our [update on conference organization](./participants#an-update-on-conference-organization) in light of the current situation in Hong Kong.
+**August 24, 2019**.
+The list of [accepted long, short, and demo papers](./program/accepted/) is out.
 
 **August 17, 2019**.
 Important [visa information](./participants#visa-information) now available.
@@ -62,8 +65,8 @@ Important [visa information](./participants#visa-information) now available.
 
 <!-- OUTDATED NEWS
 
-**August 24, 2019**.
-The list of [accepted long, short, and demo papers](./program/accepted/) is out.
+**August 23, 2019**.
+See our [update on conference organization](./participants#an-update-on-conference-organization) in light of the current situation in Hong Kong.
 
 **August 22, 2019**.
 If you got a paper accepted, please see the [instructions for camera-ready versions](./calls/final).
