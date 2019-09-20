@@ -151,8 +151,7 @@ EMNLP-IJCNLP 2019 provides a [list of recommended hotels](./participants/hotels/
 
 If you already booked a hotel but still need transfer, use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
 
-### Accomodation for Student Participants
-
+<b>For Student Participants</b><br>
 Students that participate in the conference can also apply for [accomodation in a shared room](../downloads/student-accomodation-details.pdf) at the [Rambler Garden Hotel](./participants/hotels/#8-rambler-garden-hotel-3) at a reduced rate.
 
 
@@ -161,8 +160,6 @@ Students that participate in the conference can also apply for [accomodation in 
 ## Conference Venue
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong, China.
-
-### Venue
 
 <img src="/assets/images/hongkong/venue2.png" alt="Venue: Marriott" style="width:225px;height:127px;">
 <img src="/assets/images/hongkong/venue1.png" alt="Venue: Asia World Expo" style="width:190px;height:127px;">
@@ -174,8 +171,7 @@ Workshops and Tutorials (Nov 3-4): Meeting Rooms 201-203 (2/F), AsiaWorld Expo a
 Please refer to the following Google <a href="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en">map</a> for more information on conference venues, accommodations, restaurants and attractions, and transportation information:
 <iframe src="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en" width="640" height="480"></iframe>
 
-### Access to the Venue
-
+<b>Access to the Venue</b><br>
 Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Kong International Airport, with a built-in Airport Express railway station, as well as other transportation facilities. You may come to AsiaWorld-Expo by your preferred transportation means:
 
 <b>By MTR</b>
@@ -196,9 +192,7 @@ Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Ko
 
 
 
-## Social Event
-
-### Meal Information
+## Meal Information
 
 The following catered events are included in your registration fee:
 
@@ -206,7 +200,9 @@ The following catered events are included in your registration fee:
 - A welcome reception with canap&eacute;s on Monday, November 4th, for Main Conference registered people
 - A magical night with a buffet dinner in Hong Kong Disneyland on Wednesday, November 6th, as part of the social event for Main Conference registered people.
 
-### Welcome Reception
+
+
+## Welcome Reception
 
 Catch up with your colleagues at the Welcome Reception in the conference venue, AsiaWorld Expo.
 
@@ -215,7 +211,9 @@ Catch up with your colleagues at the Welcome Reception in the conference venue, 
 
 <img src="./assets/images/hongkong/welcome-reception.jpg">
 
-### Social Event
+
+
+## Social Event
 
 Enjoy a magical night and meet the Marvel Heros at Hong Kong Disneyland! The social event will take place in Tomorrowland, Hong Kong Disneyland.  
 
