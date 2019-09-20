@@ -36,7 +36,7 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 **September 20, 2019**.
-We also provide an <a href="https://mice.ctshkvip.com/" target="_blank">online hotel booking form</a> now. If you need transfer only, please use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
+We also provide online forms for [hotels and transfer](./participants/hotels/) now.
 
 **September 19, 2019**.
 For students participating in the conference, [accomodation](./participants#accommodation) in a shared room is provided at a reduced rate.
