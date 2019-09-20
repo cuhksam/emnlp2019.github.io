@@ -104,7 +104,7 @@ Personalized weather services </td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app5.png"></td>
-<td>Search <i>Discover Hong Kong - Island Walks</i>ù in App Store <br>
+<td>Search <i>Discover Hong Kong - Island Walks</i> in App Store <br>
 Tourism information </td>
 </tr>
 <tr>
