@@ -96,32 +96,32 @@ Below are some third-party apps that may be helpful for planning your stay:
 <table>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app1.png"></td>
-<td>Search: "KMB & LW" in App Store <br>
+<td>Search <i>KMB & LW</i> in App Store <br>
 KMB & Long Win bus route information </td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app2.png"></td>
-<td>Search: "MTR mobile" in App Store <br> 
+<td>Search <i>MTR mobile</i> in App Store <br> 
 MTR route map, fare information, train schedule</td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app3.png"></td>
-<td>Search: "City bus & New World First Bus" in App Store <br>
+<td>Search <i>City bus & New World First Bus</i> in App Store <br>
 City bus & New World First Bus information </td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app4.png"></td>
-<td>Search: "Myobservatory" in ITunes/App Store <br>
+<td>Search <i>Myobservatory</i> in ITunes/App Store <br>
 Personalized weather services </td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app5.png"></td>
-<td>Search: "Discover Hong Kong - Island Walks"ù in App Store <br>
+<td>Search <i>Discover Hong Kong - Island Walks</i>ù in App Store <br>
 Tourism information </td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app6.png"></td>
-<td>Search: "OpenRice Hong Kong" in ITunes/App Store <br> 
+<td>Search: <i>OpenRice Hong Kong</i> in ITunes/App Store <br> 
 Dining Guide</td>
 </tr>
 </table>
@@ -195,13 +195,22 @@ Following the family-friendly policy of ACL, EMNLP-IJCNLP 2019 is happy to annou
 
 Here is the <a href="downloads/childcare-policy.pdf">full policy</a>, and please fill out the application form <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__oehnzNUNjEzM0cyM1JTS001WEZWVTJFTks2QlZGQy4u">here</a>.
 
- 
+### Important Dates
 
-Important Dates:
-
-- Application deadline: 19 September 2019
-- Notification of acceptance: 26 September 2019           
-
+<table>
+    <tbody>
+        <tr style="background-color: #eee;">
+            <td>Application deadline</td>
+            <td>Thursday</td>
+            <td><strike>September 19, 2019</strike></td>
+        </tr>
+        <tr style="background-color: #fff;">
+            <td>Notification of acceptance</td>
+            <td>Thursday</td>
+            <td>September 16, 2019</td>
+        </tr>      
+    </tbody>
+</table>
  
 For those who are bringing their children to the conference and are looking for local childcare services, the following links may be of use:
 
