@@ -196,10 +196,9 @@ Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Ko
 
 The following catered events are included in your registration fee:
 
-- Two coffee breaks per day on all five conference days
-- A welcome reception with canap&eacute;s on Monday, November 4th, for Main Conference registered people
-- A magical night with a buffet dinner in Hong Kong Disneyland on Wednesday, November 6th, as part of the social event for Main Conference registered people.
-
+- Two coffee breaks per day on all five conference days.
+- Canap&eacute;s at the [welcome reception](#welcome-reception) on Monday, November 4th, for registered main-conference participants.
+- A buffet dinner as part of the [social event](#social-event) on Wednesday, November 6th, for registered main-conference participants.
 
 
 ## Welcome Reception
