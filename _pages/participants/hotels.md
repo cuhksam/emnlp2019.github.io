@@ -100,7 +100,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 <table>
 <tr>
-<td width="200px" style="vertical-align:top"><img src="/assets/images/hotels/hotel-ease.png"></td>
+<td width="200px" style="vertical-align:top"><img src="/assets/images/hotels/hotel-ease.jpg"></td>
 <td style="vertical-align:top">
 <b>Room type:</b> Superior Room<br>
 <b>Date:</b> November 2&ndash;8<br>
@@ -206,8 +206,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 <b>Wifi:</b> Free<br>
 <b>Distance to Venue:</b> 10 minutes by Airport Express<br>
 <b>Direction:</b> <i>BUS:</i> Walk (about 5 mins) to Ching Tao House Cheung Ching Estate Bus Stop (only operate during 10:00-15:40) and take the Bus Route No. E32.  This bus is heading to AsiaWorld Expo (Bus Terminal).<br>
-<i>AIRPORT EXPRESS:</i> Walk (about 6 mins)  to Ching Tao House Cheung Ching Estate Bus Stop and take bus no 249X to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.
-Booking Method: <br>
+<i>AIRPORT EXPRESS:</i> Walk (about 6 mins)  to Ching Tao House Cheung Ching Estate Bus Stop and take bus no 249X to Tsing Yi Station.  Then take Airport Express Line (different platform) at Tsing Yi Station to AsiaWorld Expo Station.<br>
 <b>Website:</b> <a here="https://www.ramblerhotels.com/garden/Index-en.htm" target="_blank">www.ramblerhotels.com/garden/Index-en.htm</a>
 </td>
 </tr>
