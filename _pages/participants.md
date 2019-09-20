@@ -89,44 +89,141 @@ Students that participate in the conference can also apply for [accomodation in 
 
 
 
-## About Hong Kong
 
-Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions &ndash; only Hong Kong! For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
+<!--
+## Floorplan
 
-Below are some third-party apps that may be helpful for planning your stay:
+A printable version of the Asia World Expo floorplan can be downloaded by clicking on the icon below.
+
+{% include gallery id="floorplan" %}
+-->
+
+
+
+
+<!--
+## WiFi Access
+
+### Instructions
+
+TBD
+
+### Important Notes
+
+TBD
+-->
+
+
+
+
+<!--
+## Conference App
+
+There's a companion app for the conference published on the <a href="https://guidebook.com/" target="_blank">Guidebook</a> platform. If you already have Guidebook on your device, click on "Find Guides" and search for "XXXXXXXXXXXXX" or scan the QR code below. If you do not, click <a href="https://guidebook.com/g/xxxxxxxxxxxxxx/" target="_blank">here</a> to get set up.
+
+![image-center](/assets/images/guideqr.png){: .align-center}
+
+There's also a web version of the guide available <a href="http://guidebook.com/guide/xxxxxxxxx" target="_blank">here</a>, although that's not as full-featured as the app version.
+-->
+
+
+
+
+<!--
+## Instructions for Presenters
+
+TBD
+
+### Oral Presentations
+
+TBD
+
+
+### Posters
+
+TBD
+-->
+
+
+<!--
+## Social Event
+
+TBD
+
+{% include gallery id="xxxxxxxx" %}
+-->
+
+
+
+
+## Childcare Grants
+
+
+Following the family-friendly policy of ACL, EMNLP-IJCNLP 2019 is happy to announce Childcare Grants offered to participants with young children. Grants of up to US$400 per family are available for attendees who incur extra childcare expenses during their conference travel.
+ 
+
+Here is the <a href="downloads/childcare-policy.pdf">full policy</a>, and please fill out the application form <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__oehnzNUNjEzM0cyM1JTS001WEZWVTJFTks2QlZGQy4u">here</a>.
+
+### Important Dates
 
 <table>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app1.png"></td>
-<td>Search <i>KMB & LW</i> in App Store <br>
-KMB & Long Win bus route information </td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app2.png"></td>
-<td>Search <i>MTR mobile</i> in App Store <br> 
-MTR route map, fare information, train schedule</td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app3.png"></td>
-<td>Search <i>City bus & New World First Bus</i> in App Store <br>
-City bus & New World First Bus information </td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app4.png"></td>
-<td>Search <i>Myobservatory</i> in App Store <br>
-Personalized weather services </td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app5.png"></td>
-<td>Search <i>Discover Hong Kong - Island Walks</i>ù in App Store <br>
-Tourism information </td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app6.png"></td>
-<td>Search: <i>OpenRice Hong Kong</i> in ITunes/App Store <br> 
-Dining Guide</td>
-</tr>
+    <tbody>
+        <tr style="background-color: #eee;">
+            <td>Application deadline</td>
+            <td>Thursday</td>
+            <td><strike>September 19, 2019</strike></td>
+        </tr>
+        <tr style="background-color: #fff;">
+            <td>Notification of acceptance</td>
+            <td>Thursday</td>
+            <td>September 16, 2019</td>
+        </tr>      
+    </tbody>
 </table>
+ 
+For those who are bringing their children to the conference and are looking for local childcare services, the following links may be of use:
+
+- [https://www.babysitter.hk/en/](https://www.babysitter.hk/en/)
+- [http://www.rent-a-mum.com/](http://www.rent-a-mum.com/)
+- [http://dreamcare.com.hk/temporary-nanny/](http://dreamcare.com.hk/temporary-nanny/)
+
+Attendees are responsible for making their own arrangements for childcare and will be reimbursed after the conference upon receipt of necessary supporting documentation.
+
+
+
+## Travel Scholarships & Student Volunteer Program
+
+EMNLP 2019 seeks student volunteers who will receive a free registration to the main conference, tutorials & workshops. In addition, we also plan to offer scholarships to students as well as non-students with a demonstrated financial need. For more details, please refer to the <a href="./downloads/joint-call-scholarship-volunteers.pdf" target="_blank">Joint Call for Travel Scholarship and Student Volunteer Applications</a>. After reading the policy in detail to determine your eligibility, you can fill out the application form and include a CV through softconf <a href="https://www.softconf.com/emnlp2019/travel_support">here</a>, by making a new submission. If you have further questions, please contact us at <a href="mailto:emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com">emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com</a>.
+
+### Important Dates
+
+<table>
+    <tbody>
+        <tr style="background-color: #eee;">
+            <td>Application deadline</td>
+            <td>Thursday</td>
+            <td><strike>September 12, 2019</strike></td>
+        </tr>
+        <tr style="background-color: #fff;">
+            <td>Notification of acceptance</td>
+            <td>Thursday</td>
+            <td>September 19, 2019</td>
+        </tr>      
+    </tbody>
+</table>
+
+<b>Note.</b> Award recipients must register by the early registration deadline of October 1, 2019.
+
+<b>Note.</b> All deadlines are calculated at 11:59pm Pacific Daylight Savings Time (UTC -7h).
+
+
+
+
+<!--
+## Visa Information
+
+TBD
+-->
 
 
 
