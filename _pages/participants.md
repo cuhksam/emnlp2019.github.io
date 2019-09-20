@@ -40,7 +40,7 @@ Since visa applications can take almost two months or more to be approved, we ad
 
 It is understood that such an invitation is intended to help delegates to raise funds to obtain a visa and does not imply a commitment from the conference organizers to provide any financial support or scheduling of presentation.
 
-To find out whether you need a visa for Hong Kong, check for instance [here](https://www.hongkong.net/info/visa.html).
+To find out whether you need a visa for Hong Kong, check [here](https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html).
 
 
 
@@ -174,9 +174,9 @@ Please refer to the following Google <a href="https://www.google.com/maps/d/embe
 <b>Access to the Venue</b><br>
 Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Kong International Airport, with a built-in Airport Express railway station, as well as other transportation facilities. You may come to AsiaWorld-Expo by your preferred transportation means:
 
-- <br>MTR:</b> Take the Airport Express line to AsiaWorld Expo Station, which is about 2 mins ride from Hong Kong International Airport. A single trip fare is HK$ 6.0.
-- <br>Bus (route S1):</b> Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo, which is about 20 mins ride. A single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.
-- <br>Bus (route X1):</b> Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo. However, it will be operated in specified period only. We will update the operation date once available.
+- <b>MTR:</b> Take the Airport Express line to AsiaWorld Expo Station, which is about 2 mins ride from Hong Kong International Airport. A single trip fare is HK$ 6.0.
+- <b>Bus (route S1):</b> Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo, which is about 20 mins ride. A single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.
+- <b>Bus (route X1):</b> Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo. However, it will be operated in specified period only. We will update the operation date once available.
 
 <!--
 ### Floorplan
