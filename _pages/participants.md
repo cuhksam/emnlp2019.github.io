@@ -7,7 +7,6 @@ sidebar:
     nav: "participants"
 ---
 
-
 {% include base_path %}
 
 {% include toc icon="gears" %}
@@ -28,6 +27,7 @@ The conference organizing committee has been working hard to welcome you on Nov 
 - We're continuously observing the local situation and will keep you up-to-date on this website. 
 
 
+
 ## Visa Information
 
 Since visa applications can take almost two months or more to be approved, we advise that you apply as soon as possible. If you require an invitation letter for your visa application, please send an [email to the Local Organizing Secretariat](mailto:emnlp-ijcnlp-2019-local-organizing-committee@googlegroups.com?subject=EMNNLP-IJCNLP 2019: Letter of Invitation and Visa) with the following information and a copy of your passport:
@@ -42,10 +42,10 @@ It is understood that such an invitation is intended to help delegates to raise 
 To find out whether you need a visa for Hong Kong, check for instance [here](https://www.hongkong.net/info/visa.html).
 
 
+
 ## Conference Venue
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong, China.
-
 
 ### Venue
 
@@ -58,7 +58,6 @@ Workshops and Tutorials (Nov 3-4): Meeting Rooms 201-203 (2/F), AsiaWorld Expo a
 
 Please refer to the following Google <a href="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en">map</a> for more information on conference venues, accommodations, restaurants and attractions, and transportation information:
 <iframe src="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en" width="640" height="480"></iframe>
-
 
 ### Access to the Venue
 
@@ -91,40 +90,6 @@ Students that participate in the conference can also apply for [accomodation in 
 
 Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions &ndash;Äì only Hong Kong! For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
 
-Below are some third-party apps that may be helpful for planning your stay:
-
-<table>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app1.png"></td>
-<td>Search <i>KMB & LW</i> in App Store <br>
-KMB & Long Win bus route information </td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app2.png"></td>
-<td>Search <i>MTR mobile</i> in App Store <br> 
-MTR route map, fare information, train schedule</td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app3.png"></td>
-<td>Search <i>City bus & New World First Bus</i> in App Store <br>
-City bus & New World First Bus information </td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app4.png"></td>
-<td>Search <i>Myobservatory</i> in ITunes/App Store <br>
-Personalized weather services </td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app5.png"></td>
-<td>Search <i>Discover Hong Kong - Island Walks</i>ù in App Store <br>
-Tourism information </td>
-</tr>
-<tr>
-<td width="64px"><img src="/assets/images/hongkong/app6.png"></td>
-<td>Search: <i>OpenRice Hong Kong</i> in ITunes/App Store <br> 
-Dining Guide</td>
-</tr>
-</table>
 
 
 
