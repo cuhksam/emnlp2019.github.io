@@ -113,7 +113,7 @@ City bus & New World First Bus information </td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app4.png"></td>
-<td>Search <i>Myobservatory</i> in ITunes/App Store <br>
+<td>Search <i>Myobservatory</i> in App Store <br>
 Personalized weather services </td>
 </tr>
 <tr>
