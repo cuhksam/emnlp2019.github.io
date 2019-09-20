@@ -88,8 +88,42 @@ Students that participate in the conference can also apply for [accomodation in 
 
 ## About Hong Kong
 
-Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions &ndash;Äì only Hong Kong! For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
+Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions - only Hong Kong! For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
 
+Below are some third-party apps that may be helpful for planning your stay:
+
+<table>
+<tr>
+<td width="64px"><img src="/assets/images/hongkong/app1.png"></td>
+<td>Search <i>KMB & LW</i> in App Store <br>
+KMB & Long Win bus route information </td>
+</tr>
+<tr>
+<td width="64px"><img src="/assets/images/hongkong/app2.png"></td>
+<td>Search <i>MTR mobile</i> in App Store <br> 
+MTR route map, fare information, train schedule</td>
+</tr>
+<tr>
+<td width="64px"><img src="/assets/images/hongkong/app3.png"></td>
+<td>Search <i>City bus & New World First Bus</i> in App Store <br>
+City bus & New World First Bus information </td>
+</tr>
+<tr>
+<td width="64px"><img src="/assets/images/hongkong/app4.png"></td>
+<td>Search <i>Myobservatory</i> in ITunes/App Store <br>
+Personalized weather services </td>
+</tr>
+<tr>
+<td width="64px"><img src="/assets/images/hongkong/app5.png"></td>
+<td>Search <i>Discover Hong Kong - Island Walks</i>ù in App Store <br>
+Tourism information </td>
+</tr>
+<tr>
+<td width="64px"><img src="/assets/images/hongkong/app6.png"></td>
+<td>Search: <i>OpenRice Hong Kong</i> in ITunes/App Store <br> 
+Dining Guide</td>
+</tr>
+</table>
 
 
 
