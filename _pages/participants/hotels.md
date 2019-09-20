@@ -1,5 +1,5 @@
 ---
-title: Recommended Hotels
+title: Hotels and Transfer
 layout: single
 excerpt: "EMNLP-IJCNLP 2019 recommended hotels"
 permalink: /participants/hotels/
@@ -13,14 +13,13 @@ sidebar:
 EMNLP-IJCNLP 2019 provides a list of hotels remote from the protesting areas. We advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided. 
 
 The information below is provided by China Travel Service (Hong Kong) Limited. 
-
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
-For most hotels, a booking form is provided below, both in an <a href="https://mice.ctshkvip.com/" target="_blank">online</a> version and as a <a href="../../downloads/hotel-booking-form.pdf">pdf</a>/<a href="../../downloads/hotel-booking-form.docx">docx</a> document. The filled document needs to be sent to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com). 
+<b>Booking hotel (+ transfer):</b> For most hotels, a booking form is provided below, both in an <a href="https://mice.ctshkvip.com/" target="_blank">online</a> version and as a <a href="../../downloads/hotel-booking-form.pdf">pdf</a>/<a href="../../downloads/hotel-booking-form.docx">docx</a> document. The filled document needs to be sent to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com). The form also allows transfer options. 
 
-The booking form also allows transfer options. If you already booked a (possibly different) hotel and need only transfer still, please use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
+<b>Booking transfer only:</b> If you already booked a (possibly different) hotel and need only transfer still, please use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
 
-Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are reserved for student participants sharing the room so as to lower their accommodation costs.  Please see the details and application procedures [here](../../downloads/student-accomodation-details.pdf).
+<b>Student accomodation:</b> Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are reserved for student participants sharing the room so as to lower their accommodation costs.  Please see the details and application procedures [here](../../downloads/student-accomodation-details.pdf).
 
 
 
