@@ -10,7 +10,7 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-The following hotels are recommended for participants of EMNLP-IJCNLP 2019. The information on this page is provided by China Travel Service (Hong Kong) Limited. 
+EMNLP-IJCNLP 2019 provides a list of recommended hotels remote from the protesting areas. We advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided. The information on this page is provided by China Travel Service (Hong Kong) Limited. 
 
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
