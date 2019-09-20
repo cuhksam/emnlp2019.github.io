@@ -16,7 +16,9 @@ The information below is provided by China Travel Service (Hong Kong) Limited.
 
 <img src="/assets/images/hotels/china-traveling-service.png" align="center" witdh="517">
 
-For most hotels, a booking form is provided below that needs to be filled sent to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com). 
+For most hotels, a booking form is provided below, both in an <a href="https://mice.ctshkvip.com/" target="_blank">online</a> version and as a <a href="../../downloads/hotel-booking-form.pdf">pdf</a>/<a href="../../downloads/hotel-booking-form.docx">docx</a> document. The filled document needs to be sent to [emnlp-ijcnlp2019@hkcts.com](mailto:emnlp-ijcnlp2019@hkcts.com). 
+
+The booking form also allows transfer options. If you already booked a (possibly different) hotel and need only transfer still, please use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
 
 Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are reserved for student participants sharing the room so as to lower their accommodation costs.  Please see the details and application procedures [here](../../downloads/student-accomodation-details.pdf).
 
@@ -48,7 +50,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 ## 2. Hong Kong SkyCity Marriott Hotel (5*)
 
-<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 
 <table>
 <tr>
@@ -71,7 +73,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 ## 3. Novotel City Gate Hong Kong (4*) 
 
-<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 
 <table>
 <tr>
@@ -96,7 +98,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 ## 4. Hotel Ease, Tsuen Wan (4*)
 
-<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 
 <table>
 <tr>
@@ -119,7 +121,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 ## 5. Hotel COZi Oasis (4*)
 
-<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 
 <table>
 <tr>
@@ -143,7 +145,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 ## 6. Dorsett, Tsuen Wan (4*)
 
-<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 
 <table>
 <tr>
@@ -167,7 +169,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 ## 7. Panda Hotel (4*)
 
-<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 
 <table>
 <tr>
@@ -191,7 +193,7 @@ Some guestrooms in the [Rambler Garden Hotel](#8-rambler-garden-hotel-3) are res
 
 ## 8. Rambler Garden Hotel (3*)
 
-<b>Booking Method:</b> Form (<a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)<br>
+<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)<br>
 <b>Student accommodation:</b> <a href="https://docs.google.com/forms/d/e/1FAIpQLSe179uSeJNCLvFOL7l8LjnTcSwI1JKINUsvdPrDxAhTR_dayw/viewform" target="_blank">Application form</a> (see details here: <a href="../../downloads/student-accomodation-details.pdf">PDF</a>)
 
 <table>
