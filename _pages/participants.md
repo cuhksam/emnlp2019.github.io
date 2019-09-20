@@ -6,33 +6,6 @@ permalink: /participants
 sidebar: 
     nav: "participants"
 ---
-<!-- PUT INSIDE UPPER PART
-hongkong:
-  - url: "/assets/images/hongkong/xxxxxxxxx.jpg"
-    image_path: "/assets/images/hongkong/xxxxxxxxxxx.jpg"
-    alt: "XXXXXX"
-    title: "Grand Palace &nbsp;&nbsp; (&copy; xxxxx)"
-  - url: "/assets/images/hongkong/xxxxxxxxx.jpg"
-    image_path: "/assets/images/hongkong/xxxxxxxxxxx.jpg"
-    alt: "XXXXXX"
-    title: "Grand Palace &nbsp;&nbsp; (&copy; xxxxx)"
-asiaworldexpo:
-  - url: "/assets/images/hongkong/xxxxxxxxx.jpg"
-    image_path: "/assets/images/hongkong/xxxxxxxxxxx.jpg"
-    alt: "XXXXXX"
-    title: "Grand Palace &nbsp;&nbsp; (&copy; xxxxx)"
-social:
-  - url: "/assets/images/hongkong/xxxxxxxxx.jpg"
-    image_path: "/assets/images/hongkong/xxxxxxxxxxx.jpg"
-    alt: "XXXXXX"
-    title: "Grand Palace &nbsp;&nbsp; (&copy; xxxxx)"
-floorplan:
-  - url: /downloads/xxxxxx.pdf
-  - url: "/assets/images/hongkong/xxxxxxxxx.jpg"
-    image_path: "/assets/images/hongkong/xxxxxxxxxxx.jpg"
-    alt: "XXXXXX"
-    title: "Grand Palace &nbsp;&nbsp; (&copy; xxxxx)"
--->
 
 
 {% include base_path %}
@@ -42,11 +15,6 @@ floorplan:
 Below, all information for participants are given that are available so far. More details to be announced.
 
 
-<!--
-## About Hong Kong
-
-TBD
--->
 
 ## An Update on Conference Organization
 
@@ -96,22 +64,20 @@ Please refer to the following Google <a href="https://www.google.com/maps/d/embe
 
 Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Kong International Airport, with a built-in Airport Express railway station, as well as other transportation facilities. You may come to AsiaWorld-Expo by your preferred transportation means:
 
-* By MTR
-  * Take the Airport Express line to AsiaWorld Expo Station, which is about 2 mins ride from Hong Kong International Airport. A single trip fare is HK$ 6.0.
+<b>By MTR</b>
+- Take the Airport Express line to AsiaWorld Expo Station, which is about 2 mins ride from Hong Kong International Airport. A single trip fare is HK$ 6.0.
 
-* By Bus
-  * Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo, which is about 20 mins ride. A single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.
-  * Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo.  However, it will be operated in specified period only.  We will update the operation date once available.
+<b>By Bus</b>
+- Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo, which is about 20 mins ride. A single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.
+- Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo. However, it will be operated in specified period only. We will update the operation date once available.
 
 
 
 ## Accommodation
 
-EMNLP-IJCNLP 2019 provides a [list of recommended hotels](./participants/hotels/) remote from the protesting areas. We advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided. Information on how to book the hotels is provided in the beginning of the list.
+EMNLP-IJCNLP 2019 provides a [list of recommended hotels](./participants/hotels/) remote from the protesting areas. We advise participants to book one of these hotels. Some hotels are close to the venue. For hotels closer to downtown, coaches will be provided. Information on how to book the hotels is found in the beginning of the list.
 
 If you already booked a hotel but still need transfer, use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
-
-
 
 ### Accomodation for Student Participants
 
@@ -121,41 +87,39 @@ Students that participate in the conference can also apply for [accomodation in 
 
 ## About Hong Kong
 
-Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions ‚Äì only Hong Kong!
-
-For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
+Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions &ndash;Äì only Hong Kong! For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
 
 Below are some third-party apps that may be helpful for planning your stay:
 
 <table>
 <tr>
-<td width="128px"><img src="/assets/images/hongkong/app1.png"></td>
-<td>Search: ‚ÄúKMB & LW‚Äù in ITunes/App Store <br>
+<td width="64px"><img src="/assets/images/hongkong/app1.png"></td>
+<td>Search: "ÄúKMB & LW"Äù in App Store <br>
 KMB & Long Win bus route information </td>
 </tr>
 <tr>
-<td width="128px"><img src="/assets/images/hongkong/app2.png"></td>
-<td>Search: ‚ÄúMTR mobile‚Äù in ITunes/App Store <br> 
+<td width="64px"><img src="/assets/images/hongkong/app2.png"></td>
+<td>Search: "MTR mobile"Äù in App Store <br> 
 MTR route map, fare information, train schedule</td>
 </tr>
 <tr>
-<td width="128px"><img src="/assets/images/hongkong/app3.png"></td>
-<td>Search: ‚ÄúCity bus & New World First Bus‚Äù in ITunes/App Store <br>
+<td width="64px"><img src="/assets/images/hongkong/app3.png"></td>
+<td>Search: ‚Ä"City bus & New World First Bus‚Ä" in App Store <br>
 City bus & New World First Bus information </td>
 </tr>
 <tr>
-<td width="128px"><img src="/assets/images/hongkong/app4.png"></td>
-<td>Search: ‚ÄúMyobservatory‚Äù in ITunes/App Store <br>
+<td width="64px"><img src="/assets/images/hongkong/app4.png"></td>
+<td>Search: "Myobservatory" in ITunes/App Store <br>
 Personalized weather services </td>
 </tr>
 <tr>
-<td width="128px"><img src="/assets/images/hongkong/app5.png"></td>
-<td>Search: ‚ÄúDiscover Hong Kong - Island Walks‚Äù in ITunes/App Store <br>
+<td width="64px"><img src="/assets/images/hongkong/app5.png"></td>
+<td>Search: "Discover Hong Kong - Island Walks"ù in App Store <br>
 Tourism information </td>
 </tr>
 <tr>
-<td width="128px"><img src="/assets/images/hongkong/app6.png"></td>
-<td>Search: ‚ÄúOpenRice Hong Kong‚Äù in ITunes/App Store <br> 
+<td width="64px"><img src="/assets/images/hongkong/app6.png"></td>
+<td>Search: "OpenRice Hong Kong" in ITunes/App Store <br> 
 Dining Guide</td>
 </tr>
 </table>
