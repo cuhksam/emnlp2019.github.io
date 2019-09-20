@@ -65,9 +65,11 @@ Please refer to the following Google <a href="https://www.google.com/maps/d/embe
 Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Kong International Airport, with a built-in Airport Express railway station, as well as other transportation facilities. You may come to AsiaWorld-Expo by your preferred transportation means:
 
 <b>By MTR</b>
+
 - Take the Airport Express line to AsiaWorld Expo Station, which is about 2 mins ride from Hong Kong International Airport. A single trip fare is HK$ 6.0.
 
 <b>By Bus</b>
+
 - Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo, which is about 20 mins ride. A single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.
 - Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo. However, it will be operated in specified period only. We will update the operation date once available.
 
@@ -94,17 +96,17 @@ Below are some third-party apps that may be helpful for planning your stay:
 <table>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app1.png"></td>
-<td>Search: "ÄúKMB & LW"Äù in App Store <br>
+<td>Search: "KMB & LW" in App Store <br>
 KMB & Long Win bus route information </td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app2.png"></td>
-<td>Search: "MTR mobile"Äù in App Store <br> 
+<td>Search: "MTR mobile" in App Store <br> 
 MTR route map, fare information, train schedule</td>
 </tr>
 <tr>
 <td width="64px"><img src="/assets/images/hongkong/app3.png"></td>
-<td>Search: ‚Ä"City bus & New World First Bus‚Ä" in App Store <br>
+<td>Search: "City bus & New World First Bus" in App Store <br>
 City bus & New World First Bus information </td>
 </tr>
 <tr>
@@ -197,18 +199,15 @@ Here is the <a href="downloads/childcare-policy.pdf">full policy</a>, and please
 
 Important Dates:
 
-* Application deadline: 19 September 2019
-
-* Notification of acceptance: 26 September 2019           
+- Application deadline: 19 September 2019
+- Notification of acceptance: 26 September 2019           
 
  
 For those who are bringing their children to the conference and are looking for local childcare services, the following links may be of use:
 
-  * [https://www.babysitter.hk/en/](https://www.babysitter.hk/en/)
-
-  * [http://www.rent-a-mum.com/](http://www.rent-a-mum.com/)
-
-  * [http://dreamcare.com.hk/temporary-nanny/](http://dreamcare.com.hk/temporary-nanny/)
+- [https://www.babysitter.hk/en/](https://www.babysitter.hk/en/)
+- [http://www.rent-a-mum.com/](http://www.rent-a-mum.com/)
+- [http://dreamcare.com.hk/temporary-nanny/](http://dreamcare.com.hk/temporary-nanny/)
 
 Attendees are responsible for making their own arrangements for childcare and will be reimbursed after the conference upon receipt of necessary supporting documentation.
 
