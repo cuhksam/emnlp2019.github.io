@@ -63,7 +63,7 @@ participants:
      children:
        - title: "Information for Participants"
          url: /participants
-       - title: "Recommended Hotels"
+       - title: "Hotels and Transfer"
          url: /participants/hotels/
 #       - title: "Social Event"
 #         url: /participants/social/
