@@ -75,6 +75,12 @@ Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Ko
 
 
 
+## About Hong Kong
+
+Discover a diverse modern metropolis steeped in unique blends of Eastern and Western traditions &ndash; only Hong Kong! For tourism information, please visit the website of the <a href="http://www.discoverhongkong.com/">Hong Kong Tourism Board</a> or view videos at the Hong Kong's <a href="http://www.youtube.com/user/HongKong#p/u/12/dNAs8XqZaLE ">Youtube Channel</a>. 
+
+
+
 
 ## Accommodation
 
@@ -162,7 +168,7 @@ Following the family-friendly policy of ACL, EMNLP-IJCNLP 2019 is happy to annou
  
 Here is the <a href="downloads/childcare-policy.pdf">full policy</a>, and please fill out the application form <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__oehnzNUNjEzM0cyM1JTS001WEZWVTJFTks2QlZGQy4u">here</a>.
 
-### Important Dates
+<b>Important Dates</b>
 
 <table>
     <tbody>
@@ -193,7 +199,7 @@ Attendees are responsible for making their own arrangements for childcare and wi
 
 EMNLP 2019 seeks student volunteers who will receive a free registration to the main conference, tutorials & workshops. In addition, we also plan to offer scholarships to students as well as non-students with a demonstrated financial need. For more details, please refer to the <a href="./downloads/joint-call-scholarship-volunteers.pdf" target="_blank">Joint Call for Travel Scholarship and Student Volunteer Applications</a>. After reading the policy in detail to determine your eligibility, you can fill out the application form and include a CV through softconf <a href="https://www.softconf.com/emnlp2019/travel_support">here</a>, by making a new submission. If you have further questions, please contact us at <a href="mailto:emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com">emnlp-ijcnlp-2019-volunteer-scholarship@googlegroups.com</a>.
 
-### Important Dates
+<b>Important Dates</b>
 
 <table>
     <tbody>
