@@ -11,11 +11,12 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-Below, all information for participants are given that are available so far. More details to be announced.
+Below, you find diverse useful information for participants of the EMNLP-IJCNLP 2019. More information will be added as soon as it is available..
 
 
 
-## An Update on Conference Organization
+
+## Update on Conference Organization
 
 (August 23, 2019)
 
@@ -71,5 +72,21 @@ Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Ko
 
 - Take Bus Route No. S1 at Tung Chung Station to AsiaWorld Expo, which is about 20 mins ride. A single trip fare is HK$ 3.5.  This is a circular line running from Tung Chung Station to Airport and back to Tung Chung Station with stops at Hong Kong International Airport and AsiaWorld Expo.
 - Bus Route No. X1 is the express bus running from Tung Chung Station to/from AsiaWorld Expo. However, it will be operated in specified period only. We will update the operation date once available.
+
+
+
+
+## Accommodation
+
+EMNLP-IJCNLP 2019 provides a [list of recommended hotels](./participants/hotels/) remote from the protesting areas. We advise participants to book one of these hotels. Some hotels are close to the venue. For hotels closer to downtown, coaches will be provided. Information on how to book the hotels is found in the beginning of the list.
+
+If you already booked a hotel but still need transfer, use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
+
+### Accomodation for Student Participants
+
+Students that participate in the conference can also apply for [accomodation in a shared room](../downloads/student-accomodation-details.pdf) at the [Rambler Garden Hotel](./participants/hotels/#8-rambler-garden-hotel-3) at a reduced rate.
+
+
+
 
 
