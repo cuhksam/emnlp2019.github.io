@@ -158,10 +158,8 @@ TBD
 
 ## Childcare Grants
 
-
 Following the family-friendly policy of ACL, EMNLP-IJCNLP 2019 is happy to announce Childcare Grants offered to participants with young children. Grants of up to US$400 per family are available for attendees who incur extra childcare expenses during their conference travel.
  
-
 Here is the <a href="downloads/childcare-policy.pdf">full policy</a>, and please fill out the application form <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__oehnzNUNjEzM0cyM1JTS001WEZWVTJFTks2QlZGQy4u">here</a>.
 
 ### Important Dates
@@ -218,12 +216,6 @@ EMNLP 2019 seeks student volunteers who will receive a free registration to the 
 
 
 
-
-<!--
-## Visa Information
-
-TBD
--->
 
 
 
