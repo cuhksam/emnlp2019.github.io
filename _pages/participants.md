@@ -89,7 +89,7 @@ Here is the <a href="downloads/childcare-policy.pdf">full policy</a>, and please
         <tr style="background-color: #eee;">
             <td>Notification of acceptance</td>
             <td>Thursday</td>
-            <td>September 16, 2019</td>
+            <td>September 26, 2019</td>
         </tr>      
     </tbody>
 </table>
