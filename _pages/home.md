@@ -35,6 +35,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**September 21, 2019**.
+The travel scholarships &amp; student volunteer notification has been postponed to September 26. 
+
 **September 20, 2019**.
 We also provide online forms for [hotels and transfer](./participants/hotels/) now.
 
@@ -197,19 +200,19 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr>
           <td><a href="./participants#childcare-grants">Childcare grant application</a> due</td>
           <td style="width: 30%;">Thursday</td>
-          <td><span style="color:red">September 19, 2019</span></td>
+          <td><strike>September 19, 2019</strike></td>
         </tr>
         <tr style="background-color: #eee;">
           <td>Travel scholarships &amp; student volunteer notification</td>
           <td style="width: 30%;">Thursday</td>
-          <td>September 19, 2019</td>
+          <td>September <strike>19</strike> 26, 2019</td>
         </tr>
         
 <!--
         <tr>
             <td style="width: 40%;">Early Registration Deadline</td>
             <td style="width: 30%;">Monday</td>
-            <td>September 19, 2019</td>
+            <td><span style="color:red">September 19, 2019</span></td>
         </tr>
 -->
         <tr>
