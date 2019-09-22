@@ -27,17 +27,17 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
 <table>
   <thead>
   <tr style="background-color: cornflowerblue">
-    <th style="color: fff;">Type</th>
-    <th style="color: fff;">Register</th>
-    <th style="color: fff;">Full package</th>
-    <th style="color: fff;">Main conference</th>
-    <th style="color: fff;">Main + 1 Day</th>
-    <th style="color: fff;">1 Day</th>
-    <th style="color: fff;">2 Days</th>
+    <th style="color: white;">Type</th>
+    <th style="color: white;">Register</th>
+    <th style="color: white;">Full package</th>
+    <th style="color: white;">Main conference</th>
+    <th style="color: white;">Main + 1 Day</th>
+    <th style="color: white;">1 Day</th>
+    <th style="color: white;">2 Days</th>
   </tr>
 </thead>
   <tr style="background-color: LightBlue;">
-    <td rowspan="3" style="background-color: #eee; font-weight: bold;  vertical-align:top;" >Regular</td>
+    <td rowspan="3" style="background-color: LightBlue; font-weight: bold;  vertical-align:top;" >Regular</td>
     <td>Early</td>
     <td class="amount">$995</td>
     <td class="amount">$685</td>
@@ -45,7 +45,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$220</td>
     <td class="amount">$330</td>
   </tr>
-  <tr style="background-color: LightSkyBlue;">
+  <tr style="background-color: LightBlue;">
     <td>Late</td>
     <td class="amount">$1120</td>
     <td class="amount">$800</td>
@@ -62,8 +62,8 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$330</td>
     <td class="amount">$495</td>
   </tr>
-  <tr style="background-color: LightSkyBlue;">
-    <td rowspan="3" style="background-color: #fff; font-weight: bold;  vertical-align:top;">Student</td>
+  <tr style="background-color: LightBlue;">
+    <td rowspan="3" style="background-color: LightBlue; font-weight: bold;  vertical-align:top;">Student</td>
     <td>Early</td>
     <td class="amount">$470</td>
     <td class="amount">$315</td>
@@ -80,7 +80,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$195</td>
     <td class="amount">$310</td>
   </tr>
-  <tr style="background-color: LightSkyBlue;">
+  <tr style="background-color: LightBlue;">
     <!-- <td>Student</td> !-->
     <td>Onsite</td>
     <td class="amount">$690</td>
