@@ -37,7 +37,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
   </tr>
 </thead>
   <tr style="background-color: Lavender;">
-    <td rowspan="3" style="background-color: LightBlue; font-weight: bold;  vertical-align:top;" >Regular</td>
+    <td rowspan="3" style="background-color: Lavender; font-weight: bold;  vertical-align:top; border-bottom: 1px solid #000;" >Regular</td>
     <td>Early</td>
     <td class="amount">$995</td>
     <td class="amount">$685</td>
@@ -63,7 +63,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$495</td>
   </tr>
   <tr style="background-color: Lavender;">
-    <td rowspan="3" style="background-color: LightBlue; font-weight: bold;  vertical-align:top;">Student</td>
+    <td rowspan="3" style="background-color: Lavender; font-weight: bold; vertical-align:top; border-bottom: 1px solid #000;">Student</td>
     <td>Early</td>
     <td class="amount">$470</td>
     <td class="amount">$315</td>
