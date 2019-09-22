@@ -27,13 +27,13 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
 <table>
   <thead>
   <tr style="background-color: cornflowerblue">
-    <th style="text-align: left;">Type</th>
-    <th style="text-align: left">Register</th>
-    <th>Full package</th>
-    <th>Main conference</th>
-    <th>Main plus one day</th>
-    <th>One day</th>
-    <th>Two days</th>
+    <th style="color: fff" style="text-align: left;">Type</th>
+    <th style="color: fff"style="text-align: left">Register</th>
+    <th style="color: fff">Full package</th>
+    <th style="color: fff">Main conference</th>
+    <th style="color: fff">Main + 1 Day</th>
+    <th style="color: fff">1 Day</th>
+    <th style="color: fff">2 Days</th>
   </tr>
 </thead>
   <tr style="background-color: #eee;">
