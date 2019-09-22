@@ -36,7 +36,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <th style="color: white;">2 Days</th>
   </tr>
 </thead>
-  <tr style="background-color: LightBlue;">
+  <tr style="background-color: Lavender;">
     <td rowspan="3" style="background-color: LightBlue; font-weight: bold;  vertical-align:top;" >Regular</td>
     <td>Early</td>
     <td class="amount">$995</td>
@@ -45,7 +45,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$220</td>
     <td class="amount">$330</td>
   </tr>
-  <tr style="background-color: LightBlue;">
+  <tr style="background-color: Lavender;">
     <td>Late</td>
     <td class="amount">$1120</td>
     <td class="amount">$800</td>
@@ -53,7 +53,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$275</td>
     <td class="amount">$415</td>
   </tr>
-  <tr style="background-color: LightBlue;">
+  <tr style="background-color: Lavender; border-bottom: 1px solid #000;">
     <!-- <td>Regular</td> !-->
     <td>Onsite</td>
     <td class="amount">$1315</td>
@@ -62,7 +62,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$330</td>
     <td class="amount">$495</td>
   </tr>
-  <tr style="background-color: LightBlue;">
+  <tr style="background-color: Lavender;">
     <td rowspan="3" style="background-color: LightBlue; font-weight: bold;  vertical-align:top;">Student</td>
     <td>Early</td>
     <td class="amount">$470</td>
@@ -71,7 +71,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$165</td>
     <td class="amount">$250</td>
   </tr>
-  <tr style="background-color: LightBlue;">
+  <tr style="background-color: Lavender;">
     <!-- <td>Student</td> !-->
     <td>Late</td>
     <td class="amount">$580</td>
@@ -80,7 +80,7 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
     <td class="amount">$195</td>
     <td class="amount">$310</td>
   </tr>
-  <tr style="background-color: LightBlue;">
+  <tr style="background-color: Lavender; border-bottom: 1px solid #000;">
     <!-- <td>Student</td> !-->
     <td>Onsite</td>
     <td class="amount">$690</td>

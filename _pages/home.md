@@ -35,6 +35,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**September 22, 2019**.
+The EMNLP-IJCNLP 2019 [registration fees](./registration) have now been defined. Registration will open in a few days.
+
 **September 21, 2019**.
 The travel scholarships &amp; student volunteer notification has been postponed to September 26. 
 
@@ -46,9 +49,6 @@ For students participating in the conference, [accomodation](./participants#acco
 
 **September 15, 2019**.
 We have published a [list of hotels](./participants/hotels/) remote from the protesting areas and advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided. 
-
-**September 15, 2019**.
-The [registration](./registration) is going to open within the next week.
 
 **September 10, 2019**.
 The dates of the [workshops](./program/workshops/) have been assigned.
@@ -70,6 +70,9 @@ Important [visa information](./participants#visa-information) now available.
 
 
 <!-- OUTDATED NEWS
+
+**September 15, 2019**.
+The [registration](./registration) is going to open within the next week.
 
 **August 23, 2019**.
 See our [update on conference organization](./participants#an-update-on-conference-organization) in light of the current situation in Hong Kong.
