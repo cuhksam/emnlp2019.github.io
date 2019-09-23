@@ -187,6 +187,7 @@ Visiting AsiaWorld-Expo is easy. It is strategically integrated with the Hong Ko
 
 
 
+
 ## Meal Information
 
 The following catered events are included in your registration fee:
@@ -194,6 +195,10 @@ The following catered events are included in your registration fee:
 - Two coffee breaks per day on all five conference days.
 - Canap&eacute;s at the [welcome reception](#welcome-reception) on Monday, November 4th, for registered main-conference participants.
 - A buffet dinner as part of the [social event](#social-event) on Wednesday, November 6th, for registered main-conference participants.
+
+For lunch, participants may order lunch boxes or visit one of the [nearby restaurants](../downloads/nearby-restaurants-information.pdf).
+
+
 
 
 ## Welcome Reception
@@ -204,6 +209,7 @@ Catch up with your colleagues at the Welcome Reception in the conference venue, 
 - AsiaWorld Summit (Hall 2) and East Concourse, AsiaWorld Expo
 
 <img src="./assets/images/hongkong/welcome-reception.jpg">
+
 
 
 
