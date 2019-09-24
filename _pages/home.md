@@ -36,7 +36,7 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 **September 22, 2019**.
-The EMNLP-IJCNLP 2019 [registration fees](./registration) have now been defined. Registration will open in a few days.
+The EMNLP-IJCNLP 2019 registration is now open. [Directly register](https://aclweb.org/conference/emnlp-2019-conference-registration/) or first see [detailed registration information](./registration).
 
 **September 21, 2019**.
 The travel scholarships &amp; student volunteer notification has been postponed to September 26. 
@@ -70,6 +70,8 @@ Important [visa information](./participants#visa-information) now available.
 
 
 <!-- OUTDATED NEWS
+**September 22, 2019**.
+The EMNLP-IJCNLP 2019 [registration fees](./registration) have now been defined. Registration will open in a few days.
 
 **September 15, 2019**.
 The [registration](./registration) is going to open within the next week.
