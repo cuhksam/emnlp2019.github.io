@@ -9,20 +9,25 @@ sidebar: false
 
 {% include toc icon="gears" %}
 
-The EMNLP-IJCNLP 2019 conference registration is not open yet. For your information, below you find the planned timeline as well as the registration fees from EMNLP 2018. We hope to keep the fees similar this year. 
+The EMNLP-IJCNLP 2019 conference registration is now open. Below, you find the registration link, timeline, and confirmed  fees.  
 
 
-## Planned Timeline
+## Conference Registration
 
-- <em>Launch of registration form:</em> Mid to late September 
-
-- <em>Early registrations due:</em> October 10
-
-- <em>Late registrations due:</em> October 24
+[Register here](https://aclweb.org/conference/emnlp-2019-conference-registration/)
 
 
 
-## EMNLP-IJCNLP 2019 Registration Fees
+
+## Registration Timeline
+
+- Early Registration: Through 11:59PM EDT October 10, 2019
+- Late Registration: October 11, 2019 to 11:59PM EDT October 24, 2019
+- Onsite Registration: Begins November 3, 2019
+
+
+
+## Confirmed Registration Fees
 
 <table>
   <thead>
