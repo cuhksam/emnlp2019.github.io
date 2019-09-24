@@ -97,8 +97,9 @@ The EMNLP-IJCNLP 2019 conference registration is not open yet. For your informat
 - <em>1-Day</em> entitles the attendee to attend only one day of tutorials and workshops (no main conference). 
 - <em>2-Day</em> entitles the attendee to attend both workshops and tutorials days but not the main conference.
 
+<!--
 <b>Note.</b> No registration fee needs to by paid by staff and volunteers as well as sponsors and exhibitors.
-
+-->
 
 
 
