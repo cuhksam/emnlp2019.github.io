@@ -12,9 +12,9 @@ sidebar: false
 The EMNLP-IJCNLP 2019 conference registration is now open. Below, you find the registration link, timeline, and confirmed  fees.  
 
 
-## Conference Registration
+## Registration
 
-[Register here](https://aclweb.org/conference/emnlp-2019-conference-registration/)
+[Register here](https://aclweb.org/conference/emnlp-2019-conference-registration/) for the EMNLP-IJCNLP 2019 and its collocated events.
 
 
 
