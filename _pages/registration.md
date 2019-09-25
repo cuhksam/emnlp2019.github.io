@@ -9,13 +9,15 @@ sidebar: false
 
 {% include toc icon="gears" %}
 
+<font color="red">Important: Each paper in the proceedings (main conference or workshop) needs to (i) have at least one author registered by the early registration deadline and (ii) have been presented at the conference, in order for the paper to be included in the proceedings.</font>  
+
 The EMNLP-IJCNLP 2019 conference registration is now open. Below, you find the registration link as well as detailed information about deadlines, fees, and cancellation.
-  
+
 
 
 ## Registration
 
-[Register here](https://aclweb.org/conference/emnlp-2019-conference-registration/) for the EMNLP-IJCNLP 2019 and its collocated events.
+[Register here](https://aclweb.org/conference/emnlp-2019-conference-registration/) for EMNLP-IJCNLP 2019 and its collocated events.
 
 
 
