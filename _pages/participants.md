@@ -243,6 +243,28 @@ There's also a web version of the guide available <a href="http://guidebook.com/
 
 
 
+
+## Remote presentations
+
+EMNLP-IJCNLP 2019 will be accepting applications for remote presentations in circumstances where none of the authors can attend the conference due to reasons such as:
+
+- illness, disability, or any other reason that physically prevent attending,
+- visa issues or government travel restrictions that legally prevent attending,
+- special circumstances such as death in immediate family.
+
+Please contact the remote presentation chair to apply for remote presentation at ([emnlp-ijcnlp-2019-remote-presentation@googlegroups.com](mailto:emnlp-ijcnlp-2019-remote-presentation@googlegroups.com)), as per the following application procedure:
+
+1. Register for the conference normally.
+2. Send your application for remote presentation to the remote presentation chair at ([emnlp-ijcnlp-2019-remote-presentation@googlegroups.com](mailto:emnlp-ijcnlp-2019-remote-presentation@googlegroups.com)). Please include a detailed explanation of why you are unable to attend the conference.
+3. Upon acceptance of your request, please follow the additional instructions you will be provided with.
+
+Each request will be carefully considered on a case-by-case basis by the remote presentation chair. Please refrain from requesting remote presenting for personal reasons or for reasons regarding the demonstrations in Hong Kong. Please be assured that the conference venue, social event venue, and accommodation are all remote from affected areas.
+
+There are circumstances where remote presentation is the only possibility, and we strongly believe these should be accommodated out of fairness and inclusivity. However, excessive remote presentations change the character of the conference, and we wish to provide a positive experience for the conference attendees. We kindly ask for your understanding in case your request for remote presentation is rejected.
+
+
+
+
 <!--
 ## Instructions for Presenters
 

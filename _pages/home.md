@@ -36,6 +36,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 **September 22, 2019**.
+We published our policy regarding [remote presentations](./participants#remote-presentations).
+
+**September 22, 2019**.
 The EMNLP-IJCNLP 2019 registration is now open. [Directly register](https://aclweb.org/conference/emnlp-2019-conference-registration/) or first see [detailed registration information](./registration).
 
 **September 21, 2019**.
