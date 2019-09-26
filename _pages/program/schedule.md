@@ -860,7 +860,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - TalkDown: A Corpus for Condescension Detection in Context (&#35;1526)
    - Adversarial Removal of Demographic Attributes Revisited (&#35;2101)
    - A deep-learning framework to detect sarcasm targets (&#35;2170)
-   - In Plain Sight: Media Bias through the Lens of Factual Reporting (&#35;2759)
+   - In Plain Sight: Media Bias through the Lens of Factual Reporting (&#35;2759) 
    - Incorporating Label Dependencies in Multilabel Stance Detection (&#35;3333)
    - Investigating Sports Commentator Bias within a Large Corpus of American Football Broadcasts (&#35;3345)
    - Charge-Based Prison Term Prediction with Deep Gating Network (&#35;759)
