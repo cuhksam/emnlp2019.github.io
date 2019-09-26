@@ -16,8 +16,6 @@ sidebar:
 This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with basic information on the dates of the talk and poster sessions. More details will be provided later. 
 
 
-
-
 ### Main Conference Day 1 (Tuesday, November 5, 2019)
 - <i>08:45&dash;09:00 :</i> Opening Remarks
 - <i>09:00&dash;10:00 :</i> Keynote I: Noam Slonim
@@ -779,7 +777,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Has Pepperoni and Still Vegan?! Improving Answer Consistency in VQA through Entailed Question Generation (#424)
    - GeoSQA: A Benchmark for Scenario-based Question Answering in the Geography Domain at High School Level (#961)
    - Revisiting the Evaluation of Theory of Mind through Question Answering (#1069)
-   - Multi_-passage BERT: A Globally Normalized BERT Model for Open_-domain Question Answering (#1319)
+   - Multi-passage BERT: A Globally Normalized BERT Model for Open-domain Question Answering (#1319)
    - A Span-Extraction Dataset for Chinese Machine Reading Comprehension (#2131)
    - CLAR: Contextualized and Lexicalized Aspect Representation for Non-factoid Question Answering (#2177)
    - Machine Reading Comprehension Using Structural Knowledge Graph-aware Network (#2229)
