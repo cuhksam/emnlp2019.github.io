@@ -35,6 +35,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**September 26, 2019**.
+A first version of the [main conference schedule](./program/schedule/) is out. 
+
 **September 23, 2019**.
 We published our policy regarding [remote presentations](./participants#remote-presentations).
 
