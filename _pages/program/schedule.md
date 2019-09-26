@@ -1,7024 +1,884 @@
-<!-- 
-NOTICE: 
-Content below still from 2018. 
-Once updated, comment in the permalink to make the page being created.
-Comment in the page in navigation.xml to make it appear in the menu.
--->
-
 ---
-title: Conference Schedule
-layout: schedule
-excerpt: "EMNLP 2018 conference schedule."
+title: Schedule
+layout: single
+excerpt: "EMNLP-IJCNLP 2019 Conference Schedule."
 
-<!-- COMMENTED OUT, SO THE PAGE IS NOT CREATED --
-permalink: /schedule
--->
+permalink: /program/schedule/
 
-sidebar: false
-script: |
-    <script type="text/javascript">
-
-        sessionInfoHash = {};
-        paperInfoHash = {};
-        chosenPapersHash = {};
-        chosenTutorialsHash = {};
-        chosenWorkshopsHash = {};
-        chosenPostersHash = {};
-        plenarySessionHash = {};
-        includePlenaryInSchedule = true;
-        helpShown = false;
-
-        var instructions = "<div id=\"popupInstructionsDiv\"><div id=\"title\">Help</div><div id=\"popupInstructions\"><ul><li>Click on a the \"<strong>+</strong>\" button or the title of a session to toggle it. Click the <strong>\"Expand All Sessions ↓\"</strong> button to expand <em>all</em> sessions in one go. Click again to collapse them. </li> <li>Click on a tutorial/paper/poster to toggle its selection. </li> <li>You can select more than one paper for a time slot. </li> <li>Click the &nbsp;<i class=\"fa fa-file-pdf-o\" aria-hidden=\"true\"></i>&nbsp; icon for the anthology PDF. </li> <li>Click the <strong>\"Download PDF\"</strong> button at the bottom to download your customized PDF. </li> <li>To expand a parallel sessions simultaneously, hold Shift and click on any of them. </li> <li>On non-mobile devices, hovering on a paper for a time slot highlights it in yellow and its conflicting papers in red. Hovering on papers already selected for a time slot (or their conflicts) highlights them in green. </li> <li>Hover over the time for any session to see its day and date as a tooltip.</li> <li>While saving the generated PDF on mobile devices, its name cannot be changed.</li> </ul></div></div>";
-
-        function padTime(str) {
-            return String('0' + str).slice(-2);
-        }
-
-        function formatDate(dateObj) {
-            return dateObj.toLocaleDateString() + ' ' + padTime(dateObj.getHours()) + ':' + padTime(dateObj.getMinutes());
-        }
-
-        function generatePDFfromTable() {
-
-            /* clear the hidden table before starting */
-            clearHiddenProgramTable();
-
-            /* now populate the hidden table with the currently chosen papers */
-            populateHiddenProgramTable();
-
-            var doc = new jsPDF('l', 'pt', 'letter');
-            doc.autoTable({
-                fromHtml: "#hidden-program-table",
-                pagebreak: 'avoid',
-                avoidRowSplit: true,
-                theme: 'grid',
-                startY: 70, 
-                showHead: false,
-                styles: {
-                    font: 'times',
-                    overflow: 'linebreak',
-                    valign: 'middle',
-                    lineWidth: 0.4,
-                    fontSize: 11
-                },
-                 columnStyles: {
-                    0: { fontStyle: 'bold', halign: 'right', cellWidth: 70 },
-                    1: { cellWidth: 110 },
-                    2: { fontStyle: 'italic', cellWidth: 530 }
-                },
-                addPageContent: function (data) {
-                    /* HEADER only on the first page */
-                    var pageNumber = doc.internal.getCurrentPageInfo().pageNumber;
-
-                    if (pageNumber == 1) {
-                        doc.setFontSize(16);
-                        doc.setFontStyle('normal');
-                        doc.text("EMNLP 2018 Schedule", (doc.internal.pageSize.width - (data.settings.margin.left*2))/2 - 30, 50);
-                    }
-
-                    /* FOOTER on each page */
-                    doc.setFont('courier');
-                    doc.setFontSize(8);
-                    doc.text('(Generated via http://emnlp2018.org/schedule)', data.settings.margin.left, doc.internal.pageSize.height - 10);
-                },
-                drawCell: function(cell, data) {
-                    var cellClass = cell.raw.content.className;
-                    /* center the day header */
-                    if (cellClass == 'info-day') {
-                        cell.textPos.x = (530 - data.settings.margin.left)/2 + 120;
-                    }
-                    /* split long plenary session text */
-                    else if (cellClass == 'info-plenary') {
-                        cell.text = doc.splitTextToSize(cell.text.join(' '), 530, {fontSize: 11});
-                    }
-                },
-                createdCell: function(cell, data) {
-                    var cellClass = cell.raw.content.className;
-                    var cellText = cell.text[0];
-                    /* */
-                    if (cellClass == 'info-day') {
-                        cell.styles.fontStyle = 'bold';
-                        cell.styles.fontSize = 12;
-                        cell.styles.fillColor = [187, 187, 187];
-                    }
-                    else if (cellClass == 'info-plenary') {
-                        cell.styles.fontSize = 11;
-                        if (cellText == "Break" || cellText == "Lunch" || cellText == "Breakfast" || cellText == "Coffee Break") {
-                            cell.styles.fillColor = [238, 238, 238];
-                        }
-                    }
-                    else if (cellClass == 'info-poster') {
-                        cell.styles.fontSize = 9;
-                    }
-                    else if (cellClass == "location") {
-                        if (cellText == '') {
-                            var infoType = data.row.raw[2].content.className;
-                            if (infoType == "info-day") {
-                                cell.styles.fillColor = [187, 187, 187];
-                            }
-                            else if (infoType == "info-plenary") {
-                                cell.styles.fillColor = [238, 238, 238];
-                            }
-                        }
-                    }
-                    else if (cellClass == "time") {
-                        var infoType = data.row.raw[2].content.className;
-                        var infoText = data.row.raw[2].content.textContent;
-                        if (infoType == "info-day" && cellText == '') {
-                            cell.styles.fillColor = [187, 187, 187];
-                        }
-                        if (infoType == "info-plenary" && (infoText == "Break" || infoText == "Lunch" || infoText == "Breakfast" || infoText == "Coffee Break")) {
-                            cell.styles.fillColor = [238, 238, 238];
-                        }
-                    }
-                },
-            });
-            doc.output('save');
-        }
-
-        function getTutorialInfoFromTime(tutorialTimeObj) {
-
-            /* get the tutorial session and day */
-            var tutorialSession = tutorialTimeObj.parents('.session');
-            var sessionDay = tutorialSession.prevAll('.day:first').text().trim();
-
-            /* get the tutorial slot and the starting and ending times */
-            var tutorialTimeText = tutorialTimeObj.text().trim();
-            var tutorialTimes = tutorialTimeText.split(' ');
-            var tutorialSlotStart = tutorialTimes[0];
-            var tutorialSlotEnd = tutorialTimes[2];
-            var exactTutorialStartingTime = sessionDay + ' ' + tutorialSlotStart;
-            return [new Date(exactTutorialStartingTime).getTime(), tutorialSlotStart, tutorialSlotEnd, tutorialSession.attr('id')];
-        }
-
-        function getWorkshopInfoFromTime(workshopTimeObj) {
-
-            /* get the workshop session and day */
-            var workshopSession = workshopTimeObj.parents('.session');
-            var sessionDay = workshopSession.prevAll('.day:first').text().trim();
-
-            /* get the workshop slot and the starting and ending times */
-            var workshopTimeText = workshopTimeObj.text().trim();
-            var workshopTimes = workshopTimeText.split(' ');
-            var workshopSlotStart = workshopTimes[0];
-            var workshopSlotEnd = workshopTimes[2];
-            var exactworkshopStartingTime = sessionDay + ' ' + workshopSlotStart;
-            return [new Date(exactworkshopStartingTime).getTime(), workshopSlotStart, workshopSlotEnd, workshopSession.attr('id')];
-        }
-
-        function getPosterInfoFromTime(posterTimeObj) {
-
-            /* get the poster session and day */
-            var posterSession = posterTimeObj.parents('.session');
-            var sessionDay = posterSession.parent().prevAll('.day:first').text().trim();
-
-            /* get the poster slot and the starting and ending times */
-            var posterTimeText = posterTimeObj.text().trim();
-            var posterTimes = posterTimeText.split(' ');
-            var posterSlotStart = posterTimes[0];
-            var posterSlotEnd = posterTimes[2];
-            var exactPosterStartingTime = sessionDay + ' ' + posterSlotStart;
-            return [new Date(exactPosterStartingTime).getTime(), posterSlotStart, posterSlotEnd, posterSession.attr('id')];
-        }
-
-        function isOverlapping(thisPaperRange, otherPaperRange) {
-            var thisStart = thisPaperRange[0];
-            var thisEnd = thisPaperRange[1];
-            var otherStart = otherPaperRange[0];
-            var otherEnd = otherPaperRange[1];
-            return ((thisStart < otherEnd) && (thisEnd > otherStart));
-        }
-
-        function getConflicts(paperObject) {
-
-            /* first get the parallel sessions */
-            var sessionId = paperObject.parents('.session').attr('id').match(/session-\d/)[0];
-            var parallelSessions = paperObject.parents('.session').siblings().filter(function() { return this.id.match(sessionId); });
-            
-            var thisPaperRange = paperInfoHash[paperObject.attr('paper-id')].slice(0, 2);
-            return $(parallelSessions).find('table.paper-table tr#paper').filter(function(index) {
-                    var otherPaperRange =  paperInfoHash[$(this).attr('paper-id')].slice(0, 2);
-                    return isOverlapping(thisPaperRange, otherPaperRange) 
-                });
-        }
-
-        function doWhichKey(e) {
-            e = e || window.event;
-            var charCode = e.keyCode || e.which;
-            //Line below not needed, but you can read the key with it
-            //var charStr = String.fromCharCode(charCode);
-            return charCode;
-        }
-
-        function getConflicts2(paperObject) {
-
-            /* most of the time, conflicts are simply based on papers having the same exact time slot but this is not always true */
-
-            /* first get the conflicting sessions */
-            var sessionId = paperObject.parents('.session').attr('id').match(/session-\d/)[0];
-            var parallelSessions = paperObject.parents('.session').siblings().filter(function() { return this.id.match(sessionId); });
-            
-            /* now get the conflicting papers from those sessions */
-            var paperTime = paperObject.children('td#paper-time')[0].textContent;
-            return $(parallelSessions).find('table.paper-table tr#paper').filter(function(index) { return this.children[0].textContent == paperTime });
-
-        }
-
-        function makeDayHeaderRow(day) {
-            return '<tr><td class="time"></td><td class="location"></td><td class="info-day">' + day + '</td></tr>';
-        }
-
-        function makePlenarySessionHeaderRow(session) {
-            var sessionStart = session.start;
-            var sessionEnd = session.end;
-            return '<tr><td class="time">' + sessionStart + '&ndash;' + sessionEnd + '</td><td class="location">' + session.location + '</td><td class="info-plenary">' + session.title + '</td></tr>';
-        }
-
-        function makePaperRows(start, end, titles, sessions) {
-            var ans;
-            if (titles.length == 1) {
-                ans = ['<tr><td class="time">' + start + '&ndash;' + end + '</td><td class="location">' + sessions[0].location + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
-            }
-            else {
-                var numConflicts = titles.length;
-                rows = ['<tr><td rowspan=' + numConflicts + ' class="time">' + start + '&ndash;' + end + '</td><td class="location">' + sessions[0].location + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
-                for (var i=1; i<numConflicts; i++) {
-                    var session = sessions[i];
-                    var title = titles[i];
-                    rows.push('<tr><td></td><td class="location">' + session.location + '</td><td class="info-paper">' + title + ' [' + session.title + ']</td></tr>')
-                }
-                ans = rows;
-            }
-            return ans;
-        }
-
-        function makeTutorialRows(start, end, titles, locations, sessions) {
-            var ans;
-            if (titles.length == 1) {
-                ans = ['<tr><td class="time">' + start + '&ndash;' + end + '</td><td class="location">' + locations[0] + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
-            }
-            else {
-                var numConflicts = titles.length;
-                rows = ['<tr><td rowspan=' + numConflicts + ' class="time">' + start + '&ndash;' + end + '</td><td class="location">' + locations[0] + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
-                for (var i=1; i<numConflicts; i++) {
-                    var session = sessions[i];
-                    var title = titles[i];
-                    var location = locations[i];
-                    rows.push('<tr><td></td><td class="location">' + location + '</td><td class="info-paper">' + title + ' [' + session.title + ']</td></tr>')
-                }
-                ans = rows;
-            }
-            return ans;
-        }
-
-    function makeWorkshopRows(start, end, titles, locations, sessions) {
-            var ans;
-            if (titles.length == 1) {
-                ans = ['<tr><td class="time">' + start + '&ndash;' + end + '</td><td class="location">' + locations[0] + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
-            }
-            else {
-                var numConflicts = titles.length;
-                rows = ['<tr><td rowspan=' + numConflicts + ' class="time">' + start + '&ndash;' + end + '</td><td class="location">' + locations[0] + '</td><td class="info-paper">' + titles[0] + ' [' + sessions[0].title + ']</td></tr>'];
-                for (var i=1; i<numConflicts; i++) {
-                    var session = sessions[i];
-                    var title = titles[i];
-                    var location = locations[i];
-                    rows.push('<tr><td></td><td class="location">' + location + '</td><td class="info-paper">' + title + ' [' + session.title + ']</td></tr>')
-                }
-                ans = rows;
-            }
-            return ans;
-        }
-
-        function makePosterRows(titles, types, sessions) {
-            var numPosters = titles.length;
-            var sessionStart = sessions[0].start;
-            var sessionEnd = sessions[0].end;
-            rows = ['<tr><td rowspan=' + (numPosters + 1) + ' class="time">' + sessionStart + '&ndash;' + sessionEnd + '</td><td rowspan=' + (numPosters + 1) + ' class="location">' + sessions[0].location + '</td><td class="info-paper">' + sessions[0].title +  '</td></tr>'];
-            for (var i=0; i<numPosters; i++) {
-                var title = titles[i];
-                var type = types[i];
-                /* rows.push('<tr><td></td><td></td><td class="info-poster">' + title + ' [' + type + ']</td></tr>'); */
-                rows.push('<tr><td></td><td></td><td class="info-poster">' + title + '</td></tr>');
-            }
-            return rows;
-        }
-
-        function clearHiddenProgramTable() {
-            $('#hidden-program-table tbody').html('');
-        }
-
-        function getChosenHashFromType(type) {
-            var chosenHash;
-            if (type == 'paper') {
-                chosenHash = chosenPapersHash;
-            }
-            else if (type == 'tutorial') {
-                chosenHash = chosenTutorialsHash;
-            }
-            else if (type == 'workshop') {
-                chosenHash = chosenWorkshopsHash;
-            }
-            else if (type == 'poster') {
-                chosenHash = chosenPostersHash;
-            }
-            return chosenHash;
-        }
-
-        function addToChosen(timeKey, item, type) {
-            var chosenHash = getChosenHashFromType(type);
-            if (timeKey in chosenHash) {
-                var items = chosenHash[timeKey];
-                items.push(item);
-                chosenHash[timeKey] = items;
-            }
-            else {
-                chosenHash[timeKey] = [item];
-            }
-        }
-
-        function removeFromChosen(timeKey, item, type) {
-            var chosenHash = getChosenHashFromType(type);            
-            if (timeKey in chosenHash) {
-                var items = chosenHash[timeKey];
-                var itemIndex = items.map(function(item) { return item.title; }).indexOf(item.title);
-                if (itemIndex !== -1) {
-                    var removedItem = items.splice(itemIndex, 1);
-                    delete removedItem;
-                    if (items.length == 0) {
-                        delete chosenHash[timeKey];
-                    }
-                    else {
-                        chosenHash[timeKey] = items;
-                    }
-                }
-            }
-        }
-
-        function isChosen(timeKey, item, type) {
-            var ans = false;
-            var chosenHash = getChosenHashFromType(type);
-            if (timeKey in chosenHash) {
-                var items = chosenHash[timeKey];
-                var itemIndex = items.map(function(item) { return item.title; }).indexOf(item.title);
-                ans = itemIndex !== -1;
-            }
-            return ans;
-        }
-
-        function toggleSession(sessionObj) {
-            $(sessionObj).children('[class$="-details"]').slideToggle(300);
-            $(sessionObj).children('#expander').toggleClass('expanded');
-        }
-
-        function openSession(sessionObj) {
-            $(sessionObj).children('[class$="-details"]').slideDown(300);
-            $(sessionObj).children('#expander').addClass('expanded');
-        }
-
-        function closeSession(sessionObj) {
-            $(sessionObj).children('[class$="-details"]').slideUp(300);
-            $(sessionObj).children('#expander').removeClass('expanded');
-        }
-
-        function populateHiddenProgramTable() {
-
-            /* since papers and posters might start at the same time we cannot just rely on starting times to differentiate papers vs. posters. so, what we can do is just add an item type after we do the concatenation and then rely on that item type to distinguish the item */
-            
-            var nonPlenaryKeysAndTypes = [];
-            var tutorialKeys = Object.keys(chosenTutorialsHash);
-            var workshopKeys = Object.keys(chosenWorkshopsHash);
-            var posterKeys = Object.keys(chosenPostersHash);
-            var paperKeys = Object.keys(chosenPapersHash);
-            for (var i=0; i < tutorialKeys.length; i++) {
-                nonPlenaryKeysAndTypes.push([tutorialKeys[i], 'tutorial']);
-            }
-            for (var i=0; i < workshopKeys.length; i++) {
-                nonPlenaryKeysAndTypes.push([workshopKeys[i], 'workshop']);
-            }
-            for (var i=0; i < posterKeys.length; i++) {
-                nonPlenaryKeysAndTypes.push([posterKeys[i], 'poster']);
-            }
-            for (var i=0; i < paperKeys.length; i++) {
-                nonPlenaryKeysAndTypes.push([paperKeys[i], 'paper']);
-            }
-
-            var plenaryKeys = Object.keys(plenarySessionHash);
-            var plenaryKeysAndTypes = [];
-            for (var i=0; i < plenaryKeys.length; i++) {
-                plenaryKeysAndTypes.push([plenaryKeys[i], 'plenary']);
-            }
-
-            /* if we are including plenary information in the PDF then sort its keys too and merge the two sets of keys together before sorting */
-            var sortedPaperTimes = includePlenaryInSchedule ? nonPlenaryKeysAndTypes.concat(plenaryKeysAndTypes) : nonPlenaryKeysAndTypes;
-            sortedPaperTimes.sort(function(a, b) { return a[0] - b[0] });
-
-            /* now iterate over these sorted papers and create the rows for the hidden table that will be used to generate the PDF */
-            var prevDay = null;
-            var latestEndingTime;
-            var output = [];
-
-            /* now iterate over the chosen items */
-            for(var i=0; i<sortedPaperTimes.length; i++) {
-                var keyAndType = sortedPaperTimes[i];
-                var key = keyAndType[0];
-                var itemType = keyAndType[1]
-                /* if it's a plenary session */
-                if (itemType == 'plenary') {
-                    var plenarySession = plenarySessionHash[key];
-                    if (plenarySession.day == prevDay) {
-                        output.push(makePlenarySessionHeaderRow(plenarySession));
-                    }
-                    else {
-                        output.push(makeDayHeaderRow(plenarySession.day));
-                        output.push(makePlenarySessionHeaderRow(plenarySession));
-                    }
-                    prevDay = plenarySession.day;
-                }
-                /* if it's tutorials */
-                else if (itemType == 'tutorial') {
-
-                    /* get the tutorials */
-                    var tutorials = chosenTutorialsHash[key];
-
-                    /* sort the tutorials by title instead of selection order */
-                    tutorials.sort(function(a, b) {
-                        return a.title.localeCompare(b.title);
-                    });
-
-                    var titles = tutorials.map(function(tutorial) { return ASCIIFold(tutorial.title); });
-                    var locations = tutorials.map(function(tutorial) { return tutorial.location ; });
-                    var sessions = tutorials.map(function(tutorial) { return sessionInfoHash[tutorial.session]; });
-                    var sessionDay = sessions[0].day;
-                    if (sessionDay != prevDay) {
-                        output.push(makeDayHeaderRow(sessionDay));
-                    }
-                    output = output.concat(makeTutorialRows(tutorials[0].start, tutorials[0].end, titles, locations, sessions));
-                    prevDay = sessionDay;
-                }
-                /* if it's workshops */
-                else if (itemType == 'workshop') {
-
-                    /* get the workshops */
-                    var workshops = chosenWorkshopsHash[key];
-
-                    /* sort the workshops by title instead of selection order */
-                    workshops.sort(function(a, b) {
-                        return a.title.localeCompare(b.title);
-                    });
-
-                    var titles = workshops.map(function(workshop) { return ASCIIFold(workshop.title); });
-                    var locations = workshops.map(function(workshop) { return workshop.location ; });
-                    var sessions = workshops.map(function(workshop) { return sessionInfoHash[workshop.session]; });
-                    var sessionDay = sessions[0].day;
-                    if (sessionDay != prevDay) {
-                        output.push(makeDayHeaderRow(sessionDay));
-                    }
-                    output = output.concat(makeWorkshopRows(workshops[0].start, workshops[0].end, titles, locations, sessions));
-                    prevDay = sessionDay;
-                }
-                /* if it's posters */
-                else if (itemType == 'poster') {
-
-                    /* get the posters */
-                    var posters = chosenPostersHash[key];
-
-                    /* sort posters by their type for easier reading */
-                    posters.sort(function(a, b) {
-                        return a.type.localeCompare(b.type);
-                    });
-                    var titles = posters.map(function(poster) { return ASCIIFold(poster.title); });
-                    var types = posters.map(function(poster) { return poster.type; });
-                    var sessions = [sessionInfoHash[posters[0].session]];
-                    var sessionDay = sessions[0].day;
-                    if (sessionDay != prevDay) {
-                        output.push(makeDayHeaderRow(sessionDay));
-                    }
-                    output = output.concat(makePosterRows(titles, types, sessions));
-                    prevDay = sessionDay;
-                }
-
-                /* if it's papers  */
-                else if (itemType == 'paper') {
-                    var papers = chosenPapersHash[key];
-                    /* sort papers by location for easier reading */
-                    papers.sort(function(a, b) {
-                        var aLocation = sessionInfoHash[a.session].location;
-                        var bLocation = sessionInfoHash[b.session].location;
-                        return aLocation.localeCompare(bLocation);
-                    });
-                    var titles = papers.map(function(paper) { return ASCIIFold(paper.title); });
-                    var sessions = papers.map(function(paper) { return sessionInfoHash[paper.session]; });
-                    var sessionDay = sessions[0].day;
-                    if (sessionDay != prevDay) {
-                        output.push(makeDayHeaderRow(sessionDay));
-                    }
-                    output = output.concat(makePaperRows(papers[0].start, papers[0].end, titles, sessions));
-                    prevDay = sessionDay;
-                }
-            }
-
-            /* append the output to the hidden table */
-            $('#hidden-program-table tbody').append(output);
-        }
-
-        $(document).ready(function() {
-            
-            /* all the Remove All buttons are disabled on startup */
-            $('.session-deselector').addClass('disabled');
-
-            /* the include plenary checkbox is checked on startup */
-            $('input#includePlenaryCheckBox').prop('checked', true);
-
-            /* show the help window whenever "?" is pressed */
-            $(document).keypress(function(event) {
-                if (doWhichKey(event) == 63 && !helpShown) {
-                    helpShown = true;
-                    alertify.alert(instructions, function(event) { helpShown = false;});
-                }
-            });
-
-            /* show the help window when the help button is clicked */
-            $('a#help-button').on('click', function (event) {
-                if (!helpShown) {
-                    event.preventDefault();
-                    helpShown = true;
-                    alertify.alert(instructions, function(event) { helpShown = false;});
-                }
-            });
-
-            /* expand/collapse all sessions when the toggle button is clicked */
-            $('a#toggle-all-button').on('click', function (event) {
-                event.preventDefault();
-                var buttonText = $(this).text();
-
-                / * expand all collapsed sessions */
-                if (buttonText == 'Expand All Sessions ↓') {
-                    $('div#expander').not('.expanded').trigger('click');
-                    $(this).text('Collapse All Sessions ↑');
-                }
-                /* collapse all expanded sessions */
-                else {
-                    $('div#expander.expanded').trigger('click');
-                    $(this).text('Expand All Sessions ↓');
-                }
-            });
-
-
-            $('span.session-location, span.inline-location').on('click', function(event) {
-                event.stopPropagation();
-            });
-
-            $('span.session-external-location').on('click', function(event) {
-                var placeName = $(this).text().trim().replace(" ", "+");
-                window.open("https://www.google.com/maps?q=" + placeName, "_blank");
-                event.stopPropagation();
-            });
-
-            /* show the floorplan when any location is clicked */
-            $('span.session-location, span.inline-location').magnificPopup({
-                items: {
-                    src: '/assets/images/square/square-3d-floor-plan.png'
-                },
-                type: 'image',
-                fixedContentPos: 'auto'
-            });
-
-            /* get all the tutorial sessions and save the day and location for each of them in a hash */
-            $('.session-tutorials').each(function() {
-                var session = {};
-                session.title = $(this).children('.session-title').text().trim();
-                session.day = $(this).prevAll('.day:first').text().trim();
-                sessionInfoHash[$(this).attr('id')] = session;
-            });
-
-            /* get all the workshop sessions and save the day and location for each of them in a hash */
-            $('.session-workshops').each(function() {
-                var session = {};
-                session.title = $(this).children('.session-title').text().trim();
-                session.day = $(this).prevAll('.day:first').text().trim();
-                sessionInfoHash[$(this).attr('id')] = session;
-            });
-
-            /* get all the poster sessions and save the day and location for each of them in a hash */
-            $('.session-posters').each(function() {
-                var session = {};
-                session.title = $(this).children('.session-title').text().trim();
-                session.day = $(this).parent().prevAll('.day:first').text().trim();
-                session.location = $(this).children('span.session-location').text().trim();
-                var sessionTimeText = $(this).children('span.session-time').text().trim();                
-                var sessionTimes = sessionTimeText.match(/\d+:\d+/g);
-                var sessionStart = sessionTimes[0];
-                var sessionEnd = sessionTimes[1];
-                session.start = sessionStart;
-                session.end = sessionEnd;
-                sessionInfoHash[$(this).attr('id')] = session;
-            });
-
-            /* get all the paper sessions and save the day and location for each of them in a hash */
-            var paperSessions = $("[id|='session']").filter(function() { 
-                return this.id.match(/session-\d\d?[a-z]$/);
-            });
-            $(paperSessions).each(function() {
-                var session = {};
-                session.title = $(this).children('.session-title').text().trim();
-                session.location = $(this).children('span.session-location').text().trim();
-                session.day = $(this).parent().prevAll('.day:first').text().trim();
-                var sessionTimeText = $(this).children('span.session-time').text().trim();                
-                var sessionTimes = sessionTimeText.match(/\d+:\d+/g);
-                var sessionStart = sessionTimes[0];
-                var sessionEnd = sessionTimes[1];
-                session.start = sessionStart;
-                session.end = sessionEnd;
-                sessionInfoHash[$(this).attr('id')] = session;
-            });
-
-            /* iterate over all the papers and store all their info in a hash since we need that info whenever we click and hover and lookups will be faster than re-computing the info at each event */
-            $('tr#paper').each(function() {
-                var paperID = $(this).attr('paper-id');
-
-                /* get the paper session and day */
-                var paperSession = $(this).parents('.session');
-                var sessionDay = paperSession.parent().prevAll('.day:first').text().trim();
-
-                /* get the paper time and title */
-                var paperTimeObj = $(this).children('#paper-time');
-                var paperTitle = paperTimeObj.siblings('td').text().trim().replace(/\s\s+/g, " ");
-
-                /* get the paper slot and the starting and ending times */
-                var paperTimeText = paperTimeObj.text().trim();
-                var paperTimes = paperTimeText.split('\u2013');
-                var paperSlotStart = paperTimes[0];
-                var paperSlotEnd = paperTimes[1];
-                var exactPaperStartingTime = sessionDay + ' ' + paperSlotStart;
-                var exactPaperEndingTime = sessionDay + ' ' + paperSlotEnd;
-
-                paperInfoHash[paperID] = [new Date(exactPaperStartingTime).getTime(), new Date(exactPaperEndingTime).getTime(), paperSlotStart, paperSlotEnd, paperTitle, paperSession.attr('id')];
-            });
-
-            /* also save the plenary session info in another hash since we may need to add this to the pdf. Use the exact starting time as the hash key */
-             $('.session-plenary').each(function() {
-                var session = {};
-                session.title = $(this).children('.session-title').text().trim();
-                if (session.title == "Social Event") {
-                    session.location = $(this).children('span.session-external-location').text().trim();
-                }
-                else {
-                    session.location = $(this).children('span.session-location').text().trim();                    
-                }
-                session.day = $(this).prevAll('.day:first').text().trim();
-                session.id = $(this).attr('id');
-                var sessionTimeText = $(this).children('span.session-time').text().trim();
-                var sessionTimes = sessionTimeText.match(/\d+:\d+/g);
-                var sessionStart = sessionTimes[0];
-                var sessionEnd = sessionTimes[1];
-                session.start = sessionStart;
-                session.end = sessionEnd;
-                var exactSessionStartingTime = session.day + ' ' + sessionStart;
-                plenarySessionHash[new Date(exactSessionStartingTime).getTime()] = session;
-             });
-
-            $('body').on('click', 'a.session-selector', function(event) {
-
-                /* if we are disabled, do nothing */
-                if ($(this).hasClass('disabled')) {
-                    return false;
-                }
-
-                /* if we are choosing the entire session, then basically "click" on all of the not-selected papers */
-                var sessionPapers = $(this).siblings('table.paper-table').find('tr#paper');
-                var unselectedPapers = sessionPapers.not('.selected');
-                unselectedPapers.trigger('click', true);
-
-                /* now find out how many papers are selected after the trigger */
-                var selectedPapers = sessionPapers.filter('.selected');
-
-                /* disable myself (the choose all button) */
-                $(this).addClass('disabled');
-
-                /* if we didn't have any papers selected earlier, then enable the remove all button */
-                if (unselectedPapers.length == sessionPapers.length) {
-                    $(this).siblings('.session-deselector').removeClass('disabled');
-                }
-
-                /* this is not really a link */
-                event.preventDefault();
-                return false;
-            });
-
-            $('body').on('click', 'a.session-deselector', function(event) {
-
-                /* if we are disabled, do nothing */
-                if ($(this).hasClass('disabled')) {
-                    return false;
-                }
-
-                /* otherwise, if we are removing the entire session, then basically "click" on all of the already selected papers */
-                var sessionPapers = $(this).siblings('table.paper-table').find('tr#paper');
-                var selectedPapers = sessionPapers.filter('.selected');
-                selectedPapers.trigger('click', true);
-
-                /* disable myself (the remove all button) */
-                $(this).addClass('disabled');
-
-                /* enable the choose all button */
-                $(this).siblings('session-deselector').removeClass('disabled');
-
-                /* if all the papers were selected earlier, then enable the choose all button */
-                if (selectedPapers.length == sessionPapers.length) {
-                    $(this).siblings('.session-selector').removeClass('disabled');                    
-                }
-
-                /* this is not really a link */
-                event.preventDefault();
-                return false;
-            });
-
-            /* hide all of the session details when starting up */
-            $('[class$="-details"]').hide();
-
-            /* expand sessions when their title is clicked */
-            $('body').on('click', 'div.session-expandable .session-title, div#expander', function(event) {
-                event.preventDefault();
-                event.stopPropagation();
-                var sessionObj = $(this).parent();
-
-                /* if we had the shift key pressed, then expand ALL unexpanded parallel sessions including myself (only for papers) */
-                if (event.shiftKey && sessionObj.attr('class').match('session-papers')) {
-                    var sessionId = $(sessionObj).attr('id').match(/session-\d/)[0];
-                    var parallelSessions = $(sessionObj).siblings().addBack().filter(function() { return this.id.match(sessionId); });
-
-                    var unexpandedParallelSessions = $(parallelSessions).filter(function() { return !$(this).children('#expander').hasClass('expanded'); });
-
-                    /* if all sessions are already expanded, then shift-clicking should close all of them */
-                    if (unexpandedParallelSessions.length == 0) {
-                        $.map(parallelSessions, closeSession);
-                    }
-                    else {
-                        $.map(unexpandedParallelSessions, openSession);
-                    }
-                } 
-                /* for a regular click, just toggle the individual session */
-                else {
-                    toggleSession(sessionObj);
-                }
-            });
-
-            /* when we mouse over a paper icon, do not do anything */
-            $('body').on('mouseover', 'table.paper-table tr#paper i.paper-icon', function(event) {
-                return false;
-            });
-
-            /* when we mouse over a paper, highlight the conflicting papers */
-            $('body').on('mouseover', 'table.paper-table tr#paper', function(event) {
-                var conflictingPapers = getConflicts($(this));
-                $(this).addClass('hovered');
-                $(conflictingPapers).addClass('conflicted');
-            });
-
-            /* when we mouse out, remove all highlights */
-            $('body').on('mouseout', 'table.paper-table tr#paper', function(event) {
-                var conflictingPapers = getConflicts($(this));
-                $(this).removeClass('hovered');
-                $(conflictingPapers).removeClass('conflicted');
-
-            });
-
-            $('body').on('click', 'a.info-button', function(event) {
-                return false;
-            });
-
-            $('body').on('click', 'a.info-link', function(event) {
-                event.stopPropagation();
-            });
-
-            $('body').on('click', 'div.session-abstract', function(event) {
-                event.stopPropagation();
-            });
-
-            $('body').on('click', 'table.paper-table', function(event) {
-                event.stopPropagation();
-            });
-
-            $('body').on('click', 'table.tutorial-table', function(event) {
-                event.stopPropagation();
-            });
-
-            $('body').on('click', 'table.poster-table', function(event) {
-                event.stopPropagation();
-            });
-
-            $('body').on('click', 'div.paper-session-details', function(event) {
-                event.stopPropagation();
-            });
-
-            $('body').on('click', 'input#includePlenaryCheckBox', function(event) {
-                    includePlenaryInSchedule = $(this).prop('checked');
-            });
-
-            $('body').on('click', 'a#generatePDFButton', function(event) {
-                /* if we haven't chosen any papers, and we aren't including plenary sessions either, then raise an error. If we are including plenary sessions and no papers, then confirm. */
-                event.preventDefault();
-                var numChosenItems = Object.keys(chosenPapersHash).length + Object.keys(chosenTutorialsHash).length + Object.keys(chosenWorkshopsHash).length + Object.keys(chosenPostersHash).length;
-                if (numChosenItems == 0) {
-                    if (includePlenaryInSchedule) {
-                        alertify.confirm("The PDF will contain only the plenary sessions since nothing was chosen. Proceed?", function () { generatePDFfromTable();
-                                }, function() { return false; });
-                    }
-                    else {
-                        alertify.alert('Nothing to generate. Nothing was chosen and plenary sessions were excluded.');
-                        return false;
-                    }
-                }
-                else {
-                    generatePDFfromTable();
-                }
-            });
-
-            $('body').on('click', 'table.tutorial-table tr#tutorial', function(event) {
-                event.preventDefault();
-                var tutorialTimeObj = $(this).parents('.session-tutorials').children('.session-time');
-                var tutorialInfo = getTutorialInfoFromTime(tutorialTimeObj);
-                var tutorialObject = {};
-                var exactStartingTime = tutorialInfo[0];
-                tutorialObject.start = tutorialInfo[1];
-                tutorialObject.end = tutorialInfo[2];
-                tutorialObject.title = $(this).find('.tutorial-title').text();
-                tutorialObject.session = tutorialInfo[3];
-                tutorialObject.location = $(this).find('.inline-location').text();
-                tutorialObject.exactStartingTime = exactStartingTime;
-
-                /* if we are clicking on an already selected tutorial */
-                if (isChosen(exactStartingTime, tutorialObject, 'tutorial')) {
-                    $(this).removeClass('selected');
-                    removeFromChosen(exactStartingTime, tutorialObject, 'tutorial');
-                }
-                else {
-                    addToChosen(exactStartingTime, tutorialObject, 'tutorial');
-                    $(this).addClass('selected');                    
-                }
-            });
-
-            $('body').on('click', 'table.workshop-table tr#workshop', function(event) {
-                event.preventDefault();
-                var workshopTimeObj = $(this).parents('.session-workshops').children('.session-time');
-                var workshopInfo = getWorkshopInfoFromTime(workshopTimeObj);
-                var workshopObject = {};
-                var exactStartingTime = workshopInfo[0];
-                workshopObject.start = workshopInfo[1];
-                workshopObject.end = workshopInfo[2];
-                workshopObject.title = $(this).find('.workshop-title').text();
-                workshopObject.session = workshopInfo[3];
-                workshopObject.location = $(this).find('.inline-location').text();
-                workshopObject.exactStartingTime = exactStartingTime;
-
-                /* if we are clicking on an already selected workshop */
-                if (isChosen(exactStartingTime, workshopObject, 'workshop')) {
-                    $(this).removeClass('selected');
-                    removeFromChosen(exactStartingTime, workshopObject, 'workshop');
-                }
-                else {
-                    addToChosen(exactStartingTime, workshopObject, 'workshop');
-                    $(this).addClass('selected');                    
-                }
-            });
-
-            $('body').on('click', 'table.poster-table tr#poster', function(event) {
-                event.preventDefault();
-                var posterTimeObj = $(this).parents('.session-posters').children('.session-time');
-                var posterInfo = getPosterInfoFromTime(posterTimeObj);
-                var posterObject = {};
-                var exactStartingTime = posterInfo[0];
-                posterObject.start = posterInfo[1];
-                posterObject.end = posterInfo[2];
-                posterObject.title = $(this).find('.poster-title').text().trim();
-                posterObject.type = $(this).parents('.poster-table').prevAll('.poster-type:first').text().trim();
-                posterObject.session = posterInfo[3];
-                posterObject.exactStartingTime = exactStartingTime;
-
-                /* if we are clicking on an already selected poster */
-                if (isChosen(exactStartingTime, posterObject, 'poster')) {
-                    $(this).removeClass('selected');
-                    removeFromChosen(exactStartingTime, posterObject, 'poster');
-                }
-                else {
-                    addToChosen(exactStartingTime, posterObject, 'poster');
-                    $(this).addClass('selected');
-                    var key = new Date(exactStartingTime).getTime();
-                    if (key in plenarySessionHash) {
-                        delete plenarySessionHash[key];
-                    }
-                }
-            });
-
-            /* open the anthology URL in a new window/tab when we click on the PDF icon for a paper or a poster */            
-            $('body').on('click', 'table.paper-table tr#paper i.paper-icon,table.paper-table tr#best-paper i.paper-icon,table.poster-table tr#poster i.paper-icon', function(event) {
-                event.stopPropagation();
-                event.preventDefault();
-                var urlToOpen = $(this).attr('data');
-                if (urlToOpen !== '') {
-                    window.open(urlToOpen, "_blank");
-                }
-            });
-
-            $('body').on('click', 'table.paper-table tr#paper', function(event, fromSession) {
-                event.preventDefault();
-                $(this).removeClass('hovered');
-                getConflicts($(this)).removeClass('conflicted');
-                var paperID = $(this).attr('paper-id');
-                var paperTimeObj = $(this).children('td#paper-time');
-                var paperInfo = paperInfoHash[paperID];
-                var paperObject = {};
-                var exactStartingTime = paperInfo[0];
-                paperObject.start = paperInfo[2];
-                paperObject.end = paperInfo[3];
-                paperObject.title = paperInfo[4];
-                paperObject.session = paperInfo[5];
-                paperObject.exactStartingTime = exactStartingTime;
-
-                /* if we are clicking on an already selected paper */
-                if (isChosen(exactStartingTime, paperObject, 'paper')) {
-                    $(this).removeClass('selected');
-                    removeFromChosen(exactStartingTime, paperObject, 'paper');
-
-                    /* if we are not being triggered at the session level, then we need to handle the state of the session level button ourselves */
-                    if (!fromSession) {
-        
-                        /* we also need to enable the choose button */
-                        $(this).parents('table.paper-table').siblings('.session-selector').removeClass('disabled');
-
-                        /* we also need to disable the remove button if this was the only paper selected in the session */
-                        var selectedPapers = $(this).siblings('tr#paper').filter('.selected');
-                        if (selectedPapers.length == 0) {
-                            $(this).parents('table.paper-table').siblings('.session-deselector').addClass('disabled');
-                        }
-                    }
-                }
-                else {
-                    /* if we are selecting a previously unselected paper */
-                    addToChosen(exactStartingTime, paperObject, 'paper');
-                    $(this).addClass('selected');
-
-                    /* if we are not being triggered at the session level, then we need to handle the state of the session level button ourselves */
-                    if (!fromSession) {
-
-                        /* we also need to enable the remove button */
-                        $(this).parents('table.paper-table').siblings('.session-deselector').removeClass('disabled');
-
-                        /* and disable the choose button if all the papers are now selected anyway */
-                        var sessionPapers = $(this).siblings('tr#paper');
-                        var selectedPapers = sessionPapers.filter('.selected');
-                        if (sessionPapers.length == selectedPapers.length) {
-                            $(this).parents('table.paper-table').siblings('.session-selector').addClass('disabled');
-                        }
-                    }
-                }
-            });
-        });
-    </script>
+sidebar: 
+    nav: "program"
 ---
+
 {% include base_path %}
-<link rel="stylesheet" href="assets/css/alertify.css" id="alertifyCSS">
 
-<table id="hidden-program-table">
-    <thead>
-        <tr><th>time</th><th>location</th><th>info</th></tr>
-    </thead>
-    <tbody></tbody>
-</table>
+{% include toc icon="gears" %}
 
-<div id="introParagraph">
-        <p>On this page, you can choose the sessions (and individual papers/posters) of your choice <em>and</em> generate a PDF of your customized schedule! This page should work on modern browsers on all operating systems. On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. For the best experience, use a non-mobile device. For help, simply type "?"" while on the page or click on the "Help" button.</p>
-        <p><strong>Note</strong>: To accommodate the large number of attendees, some sessions will be livestreamed into multiple rooms. For sessions listed with multiple rooms, the first room will have the actual presentations &amp; the rest will show a live-streamed feed of the presentations.</p>
-</div>
+This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with basic information on the dates of the talk and poster sessions. More details will be provided later. 
 
-<p class="text-center">
-    <a href="#" id="help-button" class="btn btn--small btn--info">Help</a>
-</p>
-<p class="text-center">
-    <a href="#" id="toggle-all-button" class="btn btn--small btn--info">Expand All Sessions ↓</a>
-</p>
 
-<div class="schedule">
-    <div class="day" id="first-day">Wednesday, October 31 2018</div>
-    <div class="session session-expandable session-tutorials" id="session-morning-tutorials1">
-        <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
-        <span class="session-time" title="Wednesday, October 31 2018">09:00 &ndash; 12:30</span><br/>
-        <div class="tutorial-session-details">
-            <br/>
-            <table class="tutorial-table">
-                <tr id="tutorial">
-                    <td>
-                        <span class="tutorial-title"><strong>[T1] Joint Models for NLP.</strong> Yue Zhang.</span> <br/><span class="btn btn--info btn--location inline-location">Gold Hall</span>
-                    </td>
-                </tr>
-                <tr id="tutorial">
-                    <td>
-                        <span class="tutorial-title"><strong>[T2] Graph Formalisms for Meaning Representations.</strong> Adam Lopez and Sorcha Gilroy.</span><br/><span href="#" class="btn btn--info btn--location inline-location">Hall 100</span>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-lunch-1">
-        <span class="session-title">Lunch</span><br/>        
-        <span class="session-time" title="Wednesday, October 31 2018">12:30 &ndash; 14:00</span>
-    </div>    
-    <div class="session session-expandable session-tutorials" id="session-afternoon-tutorials1">
-        <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
-        <span class="session-time" title="Wednesday, October 31 2018">14:00 &ndash; 17:30</span><br/>
-        <div class="tutorial-session-details">
-            <br/>
-            <table class="tutorial-table">
-                <tr id="tutorial">
-                    <td>
-                        <span class="tutorial-title"><strong>[T3] Writing Code for NLP Research.</strong> Matt Gardner, Mark Neumann, Joel Grus, and Nicholas Lourie. </span><br/><span href="#" class="btn btn--info btn--location inline-location">Gold Hall</span>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="session session-expandable session-workshops" id="session-workshops-1">
-        <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
-        <span class="session-time" title="Wednesday, October 31 2018">08:30 &ndash; 18:00</span><br/>
-        <div class="workshop-session-details">
-            <br/>
-            <table class="workshop-table">
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Bozar Hall (Salle M)</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 1).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Copper Hall / Studio 311 &ndash; 312</span>
-                    </td>
-                </tr>                
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W3] LOUHI: The Ninth International Workshop on Health Text Mining and Information Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">The Arc</span>
-                    </td>
-                </tr> 
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W4] ALW2: Second Workshop on Abusive Language Online.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 211 &ndash; 212</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W5] SCAI: Search-Oriented Conversational AI.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Studio 313 &ndash; 315</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W6] SIGMORPHON: Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 213 &ndash; 215</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W7] WASSA: 9th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Hall 400</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W8] SMM4H: 3rd Workshop on Social Media Mining for Health Applications Workshop & Shared Task.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 201A/B</span>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="day" id="second-day">Thursday, November 1 2018</div>
-    <div class="session session-expandable session-tutorials" id="session-morning-tutorials2">
-        <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
-        <span class="session-time" title="Thursday, November 1 2018">09:00 &ndash; 12:30</span><br/>
-        <div class="tutorial-session-details">
-            <br/>
-            <table class="tutorial-table">
-                <tr id="tutorial">
-                    <td>
-                        <span class="tutorial-title"><strong>[T4] Deep Latent Variable Models of Natural Language.</strong> Alexander Rush, Yoon Kim, and Sam Wiseman.</span> <br/><span class="btn btn--info btn--location inline-location">Gold Hall</span>
-                    </td>
-                </tr>
-                <tr id="tutorial">
-                    <td>
-                        <span class="tutorial-title"><strong>[T5] Standardized Tests as benchmarks for Artificial Intelligence.</strong> Mrinmaya Sachan, Minjoon Seo, Hannaneh Hajishirzi, and Eric Xing.</span><br/><span href="#" class="btn btn--info btn--location inline-location">Hall 400</span>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-lunch-2">
-        <span class="session-title">Lunch</span><br/>        
-        <span class="session-time" title="Thursday, November 1 2018">12:30 &ndash; 14:00</span>
-    </div>    
-    <div class="session session-expandable session-tutorials" id="session-afternoon-tutorials2">
-        <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
-        <span class="session-time" title="Thursday, November 1 2018">14:00 &ndash; 17:30</span><br/>
-        <div class="tutorial-session-details">
-            <br/>
-            <table class="tutorial-table">
-                <tr id="tutorial">
-                    <td>
-                        <span class="tutorial-title"><strong>[T6] Deep Chit-Chat: Deep Learning for ChatBots.</strong> Wei Wu and Rui Yan. </span><br/><span href="#" class="btn btn--info btn--location inline-location">Gold Hall</span>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="session session-expandable session-workshops" id="session-workshops-2">
-        <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
-        <span class="session-time" title="Thursday, November 1 2018">09:00 &ndash; 17:00</span><br/>
-        <div class="workshop-session-details">
-            <br/>
-            <table class="workshop-table">
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W1] WMT18: The Third Conference on Machine Translation (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Bozar Hall (Salle M)</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W2] CoNLL: The Conference on Computational Natural Language Learning (Day 2).</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Copper Hall / Studio 311 &ndash; 312</span>
-                    </td>
-                </tr>                
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W9] BioASQ: Large-scale Biomedical Semantic Indexing and Question Answering.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 313 &ndash; 315</span>
-                    </td>
-                </tr> 
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W10] BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Silver Hall / Hall 100</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W11] FEVER: First Workshop on Fact Extraction and VERification.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">The Arc</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W12] ARGMINING: 5th International Workshop on Argument Mining.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 213 &ndash; 215</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W13] W-NUT: 4th Workshop on Noisy User-generated Text.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Panoramic Hall</span>
-                    </td>
-                </tr>
-                <tr id="workshop">
-                    <td>
-                        <span class="workshop-title"><strong>[W14] UDW-18: Second Workshop on Universal Dependencies.</strong> </span> <br/><span class="btn btn--info btn--location inline-location">Studio 201A/B</span>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="session session-expandable session-plenary" id="session-reception">
-        <div id="expander"></div>
-        <a href="#" class="session-title">Welcome Reception</a>
-        <br/>
-        <span class="session-time" title="Thursday, November 1 2018">18:00 &ndash; 20:00</span>
-        <br/>
-        <span class="session-location btn btn--info btn--location">Grand Hall</span>
-        <div class="paper-session-details">
-            <br/><br/>
-            <div class="session-abstract">
-                <p>Catch up with your colleagues at the Welcome Reception! It will be held immediately following the tutorials on Thursday, November 1st. <br/>Appetizers and refreshments will be provided.</p>
-            </div>
-        </div>
-    </div>
-    <div class="day" id="day-3">Friday, 2 November 2018</div>
-    <div class="session session-plenary" id="session-welcome">
-        <span class="session-title">Opening remarks</span>
-        <br/>
-        <span class="session-time" title="Friday, 2 November 2018">09:00 &ndash; 09:30</span>
-        <br/>
-        <span class="session-location btn btn--info btn--location">Gold Hall / Copper Hall / Silver Hall / Hall 100</span>
-    </div>
-    <div class="session session-expandable session-plenary">
-        <div id="expander"></div>
-        <a href="#" class="session-title">
-            <strong>Keynote I: "Truth or Lie? Spoken Indicators of Deception in Speech"</strong>
-        </a>
-        <br/>
-        <span class="session-people">
-            <a href="http://www.cs.columbia.edu/~julia/" target="_blank">Julia Hirschberg (Columbia University)</a>
-        </span>
-        <br/>
-        <span class="session-time" title="Friday, 2 November 2018">09:30 &ndash; 10:30</span>
-        <br/>
-        <span class="session-location btn btn--info btn--location">Gold Hall / Copper Hall / Silver Hall / Hall 100</span>
-        <div class="paper-session-details">
-            <br/>
-            <div class="session-abstract">
-                <p>Detecting deception from various forms of human behavior is a longstanding research goal which is of considerable interest to the military, law enforcement, corporate security, social services and mental health workers. However, both humans and polygraphs are very poor at this task. We describe more accurate methods we have developed to detect deception automatically from spoken language. Our classifiers are trained on the largest cleanly recorded corpus of within-subject deceptive and non-deceptive speech that has been collected. To distinguish truth from lie we make use of acoustic-prosodic, lexical, demographic, and personality features. We further examine differences in deceptive behavior based upon gender, personality, and native language (Mandarin Chinese vs. English), comparing our systems to human performance. We extend our studies to identify cues in trusted speech vs. mistrusted speech and how these features differ by speaker and by listener. Why does a listener believe a lie?</p>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-1">
-        <span class="session-title">Coffee Break</span>
-        <br/>
-        <span class="session-time" title="Friday, 2 November 2018">10:30 &ndash; 11:00</span>
-    </div>
-    <div class="session-box" id="session-box-1">
-        <div class="session-header" id="session-header-1">Long Papers &amp; Demos I (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-1a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">1A: Social Applications I</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-1a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-1a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:mail@dirkhovy.com">Dirk Hovy</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="523">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Privacy-preserving Neural Representations of Text.</span>
-                            <em>Maximin Coavoux, Shashi Narayan and Shay B. Cohen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1001" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="888">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Adversarial Removal of Demographic Attributes from Text Data.</span>
-                            <em>Yanai Elazar and Yoav Goldberg</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1002" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="909">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">DeClarE: Debunking Fake News and False Claims using Evidence-Aware Deep Learning.</span>
-                            <em>Kashyap Popat, Subhabrata Mukherjee, Andrew Yates and Gerhard Weikum</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1003" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1879">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">It's going to be okay: Measuring Access to Support in Online Communities.</span>
-                            <em>Zijian Wang and David Jurgens</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1004" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1903">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Detecting Gang-Involved Escalation on Social Media Using Context.</span>
-                            <em>Serina Chang, Ruiqi Zhong, Ethan Adams, Fei-Tzin Lee, Siddharth Varia, Desmond Patton, William Frey, Chris Kedzie and Kathy McKeown</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1005" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-1b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">1B: Semantics I</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-1b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-1b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:natschluter@itu.dk">Natalie Schluter</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1172">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Reasoning about Actions and State Changes by Injecting Commonsense Knowledge.</span>
-                            <em>Niket Tandon, Bhavana Dalvi, Joel Grus, Wen-tau Yih, Antoine Bosselut and Peter Clark</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1006" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1494">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Collecting Diverse Natural Language Inference Problems for Sentence Representation Evaluation.</span>
-                            <em>Adam Poliak, Aparajita Haldar, Rachel Rudinger, J. Edward Hu, Ellie Pavlick, Aaron Steven White and Benjamin Van Durme</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1007" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1634">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">Textual Analogy Parsing: What's Shared and What's Compared among Analogous Facts.</span>
-                            <em>Matthew Lamm, Arun Chaganty, Christopher D. Manning, Dan Jurafsky and Percy Liang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1008" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2020">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference.</span>
-                            <em>Rowan Zellers, Yonatan Bisk, Roy Schwartz and Yejin Choi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1009" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2036">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">TwoWingOS: A Two-Wing Optimization Strategy for Evidential Claim Verification.</span>
-                            <em>Wenpeng Yin and Dan Roth</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1010" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-1c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">1C: Vision</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-1c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-1c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:g.chrupala@uvt.nl">Grzegorz Chrupała</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="201">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Associative Multichannel Autoencoder for Multimodal Word Representation.</span>
-                            <em>Shaonan Wang, Jiajun Zhang and Chengqing Zong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1011" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="576">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Game-Based Video-Context Dialogue.</span>
-                            <em>Ramakanth Pasunuru and Mohit Bansal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1012" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="836">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">simNet: Stepwise Image-Topic Merging Network for Generating Detailed and Comprehensive Image Captions.</span>
-                            <em>Fenglin Liu, Xuancheng Ren, Yuanxin Liu, Houfeng Wang and Xu Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1013" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1792">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Multimodal Language Analysis with Recurrent Multistage Fusion.</span>
-                            <em>Paul Pu Liang, Ziyin Liu, AmirAli Bagher Zadeh and Louis-Philippe Morency</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1014" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1845">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Temporally Grounding Natural Sentence in Video.</span>
-                            <em>Jingyuan Chen, Xinpeng Chen, Lin Ma, Zequn Jie and Tat-Seng Chua</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1015" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-1d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">1D: Entities &amp; Coreference</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-1d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-1d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:eduardo.blanco@unt.edu">Eduardo Blanco</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="392">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution.</span>
-                            <em>Hong Chen, Zhenhua Fan, Hao Lu, Alan Yuille and Shu Rong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1016" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="627">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Adversarial Transfer Learning for Chinese Named Entity Recognition with Self-Attention Mechanism.</span>
-                            <em>Pengfei Cao, Yubo Chen, Kang Liu, Jun Zhao and Shengping Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1017" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1286">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">Using Linguistic Features to Improve the Generalization Capability of Neural Coreference Resolvers.</span>
-                            <em>Nafise Sadat Moosavi and Michael Strube</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1018" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1574">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Neural Segmental Hypergraphs for Overlapping Mention Recognition.</span>
-                            <em>Bailin Wang and Wei Lu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1019" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1846">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Variational Sequential Labelers for Semi-Supervised Learning.</span>
-                            <em>Mingda Chen, Qingming Tang, Karen Livescu and Kevin Gimpel</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1020" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-1">
-            <div id="expander"></div>
-            <a href="#" class="session-title">1E: Machine Translation &amp; Multilingual Methods (Posters and Demos)</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Multilingual Methods</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="76">
-                        <td>
-                            <span class="poster-title">Joint Representation Learning of Cross-lingual Words and Entities via Attentive Distant Supervision.</span>
-                            <em>Yixin Cao, Lei Hou, Juanzi Li, Zhiyuan Liu, Chengjiang Li, Xu Chen and Tiansi Dong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1021" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="126">
-                        <td>
-                            <span class="poster-title">Deep Pivot-Based Modeling for Cross-language Cross-domain Transfer with Minimal Guidance.</span>
-                            <em>Yftah Ziser and Roi Reichart</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1022" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="270">
-                        <td>
-                            <span class="poster-title">Multi-lingual Common Semantic Space Construction via Cluster-consistent Word Embedding.</span>
-                            <em>Lifu Huang, Kyunghyun Cho, Boliang Zhang, Heng Ji and Kevin Knight</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1023" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="344">
-                        <td>
-                            <span class="poster-title">Unsupervised Multilingual Word Embeddings.</span>
-                            <em>Xilun Chen and Claire Cardie</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1024" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="517">
-                        <td>
-                            <span class="poster-title">CLUSE: Cross-Lingual Unsupervised Sense Embeddings.</span>
-                            <em>Ta Chung Chi and Yun-Nung Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1025" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1036">
-                        <td>
-                            <span class="poster-title">Adversarial Propagation and Zero-Shot Cross-Lingual Transfer of Word Vector Specialization.</span>
-                            <em>Edoardo Maria Ponti, Ivan Vulić, Goran Glavaš, Nikola Mrkšić and Anna Korhonen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1026" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1093">
-                        <td>
-                            <span class="poster-title">Improving Cross-Lingual Word Embeddings by Meeting in the Middle.</span>
-                            <em>Yerai Doval, Jose Camacho-Collados, Luis Espinosa Anke and Steven Schockaert</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1027" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1134">
-                        <td>
-                            <span class="poster-title">WikiAtomicEdits: A Multilingual Corpus of Wikipedia Edits for Modeling Language and Discourse.</span>
-                            <em>Manaal Faruqui, Ellie Pavlick, Ian Tenney and Dipanjan Das</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1028" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1301">
-                        <td>
-                            <span class="poster-title">On the Relation between Linguistic Typology and (Limitations of) Multilingual Language Modeling.</span>
-                            <em>Daniela Gerz, Ivan Vulić, Edoardo Maria Ponti, Roi Reichart and Anna Korhonen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1029" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1439">
-                        <td>
-                            <span class="poster-title">A Fast, Compact, Accurate Model for Language Identification of Codemixed Text.</span>
-                            <em>Yuan Zhang, Jason Riesa, Daniel Gillick, Anton Bakalov, Jason Baldridge and David Weiss</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1030" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1502">
-                        <td>
-                            <span class="poster-title">Personalized Microblog Sentiment Classification via Adversarial Cross-lingual Multi-task Learning.</span>
-                            <em>Weichao Wang, Shi Feng, Wei Gao, Daling Wang and Yifei Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1031" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2115">
-                        <td>
-                            <span class="poster-title">Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks.</span>
-                            <em>Zhichun Wang, Qingsong Lv, Xiaohan Lan and Yu Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1032" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2122">
-                        <td>
-                            <span class="poster-title">Cross-lingual Lexical Sememe Prediction.</span>
-                            <em>Fanchao Qi, Yankai Lin, Maosong Sun, Hao Zhu, Ruobing Xie and Zhiyuan Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1033" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2268">
-                        <td>
-                            <span class="poster-title">Neural Cross-Lingual Named Entity Recognition with Minimal Resources.</span>
-                            <em>Jiateng Xie, Zhilin Yang, Graham Neubig, Noah A. Smith and Jaime Carbonell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1034" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Machine Translation</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="310">
-                        <td>
-                            <span class="poster-title">A Stable and Effective Learning Strategy for Trainable Greedy Decoding.</span>
-                            <em>Yun Chen, Victor O.K. Li, Kyunghyun Cho and Samuel Bowman</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1035" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="349">
-                        <td>
-                            <span class="poster-title">Addressing Troublesome Words in Neural Machine Translation.</span>
-                            <em>Yang Zhao, Jiajun Zhang, Zhongjun He, Chengqing Zong and Hua Wu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1036" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="566">
-                        <td>
-                            <span class="poster-title">Top-down Tree Structured Decoding with Syntactic Connections for Neural Machine Translation and Parsing.</span>
-                            <em>Jetic Gū, Hassan S. Shavarani and Anoop Sarkar</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1037" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="643">
-                        <td>
-                            <span class="poster-title">XL-NBT: A Cross-lingual Neural Belief Tracking Framework.</span>
-                            <em>Wenhu Chen, Jianshu Chen, Yu Su, Xin Wang, Dong Yu, Xifeng Yan and William Yang Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1038" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="683">
-                        <td>
-                            <span class="poster-title">Contextual Parameter Generation for Universal Neural Machine Translation.</span>
-                            <em>Emmanouil Antonios Platanios, Mrinmaya Sachan, Graham Neubig and Tom Mitchell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1039" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1069">
-                        <td>
-                            <span class="poster-title">Back-Translation Sampling by Targeting Difficult Words in Neural Machine Translation.</span>
-                            <em>Marzieh Fadaee and Christof Monz</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1040" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1107">
-                        <td>
-                            <span class="poster-title">Multi-Domain Neural Machine Translation with Word-Level Domain Context Discrimination.</span>
-                            <em>Jiali Zeng, Jinsong Su, Huating Wen, Yang Liu, Jun Xie, Yongjing Yin and Jianqiang Zhao</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1041" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1116">
-                        <td>
-                            <span class="poster-title">A Discriminative Latent-Variable Model for Bilingual Lexicon Induction.</span>
-                            <em>Sebastian Ruder, Ryan Cotterell, Yova Kementchedjhieva and Anders Søgaard</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1042" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1436">
-                        <td>
-                            <span class="poster-title">Non-Adversarial Unsupervised Word Translation.</span>
-                            <em>Yedid Hoshen and Lior Wolf</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1043" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1536">
-                        <td>
-                            <span class="poster-title">Semi-Autoregressive Neural Machine Translation.</span>
-                            <em>Chunqi Wang, Ji Zhang and Haiqing Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1044" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1542">
-                        <td>
-                            <span class="poster-title">Understanding Back-Translation at Scale.</span>
-                            <em>Sergey Edunov, Myle Ott, Michael Auli and David Grangier</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1045" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1894">
-                        <td>
-                            <span class="poster-title">Bootstrapping Transliteration with Constrained Discovery for Low-Resource Languages.</span>
-                            <em>Shyam Upadhyay, Jordan Kodner and Dan Roth</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1046" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1948">
-                        <td>
-                            <span class="poster-title">NORMA: Neighborhood Sensitive Maps for Multilingual Word Embeddings.</span>
-                            <em>Ndapa Nakashole</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1047" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1952">
-                        <td>
-                            <span class="poster-title">Adaptive Multi-pass Decoder for Neural Machine Translation.</span>
-                            <em>Xinwei Geng, Xiaocheng Feng, Bing Qin and Ting Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1048" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2056">
-                        <td>
-                            <span class="poster-title">Improving the Transformer Translation Model with Document-Level Context.</span>
-                            <em>Jiacheng Zhang, Huanbo Luan, Maosong Sun, Feifei Zhai, Jingfang Xu, Min Zhang and Yang Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1049" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2139">
-                        <td>
-                            <span class="poster-title">MTNT: A Testbed for Machine Translation of Noisy Text.</span>
-                            <em>Paul Michel and Graham Neubig</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1050" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Demos</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="65-demo">
-                        <td>
-                            <span class="poster-title">CytonMT: an Efficient Neural Machine Translation Open-source Toolkit Implemented in C++.</span>
-                            <em>Xiaolin Wang, Masao Utiyama and Eiichiro Sumita</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2023" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="38-demo">
-                        <td>
-                            <span class="poster-title">SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing.</span>
-                            <em>Taku Kudo and John Richardson</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2012" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-lunch-3">
-        <span class="session-title">Lunch</span>
-        <br/>
-        <span class="session-time" title="Friday, 2 November 2018">12:30 &ndash; 13:45</span>
-    </div>
-    <div class="session-box" id="session-box-2">
-        <div class="session-header" id="session-header-2">Short Papers I (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-2a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">2A: Question Answering I</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-2a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-2a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:scottyih@allenai.org">Scott Wen-tau Yih</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="592">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">SimpleQuestions Nearly Solved: A New Upperbound and Baseline Approach.</span>
-                            <em>Michael Petrochuk and Luke Zettlemoyer</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1051" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1649">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Phrase-Indexed Question Answering: A New Challenge for Scalable Document Comprehension.</span>
-                            <em>Minjoon Seo, Tom Kwiatkowski, Ankur Parikh, Ali Farhadi and Hannaneh Hajishirzi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1052" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="418">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Ranking Paragraphs for Improving Answer Recall in Open-Domain Question Answering.</span>
-                            <em>Jinhyuk Lee, Seongjun Yun, Hyunjae Kim, Miyoung Ko and Jaewoo Kang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1053" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="131">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Cut to the Chase: A Context Zoom-in Network for Reading Comprehension.</span>
-                            <em>Sathish Reddy Indurthi, Seunghak Yu, Seohyun Back and Heriberto Cuayahuitl</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1054" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="940">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Adaptive Document Retrieval for Deep Question Answering.</span>
-                            <em>Bernhard Kratzwald and Stefan Feuerriegel</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1055" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-2b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">2B: Semantics II</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-2b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-2b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:xu.1265@osu.edu">Wei Xu</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1297">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">Why is unsupervised alignment of English embeddings from different algorithms so hard?.</span>
-                            <em>Mareike Hartmann, Yova Kementchedjhieva and Anders Søgaard</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1056" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2091">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Quantifying Context Overlap for Training Word Embeddings.</span>
-                            <em>Yimeng Zhuang, Jinghui Xie, Yinhe Zheng and Xuan Zhu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1057" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="203">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Neural Latent Relational Analysis to Capture Lexical Semantic Relations in a Vector Space.</span>
-                            <em>Koki Washio and Tsuneaki Kato</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1058" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2267">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Generalizing Word Embeddings using Bag of Subwords.</span>
-                            <em>Jinman Zhao, Sidharth Mudgal and Yingyu Liang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1059" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2075">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Neural Metaphor Detection in Context.</span>
-                            <em>Ge Gao, Eunsol Choi, Yejin Choi and Luke Zettlemoyer</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1060" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-2c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">2C: Multilingual Methods I</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-2c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-2c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:shacharmirkin@gmail.com">Shachar Mirkin</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1376">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">Distant Supervision from Disparate Sources for Low-Resource Part-of-Speech Tagging.</span>
-                            <em>Barbara Plank and Željko Agić</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1061" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="446">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Unsupervised Bilingual Lexicon Induction via Latent Variable Models.</span>
-                            <em>Zi-Yi Dou, Zhi-Hao Zhou and Shujian Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1062" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1434">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Learning Unsupervised Word Translations Without Adversaries.</span>
-                            <em>Tanmoy Mukherjee, Makoto Yamada and Timothy Hospedales</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1063" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="728">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Adversarial Training for Multi-task and Multi-lingual Joint Modeling of Utterance Intent Classification.</span>
-                            <em>Ryo Masumura, Yusuke Shinohara, Ryuichiro Higashinaka and Yushi Aono</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1064" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1462">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Surprisingly Easy Hard-Attention for Sequence to Sequence Learning.</span>
-                            <em>Shiv Shankar, Siddhant Garg and Sunita Sarawagi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1065" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-2d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">2D: Social Media</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-2d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-2d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:luwang@ccs.neu.edu">Lu Wang</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="977">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">Joint Learning for Emotion Classification and Emotion Cause Detection.</span>
-                            <em>Ying Chen, Wenjun Hou, Xiyao Cheng and Shoushan Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1066" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2240">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Exploring Optimism and Pessimism in Twitter Using Deep Learning.</span>
-                            <em>Cornelia Caragea, Liviu P. Dinu and Bogdan Dumitru</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1067" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2004">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Predicting News Headline Popularity with Syntactic and Semantic Knowledge Using Multi-Task Learning.</span>
-                            <em>Sotiris Lamprinidis, Daniel Hardt and Dirk Hovy</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1068" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="468">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Hybrid Neural Attention for Agreement/Disagreement Inference in Online Debates.</span>
-                            <em>Di Chen, Jiachen Du, Lidong Bing and Ruifeng Xu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1069" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="794">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Increasing In-Class Similarity by Retrofitting Embeddings with Demographic Information.</span>
-                            <em>Dirk Hovy and Tommaso Fornaciari</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1070" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-2">
-            <div id="expander"></div>
-            <a href="#" class="session-title">2E: Short Posters I</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Dialogue and Discourse</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="53">
-                        <td>
-                            <span class="poster-title">A Syntactically Constrained Bidirectional-Asynchronous Approach for Emotional Conversation Generation.</span>
-                            <em>Jingyuan Li and Xiao Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1071" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="501">
-                        <td>
-                            <span class="poster-title">Auto-Dialabel: Labeling Dialogue Data with Unsupervised Learning.</span>
-                            <em>Chen Shi, Qi Chen, Lei Sha, Sujian Li, Xu Sun, Houfeng Wang and Lintao Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1072" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="679">
-                        <td>
-                            <span class="poster-title">Extending Neural Generative Conversational Model using External Knowledge Sources.</span>
-                            <em>Prasanna Parthasarathi and Joelle Pineau</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1073" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1435">
-                        <td>
-                            <span class="poster-title">Modeling Temporality of Human Intentions by Domain Adaptation.</span>
-                            <em>Xiaolei Huang, Lixing Liu, Kate Carey, Joshua Woolley, Stefan Scherer and Brian Borsari</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1074" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1642">
-                        <td>
-                            <span class="poster-title">An Auto-Encoder Matching Model for Learning Utterance-Level Semantic Dependency in Dialogue Generation.</span>
-                            <em>Liangchen Luo, Jingjing Xu, Junyang Lin, Qi Zeng and Xu Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1075" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1740">
-                        <td>
-                            <span class="poster-title">A Dataset for Document Grounded Conversations.</span>
-                            <em>Kangyan Zhou, Shrimai Prabhumoye and Alan W Black</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1076" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="895">
-                        <td>
-                            <span class="poster-title">Out-of-domain Detection based on Generative Adversarial Network.</span>
-                            <em>Seonghan Ryu, Sangjun Koo, Hwanjo Yu and Gary Geunbae Lee</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1077" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1085">
-                        <td>
-                            <span class="poster-title">Listening Comprehension over Argumentative Content.</span>
-                            <em>Shachar Mirkin, Guy Moshkowich, Matan Orbach, Lili Kotlerman, Yoav Kantor, Tamar Lavee, Michal Jacovi, Yonatan Bilu, Ranit Aharonov and Noam Slonim</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1078" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="333">
-                        <td>
-                            <span class="poster-title">Using active learning to expand training data for implicit discourse relation recognition.</span>
-                            <em>Yang Xu, Yu Hong, Huibin Ruan, Jianmin Yao, Min Zhang and Guodong Zhou</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1079" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Generation and Summarization</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1474">
-                        <td>
-                            <span class="poster-title">Learning To Split and Rephrase From Wikipedia Edit History.</span>
-                            <em>Jan A. Botha, Manaal Faruqui, John Alex, Jason Baldridge and Dipanjan Das</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1080" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="887">
-                        <td>
-                            <span class="poster-title">BLEU is Not Suitable for the Evaluation of Text Simplification.</span>
-                            <em>Elior Sulem, Omri Abend and Ari Rappoport</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1081" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2142">
-                        <td>
-                            <span class="poster-title">S2SPMN: A Simple and Effective Framework for Response Generation with Relevant Information.</span>
-                            <em>Jiaxin Pei and Chenliang Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1082" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="213">
-                        <td>
-                            <span class="poster-title">Improving Reinforcement Learning Based Image Captioning with Natural Language Prior.</span>
-                            <em>Tszhang Guo, Shiyu Chang, Mo Yu and Kun Bai</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1083" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1538">
-                        <td>
-                            <span class="poster-title">Training for Diversity in Image Paragraph Captioning.</span>
-                            <em>Luke Melas-Kyriazi, Alexander Rush and George Han</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1084" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="318">
-                        <td>
-                            <span class="poster-title">A Graph-theoretic Summary Evaluation for ROUGE.</span>
-                            <em>Elaheh ShafieiBavani, Mohammad Ebrahimi, Raymond Wong and Fang Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1085" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1156">
-                        <td>
-                            <span class="poster-title">Guided Neural Language Generation for Abstractive Summarization using Abstract Meaning Representation.</span>
-                            <em>Hardy Hardy and Andreas Vlachos</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1086" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1544">
-                        <td>
-                            <span class="poster-title">Evaluating Multiple System Summary Lengths: A Case Study.</span>
-                            <em>Ori Shapira, David Gabay, Hadar Ronen, Judit Bar-Ilan, Yael Amsterdamer, Ani Nenkova and Ido Dagan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1087" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1617">
-                        <td>
-                            <span class="poster-title">Neural Latent Extractive Document Summarization.</span>
-                            <em>Xingxing Zhang, Mirella Lapata, Furu Wei and Ming Zhou</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1088" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2242">
-                        <td>
-                            <span class="poster-title">On the Abstractiveness of Neural Document Summarization.</span>
-                            <em>Fangfang Zhang, Jin-ge Yao and Rui Yan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1089" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Text Classification, Text Mining and Information Retrieval</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1774">
-                        <td>
-                            <span class="poster-title">Automatic Essay Scoring Incorporating Rating Schema via Reinforcement Learning.</span>
-                            <em>Yucheng Wang, Zhongyu Wei, Yaqian Zhou and Xuanjing Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1090" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="16">
-                        <td>
-                            <span class="poster-title">Identifying Well-formed Natural Language Questions.</span>
-                            <em>Manaal Faruqui and Dipanjan Das</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1091" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="747">
-                        <td>
-                            <span class="poster-title">Self-Governing Neural Networks for On-Device Short Text Classification.</span>
-                            <em>Sujith Ravi and Zornitsa Kozareva</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1105" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="865">
-                        <td>
-                            <span class="poster-title">HFT-CNN: Learning Hierarchical Category Structure for Multi-label Short Text Categorization.</span>
-                            <em>Kazuya Shimura, Jiyi Li and Fumiyo Fukumoto</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1093" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1095">
-                        <td>
-                            <span class="poster-title">A Hierarchical Neural Attention-based Text Classifier.</span>
-                            <em>Koustuv Sinha, Yue Dong, Jackie Chi Kit Cheung and Derek Ruths</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1094" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2181">
-                        <td>
-                            <span class="poster-title">Labeled Anchors and a Scalable, Transparent, and Interactive Classifier.</span>
-                            <em>Jeffrey Lund, Stephen Cowley, Wilson Fearn, Emily Hales and Kevin Seppi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1095" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="577">
-                        <td>
-                            <span class="poster-title">Coherence-Aware Neural Topic Modeling.</span>
-                            <em>Ran Ding, Ramesh Nallapati and Bing Xiang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1096" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1031">
-                        <td>
-                            <span class="poster-title">Utilizing Character and Word Embeddings for Text Normalization with Sequence-to-Sequence Models.</span>
-                            <em>Daniel Watson, Nasser Zalmout and Nizar Habash</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1097" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1549">
-                        <td>
-                            <span class="poster-title">Topic Intrusion for Automatic Topic Model Evaluation.</span>
-                            <em>Shraey Bhatia, Jey Han Lau and Timothy Baldwin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1098" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1726">
-                        <td>
-                            <span class="poster-title">Supervised and Unsupervised Methods for Robust Separation of Section Titles and Prose Text in Web Documents.</span>
-                            <em>Abhijith Athreya Mysore Gopinath, Shomir Wilson and Norman Sadeh</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1099" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-2">
-        <span class="session-title">Mini-Break</span>
-        <br/>
-        <span class="session-time" title="Friday, 2 November 2018">14:45 &ndash; 15:00</span>
-    </div>
-    <div class="session-box" id="session-box-3">
-        <div class="session-header" id="session-header-3">Short Papers II (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-3a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">3A: Machine Translation I</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-3a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-3a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:l.specia@sheffield.ac.uk">Lucia Specia</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1527">
-                        <td id="paper-time">15:00&ndash;15:12</td>
-                        <td>
-                            <span class="paper-title">SwitchOut: an Efficient Data Augmentation Algorithm for Neural Machine Translation.</span>
-                            <em>Xinyi Wang, Hieu Pham, Zihang Dai and Graham Neubig</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1100" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2269">
-                        <td id="paper-time">15:12&ndash;15:24</td>
-                        <td>
-                            <span class="paper-title">Improving Unsupervised Word-by-Word Translation with Language Model and Denoising Autoencoder.</span>
-                            <em>Yunsu Kim, Jiahui Geng and Hermann Ney</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1101" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1220">
-                        <td id="paper-time">15:24&ndash;15:36</td>
-                        <td>
-                            <span class="paper-title">Decipherment of Substitution Ciphers with Neural Language Models.</span>
-                            <em>Nishant Kambhatla, Anahita Mansouri Bigvand and Anoop Sarkar</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1102" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2030">
-                        <td id="paper-time">15:36&ndash;15:48</td>
-                        <td>
-                            <span class="paper-title">Rapid Adaptation of Neural Machine Translation to New Languages.</span>
-                            <em>Graham Neubig and Junjie Hu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1103" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1600">
-                        <td id="paper-time">15:48&ndash;16:00</td>
-                        <td>
-                            <span class="paper-title">Compact Personalized Models for Neural Machine Translation.</span>
-                            <em>Joern Wuebker, Patrick Simianer and John DeNero</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1104" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-3b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">3B: Machine Learning I</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-3b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-3b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:byron.wallace@gmail.com">Byron Wallace</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="747">
-                        <td id="paper-time">15:00&ndash;15:12</td>
-                        <td>
-                            <span class="paper-title">Self-Governing Neural Networks for On-Device Short Text Classification.</span>
-                            <em>Sujith Ravi and Zornitsa Kozareva</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1105" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2236">
-                        <td id="paper-time">15:12&ndash;15:24</td>
-                        <td>
-                            <span class="paper-title">Supervised Domain Enablement Attention for Personalized Domain Classification.</span>
-                            <em>Joo-Kyung Kim and Young-Bum Kim</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1106" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1039">
-                        <td id="paper-time">15:24&ndash;15:36</td>
-                        <td>
-                            <span class="paper-title">A Deep Neural Network Sentence Level Classification Method with Context Information.</span>
-                            <em>Xingyi Song, Johann Petrak and Angus Roberts</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1107" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1198">
-                        <td id="paper-time">15:36&ndash;15:48</td>
-                        <td>
-                            <span class="paper-title">Towards Dynamic Computation Graphs via Sparse Latent Structure.</span>
-                            <em>Vlad Niculae, André F. T. Martins and Claire Cardie</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1108" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1111">
-                        <td id="paper-time">15:48&ndash;16:00</td>
-                        <td>
-                            <span class="paper-title">Convolutional Neural Networks with Recurrent Neural Filters.</span>
-                            <em>Yi Yang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1109" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-3c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">3C: Semantic Parsing / Generation</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-3c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-3c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:reut.tsarfaty@gmail.com">Reut Tsarfaty</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="526">
-                        <td id="paper-time">15:00&ndash;15:12</td>
-                        <td>
-                            <span class="paper-title">Exploiting Rich Syntactic Information for Semantic Parsing with Graph-to-Sequence Model.</span>
-                            <em>Kun Xu, Lingfei Wu, Zhiguo Wang, Mo Yu, Liwei Chen and Vadim Sheinin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1110" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1231">
-                        <td id="paper-time">15:12&ndash;15:24</td>
-                        <td>
-                            <span class="paper-title">Retrieval-Based Neural Code Generation.</span>
-                            <em>Shirley Anugrah Hayati, Raphael Olivier, Pravalika Avvaru, Pengcheng Yin, Anthony Tomasic and Graham Neubig</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1111" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="553">
-                        <td id="paper-time">15:24&ndash;15:36</td>
-                        <td>
-                            <span class="paper-title">SQL-to-Text Generation with Graph-to-Sequence Model.</span>
-                            <em>Kun Xu, Lingfei Wu, Zhiguo Wang, Yansong Feng and Vadim Sheinin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1112" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="739">
-                        <td id="paper-time">15:36&ndash;15:48</td>
-                        <td>
-                            <span class="paper-title">Generating Syntactic Paraphrases.</span>
-                            <em>Emilie Colin and Claire Gardent</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1113" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1708">
-                        <td id="paper-time">15:48&ndash;16:00</td>
-                        <td>
-                            <span class="paper-title">Neural-Davidsonian Semantic Proto-role Labeling.</span>
-                            <em>Rachel Rudinger, Adam Teichert, Ryan Culkin, Sheng Zhang and Benjamin Van Durme</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1114" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-3d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">3D: Vision / Discourse</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-3d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-3d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:joyu@ucdavis.edu">Zhou Yu</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="626">
-                        <td id="paper-time">15:00&ndash;15:12</td>
-                        <td>
-                            <span class="paper-title">Conversational Decision-Making Model for Predicting the King’s Decision in the Annals of the Joseon Dynasty.</span>
-                            <em>JinYeong Bak and Alice Oh</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1115" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1858">
-                        <td id="paper-time">15:12&ndash;15:24</td>
-                        <td>
-                            <span class="paper-title">Toward Fast and Accurate Neural Discourse Segmentation.</span>
-                            <em>Yizhong Wang, Sujian Li and Jingfeng Yang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1116" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2127">
-                        <td id="paper-time">15:24&ndash;15:36</td>
-                        <td>
-                            <span class="paper-title">A Dataset for Telling the Stories of Social Media Videos.</span>
-                            <em>Spandana Gella, Mike Lewis and Marcus Rohrbach</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1117" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1099">
-                        <td id="paper-time">15:36&ndash;15:48</td>
-                        <td>
-                            <span class="paper-title">Cascaded Mutual Modulation for Visual Reasoning.</span>
-                            <em>Yiqun Yao, Jiaming Xu, Feng Wang and Bo Xu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1118" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="208">
-                        <td id="paper-time">15:48&ndash;16:00</td>
-                        <td>
-                            <span class="paper-title">How agents see things: On visual representations in an emergent language game.</span>
-                            <em>Diane Bouchacourt and Marco Baroni</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1119" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-3">
-            <div id="expander"></div>
-            <a href="#" class="session-title">3E: Short Posters II</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">15:00 &ndash; 16:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Information Extraction</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="43">
-                        <td>
-                            <span class="poster-title">Attention-Based Capsule Networks with Dynamic Routing for Relation Extraction.</span>
-                            <em>Ningyu Zhang, Shumin Deng, Zhanling Sun, Xi Chen, Wei Zhang and Huajun Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1120" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="159">
-                        <td>
-                            <span class="poster-title">Put It Back: Entity Typing with Language Model Enhancement.</span>
-                            <em>Ji Xin, Hao Zhu, Xu Han, Zhiyuan Liu and Maosong Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1121" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="645">
-                        <td>
-                            <span class="poster-title">Event Detection with Neural Networks: A Rigorous Empirical Evaluation.</span>
-                            <em>Walker Orr, Prasad Tadepalli and Xiaoli Fern</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1122" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="864">
-                        <td>
-                            <span class="poster-title">PubSE: A Hierarchical Model for Publication Extraction from Academic Homepages.</span>
-                            <em>Yiqing Zhang, Jianzhong Qi, Rui Zhang and Chuandong Yin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1123" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1583">
-                        <td>
-                            <span class="poster-title">A Neural Transition-based Model for Nested Mention Recognition.</span>
-                            <em>Bailin Wang, Wei Lu, Yu Wang and Hongxia Jin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1124" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1759">
-                        <td>
-                            <span class="poster-title">Genre Separation Network with Adversarial Training for Cross-genre Relation Extraction.</span>
-                            <em>Ge Shi, Chong Feng, Lifu Huang, Boliang Zhang, Heng Ji, Lejian Liao and Heyan Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1125" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2143">
-                        <td>
-                            <span class="poster-title">Effective Use of Context in Noisy Entity Linking.</span>
-                            <em>David Mueller and Greg Durrett</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1126" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2146">
-                        <td>
-                            <span class="poster-title">Exploiting Contextual Information via Dynamic Memory Network for Event Detection.</span>
-                            <em>Shaobo Liu, Rui Cheng, Xiaoming Yu and Xueqi Cheng</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1127" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Question Answering</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="54">
-                        <td>
-                            <span class="poster-title">Do explanations make VQA models more predictable to a human?.</span>
-                            <em>Arjun Chandrasekaran, Viraj Prabhu, Deshraj Yadav, Prithvijit Chattopadhyay and Devi Parikh</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1128" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="205">
-                        <td>
-                            <span class="poster-title">Facts That Matter.</span>
-                            <em>Marco Ponza, Luciano Del Corro and Gerhard Weikum</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1129" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="558">
-                        <td>
-                            <span class="poster-title">Entity Tracking Improves Cloze-style Reading Comprehension.</span>
-                            <em>Luong Hoang, Sam Wiseman and Alexander Rush</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1130" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="590">
-                        <td>
-                            <span class="poster-title">Adversarial Domain Adaptation for Duplicate Question Detection.</span>
-                            <em>Darsh Shah, Tao Lei, Alessandro Moschitti, Salvatore Romeo and Preslav Nakov</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1131" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="663">
-                        <td>
-                            <span class="poster-title">Translating a Math Word Problem to a Expression Tree.</span>
-                            <em>Lei Wang, Yan Wang, Deng Cai, Dongxiang Zhang and Xiaojiang Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1132" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2197">
-                        <td>
-                            <span class="poster-title">Semantic Linking in Convolutional Neural Networks for Answer Sentence Selection.</span>
-                            <em>Massimo Nicosia and Alessandro Moschitti</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1133" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2199">
-                        <td>
-                            <span class="poster-title">A dataset and baselines for sequential open-domain question answering.</span>
-                            <em>Ahmed Elgohary, Chen Zhao and Jordan Boyd-Graber</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1134" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Sentiment Analysis</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="22">
-                        <td>
-                            <span class="poster-title">Improving the results of string kernels in sentiment analysis and Arabic dialect identification by adapting them to your test set.</span>
-                            <em>Radu Tudor Ionescu and Andrei M. Butnaru</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1135" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="228">
-                        <td>
-                            <span class="poster-title">Parameterized Convolutional Neural Networks for Aspect Level Sentiment Classification.</span>
-                            <em>Binxuan Huang and Kathleen Carley</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1136" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="644">
-                        <td>
-                            <span class="poster-title">Improving Multi-label Emotion Classification via Sentiment Classification with Dual Attention Transfer Network.</span>
-                            <em>Jianfei Yu, Luis Marujo, Jing Jiang, Pradeep Karuturi and William Brendel</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1137" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="995">
-                        <td>
-                            <span class="poster-title">Learning Sentiment Memories for Sentiment Modification without Parallel Data.</span>
-                            <em>Yi Zhang, Jingjing Xu, Pengcheng Yang and Xu Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1138" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1117">
-                        <td>
-                            <span class="poster-title">Joint Aspect and Polarity Classification for Aspect-based Sentiment Analysis with End-to-End Neural Networks.</span>
-                            <em>Martin Schmitt, Simon Steinheber, Konrad Schreiber and Benjamin Roth</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1139" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1797">
-                        <td>
-                            <span class="poster-title">Representing Social Media Users for Sarcasm Detection.</span>
-                            <em>Y. Alex Kolchinski and Christopher Potts</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1140" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2326">
-                        <td>
-                            <span class="poster-title">Syntactical Analysis of the Weaknesses of Sentiment Analyzers.</span>
-                            <em>Rohil Verma, Samuel Kim and David Walter</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1141" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Social Applications</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="586">
-                        <td>
-                            <span class="poster-title">Is Nike female? Exploring the role of sound symbolism in predicting brand name gender.</span>
-                            <em>Sridhar Moorthy, Ruth Pogacar, Samin Khan and Yang Xu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1142" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="717">
-                        <td>
-                            <span class="poster-title">Improving Large-Scale Fact-Checking using Decomposable Attention Models and Lexical Tagging.</span>
-                            <em>Nayeon Lee, Chien-Sheng Wu and Pascale Fung</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1143" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="814">
-                        <td>
-                            <span class="poster-title">Harnessing Popularity in Social Media for Extractive Summarization of Online Conversations.</span>
-                            <em>Ryuji Kano, Yasuhide Miura, Motoki Taniguchi, Yan-Ying Chen, Francine Chen and Tomoko Ohkuma</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1144" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="894">
-                        <td>
-                            <span class="poster-title">Identifying Locus of Control in Social Media Language.</span>
-                            <em>Masoud Rouhizadeh, Kokil Jaidka, Laura Smith, H. Andrew Schwartz, Anneke Buffone and Lyle Ungar</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1145" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1379">
-                        <td>
-                            <span class="poster-title">Somm: Into the Model.</span>
-                            <em>Shengli Hu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1146" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1471">
-                        <td>
-                            <span class="poster-title">Fine-Grained Emotion Detection in Health-Related Online Posts.</span>
-                            <em>Hamed Khanpour and Cornelia Caragea</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1147" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1522">
-                        <td>
-                            <span class="poster-title">The Remarkable Benefit of User-Level Aggregation for Lexical-based Population-Level Predictions.</span>
-                            <em>Salvatore Giorgi, Daniel Preoţiuc-Pietro, Anneke Buffone, Daniel Rieman, Lyle Ungar and H. Andrew Schwartz</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1148" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-3">
-        <span class="session-title">Coffee Break</span>
-        <br/>
-        <span class="session-time" title="Friday, 2 November 2018">16:00 &ndash; 16:30</span>
-    </div>
-    <div class="session-box" id="session-box-4">
-        <div class="session-header" id="session-header-4">Long Papers &amp; Demos II (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-4a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">4A: Language Models</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-4a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-4a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:cdyer@google.com">Chris Dyer</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="953">
-                        <td id="paper-time">16:30&ndash;16:48</td>
-                        <td>
-                            <span class="paper-title">Deterministic Non-Autoregressive Neural Sequence Modeling by Iterative Refinement.</span>
-                            <em>Jason Lee, Elman Mansimov and Kyunghyun Cho</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1149" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1229">
-                        <td id="paper-time">16:48&ndash;17:06</td>
-                        <td>
-                            <span class="paper-title">Large Margin Neural Language Model.</span>
-                            <em>Jiaji Huang, Yi Li, Wei Ping and Liang Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1150" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1799">
-                        <td id="paper-time">17:06&ndash;17:24</td>
-                        <td>
-                            <span class="paper-title">Targeted Syntactic Evaluation of Language Models.</span>
-                            <em>Rebecca Marvin and Tal Linzen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1151" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2001">
-                        <td id="paper-time">17:24&ndash;17:42</td>
-                        <td>
-                            <span class="paper-title">Rational Recurrences.</span>
-                            <em>Hao Peng, Roy Schwartz, Sam Thomson and Noah A. Smith</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1152" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2117">
-                        <td id="paper-time">17:42&ndash;18:00</td>
-                        <td>
-                            <span class="paper-title">Efficient Contextualized Representation: Language Model Pruning for Sequence Labeling.</span>
-                            <em>Liyuan Liu, Xiang Ren, Jingbo Shang, Xiaotao Gu, Jian Peng and Jiawei Han</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1153" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-4b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">4B: Information Extraction</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-4b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-4b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:jih@rpi.edu">Heng Ji</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="224">
-                        <td id="paper-time">16:30&ndash;16:48</td>
-                        <td>
-                            <span class="paper-title">Automatic Event Salience Identification.</span>
-                            <em>Zhengzhong Liu, Chenyan Xiong, Teruko Mitamura and Eduard Hovy</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1154" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="766">
-                        <td id="paper-time">16:48&ndash;17:06</td>
-                        <td>
-                            <span class="paper-title">Temporal Information Extraction by Predicting Relative Time-lines.</span>
-                            <em>Artuur Leeuwenberg and Marie-Francine Moens</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1155" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1177">
-                        <td id="paper-time">17:06&ndash;17:24</td>
-                        <td>
-                            <span class="paper-title">Jointly Multiple Events Extraction via Attention-based Graph Information Aggregation.</span>
-                            <em>Xiao Liu, Zhunchen Luo and Heyan Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1156" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1613">
-                        <td id="paper-time">17:24&ndash;17:42</td>
-                        <td>
-                            <span class="paper-title">RESIDE: Improving Distantly-Supervised Neural Relation Extraction using Side Information.</span>
-                            <em>Shikhar Vashishth, Rishabh Joshi, Sai Suman Prayaga, Chiranjib Bhattacharyya and Partha Talukdar</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1157" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1924">
-                        <td id="paper-time">17:42&ndash;18:00</td>
-                        <td>
-                            <span class="paper-title">Collective Event Detection via a Hierarchical and Bias Tagging Networks with Gated Multi-level Attention Mechanisms.</span>
-                            <em>Yubo Chen, Hang Yang, Kang Liu, Jun Zhao and Yantao Jia</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1158" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-4c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">4C: Syntactic Parsing</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-4c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-4c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:joakim.nivre@lingfil.uu.se">Joakim Nivre</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="217">
-                        <td id="paper-time">16:30&ndash;16:48</td>
-                        <td>
-                            <span class="paper-title">Valency-Augmented Dependency Parsing.</span>
-                            <em>Tianze Shi and Lillian Lee</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1159" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="336">
-                        <td id="paper-time">16:48&ndash;17:06</td>
-                        <td>
-                            <span class="paper-title">Unsupervised Learning of Syntactic Structure with Invertible Neural Projections.</span>
-                            <em>Junxian He, Graham Neubig and Taylor Berg-Kirkpatrick</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1160" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="791">
-                        <td id="paper-time">17:06&ndash;17:24</td>
-                        <td>
-                            <span class="paper-title">Dynamic Oracles for Top-Down and In-Order Shift-Reduce Constituent Parsing.</span>
-                            <em>Daniel Fernández-González and Carlos Gómez-Rodríguez</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1161" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1147">
-                        <td id="paper-time">17:24&ndash;17:42</td>
-                        <td>
-                            <span class="paper-title">Constituent Parsing as Sequence Labeling.</span>
-                            <em>Carlos Gómez-Rodríguez and David Vilares</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1162" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2217">
-                        <td id="paper-time">17:42&ndash;18:00</td>
-                        <td>
-                            <span class="paper-title">Synthetic Data Made to Order: The Case of Parsing.</span>
-                            <em>Dingquan Wang and Jason Eisner</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1163" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-4d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">4D: Visual QA</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-4d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-4d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:CarinaSilberer@gmail.com">Carina Silberer</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="247">
-                        <td id="paper-time">16:30&ndash;16:48</td>
-                        <td>
-                            <span class="paper-title">Tell-and-Answer: Towards Explainable Visual Question Answering using Attributes and Captions.</span>
-                            <em>Qing Li, Jianlong Fu, Dongfei Yu, Tao Mei and Jiebo Luo</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1164" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="282">
-                        <td id="paper-time">16:48&ndash;17:06</td>
-                        <td>
-                            <span class="paper-title">Learning a Policy for Opportunistic Active Learning.</span>
-                            <em>Aishwarya Padmakumar, Peter Stone and Raymond Mooney</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1165" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1213">
-                        <td id="paper-time">17:06&ndash;17:24</td>
-                        <td>
-                            <span class="paper-title">RecipeQA: A Challenge Dataset for Multimodal Comprehension of Cooking Recipes.</span>
-                            <em>Semih Yagcioglu, Aykut Erdem, Erkut Erdem and Nazli Ikizler-Cinbis</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1166" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1650">
-                        <td id="paper-time">17:24&ndash;17:42</td>
-                        <td>
-                            <span class="paper-title">TVQA: Localized, Compositional Video Question Answering.</span>
-                            <em>Jie Lei, Licheng Yu, Mohit Bansal and Tamara Berg</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1167" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1763">
-                        <td id="paper-time">17:42&ndash;18:00</td>
-                        <td>
-                            <span class="paper-title">Localizing Moments in Video with Temporal Language.</span>
-                            <em>Lisa Anne Hendricks, Oliver Wang, Eli Shechtman, Josef Sivic, Trevor Darrell and Bryan Russell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1168" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-4">
-            <div id="expander"></div>
-            <a href="#" class="session-title">4E: Semantics III (Posters and Demos)</a>
-            <br/>
-            <span class="session-time" title="Friday, 2 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Lexical Semantics</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="179">
-                        <td>
-                            <span class="poster-title">Card-660: Cambridge Rare Word Dataset - a Reliable Benchmark for Infrequent Word Representation Models.</span>
-                            <em>Mohammad Taher Pilehvar, Dimitri Kartsaklis, Victor Prokhorov and Nigel Collier</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1169" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="244">
-                        <td>
-                            <span class="poster-title">Leveraging Gloss Knowledge in Neural Word Sense Disambiguation by Hierarchical Co-Attention.</span>
-                            <em>Fuli Luo, Tianyu Liu, Zexue He, Qiaolin Xia, Zhifang Sui and Baobao Chang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1170" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="741">
-                        <td>
-                            <span class="poster-title">Weeding out Conventionalized Metaphors: A Corpus of Novel Metaphor Annotations.</span>
-                            <em>Erik-Lân Do Dinh, Hannah Wieland and Iryna Gurevych</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1171" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="769">
-                        <td>
-                            <span class="poster-title">Streaming word similarity mining on the cheap.</span>
-                            <em>Olof Görnerup and Daniel Gillblad</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1172" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="819">
-                        <td>
-                            <span class="poster-title">Memory, Show the Way: Memory Based Few Shot Word Representation Learning.</span>
-                            <em>Jingyuan Sun, Shaonan Wang and Chengqing Zong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1173" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="983">
-                        <td>
-                            <span class="poster-title">Disambiguated skip-gram model.</span>
-                            <em>Karol Grzegorczyk and Marcin Kurdziel</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1174" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1037">
-                        <td>
-                            <span class="poster-title">Picking Apart Story Salads.</span>
-                            <em>Su Wang, Eric Holgate, Greg Durrett and Katrin Erk</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1175" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1175">
-                        <td>
-                            <span class="poster-title">Dynamic Meta-Embeddings for Improved Sentence Representations.</span>
-                            <em>Douwe Kiela, Changhan Wang and Kyunghyun Cho</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1176" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1257">
-                        <td>
-                            <span class="poster-title">A Probabilistic Model for Joint Learning of Word Embeddings from Texts and Images.</span>
-                            <em>Melissa Ailem, Bowen Zhang, Aurélien Bellet, Pascal Denis and Fei Sha</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1177" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1470">
-                        <td>
-                            <span class="poster-title">Transfer and Multi-Task Learning for Noun–Noun Compound Interpretation.</span>
-                            <em>Murhaf Fares, Stephan Oepen and Erik Velldal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1178" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1472">
-                        <td>
-                            <span class="poster-title">Dissecting Contextual Word Embeddings: Architecture and Representation.</span>
-                            <em>Matthew Peters, Mark Neumann, Luke Zettlemoyer and Wen-tau Yih</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1179" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1790">
-                        <td>
-                            <span class="poster-title">Preposition Sense Disambiguation and Representation.</span>
-                            <em>Hongyu Gong, Jiaqi Mu, Suma Bhat and Pramod Viswanath</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1180" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1870">
-                        <td>
-                            <span class="poster-title">Auto-Encoding Dictionary Definitions into Consistent Word Embeddings.</span>
-                            <em>Tom Bosc and Pascal Vincent</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1181" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2221">
-                        <td>
-                            <span class="poster-title">Spot the Odd Man Out: Exploring the Associative Power of Lexical Resources.</span>
-                            <em>Gabriel Stanovsky and Mark Hopkins</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1182" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1346-TACL">
-                        <td>
-                            <span class="poster-title">[TACL] Linear Algebraic Structure of Word Senses, with Applications to Polysemy.</span>
-                            <em>Sanjeev Arora, Yuanzhi Li, Yingyu Liang, Tengyu Ma, Andrej Risteski</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Semantic Inference</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="682">
-                        <td>
-                            <span class="poster-title">Neural Multitask Learning for Simile Recognition.</span>
-                            <em>Lizhen Liu, Xiao Hu, Wei Song, Ruiji Fu, Ting Liu and Guoping Hu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1183" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="911">
-                        <td>
-                            <span class="poster-title">Structured Alignment Networks for Matching Sentences.</span>
-                            <em>Yang Liu, Matt Gardner and Mirella Lapata</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1184" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1669">
-                        <td>
-                            <span class="poster-title">Compare, Compress and Propagate: Enhancing Neural Architectures with Alignment Factorization for Natural Language Inference.</span>
-                            <em>Yi Tay, Anh Tuan Luu and Siu Cheung Hui</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1185" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1821">
-                        <td>
-                            <span class="poster-title">Convolutional Interaction Network for Natural Language Inference.</span>
-                            <em>Jingjing Gong, Xipeng Qiu, Xinchi Chen, Dong Liang and Xuanjing Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1186" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1837">
-                        <td>
-                            <span class="poster-title">Lessons from Natural Language Inference in the Clinical Domain.</span>
-                            <em>Alexey Romanov and Chaitanya Shivade</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1187" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Semantic Parsing</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="264">
-                        <td>
-                            <span class="poster-title">Question Generation from SQL Queries Improves Neural Semantic Parsing.</span>
-                            <em>Daya Guo, Yibo Sun, Duyu Tang, Nan Duan, Jian Yin, Hong Chi, James Cao, Peng Chen and Ming Zhou</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1188" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="670">
-                        <td>
-                            <span class="poster-title">SemRegex: A Semantics-Based Approach for Generating Regular Expressions from Natural Language Specifications.</span>
-                            <em>Zexuan Zhong, Jiaqi Guo, Wei Yang, Jian Peng, Tao Xie, Jian-Guang Lou, Ting Liu and Dongmei Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1189" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="829">
-                        <td>
-                            <span class="poster-title">Decoupling Structure and Lexicon for Zero-Shot Semantic Parsing.</span>
-                            <em>Jonathan Herzig and Jonathan Berant</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1190" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1052">
-                        <td>
-                            <span class="poster-title">A Span Selection Model for Semantic Role Labeling.</span>
-                            <em>Hiroki Ouchi, Hiroyuki Shindo and Yuji Matsumoto</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1191" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1100">
-                        <td>
-                            <span class="poster-title">Mapping Language to Code in Programmatic Context.</span>
-                            <em>Srinivasan Iyer, Ioannis Konstas, Alvin Cheung and Luke Zettlemoyer</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1192" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1261">
-                        <td>
-                            <span class="poster-title">SyntaxSQLNet: Syntax Tree Networks for Complex and Cross-Domain Text-to-SQL Task.</span>
-                            <em>Tao Yu, Michihiro Yasunaga, Kai Yang, Rui Zhang, Dongxu Wang, Zifan Li and Dragomir Radev</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1193" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1398">
-                        <td>
-                            <span class="poster-title">Cross-lingual Decompositional Semantic Parsing.</span>
-                            <em>Sheng Zhang, Xutai Ma, Rachel Rudinger, Kevin Duh and Benjamin Van Durme</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1194" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1699">
-                        <td>
-                            <span class="poster-title">Learning to Learn Semantic Parsers from Natural Language Supervision.</span>
-                            <em>Igor Labutov, Bishan Yang and Tom Mitchell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1195" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1766">
-                        <td>
-                            <span class="poster-title">DeepCx: A transition-based approach for shallow semantic parsing with complex constructional triggers.</span>
-                            <em>Jesse Dunietz, Jaime Carbonell and Lori Levin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1196" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1791">
-                        <td>
-                            <span class="poster-title">What It Takes to Achieve 100% Condition Accuracy on WikiSQL.</span>
-                            <em>Semih Yavuz, Izzeddin Gur, Yu Su and Xifeng Yan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1197" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2073">
-                        <td>
-                            <span class="poster-title">Better Transition-Based AMR Parsing with a Refined Search Space.</span>
-                            <em>Zhijiang Guo and Wei Lu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1198" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Demos</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="8-demo">
-                        <td>
-                            <span class="poster-title">TRANX: A Transition-based Neural Abstract Syntax Parser for Semantic Parsing and Code Generation.</span>
-                            <em>Pengcheng Yin and Graham Neubig</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2002" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="25-demo">
-                        <td>
-                            <span class="poster-title">Visual Interrogation of Attention-Based Models for Natural Language Inference and Machine Comprehension.</span>
-                            <em>Shusen Liu, Tao Li, Zhimin Li, Vivek Srikumar, Valerio Pascucci and Peer-Timo Bremer</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2007" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="62-demo">
-                        <td>
-                            <span class="poster-title">Magnitude: A Fast, Efficient Universal Vector Embedding Utility Package.</span>
-                            <em>Ajay Patel, Alexander Sands, Chris Callison-Burch and Marianna Apidianaki</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2021" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="77-demo">
-                        <td>
-                            <span class="poster-title">Universal Sentence Encoder for English.</span>
-                            <em>Daniel Cer, Yinfei Yang, Sheng-yi Kong, Nan Hua, Nicole Limtiaco, Rhomni St. John, Noah Constant, Mario Guajardo-Cespedes, Steve Yuan, Chris Tar, Brian Strope and Ray Kurzweil</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2029" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="day" id="day-4">Saturday, 3 November 2018</div>
-    <div class="session-box" id="session-box-5">
-        <div class="session-header" id="session-header-5">Long Papers &amp; Demos III (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-5a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">5A: Semantics IV</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-5a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-5a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:oe@ifi.uio.no">Stephan Oepen</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="654">
-                        <td id="paper-time">09:00&ndash;09:18</td>
-                        <td>
-                            <span class="paper-title">Heuristically Informed Unsupervised Idiom Usage Recognition.</span>
-                            <em>Changsheng Liu and Rebecca Hwa</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1199" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="835">
-                        <td id="paper-time">09:18&ndash;09:36</td>
-                        <td>
-                            <span class="paper-title">Coming to Your Senses: on Controls and Evaluation Sets in Polysemy Research.</span>
-                            <em>Haim Dubossarsky, Eitan Grossman and Daphna Weinshall</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1200" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1581">
-                        <td id="paper-time">09:36&ndash;09:54</td>
-                        <td>
-                            <span class="paper-title">Predicting Semantic Relations using Global Graph Properties.</span>
-                            <em>Yuval Pinter and Jacob Eisenstein</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1201" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1728">
-                        <td id="paper-time">09:54&ndash;10:12</td>
-                        <td>
-                            <span class="paper-title">Learning Scalar Adjective Intensity from Paraphrases.</span>
-                            <em>Anne Cocos, Veronica Wharton, Ellie Pavlick, Marianna Apidianaki and Chris Callison-Burch</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1202" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2009">
-                        <td id="paper-time">10:12&ndash;10:30</td>
-                        <td>
-                            <span class="paper-title">Pointwise HSIC: A Linear-Time Kernelized Co-occurrence Norm for Sparse Linguistic Expressions.</span>
-                            <em>Sho Yokoi, Sosuke Kobayashi, Kenji Fukumizu, Jun Suzuki and Kentaro Inui</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1203" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-5b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">5B: Summarization</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-5b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-5b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:feiliu@cs.ucf.edu">Fei Liu</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="469">
-                        <td id="paper-time">09:00&ndash;09:18</td>
-                        <td>
-                            <span class="paper-title">Neural Related Work Summarization with a Joint Context-driven Attention Mechanism.</span>
-                            <em>Yongzhen Wang, Xiaozhong Liu and Zheng Gao</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1204" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="731">
-                        <td id="paper-time">09:18&ndash;09:36</td>
-                        <td>
-                            <span class="paper-title">Improving Neural Abstractive Document Summarization with Explicit Information Selection Modeling.</span>
-                            <em>Wei Li, Xinyan Xiao, Yajuan Lyu and Yuanzhuo Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1205" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1090">
-                        <td id="paper-time">09:36&ndash;09:54</td>
-                        <td>
-                            <span class="paper-title">Don't Give Me the Details, Just the Summary! Topic-Aware Convolutional Neural Networks for Extreme Summarization.</span>
-                            <em>Shashi Narayan, Shay B. Cohen and Mirella Lapata</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1206" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1778">
-                        <td id="paper-time">09:54&ndash;10:12</td>
-                        <td>
-                            <span class="paper-title">Improving Abstraction in Text Summarization.</span>
-                            <em>Wojciech Kryściński, Romain Paulus, Caiming Xiong and Richard Socher</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1207" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2164">
-                        <td id="paper-time">10:12&ndash;10:30</td>
-                        <td>
-                            <span class="paper-title">Content Selection in Deep Learning Models of Summarization.</span>
-                            <em>Chris Kedzie, Kathleen McKeown and Hal Daume III</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1208" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-5c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">5C: IR / Text Mining</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-5c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-5c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:amoschitti@gmail.com">Alessandro Moschitti</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="190">
-                        <td id="paper-time">09:00&ndash;09:18</td>
-                        <td>
-                            <span class="paper-title">Improved Semantic-Aware Network Embedding with Fine-Grained Word Alignment.</span>
-                            <em>Dinghan Shen, Xinyuan Zhang, Ricardo Henao and Lawrence Carin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1209" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="391">
-                        <td id="paper-time">09:18&ndash;09:36</td>
-                        <td>
-                            <span class="paper-title">Learning Context-Sensitive Convolutional Filters for Text Processing.</span>
-                            <em>Dinghan Shen, Martin Renqiang Min, Yitong Li and Lawrence Carin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1210" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1186">
-                        <td id="paper-time">09:36&ndash;09:54</td>
-                        <td>
-                            <span class="paper-title">Deep Relevance Ranking Using Enhanced Document-Query Interactions.</span>
-                            <em>Ryan McDonald, George Brokos and Ion Androutsopoulos</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1211" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1586">
-                        <td id="paper-time">09:54&ndash;10:12</td>
-                        <td>
-                            <span class="paper-title">Learning Neural Representation for CLIR with Adversarial Framework.</span>
-                            <em>Bo Li and Ping Cheng</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1212" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1659">
-                        <td id="paper-time">10:12&ndash;10:30</td>
-                        <td>
-                            <span class="paper-title">AD3: Attentive Deep Document Dater.</span>
-                            <em>Swayambhu Nath Ray, Shib Sankar Dasgupta and Partha Talukdar</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1213" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-5d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">5D: Machine Learning II</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-5d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-5d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:kw@kwchang.net">Kai-Wei Chang</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1406">
-                        <td id="paper-time">09:00&ndash;09:18</td>
-                        <td>
-                            <span class="paper-title">Gromov-Wasserstein Alignment of Word Embedding Spaces.</span>
-                            <em>David Alvarez-Melis and Tommi Jaakkola</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1214" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1504">
-                        <td id="paper-time">09:18&ndash;09:36</td>
-                        <td>
-                            <span class="paper-title">Deep Probabilistic Logic: A Unifying Framework for Indirect Supervision.</span>
-                            <em>Hai Wang and Hoifung Poon</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1215" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1621">
-                        <td id="paper-time">09:36&ndash;09:54</td>
-                        <td>
-                            <span class="paper-title">Deriving Machine Attention from Human Rationales.</span>
-                            <em>Yujia Bao, Shiyu Chang, Mo Yu and Regina Barzilay</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1216" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1741">
-                        <td id="paper-time">09:54&ndash;10:12</td>
-                        <td>
-                            <span class="paper-title">Semi-Supervised Sequence Modeling with Cross-View Training.</span>
-                            <em>Kevin Clark, Minh-Thang Luong, Christopher D. Manning and Quoc Le</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1217" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1430-TACL">
-                        <td id="paper-time">10:12&ndash;10:30</td>
-                        <td>
-                            <span class="paper-title">[TACL] Comparing Bayesian Models of Annotation.</span>
-                            <em>Silviu Paun, Bob Carpenter, Jon Chamberlain, Dirk Hovy, Udo Kruschwitz, Massimo Poesio</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL01.pdf" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-5">
-            <div id="expander"></div>
-            <a href="#" class="session-title">5E: Information Extraction, Question Answering (Posters and Demos)</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Entities and Coreference</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="171">
-                        <td>
-                            <span class="poster-title">Mapping Text to Knowledge Graph Entities using Multi-Sense LSTMs.</span>
-                            <em>Dimitri Kartsaklis, Mohammad Taher Pilehvar and Nigel Collier</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1221" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="415">
-                        <td>
-                            <span class="poster-title">Differentiating Concepts and Instances for Knowledge Graph Embedding.</span>
-                            <em>Xin Lv, Lei Hou, Juanzi Li and Zhiyuan Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1222" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1234">
-                        <td>
-                            <span class="poster-title">One-Shot Relational Learning for Knowledge Graphs.</span>
-                            <em>Wenhan Xiong, Mo Yu, Shiyu Chang, Xiaoxiao Guo and William Yang Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1223" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1762">
-                        <td>
-                            <span class="poster-title">Regular Expression Guided Entity Mention Mining from Noisy Web Data.</span>
-                            <em>Shanshan Zhang, Lihong He, Slobodan Vucetic and Eduard Dragut</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1224" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="575">
-                        <td>
-                            <span class="poster-title">A Deterministic Algorithm for Bridging Anaphora Resolution.</span>
-                            <em>Yufang Hou</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1219" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1104">
-                        <td>
-                            <span class="poster-title">A Knowledge Hunting Framework for Common Sense Reasoning.</span>
-                            <em>Ali Emami, Noelia De La Cruz, Adam Trischler, Kaheer Suleman and Jackie Chi Kit Cheung</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1220" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="615">
-                        <td>
-                            <span class="poster-title">Neural Adaptation Layers for Cross-domain Named Entity Recognition.</span>
-                            <em>Bill Yuchen Lin and Wei Lu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1226" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="855">
-                        <td>
-                            <span class="poster-title">Entity Linking within a Social Media Platform: A Case Study on Yelp.</span>
-                            <em>Hongliang Dai, Yangqiu Song, Liwei Qiu and Rijia Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1227" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1094">
-                        <td>
-                            <span class="poster-title">Annotation of a Large Clinical Entity Corpus.</span>
-                            <em>Pinal Patel, Disha Davey, Vishal Panchal and Parth Pathak</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1228" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1344">
-                        <td>
-                            <span class="poster-title">Visual Supervision in Bootstrapped Information Extraction.</span>
-                            <em>Matthew Berger, Ajay Nagesh, Joshua Levine, Mihai Surdeanu and Helen Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1229" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1631">
-                        <td>
-                            <span class="poster-title">Learning Named Entity Tagger using Domain-Specific Dictionary.</span>
-                            <em>Jingbo Shang, Liyuan Liu, Xiaotao Gu, Xiang Ren, Teng Ren and Jiawei Han</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1230" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1973">
-                        <td>
-                            <span class="poster-title">Zero-Shot Open Entity Typing as Type-Compatible Grounding.</span>
-                            <em>Ben Zhou, Daniel Khashabi, Chen-Tse Tsai and Dan Roth</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1231" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Question Answering and Reading Comprehension</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="94">
-                        <td>
-                            <span class="poster-title">Attention-Guided Answer Distillation for Machine Reading Comprehension.</span>
-                            <em>Minghao Hu, Yuxing Peng, Furu Wei, Zhen Huang, Dongsheng Li, Nan Yang and Ming Zhou</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1232" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="534">
-                        <td>
-                            <span class="poster-title">Interpretation of Natural Language Rules in Conversational Machine Reading.</span>
-                            <em>Marzieh Saeidi, Max Bartolo, Patrick Lewis, Sameer Singh, Tim Rocktäschel, Mike Sheldon, Guillaume Bouchard and Sebastian Riedel</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1233" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="771">
-                        <td>
-                            <span class="poster-title">A State-transition Framework to Answer Complex Questions over Knowledge Base.</span>
-                            <em>Sen Hu, Lei Zou and Xinbo Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1234" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="833">
-                        <td>
-                            <span class="poster-title">A Multi-answer Multi-task Framework for Real-world Machine Reading Comprehension.</span>
-                            <em>Jiahua Liu, Wan Wei, Maosong Sun, Hao Chen, Yantao Du and Dekang Lin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1235" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1110">
-                        <td>
-                            <span class="poster-title">Logician and Orator: Learning from the Duality between Language and Knowledge in Open Domain.</span>
-                            <em>Mingming Sun, Xu Li and Ping Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1236" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1630">
-                        <td>
-                            <span class="poster-title">MemoReader: Large-Scale Reading Comprehension through Neural Memory Controller.</span>
-                            <em>Seohyun Back, Seunghak Yu, Sathish Reddy Indurthi, Jihie Kim and Jaegul Choo</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1237" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1677">
-                        <td>
-                            <span class="poster-title">Multi-Granular Sequence Encoding via Dilated Compositional Units for Reading Comprehension.</span>
-                            <em>Yi Tay, Anh Tuan Luu and Siu Cheung Hui</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1238" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1721">
-                        <td>
-                            <span class="poster-title">Neural Compositional Denotational Semantics for Question Answering.</span>
-                            <em>Nitish Gupta and Mike Lewis</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1239" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2168">
-                        <td>
-                            <span class="poster-title">Cross-Pair Text Representations for Answer Sentence Selection.</span>
-                            <em>Kateryna Tymoshenko and Alessandro Moschitti</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1240" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2177">
-                        <td>
-                            <span class="poster-title">QuAC: Question Answering in Context.</span>
-                            <em>Eunsol Choi, He He, Mohit Iyyer, Mark Yatskar, Wen-tau Yih, Yejin Choi, Percy Liang and Luke Zettlemoyer</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1241" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2244">
-                        <td>
-                            <span class="poster-title">Knowledge Base Question Answering via Encoding of Complex Query Graphs.</span>
-                            <em>Kangqi Luo, Fengli Lin, Xusheng Luo and Kenny Zhu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1242" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Relation Extraction</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="58">
-                        <td>
-                            <span class="poster-title">Neural Relation Extraction via Inner-Sentence Noise Reduction and Transfer Learning.</span>
-                            <em>Tianyi Liu, Xinsong Zhang, Wanhao Zhou and Weijia Jia</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1243" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="297">
-                        <td>
-                            <span class="poster-title">Graph Convolution over Pruned Dependency Trees Improves Relation Extraction.</span>
-                            <em>Yuhao Zhang, Peng Qi and Christopher D. Manning</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1244" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="425">
-                        <td>
-                            <span class="poster-title">Multi-Level Structured Self-Attentions for Distantly Supervised Relation Extraction.</span>
-                            <em>Jinhua Du, Jingguang Han, Andy Way and Dadong Wan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1245" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="712">
-                        <td>
-                            <span class="poster-title">N-ary Relation Extraction using Graph-State LSTM.</span>
-                            <em>Linfeng Song, Yue Zhang, Zhiguo Wang and Daniel Gildea</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1246" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1009">
-                        <td>
-                            <span class="poster-title">Hierarchical Relation Extraction with Coarse-to-Fine Grained Attention.</span>
-                            <em>Xu Han, Pengfei Yu, Zhiyuan Liu, Maosong Sun and Peng Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1247" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1020">
-                        <td>
-                            <span class="poster-title">Label-Free Distant Supervision for Relation Extraction via Knowledge Graph Embedding.</span>
-                            <em>Guanying Wang, Wen Zhang, Ruoxu Wang, Yalin Zhou, Xi Chen, Wei Zhang, Hai Zhu and Huajun Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1248" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1048">
-                        <td>
-                            <span class="poster-title">Extracting Entities and Relations with Joint Minimum Risk Training.</span>
-                            <em>Changzhi Sun, Yuanbin Wu, Man Lan, Shiliang Sun, Wenting Wang, Kuang-Chih Lee and Kewen Wu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1249" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1232">
-                        <td>
-                            <span class="poster-title">Large-scale Exploration of Neural Relation Classification Architectures.</span>
-                            <em>Hoang-Quynh Le, Duy-Cat Can, Sinh T. Vu, Thanh Hai Dang, Mohammad Taher Pilehvar and Nigel Collier</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1250" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1751">
-                        <td>
-                            <span class="poster-title">Possessors Change Over Time: A Case Study with Artworks.</span>
-                            <em>Dhivya Chinnappa and Eduardo Blanco</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1251" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Demos</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="39-demo">
-                        <td>
-                            <span class="poster-title">CogCompTime: A Tool for Understanding Time in Natural Language.</span>
-                            <em>Qiang Ning, Ben Zhou, Zhili Feng, Haoruo Peng and Dan Roth</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2013" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="29-demo">
-                        <td>
-                            <span class="poster-title">DERE: A Task and Domain-Independent Slot Filling Framework for Declarative Relation Extraction.</span>
-                            <em>Heike Adel, Laura Ana Maria Bostan, Sean Papay, Sebastian Padó and Roman Klinger</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2008" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="63-demo">
-                        <td>
-                            <span class="poster-title">Integrating Knowledge-Supported Search into the INCEpTION Annotation Platform.</span>
-                            <em>Beto Boullosa, Richard Eckart de Castilho, Naveen Kumar, Jan-Christoph Klie and Iryna Gurevych</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2022" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="67-demo">
-                        <td>
-                            <span class="poster-title">OpenKE: An Open Toolkit for Knowledge Embedding.</span>
-                            <em>Xu Han, Shulin Cao, Xin Lv, Yankai Lin, Zhiyuan Liu, Maosong Sun and Juanzi Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2024" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="21-demo">
-                        <td>
-                            <span class="poster-title">An Interactive Web-Interface for Visualizing the Inner Workings of the Question Answering LSTM.</span>
-                            <em>Ekaterina Loginova and Günter Neumann</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2006" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="58-demo">
-                        <td>
-                            <span class="poster-title">An Interface for Annotating Science Questions.</span>
-                            <em>Michael Boratko, Harshit Padigela, Divyendra Mikkilineni, Pritish Yuvraj, Rajarshi Das, Andrew McCallum, Maria Chang, Achille Fokoue, Pavan Kapanipathi, Nicholas Mattei, Ryan Musa, Kartik Talamadupula and Michael Witbrock</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2018" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="61-demo">
-                        <td>
-                            <span class="poster-title">Interactive Instance-based Evaluation of Knowledge Base Question Answering.</span>
-                            <em>Daniil Sorokin and Iryna Gurevych</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2020" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-4">
-        <span class="session-title">Coffee Break</span>
-        <br/>
-        <span class="session-time" title="Saturday, 3 November 2018">10:30 &ndash; 11:00</span>
-    </div>
-    <div class="session-box" id="session-box-6">
-        <div class="session-header" id="session-header-6">Long Papers &amp; Demos IV (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-6a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">6A: Dialogue I</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-6a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-6a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:mbansal@cs.unc.edu">Mohit Bansal</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="582">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Using Lexical Alignment and Referring Ability to Address Data Sparsity in Situated Dialog Reference Resolution.</span>
-                            <em>Todd Shore and Gabriel Skantze</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1252" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1612">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Subgoal Discovery for Hierarchical Dialogue Policy Learning.</span>
-                            <em>Da Tang, Xiujun Li, Jianfeng Gao, Chong Wang, Lihong Li and Tony Jebara</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1253" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1652">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">Supervised Clustering of Questions into Intents for Dialog System Applications.</span>
-                            <em>Iryna Haponchyk, Antonio Uva, Seunghak Yu, Olga Uryupina and Alessandro Moschitti</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1254" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2005">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Towards Exploiting Background Knowledge for Building Conversation Systems.</span>
-                            <em>Nikita Moghe, Siddhartha Arora, Suman Banerjee and Mitesh M. Khapra</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1255" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2300">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Decoupling Strategy and Generation in Negotiation Dialogues.</span>
-                            <em>He He, Derek Chen, Anusha Balakrishnan and Percy Liang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1256" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-6b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">6B: Question Answering II</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-6b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-6b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:william@cs.ucsb.edu">William Wang</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="628">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Large-scale Cloze Test Dataset Created by Teachers.</span>
-                            <em>Qizhe Xie, Guokun Lai, Zihang Dai and Eduard Hovy</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1257" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1849">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">emrQA: A Large Corpus for Question Answering on Electronic Medical Records.</span>
-                            <em>Anusri Pampari, Preethi Raghavan, Jennifer Liang and Jian Peng</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1258" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2015">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering.</span>
-                            <em>Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov and Christopher D. Manning</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1259" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2133">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering.</span>
-                            <em>Todor Mihaylov, Peter Clark, Tushar Khot and Ashish Sabharwal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1260" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2312">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Evaluating Theory of Mind in Question Answering.</span>
-                            <em>Aida Nematzadeh, Kaylee Burns, Erin Grant, Alison Gopnik and Tom Griffiths</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1261" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-6c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">6C: Semantics V</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-6c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-6c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:iv250@cam.ac.uk">Ivan Vulić</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1128">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">A Unified Syntax-aware Framework for Semantic Role Labeling.</span>
-                            <em>Zuchao Li, Shexia He, Jiaxun Cai, Zhuosheng Zhang, Hai Zhao, Gongshen Liu, Linlin Li and Luo Si</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1262" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1247">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Semantics as a Foreign Language.</span>
-                            <em>Gabriel Stanovsky and Ido Dagan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1263" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1478">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">An AMR Aligner Tuned by Transition-based Parser.</span>
-                            <em>Yijia Liu, Wanxiang Che, Bo Zheng, Bing Qin and Ting Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1264" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2179">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Dependency-based Hybrid Trees for Semantic Parsing.</span>
-                            <em>Zhanming Jie and Wei Lu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1265" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2214">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Policy Shaping and Generalized Update Equations for Semantic Parsing from Denotations.</span>
-                            <em>Dipendra Misra, Ming-Wei Chang, Xiaodong He and Wen-tau Yih</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1266" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-6d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">6D: Multilingual Methods II</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-6d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-6d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:bplank@gmail.com">Barbara Plank</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="189">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Sentence Compression for Arbitrary Languages via Multilingual Pivoting.</span>
-                            <em>Jonathan Mallinson, Rico Sennrich and Mirella Lapata</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1267" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="768">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Unsupervised Cross-lingual Transfer of Word Embedding Spaces.</span>
-                            <em>Ruochen Xu, Yiming Yang, Naoki Otani and Yuexin Wu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1268" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1605">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">XNLI: Evaluating Cross-lingual Sentence Representations.</span>
-                            <em>Alexis Conneau, Ruty Rinott, Guillaume Lample, Adina Williams, Samuel Bowman, Holger Schwenk and Veselin Stoyanov</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1269" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1880">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Joint Multilingual Supervision for Cross-lingual Entity Linking.</span>
-                            <em>Shyam Upadhyay, Nitish Gupta and Dan Roth</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1270" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2249">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Fine-grained Coordinated Cross-lingual Text Stream Alignment for Endless Language Knowledge Acquisition.</span>
-                            <em>Tao Ge, Qing Dou, Heng Ji, Lei Cui, Baobao Chang, Zhifang Sui, Furu Wei and Ming Zhou</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1271" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-6">
-            <div id="expander"></div>
-            <a href="#" class="session-title">6E: Syntax, Morphology, Vision &amp; Language I (Posters and Demos)</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Morphology, Word Segmentation and POS Tagging</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="42">
-                        <td>
-                            <span class="poster-title">Sanskrit Word Segmentation Using Character-level Recurrent and Convolutional Neural Networks.</span>
-                            <em>Oliver Hellwig and Sebastian Nehrdich</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1295" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1446-TACL">
-                        <td>
-                            <span class="poster-title">[TACL] Universal Word Segmentation: Implementation and Interpretation.</span>
-                            <em>Yan Shao, Christian Hardmeier, Joakim Nivre</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL02.pdf" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="701">
-                        <td>
-                            <span class="poster-title">WECA：A WordNet-Encoded Collocation-Attention Network for Homographic Pun Recognition.</span>
-                            <em>Yufeng Diao, Hongfei Lin, Di Wu, Liang Yang, Kan Xu, Zhihao Yang, Jian Wang, Shaowu Zhang, Bo Xu and Dongyu Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1272" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="928">
-                        <td>
-                            <span class="poster-title">A Hybrid Approach to Automatic Corpus Generation for Chinese Spelling Check.</span>
-                            <em>Dingmin Wang, Yan Song, Jing Li, Jialong Han and Haisong Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1273" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="622">
-                        <td>
-                            <span class="poster-title">Transferring from Formal Newswire Domain with Hypernet for Twitter POS Tagging.</span>
-                            <em>Tao Gui, Qi Zhang, Jingjing Gong, Minlong Peng, di liang, Keyu Ding and Xuanjing Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1275" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1080">
-                        <td>
-                            <span class="poster-title">Free as in Free Word Order: An Energy Based Model for Word Segmentation and Morphological Tagging in Sanskrit.</span>
-                            <em>Amrith Krishna, Bishal Santra, Sasi Prasanth Bandaru, Gaurav Sahu, Vishnu Dutt Sharma, Pavankumar Satuluri and Pawan Goyal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1276" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1174">
-                        <td>
-                            <span class="poster-title">A Challenge Set and Methods for Noun-Verb Ambiguity.</span>
-                            <em>Ali Elkahky, Kellie Webster, Daniel Andor and Emily Pitler</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1277" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1237">
-                        <td>
-                            <span class="poster-title">What do character-level models learn about morphology? The case of dependency parsing.</span>
-                            <em>Clara Vania, Andreas Grivas and Adam Lopez</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1278" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2208">
-                        <td>
-                            <span class="poster-title">Learning Better Internal Structure of Words for Sequence Labeling.</span>
-                            <em>Yingwei Xin, Ethan Hart, Vibhuti Mahajan and Jean David Ruvini</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1279" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Vision and Language</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="761">
-                        <td>
-                            <span class="poster-title">ICON: Interactive Conversational Memory Network for Multimodal Emotion Detection.</span>
-                            <em>Devamanyu Hazarika, Soujanya Poria, Rada Mihalcea, Erik Cambria and Roger Zimmermann</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1280" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="978">
-                        <td>
-                            <span class="poster-title">Discriminative Learning of Open-Vocabulary Object Retrieval and Localization by Negative Phrase Augmentation.</span>
-                            <em>Ryota Hinami and Shin'ichi Satoh</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1281" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1744">
-                        <td>
-                            <span class="poster-title">Grounding Semantic Roles in Images.</span>
-                            <em>Carina Silberer and Manfred Pinkal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1282" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1822">
-                        <td>
-                            <span class="poster-title">Commonsense Justification for Action Explanation.</span>
-                            <em>Shaohua Yang, Qiaozi Gao, Sari Sadiya and Joyce Chai</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1283" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1928">
-                        <td>
-                            <span class="poster-title">Learning Personas from Dialogue with Attentive Memory Networks.</span>
-                            <em>Eric Chu, Prashanth Vijayaraghavan and Deb Roy</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1284" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1951">
-                        <td>
-                            <span class="poster-title">Grounding language acquisition by training semantic parsers using captioned videos.</span>
-                            <em>Candace Ross, Andrei Barbu, Yevgeni Berzak, Battushig Myanganbayar and Boris Katz</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1285" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1998">
-                        <td>
-                            <span class="poster-title">Translating Navigation Instructions in Natural Language to a High-Level Plan for Behavioral Robot Navigation.</span>
-                            <em>Xiaoxue Zang, Ashwini Pokle, Marynel Vázquez, Kevin Chen, Juan Carlos Niebles, Alvaro Soto and Silvio Savarese</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1286" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2067">
-                        <td>
-                            <span class="poster-title">Mapping Instructions to Actions in 3D Environments with Visual Goal Prediction.</span>
-                            <em>Dipendra Misra, Andrew Bennett, Valts Blukis, Eyvind Niklasson, Max Shatkhin and Yoav Artzi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1287" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Syntax</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="225">
-                        <td>
-                            <span class="poster-title">Deconvolutional Time Series Regression: A Technique for Modeling Temporally Diffuse Effects.</span>
-                            <em>Cory Shain and William Schuler</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1288" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="525">
-                        <td>
-                            <span class="poster-title">Is this Sentence Difficult? Do you Agree?.</span>
-                            <em>Dominique Brunato, Lorenzo De Mattei, Felice Dell'Orletta, Benedetta Iavarone and Giulia Venturi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1289" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="102">
-                        <td>
-                            <span class="poster-title">Neural Transition Based Parsing of Web Queries: An Entity Based Approach.</span>
-                            <em>Rivka Malca and Roi Reichart</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1290" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="473">
-                        <td>
-                            <span class="poster-title">An Investigation of the Interactions Between Pre-Trained Word Embeddings, Character Models and POS Tags in Dependency Parsing.</span>
-                            <em>Aaron Smith, Miryam de Lhoneux, Sara Stymne and Joakim Nivre</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1291" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1611">
-                        <td>
-                            <span class="poster-title">Depth-bounding is effective: Improvements and evaluation of unsupervised PCFG induction.</span>
-                            <em>Lifeng Jin, Finale Doshi-Velez, Timothy Miller, William Schuler and Lane Schwartz</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1292" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1199-TACL">
-                        <td>
-                            <span class="poster-title">[TACL] In-Order Transition-based Constituent Parsing.</span>
-                            <em>Jiangming Liu and Yue Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1425-TACL">
-                        <td>
-                            <span class="poster-title">[TACL] Surface Statistics of an Unknown Language Indicate How to Parse It.</span>
-                            <em>Dingquan Wang and Jason Eisner</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL06.pdf" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1745">
-                        <td>
-                            <span class="poster-title">Incremental Computation of Infix Probabilities for Probabilistic Finite Automata.</span>
-                            <em>Marco Cognetta, Yo-Sub Han and Soon Chan Kwon</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1293" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2140">
-                        <td>
-                            <span class="poster-title">Syntax Encoding with Application in Authorship Attribution.</span>
-                            <em>Richong Zhang, Zhiyuan Hu, Hongyu Guo and Yongyi Mao</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1294" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2076">
-                        <td>
-                            <span class="poster-title">Neural Quality Estimation of Grammatical Error Correction.</span>
-                            <em>Shamil Chollampatt and Hwee Tou Ng</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1274" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Demos</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="18-demo">
-                        <td>
-                            <span class="poster-title">MorAz: an Open-source Morphological Analyzer for Azerbaijani Turkish.</span>
-                            <em>Berke Özenç, Razieh Ehsani and Ercan Solak</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2005" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="33-demo">
-                        <td>
-                            <span class="poster-title">Juman++: A Morphological Analysis Toolkit for Scriptio Continua.</span>
-                            <em>Arseny Tolmachev, Daisuke Kawahara and Sadao Kurohashi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2010" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-lunch-4">
-        <span class="session-title">Lunch</span>
-        <br/>
-        <span class="session-time" title="Saturday, 3 November 2018">12:30 &ndash; 13:45</span>
-    </div>
-    <div class="session-box" id="session-box-7">
-        <div class="session-header" id="session-header-7">Short Papers III (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-7a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">7A: Dialogue II</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-7a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-7a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:zkozareva@gmail.com">Zornitsa Kozareva</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1236">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">Session-level Language Modeling for Conversational Speech.</span>
-                            <em>Wayne Xiong, Lingfeng Wu, Jun Zhang and Andreas Stolcke</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1296" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="867">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Towards Less Generic Responses in Neural Conversation Models: A Statistical Re-weighting Method.</span>
-                            <em>Yahui Liu, Wei Bi, Jun Gao, Xiaojiang Liu, Jian Yao and Shuming Shi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1297" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1309">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Training Millions of Personalized Dialogue Agents.</span>
-                            <em>Pierre-Emmanuel Mazare, Samuel Humeau, Martin Raison and Antoine Bordes</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1298" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2226">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Towards Universal Dialogue State Tracking.</span>
-                            <em>Liliang Ren, Kaige Xie, Lu Chen and Kai Yu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1299" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1854">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Semantic Parsing for Task Oriented Dialog using Hierarchical Representations.</span>
-                            <em>Sonal Gupta, Rushin Shah, Mrinal Mohit, Anuj Kumar and Mike Lewis</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1300" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-7b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">7B: Social Applications II</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-7b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-7b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:shomir@psu.edu">Shomir Wilson</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1733">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">The glass ceiling in NLP.</span>
-                            <em>Natalie Schluter</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1301" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="604">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Reducing Gender Bias in Abusive Language Detection.</span>
-                            <em>Ji Ho Park, Jamin Shin and Pascale Fung</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1302" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="66">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">SafeCity: Understanding Diverse Forms of Sexual Harassment Personal Stories.</span>
-                            <em>Sweta Karlekar and Mohit Bansal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1303" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="539">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Learning multiview embeddings for assessing dementia.</span>
-                            <em>Chloé Pou-Prom and Frank Rudzicz</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1304" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1441">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">WikiConv: A Corpus of the Complete Conversational History of a Large Online Collaborative Community.</span>
-                            <em>Yiqing Hua, Cristian Danescu-Niculescu-Mizil, Dario Taraborelli, Nithum Thain, Jeffery Sorensen and Lucas Dixon</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1305" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-7c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">7C: NER</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-7c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-7c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:ritter.1492@osu.edu">Alan Ritter</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1776">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">Marginal Likelihood Training of BiLSTM-CRF for Biomedical Named Entity Recognition from Disjoint Label Sets.</span>
-                            <em>Nathan Greenberg, Trapit Bansal, Patrick Verga and Andrew McCallum</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1306" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="146">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Adversarial training for multi-context joint entity and relation extraction.</span>
-                            <em>Giannis Bekoulis, Johannes Deleu, Thomas Demeester and Chris Develder</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1307" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="430">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Structured Multi-Label Biomedical Text Tagging via Attentive Neural Tree Decoding.</span>
-                            <em>Gaurav Singh, James Thomas, Iain Marshall, John Shawe-Taylor and Byron C. Wallace</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1308" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2264">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Deep Exhaustive Model for Nested Named Entity Recognition.</span>
-                            <em>Mohammad Golam Sohrab and Makoto Miwa</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1309" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1518">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Evaluating the Utility of Hand-crafted Features in Sequence Labelling.</span>
-                            <em>Minghao Wu, Fei Liu and Trevor Cohn</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1310" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-7d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">7D: Morphology / Parsing</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-7d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-7d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:kann@nyu.edu">Katharina Kann</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="990">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">Improved Dependency Parsing using Implicit Word Connections Learned from Unlabeled Data.</span>
-                            <em>Wenhui Wang, Baobao Chang and Mairgup Mansur</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1311" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="774">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">A Framework for Understanding the Role of Morphology in Universal Dependency Parsing.</span>
-                            <em>Mathieu Dehouck and Pascal Denis</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1312" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1002">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">The Lazy Encoder: A Fine-Grained Analysis of the Role of Morphology in Neural Machine Translation.</span>
-                            <em>Arianna Bisazza and Clara Tump</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1313" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1161">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Imitation Learning for Neural Morphological String Transduction.</span>
-                            <em>Peter Makarov and Simon Clematide</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1314" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1673">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">An Encoder-Decoder Approach to the Paradigm Cell Filling Problem.</span>
-                            <em>Miikka Silfverberg and Mans Hulden</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1315" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-7">
-            <div id="expander"></div>
-            <a href="#" class="session-title">7E: Short Posters III</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Neural Architectures and Language Models</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="281">
-                        <td>
-                            <span class="poster-title">Generating Natural Language Adversarial Examples.</span>
-                            <em>Moustafa Alzantot, Yash Sharma, Ahmed Elgohary, Bo-Jhang Ho, Mani Srivastava and Kai-Wei Chang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1316" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1024">
-                        <td>
-                            <span class="poster-title">Multi-Head Attention with Disagreement Regularization.</span>
-                            <em>Jian Li, Zhaopeng Tu, Baosong Yang, Michael R. Lyu and Tong Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1317" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1731">
-                        <td>
-                            <span class="poster-title">Deep Bayesian Active Learning for Natural Language Processing: Results of a Large-Scale Empirical Study.</span>
-                            <em>Aditya Siddhant and Zachary C. Lipton</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1318" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2149">
-                        <td>
-                            <span class="poster-title">Bayesian Compression for Natural Language Processing.</span>
-                            <em>Nadezhda Chirkova, Ekaterina Lobacheva and Dmitry Vetrov</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1319" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="601">
-                        <td>
-                            <span class="poster-title">Multimodal neural pronunciation modeling for spoken languages with logographic origin.</span>
-                            <em>Minh Nguyen, Gia H Ngo and Nancy Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1320" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2045">
-                        <td>
-                            <span class="poster-title">Chinese Pinyin Aided IME, Input What You Have Not Keystroked Yet.</span>
-                            <em>Yafang Huang and Hai Zhao</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1321" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="722">
-                        <td>
-                            <span class="poster-title">Estimating Marginal Probabilities of n-grams for Recurrent Neural Language Models.</span>
-                            <em>Thanapon Noraset, Doug Downey and Lidong Bing</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1322" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1393">
-                        <td>
-                            <span class="poster-title">How to represent a word and predict it, too: Improving tied architectures for language modelling.</span>
-                            <em>Kristina Gulordava, Laura Aina and Gemma Boleda</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1323" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1516">
-                        <td>
-                            <span class="poster-title">The Importance of Generation Order in Language Modeling.</span>
-                            <em>Nicolas Ford, Daniel Duckworth, Mohammad Norouzi and George Dahl</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1324" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Machine Translation</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="183">
-                        <td>
-                            <span class="poster-title">Document-Level Neural Machine Translation with Hierarchical Attention Networks.</span>
-                            <em>Lesly Miculicich, Dhananjay Ram, Nikolaos Pappas and James Henderson</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1325" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="465">
-                        <td>
-                            <span class="poster-title">Three Strategies to Improve One-to-Many Multilingual Translation.</span>
-                            <em>Yining Wang, Jiajun Zhang, Feifei Zhai, Jingfang Xu and Chengqing Zong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1326" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="614">
-                        <td>
-                            <span class="poster-title">Multi-Source Syntactic Neural Machine Translation.</span>
-                            <em>Anna Currey and Kenneth Heafield</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1327" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="905">
-                        <td>
-                            <span class="poster-title">Fixing Translation Divergences in Parallel Corpora for Neural MT.</span>
-                            <em>Minh Quang Pham, Josep Crego, Jean Senellart and François Yvon</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1328" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1041">
-                        <td>
-                            <span class="poster-title">Adversarial Evaluation of Multimodal Machine Translation.</span>
-                            <em>Desmond Elliott</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1329" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1124">
-                        <td>
-                            <span class="poster-title">Loss in Translation: Learning Bilingual Word Mapping with a Retrieval Criterion.</span>
-                            <em>Armand Joulin, Piotr Bojanowski, Tomas Mikolov, Hervé Jégou and Edouard Grave</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1330" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1248">
-                        <td>
-                            <span class="poster-title">Learning When to Concentrate or Divert Attention: Self-Adaptive Attention Temperature for Neural Machine Translation.</span>
-                            <em>Junyang Lin, Xu Sun, Xuancheng Ren, Muyu Li and Qi Su</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1331" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1351">
-                        <td>
-                            <span class="poster-title">Accelerating Asynchronous Stochastic Gradient Descent for Neural Machine Translation.</span>
-                            <em>Nikolay Bogoychev, Kenneth Heafield, Alham Fikri Aji and Marcin Junczys-Dowmunt</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1332" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1355">
-                        <td>
-                            <span class="poster-title">Learning to Jointly Translate and Predict Dropped Pronouns with a Shared Reconstruction Mechanism.</span>
-                            <em>Longyue Wang, Zhaopeng Tu, Andy Way and Qun Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1333" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1367">
-                        <td>
-                            <span class="poster-title">Getting Gender Right in Neural Machine Translation.</span>
-                            <em>Eva Vanmassenhove, Christian Hardmeier and Andy Way</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1334" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1392">
-                        <td>
-                            <span class="poster-title">Towards Two-Dimensional Sequence to Sequence Model in Neural Machine Translation.</span>
-                            <em>Parnia Bahar, Christopher Brix and Hermann Ney</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1335" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1490">
-                        <td>
-                            <span class="poster-title">End-to-End Non-Autoregressive Neural Machine Translation with Connectionist Temporal Classification.</span>
-                            <em>Jindřich Libovický and Jindřich Helcl</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1336" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1517">
-                        <td>
-                            <span class="poster-title">Prediction Improves Simultaneous Neural Machine Translation.</span>
-                            <em>Ashkan Alinejad, Maryam Siahbani and Anoop Sarkar</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1337" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1571">
-                        <td>
-                            <span class="poster-title">Training Deeper Neural Machine Translation Models with Transparent Attention.</span>
-                            <em>Ankur Bapna, Mia Chen, Orhan Firat, Yuan Cao and Yonghui Wu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1338" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1773">
-                        <td>
-                            <span class="poster-title">Context and Copying in Neural Machine Translation.</span>
-                            <em>Rebecca Knowles and Philipp Koehn</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1339" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1925">
-                        <td>
-                            <span class="poster-title">Encoding Gated Translation Memory into Neural Machine Translation.</span>
-                            <em>Qian Cao and Deyi Xiong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1340" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1996">
-                        <td>
-                            <span class="poster-title">Automatic Post-Editing of Machine Translation: A Neural Programmer-Interpreter Approach.</span>
-                            <em>Thuy-Trang Vu and Gholamreza Haffari</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1341" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2066">
-                        <td>
-                            <span class="poster-title">Breaking the Beam Search Curse: A Study of (Re-)Scoring Methods and Stopping Criteria for Neural Machine Translation.</span>
-                            <em>Yilin Yang, Liang Huang and Mingbo Ma</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1342" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Multilingual NLP</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="602">
-                        <td>
-                            <span class="poster-title">Multi-Multi-View Learning: Multilingual and Multi-Representation Entity Typing.</span>
-                            <em>Yadollah Yaghoobzadeh and Hinrich Schütze</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1343" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="719">
-                        <td>
-                            <span class="poster-title">Word Embeddings for Code-Mixed Language Processing.</span>
-                            <em>Adithya Pratapa, Monojit Choudhury and Sunayana Sitaram</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1344" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1648">
-                        <td>
-                            <span class="poster-title">On the Strength of Character Language Models for Multilingual Named Entity Recognition.</span>
-                            <em>Xiaodong Yu, Stephen Mayhew, Mark Sammons and Dan Roth</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1345" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1755">
-                        <td>
-                            <span class="poster-title">Code-switched Language Models Using Dual RNNs and Same-Source Pretraining.</span>
-                            <em>Saurabh Garg, Tanmay Parekh and Preethi Jyothi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1346" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2282">
-                        <td>
-                            <span class="poster-title">Part-of-Speech Tagging for Code-Switched, Transliterated Texts without Explicit Language Identification.</span>
-                            <em>Kelsey Ball and Dan Garrette</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1347" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-5">
-        <span class="session-title">Mini-Break</span>
-        <br/>
-        <span class="session-time" title="Saturday, 3 November 2018">14:45 &ndash; 15:00</span>
-    </div>
-    <div class="session session-expandable session-plenary">
-        <div id="expander"></div>
-        <a href="#" class="session-title">
-            <strong>Keynote II: "Understanding the News that Moves Markets"</strong>
-        </a>
-        <br/>
-        <span class="session-people">
-            <a href="https://sites.google.com/site/gideonmann/" target="_blank">Gideon Mann (Bloomberg, L.P.)</a>
-        </span>
-        <br/>
-        <span class="session-time" title="Saturday, 3 November 2018">15:00 &ndash; 16:00</span>
-        <br/>
-        <span class="session-location btn btn--info btn--location">Gold Hall / Copper Hall / Silver Hall / Hall 100</span>
-        <div class="paper-session-details">
-            <br/>
-            <div class="session-abstract">
-                <p>Since the dawn of human civilization, finance and language technology have been connected. However, only recently have advances in statistical language understanding, and an ever-increasing thirst for market advantage, led to the widespread application of natural language technology across the global capital markets. This talk will review the ways in which language technology is enabling market participants to quickly understand and respond to major world events and breaking business news. It will outline the state of the art in applications of NLP to finance and highlight open problems that are being addressed by emerging research.</p>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-6">
-        <span class="session-title">Coffee Break</span>
-        <br/>
-        <span class="session-time" title="Saturday, 3 November 2018">16:00 &ndash; 16:30</span>
-    </div>
-    <div class="session-box" id="session-box-8">
-        <div class="session-header" id="session-header-8">Long Papers &amp; Demos V (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-8a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">8A: Text Categorization</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-8a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-8a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:IONANDR@GMAIL.COM">Ion Androutsopoulos</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="245">
-                        <td id="paper-time">16:30&ndash;16:48</td>
-                        <td>
-                            <span class="paper-title">Zero-shot User Intent Detection via Capsule Neural Networks.</span>
-                            <em>Congying Xia, Chenwei Zhang, Xiaohui Yan, Yi Chang and Philip Yu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1348" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="265">
-                        <td id="paper-time">16:48&ndash;17:06</td>
-                        <td>
-                            <span class="paper-title">Hierarchical Neural Networks for Sequential Sentence Classification in Medical Scientific Abstracts.</span>
-                            <em>Di Jin and Peter Szolovits</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1349" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="291">
-                        <td id="paper-time">17:06&ndash;17:24</td>
-                        <td>
-                            <span class="paper-title">Investigating Capsule Networks with Dynamic Routing for Text Classification.</span>
-                            <em>Min Yang, Wei Zhao, Jianbo Ye, Zeyang Lei, Zhou Zhao and Soufei Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1350" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="330">
-                        <td id="paper-time">17:24&ndash;17:42</td>
-                        <td>
-                            <span class="paper-title">Topic Memory Networks for Short Text Classification.</span>
-                            <em>Jichuan Zeng, Jing Li, Yan Song, Cuiyun Gao, Michael R. Lyu and Irwin King</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1351" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="342">
-                        <td id="paper-time">17:42&ndash;18:00</td>
-                        <td>
-                            <span class="paper-title">Few-Shot and Zero-Shot Multi-Label Learning for Structured Label Spaces.</span>
-                            <em>Anthony Rios and Ramakanth Kavuluru</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1352" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-8b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">8B: Generation</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-8b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-8b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:i.konstas@hw.ac.uk">Ioannis Konstas</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="300">
-                        <td id="paper-time">16:30&ndash;16:48</td>
-                        <td>
-                            <span class="paper-title">Automatic Poetry Generation with Mutual Reinforcement Learning.</span>
-                            <em>Xiaoyuan Yi, Maosong Sun, Ruoyu Li and Wenhao Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1353" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="366">
-                        <td id="paper-time">16:48&ndash;17:06</td>
-                        <td>
-                            <span class="paper-title">Variational Autoregressive Decoder for Neural Response Generation.</span>
-                            <em>Jiachen Du, Wenjie Li, Yulan He, Ruifeng Xu, Lidong Bing and Xuan Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1354" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1746">
-                        <td id="paper-time">17:06&ndash;17:24</td>
-                        <td>
-                            <span class="paper-title">Integrating Transformer and Paraphrase Rules for Sentence Simplification.</span>
-                            <em>Sanqiang Zhao, Rui Meng, Daqing He, Andi Saptono and Bambang Parmanto</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1355" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2025">
-                        <td id="paper-time">17:24&ndash;17:42</td>
-                        <td>
-                            <span class="paper-title">Learning Neural Templates for Text Generation.</span>
-                            <em>Sam Wiseman, Stuart Shieber and Alexander Rush</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1356" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2230">
-                        <td id="paper-time">17:42&ndash;18:00</td>
-                        <td>
-                            <span class="paper-title">Multi-Reference Training with Pseudo-References for Neural Translation and Text Generation.</span>
-                            <em>Renjie Zheng, Mingbo Ma and Liang Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1357" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-8c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">8C: Knowledge Graphs</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-8c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-8c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:ppt@iisc.ac.in">Partha Talukdar</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1000">
-                        <td id="paper-time">16:30&ndash;16:48</td>
-                        <td>
-                            <span class="paper-title">Knowledge Graph Embedding with Hierarchical Relation Structure.</span>
-                            <em>Zhao Zhang, Fuzhen Zhuang, Meng Qu, Fen Lin and Qing He</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1358" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1331">
-                        <td id="paper-time">16:48&ndash;17:06</td>
-                        <td>
-                            <span class="paper-title">Embedding Multimodal Relational Data for Knowledge Base Completion.</span>
-                            <em>Pouya Pezeshkpour, Liyan Chen and Sameer Singh</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1359" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1947">
-                        <td id="paper-time">17:06&ndash;17:24</td>
-                        <td>
-                            <span class="paper-title">Multi-Task Identification of Entities, Relations, and Coreference for Scientific Knowledge Graph Construction.</span>
-                            <em>Yi Luan, Luheng He, Mari Ostendorf and Hannaneh Hajishirzi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1360" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2100">
-                        <td id="paper-time">17:24&ndash;17:42</td>
-                        <td>
-                            <span class="paper-title">Playing 20 Question Game with Policy-Based Reinforcement Learning.</span>
-                            <em>Huang Hu, Xianchao Wu, Bingfeng Luo, Chongyang Tao, Can Xu, wei wu and Zhan Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1361" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2201">
-                        <td id="paper-time">17:42&ndash;18:00</td>
-                        <td>
-                            <span class="paper-title">Multi-Hop Knowledge Graph Reasoning with Reward Shaping.</span>
-                            <em>Xi Victoria Lin, Richard Socher and Caiming Xiong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1362" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-8d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">8D: Morphology / Phonology</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-8d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-8d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:nematzadeh@google.com">Aida Nematzadeh</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="82">
-                        <td id="paper-time">16:30&ndash;16:48</td>
-                        <td>
-                            <span class="paper-title">Neural Transductive Learning and Beyond: Morphological Generation in the Minimal-Resource Setting.</span>
-                            <em>Katharina Kann and Hinrich Schütze</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1363" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="538">
-                        <td id="paper-time">16:48&ndash;17:06</td>
-                        <td>
-                            <span class="paper-title">Implicational Universals in Stochastic Constraint-Based Phonology.</span>
-                            <em>Giorgio Magri</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1364" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1533">
-                        <td id="paper-time">17:06&ndash;17:24</td>
-                        <td>
-                            <span class="paper-title">Explaining Character-Aware Neural Networks for Word-Level Prediction: Do They Discover Linguistic Rules?.</span>
-                            <em>Fréderic Godin, Kris Demuynck, Joni Dambre, Wesley De Neve and Thomas Demeester</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1365" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1860">
-                        <td id="paper-time">17:24&ndash;17:42</td>
-                        <td>
-                            <span class="paper-title">Adapting Word Embeddings to New Languages with Morphological and Phonological Subword Representations.</span>
-                            <em>Aditi Chaudhary, Chunting Zhou, Lori Levin, Graham Neubig, David R. Mortensen and Jaime Carbonell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1366" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1420-TACL">
-                        <td id="paper-time">17:42&ndash;18:00</td>
-                        <td>
-                            <span class="paper-title">[TACL] Recurrent Neural Networks in Linguistic Theory: Revisiting Pinker and Prince (1988) and the Past Tense Debate.</span>
-                            <em>Christo Kirov, Ryan Cotterell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL03.pdf" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-8">
-            <div id="expander"></div>
-            <a href="#" class="session-title">8E: Sentiment, Social Applications, Multimodal Semantics, Discourse (Posters and Demos)</a>
-            <br/>
-            <span class="session-time" title="Saturday, 3 November 2018">16:30 &ndash; 18:00</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Discourse</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="470">
-                        <td>
-                            <span class="poster-title">A Computational Exploration of Exaggeration.</span>
-                            <em>Enrica Troiano, Carlo Strapparava, Gözde Özbal and Serra Sinem Tekiroglu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1367" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="665">
-                        <td>
-                            <span class="poster-title">Building Context-aware Clause Representations for Situation Entity Type Classification.</span>
-                            <em>Zeyu Dai and Ruihong Huang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1368" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="704">
-                        <td>
-                            <span class="poster-title">Hierarchical Dirichlet Gaussian Marked Hawkes Process for Narrative Reconstruction in Continuous Time Domain.</span>
-                            <em>Yeon Seonwoo, Alice Oh and Sungjoon Park</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1369" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1489">
-                        <td>
-                            <span class="poster-title">Investigating the Role of Argumentation in the Rhetorical Analysis of Scientific Publications with Neural Multi-Task Learning Models.</span>
-                            <em>Anne Lauscher, Goran Glavaš, Simone Paolo Ponzetto and Kai Eckert</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1370" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1596">
-                        <td>
-                            <span class="poster-title">Neural Ranking Models for Temporal Dependency Structure Parsing.</span>
-                            <em>Yuchen Zhang and Nianwen Xue</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1371" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1554">
-                        <td>
-                            <span class="poster-title">Causal Explanation Analysis on Social Media.</span>
-                            <em>Youngseo Son, Nipun Bayas and H. Andrew Schwartz</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1372" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Recommender Systems</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="113">
-                        <td>
-                            <span class="poster-title">LRMM: Learning to Recommend with Missing Modalities.</span>
-                            <em>Cheng Wang, Mathias Niepert and Hui Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1373" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="481">
-                        <td>
-                            <span class="poster-title">Content Explorer: Recommending Novel Entities for a Document Writer.</span>
-                            <em>Michal Lukasik and Richard Zens</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1374" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="624">
-                        <td>
-                            <span class="poster-title">A Genre-Aware Attention Model to Improve the Likability Prediction of Books.</span>
-                            <em>Suraj Maharjan, Manuel Montes, Fabio A. González and Thamar Solorio</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1375" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1071">
-                        <td>
-                            <span class="poster-title">Thread Popularity Prediction and Tracking with a Permutation-invariant Model.</span>
-                            <em>Hou Pong Chan and Irwin King</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1376" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Sentiment Analysis</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="461">
-                        <td>
-                            <span class="poster-title">IARM: Inter-Aspect Relation Modeling with Memory Networks in Aspect-Based Sentiment Analysis.</span>
-                            <em>Navonil Majumder, Soujanya Poria, Alexander Gelbukh, Md Shad Akhtar, Erik Cambria and Asif Ekbal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1377" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="692">
-                        <td>
-                            <span class="poster-title">Limbic: Author-Based Sentiment Aspect Modeling Regularized with Word Embeddings and Discourse Relations.</span>
-                            <em>Zhe Zhang and Munindar Singh</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1378" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="846">
-                        <td>
-                            <span class="poster-title">An Interpretable Neural Network with Topical Information for Relevant Emotion Ranking.</span>
-                            <em>Yang Yang, Deyu ZHOU and Yulan He</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1379" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1068">
-                        <td>
-                            <span class="poster-title">Multi-grained Attention Network for Aspect-Level Sentiment Classification.</span>
-                            <em>Feifan Fan, Yansong Feng and Dongyan Zhao</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1380" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1651">
-                        <td>
-                            <span class="poster-title">Attentive Gated Lexicon Reader with Contrastive Contextual Co-Attention for Sentiment Classification.</span>
-                            <em>Yi Tay, Anh Tuan Luu, Siu Cheung Hui and Jian Su</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1381" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1824">
-                        <td>
-                            <span class="poster-title">Contextual Inter-modal Attention for Multi-modal Sentiment Analysis.</span>
-                            <em>Deepanway Ghosal, Md Shad Akhtar, Dushyant Chauhan, Soujanya Poria, Asif Ekbal and Pushpak Bhattacharyya</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1382" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1848">
-                        <td>
-                            <span class="poster-title">Adaptive Semi-supervised Learning for Cross-domain Sentiment Classification.</span>
-                            <em>Ruidan He, Wee Sun Lee, Hwee Tou Ng and Daniel Dahlmeier</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1383" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2071">
-                        <td>
-                            <span class="poster-title">ExtRA: Extracting Prominent Review Aspects from Customer Feedback.</span>
-                            <em>Zhiyi Luo, Shanshan Huang, Frank F. Xu, Bill Yuchen Lin, Hanyuan Shi and Kenny Zhu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1384" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Social Applications and Social Media</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="647">
-                        <td>
-                            <span class="poster-title">Cross-Lingual Cross-Platform Rumor Verification Pivoting on Multimedia Content.</span>
-                            <em>Weiming Wen, Songwen Su and Zhou Yu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1385" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="960">
-                        <td>
-                            <span class="poster-title">Extractive Adversarial Networks: High-Recall Explanations for Identifying Personal Attacks in Social Media Posts.</span>
-                            <em>Samuel Carton, Qiaozhu Mei and Paul Resnick</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1386" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1340">
-                        <td>
-                            <span class="poster-title">Automatic Detection of Vague Words and Sentences in Privacy Policies.</span>
-                            <em>Logan Lebanoff and Fei Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1387" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1477">
-                        <td>
-                            <span class="poster-title">Multi-view Models for Political Ideology Detection of News Articles.</span>
-                            <em>Vivek Kulkarni, Junting Ye, Steve Skiena and William Yang Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1388" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1694">
-                        <td>
-                            <span class="poster-title">Predicting Factuality of Reporting and Bias of News Media Sources.</span>
-                            <em>Ramy Baly, Georgi Karadzhov, Dimitar Alexandrov, James Glass and Preslav Nakov</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1389" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1911">
-                        <td>
-                            <span class="poster-title">Legal Judgment Prediction via Topological Learning.</span>
-                            <em>Haoxi Zhong, Guo Zhipeng, Cunchao Tu, Chaojun Xiao, Zhiyuan Liu and Maosong Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1390" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2016">
-                        <td>
-                            <span class="poster-title">Hierarchical CVAE for Fine-Grained Hate Speech Classification.</span>
-                            <em>Jing Qian, Mai ElSherief, Elizabeth Belding and William Yang Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1391" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2107">
-                        <td>
-                            <span class="poster-title">Residualized Factor Adaptation for Community Social Media Prediction Tasks.</span>
-                            <em>Mohammadzaman Zamani, H. Andrew Schwartz, Veronica Lynn, Salvatore Giorgi and Niranjan Balasubramanian</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1392" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2198">
-                        <td>
-                            <span class="poster-title">Framing and Agenda-setting in Russian News: a Computational Analysis of Intricate Political Strategies.</span>
-                            <em>Anjalie Field, Doron Kliger, Shuly Wintner, Jennifer Pan, Dan Jurafsky and Yulia Tsvetkov</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1393" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="479">
-                        <td>
-                            <span class="poster-title">Identifying the sentiment styles of YouTube's vloggers.</span>
-                            <em>Bennett Kleinberg, Maximilian Mozes and Isabelle van der Vegt</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1394" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="862">
-                        <td>
-                            <span class="poster-title">Native Language Identification with User Generated Content.</span>
-                            <em>Gili Goldin, Ella Rabinovich and Shuly Wintner</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1395" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Demos</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="35-demo">
-                        <td>
-                            <span class="poster-title">Visualization of the Topic Space of Argument Search Results in args.me.</span>
-                            <em>Yamen Ajjour, Henning Wachsmuth, Dora Kiesel, Patrick Riehmann, Fan Fan, Giuliano Castiglia, Rosemary Adejoh, Bernd Fröhlich and Benno Stein</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2011" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="44-demo">
-                        <td>
-                            <span class="poster-title">A Multilingual Information Extraction Pipeline for Investigative Journalism.</span>
-                            <em>Gregor Wiedemann, Seid Muhie Yimam and Chris Biemann</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2014" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="75-demo">
-                        <td>
-                            <span class="poster-title">When science journalism meets artificial intelligence : An interactive demonstration.</span>
-                            <em>Raghuram Vadapalli, Bakhtiyar Syed, Nishant Prabhu, Balaji Vasan Srinivasan and Vasudeva Varma</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2028" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-expandable session-plenary" id="session-social">
-        <div id="expander"></div>
-        <a href="#" class="session-title">Social Event</a>
-        <br/>
-        <span class="session-time" title="Saturday, 3 November 2018">19:00 &ndash; 22:00</span>
-        <br/>
-        <span class="session-external-location btn btn--info btn--location">Royal Museums of Fine Arts of Belgium</span>
-        <div class="paper-session-details">
-            <br/>
-            <div class="session-abstract">
-                <p>On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the Royal Museums of Fine Arts of Belgium. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts — painting, sculpture and drawing — from the 15th to the 21st century.</p>
-            </div>
-        </div>
-    </div>
-    <div class="day" id="day-5">Sunday, 4 November 2018</div>
-    <div class="session-box" id="session-box-9">
-        <div class="session-header" id="session-header-9">Long Papers &amp; Demos VI (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-9a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">9A: Machine Translation II</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-9a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-9a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:schwenk@fb.com">Holger Schwenk</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="499">
-                        <td id="paper-time">09:00&ndash;09:18</td>
-                        <td>
-                            <span class="paper-title">Beyond Error Propagation in Neural Machine Translation: Characteristics of Language Also Matter.</span>
-                            <em>Lijun Wu, Xu Tan, Di He, Fei Tian, Tao Qin, Jianhuang Lai and Tie-Yan Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1396" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="979">
-                        <td id="paper-time">09:18&ndash;09:36</td>
-                        <td>
-                            <span class="paper-title">A Study of Reinforcement Learning for Neural Machine Translation.</span>
-                            <em>Lijun Wu, Fei Tian, Tao Qin, Jianhuang Lai and Tie-Yan Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1397" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1056">
-                        <td id="paper-time">09:36&ndash;09:54</td>
-                        <td>
-                            <span class="paper-title">Meta-Learning for Low-Resource Neural Machine Translation.</span>
-                            <em>Jiatao Gu, Yong Wang, Yun Chen, Victor O. K. Li and Kyunghyun Cho</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1398" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="455">
-                        <td id="paper-time">09:54&ndash;10:12</td>
-                        <td>
-                            <span class="paper-title">Unsupervised Statistical Machine Translation.</span>
-                            <em>Mikel Artetxe, Gorka Labaka and Eneko Agirre</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1399" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2187">
-                        <td id="paper-time">10:12&ndash;10:30</td>
-                        <td>
-                            <span class="paper-title">A Visual Attention Grounding Neural Model for Multimodal Machine Translation.</span>
-                            <em>Mingyang Zhou, Runxiang Cheng, Yong Jae Lee and Zhou Yu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1400" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-9b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">9B: Sentiment I</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-9b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-9b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:Yulan.He@warwick.ac.uk">Yulan He</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="136">
-                        <td id="paper-time">09:00&ndash;09:18</td>
-                        <td>
-                            <span class="paper-title">Sentiment Classification towards Question-Answering with Hierarchical Matching Network.</span>
-                            <em>Chenlin Shen, Changlong Sun, Jingjing Wang, Yangyang Kang, Shoushan Li, Xiaozhong Liu, Luo Si, Min Zhang and Guodong Zhou</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1401" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="212">
-                        <td id="paper-time">09:18&ndash;09:36</td>
-                        <td>
-                            <span class="paper-title">Cross-topic Argument Mining from Heterogeneous Sources.</span>
-                            <em>Christian Stab, Tristan Miller, Benjamin Schiller, Pranav Rai and Iryna Gurevych</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1402" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="335">
-                        <td id="paper-time">09:36&ndash;09:54</td>
-                        <td>
-                            <span class="paper-title">Summarizing Opinions: Aspect Extraction Meets Sentiment Prediction and They Are Both Weakly Supervised.</span>
-                            <em>Stefanos Angelidis and Mirella Lapata</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1403" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1305">
-                        <td id="paper-time">09:54&ndash;10:12</td>
-                        <td>
-                            <span class="paper-title">CARER: Contextualized Affect Representations for Emotion Recognition.</span>
-                            <em>Elvis Saravia, Hsien-Chi Toby Liu, Yen-Hao Huang, Junlin Wu and Yi-Shin Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1404" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1413-TACL">
-                        <td id="paper-time">10:12&ndash;10:30</td>
-                        <td>
-                            <span class="paper-title">[TACL] Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification.</span>
-                            <em>Xilun Chen, Yu Sun, Ben Athiwaratkun, Claire Cardie, Kilian Weinberger</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL04.pdf" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-9c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">9C: Machine Learning III</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-9c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-9c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:ravi.sujith@gmail.com">Sujith Ravi</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1358">
-                        <td id="paper-time">09:00&ndash;09:18</td>
-                        <td>
-                            <span class="paper-title">Noise Contrastive Estimation and Negative Sampling for Conditional Models: Consistency and Statistical Efficiency.</span>
-                            <em>Zhuang Ma and Michael Collins</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1405" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1666">
-                        <td id="paper-time">09:18&ndash;09:36</td>
-                        <td>
-                            <span class="paper-title">CaLcs: Continuously Approximating Longest Common Subsequence for Sequence Level Optimization.</span>
-                            <em>Semih Yavuz, Chung-Cheng Chiu, Patrick Nguyen and Yonghui Wu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1406" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2051">
-                        <td id="paper-time">09:36&ndash;09:54</td>
-                        <td>
-                            <span class="paper-title">Pathologies of Neural Models Make Interpretations Difficult.</span>
-                            <em>Shi Feng, Eric Wallace, Alvin Grissom II, Mohit Iyyer, Pedro Rodriguez and Jordan Boyd-Graber</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1407" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="758">
-                        <td id="paper-time">09:54&ndash;10:12</td>
-                        <td>
-                            <span class="paper-title">Phrase-level Self-Attention Networks for Universal Sentence Encoding.</span>
-                            <em>Wei Wu, Houfeng Wang, Tianyu Liu and Shuming Ma</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1408" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1322">
-                        <td id="paper-time">10:12&ndash;10:30</td>
-                        <td>
-                            <span class="paper-title">BanditSum: Extractive Summarization as a Contextual Bandit.</span>
-                            <em>Yue Dong, Yikang Shen, Eric Crawford, Herke van Hoof and Jackie Chi Kit Cheung</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1409" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-9d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">9D: Semantics VI</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-9d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-9d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:gabriel.satanovsky@gmail.com">Gabriel Stanovsky</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="652">
-                        <td id="paper-time">09:00&ndash;09:18</td>
-                        <td>
-                            <span class="paper-title">A Word-Complexity Lexicon and A Neural Readability Ranking Model for Lexical Simplification.</span>
-                            <em>Mounica Maddela and Wei Xu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1410" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1411">
-                        <td id="paper-time">09:18&ndash;09:36</td>
-                        <td>
-                            <span class="paper-title">Learning Latent Semantic Annotations for Grounding Natural Language to Structured Data.</span>
-                            <em>Guanghui Qin, Jin-Ge Yao, Xuening Wang, Jinpeng Wang and Chin-Yew Lin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1411" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2060">
-                        <td id="paper-time">09:36&ndash;09:54</td>
-                        <td>
-                            <span class="paper-title">Syntactic Scaffolds for Semantic Structures.</span>
-                            <em>Swabha Swayamdipta, Sam Thomson, Kenton Lee, Luke Zettlemoyer, Chris Dyer and Noah A. Smith</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1412" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2103">
-                        <td id="paper-time">09:54&ndash;10:12</td>
-                        <td>
-                            <span class="paper-title">Hierarchical Quantized Representations for Script Generation.</span>
-                            <em>Noah Weber, Leena Shekhar, Niranjan Balasubramanian and Nate Chambers</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1413" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2250">
-                        <td id="paper-time">10:12&ndash;10:30</td>
-                        <td>
-                            <span class="paper-title">Semantic Role Labeling for Learner Chinese: the Importance of Syntactic Parsing and L2-L1 Parallel Data.</span>
-                            <em>Zi Lin, Yuguang Duan, Yuanyuan Zhao, Weiwei Sun and Xiaojun Wan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1414" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-9">
-            <div id="expander"></div>
-            <a href="#" class="session-title">9E: Generation, Dialogue, Summarization; Vision &amp; Language II (Posters and Demos)</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">09:00 &ndash; 10:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Dialogue</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="305">
-                        <td>
-                            <span class="poster-title">A Teacher-Student Framework for Maintainable Dialog Manager.</span>
-                            <em>Weikang Wang, Jiajun Zhang, Han Zhang, Mei-Yuh Hwang, Chengqing Zong and Zhifei Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1415" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1511">
-                        <td>
-                            <span class="poster-title">Discriminative Deep Dyna-Q: Robust Planning for Dialogue Policy Learning.</span>
-                            <em>Shang-Yu Su, Xiujun Li, Jianfeng Gao, Jingjing Liu and Yun-Nung Chen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1416" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1572">
-                        <td>
-                            <span class="poster-title">A Self-Attentive Model with Gate Mechanism for Spoken Language Understanding.</span>
-                            <em>Changliang Li, Liang Li and Ji Qi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1417" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1779">
-                        <td>
-                            <span class="poster-title">Learning End-to-End Goal-Oriented Dialog with Multiple Answers.</span>
-                            <em>Janarthanan Rajendran, Jatin Ganhotra, Satinder Singh and Lazaros Polymenakos</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1418" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2138">
-                        <td>
-                            <span class="poster-title">AirDialogue: An Environment for Goal-Oriented Dialogue Research.</span>
-                            <em>Wei Wei, Quoc Le, Andrew Dai and Jia Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1419" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1424-TACL">
-                        <td>
-                            <span class="poster-title">[TACL] Polite Dialogue Generation Without Parallel Data.</span>
-                            <em>Niu, Tong  and Bansal, Mohit</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="/downloads/tacl-papers/EMNLP-TACL05.pdf" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Generation</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="377">
-                        <td>
-                            <span class="poster-title">QuaSE: Sequence Editing under Quantifiable Guidance.</span>
-                            <em>Yi Liao, Lidong Bing, Piji Li, Shuming Shi, Wai Lam and Tong Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1420" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="413">
-                        <td>
-                            <span class="poster-title">Paraphrase Generation with Deep Reinforcement Learning.</span>
-                            <em>Zichao Li, Xin Jiang, Lifeng Shang and Hang Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1421" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="447">
-                        <td>
-                            <span class="poster-title">Operation-guided Neural Networks for High Fidelity Data-To-Text Generation.</span>
-                            <em>Feng Nie, Jinpeng Wang, Jin-Ge Yao, Rong Pan and Chin-Yew Lin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1422" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="462">
-                        <td>
-                            <span class="poster-title">Generating Classical Chinese Poems via Conditional Variational Autoencoder and Adversarial Training.</span>
-                            <em>Juntao Li, Yan Song, Haisong Zhang, Dongmin Chen, Shuming Shi, Dongyan Zhao and Rui Yan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1423" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="529">
-                        <td>
-                            <span class="poster-title">Paragraph-level Neural Question Generation with Maxout Pointer and Gated Self-attention Networks.</span>
-                            <em>Yao Zhao, Xiaochuan Ni, Yuanyuan Ding and Qifa Ke</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1424" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1262">
-                        <td>
-                            <span class="poster-title">Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task.</span>
-                            <em>Tao Yu, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li, James Ma, Irene Li, Qingning Yao, Shanelle Roman, Zilin Zhang and Dragomir Radev</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1425" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="65">
-                        <td>
-                            <span class="poster-title">Unsupervised Natural Language Generation with Denoising Autoencoders.</span>
-                            <em>Markus Freitag and Scott Roy</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1426" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1714">
-                        <td>
-                            <span class="poster-title">Answer-focused and Position-aware Neural Question Generation.</span>
-                            <em>Xingwu Sun, Jing Liu, Yajuan Lyu, Wei He, Yanjun Ma and Shi Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1427" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1818">
-                        <td>
-                            <span class="poster-title">Diversity-Promoting GAN: A Cross-Entropy Based Generative Adversarial Network for Diversified Text Generation.</span>
-                            <em>Jingjing Xu, Xuancheng Ren, Junyang Lin and Xu Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1428" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2039">
-                        <td>
-                            <span class="poster-title">Towards a Better Metric for Evaluating Question Generation Systems.</span>
-                            <em>Preksha Nema and Mitesh M. Khapra</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1429" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="866">
-                        <td>
-                            <span class="poster-title">Stylistic Chinese Poetry Generation via Unsupervised Style Disentanglement.</span>
-                            <em>Cheng Yang, Maosong Sun, Xiaoyuan Yi and Wenhao Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1430" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1127">
-                        <td>
-                            <span class="poster-title">Generating More Interesting Responses in Neural Conversation Models with Distributional Constraints.</span>
-                            <em>Ashutosh Baheti, Alan Ritter, Jiwei Li and Bill Dolan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1431" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1241">
-                        <td>
-                            <span class="poster-title">Better Conversations by Modeling, Filtering, and Optimizing for Coherence and Diversity.</span>
-                            <em>Xinnuo Xu, Ondřej Dušek, Ioannis Konstas and Verena Rieser</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1432" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Vision and Language</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="227">
-                        <td>
-                            <span class="poster-title">Incorporating Background Knowledge into Video Description Generation.</span>
-                            <em>Spencer Whitehead, Heng Ji, Mohit Bansal, Shih-Fu Chang and Clare Voss</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1433" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="229">
-                        <td>
-                            <span class="poster-title">Multimodal Differential Network for Visual Question Generation.</span>
-                            <em>Badri Narayana Patro, Sandeep Kumar, Vinod Kumar Kurmi and Vinay Namboodiri</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1434" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="232">
-                        <td>
-                            <span class="poster-title">Entity-aware Image Caption Generation.</span>
-                            <em>Di Lu, Spencer Whitehead, Lifu Huang, Heng Ji and Shih-Fu Chang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1435" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1900">
-                        <td>
-                            <span class="poster-title">Learning to Describe Differences Between Pairs of Similar Images.</span>
-                            <em>Harsh Jhamtani and Taylor Berg-Kirkpatrick</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1436" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2074">
-                        <td>
-                            <span class="poster-title">Object Hallucination in Image Captioning.</span>
-                            <em>Anna Rohrbach, Lisa Anne Hendricks, Kaylee Burns, Trevor Darrell and Kate Saenko</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1437" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="206">
-                        <td>
-                            <span class="poster-title">Abstractive Text-Image Summarization Using Multi-Modal Attentional Hierarchical RNN.</span>
-                            <em>Jingqiang Chen and Hai Zhuge</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1438" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Summarization</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="207">
-                        <td>
-                            <span class="poster-title">Keyphrase Generation with Correlation Constraints.</span>
-                            <em>Jun Chen, Xiaoming Zhang, Yu Wu, Zhao Yan and Zhoujun Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1439" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="585">
-                        <td>
-                            <span class="poster-title">Closed-Book Training to Improve Summarization Encoder Memory.</span>
-                            <em>Yichen Jiang and Mohit Bansal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1440" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="727">
-                        <td>
-                            <span class="poster-title">Improving Neural Abstractive Document Summarization with Structural Regularization.</span>
-                            <em>Wei Li, Xinyan Xiao, Yajuan Lyu and Yuanzhuo Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1441" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="950">
-                        <td>
-                            <span class="poster-title">Iterative Document Representation Learning Towards Summarization with Polishing.</span>
-                            <em>Xiuying Chen, Shen Gao, Chongyang Tao, Yan Song, Dongyan Zhao and Rui Yan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1442" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1181">
-                        <td>
-                            <span class="poster-title">Bottom-Up Abstractive Summarization.</span>
-                            <em>Sebastian Gehrmann, Yuntian Deng and Alexander Rush</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1443" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1192">
-                        <td>
-                            <span class="poster-title">Controlling Length in Abstractive Summarization Using a Convolutional Neural Network.</span>
-                            <em>Yizhu Liu, Zhiyi Luo and Kenny Zhu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1444" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1293">
-                        <td>
-                            <span class="poster-title">APRIL: Interactively Learning to Summarise by Combining Active Preference Learning and Reinforcement Learning.</span>
-                            <em>Yang Gao, Christian M. Meyer and Iryna Gurevych</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1445" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1324">
-                        <td>
-                            <span class="poster-title">Adapting the Neural Encoder-Decoder Framework from Single to Multi-Document Summarization.</span>
-                            <em>Logan Lebanoff, Kaiqiang Song and Fei Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1446" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1362">
-                        <td>
-                            <span class="poster-title">Semi-Supervised Learning for Neural Keyphrase Generation.</span>
-                            <em>Hai Ye and Lu Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1447" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1482">
-                        <td>
-                            <span class="poster-title">MSMO: Multimodal Summarization with Multimodal Output.</span>
-                            <em>Junnan Zhu, Haoran Li, Tianshang Liu, Yu Zhou, Jiajun Zhang and Chengqing Zong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1448" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1539">
-                        <td>
-                            <span class="poster-title">Frustratingly Easy Model Ensemble for Abstractive Summarization.</span>
-                            <em>Hayato Kobayashi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1449" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1575">
-                        <td>
-                            <span class="poster-title">Automatic Pyramid Evaluation Exploiting EDU-based Extractive Reference Summaries.</span>
-                            <em>Tsutomu Hirao, Hidetaka Kamigaito and Masaaki Nagata</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1450" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1975">
-                        <td>
-                            <span class="poster-title">Learning to Encode Text as Human-Readable Summaries using Generative Adversarial Networks.</span>
-                            <em>Yaushian Wang and Hung-yi Lee</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1451" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Demos</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="56-demo">
-                        <td>
-                            <span class="poster-title">Visualizing Group Dynamics based on Multiparty Meeting Understanding.</span>
-                            <em>Ni Zhang, Tongtao Zhang, Indrani Bhattacharya, Heng Ji and Rich Radke</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2017" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="70-demo">
-                        <td>
-                            <span class="poster-title">PizzaPal: Conversational Pizza Ordering using a High-Density Conversational AI Platform.</span>
-                            <em>Antoine Raux, Yi Ma, Paul Yang and Felicia Wong</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2026" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="71-demo">
-                        <td>
-                            <span class="poster-title">Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing.</span>
-                            <em>Arushi Raghuvanshi, Lucien Carroll and Karthik Raghunathan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2027" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="7-demo">
-                        <td>
-                            <span class="poster-title">SyntaViz: Visualizing Voice Queries through a Syntax-Driven Hierarchical Ontology.</span>
-                            <em>Md Iftekhar Tanveer and Ferhan Ture</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2001" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="69-demo">
-                        <td>
-                            <span class="poster-title">LIA: A Natural Language Programmable Personal Assistant.</span>
-                            <em>Igor Labutov, Shashank Srivastava and Tom Mitchell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2025" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="10-demo">
-                        <td>
-                            <span class="poster-title">Data2Text Studio: Automated Text Generation from Structured Data.</span>
-                            <em>Longxu Dou, Guanghui Qin, Jinpeng Wang, Jin-Ge Yao and Chin-Yew Lin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2003" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="32-demo">
-                        <td>
-                            <span class="poster-title">Demonstrating Par4Sem - A Semantic Writing Aid with Adaptive Paraphrasing.</span>
-                            <em>Seid Muhie Yimam and Chris Biemann</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2009" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-7">
-        <span class="session-title">Coffee Break</span>
-        <br/>
-        <span class="session-time" title="Sunday, 4 November 2018">10:30 &ndash; 11:00</span>
-    </div>
-    <div class="session-box" id="session-box-10">
-        <div class="session-header" id="session-header-10">Long Papers &amp; Demos VII (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-10a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">10A: Question Answering III</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-10a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-10a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:jbg@umiacs.umd.edu">Jordan Boyd-Graber</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="587">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Joint Multitask Learning for Community Question Answering Using Task-Specific Embeddings.</span>
-                            <em>Shafiq Joty, Lluís Màrquez and Preslav Nakov</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1452" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1017">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">What Makes Reading Comprehension Questions Easier?.</span>
-                            <em>Saku Sugawara, Kentaro Inui, Satoshi Sekine and Akiko Aizawa</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1453" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1989">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">Commonsense for Generative Multi-Hop Question Answering Tasks.</span>
-                            <em>Lisa Bauer, Yicheng Wang and Mohit Bansal</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1454" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2043">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text.</span>
-                            <em>Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov and William Cohen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1455" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2134">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">A Nil-Aware Answer Extraction Framework for Question Answering.</span>
-                            <em>Souvik Kundu and Hwee Tou Ng</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1456" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-10b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">10B: Machine Translation III</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-10b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-10b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:jorg.tiedemann@helsinki.fi">Joerg Tiedemann</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1021">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Exploiting Deep Representations for Neural Machine Translation.</span>
-                            <em>Zi-Yi Dou, Zhaopeng Tu, Xing Wang, Shuming Shi and Tong Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1457" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1129">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Why Self-Attention? A Targeted Evaluation of Neural Machine Translation Architectures.</span>
-                            <em>Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1458" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1507">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">Simplifying Neural Machine Translation with Addition-Subtraction Twin-Gated Recurrent Networks.</span>
-                            <em>Biao Zhang, Deyi Xiong, jinsong su, Qian Lin and Huiji Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1459" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2064">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Speeding Up Neural Machine Translation Decoding by Cube Pruning.</span>
-                            <em>Wen Zhang, Liang Huang, Yang Feng, Lei Shen and Qun Liu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1460" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2304">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Revisiting Character-Based Neural Machine Translation with Capacity and Compression.</span>
-                            <em>Colin Cherry, George Foster, Ankur Bapna, Orhan Firat and Wolfgang Macherey</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1461" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-10c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">10C: Discourse</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-10c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-10c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:mlap@inf.ed.ac.uk">Mirella Lapata</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="907">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">A Skeleton-Based Model for Promoting Coherence Among Sentences in Narrative Story Generation.</span>
-                            <em>Jingjing Xu, Xuancheng Ren, Yi Zhang, Qi Zeng, Xiaoyan Cai and Xu Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1462" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="968">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">NEXUS Network: Connecting the Preceding and the Following in Dialogue Generation.</span>
-                            <em>Xiaoyu Shen, Hui Su, Wenjie Li and Dietrich Klakow</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1463" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1138">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">A Neural Local Coherence Model for Text Quality Assessment.</span>
-                            <em>Mohsen Mesgar and Michael Strube</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1464" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1268">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Deep Attentive Sentence Ordering Network.</span>
-                            <em>Baiyun Cui, Yingming Li, Ming Chen and Zhongfei Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1465" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1276">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Getting to "Hearer-old": Charting Referring Expressions Across Time.</span>
-                            <em>Ieva Staliūnaitė, Hannah Rohde, Bonnie Webber and Annie Louis</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1466" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-10d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">10D: Evolution / Sociolinguistics</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-10d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-10d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:jurgens@umich.edu">David Jurgens</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="63">
-                        <td id="paper-time">11:00&ndash;11:18</td>
-                        <td>
-                            <span class="paper-title">Making "fetch" happen: The influence of social and linguistic context on nonstandard word growth and decline.</span>
-                            <em>Ian Stewart and Jacob Eisenstein</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1467" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="357">
-                        <td id="paper-time">11:18&ndash;11:36</td>
-                        <td>
-                            <span class="paper-title">Analyzing Correlated Evolution of Multiple Features Using Latent Representations.</span>
-                            <em>Yugo Murawaki</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1468" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="486">
-                        <td id="paper-time">11:36&ndash;11:54</td>
-                        <td>
-                            <span class="paper-title">Capturing Regional Variation with Distributed Place Representations and Geographic Retrofitting.</span>
-                            <em>Dirk Hovy and Christoph Purschke</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1469" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1702">
-                        <td id="paper-time">11:54&ndash;12:12</td>
-                        <td>
-                            <span class="paper-title">Characterizing Interactions and Relationships between People.</span>
-                            <em>Farzana Rashid and Eduardo Blanco</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1470" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2160">
-                        <td id="paper-time">12:12&ndash;12:30</td>
-                        <td>
-                            <span class="paper-title">Why Swear? Analyzing and Inferring the Intentions of Vulgar Expressions.</span>
-                            <em>Eric Holgate, Isabel Cachola, Daniel Preoţiuc-Pietro and Junyi Jessy Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1471" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-10">
-            <div id="expander"></div>
-            <a href="#" class="session-title">10E: Machine Learning (Posters and Demos)</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">11:00 &ndash; 12:30</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Architectures and Models</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="500">
-                        <td>
-                            <span class="poster-title">A Probabilistic Annotation Model for Crowdsourcing Coreference.</span>
-                            <em>Silviu Paun, Jon Chamberlain, Udo Kruschwitz, Juntao Yu and Massimo Poesio</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1218" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="256">
-                        <td>
-                            <span class="poster-title">Is it Time to Swish? Comparing Deep Learning Activation Functions Across NLP tasks.</span>
-                            <em>Steffen Eger, Paul Youssef and Iryna Gurevych</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1472" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="648">
-                        <td>
-                            <span class="poster-title">Hard Non-Monotonic Attention for Character-Level Transduction.</span>
-                            <em>Shijie Wu, Pamela Shapiro and Ryan Cotterell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1473" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="689">
-                        <td>
-                            <span class="poster-title">Speed Reading: Learning to Read ForBackward via Shuttle.</span>
-                            <em>Tsu-Jui Fu and Wei-Yun Ma</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1474" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1026">
-                        <td>
-                            <span class="poster-title">Modeling Localness for Self-Attention Networks.</span>
-                            <em>Baosong Yang, Zhaopeng Tu, Derek F. Wong, Fandong Meng, Lidia S. Chao and Tong Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1475" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1050">
-                        <td>
-                            <span class="poster-title">Chargrid: Towards Understanding 2D Documents.</span>
-                            <em>Anoop R Katti, Christian Reisswig, Cordula Guder, Sebastian Brarda, Steffen Bickel, Johannes Höhne and Jean Baptiste Faddoul</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1476" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1562">
-                        <td>
-                            <span class="poster-title">Simple Recurrent Units for Highly Parallelizable Recurrence.</span>
-                            <em>Tao Lei, Yu Zhang, Sida I. Wang, Hui Dai and Yoav Artzi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1477" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1598">
-                        <td>
-                            <span class="poster-title">NPRF: A Neural Pseudo Relevance Feedback Framework for Ad-hoc Information Retrieval.</span>
-                            <em>Canjia Li, Yingfei Sun, Ben He, Le Wang, Kai Hui, Andrew Yates, Le Sun and Jungang Xu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1478" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1691">
-                        <td>
-                            <span class="poster-title">Co-Stack Residual Affinity Networks with Multi-level Attention Refinement for Matching Text Sequences.</span>
-                            <em>Yi Tay, Anh Tuan Luu and Siu Cheung Hui</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1479" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1720">
-                        <td>
-                            <span class="poster-title">Spherical Latent Spaces for Stable Variational Autoencoders.</span>
-                            <em>Jiacheng Xu and Greg Durrett</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1480" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1869">
-                        <td>
-                            <span class="poster-title">Learning Universal Sentence Representations with Mean-Max Attention Autoencoder.</span>
-                            <em>Minghua Zhang, Yunfang Wu, Weikang Li and Wei Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1481" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1891">
-                        <td>
-                            <span class="poster-title">Word Mover's Embedding: From Word2Vec to Document Embedding.</span>
-                            <em>Lingfei Wu, Ian En-Hsu Yen, Kun Xu, Fangli Xu, Avinash Balakrishnan, Pin-Yu Chen, Pradeep Ravikumar and Michael J. Witbrock</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1482" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1221">
-                        <td>
-                            <span class="poster-title">Learning Disentangled Representations of Texts with Application to Biomedical Abstracts.</span>
-                            <em>Sarthak Jain, Edward Banner, Jan-Willem van de Meent, Iain J Marshall and Byron C. Wallace</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1497" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1781">
-                        <td>
-                            <span class="poster-title">Multi-Source Domain Adaptation with Mixture of Experts.</span>
-                            <em>Jiang Guo, Darsh Shah and Regina Barzilay</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1498" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1898">
-                        <td>
-                            <span class="poster-title">HyTE: Hyperplane-based Temporally aware Knowledge Graph Embedding.</span>
-                            <em>Shib Sankar Dasgupta, Swayambhu Nath Ray and Partha Talukdar</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1225" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Text Classification and Topic Modeling</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="707">
-                        <td>
-                            <span class="poster-title">Multilingual Clustering of Streaming News.</span>
-                            <em>Sebastião Miranda, Arturs Znotins, Shay B. Cohen and Guntis Barzdins</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1483" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="744">
-                        <td>
-                            <span class="poster-title">Multi-Task Label Embedding for Text Classification.</span>
-                            <em>Honglun Zhang, Liqiang Xiao, Wenqing Chen, Yongkun Wang and Yaohui Jin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1484" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1235">
-                        <td>
-                            <span class="poster-title">Semantic-Unit-Based Dilated Convolution for Multi-Label Text Classification.</span>
-                            <em>Junyang Lin, Qi Su, Pengcheng Yang, Shuming Ma and Xu Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1485" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1512">
-                        <td>
-                            <span class="poster-title">MCapsNet: Capsule Network for Text with Multi-Task Learning.</span>
-                            <em>Liqiang Xiao, Honglun Zhang, Wenqing Chen, Yongkun Wang and Yaohui Jin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1486" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1738">
-                        <td>
-                            <span class="poster-title">Uncertainty-aware generative models for inferring document class prevalence.</span>
-                            <em>Katherine Keith and Brendan O'Connor</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1487" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2087">
-                        <td>
-                            <span class="poster-title">Challenges of Using Text Classifiers for Causal Inference.</span>
-                            <em>Zach Wood-Doughty, Ilya Shpitser and Mark Dredze</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1488" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="912">
-                        <td>
-                            <span class="poster-title">Siamese Network-Based Supervised Topic Modeling.</span>
-                            <em>Minghui Huang, Yanghui Rao, Yuwei Liu, Haoran Xie and Fu Lee Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1494" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1877">
-                        <td>
-                            <span class="poster-title">GraphBTM: Graph Enhanced Autoencoded Variational Inference for Biterm Topic Model.</span>
-                            <em>Qile Zhu, Zheng Feng and Xiaolin Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1495" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2098">
-                        <td>
-                            <span class="poster-title">Modeling Online Discourse with Coupled Distributed Topics.</span>
-                            <em>Akshay Srivatsan, Zachary Wojtowicz and Taylor Berg-Kirkpatrick</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1496" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Language Modeling</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="709">
-                        <td>
-                            <span class="poster-title">Direct Output Connection for a High-Rank Language Model.</span>
-                            <em>Sho Takase, Jun Suzuki and Masaaki Nagata</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1489" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1465">
-                        <td>
-                            <span class="poster-title">Disfluency Detection using Auto-Correlational Neural Networks.</span>
-                            <em>Paria Jamshid Lou, Peter Anderson and Mark Johnson</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1490" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1479">
-                        <td>
-                            <span class="poster-title">Pyramidal Recurrent Unit for Language Modeling.</span>
-                            <em>Sachin Mehta, Rik Koncel-Kedziorski, Mohammad Rastegari and Hannaneh Hajishirzi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1491" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1793">
-                        <td>
-                            <span class="poster-title">On Tree-Based Neural Sentence Modeling.</span>
-                            <em>Haoyue Shi, Hao Zhou, Jiaze Chen and Lei Li</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1492" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1962">
-                        <td>
-                            <span class="poster-title">Language Modeling with Sparse Product of Sememe Experts.</span>
-                            <em>Yihong Gu, Jun Yan, Hao Zhu, Zhiyuan Liu, Ruobing Xie, Maosong Sun, Fen Lin and Leyu Lin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1493" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1379-TACL">
-                        <td>
-                            <span class="poster-title">[TACL] Language Modeling for Morphologically Rich Languages: Character-Aware Modeling for Word-Level Prediction.</span>
-                            <em>Daniela Gerz, Ivan Vulić, Edoardo Maria Ponti, Jason Naradowsky, Roi Reichart, Anna Korhonen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1396-TACL">
-                        <td>
-                            <span class="poster-title">[TACL] Low-Rank RNN Adaptation for Context-Aware Language Modeling.</span>
-                            <em>Aaron Jaech and Mari Ostendorf</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Demos</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="49-demo">
-                        <td>
-                            <span class="poster-title">Sisyphus, a Workflow Manager Designed for Machine Translation and Automatic Speech Recognition.</span>
-                            <em>Jan-Thorsten Peter, Eugen Beck and Hermann Ney</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2015" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="59-demo">
-                        <td>
-                            <span class="poster-title">APLenty: annotation tool for creating high-quality datasets using active and proactive learning.</span>
-                            <em>Minh-Quoc Nghiem and Sophia Ananiadou</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2019" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="53-demo">
-                        <td>
-                            <span class="poster-title">KT-Speech-Crawler: Automatic Dataset Construction for Speech Recognition from YouTube Videos.</span>
-                            <em>Egor Lakomkin, Sven Magg, Cornelius Weber and Stefan Wermter</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2016" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="15-demo">
-                        <td>
-                            <span class="poster-title">Term Set Expansion based NLP Architect by Intel AI Lab.</span>
-                            <em>Jonathan Mamou, Oren Pereg, Moshe Wasserblat, Alon Eirew, Yael Green, Shira Guskin, Peter Izsak and Daniel Korat</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-2004" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-lunch-5">
-        <span class="session-title">Lunch</span>
-        <br/>
-        <span class="session-time" title="Sunday, 4 November 2018">12:30 &ndash; 13:00</span>
-    </div>
-    <div class="session session-expandable session-plenary" id="session-business">
-        <div id="expander"></div>
-        <a href="#" class="session-title">SIGDAT Business Meeting</a>
-        <br/>
-        <span class="session-time" title="Sunday, 4 November 2018">13:00 &ndash; 13:45</span>
-        <br/>
-        <span class="session-location btn btn--info btn--location">Copper Hall</span>
-        <br/>
-        <div class="paper-session-details">
-            <br/>
-            <div class="session-abstract">All attendees are encouraged to participate in the business meeting.</div>
-        </div>
-    </div>
-    <div class="session-box" id="session-box-11">
-        <div class="session-header" id="session-header-11">Short Papers IV (Orals &amp; Posters)</div>
-        <div class="session session-expandable session-papers1" id="session-11a">
-            <div id="expander"></div>
-            <a href="#" class="session-title">11A: Analyzing Models</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Gold Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-11a-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-11a-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:lsz@cs.washington.edu">Luke Zettlemoyer</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="657">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">A Neural Model of Adaptation in Reading.</span>
-                            <em>Marten van Schijndel and Tal Linzen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1499" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="103">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study.</span>
-                            <em>John Lalor, Hao Wu, Tsendsuren Munkhdalai and Hong Yu</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1500" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1369">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Lexicosyntactic Inference in Neural Models.</span>
-                            <em>Aaron Steven White, Rachel Rudinger, Kyle Rawlins and Benjamin Van Durme</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1501" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="695">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Dual Fixed-Size Ordinally Forgetting Encoding (FOFE) for Competitive Neural Language Models.</span>
-                            <em>Sedtawut Watcharawittayakul, Mingbin Xu and Hui Jiang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1502" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="204">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">The Importance of Being Recurrent for Modeling Hierarchical Structure.</span>
-                            <em>Ke Tran, Arianna Bisazza and Christof Monz</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1503" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers2" id="session-11b">
-            <div id="expander"></div>
-            <a href="#" class="session-title">11B: Sentiment II</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Copper Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-11b-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-11b-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:thamar.solorio@gmail.com">Thamar Solorio</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1664">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">Joint Learning for Targeted Sentiment Analysis.</span>
-                            <em>Dehong Ma, Sujian Li and Houfeng Wang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1504" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2092">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Revisiting the Importance of Encoding Logic Rules in Sentiment Classification.</span>
-                            <em>Kalpesh Krishna, Preethi Jyothi and Mohit Iyyer</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1505" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1622">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">A Co-Attention Neural Network Model for Emotion Cause Analysis with Emotional Context Awareness.</span>
-                            <em>Xiangju Li, Kaisong Song, Shi Feng, Daling Wang and Yifei Zhang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1506" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1217">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Modeling Empathy and Distress in Reaction to News Stories.</span>
-                            <em>Sven Buechel, Anneke Buffone, Barry Slaff, Lyle Ungar and Joao Sedoc</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1507" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1497">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Interpretable Emoji Prediction via Label-Wise Attention LSTMs.</span>
-                            <em>Francesco Barbieri, Luis Espinosa Anke, Jose Camacho-Collados, Steven Schockaert and Horacio Saggion</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1508" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers3" id="session-11c">
-            <div id="expander"></div>
-            <a href="#" class="session-title">11C: Machine Translation IV</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Silver Hall / Panoramic Hall</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-11c-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-11c-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:tarow@google.com">Taro Watanabe</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="958">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">A Tree-based Decoder for Neural Machine Translation.</span>
-                            <em>Xinyi Wang, Hieu Pham, Pengcheng Yin and Graham Neubig</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1509" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1176">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">Greedy Search with Probabilistic N-gram Matching for Neural Machine Translation.</span>
-                            <em>Chenze Shao, Xilin Chen and Yang Feng</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1510" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="464">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Exploring Recombination for Efficient Decoding of Neural Machine Translation.</span>
-                            <em>Zhisong Zhang, Rui Wang, Masao Utiyama, Eiichiro Sumita and Hai Zhao</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1511" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1267">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Has Machine Translation Achieved Human Parity? A Case for Document-level Evaluation.</span>
-                            <em>Samuel Läubli, Rico Sennrich and Martin Volk</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1512" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1150">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Automatic Reference-Based Evaluation of Pronoun Translation Misses the Point.</span>
-                            <em>Liane Guillou and Christian Hardmeier</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1513" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-papers4" id="session-11d">
-            <div id="expander"></div>
-            <a href="#" class="session-title">11D: QA / Knowledge Graphs</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Hall 100 / Hall 400</span>
-            <br/>
-            <div class="paper-session-details">
-                <br/>
-                <a href="#" class="session-selector" id="session-11d-selector">Choose All</a>
-                <a href="#" class="session-deselector" id="session-11d-deselector">Remove All</a>
-                <table class="paper-table">
-                    <tr>
-                        <td class="session-chair" colspan="2">Chair:
-                            <a href="mailto:beroth@cis.uni-muenchen.de">Benjamin Roth</a>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="2190">
-                        <td id="paper-time">13:45&ndash;13:57</td>
-                        <td>
-                            <span class="paper-title">FewRel: A Large-Scale Supervised Few-Shot Relation Classification Dataset with State-of-the-Art Evaluation.</span>
-                            <em>Xu Han, Hao Zhu, Pengfei Yu, Ziyun Wang, Yuan Yao, Zhiyuan Liu and Maosong Sun</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1514" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1270">
-                        <td id="paper-time">13:57&ndash;14:09</td>
-                        <td>
-                            <span class="paper-title">A strong baseline for question relevancy ranking.</span>
-                            <em>Ana Gonzalez, Isabelle Augenstein and Anders Søgaard</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1515" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="946">
-                        <td id="paper-time">14:09&ndash;14:21</td>
-                        <td>
-                            <span class="paper-title">Learning Sequence Encoders for Temporal Knowledge Graph Completion.</span>
-                            <em>Alberto Garcia-Duran, Sebastijan Dumančić and Mathias Niepert</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1516" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="152">
-                        <td id="paper-time">14:21&ndash;14:33</td>
-                        <td>
-                            <span class="paper-title">Similar but not the Same: Word Sense Disambiguation Improves Event Detection via Neural Representation Matching.</span>
-                            <em>Weiyi Lu and Thien Huu Nguyen</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1517" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="paper" paper-id="1440">
-                        <td id="paper-time">14:33&ndash;14:45</td>
-                        <td>
-                            <span class="paper-title">Learning Word Representations with Cross-Sentence Dependency for End-to-End Co-reference Resolution.</span>
-                            <em>Hongyin Luo and Jim Glass</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1518" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="session session-expandable session-posters" id="session-poster-11">
-            <div id="expander"></div>
-            <a href="#" class="session-title">11E: Short Posters IV</a>
-            <br/>
-            <span class="session-time" title="Sunday, 4 November 2018">13:45 &ndash; 14:45</span>
-            <br/>
-            <span class="session-location btn btn--info btn--location">Grand Hall</span>
-            <div class="poster-session-details">
-                <br/>
-                <table class="poster-table">
-                    <tr>
-                        <td>
-                            <span class="poster-type">Morphology</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="589">
-                        <td>
-                            <span class="poster-title">State-of-the-art Chinese Word Segmentation with Bi-LSTMs.</span>
-                            <em>Ji Ma, Kuzman Ganchev and David Weiss</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1529" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="901">
-                        <td>
-                            <span class="poster-title">Sanskrit Sandhi Splitting using seq2(seq)2.</span>
-                            <em>Rahul Aralikatte, Neelamadhav Gantayat, Naveen Panwar, Anush Sankaran and Senthil Mani</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1530" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1120">
-                        <td>
-                            <span class="poster-title">Unsupervised Neural Word Segmentation for Chinese via Segmental Language Modeling.</span>
-                            <em>Zhiqing Sun and Zhi-Hong Deng</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1531" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1543">
-                        <td>
-                            <span class="poster-title">LemmaTag: Jointly Tagging and Lemmatizing for Morphologically Rich Languages with BRNNs.</span>
-                            <em>Daniel Kondratyuk, Tomáš Gavenčiak, Milan Straka and Jan Hajič</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1532" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2298">
-                        <td>
-                            <span class="poster-title">Recovering Missing Characters in Old Hawaiian Writing.</span>
-                            <em>Brendan Shillingford and Oiwi Parker Jones</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1533" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Syntax</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="875">
-                        <td>
-                            <span class="poster-title">Wronging a Right: Generating Better Errors to Improve Grammatical Error Detection.</span>
-                            <em>Sudhanshu Kasewa, Pontus Stenetorp and Sebastian Riedel</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/ [D18-1541]" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1307">
-                        <td>
-                            <span class="poster-title">Modeling Input Uncertainty in Neural Network Dependency Parsing.</span>
-                            <em>Rob van der Goot and Gertjan van Noord</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1542" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1373">
-                        <td>
-                            <span class="poster-title">Parameter sharing between dependency parsers for related languages.</span>
-                            <em>Miryam de Lhoneux, Johannes Bjerva, Isabelle Augenstein and Anders Søgaard</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1543" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2165">
-                        <td>
-                            <span class="poster-title">Grammar Induction with Neural Language Models: An Unusual Replication.</span>
-                            <em>Phu Mon Htut, Kyunghyun Cho and Samuel Bowman</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1544" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2183">
-                        <td>
-                            <span class="poster-title">Data Augmentation via Dependency Tree Morphing for Low-Resource Languages.</span>
-                            <em>Gozde Gul Sahin and Mark Steedman</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1545" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Lexical Semantics</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="821">
-                        <td>
-                            <span class="poster-title">Word Relation Autoencoder for Unseen Hypernym Extraction Using Word Embeddings.</span>
-                            <em>Hong-You Chen, Cheng-Syuan Lee, Keng-Te Liao and Shou-de Lin</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1519" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1059">
-                        <td>
-                            <span class="poster-title">Refining Pretrained Word Embeddings Using Layer-wise Relevance Propagation.</span>
-                            <em>Akira Utsumi</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1520" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1098">
-                        <td>
-                            <span class="poster-title">Learning Gender-Neutral Word Embeddings.</span>
-                            <em>Jieyu Zhao, Yichao Zhou, Zeyu Li, Wei Wang and Kai-Wei Chang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1521" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1190">
-                        <td>
-                            <span class="poster-title">Learning Concept Abstractness Using Weak Supervision.</span>
-                            <em>Ella Rabinovich, Benjamin Sznajder, Artem Spector, Ilya Shnayderman, Ranit Aharonov, David Konopnicki and Noam Slonim</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1522" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1487">
-                        <td>
-                            <span class="poster-title">Word Sense Induction with Neural biLM and Symmetric Patterns.</span>
-                            <em>Asaf Amrami and Yoav Goldberg</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1523" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1498">
-                        <td>
-                            <span class="poster-title">InferLite: Simple Universal Sentence Representations from Natural Language Inference Data.</span>
-                            <em>Jamie Kiros and William Chan</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1524" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1541">
-                        <td>
-                            <span class="poster-title">Similarity-Based Reconstruction Loss for Meaning Representation.</span>
-                            <em>Olga Kovaleva, Anna Rumshisky and Alexey Romanov</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1525" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1576">
-                        <td>
-                            <span class="poster-title">What can we learn from Semantic Tagging?.</span>
-                            <em>Mostafa Abdou, Artur Kulmizev, Vinit Ravishankar, Lasha Abzianidze and Johan Bos</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1526" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1610">
-                        <td>
-                            <span class="poster-title">Conditional Word Embedding and Hypothesis Testing via Bayes-by-Backprop.</span>
-                            <em>Rujun Han, Michael Gill, Arthur Spirling and Kyunghyun Cho</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1527" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1553">
-                        <td>
-                            <span class="poster-title">Classifying Referential and Non-referential It Using Gaze.</span>
-                            <em>Victoria Yaneva, Le An Ha, Richard Evans and Ruslan Mitkov</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1528" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="poster-type">Semantic Parsing and Semantic Inference</span>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1410">
-                        <td>
-                            <span class="poster-title">When data permutations are pathological: the case of neural natural language inference.</span>
-                            <em>Natalie Schluter and Daniel Varab</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1534" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1735">
-                        <td>
-                            <span class="poster-title">Bridging Knowledge Gaps in Neural Entailment via Symbolic Models.</span>
-                            <em>Dongyeop Kang, Tushar Khot, Ashish Sabharwal and Peter Clark</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1535" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2032">
-                        <td>
-                            <span class="poster-title">The BQ Corpus: A Large-scale Domain-specific Chinese Corpus For Sentence Semantic Equivalence Identification.</span>
-                            <em>Jing Chen, Qingcai Chen, Xin Liu, Haijun Yang, Daohe Lu and Buzhou Tang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1536" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="2299">
-                        <td>
-                            <span class="poster-title">Interpreting Recurrent and Attention-Based Neural Models: a Case Study on Natural Language Inference.</span>
-                            <em>Reza Ghaeini, Xiaoli Fern and Prasad Tadepalli</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1537" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1375">
-                        <td>
-                            <span class="poster-title">Towards Semi-Supervised Learning for Deep Semantic Role Labeling.</span>
-                            <em>Sanket Vaibhav Mehta, Jay Yoon Lee and Jaime Carbonell</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1538" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1668">
-                        <td>
-                            <span class="poster-title">Identifying Domain Adjacent Instances for Semantic Parsers.</span>
-                            <em>James Ferguson, Janara Christensen, Edward Li and Edgar Gonzàlez</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1539" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr id="poster" poster-id="1719">
-                        <td>
-                            <span class="poster-title">Mapping natural language commands to web elements.</span>
-                            <em>Panupong Pasupat, Tian-Shun Jiang, Evan Liu, Kelvin Guu and Percy Liang</em>&nbsp;&nbsp;
-                            <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1540" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-8">
-        <span class="session-title">Mini-Break</span>
-        <br/>
-        <span class="session-time" title="Sunday, 4 November 2018">14:45 &ndash; 15:00</span>
-    </div>
-    <div class="session session-expandable session-plenary">
-        <div id="expander"></div>
-        <a href="#" class="session-title">
-            <strong>Keynote III: "The Moment of Meaning and the Future of Computational Semantics"</strong>
-        </a>
-        <br/>
-        <span class="session-people">
-            <a href="https://www.rug.nl/staff/johan.bos/" target="_blank">Johan Bos (University of Groningen)</a>
-        </span>
-        <br/>
-        <span class="session-time" title="Sunday, 4 November 2018">15:00 &ndash; 16:00</span>
-        <br/>
-        <span class="session-location btn btn--info btn--location">Gold Hall / Copper Hall / Silver Hall / Hall 100</span>
-        <div class="paper-session-details">
-            <br/>
-            <div class="session-abstract">
-                <p>There are many recent advances in semantic parsing: we see a rising number of semantically annotated corpora and there is exciting technology (such as neural networks) to be explored. In this talk I will discuss what role computational semantics could play in future natural language processing applications (including fact checking and machine translation). I will argue that we should not just look at semantic parsing, but that things can get really interesting when we can use language-neutral meaning representations to draw (transparent) inferences. The main ideas will be exemplified by the parallel meaning bank, a new corpus comprising texts annotated with formal meaning representations for English, Dutch, German and Italian.</p>
-            </div>
-        </div>
-    </div>
-    <div class="session session-break session-plenary" id="session-break-9">
-        <span class="session-title">Coffee Break</span>
-        <br/>
-        <span class="session-time" title="Sunday, 4 November 2018">16:00 &ndash; 16:30</span>
-    </div>
-    <div class="session session-expandable session-papers-best">
-        <div id="expander"></div>
-        <a href="#" class="session-title">Best Paper Awards and Closing</a>
-        <br/>
-        <span class="session-time" title="Sunday, 4 November 2018">16:30 &ndash; 18:00</span>
-        <br/>
-        <span class="session-location btn btn--info btn--location">Gold Hall / Copper Hall / Silver Hall / Hall 100</span>
-        <br/>
-        <div class="paper-session-details">
-            <br/>
-            <table class="paper-table">
-                <tr id="best-paper" paper-id="1904">
-                    <td id="paper-time">16:30&ndash;16:42</td>
-                    <td>
-                        <span class="paper-title">How Much Reading Does Reading Comprehension Require? A Critical Investigation of Popular Benchmarks.</span>
-                        <em>Divyansh Kaushik and Zachary C. Lipton</em>&nbsp;&nbsp;
-                        <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1546" aria-hidden="true"></i>
-                    </td>
-                </tr>
-                <tr id="best-paper" paper-id="71">
-                    <td id="paper-time">16:42&ndash;17:00</td>
-                    <td>
-                        <span class="paper-title">MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling.</span>
-                        <em>Paweł Budzianowski, Tsung-Hsien Wen, Bo-Hsiang Tseng, Iñigo Casanueva, Stefan Ultes, Osman Ramadan and Milica Gasic</em>&nbsp;&nbsp;
-                        <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1547" aria-hidden="true"></i>
-                    </td>
-                </tr>
-                <tr id="best-paper" paper-id="1537">
-                    <td id="paper-time">17:00&ndash;17:18</td>
-                    <td>
-                        <span class="paper-title">Linguistically-Informed Self-Attention for Semantic Role Labeling.</span>
-                        <em>Emma Strubell, Patrick Verga, Daniel Andor, David Weiss and Andrew McCallum</em>&nbsp;&nbsp;
-                        <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1548" aria-hidden="true"></i>
-                    </td>
-                </tr>
-                <tr id="best-paper" paper-id="1195">
-                    <td id="paper-time">17:18&ndash;17:36</td>
-                    <td>
-                        <span class="paper-title">Phrase-Based & Neural Unsupervised Machine Translation.</span>
-                        <em>Guillaume Lample, Myle Ott, Alexis Conneau, Ludovic Denoyer and Marc'Aurelio Ranzato</em>&nbsp;&nbsp;
-                        <i class="fa fa-file-pdf-o paper-icon" data="http://aclweb.org/anthology/D18-1549" aria-hidden="true"></i>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div id="generatePDFForm">
-        <div id="formContainer">
-            <input type="checkbox" id="includePlenaryCheckBox" value="second_checkbox"/>&nbsp;&nbsp;<span id="checkBoxLabel">Include plenary sessions in schedule</span>
-            <br/>
-            <a href="#" id="generatePDFButton" class="btn btn--info btn--large">Download PDF</a>
-        </div>
-    </div>
-</div>
+
+
+### Main Conference Day 1 (Tuesday, November 5, 2019)
+- <i>08:45&dash;09:00 :</i> Opening Remarks
+- <i>09:00&dash;10:00 :</i> Keynote I: Noam Slonim
+- <i>10:00&dash;10:30 :</i> Coffee Break
+- <i>10:30&dash;12:00 :</i> Session 1
+
+### Session 1A: Machine Learning I
+- <i>10:30&dash;10:48:</i> Attending to Future Tokens for Bidirectional Sequence Generation(#1443)
+- <i>10:48&dash;11:06:</i> Attention is Not Not Explanation(#526)
+- <i>11:06&dash;11:24:</i> Practical Obstacles to Deploying Active Learning(#1176)
+- <i>11:24&dash;11:42:</i> Transfer Learning Between Related Tasks Using Expected Label Proportions(#1207)
+- <i>11:42&dash;12:00:</i> Insertion-based Decoding with automatically Inferred Generation Order(#TACL-1732)
+
+### Session 1B: Lexical Semantics I
+- <i>10:30&dash;10:48:</i> Knowledge Enhanced Contextual Word Representations(#3403)
+- <i>10:48&dash;11:06:</i> How Contextual are Contextualized Word Representations?(#208)
+- <i>11:06&dash;11:24:</i> Room to Glo: A Systematic Comparison of Semantic Change Detection Approaches with Word Embeddings(#783)
+- <i>11:24&dash;11:42:</i> On Correlations between Word Vector Sets(#3976)
+- <i>11:42&dash;12:00:</i> Game Theory Meets Embeddings: a Unified Framework for Word Sense Disambiguation(#1724)
+
+### Session 1C: Dialog and Interactive Systems I
+- <i>10:30&dash;10:48:</i> Guided Dialog Policy Learning: Reward Estimation for Multi-Domain Task-Oriented Dialog(#166)
+- <i>10:48&dash;11:06:</i> Multi-hop Selector Network for Multi-turn Response Selection in Retrieval-based Chatbots(#554)
+- <i>11:06&dash;11:24:</i> MoEL: Mixture of Empathetic Listeners(#1053)
+- <i>11:24&dash;11:42:</i> Entity-Consistent End-to-end Task-Oriented Dialogue System with KB Retriever(#2430)
+- <i>11:42&dash;12:00:</i> Building Task-Oriented Visual Dialog Systems Through Alternative Optimization Between Dialog Policy and Language Generation(#3756)
+
+### Session 1D: Sentiment Analysis and Argument Mining I
+- <i>10:30&dash;10:48:</i> DialogueGCN: A Graph-based Network for Emotion Recognition in Conversation(#2092)
+- <i>10:48&dash;11:06:</i> Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations(#1814)
+- <i>11:06&dash;11:24:</i> Interpretable Relevant Emotion Ranking with Event-Driven Attention(#3544)
+- <i>11:24&dash;11:42:</i> Justifying Recommendations using Distantly-Labeled Reviews and Fined-Grained Aspects(#518)
+- <i>11:42&dash;12:00:</i> Using Customer Service Dialogues for Satisfaction Analysis with Context-Assisted Multiple Instance Learning(#204)
+
+- <i>10:30&dash;12:00 :</i> Poster & Demo Session 1: Information Extraction, Information Retrieval and Document Analysis, Linguistic Theories
+   - Leveraging Dependency Forest for Neural Medical Relation Extraction(#249)
+   - Open Relation Extraction: Relational Knowledge Transfer from Supervised Data to Unsupervised Data(#569)
+   - Improving Relation Extraction with Knowledge-attention(#710)
+   - Jointly Learning Entity and Relation Representations for Entity Alignment(#782)
+   - Tackling Long-Tailed Relations and Uncommon Entities in Knowledge Graph Completion(#796)
+   - Low-Resource Name Tagging Learned with Weakly Labeled Data(#821)
+   - Learning Dynamic Context Augmentation for Global Entity Linking(#841)
+   - Open Event Extraction from Online Texts using a Generative Adversarial Network(#859)
+   - Learning to Bootstrap for Entity Set Expansion(#1001)
+   - Multi-input Multi-output Sequence Labeling for Joint Extraction of Fact and Condition Tuples from Scientific Text(#1149)
+   - Cross-lingual Structure Transfer for Relation and Event Extraction(#1210)
+   - Uncover the Ground-Truth Relations in Distant Supervision: A Neural Expectation Maximization Framework(#1365)
+   - Doc2EDAG: An End-to-End Document-level Framework for Chinese Financial Event Extraction(#1736)
+   - Event Detection with Trigger-Aware Lattice Neural Network(#1816)
+   - A Boundary-aware Neural Model for Nested Named Entity Recognition(#1874)
+   - Learning the Extraction Order of Multiple Relational Facts in a Sentence with Reinforcement Learning(#2024)
+   - CaRe: Open Knowledge Graph Embeddings(#2439)
+   - Self-Attention Enhanced CNNs and Collaborative Curriculum Learning for Distantly Supervised Relation Extraction(#2793)
+   - Neural Cross-Lingual Relation Extraction Based on Bilingual Word Embedding Mapping(#3014)
+   - Leveraging 2-hop Distant Supervision from Table Entity Pairs for Relation Extraction(#3059)
+   - EntEval: A Holistic Evaluation Benchmark for Entity Representations(#3317)
+   - Joint Event and Temporal Relation Extraction with Shared Representations and Structured Prediction(#3646)
+   - Hierarchical Text Classification with Reinforced Label Assignment(#32)
+   - Investigating Capsule Network and Semantic Feature on Hyperplanes for Text Classification(#314)
+   - Label-Specific Document Representation for Multi-Label Text Classification(#721)
+   - Hierarchical Attention Prototypical Networks for Few-Shot Text Classification(#729)
+   - Many Faces of Feature Importance: Comparing Built-in and Post-hoc Feature Importance in Text Classification(#2087)
+   - Enhancing Local Feature Extraction with Global Representation for Neural Text Classification(#2273)
+   - Latent-Variable Generative Text Classifiers for Data-Efficient NLP(#3004)
+   - PaRe: A Paper-Reviewer Matching Approach Using a Common Topic Space(#3239)
+   - Linking artificial and human neural representations of language(#2750)
+
+- <i>12:00&dash;13:30 :</i> Lunch
+- <i>13:30&dash;15:00 :</i> Session 2
+
+### Session 2A: Summarization and Generation
+- <i>13:30&dash;13:48:</i> Neural Text Summarization: A Critical Evaluation(#3687)
+- <i>13:48&dash;14:06:</i> Neural data-to-text generation: A comparison between pipeline and end-to-end architectures(#2586)
+- <i>14:06&dash;14:24:</i> MoverScore: Text Generation Evaluating with Contextualized Embeddings and Earth Mover Distance(#1175)
+- <i>14:24&dash;14:42:</i> Select and Attend: Towards Controllable Content Selection in Text Generation(#3049)
+- <i>14:42&dash;15:00:</i> Sentence-Level Content Planning and Style Specification for Neural Text Generation(#3357)
+
+### Session 2B: Sentence-level Semantics I
+- <i>13:30&dash;13:48:</i> Translate and Label! An Encoder-Decoder Approach for Cross-lingual Semantic Role Labeling(#2740)
+- <i>13:48&dash;14:06:</i> Syntax-Enhanced Self-Attention-Based Semantic Role Labeling(#2106)
+- <i>14:06&dash;14:24:</i> VerbAtlas: a Novel Large-Scale Verbal Semantic Resource and Its Application to Semantic Role Labeling(#2213)
+- <i>14:24&dash;14:42:</i> Parameter-free Sentence Embedding via Orthogonal Basis(#1099)
+- <i>14:42&dash;15:00:</i> Evaluation Benchmarks and Learning Criteria for Discourse-Aware Sentence Representations(#3807)
+
+### Session 2C: Speech, Vision, Robotics, Multimodal and Grounding I
+- <i>13:30&dash;13:48:</i> Extracting Possessions from Social Media: Images Complement Language(#3013)
+- <i>13:48&dash;14:06:</i> Learning to Speak and Act in a Fantasy Text Adventure Game(#1243)
+- <i>14:06&dash;14:24:</i> Help, Anna! Vision-based Navigation with Natural Multimodal Assistance via Retrospective Curiosity-Encouraging Imitation Learning(#1542)
+- <i>14:24&dash;14:42:</i> Incorporating Visual Semantics into Sentence Representations within a Grounded Space(#2247)
+- <i>14:42&dash;15:00:</i> Neural Naturalist: Generating Fine-Grained Image Comparisons(#3024)
+
+### Session 2D: Information Extraction I
+- <i>13:30&dash;13:48:</i> Fine-Grained Evaluation for Entity Linking(#116)
+- <i>13:48&dash;14:06:</i> Supervising Unsupervised Open Information Extraction Models(#3069)
+- <i>14:06&dash;14:24:</i> Neural Cross-Lingual Event Detection with Minimal Parallel Resources(#1723)
+- <i>14:24&dash;14:42:</i> KnowledgeNet: A Benchmark Dataset for Knowledge Base Population(#1258)
+- <i>14:42&dash;15:00:</i> Effective Use of Transformer Networks for Entity Tracking(#3308)
+
+- <i>13:30&dash;15:00 :</i> Poster & Demo Session 2: Machine Translation and Mulitilinguality, Phonology, Morphology and Word Segmentation, Tagging, Chunking, Syntax and Parsing
+   - Explicit Cross-lingual Pre-training for Unsupervised Machine Translation(#233)
+   - Latent Part-of-Speech Sequences for Neural Machine Translation(#410)
+   - Improving Back-Translation with Uncertainty-based Confidence Estimation(#798)
+   - Towards Linear Time Neural Machine Translation with Capsule Networks(#846)
+   - Modeling Multi-mapping relations for Precise Cross-lingual Entity Alignment(#985)
+   - Supervised and Nonlinear Alignment of Two Embedding Spaces for Dictionary Induction in Low Resourced Languages(#1226)
+   - Beto, Bentz, Becas: The Surprising Cross-Lingual Effectiveness of BERT(#1414)
+   - Iterative Dual Domain Adaptation for Neural Machine Translation(#1427)
+   - Multi-agent Learning for Neural Machine Translation(#1484)
+   - Pivot-based Transfer Learning for Neural Machine Translation between non-English Languages(#1869)
+   - Context-Aware Monolingual Repair for Neural Machine Translation(#1967)
+   - Multi-Granularity Self-Attention for Neural Machine Translation(#2330)
+   - The Bottom-up Evolution of Representations in the Transformer: A Study with Machine Translation and Language Modeling Objectives(#2415)
+   - Improving Deep Transformer with Depth-Scaled Initialization and Merged Attention(#2537)
+   - A Discriminative Neural Model for Cross-Lingual Word Alignment(#2961)
+   - One Model to Learn Both: Zero Pronoun Prediction and Translation(#3571)
+   - Dynamic Past and Future for Neural Machine Translation(#3601)
+   - Revisit Automatic Error Detection for Wrong and Missing Translation &dash; A Supervised Approach(#3770)
+   - Towards Understanding Neural Machine Translation with Word Importance(#3857)
+   - Multilingual Neural Machine Translation with Language Clustering(#4056)
+   - Don't Forget the Long Tail! A Comprehensive Analysis of Morphological Generalization in Bilingual Lexicon Induction(#1065)
+   - A Functionalist Account of Vowel System Typology(#1268)
+   - Pushing the Limits of Low-Resource Morphological Inflection(#2230)
+   - Morphological Analysis Using a Sequence Decoder(#TACL-1654)
+   - Cross-Lingual Dependency Parsing Using Code-Mixed TreeBank(#205)
+   - Hierarchical Pointer Net Parsing(#531)
+   - Semi-Supervised Semantic Role Labeling with Cross-View Training(#719)
+   - Low-Resource Sequence Labeling via Unsupervised Multilingual Contextualized Representations(#809)
+   - A Lexicon-Based Graph Neural Network for Chinese NER(#863)
+   - CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding(#1556)
+   - Tree Transformer: Integrating Tree Structures into Self-Attention(#1794)
+   - Semantic Role Labeling with Iterative Structure Refinement(#2179)
+   - Entity Projection via Machine-Translation for Cross-Lingual NER(#2724)
+   - A Bayesian Approach for Sequence Tagging with Crowds(#2738)
+   - A systematic comparison of methods for low-resource dependency parsing on genuinely low-resource languages(#3091)
+   - Target Language-Aware Constrained Inference for Cross-lingual Dependency Parsing(#3368)
+   - Look-up and Adapt: A One-shot Semantic Parser(#3711)
+   - Similarity Based Auxiliary Classifier for Named Entity Recognition(#3886)
+   - Variable beam search for generative neural parsing and its relevance for neuro-imaging signal analysis(#4015)
+
+- <i>15:00&dash;15:30 :</i> Coffee Break
+- <i>15:30&dash;16:18 :</i> Session 3
+
+### Session 3A: Machine Learning II
+- <i>15:30&dash;15:42:</i> Are We Modeling the Task or the Annotator? An Investigation of Annotator Bias in Natural Language Understanding Datasets(#1092)
+- <i>15:42&dash;15:54:</i> Robust Text Classifier on Test-Time Budgets(#1128)
+- <i>15:54&dash;16:06:</i> Commonsense Knowledge Mining from Pretrained Models(#3289)
+- <i>16:06&dash;16:18:</i> RNN Architecture Learning with Sparse Regularization(#3428)
+
+### Session 3B: Semantics
+- <i>15:30&dash;15:42:</i> Analytical Methods for Interpretable Ultradense Word Embeddings(#75)
+- <i>15:42&dash;15:54:</i> Investigating Meta-Learning Algorithms for Low-Resource Natural Language Understanding Tasks(#3142)
+- <i>15:54&dash;16:06:</i> Retrofitting Contextualized Word Embeddings with Paraphrases(#3045)
+- <i>16:06&dash;16:18:</i> Incorporating Contextual and Syntactic Structures Improves Semantic Similarity Modeling(#3508)
+
+### Session 3C: Discourse, Summarization, and Generation
+- <i>15:30&dash;15:42:</i> Neural Linguistic Steganography(#3399)
+- <i>15:42&dash;15:54:</i> The Feasibility of Embedding Based Automatic Evaluation for Single Document Summarization(#3018)
+- <i>15:54&dash;16:06:</i> Attention Optimization for Abstractive Document Summarization(#1918)
+- <i>16:06&dash;16:18:</i> Rewarding Coreference Resolvers for Being Consistent with World Knowledge(#2020)
+
+### Session 3D: Text Mining and NLP Applications I
+- <i>15:30&dash;15:42:</i> An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction(#740)
+- <i>15:42&dash;15:54:</i> A Multilingual Topic Model for Learning Weighted Topic Links Across Incomparable Corpora(#1257)
+- <i>15:54&dash;16:06:</i> Measure Country-Level Socio-Economic Indicators with Streaming News: An Empirical Study(#3730)
+- <i>16:06&dash;16:18:</i> Towards Extracting Medical Family History from Natural Language Interactions: A New Dataset and Baselines(#2903)
+
+- <i>15:30&dash;16:18 :</i> Poster & Demo Session 3: Dialog and Interactive Systems, Machine Translation and Multilinuality, Phonology, Morphology, and Word Segmentation, Speech, Vision, Robotics, Multimodal and Grounding, Tagging, Chunking, Syntax and Parsing
+   - Multi-task Learning for Natural Language Generation in Task-Oriented Dialogue(#242)
+   - Dirichlet Latent Variable Hierarchical Recurrent Encoder-Decoder in Dialogue Generation(#622)
+   - Semi-Supervised Bootstrapping of Dialogue State Trackers for Task-Oriented Modelling(#1011)
+   - A Progressive Model to Enable Continual Learning for Semantic Slot Filling(#1289)
+   - CASA-NLU: Context-Aware Self-Attentive Natural Language Understanding for Task-Oriented Chatbots(#1447)
+   - Sampling Matters! An Empirical Study of Negative Sampling Strategies for Learning of Matching Models in Retrieval-based Dialogue Systems(#2050)
+   - Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables(#2329)
+   - Modeling Multi-Action Policy for Task-Oriented Dialogues(#2650)
+   - An Evaluation for Intent Classification and Out-of-Scope Prediction(#3471)
+   - Automatically Learning Data Augmentation Policies for Dialogue Tasks(#3528)
+   - uniblock: Scoring and Filtering Corpus with Unicode Block Information(#351)
+   - Multilingual word translation using auxiliary languages(#533)
+   - Towards Better Modeling Hierarchical Structure for Self-Attention with Ordered Neurons(#801)
+   - Improved Sentence Alignment in Linear Time and Space(#1284)
+   - Simpler and Faster Learning of Adaptive Policies for Simultaneous Translation(#1603)
+   - Adversarial Learning with Contextual Embeddings for Zero-resource Cross-lingual Classification and NER(#1889)
+   - Recurrent Embedding for Neural Machine Translation(#2114)
+   - Machine Translation for Machines: the Sentiment Classification Use Case(#2413)
+   - Investigating the Effectiveness of BPE: The Power of Shorter Sequences(#2552)
+   - HABLex: Human Annotated Bilingual Lexicons for Experiments in Machine Translation(#3022)
+   - Handling Syntactic Divergence in Low-resource Machine Translation(#3336)
+   - Speculative Beam Search for Simultaneous Translation(#3487)
+   - Self-Attention with Structural Position Representations(#3548)
+   - Low-Resource Neural Machine Translation by Exploiting Multilingualism through Multi-Step Fine-Tuning Using N-way Parallel Corpora(#3590)
+   - Unsupervised Domain Adaptation for Neural Machine Translation with Domain-Aware Feature Embeddings(#3716)
+   - A Regularization-based Framework for Bilingual Grammar Induction(#4061)
+   - Encoders Help You Disambiguate Word Senses in Neural Machine Translation(#4083)
+   - Korean Morphological Analysis with Tied Sequence-to-Sequence Multi-Task Model(#2376)
+   - Convolutional Neural Networks for Diacritic Restoration(#3733)
+   - Improving Visual Dialog by Learning to Answer Diverse Questions(#459)
+   - Cross-lingual Transfer Learning with Data Selection for Large-Scale Spoken Language Understanding(#790)
+   - Multi-Head Attention with Diversity for Learning Grounded Multilingual Multimodal Representations(#2786)
+   - Decoupled Box Proposal and Featurization with Ultrafine-Grained Semantic Labels Improve Image Captioning and Visual Question Answering(#3263)
+   - REO-Relevance, Extraness, Omission: A Fine-grained Evaluation for Image Captioning(#3293)
+   - WSLLN: Weakly Supervised Natural Language Localization Networks(#3398)
+   - Grounding learning of modifier dynamics: An application to colour naming.(#3748)
+   - Efficient Navigation with Language Pre-training and Stochastic Sampling(#3830)
+   - Towards Making a Dependency Parser See(#413)
+   - Unsupervised Labeled Parsing with Deep Inside-Outside Recursive Autoencoders(#1234)
+   - Dependency Parsing for Spoken Dialog Systems(#3171)
+   - Span-based Hierarchical Semantic Parsing for Task-Oriented Dialog(#3240)
+
+- <i>16:18&dash;16:30 :</i> Mini-Break
+- <i>16:30&dash;18:00 :</i> Session 4
+
+### Session 4A: Neural Machine Translation
+- <i>16:30&dash;16:48:</i> Enhancing Context Modeling with a Query-Guided Capsule Network for Document-level NMT(#2416)
+- <i>16:48&dash;17:06:</i> Simple, Scalable Adaptation for Neural Machine Translation(#3252)
+- <i>17:06&dash;17:24:</i> Controlling Text Complexity in Neural Machine Translation(#3177)
+- <i>17:24&dash;17:42:</i> Investigating Multilingual NMT Representations at Scale(#1388)
+- <i>17:42&dash;18:00:</i> Hierarchical Modeling of Global Context for Document-Level Neural Machine Translation(#1423)
+
+### Session 4B: Question Answering I
+- <i>16:30&dash;16:48:</i> Cross-Lingual Machine Reading Comprehension(#8)
+- <i>16:48&dash;17:06:</i> A Multi-Type Multi-Span Network for Reading Comprehension that Requires Discrete Reasoning(#582)
+- <i>17:06&dash;17:24:</i> Neural Duplicate Question Detection without Labeled Training Data(#880)
+- <i>17:24&dash;17:42:</i> Asking Clarification Questions in Knowledge-Based Question Answering(#889)
+- <i>17:42&dash;18:00:</i> Multi-View Domain Adapted Sentence Embeddings for Low-Resource Unsupervised Duplicate Question Detection(#1646)
+
+### Session 4C: Social Media and Computational Social Science
+- <i>16:30&dash;16:48:</i> Multi-label Categorization of Accounts of Sexism using a Neural Framework(#172)
+- <i>16:48&dash;17:06:</i> The Trumpiest Trump? Identifying a Subject's Most Characteristic Tweets(#1462)
+- <i>17:06&dash;17:24:</i> Finding Microaggressions in the Wild: A Case for Locating Elusive Phenomena in Social Media Posts(#2950)
+- <i>17:24&dash;17:42:</i> Reinforced Product Metadata Selection for Helpfulness Assessment of Customer Reviews(#694)
+- <i>17:42&dash;18:00:</i> Learning Invariant Representations of Social Media Users(#3557)
+
+### Session 4D: Text Mining and NLP Applications II
+- <i>16:30&dash;16:48:</i> (Male, Bachelor) and (Female, Ph.D) have different connotations : Parallelly Annotated Stylistic Language Dataset with Multiple Personas(#3793)
+- <i>16:48&dash;17:06:</i> Movie Plot Analysis via Turning Point Identification(#244)
+- <i>17:06&dash;17:24:</i> Latent Suicide Risk Detection on Microblog via Suicide-Oriented Word Embeddings and Layered Attention(#2488)
+- <i>17:24&dash;17:42:</i> Deep Ordinal Regression for Pledge Specificity Prediction(#1903)
+- <i>17:42&dash;18:00:</i> Enabling Robust Grammatical Error Correction in New Domains: Datasets, Metrics, and Analyses(#TACL-1677)
+
+- <i>16:30-18:00 :</i> Poster & Demo Session 4: Dialog and Interactive Systems, Speech, Vision, Robotics, Multimodal and Grounding
+   - Data-Efficient Goal-Oriented Conversation with Dialogue Knowledge Transfer Networks(#9)
+   - Multi-Granularity Representations of Dialog(#64)
+   - Are You for Real? Detecting Identity Fraud via Dialogue Interactions(#111)
+   - Hierarchy Response Learning for Neural Conversation Generation(#124)
+   - Knowledge Aware Conversation Generation with Explainable Reasoning on Augmented Graphs(#138)
+   - Adaptive Parameterization for Neural Dialogue Generation(#298)
+   - Towards Knowledge-Based Recommender Dialog System(#316)
+   - Structuring latent spaces for stylized response generation(#419)
+   - Improving Open-Domain Dialogue Systems via Multi-Turn Incomplete Utterance Restoration(#537)
+   - Unsupervised Context Rewriting for Open Domain Conversation(#771)
+   - Dually Interactive Matching Network for Personalized Response Selection in Retrieval-Based Chatbots(#866)
+   - DyKgChat: Benchmarking Dialogue Generation Grounding on Dynamic Knowledge Graphs(#1432)
+   - Retrieval-guided Dialogue Response Generation via a Matching-to-Generation Framework(#1550)
+   - Scalable and Accurate Dialogue State Tracking via Hierarchical Sequence Generation(#1842)
+   - Low-Resource Response Generation with Template Prior(#1931)
+   - A Discrete CVAE for Response Generation on Short-Text Conversation(#2039)
+   - Who Is Speaking to Whom? Learning to Identify Utterance Addressee in Multi-Party Conversations(#2495)
+   - A Semi-Supervised Stable Variational Network for Promoting Replier-Consistency in Dialogue Generation(#2594)
+   - Modeling Personalization in Continuous Space for Response Generation via Augmented Wasserstein Autoencoders(#2685)
+   - Variational Hierarchical User-based Conversation Model(#3513)
+   - Recommendation as a Communication Game: Self-Supervised Role-Playing for Goal-oriented Dialogue(#3727)
+   - CoSQL: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases(#3881)
+   - A Practical Dialogue-Act-Driven Conversation Model for Multi-Turn Response Selection(#3954)
+   - How to Build User Simulators to Train RL-based Dialog Systems(#4003)
+   - Graph Convolutional Network with Sequential Attention for Goal-Oriented Dialogue Systems(#TACL-1676)
+   - Low-Rank HOCA: Efficient High-Order Cross-Modal Attention for Video Captioning(#294)
+   - Image Captioning with Very Scarce Supervised Data: Adversarial Semi-Supervised Learning Approach(#370)
+   - Dual Attention Networks for Visual Reference Resolution in Visual Dialog(#401)
+   - Unsupervised Discovery of Multimodal Links in Multi-image, Multi-sentence Documents(#942)
+   - UR-FUNNY: A Multimodal Language Dataset for Understanding Humor(#996)
+   - Partners in Crime: Multi-view Sequential Inference for Movie Understanding(#1923)
+   - Guiding the Flowing of Semantics: Interpretable Video Captioning via POS Tag(#2097)
+   - A Stack-Propagation Framework with Token-Level Intent Detection for Spoken Language Understanding(#2414)
+   - Talk2Car: Taking Control Of Your Self Driving Car(#2718)
+   - Fact-Checking Meets Fauxtography: Verifying Claims About Images(#2739)
+   - Video Dialog via Progressive Inference and Cross-Transformer(#2766)
+   - Executing Instructions in Situated Collaborative Interactions(#2884)
+   - Fusion of Detected Objects in Text for Visual Question Answering(#3099)
+   - TIGEr: Text-to-Image Grounding for Image Caption Evaluation(#3260)
+
+## Main Conference Day 2 (Wednesday, November 6, 2019)
+
+### Overview
+- <i>09:00&dash;10:00 :</i> Keynote II: Meeyoung Cha
+- <i>10:00&dash;10:30 :</i> Coffee Break
+- <i>10:30&dash;12:00 :</i> Session 5
+
+### Session 5A: Machine Learning III
+- <i>10:30&dash;10:48:</i> Universal Trigger Sequences for Attacking and Analyzing NLP(#1515)
+- <i>10:48&dash;11:06:</i> To Annotate or Not? Unsupervised Prediction of Performance Drop due to Domain Shift(#2756)
+- <i>11:06&dash;11:24:</i> Adaptively Sparse Transformers(#2900)
+- <i>11:24&dash;11:42:</i> Show Your Work: Improved Reporting of Experimental Results(#3277)
+- <i>11:42&dash;12:00:</i> A Deep Factorization of Style and Structure in Fonts(#3999)
+
+### Session 5B: Lexical Semantics II
+- <i>10:30&dash;10:48:</i> Cross-lingual Semantic Specialization via Lexical Relation Induction(#1735)
+- <i>10:48&dash;11:06:</i> Modelling the interplay of metaphor and emotion through multitask learning(#2670)
+- <i>11:06&dash;11:24:</i> How well do NLI models capture verb veridicality?(#3460)
+- <i>11:24&dash;11:42:</i> Modeling Color?Terminology Across Thousands of Languages(#3515)
+- <i>11:42&dash;12:00:</i> Negative Focus Detection via Contextual Attention Mechanisms(#1314)
+
+### Session 5C: Discourse and Pragmatics
+- <i>10:30&dash;10:48:</i> A Unified Neural Coherence Model(#1792)
+- <i>10:48&dash;11:06:</i> Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information(#2642)
+- <i>11:06&dash;11:24:</i> Neural Generative Rhetorical Structure Parsing(#4060)
+- <i>11:24&dash;11:42:</i> Weak Supervision for Learning Discourse Structure(#2453)
+- <i>11:42&dash;12:00:</i> Predicting Discourse Structure using Distant Supervision from Sentiment(#2625)
+
+### Session 5D: Text Mining and NLP Applications III
+- <i>10:30&dash;10:48:</i> The Myth of Blind Review Revisited: Experiments on ACL vs. EMNLP(#2233)
+- <i>10:48&dash;11:06:</i> Uncover Sexual Harassment Patterns from Personal Stories by Joint Key Element Extraction and Categorization(#2653)
+- <i>11:06&dash;11:24:</i> Identifying Predictive Causal Factors from News Streams(#2864)
+- <i>11:24&dash;11:42:</i> Training Data Augmentation for Detecting Adverse Drug Reactions in User-Generated Content(#3011)
+- <i>11:42&dash;12:00:</i> Deep Reinforcement Learning-based Text Anonymization against Private-Attribute Inference(#3160)
+
+- <i>10:30&dash;12:00 :</i> Poster & Demo Session 5: Question Answering, Textual Inference and Other Areas of Semantics
+   - Tree-structured Decoding for Solving Math Word Problems(#56)
+   - PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text(#86)
+   - Cosmos QA: Machine Reading Comprehension with Contextual Commonsense Reasoning(#107)
+   - Finding Generalizable Evidence by Learning to Convince Q&A Models(#179)
+   - Ranking and Sampling in Open-domain Question Answering(#468)
+   - A Non-commutative Bilinear Model for Answering Path Queries in Knowledge Graphs(#618)
+   - Generating Questions for Knowledge Bases via Incorporating Diversified Contexts and Answer-Aware Loss(#807)
+   - Multi-task Learning for Conversational Question Answering Over a Large-Scale Knowledge Base(#924)
+   - BiPaR: A Bilingual Parallel Dataset for Multilingual and Cross-lingual Reading Comprehension on Novels(#1930)
+   - Language Models as Knowledge Bases?(#2085)
+   - NumNet: Machine Reading Comprehension with Numerical Reasoning(#2237)
+   - Unicoder: A Universal Language Encoder by Pre-training with Multiple Cross-lingual Tasks(#2277)
+   - Addressing Semantic Drift in Question Generation for Semi-Supervised Question Answering(#2390)
+   - Adversarial Domain Adaptation for Machine Reading Comprehension(#2764)
+   - Incorporating External Knowledge into Machine Reading for Generative Question Answering(#2820)
+   - Answering questions by learning to rank - Learning to rank by answering questions(#2825)
+   - Discourse-Aware Semantic Self-Attention for Narrative Reading Comprehension(#2940)
+   - Revealing the Importance of Semantic Retrieval for Machine Reading at Scale(#2945)
+   - PubMedQA: A Dataset for Biomedical Research Question Answering(#2978)
+   - Quick and (not so) Dirty: Unsupervised Selection of Justification Sentences for Multi-hop Question Answering(#3164)
+   - Answering Complex Open-domain Questions Through Iterative Query Generation(#3417)
+   - NL2pSQL: Generating Pseudo-SQL Queries from Under-specified Natural Language Questions(#3489)
+   - Leveraging Frequent Query Substructures to Generate Formal Queries for Complex Question Answering(#4004)
+   - Incorporating Graph Attention Mechanism into Knowledge Graph Reasoning Based on Deep Reinforcement Learning(#147)
+   - Learning to Update Knowledge Graph by Reading News(#493)
+   - DIVINE: A Generative Adversarial Imitation Learning Framework for Knowledge Graph Reasoning(#709)
+   - Original Semantics-Oriented Attention and Deep Fusion Network for Sentence Matching(#829)
+   - Representation Learning with Ordered Relation Paths for Knowledge Graph Completion(#972)
+   - Collaborative Policy Learning for Open Knowledge Graph Reasoning(#1018)
+   - Modeling Event Background for If-Then Commonsense Reasoning Using Context-aware Variational Autoencoder(#1444)
+   - Asynchronous Deep Interaction Network for Natural Language Inference(#2257)
+   - Keep Calm and Switch On! Preserving Sentiment and Fluency in Semantic Text Exchange(#2830)
+   - Query-focused Scenario Construction(#3550)
+   - Semi-supervised Entity Alignment via Joint Knowledge Embedding Model and Cross-graph Model(#3819)
+
+- <i>12:00&dash;13:30 :</i> Lunch
+- <i>13:30&dash;15:00 :</i> Session 6
+
+### Session 6A: Tagging, Chunking, Syntax and Parsing
+- <i>13:30&dash;13:48:</i> Designing and Interpreting Probes with Control Tasks(#4063)
+- <i>13:48&dash;14:06:</i> Specializing Word Embeddings (for Parsing) by Information Bottleneck(#1357)
+- <i>14:06&dash;14:24:</i> Deep Contextualized Word Embeddings in Transition-Based and Graph-Based Dependency Parsing - A Tale of Two Parsers Revisited(#2799)
+- <i>14:24&dash;14:42:</i> Semantic graph parsing with recurrent neural network DAG grammars(#2863)
+- <i>14:42&dash;15:00:</i> 75 Languages, 1 Model: Parsing Universal Dependencies Universally(#1221)
+
+### Session 6B: Question Answering II
+- <i>13:30&dash;13:48:</i> Interactive Language Learning by Question Answering(#1367)
+- <i>13:48&dash;14:06:</i> What's Missing: A Knowledge Gap Guided Approach for Multi-hop Question Answering(#3238)
+- <i>14:06&dash;14:24:</i> KagNet: Learning to Answer Commonsense Questions with Knowledge-Aware Graph Networks(#436)
+- <i>14:24&dash;14:42:</i> Learning with Limited Data for Multilingual Reading Comprehension(#3518)
+- <i>14:42&dash;15:00:</i> A Discrete Hard EM Approach for Weakly Supervised Question Answering(#3778)
+
+### Session 6C: Linguistic Theories, Cognitive Modeling and Psycholinguistics
+- <i>13:30&dash;13:48:</i> Is the Red Square Big? MALeViC: Modeling Adjectives Leveraging Visual Contexts(#2585)
+- <i>13:48&dash;14:06:</i> Investigating BERT's Knowledge of Language: Five Analysis Methods with NPIs(#3650)
+- <i>14:06&dash;14:24:</i> Representation of Constituents in Neural Language Models: - Coordination Phrase as a Case Study(#3929)
+- <i>14:24&dash;14:42:</i> Towards Zero-shot Language Modelling(#1745)
+- <i>14:42&dash;15:00:</i> Neural Network Acceptability Judgments(#TACL-1710)
+
+### Session 6D: Sentiment Analysis and Argument Mining II
+- <i>13:30&dash;13:48:</i> What Gets Echoed? Understanding the "Pointers" in Explanations of Persuasive Arguments(#2089)
+- <i>13:48&dash;14:06:</i> Modeling Frames in Argumentation(#2267)
+- <i>14:06&dash;14:24:</i> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions(#3321)
+- <i>14:24&dash;14:42:</i> Evaluating adversarial attacks against multiple fact verification systems(#427)
+- <i>14:42&dash;15:00:</i> Nonsense!: Quality Control via Two-Step Reason Selection for Annotating Local Acceptability and Related Attributes in News Editorials(#564)
+
+- <i>13:30&dash;15:00 :</i> Poster & Demo Session 6: Discourse and Pragmatics, Summarization and Generation
+   - Evaluating Pronominal Anaphora in Machine Translation: An Evaluation Measure and a Test Suite(#723)
+   - A Regularization Approach for Incorporating Event Knowledge and Coreference Relations into Neural Discourse Parsing(#2916)
+   - Weakly Supervised Multilingual Causality Extraction fromWikipedia(#3994)
+   - Attribute-aware Sequence Network for Review Summarization(#210)
+   - Extractive Summarization of Long Documents by Combining Global and Local Context(#268)
+   - Enhancing Neural Data-To-Text Generation Models with External Background Knowledge(#313)
+   - Reading Like HER: Human Reading Inspired Extractive Summarization(#346)
+   - Contrastive Attention Mechanism for Abstractive Sentence Summarization(#361)
+   - NCLS: Neural Cross-Lingual Summarization(#703)
+   - Clickbait? Sensational Headline Generation with Auto-tuned Reinforcement Learning(#749)
+   - Concept Pointer Network for Abstractive Summarization(#845)
+   - Surface Realisation Using Full Delexicalisation(#1139)
+   - Unsupervised Text Attribute Transfer via Iterative Matching and Translation(#1169)
+   - Better Rewards Yield Better Summaries: Learning to Summarise Without References(#1191)
+   - Mixture Content Selection for Diverse Sequence Generation(#1369)
+   - An End-to-End Generative Architecture for Paraphrase Generation(#1375)
+   - Table-to-Text Generation with Effective Hierarchical Encoder on Three dimensions (Row, Column and Time)(#1726)
+   - Subtopic-Driven Multi-Document Summarization(#1779)
+   - Referring Expression Generation Using Entity Profiles(#1805)
+   - Exploring Diverse Expressions for Paraphrase Generation(#1834)
+   - Enhancing AMR-to-Text Generation with Dual Graph Representations(#1852)
+   - Keeping Consistency of Sentence Generation and Document Classification with Multi-Task Learning(#1881)
+   - Toward a task of feedback comment generation for writing learning(#2031)
+   - Improving Question Generation With to the Point Context(#2033)
+   - Deep Copycat Networks for Text-to-Text Generation(#2121)
+   - Towards Controllable and Personalized Review Generation(#2412)
+   - Answers Unite! Unsupervised Metrics for Reinforced Summarization Models(#2604)
+   - Long and Diverse Text Generation with Planning-based Hierarchical Variational Model(#2746)
+   - "Transforming" Delete, Retrieve, Generate Approach for Controlled Text Style Transfer(#2932)
+   - An Entity-Driven Framework for Abstractive Summarization(#3275)
+   - Neural Extractive Text Summarization with Syntactic Compression(#3334)
+   - Domain Adaptive Text Style Transfer(#3511)
+   - Let's Ask Again: Refine Network for Automatic Question Generation(#3754)
+   - Earlier Isn't Always Better: Submodular Analysis on Corpus and System Biases in Summarization(#3846)
+
+- <i>15:00&dash;15:30 :</i> Coffee Break
+- <i>15:30&dash;16:18 :</i> Session 7
+
+### Session 7A: Machine Translation and Multilinguality I
+- <i>15:30&dash;15:42:</i> Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction(#1131)
+- <i>15:42&dash;15:54:</i> Towards Realistic Practices In Low-Resource Natural Language Processing: The Development Set(#1266)
+- <i>15:54&dash;16:06:</i> Synchronously Generating Two Languages with Interactive Decoding(#1478)
+- <i>16:06&dash;16:18:</i> On NMT Search Errors and Model Errors: Cat Got Your Tongue?(#1868)
+
+### Session 7B: Reasoning and Question Answering
+- <i>15:30&dash;15:42:</i> Going on a vacation takes longer than "Going for a walk": A Study of Temporal Commonsense Understanding(#2533)
+- <i>15:42&dash;15:54:</i> QAInfomax: Learning Robust Question Answering System by Mutual Information Maximization(#2798)
+- <i>15:54&dash;16:06:</i> Adapting Meta Knowledge Graph Information for Multi-Hop Reasoning over Few-Shot Relations(#329)
+- <i>16:06&dash;16:18:</i> How Reasonable are Common-Sense Reasoning Tasks: A Case-Study on the Winograd Schema Challenge and SWAG(#586)
+
+### Session 7C: Generation I
+- <i>15:30&dash;15:42:</i> Pun-GAN: Generative Adversarial Network for Pun Generation(#267)
+- <i>15:42&dash;15:54:</i> Multi-Task Learning with Language Modeling for Question Generation(#3820)
+- <i>15:54&dash;16:06:</i> Autoregressive Text Generation beyond Feedback Loops(#3506)
+- <i>16:06&dash;16:18:</i> The Woman Worked as a Babysitter: On Biases in Language Generation(#3874)
+
+### Session 7D: Sentiment Analysis and Argument Mining III
+- <i>15:30&dash;15:42:</i> On the Importance of Delexicalization for Fact Verification(#2984)
+- <i>15:42&dash;15:54:</i> Towards Debiasing Fact Verification Models(#3338)
+- <i>15:54&dash;16:06:</i> Recognizing Conflict Opinions in Aspect-level Sentiment Classification with Dual Attention Networks(#911)
+- <i>16:06&dash;16:18:</i> Investigating Dynamic Routing in Tree-Structured LSTM for Sentiment Analysis(#1395)
+
+- <i>15:30&dash;16:18 :</i> Poster & Demo Session 7: Information Retrieval and Document Analysis, Lexical Semantics, Sentence-level Semantics, Machine Learning
+   - A Label Informative Wide & Deep Classifier for Scientific Publications(#542)
+   - Text Level Graph Neural Network for Text Classification(#573)
+   - Semantic Relatedness based Re-ranker for Text Spotting(#875)
+   - Delta-training: Simple Semi-Supervised Text Classification using Pretrained Word Embeddings(#1306)
+   - Visual Detection with Context for Document Layout Analysis(#1342)
+   - Evaluating Topic Quality with Posterior Variability(#1562)
+   - Neural Topic Model with Reinforcement Learning(#2494)
+   - Modelling Stopping Criteria using Poisson Processes(#2705)
+   - Cross-Domain Modeling of Sentence-Level Evidence for Document Retrieval(#3533)
+   - The Challenges of Optimizing Machine Translation for Low Resource Cross-Language Information Retrieval(#4151)
+   - Rotate King to get Queen: Word Relationships as Orthogonal Transformations in Embedding Space(#170)
+   - GlossBERT: BERT for Word Sense Disambiguation with Gloss Knowledge(#362)
+   - Leveraging Adjective-Noun Phrasing Knowledge for Comparison Relation Prediction in Text-to-SQL(#670)
+   - Bridging the Defined and the Defining: Exploiting Implicit Lexical Semantic Relations in Definition Modeling(#1461)
+   - Don't Just Scratch the Surface: Enhancing Word Representations for Korean with Hanja(#1615)
+   - Challenging Supervised Word Sense Disambiguation with Lexical-Semantic Combinations(#2219)
+   - Hierarchical Meta-Embeddings for Code-switching Named Entity Recognition(#2419)
+   - Context-Aware Conversation Thread Detection in Group Chat(#162)
+   - Fine-tune BERT with Sparse Self-Attention Mechanism(#327)
+   - Feature-Dependent Confusion Matrices for Low-Resource NER Labeling with Noisy Labels(#806)
+   - A Multi-Pairwise Extension of Procrustes Analysis for Multilingual Word Translation(#819)
+   - Out-of-Domain Detection for Low-Resource Text Classification Tasks(#1063)
+   - An Empirical Study of Harnessing Pre-Trained Neural Networks with Rules for Formality Style Transfer(#1877)
+   - Multiple Text Style Transfer by using Word-level Conditional Generative Adversarial Network with Two-Phase Training(#1925)
+   - Improved Differentiable Architecture Search for Language Model and Named Entity Recognition(#2104)
+   - Using Pairwise Occurrence Information to Improve Knowledge Graph Completion on Large-Scale Datasets(#2696)
+   - Single Training Dimension Selection for Word Embedding with PCA(#2741)
+   - A Surprisingly Effective Fix for Deep Latent Variable Modeling of Text(#3040)
+   - SciBERT: A Pretrained Language Model for Scientific Text(#3115)
+   - Humor Detection: A Transformer Gets the Last Laugh(#3265)
+   - Combining Global Sparse Gradients with Local Gradients in Distributed Neural Network Training(#3585)
+   - Small and Practical BERT models for Sequence Labeling(#3631)
+   - Data Augmentation with Atomic Templates for Spoken Language Understanding(#3776)
+   - PaLM: A Hybrid Parser and Language Model(#4026)
+   - A Pilot Study for Chinese SQL Semantic Parsing(#1593)
+   - Global Reasoning over Database Structures for Text-to-SQL Parsing(#1616)
+   - Transductive Learning of Neural Language Models for Syntactic and Semantic Analysis(#1712)
+   - Efficient Sentence Embedding using Discrete Cosine Transform(#2287)
+   - A Search-based Neural Model for Biomedical Nested and Overlapping Event Detection(#2393)
+   - PAWS-X: A Cross-lingual Adversarial Dataset for Paraphrase Identification(#3233)
+   - Pretrained Language Models for Sequential Sentence Classification(#3887)
+   - Emergent Linguistic Phenomena in Multi-Agent Communication Games(#2402)
+
+- <i>16:18&dash;16:30 :</i> Mini-Break
+- <i>16:30&dash;18:00 :</i> Session 8
+
+### Session 8A: Summarization
+- <i>16:30&dash;16:48:</i> Summary Cloze: A New Task for Content Selection in Topic-Focused Summarization(#1178)
+- <i>16:48&dash;17:06:</i> Text Summarization with Pretrained Encoders(#392)
+- <i>17:06&dash;17:24:</i> How to Write Summaries with Patterns? Learning towards Abstractive Summarization through Prototype Editing(#609)
+- <i>17:24&dash;17:42:</i> Unsupervised Sentence Summarization using the Information Bottleneck Principle(#3219)
+- <i>17:42&dash;18:00:</i> Improving Latent Alignment in Text Summarization by Generalizing the Pointer Generator(#3043)
+
+### Session 8B: Sentence-level Semantics II
+- <i>16:30&dash;16:48:</i> Learning Semantic Parsers from Denotations with Latent Structured Alignments and Abstract Programs(#2676)
+- <i>16:48&dash;17:06:</i> Broad-Coverage Semantic Parsing as Transduction(#263)
+- <i>17:06&dash;17:24:</i> Core Semantic First: A Top-down Approach for AMR Parsing(#1544)
+- <i>17:24&dash;17:42:</i> Don't paraphrase, detect! Rapid and Effective Data Collection for Semantic Parsing(#2904)
+- <i>17:42&dash;18:00:</i> Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond(#TACL-1742)
+
+### Session 8C: Information Extraction II
+- <i>16:30&dash;16:48:</i> Improving Distantly-Supervised Relation Extraction with Joint Label Embedding(#337)
+- <i>16:48&dash;17:06:</i> Leverage Lexical Knowledge for Chinese Named Entity Recognition via Collaborative Graph Network(#566)
+- <i>17:06&dash;17:24:</i> Looking Beyond Label Noise: Shifted Label Distribution Matters in Distantly Supervised Relation Extraction(#1057)
+- <i>17:24&dash;17:42:</i> Easy First Relation Extraction with Information Redundancy(#1640)
+- <i>17:42&dash;18:00:</i> Dependency-Guided LSTM-CRF for Named Entity Recognition(#2509)
+
+### Session 8D: Information Retrieval and Document Analysis I
+- <i>16:30&dash;16:48:</i> Cross-Cultural Transfer Learning for Text Classification(#1036)
+- <i>16:48&dash;17:06:</i> Combining Unsupervised Pre-training and Annotator Rationales to Improve Low-shot Text Classification(#1190)
+- <i>17:06&dash;17:24:</i> Projection Sequence Networks for On-Device Text Classification(#3202)
+- <i>17:24&dash;17:42:</i> Induction Networks for Few-Shot Text Classification(#3562)
+- <i>17:42&dash;18:00:</i> Benchmarking Zero-shot Text Classification: Datasets, Evaluation and Entailment Approach(#2899)
+
+- <i>16:30&dash;18:00 :</i> Poster & Demo Session 8: Machine Learning
+   - A Logic-Driven Framework for Consistency of Neural Models(#6)
+   - Style Transfer for Texts: to Err is Human, but Error Margins Matter(#109)
+   - Implicit Deep Latent Variable Models for Text Generation(#161)
+   - Text Emotion Distribution Learning from Small Sample: A Meta-Learning Approach(#200)
+   - Judge the Judges: A Large-Scale Evaluation Study of Neural Language Models for Online Review Generation(#247)
+   - Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks(#373)
+   - Learning Only from Relevant Keywords and Unlabeled Documents(#399)
+   - Denoising-based Sequence-to-Sequence Pre-training for Text Generation(#592)
+   - Dialog Goal Induction with Deep Multi-View Clustering(#686)
+   - Nearly-Unsupervised Hashcode Representations for Biomedical Relation Extraction(#718)
+   - Auditing Deep Learning processes through Kernel-based Explanatory Models(#888)
+   - Enhancing Recurrent Variational Autoencoders with Mutual Information Estimation for Text Generation(#1060)
+   - Sampling Bias in Deep Active Classification: An Empirical Study(#1286)
+   - Don't Take the Easy Way Out: Ensemble Based Methods for Avoiding Known Dataset Biases(#1321)
+   - Achieving Verified Robustness to Symbol Substitutions via Interval Bound Propagation(#1360)
+   - Rethinking Cooperative Rationalization: Introspective Extraction and Complement Control(#1422)
+   - Experimenting with Power Divergences for Language Modeling(#1435)
+   - Hierarchically-Refined Label Attention Network for Sequence Labeling(#1590)
+   - Certified Robustness to Adversarial Word Substitutions(#1709)
+   - Visualizing and Understanding the Effectiveness of BERT(#1846)
+   - Topics to Avoid: Demoting Latent Confounds in Text Classification(#2147)
+   - Learning to Ask for Conversational Machine Learning(#2168)
+   - Language Modeling for Code-Switching: Evaluation, Integration of Monolingual Data, and Discriminative Training(#2270)
+   - Using Local Knowledge Graph Construction to Scale Seq2Seq Models to Multi-Document Inputs(#2394)
+   - Fine-grained Knowledge Fusion for Sequence Labeling Domain Adaptation(#2441)
+   - Exploiting Monolingual Data at Scale for Neural Machine Translation(#2477)
+   - Meta Relational Learning for Few-Shot Link Prediction in Knowledge Graphs(#2554)
+   - Distributionally Robust Language Modeling(#2660)
+   - Unsupervised Domain Adaptation of Contextualized Embeddings for Sequence Labeling(#2686)
+   - Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds(#2706)
+   - Parallel Iterative Edit Models for Local Sequence Transduction(#2716)
+   - ARAML: A Stable Adversarial Training Framework for Text Generation(#2882)
+   - FlowSeq: Non-Autoregressive Conditional Sequence Generation with Generative Flow(#2905)
+   - Compositional Generalization for Premitive Substitutions(#3039)
+   - WikiCREM: A large unsupervised corpus for co-reference resolution(#3089)
+   - Identifying and Explaining Discriminative Attributes(#3146)
+   - Patient Knowledge Distillation for BERT Model Compression(#3194)
+   - Neural Gaussian Copula for Variational Autoencoder(#3254)
+   - Empirical Study of Transformer's Attention Mechanism via the Lens of Kernel(#3261)
+   - Learning to Learn and Predict: A Meta-Learning Approach for Multi-Label Classification(#3478)
+   - Revealing the Dark Secrets of BERT(#3494)
+   - Machine Translation With Weakly Paired Documents(#4149)
+   - Countering Language Drift via Grounding(#2201)
+
+## Main Conference Day 3 Thursday, November 7, 2019)
+
+### Overview
+- <i>09:00&dash;10:00 :</i> Keynote III: Kyunghyun Cho
+- <i>10:00&dash;10:30 :</i> Coffee Break
+- <i>10:30&dash;12:00 :</i> Session 9
+
+### Session 9A: Machine Translation and Multilinguality II
+- <i>10:30&dash;10:48:</i> Do We Really Need Fully Unsupervised Cross-Lingual Embeddings?(#2459)
+- <i>10:48&dash;11:06:</i> Weakly-Supervised Concept-based Adversarial Learning for Cross-lingual Word Embeddings(#2491)
+- <i>11:06&dash;11:24:</i> Aligning Cross-lingual Entities with Multi-Aspect Information(#3541)
+- <i>11:24&dash;11:42:</i> Contrastive Language Adaptation for Cross-Lingual Stance Detection(#2498)
+- <i>11:42&dash;12:00:</i> Jointly Learning to Align and Translate with Transformer Models(#422)
+
+### Session 9B: Reasoning
+- <i>10:30&dash;10:48:</i> Social IQa: Commonsense Reasoning about Social Interactions(#1334)
+- <i>10:48&dash;11:06:</i> Self-Assembling Modular Networks for Interpretable Multi-Hop Reasoning(#2866)
+- <i>11:06&dash;11:24:</i> Posing Fair Generalization Tasks for Natural Language Inference(#1413)
+- <i>11:24&dash;11:42:</i> Everything Happens for a Reason: Discovering the Purpose of Actions in Procedural Text(#3279)
+- <i>11:42&dash;12:00:</i> CLUTRR: A Diagnostic Benchmark for Inductive Reasoning from Text(#3183)
+
+### Session 9C: Dialog and Interactive Systems II
+- <i>10:30&dash;10:48:</i> TaskMaster Dialog Corpus: Toward a Realistic and Diverse Dataset(#510)
+- <i>10:48&dash;11:06:</i> MultiDoGO: Multi-Domain Goal-Oriented Dialogues(#1564)
+- <i>11:06&dash;11:24:</i> Build it Break it Fix it for Dialogue Safety: Robustness from Adversarial Human Attack(#1186)
+- <i>11:24&dash;11:42:</i> GECOR: An End-to-End Generative Ellipsis and Co-reference Resolution Model for Task-Oriented Dialogue(#1853)
+- <i>11:42&dash;12:00:</i> Task-Oriented Conversation Generation Using Heterogeneous Memory Networks(#496)
+
+### Session 9D: Sentiment Analysis and Argument Mining IV
+- <i>10:30&dash;10:48:</i> Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks(#381)
+- <i>10:48&dash;11:06:</i> Coupling Global and Local Context for Unsupervised Aspect Extraction(#1988)
+- <i>11:06&dash;11:24:</i> Transferable End-to-End Aspect-based Sentiment Analysis with Selective Adversarial Learning(#65)
+- <i>11:24&dash;11:42:</i> CAN: Constrained Attention Networks for Multi-Aspect Sentiment Analysis(#1995)
+- <i>11:42&dash;12:00:</i> Leveraging Just a Few Keywords for Fine-Grained Aspect Detection Through Weakly Supervised Co-Training(#3207)
+
+- <i>10:30&dash;12:00 :</i> Poster & Demo Session 9: Social Media and Computational Social Science, Text Mining and NLP Applications
+   - Integrating Text and Image: Determining Multimodal Document Intent in Instagram Posts(#52)
+   - Neural Conversation Recommendation with Online Interaction Modeling(#705)
+   - Different Acquisition from the Same Sharing: Sifting Multi-task Learning for Fake News Detection(#720)
+   - Text-based inference of moral sentiment change(#965)
+   - Detecting Causal Language Use in Science Findings(#1439)
+   - Multilingual and Multi-aspect Hate Speech Analysis(#1468)
+   - MultiFC: A Real-World Multi-Domain Dataset for Evidence-Based Fact Checking of Claims(#1969)
+   - A Deep Neural Information Fusion Architecture for Textual Network Embeddings(#2006)
+   - You Shall Know a User by the Company It Keeps: Dynamic Representations for Social Media Users in NLP(#2186)
+   - Unsupervised Domain Adaptation for Political Document Analysis(#2606)
+   - Macrocosm: Social Media Persona Linking for OSINT Applications(#2659)
+   - A Hierarchical Location Prediction Neural Network for Twitter User Geolocation(#2693)
+   - Trouble on the Horizon: Forecasting the Derailment of Online Conversations as they Develop(#2828)
+   - A Benchmark Dataset for Learning to Intervene in Online Hate Speech(#3391)
+   - Detecting and Reducing Bias in a High Stakes Domain(#3461)
+   - CodeSwitch-Reddit: Exploration of Written Multilingual Discourse in Online Discussion Forums(#3566)
+   - Modeling Conversation Structure and Temporal Dynamics for Jointly Predicting Rumor Stance and Veracity(#3592)
+   - Measuring Online Debaters' Persuasive Skill from Text over Time(#TACL-1639)
+   - Reconstructing Capsule Networks for Zero-shot Intent Classification(#142)
+   - Domain Adaptation for Person-Job Fit with Transferable Deep Global Match Network(#239)
+   - Heterogeneous Graph Attention Networks for Semi-supervised Short Text Classification(#299)
+   - Comparing and Developing Tools to Measure the Readability of Domain-Specific Texts(#438)
+   - News2vec: News Network Embedding with Subnode Information(#473)
+   - Recursive Context-Aware Lexical Simplification(#732)
+   - Transfer Learning from Medical Literature for Section Prediction in Electronic Health Records(#1103)
+   - Neural News Recommendation with Heterogeneous User Behavior(#1459)
+   - Reviews Meet Graphs: Enhancing User and Item Representations for Recommendation with Hierarchical Attentive Graph Neural Network(#1470)
+   - Event Representation Learning Enhanced with External Commonsense Knowledge(#1551)
+   - Learning to Discriminate Perturbations for Blocking Adversarial Attacks in Text Classification(#1572)
+   - A Neural Citation Count Prediction Model based on Peer Review Text(#1661)
+   - Connecting the Dots: Document-level Neural Relation Extraction with Edge-oriented Graphs(#2044)
+   - Semi-supervised Text Style Transfer: Cross Projection in Latent Space(#2052)
+   - Question Answering for Privacy Policies: Combining Computational and Legal Perspectives(#2129)
+   - Stick to the Facts: Learning towards a Fidelity-oriented E-Commerce Product Description Generation(#2381)
+   - Fine-Grained Entity Typing via Hierarchical Multi Graph Convolutional Networks(#2389)
+   - Learning to Infer Entities, Properties and their Relations from Clinical Conversations(#2942)
+   - Practical Correlated Topic Modeling via the Rectified Anchor Word Algorithm(#3072)
+   - Modeling the Relationship between User Comments and Edits in Document Revision(#3128)
+   - PRADO: Projection Attention Networks for Document Classification On-Device(#3218)
+   - Subword Language Model for Query Auto-Completion(#3873)
+   - Enhancing Dialogue Symptom Diagnosis with Global Attention and Symptom Graph(#4069)
+
+- <i>12:00&dash;12:30 :</i> Lunch
+- <i>12:30&dash;13:30 :</i> SIGDAT Business Meeting
+- <i>13:30&dash;15:00 :</i> Session
+
+### Session 10A: Generation II
+- <i>13:30&dash;13:48:</i> Counterfactual Story Reasoning and Generation(#3328)
+- <i>13:48&dash;14:06:</i> Encode, Tag, Realize: High-Precision Text Editing(#2395)
+- <i>14:06&dash;14:24:</i> Answer-guided and Semantic Coherent Question Generation in Open-domain Conversation(#128)
+- <i>14:24&dash;14:42:</i> Read, Attend and Comment: A Deep Architecture for Automatic News Comment Generation(#1947)
+- <i>14:42&dash;15:00:</i> A Topic Augmented Text Generation Model: Joint Learning of Semantics and Structural Features(#2822)
+
+### Session 10B: Speech, Vision, Robotics, Multimodal and Grounding II
+- <i>13:30&dash;13:48:</i> LXMERT: Learning Cross-Modality Encoder Representations from Transformers(#3048)
+- <i>13:48&dash;14:06:</i> Phrase Grounding by Soft-Label Chain Conditional Random Field(#3765)
+- <i>14:06&dash;14:24:</i> What You See is What You Get: Visual Pronoun Coreference Resolution in Conversations(#549)
+- <i>14:24&dash;14:42:</i> YouMakeup: A Large-Scale Domain-Specific Multimodal Dataset for Fine-Grained Semantic Comprehension(#122)
+- <i>14:42&dash;15:00:</i> DEBUG: A Dense Bottom-Up Grounding Approach for Natural Language Video Localization(#167)
+
+### Session 10C: Information Extraction III
+- <i>13:30&dash;13:48:</i> CrossWeigh: Training Named Entity Tagger from Imperfect Annotations(#2712)
+- <i>13:48&dash;14:06:</i> A Little Annotation does a Lot of Good: A Study in Bootstrapping Low-resource Named Entity Recognizers(#3259)
+- <i>14:06&dash;14:24:</i> Open Domain Web Keyphrase Extraction Beyond Language Modeling(#1119)
+- <i>14:24&dash;14:42:</i> TuckER: Tensor Factorization for Knowledge Graph Completion(#990)
+- <i>14:42&dash;15:00:</i> Weakly Supervised Domain Detection(#TACL-1712)
+
+### Session 10D: Information Retrieval and Document Analysis II
+- <i>13:30&dash;13:48:</i> Human-grounded Evaluations of Explanation Methods for Text Classification(#425)
+- <i>13:48&dash;14:06:</i> A Context-based Framework for Modeling the Role and Function of On-line Resource Citations in Scientific Literature(#793)
+- <i>14:06&dash;14:24:</i> Adversarial Reprogramming of Text Classification Neural Networks(#28)
+- <i>14:24&dash;14:42:</i> Document Hashing with Mixture-Prior Generative Models(#1676)
+- <i>14:42&dash;15:00:</i> Efficient Vector Retrieval under Maximum Inner Product(#3421)
+
+- <i>13:30&dash;15:00 :</i> Poster & Demo Session 10: Sentiment Analysis and Argument Mining, Lexical Semantics, Sentence-level Semantics
+   - Multi-Relational Word Embeddings for Selectional Preferences(#623)
+   - MulCode: A Multiplicative Multi-way Model for Compressing Neural Language Model(#700)
+   - It's All in the Name: Mitigating Gender Bias with Name-Based Counterfactual Data Augmentation(#1220)
+   - Examining Gender Bias in Languages with Grammatical Gender(#1741)
+   - Weakly Supervised Cross-lingual Semantic Relation Classification via Knowledge Distillation(#3071)
+   - Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations(#3702)
+   - Do Neural NLP Models Know Numbers? Probing Numeracy in Embeddings(#3972)
+   - A Split-and-Recombine Approach for Follow-up Query Analysis(#552)
+   - Text2Math: End-to-end Parsing Text into Math Expressions(#1086)
+   - Editing-based SQL Query Generation for Cross-Domain Context-Dependent Questions(#1287)
+   - Syntax-aware Multilingual Semantic Role Labeling(#1351)
+   - Cloze-driven Pretraining of Self-attention Networks(#1446)
+   - Bridging the Gap between Relevance Matching and Semantic Matching for Short Text Similarity Modeling(#1558)
+   - A Syntax-aware Multi-task Learning Framework for Chinese Semantic Role Labeling(#1836)
+   - Injecting Phrasal Paraphrase Relation into Sentence Representation for Semantic Equivalence Assessment(#2060)
+   - Data-Anonymous Encoding for Text-to-SQL Generation(#2231)
+   - Capturing Argument Interaction in Semantic Role Labeling with Capsule Networks(#2993)
+   - Learning Programmatic Idioms for Scalable Semantic Parsing(#3121)
+   - Jupyter: A Large Scale Distantly Supervised Dataset for Open Domain Context Based Code Generation(#3451)
+   - Model-based Interactive Semantic Parsing: A Unified Formulation and A Text-to-SQL Case Study(#3527)
+   - Modeling Graph Structure in Transformer for Better AMR-to-Text Generation(#3835)
+   - Syntax-Aware Aspect Level Sentiment Classification with Graph Attention Networks(#72)
+   - Learning Explicit and Implicit Structures for Targeted Sentiment Analysis(#281)
+   - Capsule Network with Interactive Attention for Aspect-Level Sentiment Classification(#317)
+   - Emotion Detection with Neural Personal Discrimination(#402)
+   - Specificity-Driven Cascading Approach for Unsupervised Sentiment Modification(#475)
+   - Lexical-Based Adversarial Reinforcement Training for Robust Sentiment Classification(#891)
+   - Leveraging Structural and Semantic Correspondence for Attribute-Oriented Aspect Sentiment Discovery(#896)
+   - From the Token to the Review: A Hierarchical Multimodal approach to Opinion Mining(#936)
+   - Shallow Domain Adaptive Embeddings for Sentiment Analysis(#1477)
+   - Domain-Invariant Feature Distillation for Cross-Domain Sentiment Classification(#1691)
+   - A Novel Aspect-Guided Deep Transition Model for Aspect Based Sentiment Analysis(#1705)
+   - Human-Like Decision Making: Document-level Aspect Sentiment Classification via Hierarchical Reinforcement Learning(#1713)
+   - A Dataset of General-Purpose Rebuttal(#1840)
+   - Rethinking Attribute Representation and Injection for Sentiment Classification(#1992)
+   - A Knowledge Regularized Hierarchical Approach for Emotion Cause Analysis(#2236)
+   - Automatic Argument Quality Assessment - New Datasets and Methods(#2447)
+   - Fine-Grained Analysis of Propaganda in News Articles(#2493)
+   - Context-aware Interactive Attention for Multi-modal Sentiment and Emotion Analysis(#2707)
+   - Sequential Learning of Convolutional Features for Effective Text Classification(#3182)
+   - The Role of Pragmatic and Discourse Context in Determining Argument Impact(#3909)
+   - Aspect-Level Sentiment Analysis Via Convolution over Dependency Tree(#4182)
+
+- <i>15:00&dash;15:30 :</i> Coffee Break
+- <i>15:30&dash;16:18 :</i> Session 11
+
+### Session 11A: Machine Translation and Multilinguality III
+- <i>15:30&dash;15:42:</i> Understanding Data Augmentation in Neural Machine Translation: Two Perspectives towards Generalization(#2192)
+- <i>15:42&dash;15:54:</i> Simple and Effective Noisy Channel Modeling for Neural Machine Translation(#2869)
+- <i>15:54&dash;16:06:</i> MultiFiT: Efficient Multi-lingual Language Model Fine-tuning(#745)
+- <i>16:06&dash;16:18:</i> Hint-based Training for Non-AutoRegressive Machine Translation(#1064)
+
+### Session 11B: Syntax, Parsing, and Linguistic Theories
+- <i>15:30&dash;15:42:</i> Working Hard or Hardly Working: Challenges of Integrating Typology into Neural Dependency Parsers(#3860)
+- <i>15:42&dash;15:54:</i> Cross-Lingual BERT Transformation for Zero-Shot Dependency Parsing(#1832)
+- <i>15:54&dash;16:06:</i> Multilingual Grammar Induction with Continuous Language Identification(#3883)
+- <i>16:06&dash;16:18:</i> Quantifying the Semantic Core of Gender Systems(#2637)
+
+### Session 11C: Sentiment and Social Media
+- <i>15:30&dash;15:42:</i> Perturbation Sensitivity Analysis for Detecting Unintended Model Biases(#3447)
+- <i>15:42&dash;15:54:</i> Automatically Inferring Gender Associations from Language(#3519)
+- <i>15:54&dash;16:06:</i> Reporting the Unreported: Event Extraction for Analyzing the Local Representation of Hate Crimes(#3715)
+- <i>16:06&dash;16:18:</i> Minimally Supervised Learning of Affective Events Using Discourse Relations(#3493)
+
+### Session 11D: Information Extraction IV
+- <i>15:30&dash;15:42:</i> Event Detection with Multi-Order Graph Convolution and Aggregated Attention(#835)
+- <i>15:42&dash;15:54:</i> Coverage of Information Extraction from Sentences and Paragraphs(#1285)
+- <i>15:54&dash;16:06:</i> HMEAE: Hierarchical Modular Event Argument Extraction(#2354)
+- <i>16:06&dash;16:18:</i> Contextualized Span Representations for Information Extraction: An Empirical Analysis(#3930)
+
+- <i>15:30&dash;16:18 :</i> Poster & Demo Session 11: Discourse and Pragmatics, Linguistic Theories, Textual Inference, Question Answering, Summarization and Generation
+   - Next Sentence Prediction helps Implicit Discourse Relation Classification within and across Domains(#982)
+   - Split or Merge: Which is Better for Unsupervised RST Parsing?(#1701)
+   - BERT for Coreference Resolution: Baselines and Analysis(#3731)
+   - Linguistic Versus Latent Relations for Modeling a Flow in Paragraphs(#3815)
+   - Event Causality Recognition Exploiting Multiple Annotators' Judgments and Background Knowledge(#4125)
+   - What Part of the Neural Network Does This? Understanding LSTMs by Measuring and Dissecting Memory Cells(#1181)
+   - Quantity doesn�t buy quality syntax with neural language models(#1227)
+   - Higher-order Comparisons of Sentence Encoder Representations(#2000)
+   - Text Genre and Training Data Size in Human-Like Parsing(#2379)
+   - Feature2Vec: Distributional semantic modelling of human property knowledge(#2535)
+   - Has Pepperoni and Still Vegan?! Improving Answer Consistency in VQA through Entailed Question Generation(#424)
+   - GeoSQA: A Benchmark for Scenario-based Question Answering in the Geography Domain at High School Level(#961)
+   - Revisiting the Evaluation of Theory of Mind through Question Answering(#1069)
+   - Multi_-passage BERT: A Globally Normalized BERT Model for Open_-domain Question Answering(#1319)
+   - A Span-Extraction Dataset for Chinese Machine Reading Comprehension(#2131)
+   - CLAR: Contextualized and Lexicalized Aspect Representation for Non-factoid Question Answering(#2177)
+   - Machine Reading Comprehension Using Structural Knowledge Graph-aware Network(#2229)
+   - Answering Conversational Questions on Structured Data without Logical Forms(#2851)
+   - Improving Answer Selection and Answer Triggering using Hard Negatives(#2859)
+   - Can You Unpack That? Learning to Rewrite Questions-in-Context(#3163)
+   - Quoref: A Reading Comprehension Dataset with Questions Requiring Coreferential Reasoning(#3203)
+   - Zero-shot Reading Comprehension by Cross-lingual Transfer Learning with Multi-lingual Language Representation Model(#3303)
+   - QuaRTz: An Open-Domain Dataset of Qualitative Relationship Questions(#3355)
+   - Giving BERT a Calculator: Finding Operations and Arguments with Reading Comprehension(#3470)
+   - A Gated Self-attention Memory Network for Answer Selection(#4067)
+   - Polly Want a Cracker: Analyzing Performance of Parroting on Paraphrase Generation Datasets(#91)
+   - Query-focused Sentence Compression in Linear Time(#482)
+   - Generating Personalized Recipes from Historical User Preferences(#1255)
+   - Generating Highly Relevant Questions(#1644)
+   - Improving Neural Story Generation by Targeted Common Sense Grounding(#1674)
+   - Abstract Text Summarization: A Low Resource Challenge(#1963)
+   - Generating Modern Poetry Automatically in Finnish(#2083)
+   - SUM-QE: a BERT-based Summary Quality Estimation Model(#2422)
+   - An Empirical Comparison on Imitation Learning and Reinforcement Learning for Paraphrase Generation(#2870)
+   - Countering the effects of lead bias in news summarization via multi-stage training and auxiliary losses(#3236)
+   - Learning Rhyming Constraints using Structured Adversaries(#3950)
+   - Question-type Driven Question Generation(#4105)
+   - Deep Reinforcement Learning with Distributional Semantic Rewards for Abstractive Summarization(#4107)
+   - Clause-Wise and Recursive Decoding for Complex and Cross-Domain Text-to-SQL Generation(#285)
+   - Do Nuclear Submarines Have Nuclear Captains? A Challenge Dataset for Commonsense Reasoning over Adjectives and Objects(#1774)
+   - Aggregating Bidirectional Encoder Representations Using MatchLSTM for Sequence Matching(#2244)
+   - What Does This Word Mean? Explaining Contextualized Embeddings with Natural Language Definition(#2765)
+   - Pre-Training BERT on Domain Resources for Short Answer Grading(#3058)
+   - WIQA: A dataset for "What if..." reasoning over procedural text(#3276)
+   - Evaluating BERT for natural language inference: a case study on the CommitmentBank(#3606)
+   - Incorporating Domain Knowledge into Medical NLI using Knowledge Graphs(#3974)
+
+- <i>16:18&dash;16:30 :</i> Mini-Break
+- <i>16:30&dash;17:24 :</i> Session
+
+### Session 12A: Machine Translation and Multilinguality IV
+- <i>16:30&dash;16:48:</i> Two New Evaluation Datasets for Low-Resource Machine Translation: Nepali-English and Sinhala English(#3349)
+- <i>16:48&dash;17:06:</i> Constant-Time Machine Translation with Conditional Masked Language Models(#1204)
+- <i>17:06&dash;17:24:</i> Learning to Copy for Automatic Post-Editing(#777)
+
+### Session 12B: Lexical Semantics III
+- <i>16:30&dash;16:48:</i> Exploring Human Gender Stereotypes with Word Association Test(#1912)
+- <i>16:48&dash;17:06:</i> Still a Pain in the Neck: Evaluating Text Representations on Lexical Composition(#TACL-1729)
+- <i>17:06&dash;17:24:</i> Where's My Head? Definition, Dataset and Models for Numeric Fused-Heads Identification and Resolution(#TACL-1648)
+
+### Session 12C: Generation III
+- <i>16:30&dash;16:48:</i> A Modular Architecture for Unsupervised Sarcasm Generation(#2725)
+- <i>16:48&dash;17:06:</i> Interpoetry: Generating Classical Chinese Poems from Vernacular Chinese(#2534)
+- <i>17:06&dash;17:24:</i> Set to Ordered Text: Generating Discharge Instructions from Medical Billing Codes(#724)
+
+### Session 12D: Phonology, Word Segmentation, and Parsing
+- <i>16:30&dash;16:48:</i> Constraint-based Learning of Phonological Processes(#451)
+- <i>16:48&dash;17:06:</i> Detect Camouflaged Spam Content via StoneSkipping: Graph and Text Joint Embedding for Chinese Character Variation Representation(#1340)
+- <i>17:06&dash;17:24:</i> A Generative Model for Punctuation in Dependency Trees(#TACL-1582)
+
+- <i>16:30&dash;17:24:</i> Poster & Demo Session 12: Information Extraction, Text Mining and NLP Applications, Social Media and Computational Social Science, Sentiment Analysis and Argument Mining
+   - An Attentive Fine-Grained Entity Typing Model with Latent Type Representation(#189)
+   - An Improved Neural Baseline for Temporal Relation Extraction(#193)
+   - Improving Fine-grained Entity Typing with Entity Linking(#822)
+   - Combining Spans into Entities: A Neural Two-Stage Approach for Recognizing Discontiguous Entities(#1222)
+   - Cross-Sentence N-ary Relation Extraction using Lower-Arity Universal Schemas(#1686)
+   - GEANN: Gazetteer-Enhanced Attentive Neural Networks for Named Entity Recognition(#1760)
+   - "A Buster Keaton of Linguistics": First Automated Approaches for the Extraction of Vossian Antonomasia(#1782)
+   - Multi-Task Learning for Chemical Named Entity Recognition with Chemical Compound Paraphrase(#1799)
+   - FewRel 2.0: Towards More Challenging Few-Shot Relation Classification(#2697)
+   - ner and pos when nothing is capitalized(#2992)
+   - CaRB: A Crowdsourced Benchmark for Open IE(#4099)
+   - Weakly Supervised Attention Networks for Entity Extraction(#4158)
+   - Elementary Units Reveal Online Persuasion Strategy(#19)
+   - A Challenge Dataset and Effective Models for Aspect-Based Sentiment Analysis(#849)
+   - Learning with Noisy Labels for Sentence-level Sentiment Classification(#1157)
+   - DENS: A Dataset for Multi-class Emotion Analysis(#1347)
+   - Multi-Task Stance Detection with Sentiment and Stance Lexicons(#3016)
+   - A Robust Self-Learning Framework for Cross-Lingual Text Classification(#3085)
+   - Learning to Flip the Sentiment of Reviews from Non-Parallel Corpora(#3869)
+   - Label Embedding using Hierarchical Structure of Labels for Twitter Classification(#80)
+   - Interpretable Word Embeddings via Informative Priors(#393)
+   - TalkDown: A Corpus for Condescension Detection in Context(#1526)
+   - Adversarial Removal of Demographic Attributes Revisited(#2101)
+   - A deep-learning framework to detect sarcasm targets(#2170)
+   - In Plain Sight: Media Bias through the Lens of Factual Reporting(#2759)
+   - Incorporating Label Dependencies in Multilabel Stance Detection(#3333)
+   - Investigating Sports Commentator Bias within a Large Corpus of American Football Broadcasts(#3345)
+   - Charge-Based Prison Term Prediction with Deep Gating Network(#759)
+   - Restoring ancient text using deep learning: a case study on Greek epigraphy(#1020)
+   - Embedding Lexical Features via Tensor Decomposition for Small Sample Humor Recognition(#1068)
+   - EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks(#1192)
+   - Neural News Recommendation with Multi-Head Self-Attention(#1581)
+   - What Matters for Neural Cross-Lingual Named Entity Recognition: An Empirical Analysis(#1611)
+   - Telling the Whole Story: A Manually Annotated Chinese Dataset for the Analysis of Humor in Jokes(#1737)
+   - Generating Natural Anagrams: Towards Language Generation under Hard Combinatorial Constraints(#1763)
+   - STANCY: Stance Classification Based on Consistency Cues(#2013)
+   - Cross-lingual intent classification in a low resource industrial setting(#2551)
+   - SoftRegex: Generating Regex from Natural Language Description using Softened Regex Equivalence(#2839)
+   - Using Clinical Notes with Multimodal Learning for ICU Management.(#2907)
+   - Spelling-Aware Construction of Mixed-Language Texts for Teaching Foreign-Language Vocabulary(#3639)
+   - Towards Machine Reading for Interventions from Humanitarian-Assistance Program Literature(#3718)
+   - RUN through the Streets: Dataset and Models for Realistic Urban Navigation(#4014)
+
+- <i>17:24&dash;17:30 :</i> Mini-Break
+- <i>17:30&dash;18:00 :</i> Best Paper Awards and Closing

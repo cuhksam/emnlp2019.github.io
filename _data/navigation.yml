@@ -57,6 +57,8 @@ program:
          url: /program/workshops/
        - title: "Tutorials"
          url: /program/tutorials/
+       - title: "Schedule"
+         url: /program/schedule/
 
 participants:
    - title: "Participants"
