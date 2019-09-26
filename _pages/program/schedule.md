@@ -19,40 +19,40 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
 ## Main Conference Day 1 (Tuesday, November 5, 2019)
 
 ### Overview
-- <i>08:45&ndash;09:00 </i> Opening Remarks
-- <i>09:00&ndash;10:00 </i> Keynote I: Noam Slonim
-- <i>10:00&ndash;10:30 </i> Coffee Break
-- <i>10:30&ndash;12:00 </i> Session 1
+- <i>08:45&ndash;09:00 </i><br>Opening Remarks
+- <i>09:00&ndash;10:00 </i><br>Keynote I: Noam Slonim
+- <i>10:00&ndash;10:30 </i><br>Coffee Break
+- <i>10:30&ndash;12:00 </i><br>Session 1
 
 ### Session 1A: Machine Learning I
-- <i>10:30&ndash;10:48</i> Attending to Future Tokens for Bidirectional Sequence Generation (&#35;1443)
-- <i>10:48&ndash;11:06</i> Attention is Not Not Explanation (&#35;526)
-- <i>11:06&ndash;11:24</i> Practical Obstacles to Deploying Active Learning (&#35;1176)
-- <i>11:24&ndash;11:42</i> Transfer Learning Between Related Tasks Using Expected Label Proportions (&#35;1207)
-- <i>11:42&ndash;12:00</i> Insertion-based Decoding with automatically Inferred Generation Order (&#35;TACL-1732)
+- <i>10:30&ndash;10:48</i><br>Attending to Future Tokens for Bidirectional Sequence Generation (&#35;1443)
+- <i>10:48&ndash;11:06</i><br>Attention is Not Not Explanation (&#35;526)
+- <i>11:06&ndash;11:24</i><br>Practical Obstacles to Deploying Active Learning (&#35;1176)
+- <i>11:24&ndash;11:42</i><br>Transfer Learning Between Related Tasks Using Expected Label Proportions (&#35;1207)
+- <i>11:42&ndash;12:00</i><br>Insertion-based Decoding with automatically Inferred Generation Order (&#35;TACL-1732)
 
 ### Session 1B: Lexical Semantics I
-- <i>10:30&ndash;10:48</i> Knowledge Enhanced Contextual Word Representations (&#35;3403)
-- <i>10:48&ndash;11:06</i> How Contextual are Contextualized Word Representations? (&#35;208)
-- <i>11:06&ndash;11:24</i> Room to Glo: A Systematic Comparison of Semantic Change Detection Approaches with Word Embeddings (&#35;783)
-- <i>11:24&ndash;11:42</i> On Correlations between Word Vector Sets (&#35;3976)
-- <i>11:42&ndash;12:00</i> Game Theory Meets Embeddings: a Unified Framework for Word Sense Disambiguation (&#35;1724)
+- <i>10:30&ndash;10:48</i><br>Knowledge Enhanced Contextual Word Representations (&#35;3403)
+- <i>10:48&ndash;11:06</i><br>How Contextual are Contextualized Word Representations? (&#35;208)
+- <i>11:06&ndash;11:24</i><br>Room to Glo: A Systematic Comparison of Semantic Change Detection Approaches with Word Embeddings (&#35;783)
+- <i>11:24&ndash;11:42</i><br>On Correlations between Word Vector Sets (&#35;3976)
+- <i>11:42&ndash;12:00</i><br>Game Theory Meets Embeddings: a Unified Framework for Word Sense Disambiguation (&#35;1724)
 
 ### Session 1C: Dialog and Interactive Systems I
-- <i>10:30&ndash;10:48</i> Guided Dialog Policy Learning: Reward Estimation for Multi-Domain Task-Oriented Dialog (&#35;166)
-- <i>10:48&ndash;11:06</i> Multi-hop Selector Network for Multi-turn Response Selection in Retrieval-based Chatbots (&#35;554)
-- <i>11:06&ndash;11:24</i> MoEL: Mixture of Empathetic Listeners (&#35;1053)
-- <i>11:24&ndash;11:42</i> Entity-Consistent End-to-end Task-Oriented Dialogue System with KB Retriever (&#35;2430)
-- <i>11:42&ndash;12:00</i> Building Task-Oriented Visual Dialog Systems Through Alternative Optimization Between Dialog Policy and Language Generation (&#35;3756)
+- <i>10:30&ndash;10:48</i><br>Guided Dialog Policy Learning: Reward Estimation for Multi-Domain Task-Oriented Dialog (&#35;166)
+- <i>10:48&ndash;11:06</i><br>Multi-hop Selector Network for Multi-turn Response Selection in Retrieval-based Chatbots (&#35;554)
+- <i>11:06&ndash;11:24</i><br>MoEL: Mixture of Empathetic Listeners (&#35;1053)
+- <i>11:24&ndash;11:42</i><br>Entity-Consistent End-to-end Task-Oriented Dialogue System with KB Retriever (&#35;2430)
+- <i>11:42&ndash;12:00</i><br>Building Task-Oriented Visual Dialog Systems Through Alternative Optimization Between Dialog Policy and Language Generation (&#35;3756)
 
 ### Session 1D: Sentiment Analysis and Argument Mining I
-- <i>10:30&ndash;10:48</i> DialogueGCN: A Graph-based Network for Emotion Recognition in Conversation (&#35;2092)
-- <i>10:48&ndash;11:06</i> Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations (&#35;1814)
-- <i>11:06&ndash;11:24</i> Interpretable Relevant Emotion Ranking with Event-Driven Attention (&#35;3544)
-- <i>11:24&ndash;11:42</i> Justifying Recommendations using Distantly-Labeled Reviews and Fined-Grained Aspects (&#35;518)
-- <i>11:42&ndash;12:00</i> Using Customer Service Dialogues for Satisfaction Analysis with Context-Assisted Multiple Instance Learning (&#35;204)
+- <i>10:30&ndash;10:48</i><br>DialogueGCN: A Graph-based Network for Emotion Recognition in Conversation (&#35;2092)
+- <i>10:48&ndash;11:06</i><br>Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations (&#35;1814)
+- <i>11:06&ndash;11:24</i><br>Interpretable Relevant Emotion Ranking with Event-Driven Attention (&#35;3544)
+- <i>11:24&ndash;11:42</i><br>Justifying Recommendations using Distantly-Labeled Reviews and Fined-Grained Aspects (&#35;518)
+- <i>11:42&ndash;12:00</i><br>Using Customer Service Dialogues for Satisfaction Analysis with Context-Assisted Multiple Instance Learning (&#35;204)
 
-- <i>10:30&ndash;12:00 </i> Poster &amp; Demo Session 1: Information Extraction, Information Retrieval and Document Analysis, Linguistic Theories
+- <i>10:30&ndash;12:00 </i><br>Poster &amp; Demo Session 1: Information Extraction, Information Retrieval and Document Analysis, Linguistic Theories
    - Leveraging Dependency Forest for Neural Medical Relation Extraction (&#35;249)
    - Open Relation Extraction: Relational Knowledge Transfer from Supervised Data to Unsupervised Data (&#35;569)
    - Improving Relation Extraction with Knowledge-attention (&#35;710)
@@ -85,38 +85,38 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - PaRe: A Paper-Reviewer Matching Approach Using a Common Topic Space (&#35;3239)
    - Linking artificial and human neural representations of language (&#35;2750)
 
-- <i>12:00&ndash;13:30 </i> Lunch
-- <i>13:30&ndash;15:00 </i> Session 2
+- <i>12:00&ndash;13:30 </i><br>Lunch
+- <i>13:30&ndash;15:00 </i><br>Session 2
 
 ### Session 2A: Summarization and Generation
-- <i>13:30&ndash;13:48</i> Neural Text Summarization: A Critical Evaluation (&#35;3687)
-- <i>13:48&ndash;14:06</i> Neural data-to-text generation: A comparison between pipeline and end-to-end architectures (&#35;2586)
-- <i>14:06&ndash;14:24</i> MoverScore: Text Generation Evaluating with Contextualized Embeddings and Earth Mover Distance (&#35;1175)
-- <i>14:24&ndash;14:42</i> Select and Attend: Towards Controllable Content Selection in Text Generation (&#35;3049)
-- <i>14:42&ndash;15:00</i> Sentence-Level Content Planning and Style Specification for Neural Text Generation (&#35;3357)
+- <i>13:30&ndash;13:48</i><br>Neural Text Summarization: A Critical Evaluation (&#35;3687)
+- <i>13:48&ndash;14:06</i><br>Neural data-to-text generation: A comparison between pipeline and end-to-end architectures (&#35;2586)
+- <i>14:06&ndash;14:24</i><br>MoverScore: Text Generation Evaluating with Contextualized Embeddings and Earth Mover Distance (&#35;1175)
+- <i>14:24&ndash;14:42</i><br>Select and Attend: Towards Controllable Content Selection in Text Generation (&#35;3049)
+- <i>14:42&ndash;15:00</i><br>Sentence-Level Content Planning and Style Specification for Neural Text Generation (&#35;3357)
 
 ### Session 2B: Sentence-level Semantics I
-- <i>13:30&ndash;13:48</i> Translate and Label! An Encoder-Decoder Approach for Cross-lingual Semantic Role Labeling (&#35;2740)
-- <i>13:48&ndash;14:06</i> Syntax-Enhanced Self-Attention-Based Semantic Role Labeling (&#35;2106)
-- <i>14:06&ndash;14:24</i> VerbAtlas: a Novel Large-Scale Verbal Semantic Resource and Its Application to Semantic Role Labeling (&#35;2213)
-- <i>14:24&ndash;14:42</i> Parameter-free Sentence Embedding via Orthogonal Basis (&#35;1099)
-- <i>14:42&ndash;15:00</i> Evaluation Benchmarks and Learning Criteria for Discourse-Aware Sentence Representations (&#35;3807)
+- <i>13:30&ndash;13:48</i><br>Translate and Label! An Encoder-Decoder Approach for Cross-lingual Semantic Role Labeling (&#35;2740)
+- <i>13:48&ndash;14:06</i><br>Syntax-Enhanced Self-Attention-Based Semantic Role Labeling (&#35;2106)
+- <i>14:06&ndash;14:24</i><br>VerbAtlas: a Novel Large-Scale Verbal Semantic Resource and Its Application to Semantic Role Labeling (&#35;2213)
+- <i>14:24&ndash;14:42</i><br>Parameter-free Sentence Embedding via Orthogonal Basis (&#35;1099)
+- <i>14:42&ndash;15:00</i><br>Evaluation Benchmarks and Learning Criteria for Discourse-Aware Sentence Representations (&#35;3807)
 
 ### Session 2C: Speech, Vision, Robotics, Multimodal and Grounding I
-- <i>13:30&ndash;13:48</i> Extracting Possessions from Social Media: Images Complement Language (&#35;3013)
-- <i>13:48&ndash;14:06</i> Learning to Speak and Act in a Fantasy Text Adventure Game (&#35;1243)
-- <i>14:06&ndash;14:24</i> Help, Anna! Vision-based Navigation with Natural Multimodal Assistance via Retrospective Curiosity-Encouraging Imitation Learning (&#35;1542)
-- <i>14:24&ndash;14:42</i> Incorporating Visual Semantics into Sentence Representations within a Grounded Space (&#35;2247)
-- <i>14:42&ndash;15:00</i> Neural Naturalist: Generating Fine-Grained Image Comparisons (&#35;3024)
+- <i>13:30&ndash;13:48</i><br>Extracting Possessions from Social Media: Images Complement Language (&#35;3013)
+- <i>13:48&ndash;14:06</i><br>Learning to Speak and Act in a Fantasy Text Adventure Game (&#35;1243)
+- <i>14:06&ndash;14:24</i><br>Help, Anna! Vision-based Navigation with Natural Multimodal Assistance via Retrospective Curiosity-Encouraging Imitation Learning (&#35;1542)
+- <i>14:24&ndash;14:42</i><br>Incorporating Visual Semantics into Sentence Representations within a Grounded Space (&#35;2247)
+- <i>14:42&ndash;15:00</i><br>Neural Naturalist: Generating Fine-Grained Image Comparisons (&#35;3024)
 
 ### Session 2D: Information Extraction I
-- <i>13:30&ndash;13:48</i> Fine-Grained Evaluation for Entity Linking (&#35;116)
-- <i>13:48&ndash;14:06</i> Supervising Unsupervised Open Information Extraction Models (&#35;3069)
-- <i>14:06&ndash;14:24</i> Neural Cross-Lingual Event Detection with Minimal Parallel Resources (&#35;1723)
-- <i>14:24&ndash;14:42</i> KnowledgeNet: A Benchmark Dataset for Knowledge Base Population (&#35;1258)
-- <i>14:42&ndash;15:00</i> Effective Use of Transformer Networks for Entity Tracking (&#35;3308)
+- <i>13:30&ndash;13:48</i><br>Fine-Grained Evaluation for Entity Linking (&#35;116)
+- <i>13:48&ndash;14:06</i><br>Supervising Unsupervised Open Information Extraction Models (&#35;3069)
+- <i>14:06&ndash;14:24</i><br>Neural Cross-Lingual Event Detection with Minimal Parallel Resources (&#35;1723)
+- <i>14:24&ndash;14:42</i><br>KnowledgeNet: A Benchmark Dataset for Knowledge Base Population (&#35;1258)
+- <i>14:42&ndash;15:00</i><br>Effective Use of Transformer Networks for Entity Tracking (&#35;3308)
 
-- <i>13:30&ndash;15:00 </i> Poster &amp; Demo Session 2: Machine Translation and Mulitilinguality, Phonology, Morphology and Word Segmentation, Tagging, Chunking, Syntax and Parsing
+- <i>13:30&ndash;15:00 </i><br>Poster &amp; Demo Session 2: Machine Translation and Mulitilinguality, Phonology, Morphology and Word Segmentation, Tagging, Chunking, Syntax and Parsing
    - Explicit Cross-lingual Pre-training for Unsupervised Machine Translation (&#35;233)
    - Latent Part-of-Speech Sequences for Neural Machine Translation (&#35;410)
    - Improving Back-Translation with Uncertainty-based Confidence Estimation (&#35;798)
@@ -157,34 +157,34 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Similarity Based Auxiliary Classifier for Named Entity Recognition (&#35;3886)
    - Variable beam search for generative neural parsing and its relevance for neuro-imaging signal analysis (&#35;4015)
 
-- <i>15:00&ndash;15:30 </i> Coffee Break
-- <i>15:30&ndash;16:18 </i> Session 3
+- <i>15:00&ndash;15:30 </i><br>Coffee Break
+- <i>15:30&ndash;16:18 </i><br>Session 3
 
 ### Session 3A: Machine Learning II
-- <i>15:30&ndash;15:42</i> Are We Modeling the Task or the Annotator? An Investigation of Annotator Bias in Natural Language Understanding Datasets (&#35;1092)
-- <i>15:42&ndash;15:54</i> Robust Text Classifier on Test-Time Budgets (&#35;1128)
-- <i>15:54&ndash;16:06</i> Commonsense Knowledge Mining from Pretrained Models (&#35;3289)
-- <i>16:06&ndash;16:18</i> RNN Architecture Learning with Sparse Regularization (&#35;3428)
+- <i>15:30&ndash;15:42</i><br>Are We Modeling the Task or the Annotator? An Investigation of Annotator Bias in Natural Language Understanding Datasets (&#35;1092)
+- <i>15:42&ndash;15:54</i><br>Robust Text Classifier on Test-Time Budgets (&#35;1128)
+- <i>15:54&ndash;16:06</i><br>Commonsense Knowledge Mining from Pretrained Models (&#35;3289)
+- <i>16:06&ndash;16:18</i><br>RNN Architecture Learning with Sparse Regularization (&#35;3428)
 
 ### Session 3B: Semantics
-- <i>15:30&ndash;15:42</i> Analytical Methods for Interpretable Ultradense Word Embeddings (&#35;75)
-- <i>15:42&ndash;15:54</i> Investigating Meta-Learning Algorithms for Low-Resource Natural Language Understanding Tasks (&#35;3142)
-- <i>15:54&ndash;16:06</i> Retrofitting Contextualized Word Embeddings with Paraphrases (&#35;3045)
-- <i>16:06&ndash;16:18</i> Incorporating Contextual and Syntactic Structures Improves Semantic Similarity Modeling (&#35;3508)
+- <i>15:30&ndash;15:42</i><br>Analytical Methods for Interpretable Ultradense Word Embeddings (&#35;75)
+- <i>15:42&ndash;15:54</i><br>Investigating Meta-Learning Algorithms for Low-Resource Natural Language Understanding Tasks (&#35;3142)
+- <i>15:54&ndash;16:06</i><br>Retrofitting Contextualized Word Embeddings with Paraphrases (&#35;3045)
+- <i>16:06&ndash;16:18</i><br>Incorporating Contextual and Syntactic Structures Improves Semantic Similarity Modeling (&#35;3508)
 
 ### Session 3C: Discourse, Summarization, and Generation
-- <i>15:30&ndash;15:42</i> Neural Linguistic Steganography (&#35;3399)
-- <i>15:42&ndash;15:54</i> The Feasibility of Embedding Based Automatic Evaluation for Single Document Summarization (&#35;3018)
-- <i>15:54&ndash;16:06</i> Attention Optimization for Abstractive Document Summarization (&#35;1918)
-- <i>16:06&ndash;16:18</i> Rewarding Coreference Resolvers for Being Consistent with World Knowledge (&#35;2020)
+- <i>15:30&ndash;15:42</i><br>Neural Linguistic Steganography (&#35;3399)
+- <i>15:42&ndash;15:54</i><br>The Feasibility of Embedding Based Automatic Evaluation for Single Document Summarization (&#35;3018)
+- <i>15:54&ndash;16:06</i><br>Attention Optimization for Abstractive Document Summarization (&#35;1918)
+- <i>16:06&ndash;16:18</i><br>Rewarding Coreference Resolvers for Being Consistent with World Knowledge (&#35;2020)
 
 ### Session 3D: Text Mining and NLP Applications I
-- <i>15:30&ndash;15:42</i> An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction (&#35;740)
-- <i>15:42&ndash;15:54</i> A Multilingual Topic Model for Learning Weighted Topic Links Across Incomparable Corpora (&#35;1257)
-- <i>15:54&ndash;16:06</i> Measure Country-Level Socio-Economic Indicators with Streaming News: An Empirical Study (&#35;3730)
-- <i>16:06&ndash;16:18</i> Towards Extracting Medical Family History from Natural Language Interactions: A New Dataset and Baselines (&#35;2903)
+- <i>15:30&ndash;15:42</i><br>An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction (&#35;740)
+- <i>15:42&ndash;15:54</i><br>A Multilingual Topic Model for Learning Weighted Topic Links Across Incomparable Corpora (&#35;1257)
+- <i>15:54&ndash;16:06</i><br>Measure Country-Level Socio-Economic Indicators with Streaming News: An Empirical Study (&#35;3730)
+- <i>16:06&ndash;16:18</i><br>Towards Extracting Medical Family History from Natural Language Interactions: A New Dataset and Baselines (&#35;2903)
 
-- <i>15:30&ndash;16:18 </i> Poster &amp; Demo Session 3: Dialog and Interactive Systems, Machine Translation and Multilinuality, Phonology, Morphology, and Word Segmentation, Speech, Vision, Robotics, Multimodal and Grounding, Tagging, Chunking, Syntax and Parsing
+- <i>15:30&ndash;16:18 </i><br>Poster &amp; Demo Session 3: Dialog and Interactive Systems, Machine Translation and Multilinuality, Phonology, Morphology, and Word Segmentation, Speech, Vision, Robotics, Multimodal and Grounding, Tagging, Chunking, Syntax and Parsing
    - Multi-task Learning for Natural Language Generation in Task-Oriented Dialogue (&#35;242)
    - Dirichlet Latent Variable Hierarchical Recurrent Encoder-Decoder in Dialogue Generation (&#35;622)
    - Semi-Supervised Bootstrapping of Dialogue State Trackers for Task-Oriented Modelling (&#35;1011)
@@ -227,38 +227,38 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Dependency Parsing for Spoken Dialog Systems (&#35;3171)
    - Span-based Hierarchical Semantic Parsing for Task-Oriented Dialog (&#35;3240)
 
-- <i>16:18&ndash;16:30 </i> Mini-Break
-- <i>16:30&ndash;18:00 </i> Session 4
+- <i>16:18&ndash;16:30 </i><br>Mini-Break
+- <i>16:30&ndash;18:00 </i><br>Session 4
 
 ### Session 4A: Neural Machine Translation
-- <i>16:30&ndash;16:48</i> Enhancing Context Modeling with a Query-Guided Capsule Network for Document-level NMT (&#35;2416)
-- <i>16:48&ndash;17:06</i> Simple, Scalable Adaptation for Neural Machine Translation (&#35;3252)
-- <i>17:06&ndash;17:24</i> Controlling Text Complexity in Neural Machine Translation (&#35;3177)
-- <i>17:24&ndash;17:42</i> Investigating Multilingual NMT Representations at Scale (&#35;1388)
-- <i>17:42&ndash;18:00</i> Hierarchical Modeling of Global Context for Document-Level Neural Machine Translation (&#35;1423)
+- <i>16:30&ndash;16:48</i><br>Enhancing Context Modeling with a Query-Guided Capsule Network for Document-level NMT (&#35;2416)
+- <i>16:48&ndash;17:06</i><br>Simple, Scalable Adaptation for Neural Machine Translation (&#35;3252)
+- <i>17:06&ndash;17:24</i><br>Controlling Text Complexity in Neural Machine Translation (&#35;3177)
+- <i>17:24&ndash;17:42</i><br>Investigating Multilingual NMT Representations at Scale (&#35;1388)
+- <i>17:42&ndash;18:00</i><br>Hierarchical Modeling of Global Context for Document-Level Neural Machine Translation (&#35;1423)
 
 ### Session 4B: Question Answering I
-- <i>16:30&ndash;16:48</i> Cross-Lingual Machine Reading Comprehension (&#35;8)
-- <i>16:48&ndash;17:06</i> A Multi-Type Multi-Span Network for Reading Comprehension that Requires Discrete Reasoning (&#35;582)
-- <i>17:06&ndash;17:24</i> Neural Duplicate Question Detection without Labeled Training Data (&#35;880)
-- <i>17:24&ndash;17:42</i> Asking Clarification Questions in Knowledge-Based Question Answering (&#35;889)
-- <i>17:42&ndash;18:00</i> Multi-View Domain Adapted Sentence Embeddings for Low-Resource Unsupervised Duplicate Question Detection (&#35;1646)
+- <i>16:30&ndash;16:48</i><br>Cross-Lingual Machine Reading Comprehension (&#35;8)
+- <i>16:48&ndash;17:06</i><br>A Multi-Type Multi-Span Network for Reading Comprehension that Requires Discrete Reasoning (&#35;582)
+- <i>17:06&ndash;17:24</i><br>Neural Duplicate Question Detection without Labeled Training Data (&#35;880)
+- <i>17:24&ndash;17:42</i><br>Asking Clarification Questions in Knowledge-Based Question Answering (&#35;889)
+- <i>17:42&ndash;18:00</i><br>Multi-View Domain Adapted Sentence Embeddings for Low-Resource Unsupervised Duplicate Question Detection (&#35;1646)
 
 ### Session 4C: Social Media and Computational Social Science
-- <i>16:30&ndash;16:48</i> Multi-label Categorization of Accounts of Sexism using a Neural Framework (&#35;172)
-- <i>16:48&ndash;17:06</i> The Trumpiest Trump? Identifying a Subject's Most Characteristic Tweets (&#35;1462)
-- <i>17:06&ndash;17:24</i> Finding Microaggressions in the Wild: A Case for Locating Elusive Phenomena in Social Media Posts (&#35;2950)
-- <i>17:24&ndash;17:42</i> Reinforced Product Metadata Selection for Helpfulness Assessment of Customer Reviews (&#35;694)
-- <i>17:42&ndash;18:00</i> Learning Invariant Representations of Social Media Users (&#35;3557)
+- <i>16:30&ndash;16:48</i><br>Multi-label Categorization of Accounts of Sexism using a Neural Framework (&#35;172)
+- <i>16:48&ndash;17:06</i><br>The Trumpiest Trump? Identifying a Subject's Most Characteristic Tweets (&#35;1462)
+- <i>17:06&ndash;17:24</i><br>Finding Microaggressions in the Wild: A Case for Locating Elusive Phenomena in Social Media Posts (&#35;2950)
+- <i>17:24&ndash;17:42</i><br>Reinforced Product Metadata Selection for Helpfulness Assessment of Customer Reviews (&#35;694)
+- <i>17:42&ndash;18:00</i><br>Learning Invariant Representations of Social Media Users (&#35;3557)
 
 ### Session 4D: Text Mining and NLP Applications II
-- <i>16:30&ndash;16:48</i> (Male, Bachelor) and (Female, Ph.D) have different connotations : Parallelly Annotated Stylistic Language Dataset with Multiple Personas (&#35;3793)
-- <i>16:48&ndash;17:06</i> Movie Plot Analysis via Turning Point Identification (&#35;244)
-- <i>17:06&ndash;17:24</i> Latent Suicide Risk Detection on Microblog via Suicide-Oriented Word Embeddings and Layered Attention (&#35;2488)
-- <i>17:24&ndash;17:42</i> Deep Ordinal Regression for Pledge Specificity Prediction (&#35;1903)
-- <i>17:42&ndash;18:00</i> Enabling Robust Grammatical Error Correction in New Domains: Datasets, Metrics, and Analyses (&#35;TACL-1677)
+- <i>16:30&ndash;16:48</i><br>(Male, Bachelor) and (Female, Ph.D) have different connotations : Parallelly Annotated Stylistic Language Dataset with Multiple Personas (&#35;3793)
+- <i>16:48&ndash;17:06</i><br>Movie Plot Analysis via Turning Point Identification (&#35;244)
+- <i>17:06&ndash;17:24</i><br>Latent Suicide Risk Detection on Microblog via Suicide-Oriented Word Embeddings and Layered Attention (&#35;2488)
+- <i>17:24&ndash;17:42</i><br>Deep Ordinal Regression for Pledge Specificity Prediction (&#35;1903)
+- <i>17:42&ndash;18:00</i><br>Enabling Robust Grammatical Error Correction in New Domains: Datasets, Metrics, and Analyses (&#35;TACL-1677)
 
-- <i>16:30-18:00 </i> Poster &amp; Demo Session 4: Dialog and Interactive Systems, Speech, Vision, Robotics, Multimodal and Grounding
+- <i>16:30-18:00 </i><br>Poster &amp; Demo Session 4: Dialog and Interactive Systems, Speech, Vision, Robotics, Multimodal and Grounding
    - Data-Efficient Goal-Oriented Conversation with Dialogue Knowledge Transfer Networks (&#35;9)
    - Multi-Granularity Representations of Dialog (&#35;64)
    - Are You for Real? Detecting Identity Fraud via Dialogue Interactions (&#35;111)
@@ -305,39 +305,39 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
 ## Main Conference Day 2 (Wednesday, November 6, 2019)
 
 ### Overview
-- <i>09:00&ndash;10:00</i> Keynote II: Meeyoung Cha
-- <i>10:00&ndash;10:30</i> Coffee Break
-- <i>10:30&ndash;12:00</i> Session 5
+- <i>09:00&ndash;10:00</i><br>Keynote II: Meeyoung Cha
+- <i>10:00&ndash;10:30</i><br>Coffee Break
+- <i>10:30&ndash;12:00</i><br>Session 5
 
 ### Session 5A: Machine Learning III
-- <i>10:30&ndash;10:48</i> Universal Trigger Sequences for Attacking and Analyzing NLP (&#35;1515)
-- <i>10:48&ndash;11:06</i> To Annotate or Not? Unsupervised Prediction of Performance Drop due to Domain Shift (&#35;2756)
-- <i>11:06&ndash;11:24</i> Adaptively Sparse Transformers (&#35;2900)
-- <i>11:24&ndash;11:42</i> Show Your Work: Improved Reporting of Experimental Results (&#35;3277)
-- <i>11:42&ndash;12:00</i> A Deep Factorization of Style and Structure in Fonts (&#35;3999)
+- <i>10:30&ndash;10:48</i><br>Universal Trigger Sequences for Attacking and Analyzing NLP (&#35;1515)
+- <i>10:48&ndash;11:06</i><br>To Annotate or Not? Unsupervised Prediction of Performance Drop due to Domain Shift (&#35;2756)
+- <i>11:06&ndash;11:24</i><br>Adaptively Sparse Transformers (&#35;2900)
+- <i>11:24&ndash;11:42</i><br>Show Your Work: Improved Reporting of Experimental Results (&#35;3277)
+- <i>11:42&ndash;12:00</i><br>A Deep Factorization of Style and Structure in Fonts (&#35;3999)
 
 ### Session 5B: Lexical Semantics II
-- <i>10:30&ndash;10:48</i> Cross-lingual Semantic Specialization via Lexical Relation Induction (&#35;1735)
-- <i>10:48&ndash;11:06</i> Modelling the interplay of metaphor and emotion through multitask learning (&#35;2670)
-- <i>11:06&ndash;11:24</i> How well do NLI models capture verb veridicality? (&#35;3460)
-- <i>11:24&ndash;11:42</i> Modeling Color?Terminology Across Thousands of Languages (&#35;3515)
-- <i>11:42&ndash;12:00</i> Negative Focus Detection via Contextual Attention Mechanisms (&#35;1314)
+- <i>10:30&ndash;10:48</i><br>Cross-lingual Semantic Specialization via Lexical Relation Induction (&#35;1735)
+- <i>10:48&ndash;11:06</i><br>Modelling the interplay of metaphor and emotion through multitask learning (&#35;2670)
+- <i>11:06&ndash;11:24</i><br>How well do NLI models capture verb veridicality? (&#35;3460)
+- <i>11:24&ndash;11:42</i><br>Modeling Color?Terminology Across Thousands of Languages (&#35;3515)
+- <i>11:42&ndash;12:00</i><br>Negative Focus Detection via Contextual Attention Mechanisms (&#35;1314)
 
 ### Session 5C: Discourse and Pragmatics
-- <i>10:30&ndash;10:48</i> A Unified Neural Coherence Model (&#35;1792)
-- <i>10:48&ndash;11:06</i> Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information (&#35;2642)
-- <i>11:06&ndash;11:24</i> Neural Generative Rhetorical Structure Parsing (&#35;4060)
-- <i>11:24&ndash;11:42</i> Weak Supervision for Learning Discourse Structure (&#35;2453)
-- <i>11:42&ndash;12:00</i> Predicting Discourse Structure using Distant Supervision from Sentiment (&#35;2625)
+- <i>10:30&ndash;10:48</i><br>A Unified Neural Coherence Model (&#35;1792)
+- <i>10:48&ndash;11:06</i><br>Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information (&#35;2642)
+- <i>11:06&ndash;11:24</i><br>Neural Generative Rhetorical Structure Parsing (&#35;4060)
+- <i>11:24&ndash;11:42</i><br>Weak Supervision for Learning Discourse Structure (&#35;2453)
+- <i>11:42&ndash;12:00</i><br>Predicting Discourse Structure using Distant Supervision from Sentiment (&#35;2625)
 
 ### Session 5D: Text Mining and NLP Applications III
-- <i>10:30&ndash;10:48</i> The Myth of Blind Review Revisited: Experiments on ACL vs. EMNLP (&#35;2233)
-- <i>10:48&ndash;11:06</i> Uncover Sexual Harassment Patterns from Personal Stories by Joint Key Element Extraction and Categorization (&#35;2653)
-- <i>11:06&ndash;11:24</i> Identifying Predictive Causal Factors from News Streams (&#35;2864)
-- <i>11:24&ndash;11:42</i> Training Data Augmentation for Detecting Adverse Drug Reactions in User-Generated Content (&#35;3011)
-- <i>11:42&ndash;12:00</i> Deep Reinforcement Learning-based Text Anonymization against Private-Attribute Inference (&#35;3160)
+- <i>10:30&ndash;10:48</i><br>The Myth of Blind Review Revisited: Experiments on ACL vs. EMNLP (&#35;2233)
+- <i>10:48&ndash;11:06</i><br>Uncover Sexual Harassment Patterns from Personal Stories by Joint Key Element Extraction and Categorization (&#35;2653)
+- <i>11:06&ndash;11:24</i><br>Identifying Predictive Causal Factors from News Streams (&#35;2864)
+- <i>11:24&ndash;11:42</i><br>Training Data Augmentation for Detecting Adverse Drug Reactions in User-Generated Content (&#35;3011)
+- <i>11:42&ndash;12:00</i><br>Deep Reinforcement Learning-based Text Anonymization against Private-Attribute Inference (&#35;3160)
 
-- <i>10:30&ndash;12:00 </i> Poster &amp; Demo Session 5: Question Answering, Textual Inference and Other Areas of Semantics
+- <i>10:30&ndash;12:00 </i><br>Poster &amp; Demo Session 5: Question Answering, Textual Inference and Other Areas of Semantics
    - Tree-structured Decoding for Solving Math Word Problems (&#35;56)
    - PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text (&#35;86)
    - Cosmos QA: Machine Reading Comprehension with Contextual Commonsense Reasoning (&#35;107)
@@ -373,38 +373,38 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Query-focused Scenario Construction (&#35;3550)
    - Semi-supervised Entity Alignment via Joint Knowledge Embedding Model and Cross-graph Model (&#35;3819)
 
-- <i>12:00&ndash;13:30 </i> Lunch
-- <i>13:30&ndash;15:00 </i> Session 6
+- <i>12:00&ndash;13:30 </i><br>Lunch
+- <i>13:30&ndash;15:00 </i><br>Session 6
 
 ### Session 6A: Tagging, Chunking, Syntax and Parsing
-- <i>13:30&ndash;13:48</i> Designing and Interpreting Probes with Control Tasks (&#35;4063)
-- <i>13:48&ndash;14:06</i> Specializing Word Embeddings (for Parsing) by Information Bottleneck (&#35;1357)
-- <i>14:06&ndash;14:24</i> Deep Contextualized Word Embeddings in Transition-Based and Graph-Based Dependency Parsing - A Tale of Two Parsers Revisited (&#35;2799)
-- <i>14:24&ndash;14:42</i> Semantic graph parsing with recurrent neural network DAG grammars (&#35;2863)
-- <i>14:42&ndash;15:00</i> 75 Languages, 1 Model: Parsing Universal Dependencies Universally (&#35;1221)
+- <i>13:30&ndash;13:48</i><br>Designing and Interpreting Probes with Control Tasks (&#35;4063)
+- <i>13:48&ndash;14:06</i><br>Specializing Word Embeddings (for Parsing) by Information Bottleneck (&#35;1357)
+- <i>14:06&ndash;14:24</i><br>Deep Contextualized Word Embeddings in Transition-Based and Graph-Based Dependency Parsing - A Tale of Two Parsers Revisited (&#35;2799)
+- <i>14:24&ndash;14:42</i><br>Semantic graph parsing with recurrent neural network DAG grammars (&#35;2863)
+- <i>14:42&ndash;15:00</i><br>75 Languages, 1 Model: Parsing Universal Dependencies Universally (&#35;1221)
 
 ### Session 6B: Question Answering II
-- <i>13:30&ndash;13:48</i> Interactive Language Learning by Question Answering (&#35;1367)
-- <i>13:48&ndash;14:06</i> What's Missing: A Knowledge Gap Guided Approach for Multi-hop Question Answering (&#35;3238)
-- <i>14:06&ndash;14:24</i> KagNet: Learning to Answer Commonsense Questions with Knowledge-Aware Graph Networks (&#35;436)
-- <i>14:24&ndash;14:42</i> Learning with Limited Data for Multilingual Reading Comprehension (&#35;3518)
-- <i>14:42&ndash;15:00</i> A Discrete Hard EM Approach for Weakly Supervised Question Answering (&#35;3778)
+- <i>13:30&ndash;13:48</i><br>Interactive Language Learning by Question Answering (&#35;1367)
+- <i>13:48&ndash;14:06</i><br>What's Missing: A Knowledge Gap Guided Approach for Multi-hop Question Answering (&#35;3238)
+- <i>14:06&ndash;14:24</i><br>KagNet: Learning to Answer Commonsense Questions with Knowledge-Aware Graph Networks (&#35;436)
+- <i>14:24&ndash;14:42</i><br>Learning with Limited Data for Multilingual Reading Comprehension (&#35;3518)
+- <i>14:42&ndash;15:00</i><br>A Discrete Hard EM Approach for Weakly Supervised Question Answering (&#35;3778)
 
 ### Session 6C: Linguistic Theories, Cognitive Modeling and Psycholinguistics
-- <i>13:30&ndash;13:48</i> Is the Red Square Big? MALeViC: Modeling Adjectives Leveraging Visual Contexts (&#35;2585)
-- <i>13:48&ndash;14:06</i> Investigating BERT's Knowledge of Language: Five Analysis Methods with NPIs (&#35;3650)
-- <i>14:06&ndash;14:24</i> Representation of Constituents in Neural Language Models: - Coordination Phrase as a Case Study (&#35;3929)
-- <i>14:24&ndash;14:42</i> Towards Zero-shot Language Modelling (&#35;1745)
-- <i>14:42&ndash;15:00</i> Neural Network Acceptability Judgments (&#35;TACL-1710)
+- <i>13:30&ndash;13:48</i><br>Is the Red Square Big? MALeViC: Modeling Adjectives Leveraging Visual Contexts (&#35;2585)
+- <i>13:48&ndash;14:06</i><br>Investigating BERT's Knowledge of Language: Five Analysis Methods with NPIs (&#35;3650)
+- <i>14:06&ndash;14:24</i><br>Representation of Constituents in Neural Language Models: - Coordination Phrase as a Case Study (&#35;3929)
+- <i>14:24&ndash;14:42</i><br>Towards Zero-shot Language Modelling (&#35;1745)
+- <i>14:42&ndash;15:00</i><br>Neural Network Acceptability Judgments (&#35;TACL-1710)
 
 ### Session 6D: Sentiment Analysis and Argument Mining II
-- <i>13:30&ndash;13:48</i> What Gets Echoed? Understanding the "Pointers" in Explanations of Persuasive Arguments (&#35;2089)
-- <i>13:48&ndash;14:06</i> Modeling Frames in Argumentation (&#35;2267)
-- <i>14:06&ndash;14:24</i> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions (&#35;3321)
-- <i>14:24&ndash;14:42</i> Evaluating adversarial attacks against multiple fact verification systems (&#35;427)
-- <i>14:42&ndash;15:00</i> Nonsense!: Quality Control via Two-Step Reason Selection for Annotating Local Acceptability and Related Attributes in News Editorials (&#35;564)
+- <i>13:30&ndash;13:48</i><br>What Gets Echoed? Understanding the "Pointers" in Explanations of Persuasive Arguments (&#35;2089)
+- <i>13:48&ndash;14:06</i><br>Modeling Frames in Argumentation (&#35;2267)
+- <i>14:06&ndash;14:24</i><br>AMPERSAND: Argument Mining for PERSuAsive oNline Discussions (&#35;3321)
+- <i>14:24&ndash;14:42</i><br>Evaluating adversarial attacks against multiple fact verification systems (&#35;427)
+- <i>14:42&ndash;15:00</i><br>Nonsense!: Quality Control via Two-Step Reason Selection for Annotating Local Acceptability and Related Attributes in News Editorials (&#35;564)
 
-- <i>13:30&ndash;15:00 </i> Poster &amp; Demo Session 6: Discourse and Pragmatics, Summarization and Generation
+- <i>13:30&ndash;15:00 </i><br>Poster &amp; Demo Session 6: Discourse and Pragmatics, Summarization and Generation
    - Evaluating Pronominal Anaphora in Machine Translation: An Evaluation Measure and a Test Suite (&#35;723)
    - A Regularization Approach for Incorporating Event Knowledge and Coreference Relations into Neural Discourse Parsing (&#35;2916)
    - Weakly Supervised Multilingual Causality Extraction fromWikipedia (&#35;3994)
@@ -440,34 +440,34 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Let's Ask Again: Refine Network for Automatic Question Generation (&#35;3754)
    - Earlier Isn't Always Better: Submodular Analysis on Corpus and System Biases in Summarization (&#35;3846)
 
-- <i>15:00&ndash;15:30 </i> Coffee Break
-- <i>15:30&ndash;16:18 </i> Session 7
+- <i>15:00&ndash;15:30 </i><br>Coffee Break
+- <i>15:30&ndash;16:18 </i><br>Session 7
 
 ### Session 7A: Machine Translation and Multilinguality I
-- <i>15:30&ndash;15:42</i> Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction (&#35;1131)
-- <i>15:42&ndash;15:54</i> Towards Realistic Practices In Low-Resource Natural Language Processing: The Development Set (&#35;1266)
-- <i>15:54&ndash;16:06</i> Synchronously Generating Two Languages with Interactive Decoding (&#35;1478)
-- <i>16:06&ndash;16:18</i> On NMT Search Errors and Model Errors: Cat Got Your Tongue? (&#35;1868)
+- <i>15:30&ndash;15:42</i><br>Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction (&#35;1131)
+- <i>15:42&ndash;15:54</i><br>Towards Realistic Practices In Low-Resource Natural Language Processing: The Development Set (&#35;1266)
+- <i>15:54&ndash;16:06</i><br>Synchronously Generating Two Languages with Interactive Decoding (&#35;1478)
+- <i>16:06&ndash;16:18</i><br>On NMT Search Errors and Model Errors: Cat Got Your Tongue? (&#35;1868)
 
 ### Session 7B: Reasoning and Question Answering
-- <i>15:30&ndash;15:42</i> Going on a vacation takes longer than "Going for a walk": A Study of Temporal Commonsense Understanding (&#35;2533)
-- <i>15:42&ndash;15:54</i> QAInfomax: Learning Robust Question Answering System by Mutual Information Maximization (&#35;2798)
-- <i>15:54&ndash;16:06</i> Adapting Meta Knowledge Graph Information for Multi-Hop Reasoning over Few-Shot Relations (&#35;329)
-- <i>16:06&ndash;16:18</i> How Reasonable are Common-Sense Reasoning Tasks: A Case-Study on the Winograd Schema Challenge and SWAG (&#35;586)
+- <i>15:30&ndash;15:42</i><br>Going on a vacation takes longer than "Going for a walk": A Study of Temporal Commonsense Understanding (&#35;2533)
+- <i>15:42&ndash;15:54</i><br>QAInfomax: Learning Robust Question Answering System by Mutual Information Maximization (&#35;2798)
+- <i>15:54&ndash;16:06</i><br>Adapting Meta Knowledge Graph Information for Multi-Hop Reasoning over Few-Shot Relations (&#35;329)
+- <i>16:06&ndash;16:18</i><br>How Reasonable are Common-Sense Reasoning Tasks: A Case-Study on the Winograd Schema Challenge and SWAG (&#35;586)
 
 ### Session 7C: Generation I
-- <i>15:30&ndash;15:42</i> Pun-GAN: Generative Adversarial Network for Pun Generation (&#35;267)
-- <i>15:42&ndash;15:54</i> Multi-Task Learning with Language Modeling for Question Generation (&#35;3820)
-- <i>15:54&ndash;16:06</i> Autoregressive Text Generation beyond Feedback Loops (&#35;3506)
-- <i>16:06&ndash;16:18</i> The Woman Worked as a Babysitter: On Biases in Language Generation (&#35;3874)
+- <i>15:30&ndash;15:42</i><br>Pun-GAN: Generative Adversarial Network for Pun Generation (&#35;267)
+- <i>15:42&ndash;15:54</i><br>Multi-Task Learning with Language Modeling for Question Generation (&#35;3820)
+- <i>15:54&ndash;16:06</i><br>Autoregressive Text Generation beyond Feedback Loops (&#35;3506)
+- <i>16:06&ndash;16:18</i><br>The Woman Worked as a Babysitter: On Biases in Language Generation (&#35;3874)
 
 ### Session 7D: Sentiment Analysis and Argument Mining III
-- <i>15:30&ndash;15:42</i> On the Importance of Delexicalization for Fact Verification (&#35;2984)
-- <i>15:42&ndash;15:54</i> Towards Debiasing Fact Verification Models (&#35;3338)
-- <i>15:54&ndash;16:06</i> Recognizing Conflict Opinions in Aspect-level Sentiment Classification with Dual Attention Networks (&#35;911)
-- <i>16:06&ndash;16:18</i> Investigating Dynamic Routing in Tree-Structured LSTM for Sentiment Analysis (&#35;1395)
+- <i>15:30&ndash;15:42</i><br>On the Importance of Delexicalization for Fact Verification (&#35;2984)
+- <i>15:42&ndash;15:54</i><br>Towards Debiasing Fact Verification Models (&#35;3338)
+- <i>15:54&ndash;16:06</i><br>Recognizing Conflict Opinions in Aspect-level Sentiment Classification with Dual Attention Networks (&#35;911)
+- <i>16:06&ndash;16:18</i><br>Investigating Dynamic Routing in Tree-Structured LSTM for Sentiment Analysis (&#35;1395)
 
-- <i>15:30&ndash;16:18 </i> Poster &amp; Demo Session 7: Information Retrieval and Document Analysis, Lexical Semantics, Sentence-level Semantics, Machine Learning
+- <i>15:30&ndash;16:18 </i><br>Poster &amp; Demo Session 7: Information Retrieval and Document Analysis, Lexical Semantics, Sentence-level Semantics, Machine Learning
    - A Label Informative Wide &amp; Deep Classifier for Scientific Publications (&#35;542)
    - Text Level Graph Neural Network for Text Classification (&#35;573)
    - Semantic Relatedness based Re-ranker for Text Spotting (&#35;875)
@@ -511,38 +511,38 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Pretrained Language Models for Sequential Sentence Classification (&#35;3887)
    - Emergent Linguistic Phenomena in Multi-Agent Communication Games (&#35;2402)
 
-- <i>16:18&ndash;16:30 </i> Mini-Break
-- <i>16:30&ndash;18:00 </i> Session 8
+- <i>16:18&ndash;16:30 </i><br>Mini-Break
+- <i>16:30&ndash;18:00 </i><br>Session 8
 
 ### Session 8A: Summarization
-- <i>16:30&ndash;16:48</i> Summary Cloze: A New Task for Content Selection in Topic-Focused Summarization (&#35;1178)
-- <i>16:48&ndash;17:06</i> Text Summarization with Pretrained Encoders (&#35;392)
-- <i>17:06&ndash;17:24</i> How to Write Summaries with Patterns? Learning towards Abstractive Summarization through Prototype Editing (&#35;609)
-- <i>17:24&ndash;17:42</i> Unsupervised Sentence Summarization using the Information Bottleneck Principle (&#35;3219)
-- <i>17:42&ndash;18:00</i> Improving Latent Alignment in Text Summarization by Generalizing the Pointer Generator (&#35;3043)
+- <i>16:30&ndash;16:48</i><br>Summary Cloze: A New Task for Content Selection in Topic-Focused Summarization (&#35;1178)
+- <i>16:48&ndash;17:06</i><br>Text Summarization with Pretrained Encoders (&#35;392)
+- <i>17:06&ndash;17:24</i><br>How to Write Summaries with Patterns? Learning towards Abstractive Summarization through Prototype Editing (&#35;609)
+- <i>17:24&ndash;17:42</i><br>Unsupervised Sentence Summarization using the Information Bottleneck Principle (&#35;3219)
+- <i>17:42&ndash;18:00</i><br>Improving Latent Alignment in Text Summarization by Generalizing the Pointer Generator (&#35;3043)
 
 ### Session 8B: Sentence-level Semantics II
-- <i>16:30&ndash;16:48</i> Learning Semantic Parsers from Denotations with Latent Structured Alignments and Abstract Programs (&#35;2676)
-- <i>16:48&ndash;17:06</i> Broad-Coverage Semantic Parsing as Transduction (&#35;263)
-- <i>17:06&ndash;17:24</i> Core Semantic First: A Top-down Approach for AMR Parsing (&#35;1544)
-- <i>17:24&ndash;17:42</i> Don't paraphrase, detect! Rapid and Effective Data Collection for Semantic Parsing (&#35;2904)
-- <i>17:42&ndash;18:00</i> Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond (&#35;TACL-1742)
+- <i>16:30&ndash;16:48</i><br>Learning Semantic Parsers from Denotations with Latent Structured Alignments and Abstract Programs (&#35;2676)
+- <i>16:48&ndash;17:06</i><br>Broad-Coverage Semantic Parsing as Transduction (&#35;263)
+- <i>17:06&ndash;17:24</i><br>Core Semantic First: A Top-down Approach for AMR Parsing (&#35;1544)
+- <i>17:24&ndash;17:42</i><br>Don't paraphrase, detect! Rapid and Effective Data Collection for Semantic Parsing (&#35;2904)
+- <i>17:42&ndash;18:00</i><br>Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond (&#35;TACL-1742)
 
 ### Session 8C: Information Extraction II
-- <i>16:30&ndash;16:48</i> Improving Distantly-Supervised Relation Extraction with Joint Label Embedding (&#35;337)
-- <i>16:48&ndash;17:06</i> Leverage Lexical Knowledge for Chinese Named Entity Recognition via Collaborative Graph Network (&#35;566)
-- <i>17:06&ndash;17:24</i> Looking Beyond Label Noise: Shifted Label Distribution Matters in Distantly Supervised Relation Extraction (&#35;1057)
-- <i>17:24&ndash;17:42</i> Easy First Relation Extraction with Information Redundancy (&#35;1640)
-- <i>17:42&ndash;18:00</i> Dependency-Guided LSTM-CRF for Named Entity Recognition (&#35;2509)
+- <i>16:30&ndash;16:48</i><br>Improving Distantly-Supervised Relation Extraction with Joint Label Embedding (&#35;337)
+- <i>16:48&ndash;17:06</i><br>Leverage Lexical Knowledge for Chinese Named Entity Recognition via Collaborative Graph Network (&#35;566)
+- <i>17:06&ndash;17:24</i><br>Looking Beyond Label Noise: Shifted Label Distribution Matters in Distantly Supervised Relation Extraction (&#35;1057)
+- <i>17:24&ndash;17:42</i><br>Easy First Relation Extraction with Information Redundancy (&#35;1640)
+- <i>17:42&ndash;18:00</i><br>Dependency-Guided LSTM-CRF for Named Entity Recognition (&#35;2509)
 
 ### Session 8D: Information Retrieval and Document Analysis I
-- <i>16:30&ndash;16:48</i> Cross-Cultural Transfer Learning for Text Classification (&#35;1036)
-- <i>16:48&ndash;17:06</i> Combining Unsupervised Pre-training and Annotator Rationales to Improve Low-shot Text Classification (&#35;1190)
-- <i>17:06&ndash;17:24</i> Projection Sequence Networks for On-Device Text Classification (&#35;3202)
-- <i>17:24&ndash;17:42</i> Induction Networks for Few-Shot Text Classification (&#35;3562)
-- <i>17:42&ndash;18:00</i> Benchmarking Zero-shot Text Classification: Datasets, Evaluation and Entailment Approach (&#35;2899)
+- <i>16:30&ndash;16:48</i><br>Cross-Cultural Transfer Learning for Text Classification (&#35;1036)
+- <i>16:48&ndash;17:06</i><br>Combining Unsupervised Pre-training and Annotator Rationales to Improve Low-shot Text Classification (&#35;1190)
+- <i>17:06&ndash;17:24</i><br>Projection Sequence Networks for On-Device Text Classification (&#35;3202)
+- <i>17:24&ndash;17:42</i><br>Induction Networks for Few-Shot Text Classification (&#35;3562)
+- <i>17:42&ndash;18:00</i><br>Benchmarking Zero-shot Text Classification: Datasets, Evaluation and Entailment Approach (&#35;2899)
 
-- <i>16:30&ndash;18:00 </i> Poster &amp; Demo Session 8: Machine Learning
+- <i>16:30&ndash;18:00 </i><br>Poster &amp; Demo Session 8: Machine Learning
    - A Logic-Driven Framework for Consistency of Neural Models (&#35;6)
    - Style Transfer for Texts: to Err is Human, but Error Margins Matter (&#35;109)
    - Implicit Deep Latent Variable Models for Text Generation (&#35;161)
@@ -593,39 +593,39 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
 ## Main Conference Day 3 Thursday, November 7, 2019)
 
 ### Overview
-- <i>09:00&ndash;10:00</i> Keynote III: Kyunghyun Cho
-- <i>10:00&ndash;10:30</i> Coffee Break
-- <i>10:30&ndash;12:00</i> Session 9
+- <i>09:00&ndash;10:00</i><br>Keynote III: Kyunghyun Cho
+- <i>10:00&ndash;10:30</i><br>Coffee Break
+- <i>10:30&ndash;12:00</i><br>Session 9
 
 ### Session 9A: Machine Translation and Multilinguality II
-- <i>10:30&ndash;10:48</i> Do We Really Need Fully Unsupervised Cross-Lingual Embeddings? (&#35;2459)
-- <i>10:48&ndash;11:06</i> Weakly-Supervised Concept-based Adversarial Learning for Cross-lingual Word Embeddings (&#35;2491)
-- <i>11:06&ndash;11:24</i> Aligning Cross-lingual Entities with Multi-Aspect Information (&#35;3541)
-- <i>11:24&ndash;11:42</i> Contrastive Language Adaptation for Cross-Lingual Stance Detection (&#35;2498)
-- <i>11:42&ndash;12:00</i> Jointly Learning to Align and Translate with Transformer Models (&#35;422)
+- <i>10:30&ndash;10:48</i><br>Do We Really Need Fully Unsupervised Cross-Lingual Embeddings? (&#35;2459)
+- <i>10:48&ndash;11:06</i><br>Weakly-Supervised Concept-based Adversarial Learning for Cross-lingual Word Embeddings (&#35;2491)
+- <i>11:06&ndash;11:24</i><br>Aligning Cross-lingual Entities with Multi-Aspect Information (&#35;3541)
+- <i>11:24&ndash;11:42</i><br>Contrastive Language Adaptation for Cross-Lingual Stance Detection (&#35;2498)
+- <i>11:42&ndash;12:00</i><br>Jointly Learning to Align and Translate with Transformer Models (&#35;422)
 
 ### Session 9B: Reasoning
-- <i>10:30&ndash;10:48</i> Social IQa: Commonsense Reasoning about Social Interactions (&#35;1334)
-- <i>10:48&ndash;11:06</i> Self-Assembling Modular Networks for Interpretable Multi-Hop Reasoning (&#35;2866)
-- <i>11:06&ndash;11:24</i> Posing Fair Generalization Tasks for Natural Language Inference (&#35;1413)
-- <i>11:24&ndash;11:42</i> Everything Happens for a Reason: Discovering the Purpose of Actions in Procedural Text (&#35;3279)
-- <i>11:42&ndash;12:00</i> CLUTRR: A Diagnostic Benchmark for Inductive Reasoning from Text (&#35;3183)
+- <i>10:30&ndash;10:48</i><br>Social IQa: Commonsense Reasoning about Social Interactions (&#35;1334)
+- <i>10:48&ndash;11:06</i><br>Self-Assembling Modular Networks for Interpretable Multi-Hop Reasoning (&#35;2866)
+- <i>11:06&ndash;11:24</i><br>Posing Fair Generalization Tasks for Natural Language Inference (&#35;1413)
+- <i>11:24&ndash;11:42</i><br>Everything Happens for a Reason: Discovering the Purpose of Actions in Procedural Text (&#35;3279)
+- <i>11:42&ndash;12:00</i><br>CLUTRR: A Diagnostic Benchmark for Inductive Reasoning from Text (&#35;3183)
 
 ### Session 9C: Dialog and Interactive Systems II
-- <i>10:30&ndash;10:48</i> TaskMaster Dialog Corpus: Toward a Realistic and Diverse Dataset (&#35;510)
-- <i>10:48&ndash;11:06</i> MultiDoGO: Multi-Domain Goal-Oriented Dialogues (&#35;1564)
-- <i>11:06&ndash;11:24</i> Build it Break it Fix it for Dialogue Safety: Robustness from Adversarial Human Attack (&#35;1186)
-- <i>11:24&ndash;11:42</i> GECOR: An End-to-End Generative Ellipsis and Co-reference Resolution Model for Task-Oriented Dialogue (&#35;1853)
-- <i>11:42&ndash;12:00</i> Task-Oriented Conversation Generation Using Heterogeneous Memory Networks (&#35;496)
+- <i>10:30&ndash;10:48</i><br>TaskMaster Dialog Corpus: Toward a Realistic and Diverse Dataset (&#35;510)
+- <i>10:48&ndash;11:06</i><br>MultiDoGO: Multi-Domain Goal-Oriented Dialogues (&#35;1564)
+- <i>11:06&ndash;11:24</i><br>Build it Break it Fix it for Dialogue Safety: Robustness from Adversarial Human Attack (&#35;1186)
+- <i>11:24&ndash;11:42</i><br>GECOR: An End-to-End Generative Ellipsis and Co-reference Resolution Model for Task-Oriented Dialogue (&#35;1853)
+- <i>11:42&ndash;12:00</i><br>Task-Oriented Conversation Generation Using Heterogeneous Memory Networks (&#35;496)
 
 ### Session 9D: Sentiment Analysis and Argument Mining IV
-- <i>10:30&ndash;10:48</i> Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks (&#35;381)
-- <i>10:48&ndash;11:06</i> Coupling Global and Local Context for Unsupervised Aspect Extraction (&#35;1988)
-- <i>11:06&ndash;11:24</i> Transferable End-to-End Aspect-based Sentiment Analysis with Selective Adversarial Learning (&#35;65)
-- <i>11:24&ndash;11:42</i> CAN: Constrained Attention Networks for Multi-Aspect Sentiment Analysis (&#35;1995)
-- <i>11:42&ndash;12:00</i> Leveraging Just a Few Keywords for Fine-Grained Aspect Detection Through Weakly Supervised Co-Training (&#35;3207)
+- <i>10:30&ndash;10:48</i><br>Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks (&#35;381)
+- <i>10:48&ndash;11:06</i><br>Coupling Global and Local Context for Unsupervised Aspect Extraction (&#35;1988)
+- <i>11:06&ndash;11:24</i><br>Transferable End-to-End Aspect-based Sentiment Analysis with Selective Adversarial Learning (&#35;65)
+- <i>11:24&ndash;11:42</i><br>CAN: Constrained Attention Networks for Multi-Aspect Sentiment Analysis (&#35;1995)
+- <i>11:42&ndash;12:00</i><br>Leveraging Just a Few Keywords for Fine-Grained Aspect Detection Through Weakly Supervised Co-Training (&#35;3207)
 
-- <i>10:30&ndash;12:00 </i> Poster &amp; Demo Session 9: Social Media and Computational Social Science, Text Mining and NLP Applications
+- <i>10:30&ndash;12:00 </i><br>Poster &amp; Demo Session 9: Social Media and Computational Social Science, Text Mining and NLP Applications
    - Integrating Text and Image: Determining Multimodal Document Intent in Instagram Posts (&#35;52)
    - Neural Conversation Recommendation with Online Interaction Modeling (&#35;705)
    - Different Acquisition from the Same Sharing: Sifting Multi-task Learning for Fake News Detection (&#35;720)
@@ -668,39 +668,39 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Subword Language Model for Query Auto-Completion (&#35;3873)
    - Enhancing Dialogue Symptom Diagnosis with Global Attention and Symptom Graph (&#35;4069)
 
-- <i>12:00&ndash;12:30 </i> Lunch
-- <i>12:30&ndash;13:30 </i> SIGDAT Business Meeting
-- <i>13:30&ndash;15:00 </i> Session
+- <i>12:00&ndash;12:30 </i><br>Lunch
+- <i>12:30&ndash;13:30 </i><br>SIGDAT Business Meeting
+- <i>13:30&ndash;15:00 </i><br>Session
 
 ### Session 10A: Generation II
-- <i>13:30&ndash;13:48</i> Counterfactual Story Reasoning and Generation (&#35;3328)
-- <i>13:48&ndash;14:06</i> Encode, Tag, Realize: High-Precision Text Editing (&#35;2395)
-- <i>14:06&ndash;14:24</i> Answer-guided and Semantic Coherent Question Generation in Open-domain Conversation (&#35;128)
-- <i>14:24&ndash;14:42</i> Read, Attend and Comment: A Deep Architecture for Automatic News Comment Generation (&#35;1947)
-- <i>14:42&ndash;15:00</i> A Topic Augmented Text Generation Model: Joint Learning of Semantics and Structural Features (&#35;2822)
+- <i>13:30&ndash;13:48</i><br>Counterfactual Story Reasoning and Generation (&#35;3328)
+- <i>13:48&ndash;14:06</i><br>Encode, Tag, Realize: High-Precision Text Editing (&#35;2395)
+- <i>14:06&ndash;14:24</i><br>Answer-guided and Semantic Coherent Question Generation in Open-domain Conversation (&#35;128)
+- <i>14:24&ndash;14:42</i><br>Read, Attend and Comment: A Deep Architecture for Automatic News Comment Generation (&#35;1947)
+- <i>14:42&ndash;15:00</i><br>A Topic Augmented Text Generation Model: Joint Learning of Semantics and Structural Features (&#35;2822)
 
 ### Session 10B: Speech, Vision, Robotics, Multimodal and Grounding II
-- <i>13:30&ndash;13:48</i> LXMERT: Learning Cross-Modality Encoder Representations from Transformers (&#35;3048)
-- <i>13:48&ndash;14:06</i> Phrase Grounding by Soft-Label Chain Conditional Random Field (&#35;3765)
-- <i>14:06&ndash;14:24</i> What You See is What You Get: Visual Pronoun Coreference Resolution in Conversations (&#35;549)
-- <i>14:24&ndash;14:42</i> YouMakeup: A Large-Scale Domain-Specific Multimodal Dataset for Fine-Grained Semantic Comprehension (&#35;122)
-- <i>14:42&ndash;15:00</i> DEBUG: A Dense Bottom-Up Grounding Approach for Natural Language Video Localization (&#35;167)
+- <i>13:30&ndash;13:48</i><br>LXMERT: Learning Cross-Modality Encoder Representations from Transformers (&#35;3048)
+- <i>13:48&ndash;14:06</i><br>Phrase Grounding by Soft-Label Chain Conditional Random Field (&#35;3765)
+- <i>14:06&ndash;14:24</i><br>What You See is What You Get: Visual Pronoun Coreference Resolution in Conversations (&#35;549)
+- <i>14:24&ndash;14:42</i><br>YouMakeup: A Large-Scale Domain-Specific Multimodal Dataset for Fine-Grained Semantic Comprehension (&#35;122)
+- <i>14:42&ndash;15:00</i><br>DEBUG: A Dense Bottom-Up Grounding Approach for Natural Language Video Localization (&#35;167)
 
 ### Session 10C: Information Extraction III
-- <i>13:30&ndash;13:48</i> CrossWeigh: Training Named Entity Tagger from Imperfect Annotations (&#35;2712)
-- <i>13:48&ndash;14:06</i> A Little Annotation does a Lot of Good: A Study in Bootstrapping Low-resource Named Entity Recognizers (&#35;3259)
-- <i>14:06&ndash;14:24</i> Open Domain Web Keyphrase Extraction Beyond Language Modeling (&#35;1119)
-- <i>14:24&ndash;14:42</i> TuckER: Tensor Factorization for Knowledge Graph Completion (&#35;990)
-- <i>14:42&ndash;15:00</i> Weakly Supervised Domain Detection (&#35;TACL-1712)
+- <i>13:30&ndash;13:48</i><br>CrossWeigh: Training Named Entity Tagger from Imperfect Annotations (&#35;2712)
+- <i>13:48&ndash;14:06</i><br>A Little Annotation does a Lot of Good: A Study in Bootstrapping Low-resource Named Entity Recognizers (&#35;3259)
+- <i>14:06&ndash;14:24</i><br>Open Domain Web Keyphrase Extraction Beyond Language Modeling (&#35;1119)
+- <i>14:24&ndash;14:42</i><br>TuckER: Tensor Factorization for Knowledge Graph Completion (&#35;990)
+- <i>14:42&ndash;15:00</i><br>Weakly Supervised Domain Detection (&#35;TACL-1712)
 
 ### Session 10D: Information Retrieval and Document Analysis II
-- <i>13:30&ndash;13:48</i> Human-grounded Evaluations of Explanation Methods for Text Classification (&#35;425)
-- <i>13:48&ndash;14:06</i> A Context-based Framework for Modeling the Role and Function of On-line Resource Citations in Scientific Literature (&#35;793)
-- <i>14:06&ndash;14:24</i> Adversarial Reprogramming of Text Classification Neural Networks (&#35;28)
-- <i>14:24&ndash;14:42</i> Document Hashing with Mixture-Prior Generative Models (&#35;1676)
-- <i>14:42&ndash;15:00</i> Efficient Vector Retrieval under Maximum Inner Product (&#35;3421)
+- <i>13:30&ndash;13:48</i><br>Human-grounded Evaluations of Explanation Methods for Text Classification (&#35;425)
+- <i>13:48&ndash;14:06</i><br>A Context-based Framework for Modeling the Role and Function of On-line Resource Citations in Scientific Literature (&#35;793)
+- <i>14:06&ndash;14:24</i><br>Adversarial Reprogramming of Text Classification Neural Networks (&#35;28)
+- <i>14:24&ndash;14:42</i><br>Document Hashing with Mixture-Prior Generative Models (&#35;1676)
+- <i>14:42&ndash;15:00</i><br>Efficient Vector Retrieval under Maximum Inner Product (&#35;3421)
 
-- <i>13:30&ndash;15:00 </i> Poster &amp; Demo Session 10: Sentiment Analysis and Argument Mining, Lexical Semantics, Sentence-level Semantics
+- <i>13:30&ndash;15:00 </i><br>Poster &amp; Demo Session 10: Sentiment Analysis and Argument Mining, Lexical Semantics, Sentence-level Semantics
    - Multi-Relational Word Embeddings for Selectional Preferences (&#35;623)
    - MulCode: A Multiplicative Multi-way Model for Compressing Neural Language Model (&#35;700)
    - It's All in the Name: Mitigating Gender Bias with Name-Based Counterfactual Data Augmentation (&#35;1220)
@@ -744,34 +744,34 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - The Role of Pragmatic and Discourse Context in Determining Argument Impact (&#35;3909)
    - Aspect-Level Sentiment Analysis Via Convolution over Dependency Tree (&#35;4182)
 
-- <i>15:00&ndash;15:30 </i> Coffee Break
-- <i>15:30&ndash;16:18 </i> Session 11
+- <i>15:00&ndash;15:30 </i><br>Coffee Break
+- <i>15:30&ndash;16:18 </i><br>Session 11
 
 ### Session 11A: Machine Translation and Multilinguality III
-- <i>15:30&ndash;15:42</i> Understanding Data Augmentation in Neural Machine Translation: Two Perspectives towards Generalization (&#35;2192)
-- <i>15:42&ndash;15:54</i> Simple and Effective Noisy Channel Modeling for Neural Machine Translation (&#35;2869)
-- <i>15:54&ndash;16:06</i> MultiFiT: Efficient Multi-lingual Language Model Fine-tuning (&#35;745)
-- <i>16:06&ndash;16:18</i> Hint-based Training for Non-AutoRegressive Machine Translation (&#35;1064)
+- <i>15:30&ndash;15:42</i><br>Understanding Data Augmentation in Neural Machine Translation: Two Perspectives towards Generalization (&#35;2192)
+- <i>15:42&ndash;15:54</i><br>Simple and Effective Noisy Channel Modeling for Neural Machine Translation (&#35;2869)
+- <i>15:54&ndash;16:06</i><br>MultiFiT: Efficient Multi-lingual Language Model Fine-tuning (&#35;745)
+- <i>16:06&ndash;16:18</i><br>Hint-based Training for Non-AutoRegressive Machine Translation (&#35;1064)
 
 ### Session 11B: Syntax, Parsing, and Linguistic Theories
-- <i>15:30&ndash;15:42</i> Working Hard or Hardly Working: Challenges of Integrating Typology into Neural Dependency Parsers (&#35;3860)
-- <i>15:42&ndash;15:54</i> Cross-Lingual BERT Transformation for Zero-Shot Dependency Parsing (&#35;1832)
-- <i>15:54&ndash;16:06</i> Multilingual Grammar Induction with Continuous Language Identification (&#35;3883)
-- <i>16:06&ndash;16:18</i> Quantifying the Semantic Core of Gender Systems (&#35;2637)
+- <i>15:30&ndash;15:42</i><br>Working Hard or Hardly Working: Challenges of Integrating Typology into Neural Dependency Parsers (&#35;3860)
+- <i>15:42&ndash;15:54</i><br>Cross-Lingual BERT Transformation for Zero-Shot Dependency Parsing (&#35;1832)
+- <i>15:54&ndash;16:06</i><br>Multilingual Grammar Induction with Continuous Language Identification (&#35;3883)
+- <i>16:06&ndash;16:18</i><br>Quantifying the Semantic Core of Gender Systems (&#35;2637)
 
 ### Session 11C: Sentiment and Social Media
-- <i>15:30&ndash;15:42</i> Perturbation Sensitivity Analysis for Detecting Unintended Model Biases (&#35;3447)
-- <i>15:42&ndash;15:54</i> Automatically Inferring Gender Associations from Language (&#35;3519)
-- <i>15:54&ndash;16:06</i> Reporting the Unreported: Event Extraction for Analyzing the Local Representation of Hate Crimes (&#35;3715)
-- <i>16:06&ndash;16:18</i> Minimally Supervised Learning of Affective Events Using Discourse Relations (&#35;3493)
+- <i>15:30&ndash;15:42</i><br>Perturbation Sensitivity Analysis for Detecting Unintended Model Biases (&#35;3447)
+- <i>15:42&ndash;15:54</i><br>Automatically Inferring Gender Associations from Language (&#35;3519)
+- <i>15:54&ndash;16:06</i><br>Reporting the Unreported: Event Extraction for Analyzing the Local Representation of Hate Crimes (&#35;3715)
+- <i>16:06&ndash;16:18</i><br>Minimally Supervised Learning of Affective Events Using Discourse Relations (&#35;3493)
 
 ### Session 11D: Information Extraction IV
-- <i>15:30&ndash;15:42</i> Event Detection with Multi-Order Graph Convolution and Aggregated Attention (&#35;835)
-- <i>15:42&ndash;15:54</i> Coverage of Information Extraction from Sentences and Paragraphs (&#35;1285)
-- <i>15:54&ndash;16:06</i> HMEAE: Hierarchical Modular Event Argument Extraction (&#35;2354)
-- <i>16:06&ndash;16:18</i> Contextualized Span Representations for Information Extraction: An Empirical Analysis (&#35;3930)
+- <i>15:30&ndash;15:42</i><br>Event Detection with Multi-Order Graph Convolution and Aggregated Attention (&#35;835)
+- <i>15:42&ndash;15:54</i><br>Coverage of Information Extraction from Sentences and Paragraphs (&#35;1285)
+- <i>15:54&ndash;16:06</i><br>HMEAE: Hierarchical Modular Event Argument Extraction (&#35;2354)
+- <i>16:06&ndash;16:18</i><br>Contextualized Span Representations for Information Extraction: An Empirical Analysis (&#35;3930)
 
-- <i>15:30&ndash;16:18 </i> Poster &amp; Demo Session 11: Discourse and Pragmatics, Linguistic Theories, Textual Inference, Question Answering, Summarization and Generation
+- <i>15:30&ndash;16:18 </i><br>Poster &amp; Demo Session 11: Discourse and Pragmatics, Linguistic Theories, Textual Inference, Question Answering, Summarization and Generation
    - Next Sentence Prediction helps Implicit Discourse Relation Classification within and across Domains (&#35;982)
    - Split or Merge: Which is Better for Unsupervised RST Parsing? (&#35;1701)
    - BERT for Coreference Resolution: Baselines and Analysis (&#35;3731)
@@ -819,30 +819,30 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Evaluating BERT for natural language inference: a case study on the CommitmentBank (&#35;3606)
    - Incorporating Domain Knowledge into Medical NLI using Knowledge Graphs (&#35;3974)
 
-- <i>16:18&ndash;16:30 </i> Mini-Break
-- <i>16:30&ndash;17:24 </i> Session
+- <i>16:18&ndash;16:30 </i><br>Mini-Break
+- <i>16:30&ndash;17:24 </i><br>Session
 
 ### Session 12A: Machine Translation and Multilinguality IV
-- <i>16:30&ndash;16:48</i> Two New Evaluation Datasets for Low-Resource Machine Translation: Nepali-English and Sinhala English (&#35;3349)
-- <i>16:48&ndash;17:06</i> Constant-Time Machine Translation with Conditional Masked Language Models (&#35;1204)
-- <i>17:06&ndash;17:24</i> Learning to Copy for Automatic Post-Editing (&#35;777)
+- <i>16:30&ndash;16:48</i><br>Two New Evaluation Datasets for Low-Resource Machine Translation: Nepali-English and Sinhala English (&#35;3349)
+- <i>16:48&ndash;17:06</i><br>Constant-Time Machine Translation with Conditional Masked Language Models (&#35;1204)
+- <i>17:06&ndash;17:24</i><br>Learning to Copy for Automatic Post-Editing (&#35;777)
 
 ### Session 12B: Lexical Semantics III
-- <i>16:30&ndash;16:48</i> Exploring Human Gender Stereotypes with Word Association Test (&#35;1912)
-- <i>16:48&ndash;17:06</i> Still a Pain in the Neck: Evaluating Text Representations on Lexical Composition (&#35;TACL-1729)
-- <i>17:06&ndash;17:24</i> Where's My Head? Definition, Dataset and Models for Numeric Fused-Heads Identification and Resolution (&#35;TACL-1648)
+- <i>16:30&ndash;16:48</i><br>Exploring Human Gender Stereotypes with Word Association Test (&#35;1912)
+- <i>16:48&ndash;17:06</i><br>Still a Pain in the Neck: Evaluating Text Representations on Lexical Composition (&#35;TACL-1729)
+- <i>17:06&ndash;17:24</i><br>Where's My Head? Definition, Dataset and Models for Numeric Fused-Heads Identification and Resolution (&#35;TACL-1648)
 
 ### Session 12C: Generation III
-- <i>16:30&ndash;16:48</i> A Modular Architecture for Unsupervised Sarcasm Generation (&#35;2725)
-- <i>16:48&ndash;17:06</i> Interpoetry: Generating Classical Chinese Poems from Vernacular Chinese (&#35;2534)
-- <i>17:06&ndash;17:24</i> Set to Ordered Text: Generating Discharge Instructions from Medical Billing Codes (&#35;724)
+- <i>16:30&ndash;16:48</i><br>A Modular Architecture for Unsupervised Sarcasm Generation (&#35;2725)
+- <i>16:48&ndash;17:06</i><br>Interpoetry: Generating Classical Chinese Poems from Vernacular Chinese (&#35;2534)
+- <i>17:06&ndash;17:24</i><br>Set to Ordered Text: Generating Discharge Instructions from Medical Billing Codes (&#35;724)
 
 ### Session 12D: Phonology, Word Segmentation, and Parsing
-- <i>16:30&ndash;16:48</i> Constraint-based Learning of Phonological Processes (&#35;451)
-- <i>16:48&ndash;17:06</i> Detect Camouflaged Spam Content via StoneSkipping: Graph and Text Joint Embedding for Chinese Character Variation Representation (&#35;1340)
-- <i>17:06&ndash;17:24</i> A Generative Model for Punctuation in Dependency Trees (&#35;TACL-1582)
+- <i>16:30&ndash;16:48</i><br>Constraint-based Learning of Phonological Processes (&#35;451)
+- <i>16:48&ndash;17:06</i><br>Detect Camouflaged Spam Content via StoneSkipping: Graph and Text Joint Embedding for Chinese Character Variation Representation (&#35;1340)
+- <i>17:06&ndash;17:24</i><br>A Generative Model for Punctuation in Dependency Trees (&#35;TACL-1582)
 
-- <i>16:30&ndash;17:24</i> Poster &amp; Demo Session 12: Information Extraction, Text Mining and NLP Applications, Social Media and Computational Social Science, Sentiment Analysis and Argument Mining
+- <i>16:30&ndash;17:24</i><br>Poster &amp; Demo Session 12: Information Extraction, Text Mining and NLP Applications, Social Media and Computational Social Science, Sentiment Analysis and Argument Mining
    - An Attentive Fine-Grained Entity Typing Model with Latent Type Representation (&#35;189)
    - An Improved Neural Baseline for Temporal Relation Extraction (&#35;193)
    - Improving Fine-grained Entity Typing with Entity Linking (&#35;822)
@@ -886,5 +886,5 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Towards Machine Reading for Interventions from Humanitarian-Assistance Program Literature (&#35;3718)
    - RUN through the Streets: Dataset and Models for Realistic Urban Navigation (&#35;4014)
 
-- <i>17:24&ndash;17:30 </i> Mini-Break
-- <i>17:30&ndash;18:00 </i> Best Paper Awards and Closing
+- <i>17:24&ndash;17:30 </i><br>Mini-Break
+- <i>17:30&ndash;18:00 </i><br>Best Paper Awards and Closing
