@@ -15,6 +15,9 @@ sidebar:
 
 This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with basic information on the dates of the talk and poster sessions. More details will be provided later.
 
+<b>Notice:<b> Demo presentations as well as workshops and tutorials haven't been integrated yet.
+
+
 
 ## Main Conference Day 1 (Tuesday, November 5, 2019)
 
