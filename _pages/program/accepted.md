@@ -533,7 +533,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Combining Spans into Entities: A Neural Two-Stage Approach for Recognizing Discontiguous Entities</span><br><i>Bailin Wang and Wei Lu</i>
 - <span style="color:cornflowerblue">Commonsense Knowledge Mining from Pretrained Models</span><br><i>Joe Davison, Joshua Feldman and Alexander Rush</i>
 - <span style="color:cornflowerblue">Context-Aware Conversation Thread Detection in Group Chat</span><br><i>Ming Tan, Dakuo Wang, Yupeng Gao, Haoyu Wang, Saloni Potdar, Xiaoxiao Guo, Shiyu Chang and Mo Yu</i>
-- <span style="color:cornflowerblue">Contextualized Span Representations for Information Extraction: An Empirical Analysis</span><br><i>David Wadden, Ulme Wennberg, Yi Luan and Hannaneh Hajishirzi</i>
+- <span style="color:cornflowerblue">Entity, Relation, and Event Extraction with Contextualized Span Representations</span><br><i>David Wadden, Ulme Wennberg, Yi Luan and Hannaneh Hajishirzi</i>
 - <span style="color:cornflowerblue">Convolutional Neural Networks for Diacritic Restoration</span><br><i>Sawsan Alqahtani, Ajay Mishra and Mona Diab</i>
 - <span style="color:cornflowerblue">Countering the effects of lead bias in news summarization via multi-stage training and auxiliary losses</span><br><i>Matt Grenander, Yue Dong, Jackie Chi Kit Cheung and Annie Louis</i>
 - <span style="color:cornflowerblue">Coverage of Information Extraction from Sentences and Paragraphs</span><br><i>Simon Razniewski, Nitisha Jain, Paramita Mirza and Gerhard Weikum</i>

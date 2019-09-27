@@ -814,7 +814,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
 - <i>15:30&ndash;15:42</i><br>Event Detection with Multi-Order Graph Convolution and Aggregated Attention (&#35;835)
 - <i>15:42&ndash;15:54</i><br>Coverage of Information Extraction from Sentences and Paragraphs (&#35;1285)
 - <i>15:54&ndash;16:06</i><br>HMEAE: Hierarchical Modular Event Argument Extraction (&#35;2354)
-- <i>16:06&ndash;16:18</i><br>Contextualized Span Representations for Information Extraction: An Empirical Analysis (&#35;3930)
+- <i>16:06&ndash;16:18</i><br>Entity, Relation, and Event Extraction with Contextualized Span Representations (&#35;3930)
 
 - <i>15:30&ndash;16:18 </i><br>Poster &amp; Demo Session 11: Discourse and Pragmatics, Linguistic Theories, Textual Inference, Question Answering, Summarization and Generation
    - Next Sentence Prediction helps Implicit Discourse Relation Classification within and across Domains (&#35;982)
