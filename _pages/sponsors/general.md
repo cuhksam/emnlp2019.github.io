@@ -78,6 +78,12 @@ gold:
     image_path: /assets/images/logos/verisk-logo.png
     alt: "Verisk Logo"
     title: "Verisk"
+  - url: https://www.xiaomi.com
+    image_path: /assets/images/logos/xiaomi-logo.png
+    alt: "Xiaomi Logo"
+    title: "Xiaomi"
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 silver:
   - url: http://www.duolingo.com
     image_path: /assets/images/logos/duolingo-logo.png
