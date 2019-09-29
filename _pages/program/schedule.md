@@ -904,7 +904,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - ner and pos when nothing is capitalized (&#35;2992)
    - CaRB: A Crowdsourced Benchmark for Open IE (&#35;4099)
    - Weakly Supervised Attention Networks for Entity Extraction (&#35;4158)
-   - Elementary Units Reveal Online Persuasion Strategy (&#35;19)
+   - Revealing and Predicting Online Persuasion Strategy with Elementary Units (&#35;19)
    - A Challenge Dataset and Effective Models for Aspect-Based Sentiment Analysis (&#35;849)
    - Learning with Noisy Labels for Sentence-level Sentiment Classification (&#35;1157)
    - DENS: A Dataset for Multi-class Emotion Analysis (&#35;1347)

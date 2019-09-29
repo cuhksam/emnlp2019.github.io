@@ -554,7 +554,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks</span><br><i>Jason Wei and Kai Zou</i>
 - <span style="color:cornflowerblue">Efficient Navigation with Language Pre-training and Stochastic Sampling</span><br><i>Xiujun Li, Chunyuan Li, Qiaolin Xia, Yonatan Bisk, Asli Celikyilmaz, Jianfeng Gao, Noah A. Smith and Yejin Choi</i>
 - <span style="color:cornflowerblue">Efficient Sentence Embedding using Discrete Cosine Transform</span><br><i>Hanan Aldarmaki, Nada Almarwani and Mona Diab</i>
-- <span style="color:cornflowerblue">Elementary Units Reveal Online Persuasion Strategy</span><br><i>Gaku Morio, Ryo Egawa and Katsuhide Fujita</i>
+- <span style="color:cornflowerblue">Revealing and Predicting Online Persuasion Strategy with Elementary Units</span><br><i>Gaku Morio, Ryo Egawa and Katsuhide Fujita</i>
 - <span style="color:cornflowerblue">Embedding Lexical Features via Tensor Decomposition for Small Sample Humor Recognition</span><br><i>Zhenjie Zhao, Andrew Cattle, Evangelos Papalexakis and Xiaojuan Ma</i>
 - <span style="color:cornflowerblue">Encoders Help You Disambiguate Word Senses in Neural Machine Translation</span><br><i>Gongbo Tang, Rico Sennrich and Joakim Nivre</i>
 - <span style="color:cornflowerblue">Evaluating BERT for natural language inference: a case study on the CommitmentBank</span><br><i>Nanjiang Jiang and Marie-Catherine de Marneffe</i>
