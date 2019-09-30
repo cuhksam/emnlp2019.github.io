@@ -49,6 +49,8 @@ The information below is provided by China Travel Service (Hong Kong) Limited.
 
 ## 2. Hong Kong SkyCity Marriott Hotel (5*)
 
+<font color="red"><b>Full!</b> We suggest participants interested in this hotel to book Regal Airport Hotel instead.</font> 
+
 <b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
 
 <table>
