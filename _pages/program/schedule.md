@@ -583,7 +583,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 schedule, with ba
    - Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks (&#35;373)
    - Learning Only from Relevant Keywords and Unlabeled Documents (&#35;399)
    - Denoising-based Sequence-to-Sequence Pre-training for Text Generation (&#35;592)
-   - Dialog Goal Induction with Deep Multi-View Clustering (&#35;686)
+   - Dialog Intent Induction with Deep Multi-View Clustering (&#35;686)
    - Nearly-Unsupervised Hashcode Representations for Biomedical Relation Extraction (&#35;718)
    - Auditing Deep Learning processes through Kernel-based Explanatory Models (&#35;888)
    - Enhancing Recurrent Variational Autoencoders with Mutual Information Estimation for Text Generation (&#35;1060)

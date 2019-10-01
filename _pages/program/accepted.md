@@ -129,7 +129,7 @@ The long papers, short papers, and demo papers listed below have been accepted a
 - <span style="color:cornflowerblue">Detect Camouflaged Spam Content via StoneSkipping: Graph and Text Joint Embedding for Chinese Character Variation Representation</span><br><i>Zhuoren Jiang, Zhe Gao, Guoxiu He, Yangyang Kang, Changlong Sun, Qiong Zhang, Luo Si and Xiaozhong Liu</i>
 - <span style="color:cornflowerblue">Detecting and Reducing Bias in a High Stakes Domain</span><br><i>Ruiqi Zhong, Yanda Chen, Desmond Patton, Charlotte Selous and Kathy McKeown</i>
 - <span style="color:cornflowerblue">Detecting Causal Language Use in Science Findings</span><br><i>Bei Yu, Yingya Li and Jun Wang</i>
-- <span style="color:cornflowerblue">Dialog Goal Induction with Deep Multi-View Clustering</span><br><i>Hugh Perkins and Yi Yang</i>
+- <span style="color:cornflowerblue">Dialog Intent Induction with Deep Multi-View Clustering</span><br><i>Hugh Perkins and Yi Yang</i>
 - <span style="color:cornflowerblue">DialogueGCN: A Graph-based Network for Emotion Recognition in Conversation</span><br><i>Deepanway Ghosal, Navonil Majumder, Soujanya Poria, Niyati Chhaya and Alexander Gelbukh</i>
 - <span style="color:cornflowerblue">Different Acquisition from the Same Sharing: Sifting Multi-task Learning for Fake News Detection</span><br><i>Lianwei Wu, Yuan Rao, Haolin Jin, Ambreen Nazir and Ling Sun</i>
 - <span style="color:cornflowerblue">Discourse-Aware Semantic Self-Attention for Narrative Reading Comprehension</span><br><i>Todor Mihaylov and Anette Frank</i>
