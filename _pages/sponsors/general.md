@@ -40,10 +40,6 @@ platinum:
     image_path: /assets/images/logos/baidu-logo.png
     alt: "Baidu Logo"
     title: "Baidu"
-  - url: http://www.gtcom.com.cn/en/
-    image_path: /assets/images/logos/gtcom-logo.png
-    alt: "GTCOM Logo"
-    title: "GTCOM"
   - url: http://www.deepmind.com
     image_path: /assets/images/logos/deepmind-logo.png
     alt: "DeepMind Logo"
@@ -52,6 +48,7 @@ platinum:
     image_path: /assets/images/logos/amazon-logo.png
     alt: "Amazon Logo"
     title: "Amazon"
+  - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
 gold:
   - url: https://www.poly-ai.com
@@ -107,14 +104,11 @@ silver:
     title: "Cisco"
   - image_path: /assets/images/logos/blank-logo.png
 bronze:  
-  - url: https://www.isi.edu
-    image_path: /assets/images/logos/isi-logo.png
-    alt: "ISI Logo"
-    title: "Information Science Institute"
   - url: http://shannon.ai
     image_path: /assets/images/logos/shannon-logo.png
     alt: "Shannon AI Logo"
     title: "Shannon AI"    
+  - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
     
 ---
