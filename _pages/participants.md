@@ -60,7 +60,7 @@ EMNLP 2019 seeks student volunteers who will receive a free registration to the 
         <tr style="background-color: #eee;">
             <td>Notification of acceptance</td>
             <td>Thursday</td>
-            <td>September <strike>19</strike> 26, 2019</td>
+            <td><strike>September 26, 2019</strike></td>
         </tr>      
     </tbody>
 </table>
@@ -89,7 +89,7 @@ Here is the <a href="downloads/childcare-policy.pdf">full policy</a>, and please
         <tr style="background-color: #eee;">
             <td>Notification of acceptance</td>
             <td>Thursday</td>
-            <td>September 26, 2019</td>
+            <td><strike>September 26, 2019</strike></td>
         </tr>      
     </tbody>
 </table>

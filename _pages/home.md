@@ -219,7 +219,7 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
         <tr style="background-color: #eee;">
           <td>Travel scholarships &amp; student volunteer notification</td>
           <td style="width: 30%;">Thursday</td>
-          <td>September <strike>19</strike> 26, 2019</td>
+          <td><strike>September 26, 2019</strike></td>
         </tr>
         
 <!--
