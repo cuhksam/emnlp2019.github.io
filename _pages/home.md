@@ -35,17 +35,14 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
-**September 26, 2019**.
-A first version of the [main conference schedule](./program/schedule/) is out. 
+**October 7, 2019**.
+The [main conference schedule](./program/schedule/) now also includes demo presentations. 
 
 **September 23, 2019**.
 We published our policy regarding [remote presentations](./participants#remote-presentations).
 
 **September 22, 2019**.
 The EMNLP-IJCNLP 2019 registration is now open. [Directly register](https://aclweb.org/conference/emnlp-2019-conference-registration/) or first see [detailed registration information](./registration).
-
-**September 21, 2019**.
-The travel scholarships &amp; student volunteer notification has been postponed to September 26. 
 
 **September 20, 2019**.
 We also provide online forms for [hotels and transfer](./participants/hotels/) now.
@@ -65,9 +62,6 @@ We are delighted to announce three [keynote speakers](./program/keynotes/).
 **September 3, 2019**.
 Updated information on [Conference Venue](./participants#conference-venue) and [Hong Kong Travel](./participants#about-hong-kong).
 
-**August 30, 2019**.
-We are happy to announce [Childcare Grants](./participants#childcare-grants) for participants with young children. Please apply by Sept 19, 2019.
-
 **August 24, 2019**.
 The list of [accepted long, short, and demo papers](./program/accepted/) is out.
 
@@ -76,11 +70,20 @@ Important [visa information](./participants#visa-information) now available.
 
 
 <!-- OUTDATED NEWS
+**September 26, 2019**.
+A first version of the [main conference schedule](./program/schedule/) is out. 
+
 **September 22, 2019**.
 The EMNLP-IJCNLP 2019 [registration fees](./registration) have now been defined. Registration will open in a few days.
 
+**September 21, 2019**.
+The travel scholarships &amp; student volunteer notification has been postponed to September 26. 
+
 **September 15, 2019**.
 The [registration](./registration) is going to open within the next week.
+
+**August 30, 2019**.
+We are happy to announce [Childcare Grants](./participants#childcare-grants) for participants with young children. Please apply by Sept 19, 2019.
 
 **August 23, 2019**.
 See our [update on conference organization](./participants#an-update-on-conference-organization) in light of the current situation in Hong Kong.
