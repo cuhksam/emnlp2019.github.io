@@ -18,7 +18,16 @@ Below, you find diverse useful information for participants of the EMNLP-IJCNLP 
 
 ## Update on Conference Organization
 
-(August 23, 2019)
+<b>October 9, 2019</b>
+
+Regarding recent events in Hong Kong, we would like to update prospective attendees with information regarding safety and transportation. We are committed to the conference proceeding as planned, in what we expect to be the stability and broad safety of the conference venue area and Lantau Island more generally, and the conference has (like many registrants) non-refundable commitments to the conference proceeding as planned. 
+
+While we recognize that there may be periodic local disruptions in the central area, most of Hong Kong proceed with their work and normal lives, and in the many months of protests so far, tourists have consistently remained safe and except for a few hours over 4 months, the airport (and conference venue area) has proceeded on a normal schedule. If in the unlikely event of significant public transportation disruptions, we plan to arrange conference-dedicated bus transport from key hotel areas in both Kowloon and the major Lantau Island hotels, and several of these remain within easy walking distance, and our exciting social event at Hong Kong Disneyland is quite close to the conference venue. In addition, taxis and car-sharing services (e.g., Uber) remain readily available as usual. Many thousands of flights a week from around the world continue to arrive in Hong Kong on their normal schedule. 
+
+We will actively keep prospective attendees updated regarding security measures, transportation, food, etc.
+
+
+<b>August 23, 2019</b>
 
 The conference organizing committee has been working hard to welcome you on Nov 3&ndash;7 in Hong Kong. We fully expect EMNLP-IJCNLP 2019 will proceed as planned.
 
