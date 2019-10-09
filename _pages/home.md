@@ -36,9 +36,7 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 **October 9, 2019**.
-The early registration deadline is approaching: October 10, 11:59PM EDT. Directly register [here](https://aclweb.org/conference/emnlp-2019-conference-registration/).
-
-Notice that each paper in the proceedings (main conference or workshop) needs to (i) have at least one author registered by the early registration deadline and (ii) have been presented at the conference, in order for the paper to be included in the proceedings.
+The early registration deadline is approaching: October 10, 11:59PM EDT. Directly register [here](https://aclweb.org/conference/emnlp-2019-conference-registration/). Notice that each paper in the proceedings (main conference or workshop) needs to (i) have at least one author registered by the early registration deadline and (ii) have been presented at the conference, in order for the paper to be included in the proceedings.
 
 **October 9, 2019**.
 See our [latest update](./participants) on the conference organization.
