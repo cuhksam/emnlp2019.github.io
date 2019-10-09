@@ -40,6 +40,9 @@ The early registration deadline is approaching: October 10, 11:59PM EDT. Directl
 
 Notice that each paper in the proceedings (main conference or workshop) needs to (i) have at least one author registered by the early registration deadline and (ii) have been presented at the conference, in order for the paper to be included in the proceedings.
 
+**October 9, 2019**.
+See our [latest update](./participants) on the conference organization.
+
 **October 7, 2019**.
 The [main conference schedule](./program/schedule/) now also includes demo presentations. 
 
