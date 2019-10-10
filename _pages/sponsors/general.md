@@ -19,7 +19,7 @@ diamond:
     image_path: /assets/images/logos/hongkong-tourism-logo.png
     alt: "Hong Kong Tourism Board Logo"
     title: "Hong Kong Tourism Board"
-  - url: https://www.apple.com
+  - url: https://www.apple.com/jobs/us/teams/machine-learning-and-ai.html 
     image_path: /assets/images/logos/apple-logo.png
     alt: "Apple Logo"
     title: "Apple"
