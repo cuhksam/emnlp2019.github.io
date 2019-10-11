@@ -25,7 +25,7 @@ The information below is provided by China Travel Service (Hong Kong) Limited.
 
 ## 1. Regal Airport Hotel (5*) 
 
-<b>Booking Method:</b> <a href="https://www.booking.regalhotel.com/?rhotel=RAH&prgroup=emnlp2019&utm_source=cts&utm_medium=link&utm_campaign=rah_empirical_methods_in_nlp" target="_blank">Regal Hotel booking link</a><br>
+<font color="red"><b>Full!</b></font> 
 
 <table>
 <tr>
@@ -49,9 +49,7 @@ The information below is provided by China Travel Service (Hong Kong) Limited.
 
 ## 2. Hong Kong SkyCity Marriott Hotel (5*)
 
-<font color="red"><b>Full!</b> We suggest participants interested in this hotel to book Regal Airport Hotel instead.</font> 
-
-<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<font color="red"><b>Full!</b></font> 
 
 <table>
 <tr>
@@ -74,7 +72,7 @@ The information below is provided by China Travel Service (Hong Kong) Limited.
 
 ## 3. Novotel City Gate Hong Kong (4*) 
 
-<b>Booking Method:</b> Form (<a href="https://mice.ctshkvip.com/" target="_blank">online</a>, <a href="../../downloads/hotel-booking-form.pdf">pdf</a>, <a href="../../downloads/hotel-booking-form.docx">docx</a>)
+<font color="red"><b>Full!</b></font> 
 
 <table>
 <tr>
