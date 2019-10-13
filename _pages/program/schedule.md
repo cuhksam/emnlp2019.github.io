@@ -136,7 +136,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 main conference s
 <b> &mdash; Session 2D: Information Extraction I </b>       
    - <i> 13:30&ndash;13:48 </i><br> Fine-Grained Evaluation for Entity Linking  (&#35; 116)
    - <i> 13:48&ndash;14:06 </i><br> Supervising Unsupervised Open Information Extraction Models  (&#35; 3069)
-   - <i> 14:06&ndash;14:24 </i><br> Neural Cross-Lingual Event Detection with Minimal Parallel Resources  (&#35; 1723)
+   - <i> 14:06&ndash;14:24 </i><br> A Little Annotation does a Lot of Good: A Study in Bootstrapping Low-resource Named Entity Recognizers  (&#35; 3259)
    - <i> 14:24&ndash;14:42 </i><br> KnowledgeNet: A Benchmark Dataset for Knowledge Base Population  (&#35; 1258)
    - <i> 14:42&ndash;15:00 </i><br> Effective Use of Transformer Networks for Entity Tracking  (&#35; 3308)
          
@@ -579,7 +579,6 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 main conference s
         - Using Pairwise Occurrence Information to Improve Knowledge Graph Completion on Large-Scale Datasets  (&#35; 2696)
         - Single Training Dimension Selection for Word Embedding with PCA  (&#35; 2741)
         - A Surprisingly Effective Fix for Deep Latent Variable Modeling of Text  (&#35; 3040)
-        - SciBERT: A Pretrained Language Model for Scientific Text  (&#35; 3115)
         - Humor Detection: A Transformer Gets the Last Laugh  (&#35; 3265)
         - Combining Global Sparse Gradients with Local Gradients in Distributed Neural Network Training  (&#35; 3585)
         - Small and Practical BERT Models for Sequence Labeling  (&#35; 3631)
@@ -807,7 +806,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 main conference s
          
 <b> &mdash; Session 10C: Information Extraction III </b>       
    - <i> 13:30&ndash;13:48 </i><br> CrossWeigh: Training Named Entity Tagger from Imperfect Annotations  (&#35; 2712)
-   - <i> 13:48&ndash;14:06 </i><br> A Little Annotation does a Lot of Good: A Study in Bootstrapping Low-resource Named Entity Recognizers  (&#35; 3259)
+   - <i> 13:48&ndash;14:06 </i><br> Neural Cross-Lingual Event Detection with Minimal Parallel Resources  (&#35; 1723)
    - <i> 14:06&ndash;14:24 </i><br> Open Domain Web Keyphrase Extraction Beyond Language Modeling  (&#35; 1119)
    - <i> 14:24&ndash;14:42 </i><br> TuckER: Tensor Factorization for Knowledge Graph Completion  (&#35; 990)
    - <i> 14:42&ndash;15:00 </i><br> Weakly Supervised Domain Detection  (&#35; TACL-1712)
@@ -1020,6 +1019,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 main conference s
         - Towards Machine Reading for Interventions from Humanitarian-Assistance Program Literature  (&#35; 3718)
         - RUN through the Streets: A New Dataset and Baseline Models for Realistic Urban Navigation  (&#35; 4014)
         - Context-Aware Conversation Thread Detection in Multi-Party Chat  (&#35; 162)
+        - SciBERT: A Pretrained Language Model for Scientific Text  (&#35; 3115)
          
          
 ### Mini-Break        
