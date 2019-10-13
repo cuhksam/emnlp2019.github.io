@@ -10,7 +10,7 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-The long papers, short papers, and demo papers listed below have been accepted at the EMNLP-IJCNLP 2019. 
+The long papers, short papers, and demo papers listed below have been accepted at the EMNLP-IJCNLP 2019. Notice that some papers may have changed their exact title after acceptance.
 
 
 ## Long Papers
