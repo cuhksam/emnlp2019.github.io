@@ -859,7 +859,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 main conference s
         - Automatic Argument Quality Assessment - New Datasets and Methods  (&#35; 2447)
         - Fine-Grained Analysis of Propaganda in News Article  (&#35; 2493)
         - Context-aware Interactive Attention for Multi-modal Sentiment and Emotion Analysis  (&#35; 2707)
-        - Sequential Learning of Convolutional Features or Effective Text Classification  (&#35; 3182)
+        - Sequential Learning of Convolutional Features for Effective Text Classification  (&#35; 3182)
         - The Role of Pragmatic and Discourse Context in Determining Argument Impact  (&#35; 3909)
         - Aspect-Level Sentiment Analysis Via Convolution over Dependency Tree  (&#35; 4182)
          
