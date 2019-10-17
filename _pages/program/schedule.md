@@ -343,7 +343,7 @@ This page shows a preliminary version of the EMNLP-IJCNLP 2019 main conference s
         - Fusion of Detected Objects in Text for Visual Question Answering  (&#35; 3099)
         - TIGEr: Text-to-Image Grounding for Image Caption Evaluation  (&#35; 3260)
          
-        - GG: a toolkit for research on Emergence of lanGuage in Games   (&#35; DEMO-38)
+        - EGG: a toolkit for research on Emergence of lanGuage in Games   (&#35; DEMO-38)
         - Chameleon: A Language Model Adaptation Toolkit for Automatic Speech Recognition of Conversational Speech  (&#35; DEMO-43)
         - PyOpenDial: A Python-based Domain-Independent Toolkit for Developing Spoken Dialogue Systems with Probabilistic Rules  (&#35; DEMO-60)
         - PolyResponse: A Rank-based Approach to Task-Oriented Dialogue with Application in Restaurant Search and Booking  (&#35; DEMO-67)
