@@ -13,7 +13,7 @@ import frontmatter
 import pandas as pd
 
 # read in the custom list template
-df_sponsors = pd.read_csv('Guidebook_CL_Template.csv')
+df_sponsors = pd.read_csv('data/app/Guidebook_CL_Template.csv')
 rows = []
 
 # create the directory that will store the resized sponsor logs
@@ -25,7 +25,7 @@ thumbnail_zipfh = zipfile.ZipFile('sponsor-thumbs.zip', 'w')
 
 # read in the frontmatter from the sponsors page so that we can get
 # the logos by sponsor level
-content = frontmatter.load('../_pages/sponsors/list.md')
+content = frontmatter.load('../_pages/sponsors/general.md')
 for level in ['diamond', 'platinum', 'gold', 'silver', 'bronze', 'supporter']:
     print(level)
     try:
@@ -63,4 +63,4 @@ thumbnail_zipfh.close()
 
 # write the custom list rows out to a CSV file
 df_sponsors = df_sponsors.append(rows)
-df_sponsors.to_csv('emnlp2018-sponsors.csv', index=False)
+df_sponsors.to_csv('emnlp2019-sponsors.csv', index=False)

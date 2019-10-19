@@ -10,11 +10,11 @@
 
 1. Install the python-frontmatter package. 
 
-2. Make sure you have the Guidebook custom list template in the same directory as the script (file named `Guidebook_CL_Template.csv`).
+2. Make sure you have the `convert` tool from ImageMagick.
 
 3. Run `python generate_app_sponsor_logos.py`.
 
-4. Upload the generated files `emnlp2018-sponsors.csv` and `sponsors-thumbs.zip` into the "Sponsors" custom list in the GuideBook builder.
+4. Upload the generated files `emnlp2019-sponsors.csv` and `sponsors-thumbs.zip` into the "Sponsors" custom list in the GuideBook builder.
 
 ## To generate the schedule for the GuideBook app
 
