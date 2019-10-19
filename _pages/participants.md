@@ -16,7 +16,28 @@ Below, you find diverse useful information for participants of the EMNLP-IJCNLP 
 
 
 
-## Update on Conference Organization
+## Updates on Conference Organization
+
+<b>October 19, 2019</b>
+
+We are delighted to let you know that over 1,700 people have registered for the conference. This is already the largest IJCNLP ever and one of the largest EMNLP's ever. We look forward to welcoming you at the venue!
+
+For your convenience and to avoid any issues with affected areas during the conference, we have made the following special arrangements:
+
+1. Apps by the Hong Kong government reporting the latest situation and by the MTR (i.e., the public train service) giving up-to-date train schedules will be made available for download.
+2. We have assigned a local information officer to update the conference website with the latest information about the city.
+3. We still have some guestrooms available in the hotels in Kwai Chung, Tsing Yi and Tsuen Wan.  Please note that they do go fast and participants are advised to [book](https://www.emnlp-ijcnlp2019.org/participants/hotels/) ASAP.
+4. We provide free circular shuttle service between the Airport Regal Hotel and AWE (the conference venue).
+5. We provide return shuttle bus service between hotels in Kwai Chung, Tsing Yi, and Tsuen Wan to AWE everyday. The schedule will be announced shortly. Please note that participants must book their shuttle in advance (HKD100 per day) via our [hotel page](https://www.emnlp-ijcnlp2019.org/participants/hotels/) or directly [here](https://mice.ctshkvip.com/transfer-booking/).
+6. We provide free shuttle service for the social event on the evening of November 6, 2019:
+
+   - From AWE to Hong Kong Disneyland (HKDL). Student helpers will hold up boards to guide participants to the shuttle at the end of the Conference day.
+   - After the event, there are two routes of shuttle bus services: (a) HKDL -> Airport -> SkyCity Marriot Hotel; (b) HKDL -> Hotels in Kwai Chung, Tsuan Wan, and Tsing Yi.
+   
+7. There are many food service establishments at the airport, but their access is normally restricted to travelers with valid flight tickets. We have obtained permission from the authority for free access to the airport by EMNLP-IJCNLP 2019 participants simply by presenting their conference pass.
+
+We hope you will have a pleasant stay in Hong Kong! 
+
 
 <b>October 9, 2019</b>
 
