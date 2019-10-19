@@ -20,10 +20,12 @@ import logging
 
 from datetime import datetime
 from itertools import count
+import re
 
 from parse_order_file_and_generate_schedule import (NON_PAPER_SESSION_REGEXP,
                                                     BREAK_SESSION_REGEXP,
                                                     PAPER_SESSION_GROUP_REGEXP,
+                                                    PAPER_SESSION_GROUP_REGEXP2,
                                                     PAPER_SESSION_REGEXP,
                                                     PAPER_REGEXP,
                                                     POSTER_DEMO_REGEXP,
@@ -142,6 +144,7 @@ def main():
         # now iterate over each session in the day
         for session in day_sessions:
             session_string = session.pop(0).lstrip('+ ').strip()
+            print(session_string)
             if 'break' in session_string.lower() or 'lunch' in session_string.lower():
                 session_start, session_end, break_title = BREAK_SESSION_REGEXP.match(session_string).groups()
                 if break_title.lower() == 'lunch':
@@ -153,28 +156,30 @@ def main():
                 session_csv_writer.writerow([next(app_id_counter), break_title, day_datetime.strftime('%D'), session_start, session_end, '', 'Conference Sessions', ''])
             elif 'keynote' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
-                if 'Julia' in session_title:
-                    session_title = session_title.replace('Julia Hirschberg ', '')
-                    session_abstract = KEYNOTE_ABSTRACT_DICT['Julia']
-                    session_people = 'Julia Hirschberg (Columbia University)'
-                    session_people_link = 'http://www.cs.columbia.edu/~julia/'
-                elif 'Gideon' in session_title:
-                    session_title = session_title.replace('Gideon Mann ', '')
-                    session_abstract = KEYNOTE_ABSTRACT_DICT['Gideon']
-                    session_people = 'Gideon Mann (Bloomberg, L.P.)'
-                    session_people_link = 'https://sites.google.com/site/gideonmann/'
-                elif 'Johan' in session_title:
-                    session_title = session_title.replace('Johan Bos ', '')
-                    session_abstract = KEYNOTE_ABSTRACT_DICT['Johan']
-                    session_people = 'Johan Bos (University of Groningen)'
-                    session_people_link = 'https://www.rug.nl/staff/johan.bos/'
+
+                if 'Cha' in session_title:
+                    session_title = session_title.replace('Meeyoung Cha ', '')
+                    session_abstract = KEYNOTE_ABSTRACT_DICT['Cha']
+                    session_people = 'Meeyoung Cha (KAIST)'
+                    session_people_link = 'https://ds.kaist.ac.kr/professor.html'
+                elif 'Cho' in session_title:
+                    session_title = session_title.replace('Kyunghyun Cho ', '')
+                    session_abstract = KEYNOTE_ABSTRACT_DICT['Cho']
+                    session_people = 'Kyunghyun Cho (New York University)'
+                    session_people_link = 'http://www.kyunghyuncho.me'
+                elif 'Slonim' in session_title:
+                    session_title = session_title.replace('Noam Slonim ', '')
+                    session_abstract = KEYNOTE_ABSTRACT_DICT['Slonim']
+                    session_people = '(IBM Haifa Research Lab)'
+                    session_people_link = 'http://researcher.watson.ibm.com/researcher/view.php?person=il-NOAMS'
+
                 session_csv_writer.writerow([next(app_id_counter), '{} - {}'.format(session_title, session_people), day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', session_abstract])
             elif 'opening' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', ''])
             elif 'social event' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
-                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, 'Royal Museums of Fine Arts of Belgium', 'Conference Sessions', 'On the evening of Saturday, November 3rd, the EMNLP 2018 social event will take place at the Royal Museums of Fine Arts of Belgium. Four museums, housed in a single building, will welcome the EMNLP delegates with their prestigious collection of 20,000 works of art. The Museums’ collections trace the history of the visual arts — painting, sculpture and drawing — from the 15th to the 21st century.'])
+                session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, 'Social Location', 'Conference Sessions', 'Social Description: TODO'])
             elif 'business meeting' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
                 session_csv_writer.writerow([next(app_id_counter), session_title, day_datetime.strftime('%D'), session_start, session_end, session_location, 'Conference Sessions', 'All attendees are strongly encouraged to participate in the business meeting.'])
@@ -198,10 +203,8 @@ def main():
                             app_author_id_dict[best_paper_author] = app_author_id
                         author_csv_writer.writerow([app_paper_id, app_author_id, best_paper_author])
                         linking_csv_writer.writerow([app_session_id, app_paper_id, app_author_id])
-            elif 'orals' in session_string.lower():
-                session_group_start, session_group_end, session_group_type, session_group_description, session_group_roman_numeral = PAPER_SESSION_GROUP_REGEXP.match(session_string).groups()
-                session_group_type = session_group_type.replace('and', '&amp;')
-                session_group_description = session_group_description.replace('and', '&amp;')
+            elif re.search(r"Session (\d+)", session_string):
+                session_group_start, session_group_end, session_group_description = PAPER_SESSION_GROUP_REGEXP2.match(session_string).groups()
                 day_session_splits = collect_instances(iter(session), '=')
                 for split in day_session_splits:
                     split_string = split.pop(0).lstrip('= ').strip()
@@ -215,7 +218,7 @@ def main():
                         session_location = session_parens.strip()
                         session_type = ''
                     app_session_id = next(app_id_counter)
-                    if 'poster' in session_type.lower() or 'poster' in session_title.lower():
+                    if 'poster' in session_type.lower() or 'poster' in session_id.lower():
                         session_title = '{} ({})'.format(session_title, session_type) if session_type else session_title
                         session_csv_writer.writerow([app_session_id, session_title.replace('&amp;', '&'), day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Conference Sessions', ''])
                     else:
@@ -223,7 +226,7 @@ def main():
                         session_csv_writer.writerow([app_session_id, session_title.replace('&amp;', '&'), day_datetime.strftime('%D'), session_group_start, session_group_end, session_location, 'Conference Sessions', 'Session Chair: {}'.format(session_chair_name)])
                     for paper in split:
                         paper = paper.strip()
-                        if 'poster' in session_type.lower() or 'poster' in session_title.lower():
+                        if 'poster' in session_type.lower() or 'poster' in session_id.lower():
                             if paper.startswith('@'):
                                 continue
                             else:

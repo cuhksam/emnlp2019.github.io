@@ -33,15 +33,16 @@ from itertools import count, cycle
 NON_PAPER_SESSION_REGEXP = re.compile(r'([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+(.*?)\s+\((.*?)\)')
 BREAK_SESSION_REGEXP = re.compile(r'([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+(.*)')
 PAPER_SESSION_GROUP_REGEXP = re.compile(r'([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+(.*?)\((.*?)\)\s+(.*)')
+PAPER_SESSION_GROUP_REGEXP2 = re.compile(r'([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s+(.*)')
 PAPER_SESSION_REGEXP = re.compile(r'Session ([^:]+): ([^\(]+) \((.*?)\)')
 PAPER_REGEXP = re.compile(r'([^ ]+)\s+([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s#\s(.*)')
 POSTER_DEMO_REGEXP = re.compile(r'([^ ]+)\s#\s(.*)')
 BEST_PAPER_REGEXP = re.compile(r'([^ ]+)\s+([0-9]{2}:[0-9]{2})--([0-9]{2}:[0-9]{2})\s#\s(.*)')
 
 KEYNOTE_ABSTRACT_DICT = {
-    'Julia': 'Detecting deception from various forms of human behavior is a longstanding research goal which is of considerable interest to the military, law enforcement, corporate security, social services and mental health workers. However, both humans and polygraphs are very poor at this task. We describe more accurate methods we have developed to detect deception automatically from spoken language. Our classifiers are trained on the largest cleanly recorded corpus of within-subject deceptive and non-deceptive speech that has been collected. To distinguish truth from lie we make use of acoustic-prosodic, lexical, demographic, and personality features. We further examine differences in deceptive behavior based upon gender, personality, and native language (Mandarin Chinese vs. English), comparing our systems to human performance. We extend our studies to identify cues in trusted speech vs. mistrusted speech and how these features differ by speaker and by listener. Why does a listener believe a lie?',
-    'Gideon': 'Since the dawn of human civilization, finance and language technology have been connected. However, only recently have advances in statistical language understanding, and an ever-increasing thirst for market advantage, led to the widespread application of natural language technology across the global capital markets. This talk will review the ways in which language technology is enabling market participants to quickly understand and respond to major world events and breaking business news. It will outline the state of the art in applications of NLP to finance and highlight open problems that are being addressed by emerging research.',
-    'Johan': 'There are many recent advances in semantic parsing: we see a rising number of semantically annotated corpora and there is exciting technology (such as neural networks) to be explored. In this talk I will discuss what role computational semantics could play in future natural language processing applications (including fact checking and machine translation). I will argue that we should not just look at semantic parsing, but that things can get really interesting when we can use language-neutral meaning representations to draw (transparent) inferences. The main ideas will be exemplified by the parallel meaning bank, a new corpus comprising texts annotated with formal meaning representations for English, Dutch, German and Italian.'}
+    'Cha': 'Artificial intelligence (AI) is reshaping business and science. Computational social science is an interdisciplinary field that solves complex societal problems by adopting AI-driven methods, processes, algorithms, and systems on data of various forms. This talk will review some of the latest advances in the research that focuses on fake news and legal liability. I will first discuss the structural, temporal, and linguistic traits of fake news propagation. One emerging challenge here is the increasing use of automated bots to generate and propagate false information. I will also discuss the current issues on the legal liability of AI and robots, particularly on how to regulate them (e.g., moral machine, punishment gap). This talk will suggest new opportunities to tackle these problems.',
+    'Cho': 'In this talk, I take the audience on a tour of my earlier and recent experiences in building neural sequence models. I start from the earlier experience of using a recurrent net for sequence-to-sequence learning and talk about the attention mechanism. I discuss factors behind the success of these earlier approaches, and how these were embraced by the community even before they sota’d. I then move on to more recent research direction in unconventional neural sequence models that automatically learn to decide on the order of generation.',
+    'Slonim': 'Project Debater is the first AI system that can meaningfully debate a human opponent. The system, an IBM Grand Challenge, is designed to build coherent, convincing speeches on its own, as well as provide rebuttals to the opponent’s main arguments. In February 2019, Project Debater competed against Harish Natarajan, who holds the world record for most debate victories, in an event held in San Francisco that was broadcasted live world-wide. In this talk I will tell the story of Project Debater, from conception to a climatic final event, describe its underlying technology, and discuss how it can be leveraged for advancing decision making and critical thinking.'}
 
 
 def process_line(line):
@@ -172,21 +173,23 @@ def main():
                 generated_html.append('<div class="session session-break session-plenary" id="session-{}-{}"><span class="session-title">{}</span><br/><span class="session-time" title="{}">{} &ndash; {}</span></div>'.format(break_type, break_id, break_title, day_string, session_start, session_end))
             elif 'keynote' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
-                if 'Julia' in session_title:
-                    session_title = session_title.replace('Julia Hirschberg ', '')
-                    session_abstract = KEYNOTE_ABSTRACT_DICT['Julia']
-                    session_people = 'Julia Hirschberg (Columbia University)'
-                    session_people_link = 'http://www.cs.columbia.edu/~julia/'
-                elif 'Gideon' in session_title:
-                    session_title = session_title.replace('Gideon Mann ', '')
-                    session_abstract = KEYNOTE_ABSTRACT_DICT['Gideon']
-                    session_people = 'Gideon Mann (Bloomberg, L.P.)'
-                    session_people_link = 'https://sites.google.com/site/gideonmann/'
-                elif 'Johan' in session_title:
-                    session_title = session_title.replace('Johan Bos ', '')
-                    session_abstract = KEYNOTE_ABSTRACT_DICT['Johan']
-                    session_people = 'Johan Bos (University of Groningen)'
-                    session_people_link = 'https://www.rug.nl/staff/johan.bos/'
+
+                if 'Cha' in session_title:
+                    session_title = session_title.replace('Meeyoung Cha ', '')
+                    session_abstract = KEYNOTE_ABSTRACT_DICT['Cha']
+                    session_people = 'Meeyoung Cha (KAIST)'
+                    session_people_link = 'https://ds.kaist.ac.kr/professor.html'
+                elif 'Cho' in session_title:
+                    session_title = session_title.replace('Kyunghyun Cho ', '')
+                    session_abstract = KEYNOTE_ABSTRACT_DICT['Cho']
+                    session_people = 'Kyunghyun Cho (New York University)'
+                    session_people_link = 'http://www.kyunghyuncho.me'
+                elif 'Slonim' in session_title:
+                    session_title = session_title.replace('Noam Slonim ', '')
+                    session_abstract = KEYNOTE_ABSTRACT_DICT['Slonim']
+                    session_people = 'Noam Slonim (IBM Haifa Research Lab)'
+                    session_people_link = 'http://researcher.watson.ibm.com/researcher/view.php?person=il-NOAMS'
+
                 generated_html.append('<div class="session session-expandable session-plenary"><div id="expander"></div><a href="#" class="session-title"><strong>{}</strong></a><br/><span class="session-people"><a href="{}" target="_blank">{}</a></span><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="paper-session-details"><br/><div class="session-abstract"><p>{}</p></div></div></div>'.format(session_title, session_people_link, session_people, day_string, session_start, session_end, session_location, session_abstract))
             elif 'opening' in session_string.lower():
                 session_start, session_end, session_title, session_location = NON_PAPER_SESSION_REGEXP.match(session_string).groups()
@@ -206,12 +209,13 @@ def main():
                     best_paper_url = get_anthology_link(anthology_dict[best_paper_title.lower()])
                     generated_html.append('<tr id="best-paper" paper-id="{}"><td id="paper-time">{}&ndash;{}</td><td><span class="paper-title">{}. </span><em>{}</em>&nbsp;&nbsp;<i class="fa fa-file-pdf-o paper-icon" data="{}" aria-hidden="true"></i></td></tr>'.format(best_paper_id, best_paper_start, best_paper_end, best_paper_title, best_paper_authors, best_paper_url))
                 generated_html.append('</table></div></div>')
-            elif 'orals' in session_string.lower():
-                session_group_start, session_group_end, session_group_type, session_group_description, session_group_roman_numeral = PAPER_SESSION_GROUP_REGEXP.match(session_string).groups()
+            elif re.search(r"Session (\d+)", session_string):
+                session_group_start, session_group_end, session_group_description = PAPER_SESSION_GROUP_REGEXP2.match(session_string).groups()
                 paper_session_group_id = next(paper_session_group_counter)
-                session_group_type = session_group_type.replace('and', '&amp;')
-                session_group_description = session_group_description.replace('and', '&amp;')
-                generated_html.append('<div class="session-box" id="session-box-{}"><div class="session-header" id="session-header-{}">{}{} ({})</div>'.format(paper_session_group_id, paper_session_group_id, session_group_type, session_group_roman_numeral, session_group_description))
+                #session_group_type = session_group_type.replace('and', '&amp;')
+                #session_group_description = session_group_description.replace('and', '&amp;')
+                #generated_html.append('<div class="session-box" id="session-box-{}"><div class="session-header" id="session-header-{}">{}{} ({})</div>'.format(paper_session_group_id, paper_session_group_id, session_group_type, session_group_roman_numeral, session_group_description))
+                generated_html.append('<div class="session-box" id="session-box-{}"><div class="session-header" id="session-header-{}"> ({})</div>'.format(paper_session_group_id, paper_session_group_id, session_group_description))
                 day_session_splits = collect_instances(iter(session), '=')
                 for split in day_session_splits:
                     split_string = split.pop(0).lstrip('= ').strip()
@@ -224,7 +228,7 @@ def main():
                     else:
                         session_location = session_parens.strip()
                         session_type = ''
-                    if 'poster' in session_type.lower() or 'poster' in session_title.lower():
+                    if 'poster' in session_type.lower() or 'poster' in session_id.lower():
                         session_title = '{} ({})'.format(session_title, session_type) if session_type else session_title
                         generated_html.append('<div class="session session-expandable session-posters" id="session-poster-{}"><div id="expander"></div><a href="#" class="session-title">{}: {} </a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><div class="poster-session-details"><br/><table class="poster-table">'.format(next(poster_session_counter), session_id, session_title, day_string, session_group_start, session_group_end, session_location))
                     else:
@@ -232,7 +236,7 @@ def main():
                         generated_html.append('<div class="session session-expandable session-papers{}" id="session-{}"><div id="expander"></div><a href="#" class="session-title">{}: {}</a><br/><span class="session-time" title="{}">{} &ndash; {}</span><br/><span class="session-location btn btn--info btn--location">{}</span><br/><div class="paper-session-details"><br/><a href="#" class="session-selector" id="session-{}-selector"> Choose All</a><a href="#" class="session-deselector" id="session-{}-deselector">Remove All</a><table class="paper-table"><tr><td class="session-chair" colspan="2">Chair: <a href="mailto:{}">{}</a></td></tr>'.format(next(paper_session_counter), session_id.lower(), session_id, session_title, day_string, session_group_start, session_group_end, session_location, session_id.lower(), session_id.lower(), session_chair_email, session_chair_name))
                     for paper in split:
                         paper = paper.strip()
-                        if 'poster' in session_type.lower() or 'poster' in session_title.lower():
+                        if 'poster' in session_type.lower() or 'poster' in session_id.lower():
                             if paper.startswith('@'):
                                 poster_topic = paper.lstrip('@ ')
                                 generated_html.append('<tr><td><span class="poster-type">{}</span></td></tr>'.format(poster_topic))
