@@ -1002,6 +1002,346 @@ script: |
 <div class="schedule">
 
 
+
+
+<!-- TUTORIAL AND WORKSHOP SCHEDULE --> 
+
+
+<div class="day" id="first-day">Sunday, 3 November 2019</div>
+
+	<!-- MORNING TUTORIALS -->
+	<div class="session session-expandable session-tutorials" id="session-morning-tutorials1">
+        <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
+        <span class="session-time" title="Sunday, November 3 2019">09:00 &ndash; 12:30</span><br/>
+        <div class="tutorial-session-details">
+            <br/>
+            <table class="tutorial-table">
+                <tr id="tutorial">
+                    <td>
+                        <span class="tutorial-title">
+                        	<strong>[T1] Dive into Deep Learning for Natural Language Processing.</strong> 
+                        	Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.
+                        </span>
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">
+                        	TBA
+                        </span>
+                    </td>
+                </tr>
+                <tr id="tutorial">
+                    <td>
+                        <span class="tutorial-title">
+                        	<strong>[T2] Processing and Understanding Mixed Language Data.</strong> 
+                        	Monojit Choudhury and Kalika Bali.
+                        </span>
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">
+                        	TBA
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!-- LUNCH BREAK -->
+    <div class="session session-break session-plenary" id="session-lunch-1">
+        <span class="session-title">Lunch</span><br/>        
+        <span class="session-time" title="Sunday, November 3 2019">12:30 &ndash; 14:00</span>
+    </div>    
+    
+    <!-- AFTERNOON TUTORIALS -->
+    <div class="session session-expandable session-tutorials" id="session-afternoon-tutorials1">
+        <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
+        <span class="session-time" title="Sunday, November 3 2019">14:00 &ndash; 17:30</span><br/>
+        <div class="tutorial-session-details">
+            <br/>
+            <table class="tutorial-table">
+            	<tr id="tutorial">
+                    <td>
+                        <span class="tutorial-title">
+                        	<strong>[T1] Dive into Deep Learning for Natural Language Processing  (cont.).</strong> 
+                        	Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.
+                        </span>
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">
+                        	TBA
+                        </span>
+                    </td>
+                </tr>
+                <tr id="tutorial">
+                    <td>
+                        <span class="tutorial-title">
+                        	<strong>[T3] Data Collection and End-to-End Learning for Conversational AI.</strong> 
+                        	Tsung-Hsien Wen, Pei-Hao Su, Pawe&#322; Budzianowski, I&ntilde;igo Casanueva and Ivan Vuli&#263;.
+                        </span>
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">
+                        	TBA
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!-- WORKSHOPS -->
+    <div class="session session-expandable session-workshops" id="session-workshops-1">
+        <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
+        <span class="session-time" title="Sunday, November 3 2019">08:30 &ndash; 18:00</span><br/>
+        <div class="workshop-session-details">
+            <br/>
+            <table class="workshop-table">
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W1] CoNLL 2019: The Conference on Computational Natural Language Learning (Day 1).</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W2] FEVER: The second workshop on Fact Extraction and VERification.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W3] DiscoMT19: Discourse in Machine Translation 2019 (half day).</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W4] LANTERN: Beyond Vision and Language: Integrating Knowledge from the Real World (half day).</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W5] MSR 2019: The second Workshop on Multilingual Surface Realization.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W6] LOUHI 2019: The Tenth International Workshop on Health Text Mining and Information Analysis.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W7] DeepLo 2019: Deep Learning for Low-Resource Natural Language Processing.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W8] COIN: COmmonsense INference in NLP.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W9] AnnoNLP: Aggregating and analysing crowdsourced annotations for NLP.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+<!-- SECOND TUTORIAL AND WORKSHOP DAY -->
+<div class="day" id="second-day">Monday, 4 November 2019</div>
+    
+	<!-- MORNING TUTORIALS -->    
+    <div class="session session-expandable session-tutorials" id="session-morning-tutorials2">
+        <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
+        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 12:30</span><br/>
+        <div class="tutorial-session-details">
+            <br/>
+            <table class="tutorial-table">
+                <tr id="tutorial">
+                    <td>
+                        <span class="tutorial-title">
+                        	<strong>[T4] Bias and Fairness in Natural Language Processing.</strong> 
+                        	Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez.
+                        </span>
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">
+                        	TBA
+                        </span>
+                    </td>
+                <tr id="tutorial">
+                    <td>
+                        <span class="tutorial-title">
+                        	<strong>[T5] Discreteness in Neural Natural Language Processing.</strong> 
+                        	Lili Mou, Hao Zhou and Lei Li.
+                        </span>
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">
+                        	TBA
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!-- LUNCH BREAK -->
+    <div class="session session-break session-plenary" id="session-lunch-2">
+        <span class="session-title">Lunch</span><br/>        
+        <span class="session-time" title="Monday November 4 2019">12:30 &ndash; 14:00</span>
+    </div>    
+    
+    <!-- AFTERNOON TUTORIALS -->
+    <div class="session session-expandable session-tutorials" id="session-afternoon-tutorials2">
+        <div id="expander"></div><a href="#" class="session-title">Afternoon Tutorials</a><br/>
+        <span class="session-time" title="Monday November 4 2019">14:00 &ndash; 17:30</span><br/>
+        <div class="tutorial-session-details">
+            <br/>
+            <table class="tutorial-table">
+                <tr id="tutorial">
+                    <td>
+                        <span class="tutorial-title">
+                        	<strong>[T6] Graph-based Deep Learning in Natural Language Processing.</strong> 
+                        	Shikhar Vashishth, Naganand Yadati and Partha Talukdar.
+                        </span>
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">
+                        	TBA
+                        </span>
+                    </td>
+                <tr id="tutorial">
+                    <td>
+                        <span class="tutorial-title">
+                        	<strong>[T7] Semantic Specialization of Distributional Word Vectors.</strong> 
+                        	Goran Glava&#347;, Edoardo Maria Ponti and Ivan Vuli&#263;.
+                        </span>
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">
+                        	TBA
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!-- WORKSHOPS -->
+    <div class="session session-expandable session-workshops" id="session-workshops-2">
+        <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
+        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:00</span><br/>
+        <div class="workshop-session-details">
+            <br/>
+            <table class="workshop-table">
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W1] CoNLL 2019: The Conference on Computational Natural Language Learning (Day 2).</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W10] MRQA: The 2nd Workshop on Machine Reading for Question Answering.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W11] BioNLP-OST 2019: International Workshop on BioNLP Open Shared Tasks 2019.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W12] WNGT: The 3rd Workshop on Neural Generation and Translation.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W13] W-NUT 2019: The 5th Workshop on Noisy User-generated Text.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W14] NewSum: The Workshop on New Frontiers in Summarization.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W15] TextGraphs-19: Graph-based Methods for Natural Language Processing.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W16] WAT2019: The 6th Workshop on Asian Translation.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W17] ECONLP 2019: The 2nd Workshop on Economics and Natural Language Processing.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+                <tr id="workshop">
+                    <td>
+                        <span class="workshop-title"><strong>[W18] NLP4IF: NLP for Freedom: Censorship, Disinformation, and Propaganda.</strong></span> 
+                        <br/>
+                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!-- WELCOME RECEPTION -->
+    <div class="session session-expandable session-plenary" id="session-reception">
+        <div id="expander"></div>
+        <a href="#" class="session-title">Welcome Reception</a>
+        <br/>
+        <span class="session-time" title="Monday November 4 2019">18:00 &ndash; 20:00</span>
+        <br/>
+        <span class="session-location btn btn--info btn--location">AsiaWorld Summit (Hall 2) and East Concourse, AsiaWorld Expo</span>
+        <div class="paper-session-details">
+            <br/><br/>
+            <div class="session-abstract">
+                <p>Catch up with your colleagues at the Welcome Reception in the conference venue, AsiaWorld Expo.</p>
+            </div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+<!-- MAIN CONFERENCE SCHEDULE -->
+
 <div class="day" id="day-3">Tuesday, 5 November 2019</div>
 <div class="session session-plenary" id="session-welcome"><span class="session-title">Opening Remarks</span><br/><span class="session-time" title="Tuesday, 5 November 2019">08:45 &ndash; 09:00</span><br/> <span class="session-location btn btn--info btn--location">Hall 2C</span></div>
 <div class="session session-expandable session-plenary"><div id="expander"></div><a href="#" class="session-title"><strong>Keynote I: "Project Debater - how persuasive can a computer be?"</strong></a><br/><span class="session-people"><a href="http://researcher.watson.ibm.com/researcher/view.php?person=il-NOAMS" target="_blank">Noam Slonim (IBM Haifa Research Lab)</a></span><br/><span class="session-time" title="Tuesday, 5 November 2019">09:00 &ndash; 10:00</span><br/><span class="session-location btn btn--info btn--location">Hall 2C</span><div class="paper-session-details"><br/><div class="session-abstract"><p>Project Debater is the first AI system that can meaningfully debate a human opponent. The system, an IBM Grand Challenge, is designed to build coherent, convincing speeches on its own, as well as provide rebuttals to the opponent’s main arguments. In February 2019, Project Debater competed against Harish Natarajan, who holds the world record for most debate victories, in an event held in San Francisco that was broadcasted live world-wide. In this talk I will tell the story of Project Debater, from conception to a climatic final event, describe its underlying technology, and discuss how it can be leveraged for advancing decision making and critical thinking.</p></div></div></div>
@@ -1909,7 +2249,9 @@ script: |
 </table></div></div>
 
 
-<!-- PDF BUTTON -->
+
+
+<!-- PDF PRINTING BUTTON -->
 
 </div>
 <div id="generatePDFForm">
