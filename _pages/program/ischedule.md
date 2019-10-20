@@ -1018,24 +1018,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title">
-                        	<strong>[T1] Dive into Deep Learning for Natural Language Processing.</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.
-                        </span>
-                        <br/>
-                        <span class="btn btn--info btn--location inline-location">
-                        	TBA
-                        </span>
+                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing.</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title">
-                        	<strong>[T2] Processing and Understanding Mixed Language Data.</strong> Monojit Choudhury and Kalika Bali.
-                        </span>
-                        <br/>
-                        <span class="btn btn--info btn--location inline-location">
-                        	TBA
-                        </span>
+                        <span class="tutorial-title"><strong>[T2] Processing and Understanding Mixed Language Data.</strong> Monojit Choudhury and Kalika Bali.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
                     </td>
                 </tr>
             </table>
@@ -1057,24 +1045,12 @@ script: |
             <table class="tutorial-table">
             	<tr id="tutorial">
                     <td>
-                        <span class="tutorial-title">
-                        	<strong>[T1] Dive into Deep Learning for Natural Language Processing  (cont.).</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.
-                        </span>
-                        <br/>
-                        <span class="btn btn--info btn--location inline-location">
-                        	TBA
-                        </span>
+                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing  (cont.).</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title">
-                        	<strong>[T3] Data Collection and End-to-End Learning for Conversational AI.</strong> Tsung-Hsien Wen, Pei-Hao Su, Pawe&#322; Budzianowski, I&ntilde;igo Casanueva and Ivan Vuli&#263;.
-                        </span>
-                        <br/>
-                        <span class="btn btn--info btn--location inline-location">
-                        	TBA
-                        </span>
+                        <span class="tutorial-title"><strong>[T3] Data Collection and End-to-End Learning for Conversational AI.</strong> Tsung-Hsien Wen, Pei-Hao Su, Pawe&#322; Budzianowski, I&ntilde;igo Casanueva and Ivan Vuli&#263;.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
                     </td>
                 </tr>
             </table>
@@ -1168,24 +1144,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title">
-                        	<strong>[T4] Bias and Fairness in Natural Language Processing.</strong> Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez.
-                        </span>
-                        <br/>
-                        <span class="btn btn--info btn--location inline-location">
-                        	TBA
-                        </span>
+                        <span class="tutorial-title"><strong>[T4] Bias and Fairness in Natural Language Processing.</strong> Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title">
-                        	<strong>[T5] Discreteness in Neural Natural Language Processing.</strong> Lili Mou, Hao Zhou and Lei Li.
-                        </span>
-                        <br/>
-                        <span class="btn btn--info btn--location inline-location">
-                        	TBA
-                        </span>
+                        <span class="tutorial-title"><strong>[T5] Discreteness in Neural Natural Language Processing.</strong> Lili Mou, Hao Zhou and Lei Li.</span> <br/><span class="btn btn--info btn--location inline-location">TBA</span>
                     </td>
                 </tr>
             </table>
@@ -1207,24 +1171,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title">
-                        	<strong>[T6] Graph-based Deep Learning in Natural Language Processing.</strong> Shikhar Vashishth, Naganand Yadati and Partha Talukdar.
-                        </span>
-                        <br/>
-                        <span class="btn btn--info btn--location inline-location">
-                        	TBA
-                        </span>
+                        <span class="tutorial-title"><strong>[T6] Graph-based Deep Learning in Natural Language Processing.</strong> Shikhar Vashishth, Naganand Yadati and Partha Talukdar.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title">
-                        	<strong>[T7] Semantic Specialization of Distributional Word Vectors.</strong> Goran Glava&#347;, Edoardo Maria Ponti and Ivan Vuli&#263;.
-                        </span>
-                        <br/>
-                        <span class="btn btn--info btn--location inline-location">
-                        	TBA
-                        </span>
+                        <span class="tutorial-title"><strong>[T7] Semantic Specialization of Distributional Word Vectors.</strong> Goran Glava&#347;, Edoardo Maria Ponti and Ivan Vuli&#263;.</span><br/> <span class="btn btn--info btn--location inline-location">TBA</span>
                     </td>
                 </tr>
             </table>
