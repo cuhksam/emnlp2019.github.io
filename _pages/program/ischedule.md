@@ -1222,6 +1222,7 @@ script: |
                         	TBA
                         </span>
                     </td>
+                </tr>
                 <tr id="tutorial">
                     <td>
                         <span class="tutorial-title">
