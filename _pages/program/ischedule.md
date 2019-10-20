@@ -1907,7 +1907,7 @@ script: |
 <div class="session session-break session-plenary" id="session-break-10"><span class="session-title">Mini-Break</span><br/><span class="session-time" title="Thursday, 7 November 2019">17:24 &ndash; 17:30</span></div>
 <div class="session session-expandable session-papers-best"><div id="expander"></div><a href="#" class="session-title">Best Paper Awards and Closing</a><br/><span class="session-time" title="Thursday, 7 November 2019">17:30 &ndash; 18:00</span><br/><span class="session-location btn btn--info btn--location">Hall 2C</span><br/><div class="paper-session-details"><br/><table class="paper-table">
 </table></div></div>
-</div>
+
 
 <!-- PDF BUTTON -->
 
