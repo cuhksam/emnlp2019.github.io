@@ -63,13 +63,13 @@ script: |
                     if (pageNumber == 1) {
                         doc.setFontSize(16);
                         doc.setFontStyle('normal');
-                        doc.text("EMNLP 2018 Schedule", (doc.internal.pageSize.width - (data.settings.margin.left*2))/2 - 30, 50);
+                        doc.text("EMNLP 2019 Schedule", (doc.internal.pageSize.width - (data.settings.margin.left*2))/2 - 30, 50);
                     }
 
                     /* FOOTER on each page */
                     doc.setFont('courier');
                     doc.setFontSize(8);
-                    doc.text('(Generated via http://emnlp2018.org/schedule)', data.settings.margin.left, doc.internal.pageSize.height - 10);
+                    doc.text('(Generated via https://www.emnlp-ijcnlp2019.org/program/ischedule/)', data.settings.margin.left, doc.internal.pageSize.height - 10);
                 },
                 drawCell: function(cell, data) {
                     var cellClass = cell.raw.content.className;
