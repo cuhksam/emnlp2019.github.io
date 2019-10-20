@@ -1163,7 +1163,7 @@ script: |
 <!-- SECOND TUTORIAL AND WORKSHOP DAY -->
 <div class="day" id="second-day">Monday, 4 November 2019</div>
     
-	<!-- MORNING TUTORIALS -->    
+	<!-- MORNING TUTORIALS -->  	  
     <div class="session session-expandable session-tutorials" id="session-morning-tutorials2">
         <div id="expander"></div><a href="#" class="session-title">Morning Tutorials</a><br/>
         <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 12:30</span><br/>
@@ -1181,6 +1181,7 @@ script: |
                         	TBA
                         </span>
                     </td>
+                </tr>
                 <tr id="tutorial">
                     <td>
                         <span class="tutorial-title">
