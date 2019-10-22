@@ -18,20 +18,27 @@ The following seven tutorials will be held at EMNLP-IJCNLP 2019. URLs and exact 
 
 ## Overview
 
-The tutorials will be held on Sunday, November 3, 2019 and Monday, November 4, 2019. Details on all tutorials are given below.
+The tutorials will be held on November 3&ndash;4 2019 (Sunday and Monday). Details on all tutorials are given below.
 
 ### November 3, 2019
 
-- \[T1\] [Dive into Deep Learning for Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t1-dive-into-deep-learning-for-natural-language-processing) (full day)
-- \[T2\] [Processing and Understanding Mixed Language Data](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t2-processing-and-understanding-mixed-language-data) (morning)
-- \[T3\] [Data Collection and End-to-End Learning for Conversational AI](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t3-data-collection-and-end-to-end-learning-for-conversational-ai) (afternoon)
+\[T1\] [Dive into Deep Learning for Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t1-dive-into-deep-learning-for-natural-language-processing) (full day)
+
+\[T2\] [Processing and Understanding Mixed Language Data](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t2-processing-and-understanding-mixed-language-data) (morning)
+
+\[T3\] [Data Collection and End-to-End Learning for Conversational AI](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t3-data-collection-and-end-to-end-learning-for-conversational-ai) (afternoon)
+
 
 ### November 4, 2019
 
-- \[T4\] [Bias and Fairness in Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t4-bias-and-fairness-in-natural-language-processing) (morning)
-- \[T5\] [Discreteness in Neural Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t5-discreteness-in-neural-natural-language-processing) (morning)
-- \[T6\] [Graph-based Deep Learning in Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t6-graph-based-deep-learning-in-natural-language-processing) (afternoon)
-- \[T7\] [Semantic Specialization of Distributional Word Vectors](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t7-semantic-specialization-of-distributional-word-vectors) (afternoon)
+\[T4\] [Bias and Fairness in Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t4-bias-and-fairness-in-natural-language-processing) (morning)
+
+\[T5\] [Discreteness in Neural Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t5-discreteness-in-neural-natural-language-processing) (morning)
+
+\[T6\] [Graph-based Deep Learning in Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t6-graph-based-deep-learning-in-natural-language-processing) (afternoon)
+
+\[T7\] [Semantic Specialization of Distributional Word Vectors](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t7-semantic-specialization-of-distributional-word-vectors) (afternoon)
+
 
 
 
