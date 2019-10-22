@@ -46,7 +46,7 @@ See our [latest update](./participants) on the conference organization with seve
 The [main conference schedule](./program/schedule/) now also includes demo presentations. 
 
 **September 23, 2019**.
-We published our policy regarding [remote presentations](./participants#remote-presentations).
+We published our policy regarding [remote presentations](./participants/presentation/#remote-presentations).
 
 **September 20, 2019**.
 We also provide online forms for [hotels and transfer](./participants/hotels/) now.
