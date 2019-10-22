@@ -260,7 +260,7 @@ Right after all sessions ended on the day, coaches will also be arranged to take
 
 ## Oral, Poster, and Remote Presentations
 
-In case you are having a talk or poster at the EMNLP-IJCNLP 2019 main conference, or you are planning to give a remote presentation instead, see our all [instructions for presenters](./participants/presentation/).
+In case you are having a talk or poster at the main conference, or you are planning to give a remote presentation instead, see our [instructions for presenters](./participants/presentation/).
 
 
 
