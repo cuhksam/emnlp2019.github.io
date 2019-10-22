@@ -1061,6 +1061,7 @@ script: |
     <!-- WORKSHOPS -->
     <div class="session session-expandable session-workshops" id="session-workshops-1">
         <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
+        <span class="session-time" title="Monday November 4 2019">07:30 &ndash; 18:30 (exact workshop times vary)</span><br/>
         <div class="workshop-session-details">
             <br/>
             <table class="workshop-table">
@@ -1195,6 +1196,7 @@ script: |
     <!-- WORKSHOPS -->
     <div class="session session-expandable session-workshops" id="session-workshops-2">
         <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
+        <span class="session-time" title="Monday November 4 2019">07:30 &ndash; 18:00 (exact workshop times vary)</span><br/>
         <div class="workshop-session-details">
             <br/>
             <table class="workshop-table">
