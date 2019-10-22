@@ -37,16 +37,13 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 <h2>News</h2>
 
 **October 22, 2019**.
-In case you have a talk or poster at the conference, please see our [instructions for presenters](./participants/presentation/).
+In case you have a talk or poster at the conference, please see our [instructions for presenters](./participants/presentation/), including our policy on remote presentations.
 
 **October 19, 2019**.
 See our [latest update](./participants) on the conference organization with several details on arrangements made. If you haven't registered yet, do so [here](https://aclweb.org/conference/emnlp-2019-conference-registration/) before the late registration ends (October 24, 2019, 11:59pm EDT). More registration information [here](./registration).
 
 **October 7, 2019**.
 The [main conference schedule](./program/schedule/) now also includes demo presentations. 
-
-**September 23, 2019**.
-We published our policy regarding [remote presentations](./participants/presentation/#remote-presentations).
 
 **September 20, 2019**.
 We also provide online forms for [hotels and transfer](./participants/hotels/) now.
@@ -78,6 +75,9 @@ The early registration deadline is approaching: October 10, 11:59pm EDT. Directl
 
 **September 26, 2019**.
 A first version of the [main conference schedule](./program/schedule/) is out. 
+
+**September 23, 2019**.
+We published our policy regarding [remote presentations](./participants/presentation/#remote-presentations).
 
 **September 22, 2019**.
 The EMNLP-IJCNLP 2019 registration is now open. [Directly register](https://aclweb.org/conference/emnlp-2019-conference-registration/) or first see [detailed registration information](./registration).
