@@ -1007,6 +1007,7 @@ script: |
 <!-- TUTORIAL AND WORKSHOP SCHEDULE --> 
 
 
+
 <div class="day" id="first-day">Sunday, 3 November 2019</div>
 
 	<!-- MORNING TUTORIALS -->
@@ -1018,12 +1019,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing.</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing.</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">201 B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T2] Processing and Understanding Mixed Language Data.</strong> Monojit Choudhury and Kalika Bali.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="tutorial-title"><strong>[T2] Processing and Understanding Mixed Language Data.</strong> Monojit Choudhury and Kalika Bali.</span><br/><span class="btn btn--info btn--location inline-location">Ballroom B&ndash;C</span>
                     </td>
                 </tr>
             </table>
@@ -1045,12 +1046,12 @@ script: |
             <table class="tutorial-table">
             	<tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing  (cont.).</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing  (cont.).</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">201 B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T3] Data Collection and End-to-End Learning for Conversational AI.</strong> Tsung-Hsien Wen, Pei-Hao Su, Pawe&#322; Budzianowski, I&ntilde;igo Casanueva and Ivan Vuli&#263;.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="tutorial-title"><strong>[T3] Data Collection and End-to-End Learning for Conversational AI.</strong> Tsung-Hsien Wen, Pei-Hao Su, Pawe&#322; Budzianowski, I&ntilde;igo Casanueva and Ivan Vuli&#263;.</span><br/><span class="btn btn--info btn--location inline-location">Ballroom B&ndash;C</span>
                     </td>
                 </tr>
             </table>
@@ -1068,63 +1069,63 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W1] CoNLL 2019: The Conference on Computational Natural Language Learning (Day 1).</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Hall 2B</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W2] FEVER: The second workshop on Fact Extraction and VERification.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">202</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W3] DiscoMT19: Discourse in Machine Translation 2019 (half day).</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">201 A</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W4] LANTERN: Beyond Vision and Language: Integrating Knowledge from the Real World (half day).</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">201 A</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W5] MSR 2019: The second Workshop on Multilingual Surface Realization.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Room 5</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W6] LOUHI 2019: The Tenth International Workshop on Health Text Mining and Information Analysis.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Room 2</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W7] DeepLo 2019: Deep Learning for Low-Resource Natural Language Processing.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">203&ndash;205</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W8] COIN: COmmonsense INference in NLP.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Ballroom A</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W9] AnnoNLP: Aggregating and analysing crowdsourced annotations for NLP.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Room 3</span>
                     </td>
                 </tr>
             </table>
@@ -1144,12 +1145,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T4] Bias and Fairness in Natural Language Processing.</strong> Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="tutorial-title"><strong>[T4] Bias and Fairness in Natural Language Processing.</strong> Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez.</span><br/><span class="btn btn--info btn--location inline-location">201B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T5] Discreteness in Neural Natural Language Processing.</strong> Lili Mou, Hao Zhou and Lei Li.</span> <br/><span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="tutorial-title"><strong>[T5] Discreteness in Neural Natural Language Processing.</strong> Lili Mou, Hao Zhou and Lei Li.</span> <br/><span class="btn btn--info btn--location inline-location">Ballroom B&ndash;C</span>
                     </td>
                 </tr>
             </table>
@@ -1171,12 +1172,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T6] Graph-based Deep Learning in Natural Language Processing.</strong> Shikhar Vashishth, Naganand Yadati and Partha Talukdar.</span><br/><span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="tutorial-title"><strong>[T6] Graph-based Deep Learning in Natural Language Processing.</strong> Shikhar Vashishth, Naganand Yadati and Partha Talukdar.</span><br/><span class="btn btn--info btn--location inline-location">201B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T7] Semantic Specialization of Distributional Word Vectors.</strong> Goran Glava&#347;, Edoardo Maria Ponti and Ivan Vuli&#263;.</span><br/> <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="tutorial-title"><strong>[T7] Semantic Specialization of Distributional Word Vectors.</strong> Goran Glava&#347;, Edoardo Maria Ponti and Ivan Vuli&#263;.</span><br/> <span class="btn btn--info btn--location inline-location">Ballroom B&ndash;C</span>
                     </td>
                 </tr>
             </table>
@@ -1194,70 +1195,70 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W1] CoNLL 2019: The Conference on Computational Natural Language Learning (Day 2).</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Hall 2B</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W10] MRQA: The 2nd Workshop on Machine Reading for Question Answering.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">201 B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W11] BioNLP-OST 2019: International Workshop on BioNLP Open Shared Tasks 2019.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Room 2</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W12] WNGT: The 3rd Workshop on Neural Generation and Translation.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">201 A (morning), Ballroom A (afternoon)</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W13] W-NUT 2019: The 5th Workshop on Noisy User-generated Text.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Ballroom A (morning), 201 A (afternoon)</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W14] NewSum: The Workshop on New Frontiers in Summarization.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Room 1</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W15] TextGraphs-19: Graph-based Methods for Natural Language Processing.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">203&ndash;205</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W16] WAT2019: The 6th Workshop on Asian Translation.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">202</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W17] ECONLP 2019: The 2nd Workshop on Economics and Natural Language Processing.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Room 3</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W18] NLP4IF: NLP for Freedom: Censorship, Disinformation, and Propaganda.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">TBA</span>
+                        <span class="btn btn--info btn--location inline-location">Room 4</span>
                     </td>
                 </tr>
             </table>
