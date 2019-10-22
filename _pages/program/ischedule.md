@@ -1019,7 +1019,7 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing.</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">201 B&ndash;C</span>
+                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing.</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">201B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
@@ -1046,7 +1046,7 @@ script: |
             <table class="tutorial-table">
             	<tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing  (cont.).</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">201 B&ndash;C</span>
+                        <span class="tutorial-title"><strong>[T1] Dive into Deep Learning for Natural Language Processing  (cont.).</strong> Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola.</span><br/><span class="btn btn--info btn--location inline-location">201B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
@@ -1083,14 +1083,14 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W3] DiscoMT19: Discourse in Machine Translation 2019 (half day).</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">201 A</span>
+                        <span class="btn btn--info btn--location inline-location">201A</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W4] LANTERN: Beyond Vision and Language: Integrating Knowledge from the Real World (half day).</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">201 A</span>
+                        <span class="btn btn--info btn--location inline-location">201A</span>
                     </td>
                 </tr>
                 <tr id="workshop">
@@ -1111,7 +1111,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W7] DeepLo 2019: Deep Learning for Low-Resource Natural Language Processing.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">203&ndash;205</span>
+                        <span class="btn btn--info btn--location inline-location">203+204+205</span>
                     </td>
                 </tr>
                 <tr id="workshop">
@@ -1202,7 +1202,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W10] MRQA: The 2nd Workshop on Machine Reading for Question Answering.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">201 B&ndash;C</span>
+                        <span class="btn btn--info btn--location inline-location">201B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="workshop">
@@ -1216,14 +1216,14 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W12] WNGT: The 3rd Workshop on Neural Generation and Translation.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">201 A (morning), Ballroom A (afternoon)</span>
+                        <span class="btn btn--info btn--location inline-location">201A (morning), Ballroom A (afternoon)</span>
                     </td>
                 </tr>
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W13] W-NUT 2019: The 5th Workshop on Noisy User-generated Text.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">Ballroom A (morning), 201 A (afternoon)</span>
+                        <span class="btn btn--info btn--location inline-location">Ballroom A (morning), 201A (afternoon)</span>
                     </td>
                 </tr>
                 <tr id="workshop">
@@ -1237,7 +1237,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W15] TextGraphs-19: Graph-based Methods for Natural Language Processing.</strong></span> 
                         <br/>
-                        <span class="btn btn--info btn--location inline-location">203&ndash;205</span>
+                        <span class="btn btn--info btn--location inline-location">203+204+205</span>
                     </td>
                 </tr>
                 <tr id="workshop">
