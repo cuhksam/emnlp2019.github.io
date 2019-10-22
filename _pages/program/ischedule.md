@@ -1061,7 +1061,6 @@ script: |
     <!-- WORKSHOPS -->
     <div class="session session-expandable session-workshops" id="session-workshops-1">
         <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
-        <span class="session-time" title="Sunday, November 3 2019">08:30 &ndash; 18:00</span><br/>
         <div class="workshop-session-details">
             <br/>
             <table class="workshop-table">
@@ -1069,6 +1068,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W1] CoNLL 2019: The Conference on Computational Natural Language Learning (Day 1).</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">08:45 &ndash; 18:30</span><br/>
                         <span class="btn btn--info btn--location inline-location">Hall 2B</span>
                     </td>
                 </tr>
@@ -1076,6 +1076,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W2] FEVER: The second workshop on Fact Extraction and VERification.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:30</span><br/>
                         <span class="btn btn--info btn--location inline-location">202</span>
                     </td>
                 </tr>
@@ -1083,6 +1084,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W3] DiscoMT19: Discourse in Machine Translation 2019 (half day).</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 12:30</span><br/>
                         <span class="btn btn--info btn--location inline-location">201A</span>
                     </td>
                 </tr>
@@ -1090,6 +1092,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W4] LANTERN: Beyond Vision and Language: Integrating Knowledge from the Real World (half day).</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">14:00 &ndash; 18:00</span><br/>
                         <span class="btn btn--info btn--location inline-location">201A</span>
                     </td>
                 </tr>
@@ -1097,6 +1100,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W5] MSR 2019: The second Workshop on Multilingual Surface Realization.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">8:45 &ndash; 18:00</span><br/>
                         <span class="btn btn--info btn--location inline-location">Room 5</span>
                     </td>
                 </tr>
@@ -1104,6 +1108,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W6] LOUHI 2019: The Tenth International Workshop on Health Text Mining and Information Analysis.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:25</span><br/>
                         <span class="btn btn--info btn--location inline-location">Room 2</span>
                     </td>
                 </tr>
@@ -1111,6 +1116,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W7] DeepLo 2019: Deep Learning for Low-Resource Natural Language Processing.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">07:30 &ndash; 17:40</span><br/>
                         <span class="btn btn--info btn--location inline-location">203+204+205</span>
                     </td>
                 </tr>
@@ -1118,6 +1124,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W8] COIN: COmmonsense INference in NLP.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:30</span><br/>
                         <span class="btn btn--info btn--location inline-location">Ballroom A</span>
                     </td>
                 </tr>
@@ -1125,6 +1132,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W9] AnnoNLP: Aggregating and analysing crowdsourced annotations for NLP.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:20</span><br/>
                         <span class="btn btn--info btn--location inline-location">Room 3</span>
                     </td>
                 </tr>
@@ -1194,8 +1202,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W1] CoNLL 2019: The Conference on Computational Natural Language Learning (Day 2).</strong></span> 
                         <br/>                 
-        				<span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:00</span><br/>
-                        <br/>
+        				<span class="session-time" title="Monday November 4 2019">08:45 &ndash; 18:00</span><br/>
                         <span class="btn btn--info btn--location inline-location">Hall 2B</span>
                     </td>
                 </tr>
@@ -1203,6 +1210,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W10] MRQA: The 2nd Workshop on Machine Reading for Question Answering.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:30</span><br/>
                         <span class="btn btn--info btn--location inline-location">201B&ndash;C</span>
                     </td>
                 </tr>
@@ -1210,6 +1218,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W11] BioNLP-OST 2019: International Workshop on BioNLP Open Shared Tasks 2019.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:40</span><br/>
                         <span class="btn btn--info btn--location inline-location">Room 2</span>
                     </td>
                 </tr>
@@ -1217,6 +1226,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W12] WNGT: The 3rd Workshop on Neural Generation and Translation.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:00</span><br/>
                         <span class="btn btn--info btn--location inline-location">201A (morning), Ballroom A (afternoon)</span>
                     </td>
                 </tr>
@@ -1224,6 +1234,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W13] W-NUT 2019: The 5th Workshop on Noisy User-generated Text.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 18:00</span><br/>
                         <span class="btn btn--info btn--location inline-location">Ballroom A (morning), 201A (afternoon)</span>
                     </td>
                 </tr>
@@ -1231,6 +1242,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W14] NewSum: The Workshop on New Frontiers in Summarization.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">07:30 &ndash; 17:40</span><br/>
                         <span class="btn btn--info btn--location inline-location">Room 1</span>
                     </td>
                 </tr>
@@ -1238,6 +1250,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W15] TextGraphs-19: Graph-based Methods for Natural Language Processing.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:30</span><br/>
                         <span class="btn btn--info btn--location inline-location">203+204+205</span>
                     </td>
                 </tr>
@@ -1245,6 +1258,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W16] WAT2019: The 6th Workshop on Asian Translation.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:35</span><br/>
                         <span class="btn btn--info btn--location inline-location">202</span>
                     </td>
                 </tr>
@@ -1252,6 +1266,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W17] ECONLP 2019: The 2nd Workshop on Economics and Natural Language Processing.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 18:00</span><br/>
                         <span class="btn btn--info btn--location inline-location">Room 3</span>
                     </td>
                 </tr>
@@ -1259,6 +1274,7 @@ script: |
                     <td>
                         <span class="workshop-title"><strong>[W18] NLP4IF: NLP for Freedom: Censorship, Disinformation, and Propaganda.</strong></span> 
                         <br/>
+                        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:00</span><br/>
                         <span class="btn btn--info btn--location inline-location">Room 4</span>
                     </td>
                 </tr>
