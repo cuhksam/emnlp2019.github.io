@@ -36,4 +36,4 @@ EMNLP-IJCNLP 2019 will host 1 full-day tutorial and 6 half-day tutorials, also t
 
 ## Schedule
 
-EMNLP-IJCNLP 2019 will take place on November 3--7. We already provide a preliminary version of the [main conference schedule](./program/schedule/). An interactive schedule will follow soon.
+EMNLP-IJCNLP 2019 will take place on November 3&ndash;7. We already provide a preliminary version of the [main conference schedule](./program/schedule/). An interactive schedule will follow soon.
