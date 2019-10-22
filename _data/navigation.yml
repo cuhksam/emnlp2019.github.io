@@ -67,8 +67,8 @@ participants:
          url: /participants
        - title: "Hotels and Transfer"
          url: /participants/hotels/
-#       - title: "Social Event"
-#         url: /participants/social/
+       - title: "Instructions for Presenters"
+         url: /participants/presentation/
 
 organization:
    - title: Organization
