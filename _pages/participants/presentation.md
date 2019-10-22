@@ -42,15 +42,15 @@ In order to speed transitions, please set up your presentation file (or connect 
 
 ## Poster Presentations 
 
-### Poster size
+### Poster Size
 
 Posters should be no wider than 100cm (39 in) and no higher than 250cm (98 in). A0 paper in portrait orientation meets the requirements.
 
-### Poster printing
+### Poster Printing
 
 Please note that the conference does not provide any poster printer. There may not be any poster printing shop near the conference site, either. You are strongly recommended to print your poster before coming to the conference. Please approach the registration desk, should you need any help with poster printing.
 
-### Set-up and preparation
+### Set-up and Preparation
 
 Please arrive during the preceding break (at least 10 minutes before the start of the session) to find your poster's location and to mount your poster.
 
