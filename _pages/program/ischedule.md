@@ -1187,13 +1187,14 @@ script: |
     <!-- WORKSHOPS -->
     <div class="session session-expandable session-workshops" id="session-workshops-2">
         <div id="expander"></div><a href="#" class="session-title">Workshops &amp; Co-located Events</a><br/>
-        <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:00</span><br/>
         <div class="workshop-session-details">
             <br/>
             <table class="workshop-table">
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W1] CoNLL 2019: The Conference on Computational Natural Language Learning (Day 2).</strong></span> 
+                        <br/>                 
+        				<span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:00</span><br/>
                         <br/>
                         <span class="btn btn--info btn--location inline-location">Hall 2B</span>
                     </td>
