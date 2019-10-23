@@ -568,7 +568,7 @@ script: |
             /* show the floorplan when any location is clicked */
             $('span.session-location, span.inline-location').magnificPopup({
                 items: {
-                    src: '/assets/images/square/square-3d-floor-plan.png'
+                    src: '/assets/images/conference/floor-plan.png'
                 },
                 type: 'image',
                 fixedContentPos: 'auto'
