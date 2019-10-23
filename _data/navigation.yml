@@ -59,6 +59,8 @@ program:
          url: /program/tutorials/
        - title: "Main Conference Schedule"
          url: /program/schedule/
+       - title: "Interactive Schedule"
+         url: /program/ischedule/
 
 participants:
    - title: "Participants"

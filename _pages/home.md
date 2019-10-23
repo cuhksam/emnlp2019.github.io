@@ -35,6 +35,8 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**October 23, 2019**.
+We now provide an [interactive schedule](./program/ischedule/) of the whole conference where you can create and print your own customized schedule.
 
 **October 22, 2019**.
 In case you have a talk or poster at the conference, please see our [instructions for presenters](./participants/presentation/), including our policy on remote presentations.
