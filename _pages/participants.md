@@ -199,7 +199,8 @@ AsiaWorld Expo: Meeting Rooms 201-203 (2/F)<br>
 Hong Kong SkyCity Marriott Hotel: Grand Ballroom and Meeting Rooms
 
 <b>Main Conference (Nov 5-7)</b><br>
-AsiaWorld Expo: Meeting Rooms 201-203 (2/F), AsiaWorld-Summit (Hall 2) (G/F) 
+AsiaWorld Expo: Meeting Rooms 201-203 (2/F)<br> 
+AsiaWorld Expo: AsiaWorld-Summit (Hall 2) (G/F) 
 
 Please refer to the following Google <a href="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en">map</a> for more information on conference venues, accommodations, restaurants and attractions, and transportation information:
 <iframe src="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en" width="640" height="480"></iframe>
