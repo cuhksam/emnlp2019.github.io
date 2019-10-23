@@ -1,45 +1,61 @@
 Session,Name,Email
-1A: Social Applications I,Dirk Hovy ,mail@dirkhovy.com
-1B: Semantics I,Natalie Schluter,natschluter@itu.dk
-1C: Vision and Language,Grzegorz Chrupała,g.chrupala@uvt.nl
-1D: Entities and Coreference,Eduardo Blanco,eduardo.blanco@unt.edu
-2A: Question Answering I,Scott Wen-tau Yih,scottyih@allenai.org
-2B: Semantics II,Wei Xu,xu.1265@osu.edu
-2C: Multilingual Methods I,Shachar Mirkin,shacharmirkin@gmail.com
-2D: Social Media,Lu Wang,luwang@ccs.neu.edu
-3A: Machine Translation,Lucia Specia,l.specia@sheffield.ac.uk
-3B: Machine learning I,Byron Wallace,byron.wallace@gmail.com
-3C: Semantic Parsing and Generation,Reut Tsarfaty,reut.tsarfaty@gmail.com
-3D: Vision and Language; Discourse,Zhou Yu,joyu@ucdavis.edu
-4A: Language Models,Chris Dyer,cdyer@google.com
-4B: Event and Relation Extraction,Heng Ji,jih@rpi.edu
-4C: Syntactic Parsing,Joakim Nivre,joakim.nivre@lingfil.uu.se
-4D: Visual QA,Carina Silberer ,CarinaSilberer@gmail.com
-5A: Semantics IV,Stephan Oepen,oe@ifi.uio.no
-5B: Summarization,Fei Liu,feiliu@cs.ucf.edu
-5C: Information Retrieval and Text Mining,Alessandro Moschitti,amoschitti@gmail.com
-5D: Machine Learning II,Kai-Wei Chang,kw@kwchang.net
-6A: Dialogue I,Mohit Bansal,mbansal@cs.unc.edu
-6B: Question Answering II,William Wang,william@cs.ucsb.edu
-6C: Semantics V,Ivan Vulić,iv250@cam.ac.uk
-6D: Multilingual Methods II,Barbara Plank,bplank@gmail.com
-7A: Dialogue II,Zornitsa Kozareva,zkozareva@gmail.com
-7B: Social Applications II,Shomir Wilson,shomir@psu.edu
-7C: Named Entity Recognition,Alan Ritter,ritter.1492@osu.edu
-7D: Morphology and Syntactic Parsing,Katharina Kann,kann@nyu.edu
-8A: Text Categorization,Ion Androutsopoulos,IONANDR@GMAIL.COM
-8B: Generation,Ioannis Konstas,i.konstas@hw.ac.uk
-8C: Knowledge Graphs,Partha Talukdar,ppt@iisc.ac.in
-8D: Morphology and Phonology,Aida Nematzadeh,nematzadeh@google.com
-9A: Machine Translation II,Holger Schwenk,schwenk@fb.com
-9B: Sentiment I,Yulan He,Yulan.He@warwick.ac.uk
-9C: Machine Learning III,Sujith Ravi,ravi.sujith@gmail.com
-9D: Semantics VI,Gabriel Stanovsky,gabriel.satanovsky@gmail.com
-10A: Question Answering III,Jordan Boyd-Graber,jbg@umiacs.umd.edu
-10B: Machine Translation III,Joerg Tiedemann ,jorg.tiedemann@helsinki.fi
-10C: Discourse,Mirella Lapata ,mlap@inf.ed.ac.uk
-10D: Evolution/Sociolinguistics,David Jurgens,jurgens@umich.edu
-11A: Analyzing Models,Luke Zettlemoyer,lsz@cs.washington.edu
-11B: Sentiment II,Thamar Solorio,thamar.solorio@gmail.com
-11C: Machine Translation IV,Taro Watanabe,tarow@google.com
-11D: Question Answering and Knowledge Graphs,Benjamin Roth,beroth@cis.uni-muenchen.de
+"1A: Machine Learning I",Lei Li,TBD-email
+"1B: Lexical Semantics I",Qin Lu,TBD-email
+"1C: Dialog and Interactive Systems I",Yun,TBD-email
+"1D: Sentiment Analysis and Argument Mining I",Minlie Huang,TBD-email
+"1 Poster & Demo: Information Extraction, Information Retrieval and Document Analysis, Linguistic Theories",TBD,TBD-email
+"2A: Summarization and Generation",Nanyun (Violet) Peng,TBD-email
+"2B: Sentence-level Semantics I",Luke Zettlemoyer,TBD-email
+"2C: Speech, Vision, Robotics, Multimodal and Grounding I",Mohit Bansal,TBD-email
+"2D: Information Extraction I",Xiang Ren,TBD-email
+"2 Poster & Demo: Machine Translation and Mulitilinguality, Phonology, Morphology and Word Segmentation, Tagging, Chunking, Syntax and Parsing",TBD,TBD-email
+"3A: Machine Learning II",Hang Li,TBD-email
+"3B: Semantics",Kristina Toutanova,TBD-email
+"3C: Discourse, Summarization, and Generation",Mohit Iyyer,TBD-email
+"3D: Text Mining and NLP Applications I",Liang,TBD-email
+"3 Poster & Demo: Dialog and Interactive Systems, Machine Translation and Multilinuality, Phonology, Morphology, and Word Segmentation, Speech, Vision, Robotics, Multimodal and Grounding, Tagging, Chunking, Syntax and Parsing",TBD,TBD-email
+"4A: Neural Machine Translation",Zhaopeng Tu,TBD-email
+"4B: Question Answering I",Yansong Feng,TBD-email
+"4C: Social Media and Computational Social Science",Yulia Tsvetkov,TBD-email
+"4D: Text Mining and NLP Applications II",Min Zhang,TBD-email
+"4 Poster & Demo: Dialog and Interactive Systems, Speech, Vision, Robotics, Multimodal and Grounding",TBD,TBD-email
+"5A: Machine Learning III",Kai,TBD-email
+"5B: Lexical Semantics II",Jason Eisner,TBD-email
+"5C: Discourse and Pragmatics",Deyi Xiong,TBD-email
+"5D: Text Mining and NLP Applications III",Tim Baldwin,TBD-email
+"5 Poster & Demo: Question Answering, Textual Inference and Other Areas of Semantics",TBD,TBD-email
+"6A: Tagging, Chunking, Syntax and Parsing",Weiwei Sun,TBD-email
+"6B: Question Answering II",Scott Wen,TBD-email
+"6C: Linguistic Theories, Cognitive Modeling and Psycholinguistics",John Hale,TBD-email
+"6D: Sentiment Analysis and Argument Mining II",Yulan He,TBD-email
+"6 Poster & Demo: Discourse and Pragmatics, Summarization and Generation",TBD,TBD-email
+"7A: Machine Translation and Multilinguality I",Ann Clifton,TBD-email
+"7B: Reasoning and Question Answering",Xiang Ren,TBD-email
+"7C: Generation I",Aliaksei Severyn,TBD-email
+"7D: Sentiment Analysis and Argument Mining III",Preslav Nakov,TBD-email
+"7 Poster & Demo: Information Retrieval and Document Analysis, Lexical Semantics, Sentence-level Semantics, Machine Learning",TBD,TBD-email
+"8A: Summarization",Lu Wang,TBD-email
+"8B: Sentence-level Semantics II",Li Dong,TBD-email
+"8C: Information Extraction II",Mihai Surdeanu,TBD-email
+"8D: Information Retrieval and Document Analysis I",Yansong Feng,TBD-email
+"8 Poster & Demo: Machine Learning",TBD,TBD-email
+"9A: Machine Translation and Multilinguality II",Qun Liu,TBD-email
+"9B: Reasoning",Bonnie Webber,TBD-email
+"9C: Dialog and Interactive Systems II",Yang Liu,TBD-email
+"9D: Sentiment Analysis and Argument Mining IV",Deyu Zhou,TBD-email
+"9 Poster & Demo: Social Media and Computational Social Science, Text Mining and NLP Applications",TBD,TBD-email
+"10A: Generation II",Nanyun (Violet) Peng,TBD-email
+"10B: Speech, Vision, Robotics, Multimodal and Grounding II",Nancy Chen,TBD-email
+"10C: Information Extraction III",Heng Ji,TBD-email
+"10D: Information Retrieval and Document Analysis II",Kenton Lee,TBD-email
+"10 Poster & Demo: Sentiment Analysis and Argument Mining, Lexical Semantics, Sentence-level Semantics",TBD,TBD-email
+"11A: Machine Translation and Multilinguality III",Taro Watanabe,TBD-email
+"11B: Syntax, Parsing, and Linguistic Theories",Weiwei Sun,TBD-email
+"11C: Sentiment and Social Media",Ruifeng Xu,TBD-email
+"11D: Information Extraction IV",Radu Florian,TBD-email
+"11 Poster & Demo: Discourse and Pragmatics, Linguistic Theories, Textual Inference, Question Answering, Summarization and Generation",TBD,TBD-email
+"12A: Machine Translation and Multilinguality IV",Orhan Firat,TBD-email
+"12B: Lexical Semantics III",Roberto Navigli,TBD-email
+"12C: Generation III",Michael White,TBD-email
+"12D: Phonology, Word Segmentation, and Parsing",Yue Zhang,TBD-email
+"12 Poster & Demo: Information Extraction, Text Mining and NLP Applications, Social Media and Computational Social Science, Sentiment Analysis and Argument Mining",TBD,TBD-email
