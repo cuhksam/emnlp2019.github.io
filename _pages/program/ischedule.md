@@ -1008,6 +1008,7 @@ script: |
 
 
 
+
 <div class="day" id="first-day">Sunday, 3 November 2019</div>
 
 	<!-- MORNING TUTORIALS -->
@@ -1255,7 +1256,7 @@ script: |
         <br/>
         <span class="session-time" title="Monday November 4 2019">18:00 &ndash; 20:00</span>
         <br/>
-        <span class="session-location btn btn--info btn--location">AsiaWorld Summit (Hall 2) and East Concourse, AsiaWorld Expo</span>
+        <span class="session-location btn btn--info btn--location">Hall 2 + East Concourse</span>
         <div class="paper-session-details">
             <br/><br/>
             <div class="session-abstract">
