@@ -63,7 +63,7 @@ script: |
                     if (pageNumber == 1) {
                         doc.setFontSize(16);
                         doc.setFontStyle('normal');
-                        doc.text("EMNLP 2019 Schedule", (doc.internal.pageSize.width - (data.settings.margin.left*2))/2 - 30, 50);
+                        doc.text("EMNLP-IJCNLP 2019 Schedule", (doc.internal.pageSize.width - (data.settings.margin.left*2))/2 - 30, 50);
                     }
 
                     /* FOOTER on each page */
@@ -989,7 +989,9 @@ script: |
 </table>
 
 <div id="introParagraph">
-        <p>On this page, you can choose the sessions (and individual papers/posters) of your choice <em>and</em> generate a PDF of your customized schedule! This page should work on modern browsers on all operating systems. On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. For the best experience, use a non-mobile device. For help, simply type "?"" while on the page or click on the "Help" button.</p>
+        <p>On this page, you can choose any talks, posters, tutorials, and workshops of your choice, in order to generate a PDF of your customized schedule (see button at the bottom)! Plenary sessions are included if the check mark at the bottom is set.</p> 
+        <p>This page should work on modern browsers on all operating systems. On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. For the best experience, use a non-mobile device. For help, simply type "?"" while on the page or click on the "Help" button.</p>
+        <p>Notice that the links to ACL anthology papers do not work yet. They will be updated soon.</p>
 </div>
 
 <p class="text-center">
