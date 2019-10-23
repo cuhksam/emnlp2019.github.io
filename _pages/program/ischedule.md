@@ -123,7 +123,7 @@ script: |
                     }
                 },
             });
-            doc.output('save');
+            doc.output('save', 'emnlp-ijcnlp-2019-schedule.pdf');
         }
 
         function getTutorialInfoFromTime(tutorialTimeObj) {
