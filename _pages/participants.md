@@ -194,9 +194,13 @@ EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-ex
 <img src="/assets/images/hongkong/venue2.png" alt="Venue: Marriott" style="width:225px;height:127px;">
 <img src="/assets/images/hongkong/venue1.png" alt="Venue: Asia World Expo" style="width:190px;height:127px;">
 
-Main Conference (Nov 5-7): Meeting Rooms 201-203 (2/F) and AsiaWorld-Summit (Hall 2) (G/F), AsiaWorld Expo
+<b>Workshops and Tutorials (Nov 3-4)</b><br> 
+AsiaWorld Expo: Meeting Rooms 201-203 (2/F)<br>
+Hong Kong SkyCity Marriott Hotel: Grand Ballroom and Meeting Rooms
 
-Workshops and Tutorials (Nov 3-4): Meeting Rooms 201-203 (2/F), AsiaWorld Expo and Grand Ballroom and Meeting Rooms, Hong Kong SkyCity Marriott Hotel
+<b>Main Conference (Nov 5-7)</b><br>
+AsiaWorld Expo: Meeting Rooms 201-203 (2/F)<br> 
+AsiaWorld Expo: AsiaWorld-Summit (Hall 2) (G/F) 
 
 Please refer to the following Google <a href="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en">map</a> for more information on conference venues, accommodations, restaurants and attractions, and transportation information:
 <iframe src="https://www.google.com/maps/d/embed?mid=1-Ub0JOjgGYdzx--NfwPVx-YPpeSWgoi7&hl=en" width="640" height="480"></iframe>
@@ -258,6 +262,10 @@ Right after all sessions ended on the day, coaches will also be arranged to take
 
 
 
+## Oral, Poster, and Remote Presentations
+
+In case you have a talk or poster at the main conference, or you plan to give a remote presentation instead, see our [instructions for presenters](./participants/presentation/).
+
 
 
 
@@ -274,40 +282,10 @@ There's also a web version of the guide available <a href="http://guidebook.com/
 
 
 
-## Remote presentations
-
-EMNLP-IJCNLP 2019 will be accepting applications for remote presentations in circumstances where none of the authors can attend the conference due to reasons such as:
-
-- illness, disability, or any other reason that physically prevent attending,
-- visa issues or government travel restrictions that legally prevent attending,
-- special circumstances such as death in immediate family.
-
-Please contact the remote presentation chair to apply for remote presentation at ([emnlp-ijcnlp-2019-remote-presentation@googlegroups.com](mailto:emnlp-ijcnlp-2019-remote-presentation@googlegroups.com)), as per the following application procedure:
-
-1. Register for the conference normally.
-2. Send your application for remote presentation to the remote presentation chair at ([emnlp-ijcnlp-2019-remote-presentation@googlegroups.com](mailto:emnlp-ijcnlp-2019-remote-presentation@googlegroups.com)). Please include a detailed explanation of why you are unable to attend the conference.
-3. Upon acceptance of your request, please follow the additional instructions you will be provided with.
-
-Each request will be carefully considered on a case-by-case basis by the remote presentation chair. Please refrain from requesting remote presenting for personal reasons or for reasons regarding the demonstrations in Hong Kong. Please be assured that the conference venue, social event venue, and accommodation are all remote from affected areas.
-
-There are circumstances where remote presentation is the only possibility, and we strongly believe these should be accommodated out of fairness and inclusivity. However, excessive remote presentations change the character of the conference, and we wish to provide a positive experience for the conference attendees. We kindly ask for your understanding in case your request for remote presentation is rejected.
 
 
 
 
-<!--
-## Instructions for Presenters
-
-TBD
-
-### Oral Presentations
-
-TBD
-
-### Posters
-
-TBD
--->
 
 
 

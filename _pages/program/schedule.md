@@ -1,5 +1,5 @@
 ---
-title: Schedule
+title: Main Conference Schedule
 layout: single
 excerpt: "EMNLP-IJCNLP 2019 Conference Schedule."
 

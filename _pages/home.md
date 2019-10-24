@@ -35,20 +35,17 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
-**October 19, 2019**.
-See our [latest update](./participants) on the conference organization with several details on arrangements made. If you haven't registered yet, do so [here](https://aclweb.org/conference/emnlp-2019-conference-registration/) before the late registration ends (October 24, 2019, 11:59pm EDT).
+**October 23, 2019**.
+We now provide an [interactive schedule](./program/ischedule/) of the whole conference where you can create and print your own customized schedule.
 
-**October 9, 2019**.
-The early registration deadline is approaching: October 10, 11:59pm EDT. Directly register [here](https://aclweb.org/conference/emnlp-2019-conference-registration/). Notice that each paper in the proceedings (main conference or workshop) needs to (i) have at least one author registered by the early registration deadline and (ii) have been presented at the conference, in order for the paper to be included in the proceedings.
+**October 22, 2019**.
+In case you have a talk or poster at the conference, please see our [instructions for presenters](./participants/presentation/), including our policy on remote presentations.
+
+**October 19, 2019**.
+See our [latest update](./participants) on the conference organization with several details on arrangements made. If you haven't registered yet, do so [here](https://aclweb.org/conference/emnlp-2019-conference-registration/) before the late registration ends (October 24, 2019, 11:59pm EDT). More registration information [here](./registration).
 
 **October 7, 2019**.
 The [main conference schedule](./program/schedule/) now also includes demo presentations. 
-
-**September 23, 2019**.
-We published our policy regarding [remote presentations](./participants#remote-presentations).
-
-**September 22, 2019**.
-The EMNLP-IJCNLP 2019 registration is now open. [Directly register](https://aclweb.org/conference/emnlp-2019-conference-registration/) or first see [detailed registration information](./registration).
 
 **September 20, 2019**.
 We also provide online forms for [hotels and transfer](./participants/hotels/) now.
@@ -68,16 +65,24 @@ We are delighted to announce three [keynote speakers](./program/keynotes/).
 **September 3, 2019**.
 Updated information on [Conference Venue](./participants#conference-venue) and [Hong Kong Travel](./participants#about-hong-kong).
 
-**August 24, 2019**.
-The list of [accepted long, short, and demo papers](./program/accepted/) is out.
-
 **August 17, 2019**.
 Important [visa information](./participants#visa-information) now available.
 
 
-<!-- OUTDATED NEWS
+
+<!-- OUTDATED NEWS -------------------------------------------------------------
+
+**October 9, 2019**.
+The early registration deadline is approaching: October 10, 11:59pm EDT. Directly register [here](https://aclweb.org/conference/emnlp-2019-conference-registration/). Notice that each paper in the proceedings (main conference or workshop) needs to (i) have at least one author registered by the early registration deadline and (ii) have been presented at the conference, in order for the paper to be included in the proceedings.
+
 **September 26, 2019**.
 A first version of the [main conference schedule](./program/schedule/) is out. 
+
+**September 23, 2019**.
+We published our policy regarding [remote presentations](./participants/presentation/#remote-presentations).
+
+**September 22, 2019**.
+The EMNLP-IJCNLP 2019 registration is now open. [Directly register](https://aclweb.org/conference/emnlp-2019-conference-registration/) or first see [detailed registration information](./registration).
 
 **September 22, 2019**.
 The EMNLP-IJCNLP 2019 [registration fees](./registration) have now been defined. Registration will open in a few days.
@@ -90,6 +95,9 @@ The [registration](./registration) is going to open within the next week.
 
 **August 30, 2019**.
 We are happy to announce [Childcare Grants](./participants#childcare-grants) for participants with young children. Please apply by Sept 19, 2019.
+
+**August 24, 2019**.
+The list of [accepted long, short, and demo papers](./program/accepted/) is out.
 
 **August 23, 2019**.
 See our [update on conference organization](./participants#an-update-on-conference-organization) in light of the current situation in Hong Kong.
@@ -159,7 +167,8 @@ The list of accepted <a href="./program/workshops/">workshops</a> is out.
 
 **November 25, 2018**. 
 The important dates have been announced (see below).
--->
+
+------------------------------------------------------------------------------->
 
 
 ## Welcome!

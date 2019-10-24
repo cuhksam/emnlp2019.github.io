@@ -57,8 +57,10 @@ program:
          url: /program/workshops/
        - title: "Tutorials"
          url: /program/tutorials/
-       - title: "Schedule"
+       - title: "Main Conference Schedule"
          url: /program/schedule/
+       - title: "Interactive Schedule"
+         url: /program/ischedule/
 
 participants:
    - title: "Participants"
@@ -67,8 +69,8 @@ participants:
          url: /participants
        - title: "Hotels and Transfer"
          url: /participants/hotels/
-#       - title: "Social Event"
-#         url: /participants/social/
+       - title: "Instructions for Presenters"
+         url: /participants/presentation/
 
 organization:
    - title: Organization

@@ -13,13 +13,38 @@ sidebar:
 
 {% include toc icon="gears" %}
 
-The following tutorials have been accepted for EMNLP-IJCNLP 2019 and will be held on Sunday, November 3, 2019 and Monday, November 4, 2019. URLs and exact timings will be posted later.
+The following seven tutorials will be held at EMNLP-IJCNLP 2019. URLs and exact timings will be posted later.
+
+
+## Overview
+
+The tutorials will be held on November 3&ndash;4 2019 (Sunday and Monday). Details on all tutorials are given below.
+
+### November 3, 2019
+
+\[T1\] [Dive into Deep Learning for Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t1-dive-into-deep-learning-for-natural-language-processing) (full day)
+
+\[T2\] [Processing and Understanding Mixed Language Data](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t2-processing-and-understanding-mixed-language-data) (morning)
+
+\[T3\] [Data Collection and End-to-End Learning for Conversational AI](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t3-data-collection-and-end-to-end-learning-for-conversational-ai) (afternoon)
+
+
+### November 4, 2019
+
+\[T4\] [Bias and Fairness in Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t4-bias-and-fairness-in-natural-language-processing) (morning)
+
+\[T5\] [Discreteness in Neural Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t5-discreteness-in-neural-natural-language-processing) (morning)
+
+\[T6\] [Graph-based Deep Learning in Natural Language Processing](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t6-graph-based-deep-learning-in-natural-language-processing) (afternoon)
+
+\[T7\] [Semantic Specialization of Distributional Word Vectors](https://www.emnlp-ijcnlp2019.org/program/tutorials/#t7-semantic-specialization-of-distributional-word-vectors) (afternoon)
+
 
 
 
 ## November 3, 2019 (morning)
 
-### Dive into Deep Learning for Natural Language Processing
+### \[T1\] Dive into Deep Learning for Natural Language Processing
 <em>Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola</em>
 
 Deep learning has become the dominant approach to NLP problems, especially when applied on large scale corpora. Recent progress on unsupervised pre-training techniques such as BERT, ELMo, GPT-2, and language modeling in general, when applied on large corpora, is shown to be effective in improving a wide variety of downstream tasks. These techniques push the limits of available hardware, requiring specialized frameworks optimized for GPU, ASIC, and distributed cloud-based training.
@@ -31,7 +56,7 @@ In this hands-on tutorial, we take a closer look at the challenges from these co
 
 
 
-### Processing and Understanding Mixed Language Data
+### \[T2\] Processing and Understanding Mixed Language Data
 <em>Monojit Choudhury and Kalika Bali</em>
 
  Multilingual communities exhibit code-mixing, that is, mixing of two or more socially stable languages in a single conversation, sometimes even in a single utterance. This phenomenon has been widely studied by linguists and interaction scientists in the spoken language of such communities. However, with the prevalence of social media and other informal interactive platforms, code-switching is now also ubiquitously observed in user-generated text. As multilingual communities are more the norm from a global perspective, it becomes essential that code-switched text and speech are adequately handled by language technologies and NUIs.
@@ -44,13 +69,13 @@ In the past 5 years, there has been an active interest in computational models f
 
 ## November 3, 2019 (afternoon)
 
-### Dive into Deep Learning for Natural Language Processing (cont.)
+### \[T1\] Dive into Deep Learning for Natural Language Processing (cont.)
 <em>Haibin Lin, Xingjian Shi, Leonard Lausen, Aston Zhang, He He, Sheng Zha and Alexander Smola</em>
 
 Continuation of morning tutorial (see description above).
     
     
-### Data Collection and End-to-End Learning for Conversational AI
+### \[T3\] Data Collection and End-to-End Learning for Conversational AI
 <em>Tsung-Hsien Wen, Pei-Hao Su, Pawe&#322; Budzianowski, I&ntilde;igo Casanueva and Ivan Vuli&#263;</em>
 
 A fundamental long-term goal of conversational AI is to merge two main dialogue system paradigms into a standalone multi-purpose system. Such a system should be capable of conversing about arbitrary topics (Paradigm 1: open-domain dialogue systems), and simultaneously assist humans with completing a wide range of tasks with well-defined semantics such as restaurant search and booking, customer service applications, or ticket bookings (Paradigm 2: task-based dialogue systems).
@@ -63,7 +88,7 @@ The critical requirement of each statistical dialogue system is the data at hand
 
 ## November 4, 2019 (morning)
 
-### Bias and Fairness in Natural Language Processing
+### \[T4\] Bias and Fairness in Natural Language Processing
 <em>Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez</em>
 
 Recent advances in data-driven machine learning techniques (e.g., deep neural networks) have revolutionized many natural language processing applications. These approaches automatically learn how to make decisions based on the statistics and diagnostic information from large amounts of training data. Despite the remarkable accuracy of machine learning in various applications, learning algorithms run the risk of relying on societal biases encoded in the training data to make predictions. This often occurs even when gender and ethnicity information is not explicitly provided to the system because learning algorithms are able to discover implicit associations between individuals and their demographic information based on other variables such as names, titles, home addresses, etc. Therefore, machine learning algorithms risk potentially encouraging unfair and discriminatory decision making and raise serious privacy concerns. Without properly quantifying and reducing the reliance on such correlations, broad adoption of these models might have the undesirable effect of magnifying harmful stereotypes or implicit biases that rely on sensitive demographic attributes.
@@ -79,7 +104,7 @@ In this tutorial, we will review the history of bias and fairness studies in mac
 The tutorial will bring researchers and practitioners to be aware of this issue, and encourage the research community to propose innovative solutions to promote fairness in NLP.
 
 
-### Discreteness in Neural Natural Language Processing
+### \[T5\] Discreteness in Neural Natural Language Processing
 <em>Lili Mou, Hao Zhou and Lei Li</em>
 
 This tutorial provides a comprehensive guide to the process of discreteness in neural NLP.
@@ -90,13 +115,13 @@ As a gentle start, we will briefly introduce the background of deep learning bas
 
 ## November 4, 2019 (afternoon)
 
-### Graph-based Deep Learning in Natural Language Processing
+### \[T6\] Graph-based Deep Learning in Natural Language Processing
 <em>Shikhar Vashishth, Naganand Yadati and Partha Talukdar</em>
 
 This tutorial aims to introduce recent advances in graph-based deep learning techniques such as Graph Convolutional Networks (GCNs) for Natural Language Processing (NLP). It provides a brief introduction to deep learning methods on non-Euclidean domains such as graphs and justifies their relevance in NLP. It then covers recent advances in applying graph-based deep learning methods for various NLP tasks, such as semantic role labeling, machine translation, relationship extraction, and many more.
 
 
-### Semantic Specialization of Distributional Word Vectors
+### \[T7\] Semantic Specialization of Distributional Word Vectors
 <em>Goran Glava&#347;, Edoardo Maria Ponti and Ivan Vuli&#263;</em>
 
 Distributional word vectors have become an indispensable component of most state-of-art NLP models. As a major artefact of the underlying distributional hypothesis, distributional word vector spaces conflate various paradigmatic and syntagmatic lexico-semantic relations. For example, relations such as synonymy/similarity (e.g., car-automobile) or lexical entailment (e.g., car-vehicle) often cannot be distinguished from antonymy (e.g., black-white), meronymy (e.g., car-wheel) or broader thematic relatedness (e.g., car-driver) based on the distances in the distributional vector space. This inherent property of distributional spaces often harms performance in downstream applications, since different lexico-semantic relations support different classes of NLP applications. For instance, Semantic Similarity provides guidance for Paraphrasing, Dialogue State Tracking, and Text Simplification, Lexical Entailment supports Natural Language Inference and Taxonomy Induction, whereas broader thematic relatedness yields gains for Named Entity Recognition, Parsing, and Text Classification and Retrieval.
