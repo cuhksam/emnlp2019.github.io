@@ -1008,9 +1008,6 @@ script: |
 
 <!-- TUTORIAL AND WORKSHOP SCHEDULE --> 
 
-
-
-
 <div class="day" id="first-day">Sunday, 3 November 2019</div>
 
 	<!-- MORNING TUTORIALS -->
@@ -1071,7 +1068,7 @@ script: |
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W1] CoNLL 2019: The Conference on Computational Natural Language Learning (Day 1).</strong> 08:45 &ndash; 18:30</span><br/>
-                        <span class="btn btn--info btn--location inline-location">AWE Hall 2B</span>
+                        <span class="btn btn--info btn--location inline-location">AWE Hall 2B &ndash; Part. 1</span>
                     </td>
                 </tr>
                 <tr id="workshop">
@@ -1139,12 +1136,12 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T4] Bias and Fairness in Natural Language Processing.</strong> Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez.</span><br/><span class="btn btn--info btn--location inline-location">AWE 201B&ndash;C</span>
+                        <span class="tutorial-title"><strong>[T4] Bias and Fairness in Natural Language Processing.</strong> Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez.</span><br/><span class="btn btn--info btn--location inline-location">Marriott Ballroom B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T5] Discreteness in Neural Natural Language Processing.</strong> Lili Mou, Hao Zhou and Lei Li.</span> <br/><span class="btn btn--info btn--location inline-location">Marriott Ballroom B&ndash;C</span>
+                        <span class="tutorial-title"><strong>[T5] Discreteness in Neural Natural Language Processing.</strong> Lili Mou, Hao Zhou and Lei Li.</span> <br/><span class="btn btn--info btn--location inline-location">AWE Hall 2B &ndash; Part. 2</span>
                     </td>
                 </tr>
             </table>
@@ -1166,7 +1163,7 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T6] Graph-based Deep Learning in Natural Language Processing.</strong> Shikhar Vashishth, Naganand Yadati and Partha Talukdar.</span><br/><span class="btn btn--info btn--location inline-location">AWE 201B&ndash;C</span>
+                        <span class="tutorial-title"><strong>[T6] Graph-based Deep Learning in Natural Language Processing.</strong> Shikhar Vashishth, Naganand Yadati and Partha Talukdar.</span><br/><span class="btn btn--info btn--location inline-location">AWE Hall 2B &ndash; Part. 2</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
