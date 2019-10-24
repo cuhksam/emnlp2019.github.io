@@ -35,7 +35,7 @@
     - `Guidebook_Schedule_Template.csv`
     - `Sessions_Link_template.csv`
 
-4. Run `python fill_in_app_templates.csv` to generate the follwing files:
+4. Run `python fill_in_app_templates.csv --sessions data/app/sessions.csv --authors data/app/authors.csv --papers data/app/papers.csv --linking data/app/linking.csv` to generate the follwing files:
     - `data/app/all-sessions-ids-as-names.csv`
     - `data/app/all-authors-ids-as-names.csv`
     - `data/app/authors-to-presentations-links.csv`
