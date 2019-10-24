@@ -1077,7 +1077,7 @@ script: |
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W2] FEVER: The second workshop on Fact Extraction and VERification.</strong> 09:00 &ndash; 17:30</span><br/>
-                        <span class="btn btn--info btn--location inline-location">202</span>
+                        <span class="btn btn--info btn--location inline-location">AWE 202</span>
                     </td>
                 </tr>
                 <tr id="workshop">
@@ -1232,7 +1232,7 @@ script: |
                         <span class="workshop-title"><strong>[W16] WAT2019: The 6th Workshop on Asian Translation.</strong></span> 
                         <br/>
                         <span class="session-time" title="Monday November 4 2019">09:00 &ndash; 17:35</span><br/>
-                        <span class="btn btn--info btn--location inline-location">202</span>
+                        <span class="btn btn--info btn--location inline-location">AWE 202</span>
                     </td>
                 </tr>
                 <tr id="workshop">
