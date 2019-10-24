@@ -37,14 +37,13 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 <h2>News</h2>
 
 **October 24, 2019**.
-The conference app is now live! If you already have the Guidebook app on your device, click on "Find Guides" and search for "EMNLP-IJCNLP 2019" or scan the [QR code](./participants#conference-app). Otherwise, click <a href="https://guidebook.com/g/emnlp-ijcnlp2019/" target="_blank">here</a>.
+In case you have a presentation at the conference, please see our [instructions for presenters](./participants/presentation/), including our policy on remote presentations and now also instructions for demos.
 
+**October 24, 2019**.
+The conference app is now live! If you already have the Guidebook app on your device, click on "Find Guides" and search for "EMNLP-IJCNLP 2019" or scan the [QR code](./participants#conference-app). Otherwise, click <a href="https://guidebook.com/g/emnlp-ijcnlp2019/" target="_blank">here</a>.
 
 **October 23, 2019**.
 We now provide an [interactive schedule](./program/ischedule/) of the whole conference where you can create and print your own customized schedule.
-
-**October 22, 2019**.
-In case you have a talk or poster at the conference, please see our [instructions for presenters](./participants/presentation/), including our policy on remote presentations.
 
 **October 19, 2019**.
 See our [latest update](./participants) on the conference organization with several details on arrangements made. If you haven't registered yet, do so [here](https://aclweb.org/conference/emnlp-2019-conference-registration/) before the late registration ends (October 24, 2019, 11:59pm EDT). More registration information [here](./registration).
@@ -76,6 +75,9 @@ Important [visa information](./participants#visa-information) now available.
 
 
 <!-- OUTDATED NEWS -------------------------------------------------------------
+
+**October 22, 2019**.
+In case you have a talk or poster at the conference, please see our [instructions for presenters](./participants/presentation/), including our policy on remote presentations.
 
 **October 9, 2019**.
 The early registration deadline is approaching: October 10, 11:59pm EDT. Directly register [here](https://aclweb.org/conference/emnlp-2019-conference-registration/). Notice that each paper in the proceedings (main conference or workshop) needs to (i) have at least one author registered by the early registration deadline and (ii) have been presented at the conference, in order for the paper to be included in the proceedings.
