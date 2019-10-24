@@ -37,7 +37,7 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 <h2>News</h2>
 
 **October 24, 2019**.
-The conference app is now live! If you already have the Guidebook app on your device, click on "Find Guides" and search for "EMNLP-IJCNLP 2019" or scan the [QR code](./participants/conference-app). Otherwise, click <a href="https://guidebook.com/g/emnlp-ijcnlp2019/" target="_blank">here</a>.
+The conference app is now live! If you already have the Guidebook app on your device, click on "Find Guides" and search for "EMNLP-IJCNLP 2019" or scan the [QR code](./participants#conference-app). Otherwise, click <a href="https://guidebook.com/g/emnlp-ijcnlp2019/" target="_blank">here</a>.
 
 
 **October 23, 2019**.
