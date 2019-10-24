@@ -269,7 +269,7 @@ In case you have a talk or poster at the main conference, or you plan to give a 
 
 
 
-### Conference App
+## Conference App
 
 There's a companion app for the conference published on the <a href="https://guidebook.com/" target="_blank">Guidebook</a> platform. If you already have Guidebook on your device, click on "Find Guides" and search for "EMNLP-IJCNLP 2019" or scan the QR code below. If you do not, click <a href="https://guidebook.com/g/emnlp-ijcnlp2019/" target="_blank">here</a> to get set up.
 
