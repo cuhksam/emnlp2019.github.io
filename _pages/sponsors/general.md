@@ -15,10 +15,6 @@ diamond:
     image_path: /assets/images/logos/facebook-logo.jpg
     alt: "Facebook Logo"
     title: "Facebook"
-  - url: http://www.discoverhongkong.com
-    image_path: /assets/images/logos/hongkong-tourism-logo.png
-    alt: "Hong Kong Tourism Board Logo"
-    title: "Hong Kong Tourism Board"
   - url: https://www.apple.com/jobs/us/teams/machine-learning-and-ai.html 
     image_path: /assets/images/logos/apple-logo.png
     alt: "Apple Logo"
@@ -31,6 +27,7 @@ diamond:
     image_path: /assets/images/logos/salesforce-logo.png
     alt: "Salesforce Logo"
     title: "Salesforce"
+  - image_path: /assets/images/logos/blank-logo.png
 platinum:
   - url: http://www.noahlab.com.hk
     image_path: /assets/images/logos/huawei-logo.png
@@ -110,13 +107,19 @@ bronze:
     title: "Shannon AI"    
   - image_path: /assets/images/logos/blank-logo.png
   - image_path: /assets/images/logos/blank-logo.png
-    
+supporter:
+  - url: http://www.discoverhongkong.com
+    image_path: /assets/images/logos/hongkong-tourism-logo.png
+    alt: "Hong Kong Tourism Board Logo"
+    title: "Hong Kong Tourism Board"    
+  - image_path: /assets/images/logos/blank-logo.png
+  - image_path: /assets/images/logos/blank-logo.png
 ---
 {% include base_path %}
 
 {% include toc icon="gears" %}
 
-We gratefully acknowledge support provided by the following for the EMNLP-IJCNLP 2019 conference.
+We gratefully acknowledge support provided by the following sponsors and supporting organizations for the EMNLP-IJCNLP 2019 conference.
 
 See also our <a href="../diversity/">diversity &amp; inclusion sponsors</a>.
 
@@ -146,11 +149,12 @@ See also our <a href="../diversity/">diversity &amp; inclusion sponsors</a>.
 {% include gallery id="bronze" class="fourth" %}
 
 
-<!--
-## Supporter Level
+## Supporting Organizations
 
 {% include gallery id="supporter" class="fourth" %}
 
+
+<!--
 <div class="text-center"> 
 <a href="/sponsors/benefits/"><button class="btn btn--large btn--inverse">Sponsorship Tiers &amp; Pricing</button></a>
 </div>
