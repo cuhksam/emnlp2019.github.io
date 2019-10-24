@@ -60,6 +60,21 @@ Please remove your poster right after the poster session ends. Do not leave your
 
 
 
+## Demo Presentations
+ 
+Each demo station includes the following:
+- A table and a chair
+- A poster board of 100 cm (width) x 250 cm (height)
+- A monitor (Viewsonic 23" full HD widescreen LED monitor)
+- One HDMI cable to connect a laptop to the monitor and two backup VGA cables. (No adaptors are provided.)
+- One Hong Kong socket
+ 
+The demo stations will be numbered. There will be student volunteers there to help.
+ 
+When the demo session stops, presenters are asked to remove their posters and their material from the table.
+
+
+
 ## Remote Presentations
 
 EMNLP-IJCNLP 2019 will be accepting applications for remote presentations in circumstances where none of the authors can attend the conference due to reasons such as:
