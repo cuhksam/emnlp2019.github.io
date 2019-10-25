@@ -1092,7 +1092,7 @@ script: |
                 <tr id="workshop">
                     <td>
                         <span class="workshop-title"><strong>[W5] MSR 2019: The second Workshop on Multilingual Surface Realization.</strong> 08:45 &ndash; 18:00</span><br/>
-                        <span class="btn btn--info btn--location inline-location">Marriott Room 5</span>
+                        <span class="btn btn--info btn--location inline-location">Marriott Room 4</span>
                     </td>
                 </tr>
                 <tr id="workshop">
