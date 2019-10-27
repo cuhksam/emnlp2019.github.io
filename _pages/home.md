@@ -48,9 +48,6 @@ We now provide an [interactive schedule](./program/ischedule/) of the whole conf
 **October 19, 2019**.
 See our [latest update](./participants) on the conference organization with several details on arrangements made. If you haven't registered yet, do so [here](https://aclweb.org/conference/emnlp-2019-conference-registration/) before the late registration ends (October 24, 2019, 11:59pm EDT). More registration information [here](./registration).
 
-**September 20, 2019**.
-We also provide online forms for [hotels and transfer](./participants/hotels/) now.
-
 **September 19, 2019**.
 For students participating in the conference, [accomodation](./participants#accommodation) in a shared room is provided at a reduced rate.
 
@@ -90,6 +87,9 @@ The EMNLP-IJCNLP 2019 [registration fees](./registration) have now been defined.
 
 **September 21, 2019**.
 The travel scholarships &amp; student volunteer notification has been postponed to September 26. 
+
+**September 20, 2019**.
+We also provide online forms for [hotels and transfer](./participants/hotels/) now.
 
 **September 15, 2019**.
 The [registration](./registration) is going to open within the next week.
