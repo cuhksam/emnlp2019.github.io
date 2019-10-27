@@ -48,9 +48,6 @@ We now provide an [interactive schedule](./program/ischedule/) of the whole conf
 **October 19, 2019**.
 See our [latest update](./participants) on the conference organization with several details on arrangements made. If you haven't registered yet, do so [here](https://aclweb.org/conference/emnlp-2019-conference-registration/) before the late registration ends (October 24, 2019, 11:59pm EDT). More registration information [here](./registration).
 
-**October 7, 2019**.
-The [main conference schedule](./program/schedule/) now also includes demo presentations. 
-
 **September 20, 2019**.
 We also provide online forms for [hotels and transfer](./participants/hotels/) now.
 
@@ -59,12 +56,6 @@ For students participating in the conference, [accomodation](./participants#acco
 
 **September 15, 2019**.
 We have published a [list of hotels](./participants/hotels/) remote from the protesting areas and advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided. 
-
-**September 10, 2019**.
-The dates of the [workshops](./program/workshops/) have been assigned.
-
-**September 8, 2019**.
-We are delighted to announce three [keynote speakers](./program/keynotes/).
 
 **September 3, 2019**.
 Updated information on [Conference Venue](./participants#conference-venue) and [Hong Kong Travel](./participants#about-hong-kong).
@@ -81,6 +72,9 @@ In case you have a talk or poster at the conference, please see our [instruction
 
 **October 9, 2019**.
 The early registration deadline is approaching: October 10, 11:59pm EDT. Directly register [here](https://aclweb.org/conference/emnlp-2019-conference-registration/). Notice that each paper in the proceedings (main conference or workshop) needs to (i) have at least one author registered by the early registration deadline and (ii) have been presented at the conference, in order for the paper to be included in the proceedings.
+
+**October 7, 2019**.
+The [main conference schedule](./program/schedule/) now also includes demo presentations. 
 
 **September 26, 2019**.
 A first version of the [main conference schedule](./program/schedule/) is out. 
@@ -99,6 +93,12 @@ The travel scholarships &amp; student volunteer notification has been postponed 
 
 **September 15, 2019**.
 The [registration](./registration) is going to open within the next week.
+
+**September 10, 2019**.
+The dates of the [workshops](./program/workshops/) have been assigned.
+
+**September 8, 2019**.
+We are delighted to announce three [keynote speakers](./program/keynotes/).
 
 **August 30, 2019**.
 We are happy to announce [Childcare Grants](./participants#childcare-grants) for participants with young children. Please apply by Sept 19, 2019.
