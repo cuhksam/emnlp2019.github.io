@@ -175,14 +175,18 @@ Dining Guide</td>
 
 
 
-## Accommodation
+## Accommodation and Transfer
 
-EMNLP-IJCNLP 2019 provides a [list of recommended hotels](./participants/hotels/) remote from the protesting areas. We advise participants to book one of these hotels. Some hotels are close to the venue. For hotels closer to downtown, coaches will be provided. Information on how to book the hotels is found in the beginning of the list.
-
-If you already booked a hotel but still need transfer, use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
+EMNLP-IJCNLP 2019 provides a [list of recommended hotels](./participants/hotels/) remote from the protesting areas. We advise participants to book one of these hotels. Some hotels are close to the venue. For hotels closer to downtown, coaches will be provided. 
 
 <b>For Student Participants</b><br>
 Students that participate in the conference can also apply for [accomodation in a shared room](../downloads/student-accomodation-details.pdf) at the [Rambler Garden Hotel](./participants/hotels/#8-rambler-garden-hotel-3) at a reduced rate.
+
+<b>Transfer</b><br>
+Information on how to book the hotels is found in the beginning of the [list of recommended hotels](./participants/hotels/). If you already booked a hotel but still need transfer, use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
+
+Please see our [coach schedule](../downloads/coach-schedule.pdf) (To Airport and Regal 
+Airport Hotel, to social event, and hotel transfer) and our [transportation arrangements](../downloads/transportation-arrangements.pdf) (special fare for airport express).
 
 
 
