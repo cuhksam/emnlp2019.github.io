@@ -191,8 +191,9 @@ Students that participate in the conference can also apply for [accomodation in 
 
 EMNLP-IJCNLP 2019 will be held at the [Asia World Expo](https://www.asiaworld-expo.com) in Hong Kong, China.
 
-<img src="/assets/images/hongkong/venue2.png" alt="Venue: Marriott" style="width:225px;height:127px;">
-<img src="/assets/images/hongkong/venue1.png" alt="Venue: Asia World Expo" style="width:190px;height:127px;">
+<img src="/assets/images/hongkong/venue2.png" alt="Venue: Marriott"> <!-- style="width:225px;height:127px;"> -->
+<br>
+<img src="/assets/images/hongkong/venue1.png" alt="Venue: Asia World Expo"> <!-- style="width:190px;height:127px;"> -->
 
 <b>Workshops and Tutorials (Nov 3-4)</b><br> 
 AsiaWorld Expo: Meeting Rooms 201-203 (2/F)<br>
