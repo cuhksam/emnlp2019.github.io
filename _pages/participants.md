@@ -187,7 +187,7 @@ Information on how to book the hotels is found in the beginning of the [list of 
 
 - [Coach schedule](../downloads/coach-schedule.pdf) (To Airport and Regal 
 Airport Hotel, to social event, and hotel transfer) 
-- [Transportation arrangements](../downloads/transportation-arrangements.pdf) (special fare for airport express).
+- [Transportation arrangements](../downloads/transportation-arrangements.pdf) (special fare for airport express)
 
 
 
