@@ -1136,7 +1136,7 @@ script: |
             <table class="tutorial-table">
                 <tr id="tutorial">
                     <td>
-                        <span class="tutorial-title"><strong>[T4] Bias and Fairness in Natural Language Processing.</strong> Kai-Wei Chang, Margaret Mitchell and Vicente Ordonez.</span><br/><span class="btn btn--info btn--location inline-location">Marriott Ballroom B&ndash;C</span>
+                        <span class="tutorial-title"><strong>[T4] Bias and Fairness in Natural Language Processing.</strong> Kai-Wei Chang, Vinod Prabhakaran and Vicente Ordonez.</span><br/><span class="btn btn--info btn--location inline-location">Marriott Ballroom B&ndash;C</span>
                     </td>
                 </tr>
                 <tr id="tutorial">
