@@ -185,8 +185,9 @@ Students that participate in the conference can also apply for [accomodation in 
 <b>Transfer</b><br>
 Information on how to book the hotels is found in the beginning of the [list of recommended hotels](./participants/hotels/). If you already booked a hotel but still need transfer, use our <a href="https://mice.ctshkvip.com/transfer-booking/" target="_blank">online transfer booking form</a>.
 
-Please see our [coach schedule](../downloads/coach-schedule.pdf) (To Airport and Regal 
-Airport Hotel, to social event, and hotel transfer) and our [transportation arrangements](../downloads/transportation-arrangements.pdf) (special fare for airport express).
+- [Coach schedule](../downloads/coach-schedule.pdf) (To Airport and Regal 
+Airport Hotel, to social event, and hotel transfer) 
+- [Transportation arrangements](../downloads/transportation-arrangements.pdf) (special fare for airport express).
 
 
 
