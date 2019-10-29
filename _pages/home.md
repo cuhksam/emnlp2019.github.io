@@ -36,6 +36,9 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 <h2>News</h2>
 
+**October 29, 2019**.
+We now provide details on the provided [transfer](./participants#accommodation-and-transfer).
+
 **October 24, 2019**.
 In case you have a presentation at the conference, please see our [instructions for presenters](./participants/presentation/), including our policy on remote presentations and now also instructions for demos.
 
@@ -49,7 +52,7 @@ We now provide an [interactive schedule](./program/ischedule/) of the whole conf
 See our [latest update](./participants) on the conference organization with several details on arrangements made. If you haven't registered yet, do so [here](https://aclweb.org/conference/emnlp-2019-conference-registration/) before the late registration ends (October 24, 2019, 11:59pm EDT). More registration information [here](./registration).
 
 **September 19, 2019**.
-For students participating in the conference, [accomodation](./participants#accommodation) in a shared room is provided at a reduced rate.
+For students participating in the conference, [accomodation](./participants#accommodation-and-transfer) in a shared room is provided at a reduced rate.
 
 **September 15, 2019**.
 We have published a [list of hotels](./participants/hotels/) remote from the protesting areas and advise participants to book one of these hotels. Some big hotels are close to the venue. For hotels closer to downtown, coaches will be provided. 
