@@ -992,7 +992,6 @@ script: |
 		<h1>Interactive Schedule</h1>
         <p>On this page, you can choose any talks, posters, tutorials, and workshops of your choice, in order to generate a PDF of your customized schedule (see button at the bottom)! Plenary sessions are included if the check mark at the bottom is set.</p> 
         <p>This page should work on modern browsers on all operating systems. On mobile devices, Safari on iOS and Chrome on Android are the only browsers known to work. For the best experience, use a non-mobile device. For help, simply type "?"" while on the page or click on the "Help" button.</p>
-        <p>Notice that the links to ACL anthology papers do not work yet. They will be updated soon.</p>
 </div>
 
 <p class="text-center">
