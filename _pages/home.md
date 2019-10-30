@@ -35,6 +35,8 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**October 30, 2019**.
+Find numbers of all posters and demos in the main conference [here](./program/#schedule).
 
 **October 29, 2019**.
 We now provide details on the provided [transfer](./participants#accommodation-and-transfer).

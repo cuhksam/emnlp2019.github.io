@@ -48,3 +48,5 @@ See the <a href="./tutorials/">list of tutorials</a> along with their descriptio
 EMNLP-IJCNLP 2019 will take place on November 3&ndash;7. An overview of the main conference schedule is found [here](./schedule/). 
 
 In addition, we provide an [interactive schedule](./ischedule/) where you can customize and print your own schedule.
+
+Each main conference poster and demo is assigned a number. You'll find these numbers along with the sessions the posters and demos belong to [here](../../downloads/poster-guide.pdf).
