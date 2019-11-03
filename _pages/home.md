@@ -35,6 +35,13 @@ For questions on submissions, first check the <a href="./calls/submission">FAQs<
 
 
 <h2>News</h2>
+**November 03, 2019**.
+Handbook is available in conference website and conference app. It is not for everyone to have one and Please take only if needed and it will be available in the registration counter after 10:30
+
+The programme details can be found on conference website and app.
+
+Please download the Conference app (GuideBook) for conference details and instant update.
+
 **October 30, 2019**.
 Find numbers of all posters and demos in the main conference [here](./program/#schedule).
 
